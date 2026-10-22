@@ -73,6 +73,19 @@ class ParseList(unittest.TestCase):
             self.assertIsNone(build.PACKAGE.fullmatch(bad), bad)
 
 
+class Index(unittest.TestCase):
+    def test_every_device_is_listed_and_unmatched_ones_have_null_match(self):
+        index = build.build_index()
+        files = sorted(f.name for f in (build.ROOT / "devices").glob("*.json"))
+        self.assertEqual([d["file"] for d in index["devices"]], [f"devices/{f}" for f in files])
+        by_id = {d["id"]: d for d in index["devices"]}
+        for d in index["devices"]:
+            matched = (build.ROOT / "match" / f"{d['id']}.json").is_file()
+            self.assertEqual(d["match"] is not None, matched, d["id"])
+        self.assertIsNone(by_id["xgimi-horizon-s-pro"]["match"])
+        self.assertEqual(by_id["philips-55oled708"]["match"]["manufacturer"], ["TPV"])
+
+
 class RealLists(unittest.TestCase):
     """The committed devices/ files must still parse to the shape the app reads."""
 

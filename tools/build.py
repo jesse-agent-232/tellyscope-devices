@@ -2,7 +2,7 @@
 """Build the device lists and index.json. Python 3.9+, standard library only.
 
   tools/build.py sync <cleanyourtv checkout>   rewrite devices/ from its examples/, then index
-  tools/build.py index                         rebuild index.json from match/ and devices/
+  tools/build.py index                         rebuild index.json from devices/ and match/
   tools/build.py check                         fail if anything is invalid or index.json is stale
 
 The file format is in README.md.
@@ -130,15 +130,13 @@ def build_index():
     upstream = (ROOT / "upstream.txt").read_text(encoding="utf-8").split() \
         if (ROOT / "upstream.txt").exists() else [UPSTREAM, None]
     devices = []
-    for mf in sorted((ROOT / "match").glob("*.json")):
-        df = ROOT / "devices" / mf.name
-        if not df.is_file():
-            continue  # a match rule for a list upstream no longer has (or not synced yet)
+    for df in sorted((ROOT / "devices").glob("*.json")):
         device = json.loads(df.read_text(encoding="utf-8"))
+        mf = ROOT / "match" / df.name
         devices.append({
             "id": device["id"],
             "name": device["name"],
-            "match": json.loads(mf.read_text(encoding="utf-8")),
+            "match": json.loads(mf.read_text(encoding="utf-8")) if mf.is_file() else None,
             "sdk": device["tested"]["sdk"],
             "file": f"devices/{df.name}",
             "sha256": hashlib.sha256(df.read_bytes()).hexdigest(),

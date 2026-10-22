@@ -14,18 +14,20 @@ here. Nothing reaches apps until a maintainer merges it.
 |---|---|---|
 | `devices/<id>.json` | the sync | One TV model's list. `<id>` is the cleanyourtv folder name. |
 | `match/<id>.json` | people | How to recognise that TV. The sync never writes here. |
-| `index.json` | `tools/build.py index` | Every device that has both files: what an app downloads first. |
+| `index.json` | `tools/build.py index` | Every device, with its match rule or `null`: what an app downloads first. |
 | `upstream.txt` | the sync | The cleanyourtv commit `devices/` was built from. |
 
-A device with no `match/` file is not in the index, so apps never suggest its list.
+A device with no `match/` file is still in the index, with `"match": null`: an app can't recognise it,
+but the user can pick it. A match rule whose device is gone is skipped.
 
 ## How an app uses it
 
 1. Download `index.json` (cache it, revalidate with the ETag).
 2. Read `ro.product.manufacturer`, `ro.product.model`, `ro.product.device` and `ro.build.version.sdk`
-   from the TV, and look for an entry whose `match` fits. Matching is done on the phone.
-3. Download that entry's `file` and check it against `sha256`.
-4. Show the list. Pre-tick an entry only when manufacturer, model and SDK all match, and only packages
+   from the TV, and look for an entry whose `match` fits. Matching is done on the phone. With no fit,
+   let the user pick their TV from the index by `name`.
+3. Download only that entry's `file` and check it against `sha256`.
+4. Show the list. Pre-tick only when the entry was matched (or picked) and the TV's SDK equals `sdk`, and only packages
    that are installed, enabled and not marked `optional`. Anything weaker is shown unticked.
 
 An app that sees a `schema` it doesn't know shows no suggestions.
@@ -76,13 +78,14 @@ other commented package is `optional`. Quirk notes are not copied: follow `sourc
 ### `index.json`
 
 `{"schema", "source": {"repo", "commit"}, "devices": [{"id", "name", "match", "sdk", "file", "sha256"}]}`,
-with `match` copied from `match/<id>.json` and `sdk` from `tested.sdk`.
+one entry per device file, with `match` copied from `match/<id>.json` (`null` when there is none) and
+`sdk` from `tested.sdk`.
 
 ## Contributing
 
 - **A list is wrong or missing:** fix it in [cleanyourtv](https://github.com/Gathin23/cleanyourtv). The
   next sync brings it here.
-- **Your TV isn't recognised:** add `match/<id>.json` with its `getprop` values and run
+- **Your TV isn't recognised automatically:** add `match/<id>.json` with its `getprop` values and run
   `python3 tools/build.py index`.
 - Before a pull request: `python3 -m unittest discover -s tests` and `python3 tools/build.py check`.
 
