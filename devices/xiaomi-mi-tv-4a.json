@@ -1,0 +1,112 @@
+{
+  "schema": 1,
+  "id": "xiaomi-mi-tv-4a",
+  "name": "Xiaomi Mi TV 4A",
+  "tested": {
+    "os": "Android TV 10",
+    "sdk": null,
+    "build": null
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "Xiaomi telemetry",
+      "packages": [
+        {
+          "pkg": "com.miui.tv.analytics"
+        },
+        {
+          "pkg": "com.xiaomi.statistic"
+        }
+      ]
+    },
+    {
+      "title": "PatchWall and Mi content rows / promos",
+      "packages": [
+        {
+          "pkg": "com.mitv.tvhome.atv"
+        },
+        {
+          "pkg": "com.mitv.tvhome.michannel"
+        },
+        {
+          "pkg": "com.mitv.tvhome.mitvplus"
+        },
+        {
+          "pkg": "com.xm.webcontent"
+        },
+        {
+          "pkg": "com.xiaomi.floatingframe"
+        }
+      ]
+    },
+    {
+      "title": "Xiaomi background services",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.mitv.tvmanager",
+          "note": "\"TV Manager\" cleaner app"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.smartshare"
+        },
+        {
+          "pkg": "com.mitv.milinkservice",
+          "note": "Mi cast, Chromecast still works"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.updateservice",
+          "note": "re-enable to check for firmware updates"
+        },
+        {
+          "pkg": "com.xiaomi.amazon.alexa",
+          "note": "Alexa bridge"
+        },
+        {
+          "pkg": "android.autoinstalls.config.xiaomi.amelie"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps nobody asked for",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.mimusic2"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.apps.tachyon",
+          "note": "Google Duo"
+        },
+        {
+          "pkg": "fusion.android.tv.demo"
+        }
+      ]
+    },
+    {
+      "title": "Stock Google TV launcher and its recommendation services, replaced by launcher/",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvlauncher"
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations"
+        },
+        {
+          "pkg": "com.google.android.leanbacklauncher.recommendations"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/xiaomi-mi-tv-4a/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

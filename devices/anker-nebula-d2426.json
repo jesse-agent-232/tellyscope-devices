@@ -1,0 +1,152 @@
+{
+  "schema": 1,
+  "id": "anker-nebula-d2426",
+  "name": "Anker Nebula projector",
+  "tested": {
+    "os": "Android TV 14",
+    "sdk": 34,
+    "build": "name"
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [
+    {
+      "pkg": "com.mediatek.tvinput",
+      "note": "HDMI input service"
+    },
+    {
+      "pkg": "com.mediatek.tv.service",
+      "note": "TV service, global remote keys, Netflix key"
+    },
+    {
+      "pkg": "com.google.android.tv.inputplayer",
+      "note": "HDMI passthrough player"
+    },
+    {
+      "pkg": "com.oceanwing.receiver",
+      "note": "remote control, Nebula IME, accessibility, screen control"
+    },
+    {
+      "pkg": "com.zhixin.nebulasmart",
+      "note": "remote events (GLOBAL_BUTTON), accessibility service"
+    },
+    {
+      "pkg": "com.sdmc.btservice",
+      "note": "Bluetooth remote auto-pairing, speaker"
+    },
+    {
+      "pkg": "com.sdmc.projector",
+      "note": "projector picture settings, brightness adaptation keys"
+    },
+    {
+      "pkg": "com.sdmc.service",
+      "note": "SDMC service manager, picture, USB OTA"
+    },
+    {
+      "pkg": "com.oceanwing.nebulalinker",
+      "note": "device info, custom shutdown, eMMC, firmware update dispatch"
+    },
+    {
+      "pkg": "com.zhixin.apphelper",
+      "note": "McuHelper: package install helper, HTML viewer (purpose partly unclear)"
+    },
+    {
+      "pkg": "com.google.android.tungsten.setupwraith",
+      "note": "owns the Wi-Fi saved during setup"
+    }
+  ],
+  "groups": [
+    {
+      "title": "--- Telemetry and feedback ---",
+      "packages": [
+        {
+          "pkg": "com.zhixin.logservice.nebula",
+          "note": "Nebula log collector/uploader (UPLOAD_LOG, runs at boot)"
+        },
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "Google feedback"
+        },
+        {
+          "pkg": "com.android.tv.feedbackconsent",
+          "note": "feedback consent prompt"
+        },
+        {
+          "pkg": "com.android.adservices.api",
+          "note": "Privacy Sandbox ad services"
+        },
+        {
+          "pkg": "com.android.federatedcompute.services",
+          "note": "federated learning"
+        },
+        {
+          "pkg": "com.android.ondevicepersonalization.services",
+          "note": "on-device ad personalisation"
+        }
+      ]
+    },
+    {
+      "title": "--- Content and ad services ---",
+      "packages": [
+        {
+          "pkg": "com.cltv.fast",
+          "note": "Anoki/iWedia \"Free TV\" FAST channels (ad-supported TV input, ACR)"
+        },
+        {
+          "pkg": "android.autoinstalls.config.sdmc",
+          "note": "Play auto-install of partner apps"
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "partner-app attribution"
+        },
+        {
+          "pkg": "fusion.android.tv.demo",
+          "note": "RetailDisplay store demo"
+        }
+      ]
+    },
+    {
+      "title": "--- Off by owner's choice (comment out to keep) ---",
+      "packages": [
+        {
+          "pkg": "com.google.android.backdrop",
+          "note": "Ambient Mode screensaver"
+        },
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google Assistant / voice search (mic button stops working)"
+        },
+        {
+          "pkg": "com.google.android.play.games",
+          "note": "Google Play Games"
+        },
+        {
+          "pkg": "com.google.android.marvin.talkback",
+          "note": "TalkBack screen reader"
+        }
+      ]
+    },
+    {
+      "title": "--- Stock home screen (only after the new launcher is installed: launcher/build-and-install.sh) ---",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvlauncher",
+          "note": "stock Android TV home: sponsored banner, \"Free TV\" and recommendation rows"
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations",
+          "note": "recommendation rows for the stock home"
+        },
+        {
+          "pkg": "com.mediatek.android.leanbacklauncher.partnercustomizer",
+          "note": "partner rows/config for the stock home"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/anker-nebula-d2426/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

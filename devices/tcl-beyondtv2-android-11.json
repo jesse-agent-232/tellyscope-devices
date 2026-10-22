@@ -1,0 +1,130 @@
+{
+  "schema": 1,
+  "id": "tcl-beyondtv2-android-11",
+  "name": "TCL BeyondTV2",
+  "tested": {
+    "os": "Android 11",
+    "sdk": 30,
+    "build": "PPR1.180610.011"
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "--- The one non-obvious entry: TCL re-enables promo packages on every boot.",
+      "packages": [
+        {
+          "pkg": "com.tcl.overseasappshow",
+          "note": "factory promo/app-show service, re-enables partner packages"
+        }
+      ]
+    },
+    {
+      "title": "--- TCL analytics, ads, promos",
+      "packages": [
+        {
+          "pkg": "com.tcl.bi",
+          "note": "TCL analytics / telemetry service"
+        },
+        {
+          "pkg": "com.tcl.tv.tclhome_passive",
+          "note": "pushes TCL content onto the home screen at boot"
+        },
+        {
+          "pkg": "com.tcl.waterfall.overseas",
+          "note": "TCL web content feed / recommendation waterfall"
+        },
+        {
+          "pkg": "com.tcl.guard",
+          "note": "TGuard: device-use tracking, \"health info\", memory cleaner"
+        },
+        {
+          "pkg": "com.tcl.messagebox",
+          "note": "pushed messages and promos"
+        },
+        {
+          "pkg": "com.tcl.esticker",
+          "note": "retail demo energy-label sticker (does stay off here,"
+        }
+      ]
+    },
+    {
+      "title": "--- TCL's own promo home and its notes widget (both have launcher activities)",
+      "packages": [
+        {
+          "pkg": "com.tcl.tv.tclhome_master",
+          "note": "TCL's alternate home, StartUpActivity"
+        },
+        {
+          "pkg": "com.tcl.notereminder",
+          "note": "notes & reminder widget"
+        }
+      ]
+    },
+    {
+      "title": "--- Google attribution",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "\"send feedback\""
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "partner-app attribution / installs"
+        }
+      ]
+    },
+    {
+      "title": "--- Voice: off by choice, the remote's mic button goes dead. Comment out to keep the assistant.",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google Assistant / voice search"
+        },
+        {
+          "pkg": "com.google.android.tv.assistant",
+          "note": "Assistant LED service"
+        },
+        {
+          "pkg": "com.tcl.assistant",
+          "note": "TCL voice service"
+        },
+        {
+          "pkg": "com.tcl.micmanager",
+          "note": "TCL microphone manager for voice"
+        }
+      ]
+    },
+    {
+      "title": "--- Casting, remote, updates, screensaver: off by choice. Chromecast itself is kept",
+      "packages": [
+        {
+          "pkg": "com.tcl.miracast",
+          "note": "Miracast screen mirroring"
+        },
+        {
+          "pkg": "com.tcl.MultiScreenInteraction_TV",
+          "note": "MagiConnect mirroring/casting companion"
+        },
+        {
+          "pkg": "com.google.android.tv.remote.service",
+          "note": "phone-app remote (the physical remote is unaffected)"
+        },
+        {
+          "pkg": "com.tcl.versionUpdateApp",
+          "note": "TCL OTA firmware updater: kept on, so security fixes still arrive",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.backdrop",
+          "note": "stock ambient photo screensaver"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tcl-beyondtv2-android-11/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

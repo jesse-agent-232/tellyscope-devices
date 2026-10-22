@@ -1,0 +1,184 @@
+{
+  "schema": 1,
+  "id": "sony-bravia-ae2",
+  "name": "Sony BRAVIA 4K AE2",
+  "tested": {
+    "os": "Google TV 14",
+    "sdk": 34,
+    "build": "BRAVIA_AE2_NA-user"
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "tracking / ads / recommendations",
+      "packages": [
+        {
+          "pkg": "tv.samba.ssm",
+          "note": "Samba TV (ACR viewing data)"
+        },
+        {
+          "pkg": "tv.samba.ssm.ui",
+          "note": "Samba TV's opt-in and settings screens"
+        },
+        {
+          "pkg": "com.qterics.da.product",
+          "note": "(new) Qterics device agent"
+        },
+        {
+          "pkg": "com.sony.dtv.da.service"
+        },
+        {
+          "pkg": "com.sonyericsson.idd.agent",
+          "note": "(new) Sony usage data"
+        },
+        {
+          "pkg": "com.sony.dtv.usercontext",
+          "note": "viewing context for recommendations"
+        },
+        {
+          "pkg": "com.sony.dtv.seeds.iot"
+        },
+        {
+          "pkg": "com.sony.dtv.promos"
+        },
+        {
+          "pkg": "com.sony.dtv.sonyselect"
+        },
+        {
+          "pkg": "com.sony.dtv.sonytab",
+          "note": "Sony tab on the Google TV home; unused once launcherx is off"
+        },
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "(new)"
+        },
+        {
+          "pkg": "com.sony.dtv.sonybugreportsys",
+          "note": "(new) bug-report uploader"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.vendorprotocol",
+          "note": "(new) broadcasts model/MAC/IP over SDDP"
+        },
+        {
+          "pkg": "android.autoinstalls.config.sony.bravia",
+          "note": "(new) Play auto-install of partner apps"
+        }
+      ]
+    },
+    {
+      "title": "demo / shop mode",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.demosupport"
+        },
+        {
+          "pkg": "com.sony.dtv.demosystemsupport"
+        },
+        {
+          "pkg": "com.sony.dtv.multiscreendemo"
+        }
+      ]
+    },
+    {
+      "title": "help",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.customersupport",
+          "note": "(new) Help tile"
+        },
+        {
+          "pkg": "com.sony.dtv.smarthelp",
+          "note": "(new)"
+        }
+      ]
+    },
+    {
+      "title": "Sony extras, disabled by choice",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.calibrationmonitor"
+        },
+        {
+          "pkg": "com.sony.dtv.gestureapp"
+        },
+        {
+          "pkg": "com.sony.dtv.livingfit",
+          "note": "also the default screensaver, see the header"
+        },
+        {
+          "pkg": "com.sony.dtv.osat.music.toast"
+        }
+      ]
+    },
+    {
+      "title": "North American broadcast tuner (ATSC 1.0/3.0), unused here: keep these for antenna TV",
+      "packages": [
+        {
+          "pkg": "com.mediatek.dtv.tvinput.atsctuner"
+        },
+        {
+          "pkg": "com.sony.dtv.tvinput.atsc3tuner"
+        },
+        {
+          "pkg": "com.sony.dtv.tvinput.atsc3tuner.drmlicenseinstaller"
+        },
+        {
+          "pkg": "com.sony.dtv.atscbrowserservice"
+        },
+        {
+          "pkg": "com.sony.dtv.broadcastclock.broadcastrequirementcontrol"
+        },
+        {
+          "pkg": "com.sony.dtv.broadcastclock.clocksyncservice"
+        },
+        {
+          "pkg": "com.sony.dtv.broadcastsettings"
+        },
+        {
+          "pkg": "com.sony.dtv.servicemode.tuner"
+        }
+      ]
+    },
+    {
+      "title": "preloaded apps, disabled by choice",
+      "packages": [
+        {
+          "pkg": "com.crunchyroll.crunchyroid"
+        },
+        {
+          "pkg": "com.sonypicturescore",
+          "note": "Sony Pictures Core"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "came back enabled once on its own; check after Play updates"
+        },
+        {
+          "pkg": "com.google.android.play.games",
+          "note": "(new)"
+        }
+      ]
+    },
+    {
+      "title": "Home: only after the launcher is installed (launcher/build-and-install.sh does this part)",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith",
+          "note": "its RecoveryActivity otherwise takes over Home"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.launcherx",
+          "note": "launcher/build-and-install.sh disables the stock launcher itself, after Home has moved",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/sony-bravia-ae2/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

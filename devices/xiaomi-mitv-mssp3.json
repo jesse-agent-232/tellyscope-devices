@@ -1,0 +1,137 @@
+{
+  "schema": 1,
+  "id": "xiaomi-mitv-mssp3",
+  "name": "Xiaomi MiTV-MSSP3",
+  "tested": {
+    "os": "Android TV 11",
+    "sdk": 30,
+    "build": null
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Xiaomi + Google telemetry",
+      "packages": [
+        {
+          "pkg": "com.miui.tv.analytics"
+        },
+        {
+          "pkg": "com.xiaomi.statistic"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        }
+      ]
+    },
+    {
+      "title": "PatchWall, content rows, sponsored rows",
+      "packages": [
+        {
+          "pkg": "com.mitv.tvhome.atv",
+          "note": "PatchWall"
+        },
+        {
+          "pkg": "com.mitv.tvhome.michannel",
+          "note": "PatchWall channels on the Google TV home"
+        },
+        {
+          "pkg": "com.xm.webcontent"
+        },
+        {
+          "pkg": "com.xiaomi.floatingframe"
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations"
+        },
+        {
+          "pkg": "android.autoinstalls.config.xiaomi.amelie",
+          "note": "Play auto-install of partner apps"
+        }
+      ]
+    },
+    {
+      "title": "Xiaomi background services",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.mitv.tvmanager",
+          "note": "\"TV Manager\" cleaner"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.updateservice",
+          "note": "firmware updates: re-enable to check for one"
+        }
+      ]
+    },
+    {
+      "title": "Personal choice: casting",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Chromecast built-in"
+        }
+      ]
+    },
+    {
+      "title": "Personal choice: Ambient and Mi WallPaper screensavers",
+      "packages": [
+        {
+          "pkg": "com.google.android.backdrop"
+        },
+        {
+          "pkg": "com.mitv.dream",
+          "note": "\"WallPaper\" tile, Xiaomi screensaver"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.mimusic2"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Play Movies & TV (already disabled on this firmware; shell may refuse)"
+        },
+        {
+          "pkg": "com.mitv.gallery",
+          "note": "Mi Gallery; Media Player still opens USB photos"
+        }
+      ]
+    },
+    {
+      "title": "Personal choice: preloaded streaming apps not used",
+      "packages": [
+        {
+          "pkg": "com.netflix.ninja",
+          "note": "comes back at boot, see header"
+        },
+        {
+          "pkg": "com.mstar.netflixobserver",
+          "note": "remote's Netflix button; see header"
+        },
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom",
+          "note": "Prime Video; comes back like Netflix, see header"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic",
+          "note": "YouTube Music"
+        },
+        {
+          "pkg": "com.mitv.tvhome.mitvplus",
+          "note": "Xiaomi TV+"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/xiaomi-mitv-mssp3/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

@@ -1,0 +1,215 @@
+{
+  "schema": 1,
+  "id": "hitachi-cdh-le32smart21",
+  "name": "Hitachi CDH-LE32SMART21",
+  "tested": {
+    "os": "Android TV 11",
+    "sdk": 30,
+    "build": "AR2101"
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [
+    {
+      "pkg": "com.tcl.tv",
+      "note": "Live TV app, plays HDMI, source picker on the Input key"
+    },
+    {
+      "pkg": "com.tcl.tvinput",
+      "note": "TV input services for HDMI, AV and the tuner"
+    },
+    {
+      "pkg": "com.tcl.suspension",
+      "note": "Quick Panel, handles VIEW_INPUTS; only hidden in the launcher config"
+    },
+    {
+      "pkg": "com.tcl.partnercustomizer",
+      "note": "TKey Channel; kept, only hidden in the launcher config"
+    },
+    {
+      "pkg": "com.tcl.ttvs",
+      "note": "firmware updater (see quirks)"
+    },
+    {
+      "pkg": "com.tcl.autopair",
+      "note": "Bluetooth remote auto-pairing"
+    },
+    {
+      "pkg": "com.tcl.tcl_bt_rcu_service",
+      "note": "Bluetooth remote"
+    },
+    {
+      "pkg": "com.tcl.keyhelp",
+      "note": "remote-key help/virtual keys"
+    },
+    {
+      "pkg": "com.tcl.system.server",
+      "note": "remote-key plumbing"
+    },
+    {
+      "pkg": "com.tcl.settings",
+      "note": "picture/sound settings"
+    },
+    {
+      "pkg": "com.tcl.providers.config",
+      "note": "TCL config provider"
+    },
+    {
+      "pkg": "com.tcl.inputmethod.international",
+      "note": "keyboard"
+    },
+    {
+      "pkg": "com.tcl.initsetup",
+      "note": "setup flow"
+    },
+    {
+      "pkg": "com.tcl.factory.view",
+      "note": "factory menu"
+    },
+    {
+      "pkg": "com.tcl.copydatatotv",
+      "note": "data copy hook"
+    },
+    {
+      "pkg": "com.tcl.micmanager",
+      "note": "voice"
+    }
+  ],
+  "groups": [
+    {
+      "title": "Telemetry",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "android.autoinstalls.config.tcl.device",
+          "note": "partner-app auto installer config"
+        },
+        {
+          "pkg": "com.google.android.partnersetup"
+        }
+      ]
+    },
+    {
+      "title": "Content, ads and promos",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvrecommendations"
+        },
+        {
+          "pkg": "com.tcl.waterfall.overseas",
+          "note": "TCL Channel web-video portal"
+        },
+        {
+          "pkg": "com.tcl.messagebox",
+          "note": "TCL messages/popups, carries a ttvs receiver (see quirks)"
+        },
+        {
+          "pkg": "com.tcl.esticker",
+          "note": "store-demo sticker"
+        },
+        {
+          "pkg": "com.tcl.useragreement"
+        }
+      ]
+    },
+    {
+      "title": "Background services",
+      "packages": [
+        {
+          "pkg": "com.tcl.guard",
+          "note": "TGuard UI/cleaner; the memory manager still runs (see quirks)"
+        },
+        {
+          "pkg": "com.google.android.apps.nbu.smartconnect.tv",
+          "note": "data-saver VPN"
+        },
+        {
+          "pkg": "com.tcl.t_solo",
+          "note": "TCL Bluetooth \"listen alone\""
+        }
+      ]
+    },
+    {
+      "title": "Stock home, replaced by launcher/",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvlauncher",
+          "note": "launcher/build-and-install.sh disables the stock launcher itself, after Home has moved",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Off by choice on this unit: comment out what you use",
+      "packages": [
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom",
+          "note": "Prime Video"
+        },
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Chromecast receiver"
+        },
+        {
+          "pkg": "com.tcl.ui_mediaCenter",
+          "note": "USB media player, together with the next three"
+        },
+        {
+          "pkg": "com.tcl.videoplayer"
+        },
+        {
+          "pkg": "com.tcl.audioplayer"
+        },
+        {
+          "pkg": "com.tcl.imageplayer"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Play Movies"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        }
+      ]
+    },
+    {
+      "title": "Already disabled at the factory; left as-is.",
+      "packages": [
+        {
+          "pkg": "au.com.stan.and",
+          "note": "Stan",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic",
+          "optional": true
+        },
+        {
+          "pkg": "tv.wuaki.apptv",
+          "note": "Rakuten TV",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.usercenter",
+          "note": "TCL account",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.smartalexa",
+          "note": "TCL Alexa bridge",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.dashboard",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/hitachi-cdh-le32smart21/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

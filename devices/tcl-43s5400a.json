@@ -1,0 +1,176 @@
+{
+  "schema": 1,
+  "id": "tcl-43s5400a",
+  "name": "TCL 43S5400A",
+  "tested": {
+    "os": "Android TV 11",
+    "sdk": 30,
+    "build": "AR2101"
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [
+    {
+      "pkg": "com.tcl.tv",
+      "note": "Live TV app, plays HDMI, source picker on Input key"
+    },
+    {
+      "pkg": "com.tcl.tvinput",
+      "note": "TV input services for HDMI, AV and tuner"
+    },
+    {
+      "pkg": "com.tcl.ttvs",
+      "note": "TCL firmware update service (kept for OTA updates)"
+    },
+    {
+      "pkg": "com.tcl.system.server",
+      "note": "remote-key plumbing"
+    },
+    {
+      "pkg": "com.tcl.tcl_bt_rcu_service",
+      "note": "Bluetooth remote service"
+    },
+    {
+      "pkg": "com.tcl.autopair",
+      "note": "Bluetooth remote auto-pairing"
+    },
+    {
+      "pkg": "com.tcl.settings",
+      "note": "picture & sound settings"
+    },
+    {
+      "pkg": "com.tcl.suspension",
+      "note": "source panel / Quick Panel"
+    },
+    {
+      "pkg": "com.tcl.keyhelp",
+      "note": "virtual keys"
+    },
+    {
+      "pkg": "com.android.vending",
+      "note": "Google Play Store"
+    },
+    {
+      "pkg": "com.google.android.gms",
+      "note": "Google Play Services"
+    },
+    {
+      "pkg": "com.google.android.gsf",
+      "note": "Google Services Framework"
+    },
+    {
+      "pkg": "com.google.android.apps.mediashell",
+      "note": "Chromecast built-in"
+    }
+  ],
+  "groups": [
+    {
+      "title": "TCL account, promos and content",
+      "packages": [
+        {
+          "pkg": "com.tcl.usercenter",
+          "note": "TCL account, re-enabled by system at boot (idle)"
+        },
+        {
+          "pkg": "com.tcl.guard",
+          "note": "TGuard background cleaner"
+        },
+        {
+          "pkg": "com.tcl.partnercustomizer",
+          "note": "promo rows on stock home"
+        },
+        {
+          "pkg": "com.tcl.waterfall.overseas",
+          "note": "TCL video portal"
+        },
+        {
+          "pkg": "com.tcl.esticker",
+          "note": "store demo sticker"
+        },
+        {
+          "pkg": "android.autoinstalls.config.tcl.device",
+          "note": "partner auto-installer"
+        },
+        {
+          "pkg": "com.tcl.audioplayer",
+          "note": "stock audio player"
+        },
+        {
+          "pkg": "com.tcl.imageplayer",
+          "note": "stock image player"
+        },
+        {
+          "pkg": "com.tcl.copydatatotv",
+          "note": "data migration utility"
+        },
+        {
+          "pkg": "com.tcl.t_solo",
+          "note": "TCL promo app"
+        },
+        {
+          "pkg": "com.tcl.messagebox",
+          "note": "TCL push messages & promos"
+        }
+      ]
+    },
+    {
+      "title": "Google extras & Assistant",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google Play Movies & TV"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic",
+          "note": "YouTube Music stub"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar"
+        },
+        {
+          "pkg": "com.google.android.partnersetup"
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations",
+          "note": "sponsored/recommended rows (~20 MB RAM)"
+        },
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google Assistant (~52 MB RAM, mic button)"
+        },
+        {
+          "pkg": "com.google.android.tv.assistant"
+        },
+        {
+          "pkg": "com.google.android.apps.nbu.smartconnect.tv"
+        }
+      ]
+    },
+    {
+      "title": "Setup wizard (safe to disable after initial TV setup)",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith"
+        }
+      ]
+    },
+    {
+      "title": "Stock screensaver (backdrop eats ~105 MB RAM; replace with ClockDream)",
+      "packages": [
+        {
+          "pkg": "com.google.android.backdrop"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tcl-43s5400a/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

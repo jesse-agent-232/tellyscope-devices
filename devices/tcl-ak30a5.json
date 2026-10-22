@@ -1,0 +1,193 @@
+{
+  "schema": 1,
+  "id": "tcl-ak30a5",
+  "name": "TCL ak30a5 — Chinese-market TCL Android TV 9",
+  "tested": {
+    "os": "Android TV 9",
+    "sdk": null,
+    "build": "date"
+  },
+  "launcher": "com.tcl.cyberui",
+  "keep": [],
+  "groups": [
+    {
+      "title": "TCL ads, telemetry, logging",
+      "packages": [
+        {
+          "pkg": "com.tcl.bootadservice",
+          "note": "boots into a full-screen ad before Home"
+        },
+        {
+          "pkg": "com.tcl.bi",
+          "note": "analytics/behaviour reporting"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded TCL content and services",
+      "packages": [
+        {
+          "pkg": "com.tcl.ffkaraoke",
+          "note": "karaoke"
+        },
+        {
+          "pkg": "com.tcl.ffeducation",
+          "note": "kids/education content"
+        },
+        {
+          "pkg": "com.tcl.tclmusic",
+          "note": "music"
+        },
+        {
+          "pkg": "com.tcl.gamecenter",
+          "note": "game store"
+        },
+        {
+          "pkg": "com.tcl.playskill",
+          "note": "\"tips\" app"
+        },
+        {
+          "pkg": "com.tcl.appreciate.art",
+          "note": "art-wallpaper screensaver content"
+        },
+        {
+          "pkg": "com.tcl.browser",
+          "note": "bundled browser"
+        },
+        {
+          "pkg": "com.tcl.common.weather",
+          "note": "weather widget service"
+        },
+        {
+          "pkg": "com.tcl.wholenetsearch",
+          "note": "global search"
+        },
+        {
+          "pkg": "com.tcl.useragreement",
+          "note": "EULA nag"
+        },
+        {
+          "pkg": "com.tcl.versionUpdateApp",
+          "note": "TCL updater (the OTA package com.snm.upgrade is already"
+        },
+        {
+          "pkg": "com.tcl.tvhealthcheck",
+          "note": "diagnostics uploader"
+        },
+        {
+          "pkg": "com.tcl.logkit",
+          "note": "verbose logging"
+        },
+        {
+          "pkg": "com.iflytek.xiri.translate",
+          "note": "iFlytek translate"
+        }
+      ]
+    },
+    {
+      "title": "Optional: uncomment what you don't use",
+      "packages": [
+        {
+          "pkg": "com.tcl.ttvs",
+          "note": "3rd-party data/ACR. Also serves com.tcl.ttvs.proxy.business.data,",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.c2dm.client",
+          "note": "push channel used by some TCL apps",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.usercenter",
+          "note": "TCL account (needed to sign in to TCL services)",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.m",
+          "note": "unidentified TCL helper; left enabled on purpose",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.convergehome",
+          "note": "TCL content aggregator; not the HOME app on this build",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.walleve",
+          "note": "TCL 小T voice assistant, plus com.tcl.walleve.aidaemon",
+          "optional": true
+        },
+        {
+          "pkg": "com.audiocn.karaoke.micmanager",
+          "note": "mic handling for the karaoke app, plus com.tcl.micmanager",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.MultiScreenInteraction_TV",
+          "note": "phone screen mirroring / \"多屏互动\" in the source panel",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.miracast",
+          "note": "Miracast / \"无线投屏\" in the source panel",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.weixin",
+          "note": "WeChat on TV",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Preloaded third-party apps — comment out the ones you watch",
+      "packages": [
+        {
+          "pkg": "com.xftv.tv",
+          "note": "云视听极光 (Tencent Video)",
+          "optional": true
+        },
+        {
+          "pkg": "com.newtv.cboxtv",
+          "note": "奇异果 (iQIYI)",
+          "optional": true
+        },
+        {
+          "pkg": "com.xiaodianshi.tv.yst",
+          "note": "小电视 (Bilibili)",
+          "optional": true
+        },
+        {
+          "pkg": "com.cibn.tv",
+          "note": "CIBN 高清影视",
+          "optional": true
+        },
+        {
+          "pkg": "com.baidu.netdisk.tv",
+          "note": "Baidu Netdisk",
+          "optional": true
+        },
+        {
+          "pkg": "com.netease.cloudmusic.tv",
+          "note": "NetEase Cloud Music",
+          "optional": true
+        },
+        {
+          "pkg": "com.quark.yun.tv",
+          "note": "Quark cloud drive",
+          "optional": true
+        },
+        {
+          "pkg": "com.huawei.himovceie",
+          "note": "Huawei AI Life",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tcl-ak30a5/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

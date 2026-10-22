@@ -1,0 +1,183 @@
+{
+  "schema": 1,
+  "id": "rca-ai-pont",
+  "name": "RCA AI PONT SA",
+  "tested": {
+    "os": "Android 14",
+    "sdk": null,
+    "build": null
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Homwee store, ads, installers and media extras",
+      "packages": [
+        {
+          "pkg": "com.homwee.aipont",
+          "note": "brand portal"
+        },
+        {
+          "pkg": "com.homwee.store"
+        },
+        {
+          "pkg": "com.homwee.help",
+          "note": "e-manual"
+        },
+        {
+          "pkg": "com.homwee.chinstallapk",
+          "note": "silent installer"
+        },
+        {
+          "pkg": "com.homwee.chtvmanager",
+          "note": "TV Manager cleaner / memory optimizer"
+        },
+        {
+          "pkg": "com.homwee.upgrade",
+          "note": "re-enable to check for RCA firmware"
+        },
+        {
+          "pkg": "com.homwee.dmt.upgrade",
+          "note": "second factory updater"
+        },
+        {
+          "pkg": "android.autoinstalls.config.homwee"
+        },
+        {
+          "pkg": "com.homwee.mmp.screenshare",
+          "note": "re-enable to mirror a screen"
+        },
+        {
+          "pkg": "com.homwee.multiscreenshare"
+        },
+        {
+          "pkg": "com.homwee.mmp.fileexplorer",
+          "note": "re-enable to browse USB storage"
+        },
+        {
+          "pkg": "com.homwee.mmp.imageplayer",
+          "note": "re-enable to view photos from USB"
+        }
+      ]
+    },
+    {
+      "title": "Content recognition, FAST channels and Google TV promo rows",
+      "packages": [
+        {
+          "pkg": "tv.anoki.acr.anokiacroptin",
+          "note": "automatic content recognition"
+        },
+        {
+          "pkg": "com.cltv.fast",
+          "note": "FAST channel app"
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.android.tv.feedbackconsent"
+        },
+        {
+          "pkg": "com.google.android.partnersetup"
+        }
+      ]
+    },
+    {
+      "title": "Setup wizards, assistant and accessibility. Re-enable the ones you use.",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith",
+          "note": "first-run wizard; on this tvlauncher firmware Home works without touching it"
+        },
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "re-enable for the microphone button"
+        },
+        {
+          "pkg": "com.homwee.alexacontrol",
+          "note": "Alexa integration; re-enable if you use Alexa (#38)"
+        },
+        {
+          "pkg": "com.google.android.tts"
+        },
+        {
+          "pkg": "com.google.android.marvin.talkback",
+          "note": "re-enable for TalkBack"
+        },
+        {
+          "pkg": "com.google.android.backdrop",
+          "note": "ambient screensaver"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar"
+        },
+        {
+          "pkg": "com.google.android.tv.remote.service",
+          "note": "Android phone remote; Chromecast is mediashell"
+        }
+      ]
+    },
+    {
+      "title": "Stock launcher, replaced by launcher/. Left to launcher/build-and-install.sh, which disables it only",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvlauncher",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Optional: uncomment what you don't use. Left enabled on the test set unless noted.",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Chromecast; re-enabled, iPhones cast YouTube with it",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.youtube.tv",
+          "note": "re-enabled",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic",
+          "note": "disabled on the test set",
+          "optional": true
+        },
+        {
+          "pkg": "com.apple.atve.androidtv.appletv",
+          "note": "disabled on the test set",
+          "optional": true
+        },
+        {
+          "pkg": "com.disney.disneyplus",
+          "note": "disabled on the test set",
+          "optional": true
+        },
+        {
+          "pkg": "com.mercadolibre.android.mplay_tv",
+          "note": "disabled on the test set",
+          "optional": true
+        },
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom",
+          "note": "already disabled at the factory",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.play.games",
+          "note": "already disabled at the factory",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/rca-ai-pont/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

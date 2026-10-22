@@ -1,0 +1,188 @@
+{
+  "schema": 1,
+  "id": "philips-55oled708",
+  "name": "Philips 55OLED708/12",
+  "tested": {
+    "os": "Google TV 12",
+    "sdk": 31,
+    "build": "20803"
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "TP Vision telemetry",
+      "packages": [
+        {
+          "pkg": "org.droidtv.candeebug",
+          "note": "\"DAC\" analytics uploader"
+        },
+        {
+          "pkg": "org.droidtv.gel",
+          "note": "\"GEL\" metrics collector, runs inside candeebug's process; disable both"
+        },
+        {
+          "pkg": "org.droidtv.tv.frameworklogger",
+          "note": "\"FrameworkLogger\": hands reboot reasons and firmware-install records to the Philips logger"
+        },
+        {
+          "pkg": "tv.samba.ssm",
+          "note": "\"Samba Services Manager\": Samba TV ACR (identifies what is on screen), Firebase + Mixpanel"
+        },
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "Market Feedback Agent"
+        }
+      ]
+    },
+    {
+      "title": "Philips and Google promos, retail demo, first-setup leftovers",
+      "packages": [
+        {
+          "pkg": "com.tpv.nftgallery",
+          "note": "\"NFT Collection\" art gallery app, INTERNET"
+        },
+        {
+          "pkg": "org.droidtv.demome",
+          "note": "\"Demo me\" retail demo loop. KEPT: on this firmware it requests TV_INPUT_HARDWARE, so disable.sh refuses it (#321)",
+          "optional": true
+        },
+        {
+          "pkg": "org.droidtv.m7opapp",
+          "note": "M7 satellite operator promo (Canal Digitaal, TV Vlaanderen, Skylink, HD Austria); keep if you use one"
+        },
+        {
+          "pkg": "org.droidtv.astrahdplus",
+          "note": "\"HD+\", German Astra satellite pay-TV operator app; keep if you subscribe"
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "partner referrer / attribution"
+        },
+        {
+          "pkg": "com.google.android.onetimeinitializer",
+          "note": "runs once at first setup, nothing afterwards"
+        }
+      ]
+    },
+    {
+      "title": "Philips features this owner does not use. Check each against your own setup.",
+      "packages": [
+        {
+          "pkg": "com.phorus.playfi.tv",
+          "note": "\"Play-Fi\" multi-room audio app"
+        },
+        {
+          "pkg": "com.phorus.playfi.softap",
+          "note": "DTSPlayFiSoftAP, Play-Fi's soft access point helper"
+        },
+        {
+          "pkg": "org.droidtv.tv.playFiAudioService",
+          "note": "KEEP: Settings, audiocalibration and tpvaudiomanager bind it",
+          "optional": true
+        },
+        {
+          "pkg": "org.droidtv.control4app",
+          "note": "\"Control4\" home-automation integration (4 packages)"
+        },
+        {
+          "pkg": "org.droidtv.control4adapterservice",
+          "note": "\"UcAdaptor\""
+        },
+        {
+          "pkg": "org.droidtv.control4sddp",
+          "note": "\"SddpService\", Control4 discovery"
+        },
+        {
+          "pkg": "org.droidtv.control4UcService",
+          "note": "\"UcService\""
+        },
+        {
+          "pkg": "org.droidtv.matter",
+          "note": "\"MatterTV\", Matter smart-home bridge"
+        },
+        {
+          "pkg": "io.mimi.tvapp",
+          "note": "\"Mimi Sound Personalization\" hearing-test app; Settings only links to it"
+        },
+        {
+          "pkg": "io.mimi.sdk.service",
+          "note": "\"MimiService\", its audio service; nothing bound it"
+        },
+        {
+          "pkg": "org.droidtv.amazonalexa",
+          "note": "\"Amazon Alexa\" bridge (was running at idle)"
+        }
+      ]
+    },
+    {
+      "title": "Casting this owner does not use (AirPlay is kept: com.mediatek.partner.airplay_sys and friends)",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Chromecast built-in (~26 MB at idle)"
+        },
+        {
+          "pkg": "com.mediatek.dialservice",
+          "note": "\"AOW_DIAL\": DIAL, how Netflix/YouTube phone apps find the TV"
+        }
+      ]
+    },
+    {
+      "title": "Preinstalled apps and streaming apps this owner does not use, all in /data/app",
+      "packages": [
+        {
+          "pkg": "tv.twitch.android.app",
+          "note": "Twitch"
+        },
+        {
+          "pkg": "com.megogo.application",
+          "note": "MEGOGO"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google TV / Play Movies"
+        },
+        {
+          "pkg": "com.boosteroidtv.streaming",
+          "note": "Boosteroid cloud gaming"
+        },
+        {
+          "pkg": "com.tm.replica",
+          "note": "\"Replica\" iPhone screen mirroring"
+        },
+        {
+          "pkg": "com.google.android.play.games",
+          "note": "Play Games"
+        }
+      ]
+    },
+    {
+      "title": "Google TV setup wizard. Its RecoveryActivity claims Home at priority 1 and takes over once the stock",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith"
+        }
+      ]
+    },
+    {
+      "title": "Stock launcher and the content it alone used. Disable the launcher FIRST (launcher/build-and-install.sh",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.tv.launcherx",
+          "note": "build-and-install.sh disables it; 182 MB across two processes at idle",
+          "optional": true
+        },
+        {
+          "pkg": "org.droidtv.oemtabprovider",
+          "note": "\"Philips\" tab of the Google TV home screen (promos), INTERNET"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/philips-55oled708/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

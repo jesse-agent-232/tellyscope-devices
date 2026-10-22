@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "sony-bravia-4k-vh2",
+  "name": "Sony BRAVIA 4K VH2",
+  "tested": {
+    "os": "Android 12",
+    "sdk": 31,
+    "build": "BRAVIA_VH2_EU-user"
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "ACR viewing tracker",
+      "packages": [
+        {
+          "pkg": "tv.samba.ssm",
+          "note": "Samba TV fingerprints what's on screen"
+        },
+        {
+          "pkg": "tv.samba.ssm.ui"
+        }
+      ]
+    },
+    {
+      "title": "telemetry and remote support",
+      "packages": [
+        {
+          "pkg": "com.qterics.da.product"
+        },
+        {
+          "pkg": "com.sony.dtv.da.service"
+        },
+        {
+          "pkg": "com.sonyericsson.idd.agent"
+        },
+        {
+          "pkg": "com.sony.dtv.sonybugreportsys"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        }
+      ]
+    },
+    {
+      "title": "demo / shop mode",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.demosupport"
+        },
+        {
+          "pkg": "com.sony.dtv.demosystemsupport"
+        },
+        {
+          "pkg": "com.sony.dtv.multiscreendemo"
+        }
+      ]
+    },
+    {
+      "title": "preloaded apps",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.customersupport",
+          "note": "Help tile"
+        },
+        {
+          "pkg": "com.sony.dtv.smarthelp"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        }
+      ]
+    },
+    {
+      "title": "Google TV setup wizard: claims HOME and takes over once the stock launcher is disabled",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/sony-bravia-4k-vh2/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

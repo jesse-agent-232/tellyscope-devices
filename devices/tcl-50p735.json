@@ -1,0 +1,124 @@
+{
+  "schema": 1,
+  "id": "tcl-50p735",
+  "name": "TCL 50P735 BeyondTV4",
+  "tested": {
+    "os": "Android 11",
+    "sdk": 30,
+    "build": "and"
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "1. Telemetry and analytics",
+      "packages": [
+        {
+          "pkg": "com.tcl.bi"
+        },
+        {
+          "pkg": "com.tcl.logkit"
+        }
+      ]
+    },
+    {
+      "title": "2. Content, promos, recommendation rows and Google extras",
+      "packages": [
+        {
+          "pkg": "com.tcl.partnercustomizer"
+        },
+        {
+          "pkg": "com.tcl.waterfall.overseas"
+        },
+        {
+          "pkg": "com.tcl.tv.tclhome_passive"
+        },
+        {
+          "pkg": "com.tcl.esticker"
+        },
+        {
+          "pkg": "com.tcl.channelplus"
+        },
+        {
+          "pkg": "com.tcl.overseasappshow"
+        },
+        {
+          "pkg": "com.google.android.videos"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.onetimeinitializer"
+        },
+        {
+          "pkg": "com.google.android.partnersetup"
+        },
+        {
+          "pkg": "android.autoinstalls.config.google.gtvpai"
+        },
+        {
+          "pkg": "com.google.android.apps.nbu.smartconnect.tv"
+        }
+      ]
+    },
+    {
+      "title": "3. Cleaners, background services, duplicate webview, and unused tools",
+      "packages": [
+        {
+          "pkg": "com.tcl.guard"
+        },
+        {
+          "pkg": "com.tcl.suspension"
+        },
+        {
+          "pkg": "com.tcl.gamebar"
+        },
+        {
+          "pkg": "com.tcl.ocean.instructions"
+        },
+        {
+          "pkg": "com.tcl.keyhelp"
+        },
+        {
+          "pkg": "com.tcl.ui_mediaCenter"
+        },
+        {
+          "pkg": "com.tcl.browser"
+        },
+        {
+          "pkg": "com.tcl.messagebox"
+        },
+        {
+          "pkg": "com.tcl.useragreement"
+        },
+        {
+          "pkg": "com.tcl.t_solo"
+        },
+        {
+          "pkg": "com.tcl.hearaid"
+        },
+        {
+          "pkg": "com.tcl.dashboard"
+        },
+        {
+          "pkg": "com.tcl.versionUpdateApp"
+        },
+        {
+          "pkg": "com.tcl.android.webview"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tcl-50p735/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

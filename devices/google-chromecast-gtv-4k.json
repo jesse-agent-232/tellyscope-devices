@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "id": "google-chromecast-gtv-4k",
+  "name": "Chromecast with Google TV 4K",
+  "tested": {
+    "os": "Google TV 4",
+    "sdk": 34,
+    "build": "UTTC.250917.004"
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Telemetry, feedback and ads",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.android.tv.feedbackconsent"
+        },
+        {
+          "pkg": "com.google.android.tv.remotecontrol.logging",
+          "note": "remote usage logging"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.netoscope",
+          "note": "network diagnostics reporting"
+        },
+        {
+          "pkg": "com.google.android.federatedcompute"
+        },
+        {
+          "pkg": "com.google.android.ondevicepersonalization.services"
+        },
+        {
+          "pkg": "com.google.android.adservices.api",
+          "note": "Privacy Sandbox ad services"
+        },
+        {
+          "pkg": "com.google.android.ext.adservices.api"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps",
+      "packages": [
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google TV / Play Movies"
+        },
+        {
+          "pkg": "com.android.printspooler"
+        },
+        {
+          "pkg": "com.google.android.marvin.talkback",
+          "note": "re-enable if you need the screen reader"
+        }
+      ]
+    },
+    {
+      "title": "Google ambient mode screensaver (replaced by the launcher's Clock screensaver)",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.tv.dreamx"
+        },
+        {
+          "pkg": "com.google.android.backdrop"
+        }
+      ]
+    },
+    {
+      "title": "Stock home. launcher/build-and-install.sh disables launcherx itself once the new launcher is installed",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.tv.launcherx",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.tungsten.setupwraith",
+          "note": "setup wizard; its RecoveryActivity otherwise takes over Home"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/google-chromecast-gtv-4k/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

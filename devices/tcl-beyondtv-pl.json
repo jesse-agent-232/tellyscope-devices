@@ -1,0 +1,157 @@
+{
+  "schema": 1,
+  "id": "tcl-beyondtv-pl",
+  "name": "TCL BeyondTV",
+  "tested": {
+    "os": "Android TV 9",
+    "sdk": 28,
+    "build": "PPR1.180610.011"
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "1. Telemetry and analytics",
+      "packages": [
+        {
+          "pkg": "com.tcl.bi",
+          "note": "TCL BI analytics"
+        },
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "\"send feedback\""
+        },
+        {
+          "pkg": "com.google.android.tv.bugreportsender",
+          "note": "bug report uploader"
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "partner-app attribution"
+        },
+        {
+          "pkg": "com.google.android.onetimeinitializer",
+          "note": "one-time setup leftovers"
+        },
+        {
+          "pkg": "android.autoinstalls.config.tcl.device",
+          "note": "partner-app auto installer"
+        }
+      ]
+    },
+    {
+      "title": "2. Content, recommendation rows and promos",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvrecommendations",
+          "note": "home-screen recommendation rows"
+        },
+        {
+          "pkg": "com.google.android.leanbacklauncher.recommendations"
+        },
+        {
+          "pkg": "com.tcl.partnercustomizer",
+          "note": "TCL promo rows, T-Channel"
+        },
+        {
+          "pkg": "com.tcl.messagebox",
+          "note": "TCL message/promo box"
+        },
+        {
+          "pkg": "com.tcl.esticker",
+          "note": "retail demo stickers"
+        },
+        {
+          "pkg": "com.tcl.cyberui",
+          "note": "TCL's own content service, unused"
+        }
+      ]
+    },
+    {
+      "title": "3. Preloads and background extras",
+      "packages": [
+        {
+          "pkg": "com.tcl.ui_mediaCenter",
+          "note": "USB media centre; nothing on USB here"
+        },
+        {
+          "pkg": "com.tcl.keyhelp",
+          "note": "remote-key help overlays"
+        },
+        {
+          "pkg": "com.tcl.notereminder",
+          "note": "note/reminder app: firmware re-enables it at every boot, so not listed",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "4. Off by choice: voice and screen mirroring (Chromecast and the firmware updater are kept)",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google voice search and the mic button"
+        },
+        {
+          "pkg": "com.google.android.speech.pumpkin",
+          "note": "offline speech recognition"
+        },
+        {
+          "pkg": "com.tcl.assistant",
+          "note": "TCL's Google Assistant bridge"
+        },
+        {
+          "pkg": "com.google.android.tv.assistant",
+          "note": "Assistant LED service"
+        },
+        {
+          "pkg": "com.tcl.miracast",
+          "note": "Miracast screen mirroring"
+        },
+        {
+          "pkg": "com.tcl.MultiScreenInteraction_TV",
+          "note": "TCL T-Cast phone app link"
+        }
+      ]
+    },
+    {
+      "title": "5. Streaming apps not used (re-enable any of them with tools/restore.sh or `pm enable <package>`)",
+      "packages": [
+        {
+          "pkg": "com.google.android.youtube.tv",
+          "note": "YouTube"
+        },
+        {
+          "pkg": "pl.tvn.player.tv",
+          "note": "player.pl"
+        },
+        {
+          "pkg": "com.spotify.tv.android",
+          "note": "Spotify"
+        },
+        {
+          "pkg": "com.valvesoftware.steamlink",
+          "note": "Steam Link"
+        }
+      ]
+    },
+    {
+      "title": "6. After the launcher is installed (both carry a PackageInstallerService; the Play Store stays)",
+      "packages": [
+        {
+          "pkg": "com.tcl.tvweishi",
+          "note": "TCL \"TV Guard\" cleaner"
+        },
+        {
+          "pkg": "com.tcl.appmarket2",
+          "note": "TCL app store"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tcl-beyondtv-pl/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

@@ -1,0 +1,182 @@
+{
+  "schema": 1,
+  "id": "xgimi-mogo-3-pro",
+  "name": "XGIMI MoGo 3 Pro projector",
+  "tested": {
+    "os": "Android 14",
+    "sdk": 34,
+    "build": "UKNV.260707.001.15802496"
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [
+    {
+      "pkg": "com.xgimi.autokst",
+      "note": "auto keystone correction"
+    },
+    {
+      "pkg": "com.xgimi.windowsystem",
+      "note": "keystone/window service"
+    },
+    {
+      "pkg": "com.xgimi.tof",
+      "note": "ToF autofocus"
+    },
+    {
+      "pkg": "com.xgimi.misckey",
+      "note": "remote keys, focus/keystone shortcuts"
+    },
+    {
+      "pkg": "com.xgimi.uiconfiguration",
+      "note": "global key receiver, power listener"
+    },
+    {
+      "pkg": "com.xgimi.xrmservice",
+      "note": "global remote keys, picture/sound adaptation (re-enables the stock launcher, see above)"
+    },
+    {
+      "pkg": "com.xgimi.xgimiservice",
+      "note": "core XGIMI system service"
+    },
+    {
+      "pkg": "com.xgimi.autoinstall",
+      "note": "purpose unclear (PermissionRequestActivity only): kept"
+    },
+    {
+      "pkg": "com.xgimi.overseas.xgimiatvbootwizard",
+      "note": "first-boot wizard"
+    },
+    {
+      "pkg": "com.mediatek.tvinput",
+      "note": "HDMI input service"
+    },
+    {
+      "pkg": "com.mediatek.tv.service",
+      "note": "TV service, Netflix key receiver"
+    },
+    {
+      "pkg": "com.google.android.tv.inputplayer",
+      "note": "HDMI passthrough player and input switcher"
+    },
+    {
+      "pkg": "com.nbcast.wirelessscreen",
+      "note": "MagiCast: the screen-mirroring receiver (\"Mogo3Pro\" in a phone's list)"
+    }
+  ],
+  "groups": [
+    {
+      "title": "Store demo, factory and test tools",
+      "packages": [
+        {
+          "pkg": "fusion.android.tv.demo",
+          "note": "RetailDisplay store demo"
+        },
+        {
+          "pkg": "com.xgimi.atvwifiverify",
+          "note": "factory Wi-Fi verification"
+        },
+        {
+          "pkg": "com.xgimi.minitvfactory",
+          "note": "factory menu, file transfer and burn-in services"
+        }
+      ]
+    },
+    {
+      "title": "Telemetry and feedback",
+      "packages": [
+        {
+          "pkg": "com.xgimi.bugreportsender",
+          "note": "XGIMI bug report uploader"
+        },
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "Google feedback"
+        }
+      ]
+    },
+    {
+      "title": "Google TV setup wizard (claims HOME on Google TV 14; re-enable before a factory reset)",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith"
+        }
+      ]
+    },
+    {
+      "title": "Google content and preloads",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.tv.dreamx",
+          "note": "Google TV Ambient / Backdrop screensaver"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Play Movies"
+        },
+        {
+          "pkg": "com.google.android.play.games",
+          "note": "Play Games"
+        },
+        {
+          "pkg": "com.google.android.marvin.talkback",
+          "note": "TalkBack (accessibility)"
+        }
+      ]
+    },
+    {
+      "title": "Streaming apps (off by choice)",
+      "packages": [
+        {
+          "pkg": "air.ITVMobilePlayer",
+          "note": "ITVX"
+        }
+      ]
+    },
+    {
+      "title": "Voice, casting, phone remote (off by choice)",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google Assistant / Gemini voice search"
+        },
+        {
+          "pkg": "com.google.android.tv.assistant",
+          "note": "assistant LED service"
+        },
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Chromecast built-in"
+        },
+        {
+          "pkg": "com.google.android.tv.remote.service",
+          "note": "Google TV phone remote"
+        }
+      ]
+    },
+    {
+      "title": "XGIMI extras (off by choice)",
+      "packages": [
+        {
+          "pkg": "com.xgimi.screensaver",
+          "note": "XGIMI Atmosphere screensaver / ambient scenes"
+        },
+        {
+          "pkg": "com.xgimi.ota.accessories",
+          "note": "firmware updates for remote, speaker, curtain"
+        },
+        {
+          "pkg": "com.xgimi.gimiplayer",
+          "note": "local video/photo player"
+        },
+        {
+          "pkg": "com.xgimi.doubanfm",
+          "note": "XGIMI music app, speaker-mode screen"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/xgimi-mogo-3-pro/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

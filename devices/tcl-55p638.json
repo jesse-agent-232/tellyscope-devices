@@ -1,0 +1,174 @@
+{
+  "schema": 1,
+  "id": "tcl-55p638",
+  "name": "TCL 55P638",
+  "tested": {
+    "os": "Android TV 11",
+    "sdk": null,
+    "build": null
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "Google TV home and setup",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.launcherx",
+          "note": "launcher/build-and-install.sh disables it after the new launcher starts",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "TCL analytics, logging, content feeds, promos and optional vendor services",
+      "packages": [
+        {
+          "pkg": "com.tcl.bi"
+        },
+        {
+          "pkg": "com.tcl.logkit"
+        },
+        {
+          "pkg": "com.tcl.guard"
+        },
+        {
+          "pkg": "com.tcl.esticker"
+        },
+        {
+          "pkg": "com.tcl.channelplus"
+        },
+        {
+          "pkg": "com.tcl.waterfall.overseas"
+        },
+        {
+          "pkg": "com.tcl.partnercustomizer"
+        },
+        {
+          "pkg": "com.tcl.tv.tclhome_passive"
+        },
+        {
+          "pkg": "com.tcl.overseasappshow"
+        },
+        {
+          "pkg": "com.tcl.messagebox"
+        },
+        {
+          "pkg": "com.tcl.usercenter"
+        },
+        {
+          "pkg": "com.tcl.dashboard"
+        },
+        {
+          "pkg": "com.tcl.notereminder"
+        },
+        {
+          "pkg": "com.tcl.ocean.instructions"
+        },
+        {
+          "pkg": "com.tcl.ttvs",
+          "note": "firmware-dependent TCL service; inherited disabled state"
+        },
+        {
+          "pkg": "com.tcl.t_solo",
+          "note": "optional private-listening feature"
+        }
+      ]
+    },
+    {
+      "title": "Voice assistants — off by choice",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss"
+        },
+        {
+          "pkg": "com.google.android.tv.assistant"
+        },
+        {
+          "pkg": "com.tcl.assistant"
+        },
+        {
+          "pkg": "com.tcl.smartalexa"
+        }
+      ]
+    },
+    {
+      "title": "Google extras / preload configuration",
+      "packages": [
+        {
+          "pkg": "android.autoinstalls.config.google.gtvpai"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.videos"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "disabled by owner choice; not proven telemetry-only"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar",
+          "note": "Google calendar sync"
+        }
+      ]
+    },
+    {
+      "title": "Unused streaming apps — off by choice",
+      "packages": [
+        {
+          "pkg": "au.com.stan.and"
+        },
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom"
+        },
+        {
+          "pkg": "com.netflix.ninja"
+        },
+        {
+          "pkg": "tv.wuaki.apptv"
+        }
+      ]
+    },
+    {
+      "title": "Optional apps — off by choice",
+      "packages": [
+        {
+          "pkg": "com.tcl.browser",
+          "note": "BrowseHere; disabled and owner-tested"
+        },
+        {
+          "pkg": "com.google.android.marvin.talkback",
+          "note": "screen reader; no accessibility service was active"
+        },
+        {
+          "pkg": "com.tcl.magiconnectfree",
+          "note": "MagiConnect / T-Cast phone integration"
+        },
+        {
+          "pkg": "org.chromium.webview_shell",
+          "note": "test browser, NOT the system WebView provider"
+        },
+        {
+          "pkg": "com.tcl.gallery",
+          "note": "TCL gallery"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tcl-55p638/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

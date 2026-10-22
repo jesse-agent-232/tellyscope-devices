@@ -1,0 +1,121 @@
+{
+  "schema": 1,
+  "id": "polytron-2k-hayward",
+  "name": "Polytron 2K Android TV",
+  "tested": {
+    "os": "Android TV 11",
+    "sdk": null,
+    "build": "RTMA.250416.094"
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "Ads and silent installs",
+      "packages": [
+        {
+          "pkg": "android.autoinstalls.config.hisense",
+          "note": "silently installs promoted apps"
+        },
+        {
+          "pkg": "android.autoinstalls.config.hisense.hayward",
+          "note": "same, device-specific config"
+        },
+        {
+          "pkg": "com.mediatek.android.leanbacklauncher.partnercustomizer",
+          "note": "partner promo rows on the stock launcher"
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations",
+          "note": "feeds the recommendation / sponsored rows"
+        },
+        {
+          "pkg": "fusion.android.tv.demo",
+          "note": "store demo mode"
+        }
+      ]
+    },
+    {
+      "title": "Second Home claimant (header). disable.sh checks first that it does not own the saved Wi-Fi network.",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith"
+        }
+      ]
+    },
+    {
+      "title": "Telemetry",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "partner referral tracking"
+        }
+      ]
+    },
+    {
+      "title": "Unused system services (also in the Hisense lists here; the contacts provider stays)",
+      "packages": [
+        {
+          "pkg": "com.mstar.android.tv.disclaimercustomization",
+          "note": "store-mode disclaimer"
+        },
+        {
+          "pkg": "com.android.printspooler",
+          "note": "printing"
+        },
+        {
+          "pkg": "com.android.providers.calendar"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar"
+        }
+      ]
+    },
+    {
+      "title": "Off by choice on the tested set (keep what you use)",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "voice search / Assistant"
+        },
+        {
+          "pkg": "com.google.android.backdrop",
+          "note": "ambient screensaver (pick Basic or the launcher's Clock screensaver instead)"
+        },
+        {
+          "pkg": "com.google.android.youtube.tv",
+          "note": "official YouTube (TizenTube is used instead)"
+        },
+        {
+          "pkg": "com.netflix.ninja"
+        },
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Chromecast built-in (26 MB in the background)"
+        },
+        {
+          "pkg": "com.google.android.tts",
+          "note": "Google text-to-speech (only needed for screen reading)"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom",
+          "note": "Prime Video"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/polytron-2k-hayward/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

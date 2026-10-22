@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "id": "nokia-streaming-box-8000",
+  "name": "Nokia Streaming Box 8000",
+  "tested": {
+    "os": "Android TV 14",
+    "sdk": 34,
+    "build": "UKG3.240613.001"
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Telemetry, feedback and ad measurement",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "Google RLZ partner attribution pings"
+        },
+        {
+          "pkg": "com.android.adservices.api",
+          "note": "Privacy Sandbox ad services"
+        },
+        {
+          "pkg": "com.android.ondevicepersonalization.services",
+          "note": "ad personalisation"
+        },
+        {
+          "pkg": "com.android.federatedcompute.services",
+          "note": "federated ad/usage learning"
+        }
+      ]
+    },
+    {
+      "title": "Content and ad services",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvrecommendations",
+          "note": "recommendation rows for the stock launcher"
+        },
+        {
+          "pkg": "com.nes.leanbacklauncher.partnercustomizer",
+          "note": "Nokia's Shop/Discover row config for the stock launcher"
+        },
+        {
+          "pkg": "android.autoinstalls.config.sei",
+          "note": "Play auto-install of partner apps"
+        }
+      ]
+    },
+    {
+      "title": "Factory/test leftovers and preloads nobody uses on a TV",
+      "packages": [
+        {
+          "pkg": "com.nes.dvb.playtest",
+          "note": "DVB factory play test"
+        },
+        {
+          "pkg": "com.utsmta.app",
+          "note": "factory test, listens for USB sticks"
+        },
+        {
+          "pkg": "com.android.printspooler"
+        },
+        {
+          "pkg": "com.google.android.marvin.talkback",
+          "note": "re-enable if you need the screen reader"
+        }
+      ]
+    },
+    {
+      "title": "Off by choice",
+      "packages": [
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        },
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google Assistant: the remote's mic button stops working"
+        },
+        {
+          "pkg": "com.google.android.backdrop",
+          "note": "ambient screensaver, replaced by the launcher's Clock"
+        }
+      ]
+    },
+    {
+      "title": "Stock home: cannot be disabled or suspended away here (HOME priority 2, \"core application\").",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvlauncher",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/nokia-streaming-box-8000/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

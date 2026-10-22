@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "id": "xiaomi-mi-box-s-2nd-gen",
+  "name": "Xiaomi Mi Box S 2nd gen",
+  "tested": {
+    "os": "Android 11",
+    "sdk": 30,
+    "build": null
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Telemetry and attribution",
+      "packages": [
+        {
+          "pkg": "com.miui.tv.analytics",
+          "note": "Mi analytics"
+        },
+        {
+          "pkg": "com.xiaomi.statistic",
+          "note": "Xiaomi usage stats uploader"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "Google RLZ attribution pings"
+        }
+      ]
+    },
+    {
+      "title": "Ad rows, promos and auto-installs",
+      "packages": [
+        {
+          "pkg": "com.mitv.tvhome.oemtab",
+          "note": "Xiaomi ad row"
+        },
+        {
+          "pkg": "com.mitv.tvhome.michannel",
+          "note": "Mi content rows"
+        },
+        {
+          "pkg": "com.mitv.tvhome.mitvplus",
+          "note": "Mi TV+ ad-funded channels"
+        },
+        {
+          "pkg": "com.mitv.tvhome.atv",
+          "note": "PatchWall"
+        },
+        {
+          "pkg": "com.xm.webcontent",
+          "note": "Xiaomi web promos"
+        },
+        {
+          "pkg": "android.autoinstalls.config.xioami.mibox3",
+          "note": "Play auto-install of partner apps (sic, \"xioami\")"
+        }
+      ]
+    },
+    {
+      "title": "Xiaomi update service, off by choice; re-enable to check for a firmware update",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.mitv.updateservice"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps, off by choice",
+      "packages": [
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom",
+          "note": "Prime Video"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google TV / Play Movies"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.android.printspooler"
+        }
+      ]
+    },
+    {
+      "title": "ONLY AFTER com.gathin.tvhome IS INSTALLED. Disabling launcherx alone hands Home to the setup wizard's",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/xiaomi-mi-box-s-2nd-gen/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

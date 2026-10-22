@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "caxium-58-realtek-rtk2851p",
+  "name": "Caxium 58\" 147 cm UHD Smart TV",
+  "tested": {
+    "os": "Android TV 9",
+    "sdk": 28,
+    "build": "RTK2851P"
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "Content, ads and auto-installs",
+      "packages": [
+        {
+          "pkg": "com.zeasn.services.general",
+          "note": "Zeasn services: SHOW_AD action, weather, YouTube/search shortcuts"
+        },
+        {
+          "pkg": "android.autoinstalls.config.realtek.device",
+          "note": "Play auto-installs of partner apps"
+        }
+      ]
+    },
+    {
+      "title": "Telemetry and update check",
+      "packages": [
+        {
+          "pkg": "com.zeasn.deviceportal.asdprovider.toptech",
+          "note": "Zeasn device portal; also OTA_PULL_CHECK, so no firmware update notices"
+        }
+      ]
+    },
+    {
+      "title": "Background services not needed",
+      "packages": [
+        {
+          "pkg": "com.android.printspooler"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps the owner does not use",
+      "packages": [
+        {
+          "pkg": "com.amazon.avod.thirdpartyclient",
+          "note": "Prime Video"
+        },
+        {
+          "pkg": "com.disney.disneyplus"
+        },
+        {
+          "pkg": "com.spotify.tv.android"
+        },
+        {
+          "pkg": "com.facebook.katana"
+        }
+      ]
+    },
+    {
+      "title": "Voice assistant (owner does not use it; the remote's microphone button stops working)",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/caxium-58-realtek-rtk2851p/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

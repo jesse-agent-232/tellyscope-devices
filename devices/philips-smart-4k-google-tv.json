@@ -1,0 +1,106 @@
+{
+  "schema": 1,
+  "id": "philips-smart-4k-google-tv",
+  "name": "Philips Smart 4K TV",
+  "tested": {
+    "os": "Google TV 14",
+    "sdk": null,
+    "build": null
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Skyworth recommendations, telemetry and preloads",
+      "packages": [
+        {
+          "pkg": "com.smartdevice.recommendation",
+          "note": "content/recommendation rows (coolita channels)"
+        },
+        {
+          "pkg": "com.smartdevice.aftersale",
+          "note": "\"after-sale\" tracker: boot + network receivers, location"
+        },
+        {
+          "pkg": "com.smartdevice.recordactivation",
+          "note": "records first activation"
+        },
+        {
+          "pkg": "com.smartdevice.dailymanage",
+          "note": "background service started at boot"
+        },
+        {
+          "pkg": "com.smartdevice.myapp",
+          "note": "Skyworth \"My Apps\" screen"
+        },
+        {
+          "pkg": "com.smartdevice.leanbacklauncher.customizer",
+          "note": "partner config that injects rows into the home screen"
+        },
+        {
+          "pkg": "com.Smartdevice.emanual",
+          "note": "on-screen manual"
+        }
+      ]
+    },
+    {
+      "title": "Google extras",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        }
+      ]
+    },
+    {
+      "title": "Casting (by choice; keep if you cast from your phone or mirror an iPhone/PC)",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Chromecast built-in"
+        },
+        {
+          "pkg": "com.mediatek.dialservice",
+          "note": "DIAL, phone apps' \"cast to TV\" discovery"
+        },
+        {
+          "pkg": "com.smartdevice.dtv.icast",
+          "note": "Skyworth/Coocaa AirPlay + Miracast; bundles Sensors Data analytics"
+        }
+      ]
+    },
+    {
+      "title": "Google Assistant / Gemini (by choice)",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss"
+        },
+        {
+          "pkg": "com.android.hotwordenrollment.okgoogle"
+        },
+        {
+          "pkg": "com.android.hotwordenrollment.xgoogle"
+        }
+      ]
+    },
+    {
+      "title": "Stock home. Disable only after the new launcher is installed and set as home.",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith",
+          "note": "its RecoveryActivity otherwise takes over Home"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.launcherx"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/philips-smart-4k-google-tv/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "schema": 1,
+  "id": "thomson-sppl-4k-sw6h",
+  "name": "Thomson SPPL 4K Google TV",
+  "tested": {
+    "os": "Android TV 14",
+    "sdk": 34,
+    "build": "UTT1.250517.001"
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "Telemetry and after-sale push",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.android.tv.feedbackconsent"
+        },
+        {
+          "pkg": "com.smartdevice.aftersale",
+          "note": "boot + network receivers, can install APKs"
+        },
+        {
+          "pkg": "com.smartdevice.dailymanage",
+          "note": "\"Daily Manage\" boot service, no documented purpose"
+        }
+      ]
+    },
+    {
+      "title": "Android ad and personalisation services",
+      "packages": [
+        {
+          "pkg": "com.android.adservices.api"
+        },
+        {
+          "pkg": "com.android.ondevicepersonalization.services"
+        },
+        {
+          "pkg": "com.android.federatedcompute.services"
+        }
+      ]
+    },
+    {
+      "title": "Skyworth content, ads, demos and preloads",
+      "packages": [
+        {
+          "pkg": "com.smartdevice.recommendation",
+          "note": "Coocaa recommendation rows; bundles Sensors Data analytics"
+        },
+        {
+          "pkg": "com.smartdevice.leanbacklauncher.customizer",
+          "note": "partner config that injects rows into the home screen"
+        },
+        {
+          "pkg": "android.autoinstalls.config.google.gtvpai",
+          "note": "Play auto-installs of partner apps"
+        },
+        {
+          "pkg": "com.smartdevice.epopplayer",
+          "note": "ePop shop demo player"
+        },
+        {
+          "pkg": "fusion.android.tv.demo",
+          "note": "shop demo player"
+        },
+        {
+          "pkg": "com.coocaa.demonow.lightining",
+          "note": "\"Demo Now\" retail mode"
+        },
+        {
+          "pkg": "com.Smartdevice.emanual",
+          "note": "on-screen manual"
+        },
+        {
+          "pkg": "com.mstar.android.tv.disclaimercustomization",
+          "note": "retail legal-disclaimer dialogs"
+        },
+        {
+          "pkg": "com.smartdevice.myapp",
+          "note": "Skyworth \"My App\" shortcut page"
+        },
+        {
+          "pkg": "com.smartdevice.setupwraith",
+          "note": "Skyworth first-run/privacy wizard; setup is finished"
+        }
+      ]
+    },
+    {
+      "title": "Not needed on a TV",
+      "packages": [
+        {
+          "pkg": "com.android.healthconnect.controller"
+        },
+        {
+          "pkg": "com.android.health.connect.backuprestore"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar"
+        },
+        {
+          "pkg": "org.liskovsoft.androidtv.rukeyboard",
+          "note": "Russian soft keyboard: keyboards stay on (see header)",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Off by owner's choice",
+      "packages": [
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google TV (Play Movies)"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        }
+      ]
+    },
+    {
+      "title": "Handover, only once launcher/ owns Home (build-and-install.sh does launcherx itself)",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.tv.launcherx",
+          "note": "stock Google TV home"
+        },
+        {
+          "pkg": "com.google.android.tungsten.setupwraith",
+          "note": "RecoveryActivity otherwise steals Home"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/thomson-sppl-4k-sw6h/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

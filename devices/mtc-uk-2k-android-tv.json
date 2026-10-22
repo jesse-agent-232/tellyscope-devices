@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "mtc-uk-2k-android-tv",
+  "name": "MTC UK 2K Android TV",
+  "tested": {
+    "os": "Android TV 11",
+    "sdk": null,
+    "build": null
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "Google launcher ad/recommendation services (launcher itself is disabled by build-and-install.sh)",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvrecommendations"
+        },
+        {
+          "pkg": "com.google.android.leanbacklauncher.partnercustomizer"
+        }
+      ]
+    },
+    {
+      "title": "Google telemetry and ambient ads",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.backdrop"
+        }
+      ]
+    },
+    {
+      "title": "Voice, by choice: katniss is Assistant and voice search, so the remote's mic button stops working",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded junk",
+      "packages": [
+        {
+          "pkg": "fusion.android.tv.demo"
+        },
+        {
+          "pkg": "com.mstar.android.tv.disclaimercustomization"
+        }
+      ]
+    },
+    {
+      "title": "Calendar on a TV",
+      "packages": [
+        {
+          "pkg": "com.android.providers.calendar"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar"
+        }
+      ]
+    },
+    {
+      "title": "Freeview Play app layer (RTE bridge). Note: on the tested unit the whole",
+      "packages": [
+        {
+          "pkg": "com.twentyfouri.tvbridge.rte"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/mtc-uk-2k-android-tv/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

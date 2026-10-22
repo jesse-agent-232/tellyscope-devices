@@ -1,0 +1,134 @@
+{
+  "schema": 1,
+  "id": "dialog-viu-sei103dl",
+  "name": "Dialog ViU",
+  "tested": {
+    "os": "Android TV 9",
+    "sdk": 28,
+    "build": "PI.4348"
+  },
+  "launcher": "com.dialog.tv",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Telemetry and operator remote management",
+      "packages": [
+        {
+          "pkg": "com.nes.tvbugtracker",
+          "note": "NES bug tracker, starts at boot"
+        },
+        {
+          "pkg": "com.nes.tr069",
+          "note": "Dialog TR-069 remote management and statistics"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.tv.bugreportsender"
+        }
+      ]
+    },
+    {
+      "title": "Boot advertisements, silent installs, recommendation services",
+      "packages": [
+        {
+          "pkg": "com.nes.skywayclient",
+          "note": "NES Skyway: boot ads, silent installs; likely OTA too, re-enable for updates"
+        },
+        {
+          "pkg": "android.autoinstalls.config.sei",
+          "note": "Play auto-install of partner apps"
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations"
+        },
+        {
+          "pkg": "com.google.android.leanbacklauncher.recommendations"
+        }
+      ]
+    },
+    {
+      "title": "Factory and phone leftovers",
+      "packages": [
+        {
+          "pkg": "com.utsmta.app",
+          "note": "NES factory test app (USB receiver)"
+        },
+        {
+          "pkg": "com.android.smspush",
+          "note": "WAP push manager, no SMS on a TV box"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps",
+      "packages": [
+        {
+          "pkg": "com.google.android.youtube.tvmusic",
+          "note": "YouTube Music"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Play Movies & TV"
+        },
+        {
+          "pkg": "com.google.android.play.games",
+          "note": "Play Games"
+        },
+        {
+          "pkg": "com.android.camera2",
+          "note": "Camera, no camera on this box"
+        },
+        {
+          "pkg": "com.android.gallery3d",
+          "note": "Gallery"
+        }
+      ]
+    },
+    {
+      "title": "Optional, tested without side effects. Uncomment the ones you do not use.",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Chromecast built-in",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google voice search; the Voice button does nothing without it",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.speech.pumpkin",
+          "note": "offline speech engine for voice search",
+          "optional": true
+        },
+        {
+          "pkg": "com.nes.remoteota.six",
+          "note": "Bluetooth remote firmware updater (Nanosic); pairing stays in com.nes.blerc",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.backdrop",
+          "note": "ambient screensaver; pick another one in Settings first, or the box has none",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Stock home. Disable only after the new launcher is installed and set as home.",
+      "packages": [
+        {
+          "pkg": "com.dialog.tv",
+          "note": "Dialog home, IPTV and Catch-up; keep it if you watch Dialog's channels"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/dialog-viu-sei103dl/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

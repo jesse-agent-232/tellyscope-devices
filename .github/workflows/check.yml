@@ -1,0 +1,19 @@
+name: Check
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Tests
+        run: python3 -m unittest discover -s tests -v
+      - name: Lists, match rules and index.json are valid and in step
+        run: python3 tools/build.py check

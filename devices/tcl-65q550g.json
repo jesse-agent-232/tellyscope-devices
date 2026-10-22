@@ -1,0 +1,162 @@
+{
+  "schema": 1,
+  "id": "tcl-65q550g",
+  "name": "TCL 65Q550G",
+  "tested": {
+    "os": "Google TV 11",
+    "sdk": null,
+    "build": null
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "Batch 1 - telemetry and analytics",
+      "packages": [
+        {
+          "pkg": "com.tcl.ttvs",
+          "note": "TCL BI/awareness/identifier services"
+        },
+        {
+          "pkg": "com.tcl.guard",
+          "note": "TGuard: device-use tracking, \"health info\", memory cleaner"
+        },
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "\"send feedback\""
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "partner-app attribution"
+        }
+      ]
+    },
+    {
+      "title": "Batch 2 - TCL content, ads and promos",
+      "packages": [
+        {
+          "pkg": "com.tcl.waterfall.overseas",
+          "note": "TCL content recommendations"
+        },
+        {
+          "pkg": "com.tcl.partnercustomizer",
+          "note": "TCL rows on the Google TV home"
+        },
+        {
+          "pkg": "com.tcl.messagebox",
+          "note": "pushed messages and promos"
+        },
+        {
+          "pkg": "com.tcl.usercenter",
+          "note": "TCL account"
+        },
+        {
+          "pkg": "com.tcl.dashboard",
+          "note": "\"TCL Home\" panel, gift box and promos"
+        },
+        {
+          "pkg": "com.tcl.tv.tclhome_passive",
+          "note": "pushes TCL content at boot"
+        },
+        {
+          "pkg": "com.tcl.esticker",
+          "note": "retail demo stickers"
+        }
+      ]
+    },
+    {
+      "title": "Batch 3 - preloaded apps and services not used",
+      "packages": [
+        {
+          "pkg": "au.com.stan.and",
+          "note": "Stan (AU): disabled by the firmware on arrival, shell may not touch it",
+          "optional": true
+        },
+        {
+          "pkg": "tv.wuaki.apptv",
+          "note": "Rakuten TV"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic",
+          "note": "YouTube Music"
+        },
+        {
+          "pkg": "com.google.android.play.games",
+          "note": "Play Games"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google TV / Play Movies storefront"
+        },
+        {
+          "pkg": "com.tcl.gallery"
+        },
+        {
+          "pkg": "com.tcl.ui_mediaCenter",
+          "note": "USB media player (VLC is installed) - re-enable for USB drives"
+        },
+        {
+          "pkg": "com.tcl.notereminder",
+          "note": "notes/reminders"
+        },
+        {
+          "pkg": "com.tcl.hearaid",
+          "note": "hearing test / volume adaptation"
+        },
+        {
+          "pkg": "com.google.android.marvin.talkback",
+          "note": "screen reader"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar"
+        },
+        {
+          "pkg": "com.google.android.onetimeinitializer"
+        }
+      ]
+    },
+    {
+      "title": "Batch 4 - voice and casting (owner keeps Chromecast and Miracast)",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google Assistant / voice search (mic button)"
+        },
+        {
+          "pkg": "com.google.android.tv.assistant",
+          "note": "assistant LED service"
+        },
+        {
+          "pkg": "com.tcl.assistant",
+          "note": "TCL voice service"
+        },
+        {
+          "pkg": "com.tcl.smartalexa",
+          "note": "Alexa"
+        },
+        {
+          "pkg": "com.tcl.airplay2",
+          "note": "AirPlay"
+        },
+        {
+          "pkg": "com.mediatek.AirplayAPK",
+          "note": "AirPlay"
+        }
+      ]
+    },
+    {
+      "title": "Batch 5 - with the launcher in this repo installed (launcher/build-and-install.sh disables launcherx)",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith",
+          "note": "first-run wizard; owns saved Wi-Fi networks and claims HOME."
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tcl-65q550g/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

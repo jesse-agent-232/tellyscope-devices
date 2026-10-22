@@ -1,0 +1,132 @@
+{
+  "schema": 1,
+  "id": "gadnic-proj100w",
+  "name": "Gadnic PROJ100W",
+  "tested": {
+    "os": "Google TV 14",
+    "sdk": 34,
+    "build": "UKG3.250518.001"
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "Telemetry and remote management",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "Google feedback reporter"
+        },
+        {
+          "pkg": "com.android.tv.feedbackconsent",
+          "note": "feedback consent screen"
+        },
+        {
+          "pkg": "com.oemservice",
+          "note": "xCPE remote-management agent (boot receiver only)"
+        }
+      ]
+    },
+    {
+      "title": "Ads and personalization",
+      "packages": [
+        {
+          "pkg": "com.android.adservices.api",
+          "note": "Privacy Sandbox ad services"
+        },
+        {
+          "pkg": "com.android.ondevicepersonalization.services"
+        },
+        {
+          "pkg": "com.android.federatedcompute.services"
+        }
+      ]
+    },
+    {
+      "title": "Factory test apps",
+      "packages": [
+        {
+          "pkg": "com.oem.qa",
+          "note": "BoxFactoryTest"
+        },
+        {
+          "pkg": "com.sdt.producttest",
+          "note": "Skyworth product test, key check, USB command handler"
+        }
+      ]
+    },
+    {
+      "title": "Unused on a projector stick",
+      "packages": [
+        {
+          "pkg": "com.android.printspooler"
+        },
+        {
+          "pkg": "com.android.healthconnect.controller"
+        },
+        {
+          "pkg": "com.android.health.connect.backuprestore"
+        },
+        {
+          "pkg": "com.android.cameraextensions"
+        },
+        {
+          "pkg": "com.android.dynsystem"
+        },
+        {
+          "pkg": "com.android.hotspot2.osulogin"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        }
+      ]
+    },
+    {
+      "title": "Voice assistant - owner does not use it",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss"
+        }
+      ]
+    },
+    {
+      "title": "",
+      "packages": [
+        {
+          "pkg": "com.google.android.marvin.talkback",
+          "note": "TalkBack screen reader, unused"
+        }
+      ]
+    },
+    {
+      "title": "Off by choice (owner was not asked about this yet; left enabled)",
+      "packages": [
+        {
+          "pkg": "com.google.android.youtube.tvmusic",
+          "note": "YouTube Music",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Stock home, only for a replacement launcher. Re-enable both before a factory reset or if you",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.tv.launcherx"
+        },
+        {
+          "pkg": "com.google.android.tungsten.setupwraith",
+          "note": "first-run wizard; owns Wi-Fi saved at setup until rejoined"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/gadnic-proj100w/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

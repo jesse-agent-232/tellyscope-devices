@@ -1,0 +1,226 @@
+{
+  "schema": 1,
+  "id": "amazon-fire-tv-afteu014",
+  "name": "Amazon Fire TV smart TV",
+  "tested": {
+    "os": "Fire OS 7.6.8.5",
+    "sdk": 28,
+    "build": null
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "Amazon telemetry, metrics, logs, usage reporting",
+      "packages": [
+        {
+          "pkg": "com.amazon.client.metrics.api"
+        },
+        {
+          "pkg": "com.amazon.dp.logger"
+        },
+        {
+          "pkg": "com.amazon.ceviche",
+          "note": "data collection pipelines"
+        },
+        {
+          "pkg": "com.amazon.tv.developer.dataservice",
+          "note": "content personalization data for third-party apps"
+        },
+        {
+          "pkg": "com.amazon.livedeviceservice"
+        },
+        {
+          "pkg": "com.amazon.privacypassservice",
+          "note": "privacy pass token service"
+        },
+        {
+          "pkg": "com.amazon.wifilocker",
+          "note": "uploads Wi-Fi passwords to Amazon"
+        },
+        {
+          "pkg": "com.amazon.device.metrics",
+          "note": "protected on Fire OS 7",
+          "optional": true
+        },
+        {
+          "pkg": "com.amazon.device.logmanager",
+          "note": "protected on Fire OS 7",
+          "optional": true
+        },
+        {
+          "pkg": "com.amazon.device.crashmanager",
+          "note": "protected on Fire OS 7",
+          "optional": true
+        },
+        {
+          "pkg": "com.amazon.diode",
+          "note": "protected on Fire OS 7",
+          "optional": true
+        },
+        {
+          "pkg": "com.amazon.minerva.client.api",
+          "note": "protected on Fire OS 7",
+          "optional": true
+        },
+        {
+          "pkg": "com.fireos.usagestats.proxy",
+          "note": "protected on Fire OS 7",
+          "optional": true
+        },
+        {
+          "pkg": "com.amazon.ftvads.deeplinking",
+          "note": "protected on Fire OS 7",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Ads, promos, notices, tutorials",
+      "packages": [
+        {
+          "pkg": "com.amazon.kso.blackbird",
+          "note": "launcher ad sync / bidding"
+        },
+        {
+          "pkg": "com.amazon.device.sale.service",
+          "note": "sale / deal campaign service"
+        },
+        {
+          "pkg": "com.amazon.tv.easyupgrade",
+          "note": "\"upgrade your Fire TV\" promos"
+        },
+        {
+          "pkg": "com.amazon.systemnotices"
+        },
+        {
+          "pkg": "com.amazon.tv.releasenotes",
+          "note": "\"what's new\" release notes"
+        },
+        {
+          "pkg": "com.amazon.uxnotification",
+          "note": "UX notification popups"
+        },
+        {
+          "pkg": "com.amazon.storm.lightning.tutorial"
+        },
+        {
+          "pkg": "com.amazon.tmm.tutorial",
+          "note": "remote tutorial"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded Amazon apps (owner's choice)",
+      "packages": [
+        {
+          "pkg": "com.amazon.bueller.music",
+          "note": "Amazon Music"
+        },
+        {
+          "pkg": "com.amazon.bueller.photos",
+          "note": "Amazon Photos"
+        },
+        {
+          "pkg": "com.amazon.tv.localgallery",
+          "note": "USB photo/video viewer"
+        },
+        {
+          "pkg": "com.amazon.tahoe",
+          "note": "Amazon Kids (FreeTime)"
+        },
+        {
+          "pkg": "com.amazon.gamehub",
+          "note": "Luna / games hub"
+        },
+        {
+          "pkg": "com.amazon.imdb.tv.android.app",
+          "note": "Freevee stub"
+        },
+        {
+          "pkg": "com.amazon.minitv.android.app",
+          "note": "miniTV"
+        },
+        {
+          "pkg": "com.amazon.naatyam"
+        },
+        {
+          "pkg": "com.amazon.audiohome",
+          "note": "Alexa Home Theater"
+        }
+      ]
+    },
+    {
+      "title": "Alexa voice (owner's choice; TTS and accessibility kept)",
+      "packages": [
+        {
+          "pkg": "com.amazon.vizzini",
+          "note": "Alexa voice on Fire TV"
+        },
+        {
+          "pkg": "com.amazon.alexamediaplayer.runtime.ftv"
+        },
+        {
+          "pkg": "com.amazon.alexa.externalmediaplayer.fireos"
+        },
+        {
+          "pkg": "com.amazon.wha.mediabrowserservice"
+        },
+        {
+          "pkg": "com.amazon.spotify.mediabrowserservice",
+          "note": "Spotify for Alexa (the Spotify app is separate)"
+        },
+        {
+          "pkg": "com.amazon.ods.kindleconnect",
+          "note": "\"show on Fire TV\" from Echo / Fire tablet"
+        }
+      ]
+    },
+    {
+      "title": "Silk browser (owner's choice)",
+      "packages": [
+        {
+          "pkg": "com.amazon.cloud9",
+          "note": "Silk browser"
+        },
+        {
+          "pkg": "com.amazon.tv.website_launcher"
+        }
+      ]
+    },
+    {
+      "title": "Fire OS updates (owner's choice). The OTA service itself is protected, so updates still arrive; only the forced updater is off",
+      "packages": [
+        {
+          "pkg": "com.amazon.device.software.ota",
+          "note": "protected on Fire OS 7",
+          "optional": true
+        },
+        {
+          "pkg": "com.amazon.device.software.ota.override",
+          "note": "protected on Fire OS 7",
+          "optional": true
+        },
+        {
+          "pkg": "com.amazon.tv.forcedotaupdater.v2"
+        }
+      ]
+    },
+    {
+      "title": "Printing (nothing to print from on a TV)",
+      "packages": [
+        {
+          "pkg": "com.android.printspooler"
+        },
+        {
+          "pkg": "com.android.bips"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/amazon-fire-tv-afteu014/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

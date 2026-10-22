@@ -1,0 +1,163 @@
+{
+  "schema": 1,
+  "id": "tcl-g05-google-tv",
+  "name": "TCL Smart TV Pro",
+  "tested": {
+    "os": "Android 11",
+    "sdk": null,
+    "build": "is"
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "TCL content, ads and promos",
+      "packages": [
+        {
+          "pkg": "com.tcl.tv.plus",
+          "note": "TCL TV+ content app"
+        },
+        {
+          "pkg": "com.tcl.channelplus",
+          "note": "TCL Live FAST channels"
+        },
+        {
+          "pkg": "com.tcl.tv.tclchannel",
+          "note": "TCL Channel, bundles Google Mobile Ads"
+        },
+        {
+          "pkg": "com.tcl.waterfall.overseas",
+          "note": "TCL content \"waterfall\" recommendations"
+        },
+        {
+          "pkg": "com.tcl.partnercustomizer",
+          "note": "TCL tweaks to Google TV home rows"
+        },
+        {
+          "pkg": "com.tcl.messagebox",
+          "note": "TCL pushed messages and promos"
+        },
+        {
+          "pkg": "com.tcl.usercenter",
+          "note": "TCL account sign-in"
+        },
+        {
+          "pkg": "com.tcl.dashboard",
+          "note": "\"TCL Home\" panel, gift box and promos; no remote key uses it"
+        },
+        {
+          "pkg": "com.tcl.suspension",
+          "note": "Quick Panel; the remote's Input key stops working, use the"
+        }
+      ]
+    },
+    {
+      "title": "Telemetry and background services",
+      "packages": [
+        {
+          "pkg": "com.tcl.ttvs",
+          "note": "TCL BI/awareness/identifier services"
+        },
+        {
+          "pkg": "com.tcl.guard",
+          "note": "TGuard: \"health info\", device-use tracking, memory cleaner"
+        }
+      ]
+    },
+    {
+      "title": "Retail demo / store mode",
+      "packages": [
+        {
+          "pkg": "com.tcl.esticker"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps and services",
+      "packages": [
+        {
+          "pkg": "com.tcl.ocean.instructions",
+          "note": "e-manual"
+        },
+        {
+          "pkg": "com.tcl.gamebar",
+          "note": "re-enable for the console game-mode overlay"
+        },
+        {
+          "pkg": "com.tcl.ui_mediaCenter",
+          "note": "re-enable to play media from USB drives"
+        },
+        {
+          "pkg": "com.tcl.gallery"
+        },
+        {
+          "pkg": "android.autoinstalls.config.google.gtvpai"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.marvin.talkback"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.dreamx",
+          "note": "ambient mode screensaver, see the clock screensaver instead"
+        }
+      ]
+    },
+    {
+      "title": "Unused Google apps (owner's choice)",
+      "packages": [
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google TV / Play Movies storefront"
+        }
+      ]
+    },
+    {
+      "title": "Voice, casting and assistants (owner's choice; comment out what you use)",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google Assistant / voice search"
+        },
+        {
+          "pkg": "com.tcl.assistant",
+          "note": "TCL voice service"
+        },
+        {
+          "pkg": "com.google.android.tv.assistant",
+          "note": "assistant LED service"
+        },
+        {
+          "pkg": "com.tcl.smartalexa",
+          "note": "Alexa"
+        },
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Chromecast built-in"
+        },
+        {
+          "pkg": "com.tcl.airplay2",
+          "note": "AirPlay, together with the next line",
+          "optional": true
+        },
+        {
+          "pkg": "com.mediatek.AirplayAPK",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tcl-g05-google-tv/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

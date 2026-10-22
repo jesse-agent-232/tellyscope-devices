@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "tcl-32l5a",
+  "name": "TCL 32L5A",
+  "tested": {
+    "os": "Android TV 11",
+    "sdk": 30,
+    "build": "AR2101"
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "TCL account, promos, telemetry and content",
+      "packages": [
+        {
+          "pkg": "com.tcl.usercenter",
+          "note": "TCL account center"
+        },
+        {
+          "pkg": "com.tcl.guard",
+          "note": "TGuard cleaner app"
+        },
+        {
+          "pkg": "com.tcl.partnercustomizer",
+          "note": "Promo/recommendation rows on stock home"
+        },
+        {
+          "pkg": "com.tcl.waterfall.overseas",
+          "note": "TCL Channel / web video portal"
+        },
+        {
+          "pkg": "com.tcl.esticker",
+          "note": "Store demo sticker app"
+        },
+        {
+          "pkg": "com.tcl.copydatatotv",
+          "note": "Copy data utility"
+        },
+        {
+          "pkg": "com.tcl.t_solo",
+          "note": "TCL promotional service"
+        }
+      ]
+    },
+    {
+      "title": "Web browsers and feedback bloat",
+      "packages": [
+        {
+          "pkg": "com.internet.tvbrowser",
+          "note": "Preloaded TV Browser"
+        },
+        {
+          "pkg": "com.tcl.browser",
+          "note": "TCL Browser"
+        },
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "User feedback reporting"
+        },
+        {
+          "pkg": "com.google.android.play.games",
+          "note": "Play Games TV service"
+        }
+      ]
+    },
+    {
+      "title": "Stock Google TV launcher recommendations",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvrecommendations",
+          "note": "Channel recommendation feeds"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tcl-32l5a/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

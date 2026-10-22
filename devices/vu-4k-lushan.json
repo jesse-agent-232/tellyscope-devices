@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "vu-4k-lushan",
+  "name": "Vu 4K",
+  "tested": {
+    "os": "Android 12",
+    "sdk": 31,
+    "build": null
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Vu telemetry: ACR (\"Enhanced Viewing\" content recognition, consent and promotion screens)",
+      "packages": [
+        {
+          "pkg": "com.vt.tv.evservice"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        }
+      ]
+    },
+    {
+      "title": "Ads, auto-installs, retail demo",
+      "packages": [
+        {
+          "pkg": "android.autoinstalls.config.google.gtvpai",
+          "note": "Play auto-install of partner apps"
+        },
+        {
+          "pkg": "com.vt.storemode",
+          "note": "shop demo mode"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps not used (by choice)",
+      "packages": [
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google TV app (rent/buy movies)"
+        },
+        {
+          "pkg": "com.hisense.odinbrowser",
+          "note": "preloaded web browser"
+        },
+        {
+          "pkg": "com.vt.hishow",
+          "note": "Vu \"Family Moment\" photo sharing, with its own screensaver"
+        },
+        {
+          "pkg": "com.vt.tv.singlelisten",
+          "note": "Vu \"My Music\""
+        },
+        {
+          "pkg": "com.mxtech.videoplayer.television",
+          "note": "MX Player"
+        },
+        {
+          "pkg": "com.vt.alexa",
+          "note": "Alexa built-in (Google Assistant kept)"
+        }
+      ]
+    },
+    {
+      "title": "Google TV setup wizard: its RecoveryActivity claims Home at priority 1 and can crash-loop system_server",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/vu-4k-lushan/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

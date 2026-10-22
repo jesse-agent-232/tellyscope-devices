@@ -1,0 +1,138 @@
+{
+  "schema": 1,
+  "id": "anker-nebula-d2140",
+  "name": "Anker Nebula Cosmos projector",
+  "tested": {
+    "os": "Android TV 9",
+    "sdk": 28,
+    "build": "PI.20240530"
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [
+    {
+      "pkg": "com.droidlogic.keystone",
+      "note": "keystone (picture shape) correction"
+    },
+    {
+      "pkg": "com.sdmc.GlobalKey",
+      "note": "remote global keys"
+    },
+    {
+      "pkg": "com.sdmc.bluetoothconnect",
+      "note": "Bluetooth remote pairing wizard"
+    },
+    {
+      "pkg": "com.sdmc.bluetoothspeaker",
+      "note": "Bluetooth speaker mode"
+    },
+    {
+      "pkg": "com.sdmc.oemprovisionservice",
+      "note": "OEM provisioning"
+    },
+    {
+      "pkg": "com.oceanwing.receiver",
+      "note": "remote control, Nebula IME, screen control"
+    },
+    {
+      "pkg": "com.oceanwing.nebulalinker",
+      "note": "Nebula Connect phone app, device info, update dispatch"
+    },
+    {
+      "pkg": "com.oceanwing.ota",
+      "note": "firmware updates (kept by owner's choice)"
+    },
+    {
+      "pkg": "com.google.android.tungsten.setupwraith",
+      "note": "owns the Wi-Fi saved during setup"
+    }
+  ],
+  "groups": [
+    {
+      "title": "--- Telemetry and feedback ---",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.tv.bugreportsender"
+        }
+      ]
+    },
+    {
+      "title": "--- Content and ad services ---",
+      "packages": [
+        {
+          "pkg": "com.google.android.leanbacklauncher.recommendations"
+        },
+        {
+          "pkg": "android.autoinstalls.config.sdmc",
+          "note": "Play auto-install of partner apps"
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "partner-app attribution"
+        }
+      ]
+    },
+    {
+      "title": "--- Preloaded apps ---",
+      "packages": [
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.tcl.browser",
+          "note": "found installed as a user app; may not be on every unit"
+        },
+        {
+          "pkg": "com.zhixin.atvchannel",
+          "note": "channel app, found installed as a user app (~200 MB with its data)"
+        }
+      ]
+    },
+    {
+      "title": "--- Off by owner's choice (comment out to keep) ---",
+      "packages": [
+        {
+          "pkg": "com.google.android.backdrop",
+          "note": "Ambient Mode screensaver"
+        },
+        {
+          "pkg": "com.google.android.marvin.talkback",
+          "note": "TalkBack screen reader"
+        },
+        {
+          "pkg": "com.google.android.tts",
+          "note": "text-to-speech; re-enable if the Assistant stops speaking answers"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.contacts"
+        },
+        {
+          "pkg": "com.oceanwing.m1testsample",
+          "note": "Nebula factory test app"
+        }
+      ]
+    },
+    {
+      "title": "--- Stock home screen (only after the new launcher is installed: launcher/build-and-install.sh) ---",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvlauncher"
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations",
+          "note": "recommendation rows for the stock home"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/anker-nebula-d2140/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

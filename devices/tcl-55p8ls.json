@@ -1,0 +1,167 @@
+{
+  "schema": 1,
+  "id": "tcl-55p8ls",
+  "name": "TCL 55P8LS QD-Mini LED",
+  "tested": {
+    "os": "Android 12",
+    "sdk": null,
+    "build": "as"
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "TCL / third-party tracking and analytics",
+      "packages": [
+        {
+          "pkg": "tv.samba.ssm.ui",
+          "note": "Samba TV ACR viewing tracking (enabled at the factory here)"
+        },
+        {
+          "pkg": "com.tcl.ttvs",
+          "note": "TCL analytics; re-enable if firmware updates stop arriving"
+        },
+        {
+          "pkg": "com.tcl.logkit",
+          "note": "log capture and upload"
+        },
+        {
+          "pkg": "com.tcl.usercenter",
+          "note": "TCL account sign-in nags"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        }
+      ]
+    },
+    {
+      "title": "TCL content, ads and promos",
+      "packages": [
+        {
+          "pkg": "com.tcl.waterfall.overseas",
+          "note": "TCL Channel / content feed"
+        },
+        {
+          "pkg": "com.tcl.channelplus",
+          "note": "TCL Live FAST channels"
+        },
+        {
+          "pkg": "com.tcl.tv.tclhome_passive",
+          "note": "pushes TCL content to the home screen at boot"
+        },
+        {
+          "pkg": "com.tcl.partnercustomizer",
+          "note": "TCL tab and Vietnamese tab names on the Google TV home, see quirks"
+        },
+        {
+          "pkg": "com.tcl.interactive",
+          "note": "TCL TIAS background service"
+        },
+        {
+          "pkg": "com.tcl.messagebox",
+          "note": "TCL push messages and promos"
+        },
+        {
+          "pkg": "android.autoinstalls.config.google.gtvpai",
+          "note": "silently installs partner apps"
+        }
+      ]
+    },
+    {
+      "title": "Retail demo / hotel mode",
+      "packages": [
+        {
+          "pkg": "com.tcl.exhibit"
+        },
+        {
+          "pkg": "com.tcl.esticker"
+        },
+        {
+          "pkg": "com.tcl.hotelmenu"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps and services",
+      "packages": [
+        {
+          "pkg": "com.tcl.guard",
+          "note": "TGuard memory \"cleaner\""
+        },
+        {
+          "pkg": "com.tcl.ocean.instructions",
+          "note": "e-manual"
+        },
+        {
+          "pkg": "com.tcl.repairguide"
+        },
+        {
+          "pkg": "com.tcl.gamebar",
+          "note": "re-enable for the console game-mode overlay"
+        },
+        {
+          "pkg": "com.tcl.UpdatePeripheral",
+          "note": "re-enable to update a TCL soundbar"
+        },
+        {
+          "pkg": "com.tcl.smartalexa",
+          "note": "Alexa"
+        },
+        {
+          "pkg": "com.tcl.t_solo",
+          "note": "T-Solo \"listen alone\""
+        },
+        {
+          "pkg": "com.tcl.magiconnectfree",
+          "note": "MagiConnect / T-Cast phone app companion"
+        },
+        {
+          "pkg": "com.tcl.miracast",
+          "note": "screen mirroring from Android phones"
+        },
+        {
+          "pkg": "com.google.android.marvin.talkback"
+        }
+      ]
+    },
+    {
+      "title": "Needed for a custom launcher. Disable only AFTER the new launcher is installed, and setupwraith only",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.launcherx"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.dreamx",
+          "note": "ambient mode screensaver, see quirks"
+        }
+      ]
+    },
+    {
+      "title": "Disabled by choice on this TV (unused streaming apps): comment out the ones you watch",
+      "packages": [
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom",
+          "note": "Prime Video"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google TV / Play Movies"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tcl-55p8ls/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "tcl-beyondtv",
+  "name": "TCL BeyondTV",
+  "tested": {
+    "os": "Android TV 9",
+    "sdk": 28,
+    "build": "PPR1.180610.011"
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "TCL analytics, content and promos",
+      "packages": [
+        {
+          "pkg": "com.tcl.bi",
+          "note": "analytics / telemetry service"
+        },
+        {
+          "pkg": "com.tcl.tv.tclhome_passive",
+          "note": "pushes TCL content to the home screen at boot"
+        },
+        {
+          "pkg": "com.tcl.waterfall.overseas",
+          "note": "TCL web content feed"
+        },
+        {
+          "pkg": "com.tcl.esticker",
+          "note": "retail demo stickers"
+        },
+        {
+          "pkg": "com.tcl.tvweishi",
+          "note": "\"cleaner\" widget service"
+        },
+        {
+          "pkg": "com.tcl.notereminder"
+        },
+        {
+          "pkg": "com.tcl.appmarket2",
+          "note": "TCL app store (Google Play Store stays)"
+        }
+      ]
+    },
+    {
+      "title": "Google extras and recommendation rows (only useful with the stock launcher)",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvrecommendations"
+        },
+        {
+          "pkg": "com.google.android.leanbacklauncher.recommendations"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Play Movies & TV"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tcl-beyondtv/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

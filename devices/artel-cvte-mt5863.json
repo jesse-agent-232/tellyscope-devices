@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "artel-cvte-mt5863",
+  "name": "Artel smart TV",
+  "tested": {
+    "os": "Android 7.0",
+    "sdk": 24,
+    "build": null
+  },
+  "launcher": "com.cvte.tv.launcher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Preinstalled streaming and video apps",
+      "packages": [
+        {
+          "pkg": "com.netflix.ninja"
+        },
+        {
+          "pkg": "net.megogo.tv",
+          "note": "Megogo"
+        },
+        {
+          "pkg": "uz.allplay.apptv",
+          "note": "Allplay"
+        },
+        {
+          "pkg": "uz.i_tv.player",
+          "note": "i-TV"
+        },
+        {
+          "pkg": "ag.kinom",
+          "note": "Kinom"
+        }
+      ]
+    },
+    {
+      "title": "Preinstalled games and clients",
+      "packages": [
+        {
+          "pkg": "com.fgl27.twitch",
+          "note": "Twitch client"
+        },
+        {
+          "pkg": "com.fgol.HungrySharkEvolution"
+        }
+      ]
+    },
+    {
+      "title": "Accessibility and voice services that are not used",
+      "packages": [
+        {
+          "pkg": "com.google.android.marvin.talkback",
+          "note": "TalkBack, re-enable if you need a screen reader"
+        },
+        {
+          "pkg": "com.svox.pico",
+          "note": "Pico text-to-speech"
+        },
+        {
+          "pkg": "com.google.android.voicesearch"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/artel-cvte-mt5863/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

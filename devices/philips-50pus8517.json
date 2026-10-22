@@ -1,0 +1,223 @@
+{
+  "schema": 1,
+  "id": "philips-50pus8517",
+  "name": "Philips 50PUS8517/12",
+  "tested": {
+    "os": "Android TV 11",
+    "sdk": null,
+    "build": null
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "TP Vision telemetry. org.droidtv.gel runs inside the candeebug process",
+      "packages": [
+        {
+          "pkg": "org.droidtv.candeebug",
+          "note": "\"DAC\" analytics uploader: channel watched, resolution, HDMI-CEC devices, viewing times, Ambilight config; uploads to AWS Firehose/S3 and geolocates the public IP via ipinfo.io"
+        },
+        {
+          "pkg": "org.droidtv.gel",
+          "note": "metrics collector sharing candeebug's process; no INTERNET permission of its own"
+        },
+        {
+          "pkg": "org.droidtv.usagelogger",
+          "note": "boot stats, remote keypress counts, panel/eMMC telemetry forwarded to the above"
+        }
+      ]
+    },
+    {
+      "title": "Philips content promos and the app gallery",
+      "packages": [
+        {
+          "pkg": "org.droidtv.nettvrecommender",
+          "note": "\"Top Picks\" content promotion row"
+        },
+        {
+          "pkg": "org.droidtv.recommendation",
+          "note": "its headless backend; disable the row above first or you get a live tile with no data source"
+        },
+        {
+          "pkg": "org.droidtv.nettv.market",
+          "note": "\"Smart TV Collection\" app storefront"
+        },
+        {
+          "pkg": "org.droidtv.nettvapp1814",
+          "note": "ARTE"
+        },
+        {
+          "pkg": "org.droidtv.nettvapp4546",
+          "note": "MEGOGO"
+        },
+        {
+          "pkg": "org.droidtv.nettvapp4633",
+          "note": "alacarta RTVE"
+        },
+        {
+          "pkg": "org.droidtv.nettvapp4655",
+          "note": "Deezer"
+        },
+        {
+          "pkg": "org.droidtv.nettvapp4932",
+          "note": "Free Games by PlayWorks"
+        },
+        {
+          "pkg": "org.droidtv.nettvapp5326",
+          "note": "Toon Goggles"
+        },
+        {
+          "pkg": "org.droidtv.nettvapp5512",
+          "note": "Fishing TV"
+        },
+        {
+          "pkg": "org.droidtv.nettvapp20004410",
+          "note": "Couchplay Games"
+        },
+        {
+          "pkg": "org.droidtv.android.fitness",
+          "note": "Fitness Buddy"
+        }
+      ]
+    },
+    {
+      "title": "Philips features this owner does not use. Check each against your own setup.",
+      "packages": [
+        {
+          "pkg": "org.droidtv.amazonalexa",
+          "note": "Alexa bridge; live TV holds a binding into it, so test channel zapping and the EPG after disabling -- NOT exercised on this unit"
+        },
+        {
+          "pkg": "org.droidtv.dlna",
+          "note": "DLNA/UPnP server and renderer; persistent + coreApp, yet disables cleanly and contentexplorer (\"Media\") still starts and keeps its PID. Its DLNA init is gated behind a broadcast dlna itself sends, so the USB source should be unaffected -- reasoned from the code, not tested here"
+        },
+        {
+          "pkg": "org.droidtv.ipcontrol",
+          "note": "LAN control of volume, audio output, Ambilight on/off and ShopMode. NOTE: this is NOT the JointSpace API on ports 1925/1926 — that is served by org.droidtv.xtv, which must stay. Keep this if you drive the TV from Home Assistant"
+        },
+        {
+          "pkg": "org.droidtv.demome",
+          "note": "\"Demo me\" retail demo mode, e-sticker and shop loop; bound at boot by org.droidtv.settings to clear demo clips before a firmware update, null-guarded"
+        },
+        {
+          "pkg": "org.droidtv.m7opapp",
+          "note": "M7 satellite operator promo (Canal Digitaal, TV Vlaanderen, Skylink, HD Austria); keep if you use one of those"
+        }
+      ]
+    },
+    {
+      "title": "Google telemetry and first-setup leftovers",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "Market Feedback Agent"
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "partner referrer / attribution"
+        },
+        {
+          "pkg": "com.google.android.onetimeinitializer",
+          "note": "runs once at first setup, nothing afterwards"
+        },
+        {
+          "pkg": "com.google.android.sss.authbridge",
+          "note": "Second Screen Setup Auth Bridge (set-up-from-phone helper)"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar",
+          "note": "Google Calendar sync; no calendar app is installed on this TV"
+        }
+      ]
+    },
+    {
+      "title": "Google apps this owner does not use",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Assistant and voice search, ~101 MB across two processes. Kills the remote's mic button, \"Hey Google\", on-screen voice search and the mic icon inside YouTube and Play Store search. Settings and tvsystemui guard their calls into it, so nothing crashes"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google TV / Play Movies"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic",
+          "note": "YouTube Music"
+        },
+        {
+          "pkg": "com.google.android.marvin.talkback",
+          "note": "TalkBack screen reader; keep if anyone needs it"
+        }
+      ]
+    },
+    {
+      "title": "Preinstalled streaming apps. All of these sit in /data/app rather than on the system",
+      "packages": [
+        {
+          "pkg": "com.netflix.ninja"
+        },
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom",
+          "note": "Prime Video"
+        },
+        {
+          "pkg": "com.apple.atve.androidtv.appletv"
+        },
+        {
+          "pkg": "com.disney.disneyplus"
+        },
+        {
+          "pkg": "com.zeasn.whalelive",
+          "note": "WhaleLive (Zeasn) ad-supported FAST channels"
+        },
+        {
+          "pkg": "com.boosteroidtv.streaming",
+          "note": "Boosteroid cloud gaming"
+        },
+        {
+          "pkg": "com.witsoftware.ir.vodafonetv",
+          "note": "Vodafone TV; runs headless, no icon"
+        },
+        {
+          "pkg": "tv.sweet.tvplayer",
+          "note": "Sweet TV (Ukrainian IPTV)"
+        },
+        {
+          "pkg": "tv.wuaki.apptv",
+          "note": "Rakuten TV"
+        }
+      ]
+    },
+    {
+      "title": "Stock launcher and its content engine, replaced by launcher/ (or Projectivy).",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvlauncher",
+          "note": "launcher/build-and-install.sh disables the stock launcher itself, after Home has moved # 190 MB resident, the single heaviest process on this TV",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations",
+          "note": "\"Android TV Core Services\" despite the name: recommendation rows, channels, notification panel"
+        }
+      ]
+    },
+    {
+      "title": "Stock YouTube, replaced by SmartTube (ads and sponsor segments). 119 MB resident vs ~35 MB.",
+      "packages": [
+        {
+          "pkg": "com.google.android.youtube.tv"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/philips-50pus8517/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

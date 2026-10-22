@@ -1,0 +1,114 @@
+{
+  "schema": 1,
+  "id": "chiq-ai-pont",
+  "name": "CHiQ \"AI PONT\"",
+  "tested": {
+    "os": "Android TV 11",
+    "sdk": 30,
+    "build": null
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Telemetry, ads and recommendation rows",
+      "packages": [
+        {
+          "pkg": "tv.anoki.acr.controller",
+          "note": "Anoki automatic content recognition"
+        },
+        {
+          "pkg": "com.cltv.fast",
+          "note": "FAST channel app"
+        },
+        {
+          "pkg": "com.homwee.aipont",
+          "note": "AI PONT brand portal"
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations"
+        },
+        {
+          "pkg": "android.autoinstalls.config.homwee",
+          "note": "partner-app auto-installs"
+        }
+      ]
+    },
+    {
+      "title": "Vendor apps",
+      "packages": [
+        {
+          "pkg": "com.homwee.store"
+        },
+        {
+          "pkg": "com.homwee.help"
+        },
+        {
+          "pkg": "com.homwee.upgrade",
+          "note": "vendor app updater; the Play Store still updates apps"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        },
+        {
+          "pkg": "com.google.android.videos"
+        },
+        {
+          "pkg": "com.google.android.backdrop",
+          "note": "Ambient screensaver, replaced by the launcher's Clock"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar"
+        }
+      ]
+    },
+    {
+      "title": "Personal choice: comment out what you use",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google Assistant (the mic button stops working)"
+        },
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Chromecast built-in"
+        },
+        {
+          "pkg": "com.homwee.multiscreenshare",
+          "note": "Miracast / AirPlay"
+        },
+        {
+          "pkg": "com.homwee.mmp.screenshare"
+        },
+        {
+          "pkg": "com.homwee.alexacontrol"
+        }
+      ]
+    },
+    {
+      "title": "Stock launcher, replaced by launcher/. Left to launcher/build-and-install.sh, which disables it only",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvlauncher",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/chiq-ai-pont/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

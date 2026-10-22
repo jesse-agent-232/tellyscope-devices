@@ -1,0 +1,117 @@
+{
+  "schema": 1,
+  "id": "hisense-e5q-pro",
+  "name": "Hisense E5Q Pro",
+  "tested": {
+    "os": "Android 11",
+    "sdk": null,
+    "build": "as"
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "Hisense advertising",
+      "packages": [
+        {
+          "pkg": "com.hisense.business.ad",
+          "note": "ad SDK"
+        },
+        {
+          "pkg": "com.hisense.service.ad",
+          "note": "ad service"
+        }
+      ]
+    },
+    {
+      "title": "Hisense telemetry and reporting",
+      "packages": [
+        {
+          "pkg": "com.hisense.platformreport"
+        },
+        {
+          "pkg": "com.hisense.logupload"
+        }
+      ]
+    },
+    {
+      "title": "Hisense push messages",
+      "packages": [
+        {
+          "pkg": "com.hisense.service.message"
+        }
+      ]
+    },
+    {
+      "title": "Store, hotel and demo modes",
+      "packages": [
+        {
+          "pkg": "com.hisense.demonstrate"
+        },
+        {
+          "pkg": "com.hisense.hotelmenu"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded content and gimmicks",
+      "packages": [
+        {
+          "pkg": "com.hisense.electronictutorial",
+          "note": "electronic manual"
+        },
+        {
+          "pkg": "com.hisense.ar.baike",
+          "note": "AR encyclopedia"
+        },
+        {
+          "pkg": "com.vision.aibook",
+          "note": "AI picture book"
+        },
+        {
+          "pkg": "com.hisense.tv.foodmanage",
+          "note": "recipe app"
+        },
+        {
+          "pkg": "com.hisense.tv.fitmirror",
+          "note": "fitness mirror"
+        },
+        {
+          "pkg": "com.hisense.tv.videochat.social",
+          "note": "preloaded video chat"
+        },
+        {
+          "pkg": "com.hisense.tv.videoconference",
+          "note": "video conferencing"
+        }
+      ]
+    },
+    {
+      "title": "First-run setup and the ambience-photo screensaver",
+      "packages": [
+        {
+          "pkg": "com.jamdeo.tv.fte"
+        },
+        {
+          "pkg": "com.vt.ambiencephoto"
+        }
+      ]
+    },
+    {
+      "title": "Weather and calendar",
+      "packages": [
+        {
+          "pkg": "com.hisense.tv.weather"
+        },
+        {
+          "pkg": "com.jamdeo.calendar"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/hisense-e5q-pro/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

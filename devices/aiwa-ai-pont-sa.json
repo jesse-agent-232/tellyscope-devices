@@ -1,0 +1,115 @@
+{
+  "schema": 1,
+  "id": "aiwa-ai-pont-sa",
+  "name": "AIWA AI PONT SA",
+  "tested": {
+    "os": "Google TV 14",
+    "sdk": 34,
+    "build": null
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Content recognition (reports what is on screen)",
+      "packages": [
+        {
+          "pkg": "tv.anoki.acr.anokiacroptin"
+        }
+      ]
+    },
+    {
+      "title": "Ambient screensaver. Mixes recommendations into the backdrop.",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.tv.dreamx"
+        }
+      ]
+    },
+    {
+      "title": "Partner auto-installs and feedback",
+      "packages": [
+        {
+          "pkg": "com.google.android.partnersetup"
+        },
+        {
+          "pkg": "com.android.tv.feedbackconsent"
+        },
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "already disabled on the test set"
+        }
+      ]
+    },
+    {
+      "title": "Vendor store, help, app updater and screen sharing.",
+      "packages": [
+        {
+          "pkg": "com.homwee.store"
+        },
+        {
+          "pkg": "com.homwee.help"
+        },
+        {
+          "pkg": "com.homwee.upgrade",
+          "note": "vendor app updater, not firmware"
+        },
+        {
+          "pkg": "com.homwee.multiscreenshare"
+        },
+        {
+          "pkg": "com.homwee.mmp.screenshare"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps. Already disabled on the test set.",
+      "packages": [
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar"
+        }
+      ]
+    },
+    {
+      "title": "Personal choice. Already disabled on the test set; comment out what you use.",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "microphone / Assistant"
+        },
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Chromecast built-in"
+        }
+      ]
+    },
+    {
+      "title": "First-run wizard. Its RecoveryActivity takes Home once launcherx is gone.",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith"
+        }
+      ]
+    },
+    {
+      "title": "Stock launcher, replaced by launcher/. Left to launcher/build-and-install.sh,",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.tv.launcherx",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/aiwa-ai-pont-sa/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

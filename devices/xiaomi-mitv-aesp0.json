@@ -1,0 +1,244 @@
+{
+  "schema": 1,
+  "id": "xiaomi-mitv-aesp0",
+  "name": "Xiaomi MiTV-AESP0",
+  "tested": {
+    "os": "Android TV 9",
+    "sdk": 28,
+    "build": null
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Xiaomi + Google telemetry",
+      "packages": [
+        {
+          "pkg": "com.miui.tv.analytics"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.tv.bugreportsender"
+        },
+        {
+          "pkg": "tv.alphonso.alphonso_eula",
+          "note": "Alphonso automatic content recognition (viewing tracking)"
+        }
+      ]
+    },
+    {
+      "title": "PatchWall, content rows, sponsored rows",
+      "packages": [
+        {
+          "pkg": "com.mitv.tvhome.atv"
+        },
+        {
+          "pkg": "com.mitv.tvhome.michannel"
+        },
+        {
+          "pkg": "com.xm.webcontent"
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations"
+        },
+        {
+          "pkg": "android.autoinstalls.config.xiaomi.mibox3",
+          "note": "Play auto-install of partner apps"
+        },
+        {
+          "pkg": "android.autoinstalls.config.xioami.mibox3",
+          "note": "same, misspelled duplicate (sic, \"xioami\")"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps",
+      "packages": [
+        {
+          "pkg": "com.dazn"
+        },
+        {
+          "pkg": "com.nousguide.android.rbtv",
+          "note": "Red Bull TV"
+        },
+        {
+          "pkg": "com.google.android.apps.tachyon",
+          "note": "Google Duo"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.tcl.browser"
+        }
+      ]
+    },
+    {
+      "title": "Xiaomi services (second set)",
+      "packages": [
+        {
+          "pkg": "mitv.service",
+          "note": "MiTV service framework for the rows removed above"
+        },
+        {
+          "pkg": "com.mitv.download.service",
+          "note": "PatchWall download service"
+        },
+        {
+          "pkg": "com.mitv.videoplayer",
+          "note": "stock Mi video player; comment out if you use it"
+        },
+        {
+          "pkg": "com.xiaomi.android.tvsetup.partnercustomizer",
+          "note": "partner customisation that seeds partner apps at setup"
+        }
+      ]
+    },
+    {
+      "title": "Xiaomi services (second set, optional — the original set keeps these)",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.mitv.updateservice",
+          "note": "firmware updates; the original set keeps it, uncomment to stop OTAs",
+          "optional": true
+        },
+        {
+          "pkg": "com.mitv.milinkservice",
+          "note": "Mi Cast receiver; the original set keeps it, uncomment if you never cast",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Google TV plumbing this stick does not need (second set)",
+      "packages": [
+        {
+          "pkg": "com.google.android.tv",
+          "note": "Live Channels; the stick has no tuner or HDMI input"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google Play Movies & TV"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic",
+          "note": "YouTube Music TV"
+        },
+        {
+          "pkg": "com.google.android.tungsten.setupwraith",
+          "note": "setup wizard: gives Home back, costs casting (comment out to keep casting)"
+        },
+        {
+          "pkg": "com.google.android.partnersetup"
+        },
+        {
+          "pkg": "com.google.android.onetimeinitializer"
+        },
+        {
+          "pkg": "com.android.onetimeinitializer"
+        }
+      ]
+    },
+    {
+      "title": "Accounts, backup and printing plumbing (second set; nothing on a TV uses these)",
+      "packages": [
+        {
+          "pkg": "com.android.providers.contacts"
+        },
+        {
+          "pkg": "com.android.providers.calendar"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.contacts"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar"
+        },
+        {
+          "pkg": "com.google.android.backuptransport"
+        },
+        {
+          "pkg": "com.android.backupconfirm"
+        },
+        {
+          "pkg": "com.android.sharedstoragebackup"
+        },
+        {
+          "pkg": "com.android.wallpaperbackup"
+        },
+        {
+          "pkg": "com.android.printspooler"
+        },
+        {
+          "pkg": "com.android.companiondevicemanager",
+          "note": "kept: Bluetooth companion pairing, no list on main disables it",
+          "optional": true
+        },
+        {
+          "pkg": "com.android.settings.intelligence"
+        },
+        {
+          "pkg": "com.android.se",
+          "note": "secure element; the stick has no NFC"
+        },
+        {
+          "pkg": "com.android.cts.ctsshim",
+          "note": "CTS test shims, not user features"
+        },
+        {
+          "pkg": "com.android.cts.priv.ctsshim"
+        }
+      ]
+    },
+    {
+      "title": "Screensavers (second set; that stick runs always-on with its own home screen)",
+      "packages": [
+        {
+          "pkg": "com.google.android.backdrop"
+        },
+        {
+          "pkg": "com.android.dreams.basic"
+        },
+        {
+          "pkg": "com.mitv.dream"
+        }
+      ]
+    },
+    {
+      "title": "Voice, accessibility, phone remote (second set, optional; the original set keeps voice, so these stay",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "voice search; the voice stack barely works on this firmware",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.speech.pumpkin",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.tts",
+          "note": "text-to-speech; keep it if anything reads text aloud",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.marvin.talkback",
+          "note": "accessibility; only disable if nobody uses TalkBack",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.tv.remote.service",
+          "note": "kept enabled: phone-as-remote and the remote's mic bridge",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/xiaomi-mitv-aesp0/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

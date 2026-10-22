@@ -1,0 +1,134 @@
+{
+  "schema": 1,
+  "id": "tcl-50dp660",
+  "name": "TCL 50DP660",
+  "tested": {
+    "os": "Android TV 8.0",
+    "sdk": 26,
+    "build": "OTT1.180130.001"
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "Stock launcher and its recommendation rows, replaced by launcher/",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvlauncher"
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations"
+        },
+        {
+          "pkg": "com.google.android.leanbacklauncher.recommendations"
+        }
+      ]
+    },
+    {
+      "title": "Google media and voice - this set has no microphone",
+      "packages": [
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Play Movies"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Assistant / voice search, runs two processes"
+        },
+        {
+          "pkg": "com.google.android.speech.pumpkin",
+          "note": "speech recognition engine, see the note at the bottom"
+        }
+      ]
+    },
+    {
+      "title": "TCL content, mirroring, updaters and bundled players",
+      "packages": [
+        {
+          "pkg": "com.tcl.MultiScreenInteraction_TV",
+          "note": "MagiConnect screen mirroring"
+        },
+        {
+          "pkg": "com.tcl.partnercustomizer",
+          "note": "\"T-Channel\" content tiles on the stock home"
+        },
+        {
+          "pkg": "com.tcl.smartalexa",
+          "note": "Alexa bridge, persistent - see the note at the bottom"
+        },
+        {
+          "pkg": "com.tcl.versionUpdateApp",
+          "note": "OTA updater; re-enable to check for firmware updates"
+        },
+        {
+          "pkg": "com.tcl.ui_mediaCenter",
+          "note": "media centre plus USB scanning"
+        },
+        {
+          "pkg": "com.tcl.xian.StartandroidService",
+          "note": "TCL start-up service"
+        },
+        {
+          "pkg": "com.tcl.appmarket2",
+          "note": "TCL app store (21.2 MB APK)"
+        },
+        {
+          "pkg": "com.tcl.esticker",
+          "note": "retail demo stickers"
+        },
+        {
+          "pkg": "com.tcl.tvweishi",
+          "note": "\"cleaner\" widget"
+        },
+        {
+          "pkg": "com.tcl.m",
+          "note": "MenuHelp"
+        },
+        {
+          "pkg": "com.tcl.eletronicpolicy",
+          "note": "e-warranty sheet"
+        },
+        {
+          "pkg": "com.tcl.videoplayer"
+        },
+        {
+          "pkg": "com.tcl.audioplayer"
+        },
+        {
+          "pkg": "com.tcl.imageplayer"
+        },
+        {
+          "pkg": "com.tcl.pvr.pvrplayer"
+        }
+      ]
+    },
+    {
+      "title": "ODM leftovers and third-party preloads",
+      "packages": [
+        {
+          "pkg": "android.autoinstalls.config.tcl.device"
+        },
+        {
+          "pkg": "com.example.copydatatotv",
+          "note": "factory test app, persistent"
+        },
+        {
+          "pkg": "com.example.tvcapture",
+          "note": "factory test app"
+        },
+        {
+          "pkg": "tv.wuaki.apptv",
+          "note": "Rakuten TV"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tcl-50dp660/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

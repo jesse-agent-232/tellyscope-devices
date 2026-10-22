@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "stellamore-t950s",
+  "name": "Stellamore T950S projector",
+  "tested": {
+    "os": "Android 13",
+    "sdk": 33,
+    "build": null
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "--- Zeasn adware / vendor cloud ---",
+      "packages": [
+        {
+          "pkg": "zeasn.open.technical.tv.store.stellamore.tv",
+          "note": "\"App Store\" home tile - ships Google Ads (doubleclick)"
+        },
+        {
+          "pkg": "com.zeasn.deviceportal.asdprovider.xym_hisi351",
+          "note": "device portal/OTA (ASDMainService -> smarttv.zeasn.tv)"
+        },
+        {
+          "pkg": "com.zeasn.whale.saas",
+          "note": "stock launcher - also ships Google Ads (doubleclick).",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "--- Stellamore factory / test / guide junk ---",
+      "packages": [
+        {
+          "pkg": "com.stm",
+          "note": "STMFeaturesTest"
+        },
+        {
+          "pkg": "com.stm.factorytest",
+          "note": "STMFactoryAutoTest"
+        },
+        {
+          "pkg": "com.stellamore.tvfactory",
+          "note": "STMFactory"
+        },
+        {
+          "pkg": "com.stellamore.guide",
+          "note": "STMGuide setup wizard"
+        }
+      ]
+    },
+    {
+      "title": "--- Phone-style Google bloat, unused on a projector ---",
+      "packages": [
+        {
+          "pkg": "com.android.printspooler"
+        },
+        {
+          "pkg": "com.android.musicfx"
+        },
+        {
+          "pkg": "com.android.providers.calendar"
+        },
+        {
+          "pkg": "com.android.providers.contacts"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.contacts"
+        },
+        {
+          "pkg": "com.android.wallpaperbackup"
+        },
+        {
+          "pkg": "com.android.adservices.api",
+          "note": "Android on-device ad framework"
+        },
+        {
+          "pkg": "com.android.ondevicepersonalization.services",
+          "note": "on-device ad personalization"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/stellamore-t950s/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

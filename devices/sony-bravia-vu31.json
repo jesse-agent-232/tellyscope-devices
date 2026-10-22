@@ -1,0 +1,162 @@
+{
+  "schema": 1,
+  "id": "sony-bravia-vu31",
+  "name": "Sony BRAVIA VU31 4K",
+  "tested": {
+    "os": "Google TV 14",
+    "sdk": 34,
+    "build": "UKR1.240726.001"
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Sony promos, store demo and help tiles",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.promos",
+          "note": "My BRAVIA promos"
+        },
+        {
+          "pkg": "com.sony.dtv.sonyselect",
+          "note": "Sony Select app promos"
+        },
+        {
+          "pkg": "com.sony.dtv.sonytab",
+          "note": "Sony tab / partner content on the stock home"
+        },
+        {
+          "pkg": "com.sony.dtv.multiscreendemo",
+          "note": "shop demo"
+        },
+        {
+          "pkg": "com.sony.dtv.smarthelp",
+          "note": "Sony help tile"
+        },
+        {
+          "pkg": "com.sony.dtv.helpguidecontents",
+          "note": "help guide content (2nd)"
+        },
+        {
+          "pkg": "com.sonypicturescore",
+          "note": "Sony Pictures Core preload (2nd)"
+        }
+      ]
+    },
+    {
+      "title": "Ads and on-device ad personalisation (2nd)",
+      "packages": [
+        {
+          "pkg": "com.android.adservices.api",
+          "note": "Privacy Sandbox ad services"
+        },
+        {
+          "pkg": "com.android.federatedcompute.services",
+          "note": "federated learning for ad/usage models"
+        },
+        {
+          "pkg": "com.android.ondevicepersonalization.services",
+          "note": "on-device ad personalisation"
+        }
+      ]
+    },
+    {
+      "title": "Google leftovers a TV never needs",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "Google feedback reporter"
+        },
+        {
+          "pkg": "com.google.android.play.games",
+          "note": "Play Games"
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "RLZ install-attribution provider"
+        },
+        {
+          "pkg": "com.google.android.onetimeinitializer",
+          "note": "runs once after first setup"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar",
+          "note": "calendar sync; also carries Google's GrowthKit promos"
+        },
+        {
+          "pkg": "com.android.printspooler",
+          "note": "printing"
+        },
+        {
+          "pkg": "android.autoinstalls.config.google.gtvpai",
+          "note": "Play partner auto-installs (2nd)"
+        },
+        {
+          "pkg": "com.android.gallery3d",
+          "note": "legacy photo viewer (2nd)"
+        }
+      ]
+    },
+    {
+      "title": "Screensaver: set `settings put secure screensaver_components com.android.dreams.basic/.Colors` first, or",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.tv.dreamx",
+          "note": "Ambient photo/art screensaver (~46 MB resident; ~80 MB PSS"
+        }
+      ]
+    },
+    {
+      "title": "Off by choice (owner does not use them). Alexa (m2.seeds.iot), Chromecast, AirPlay, the phone",
+      "packages": [
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google TV / Play Movies"
+        },
+        {
+          "pkg": "com.apple.atve.androidtv.appletv",
+          "note": "Apple TV (preloaded in /data)"
+        },
+        {
+          "pkg": "com.crunchyroll.crunchyroid",
+          "note": "Crunchyroll"
+        },
+        {
+          "pkg": "com.suntv.sunnxt",
+          "note": "Sun NXT"
+        },
+        {
+          "pkg": "com.yupptv.scope.tvapp",
+          "note": "YuppTV"
+        },
+        {
+          "pkg": "com.analiti.fastest.android",
+          "note": "analiti speed test"
+        },
+        {
+          "pkg": "com.google.android.marvin.talkback",
+          "note": "screen reader, off by choice (2nd)"
+        }
+      ]
+    },
+    {
+      "title": "Launcher handover (2nd): setupwraith is safe to disable before the launcher (launcherx keeps Home), but",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith",
+          "note": "setup wizard; its RecoveryActivity claims HOME once launcherx is off"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.launcherx",
+          "note": "launcher/build-and-install.sh disables the stock launcher itself, after Home has moved",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/sony-bravia-vu31/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

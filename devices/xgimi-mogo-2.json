@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "xgimi-mogo-2",
+  "name": "XGIMI MoGo 2 projector",
+  "tested": {
+    "os": "Android TV 11",
+    "sdk": 30,
+    "build": "RTT0.211222.001"
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Telemetry, bug reports and feedback",
+      "packages": [
+        {
+          "pkg": "com.xgimi.datareporter",
+          "note": "XGIMI usage reporting"
+        },
+        {
+          "pkg": "com.xgimi.bugreportsender",
+          "note": "XGIMI bug report uploader"
+        },
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "Google feedback"
+        }
+      ]
+    },
+    {
+      "title": "Preloads",
+      "packages": [
+        {
+          "pkg": "com.ted.android.tv",
+          "note": "TED"
+        },
+        {
+          "pkg": "com.xgimi.doubanfm",
+          "note": "XGIMI music app, speaker-mode screen"
+        }
+      ]
+    },
+    {
+      "title": "Off by choice",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Chromecast built-in; re-enable to cast from phones"
+        },
+        {
+          "pkg": "com.google.android.apps.nbu.smartconnect.tv",
+          "note": "Google phone-to-TV connect service"
+        },
+        {
+          "pkg": "com.xgimi.upgrade",
+          "note": "XGIMI firmware updater; re-enable to receive updates"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/xgimi-mogo-2/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

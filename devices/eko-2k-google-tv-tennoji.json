@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "id": "eko-2k-google-tv-tennoji",
+  "name": "EKO 2K Google TV",
+  "tested": {
+    "os": "Google TV 14",
+    "sdk": 34,
+    "build": null
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Batch 1: telemetry, ads and partner plumbing",
+      "packages": [
+        {
+          "pkg": "tv.anoki.acr.anokiacroptin",
+          "note": "Anoki content-recognition opt-in; starts at boot, network/storage receivers"
+        },
+        {
+          "pkg": "com.android.adservices.api",
+          "note": "Android ad services (Topics, attribution)"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.android.tv.feedbackconsent"
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "Google partner attribution pings"
+        },
+        {
+          "pkg": "com.mstar.android.tv.disclaimercustomization",
+          "note": "setup-only disclaimer screen"
+        }
+      ]
+    },
+    {
+      "title": "Batch 2: background services and preloads",
+      "packages": [
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google TV app (Play Movies store and watchlist)"
+        },
+        {
+          "pkg": "com.mediatek.androidbox",
+          "note": "MediaTek Miracast sink (screen mirroring), off by choice"
+        },
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google Assistant, off by choice (the remote's mic button stops working)"
+        }
+      ]
+    },
+    {
+      "title": "Batch 3: personal choice, comment out what you use",
+      "packages": [
+        {
+          "pkg": "com.netflix.ninja"
+        },
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom",
+          "note": "Prime Video"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        }
+      ]
+    },
+    {
+      "title": "Batch 4: launcher handover. setupwraith's RecoveryActivity claims HOME at priority 1, behind launcherx, and",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith"
+        }
+      ]
+    },
+    {
+      "title": "Batch 5: after the launcher is Home. Point the screensaver at the launcher's clock first",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.tv.dreamx",
+          "note": "Ambient screensaver (mixes recommendations in)"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/eko-2k-google-tv-tennoji/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "id": "redmi-mitv-mftp0",
+  "name": "Redmi TV",
+  "tested": {
+    "os": "Android 9",
+    "sdk": 28,
+    "build": "installed"
+  },
+  "launcher": "com.mitv.tvhome",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Xiaomi telemetry / quality reports / cloud control",
+      "packages": [
+        {
+          "pkg": "com.miui.analytics",
+          "note": "OneTrack analytics SDK host"
+        },
+        {
+          "pkg": "com.miui.tv.analytics",
+          "note": "TV usage statistics"
+        },
+        {
+          "pkg": "com.xiaomi.statistic",
+          "note": "statistics upload"
+        },
+        {
+          "pkg": "com.xiaomi.tvqs",
+          "note": "quality system: crash/perf uploads"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.csi",
+          "note": "售后辅助 \"after-sales assistant\": satisfaction survey upload"
+        },
+        {
+          "pkg": "com.mitv.cloudcontrol",
+          "note": "cloud control: remote configuration, pushes apps"
+        }
+      ]
+    },
+    {
+      "title": "Ads / promoted content / shopping",
+      "packages": [
+        {
+          "pkg": "com.xm.webcontent",
+          "note": "电视活动中心: promo web container, also fetches screensaver ads"
+        },
+        {
+          "pkg": "com.mitv.shoplugin",
+          "note": "TV Taobao shopping plugin, two resident processes"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.shop",
+          "note": "电视商城 Xiaomi TV store"
+        }
+      ]
+    },
+    {
+      "title": "Xiaomi background services and preloaded apps (most are in Settings.System can_be_deleted)",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.mitv.handbook",
+          "note": "user handbook"
+        },
+        {
+          "pkg": "com.xiaomi.gamecenter.sdk.service.mibox",
+          "note": "game centre SDK"
+        },
+        {
+          "pkg": "com.xiaomi.screenrecorder",
+          "note": "screen recorder"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.calendar",
+          "note": "calendar"
+        },
+        {
+          "pkg": "com.xiaomi.mimusic2",
+          "note": "Mi Music"
+        },
+        {
+          "pkg": "com.mitv.gallery",
+          "note": "相册 photo album; USB media still opens in the media explorer"
+        }
+      ]
+    },
+    {
+      "title": "Off by choice: re-enable if an external Xiao Ai speaker should control the TV (see MiTV-ANSP0)",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.smarthome.tv",
+          "note": "Mi Home; the remote's voice button still worked without it"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/redmi-mitv-mftp0/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

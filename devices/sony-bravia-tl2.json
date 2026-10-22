@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "sony-bravia-tl2",
+  "name": "Sony BRAVIA TL2",
+  "tested": {
+    "os": "Android TV 11",
+    "sdk": 30,
+    "build": "RTM2.210929.098"
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Off by choice (owner does not use them)",
+      "packages": [
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom",
+          "note": "Prime Video"
+        },
+        {
+          "pkg": "com.disney.disneyplus",
+          "note": "Disney+"
+        },
+        {
+          "pkg": "com.nousguide.android.rbtv",
+          "note": "Red Bull TV"
+        },
+        {
+          "pkg": "com.cg.football",
+          "note": "football game"
+        },
+        {
+          "pkg": "com.goodtoolapps.zeus",
+          "note": "Zeus"
+        }
+      ]
+    },
+    {
+      "title": "Retail demo, partner auto-installs, Google leftovers",
+      "packages": [
+        {
+          "pkg": "fusion.android.tv.demo",
+          "note": "retail/shop demo mode"
+        },
+        {
+          "pkg": "android.autoinstalls.config.tpv.device",
+          "note": "Play auto-install of partner apps"
+        },
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "Google feedback reporter"
+        },
+        {
+          "pkg": "com.google.android.play.games",
+          "note": "Play Games"
+        }
+      ]
+    },
+    {
+      "title": "Stock Android TV launcher, replaced by launcher/",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvlauncher"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/sony-bravia-tl2/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

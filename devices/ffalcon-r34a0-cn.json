@@ -1,0 +1,112 @@
+{
+  "schema": 1,
+  "id": "ffalcon-r34a0-cn",
+  "name": "FFALCON",
+  "tested": {
+    "os": "Android 5.1.1",
+    "sdk": 22,
+    "build": "of"
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "",
+      "packages": [
+        {
+          "pkg": "com.tcl.bootadservice",
+          "note": "full-screen ad before Home"
+        },
+        {
+          "pkg": "com.tcl.c2dm.client",
+          "note": "TCL push channel (ad popups)"
+        },
+        {
+          "pkg": "com.android.tcl.messagebox",
+          "note": "image-message popup receiver"
+        },
+        {
+          "pkg": "com.tcl.bi",
+          "note": "analytics/behaviour reporting"
+        },
+        {
+          "pkg": "com.tcl.usagestats",
+          "note": "usage statistics"
+        },
+        {
+          "pkg": "com.tcl.tvhealthcheck",
+          "note": "diagnostics uploader"
+        },
+        {
+          "pkg": "com.tcl.xian.StartandroidService",
+          "note": "background reporting service"
+        },
+        {
+          "pkg": "com.tcl.vod",
+          "note": "TCL VOD"
+        },
+        {
+          "pkg": "com.tcl.waterfall.resource",
+          "note": "waterfall content feed (home wall tiles)"
+        },
+        {
+          "pkg": "com.tcl.tshop",
+          "note": "TV shopping mall"
+        },
+        {
+          "pkg": "com.tcl.gamecenter",
+          "note": "game center"
+        },
+        {
+          "pkg": "com.tcl.ffeducation",
+          "note": "education preload"
+        },
+        {
+          "pkg": "com.pptv.tvsports.preinstall",
+          "note": "PPTV sports preload"
+        },
+        {
+          "pkg": "com.tencent.qqmusictv",
+          "note": "QQ Music TV preload"
+        },
+        {
+          "pkg": "com.tcl.weixin",
+          "note": "TV WeChat"
+        },
+        {
+          "pkg": "com.tcl.browser",
+          "note": "TV browser"
+        },
+        {
+          "pkg": "com.iflytek.xiri",
+          "note": "iFlytek voice"
+        },
+        {
+          "pkg": "com.iflytek.xiri.recorder.svc",
+          "note": "iFlytek recorder"
+        },
+        {
+          "pkg": "com.iflytek.xiri2.hal",
+          "note": "iFlytek HAL"
+        },
+        {
+          "pkg": "com.iflytek.xiri2.system",
+          "note": "iFlytek system service"
+        },
+        {
+          "pkg": "com.tcl.walleve",
+          "note": "小T AI / smart-home settings (voice framework)"
+        },
+        {
+          "pkg": "com.tcl.versionUpdateApp",
+          "note": "system updater (user choice; snm.upgrade untouched)"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/ffalcon-r34a0-cn/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "schema": 1,
+  "id": "sanyo-atv-r2",
+  "name": "SANYO ATV R2",
+  "tested": {
+    "os": "Android TV 9",
+    "sdk": 28,
+    "build": "200"
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "SCBC / Realtek / Google telemetry and feedback",
+      "packages": [
+        {
+          "pkg": "com.apps.function.gdpr",
+          "note": "SCBC data-consent agent"
+        },
+        {
+          "pkg": "com.vewd.core.service",
+          "note": "Vewd app-store/HbbTV core service"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.tv.bugreportsender"
+        }
+      ]
+    },
+    {
+      "title": "Content rows, promos and auto-installs",
+      "packages": [
+        {
+          "pkg": "com.apps.channels",
+          "note": "\"S-Channels\" content app"
+        },
+        {
+          "pkg": "com.apps.eshow",
+          "note": "E-SHOW in-store demo / promo"
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations"
+        },
+        {
+          "pkg": "com.google.android.leanbacklauncher.recommendations"
+        },
+        {
+          "pkg": "com.realtek.leanbacklauncher.partnercustomizer"
+        },
+        {
+          "pkg": "android.autoinstalls.config.scbc.device",
+          "note": "Play auto-installs of partner apps"
+        }
+      ]
+    },
+    {
+      "title": "Background services and duplicates",
+      "packages": [
+        {
+          "pkg": "com.apps.clear",
+          "note": "\"TV Booster\" cleaner"
+        },
+        {
+          "pkg": "com.google.android.apps.nbu.smartconnect.tv"
+        },
+        {
+          "pkg": "com.apps.wifihotspot",
+          "note": "TV as a Wi-Fi hotspot"
+        },
+        {
+          "pkg": "com.android.printspooler"
+        },
+        {
+          "pkg": "com.apps.networkspeed",
+          "note": "speed-test app"
+        },
+        {
+          "pkg": "com.apps.ota",
+          "note": "SANYO firmware updates; re-enable to check for updates"
+        },
+        {
+          "pkg": "com.apps.authota",
+          "note": "companion to com.apps.ota"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps",
+      "packages": [
+        {
+          "pkg": "com.accuweather.android"
+        },
+        {
+          "pkg": "map.finder"
+        },
+        {
+          "pkg": "com.apps.timeclock",
+          "note": "WorldClock"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Play Movies & TV"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded streaming / radio apps (personal choice: comment out any you use)",
+      "packages": [
+        {
+          "pkg": "com.yupptv.androidtv"
+        },
+        {
+          "pkg": "com.spotify.tv.android"
+        },
+        {
+          "pkg": "tunein.player"
+        },
+        {
+          "pkg": "com.appgeneration.itunerfree"
+        },
+        {
+          "pkg": "com.nousguide.android.rbtv",
+          "note": "Red Bull TV"
+        },
+        {
+          "pkg": "com.poovarasan.tv.tamiltv"
+        }
+      ]
+    },
+    {
+      "title": "Stock Google TV launcher, replaced by launcher/",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvlauncher"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/sanyo-atv-r2/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

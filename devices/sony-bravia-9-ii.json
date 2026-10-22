@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "id": "sony-bravia-9-ii",
+  "name": "Sony BRAVIA 9 II",
+  "tested": {
+    "os": "Google TV 14",
+    "sdk": 34,
+    "build": "UKN4.250422.001"
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "ACR viewing tracker and telemetry",
+      "packages": [
+        {
+          "pkg": "tv.samba.ssm",
+          "note": "Samba TV, fingerprints what's on screen (Firebase inside)"
+        },
+        {
+          "pkg": "tv.samba.ssm.ui",
+          "note": "Samba TV opt-in / privacy screens"
+        },
+        {
+          "pkg": "com.qterics.da.product",
+          "note": "Qterics device agent"
+        },
+        {
+          "pkg": "com.sony.dtv.da.service",
+          "note": "Sony device agent"
+        },
+        {
+          "pkg": "com.sonyericsson.idd.agent",
+          "note": "Sony IDD usage-data agent"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        }
+      ]
+    },
+    {
+      "title": "Sony promos and content feeds",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.promos",
+          "note": "My BRAVIA promos"
+        },
+        {
+          "pkg": "com.sony.dtv.sonyselect",
+          "note": "Sony Select app promos"
+        },
+        {
+          "pkg": "com.sony.dtv.sonytab",
+          "note": "Sony tab / partner content on the stock home"
+        }
+      ]
+    },
+    {
+      "title": "Retail demo",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.demosupport"
+        },
+        {
+          "pkg": "com.sony.dtv.demosystemsupport"
+        },
+        {
+          "pkg": "com.sony.dtv.multiscreendemo"
+        }
+      ]
+    },
+    {
+      "title": "Optional features, off by owner's choice",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Chromecast built-in"
+        }
+      ]
+    },
+    {
+      "title": "Needed for a custom launcher on Google TV: the setup wizard grabs Home once launcherx is disabled.",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/sony-bravia-9-ii/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

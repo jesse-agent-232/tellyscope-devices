@@ -1,0 +1,146 @@
+{
+  "schema": 1,
+  "id": "hisense-u75-hengshan",
+  "name": "Hisense U75",
+  "tested": {
+    "os": "Android 12",
+    "sdk": null,
+    "build": "STT2.230310.002"
+  },
+  "launcher": null,
+  "keep": [
+    {
+      "pkg": "com.mediatek.dtv.tvinput.dvbtuner"
+    }
+  ],
+  "groups": [
+    {
+      "title": "Hisense ACR: automatic content recognition, the codePath is literally Vtp_ACR",
+      "packages": [
+        {
+          "pkg": "com.vt.tv.evservice"
+        }
+      ]
+    },
+    {
+      "title": "Hisense content, preloads and promo surfaces",
+      "packages": [
+        {
+          "pkg": "com.vt.hishow",
+          "note": "Vtp_FamilyMoment, photo/camera app + its screensaver"
+        },
+        {
+          "pkg": "net.vidaatv.hisense.android.tv",
+          "note": "VIDAA Channels Plus, the FAST free-channel preload"
+        },
+        {
+          "pkg": "com.vidaa.oemtabcontentprovider",
+          "note": "feeds the VIDAA content tab"
+        },
+        {
+          "pkg": "com.hisense.odinbrowser",
+          "note": "built-in web browser, off by choice"
+        }
+      ]
+    },
+    {
+      "title": "Retail demo, hotel/commercial mode, factory tools",
+      "packages": [
+        {
+          "pkg": "com.vt.storemode"
+        },
+        {
+          "pkg": "com.vt.tv.b2b"
+        },
+        {
+          "pkg": "com.vt.factory"
+        },
+        {
+          "pkg": "com.vt.fte",
+          "note": "first-time-experience walkthrough, setup only"
+        }
+      ]
+    },
+    {
+      "title": "Voice assistant, off by choice",
+      "packages": [
+        {
+          "pkg": "com.vt.alexa",
+          "note": "HiAlexa"
+        }
+      ]
+    },
+    {
+      "title": "Broadcast interactive middleware. Only does anything with the built-in tuner; off by choice",
+      "packages": [
+        {
+          "pkg": "tv.mopa.ginga",
+          "note": "Ginga, the Brazilian interactive-broadcast stack"
+        },
+        {
+          "pkg": "com.vt.tv.interactive"
+        }
+      ]
+    },
+    {
+      "title": "Background services that are not needed",
+      "packages": [
+        {
+          "pkg": "com.vt.tv.protector",
+          "note": "\"DeviceAssistant\" cleaner: CACHE_CLEAN, TURBO_MODE, SPACE_PROTECTION"
+        },
+        {
+          "pkg": "com.vt.tv.calmanconnector",
+          "note": "Calman professional calibration connector"
+        }
+      ]
+    },
+    {
+      "title": "Google TV ad, preload and tracking services",
+      "packages": [
+        {
+          "pkg": "android.autoinstalls.config.google.gtvpai",
+          "note": "PAI: silently auto-installs partner apps"
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "partner referral tracking"
+        },
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "crash/feedback uploader"
+        }
+      ]
+    },
+    {
+      "title": "Unused on a television",
+      "packages": [
+        {
+          "pkg": "com.android.printspooler"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar"
+        },
+        {
+          "pkg": "com.android.providers.calendar"
+        },
+        {
+          "pkg": "com.android.providers.contacts"
+        }
+      ]
+    },
+    {
+      "title": "Launcher phase only. Google TV's setup wizard also claims android.intent.category.HOME (priority 1,",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/hisense-u75-hengshan/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

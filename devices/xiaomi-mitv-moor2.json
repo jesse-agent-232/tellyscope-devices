@@ -1,0 +1,136 @@
+{
+  "schema": 1,
+  "id": "xiaomi-mitv-moor2",
+  "name": "Xiaomi MiTV-MOOR2",
+  "tested": {
+    "os": "Android 11",
+    "sdk": null,
+    "build": null
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "Xiaomi telemetry",
+      "packages": [
+        {
+          "pkg": "com.miui.tv.analytics"
+        },
+        {
+          "pkg": "com.xiaomi.statistic"
+        },
+        {
+          "pkg": "com.xiaomi.tvqs.overseas",
+          "note": "Firebase analytics + DOWNLOAD_WITHOUT_NOTIFICATION"
+        }
+      ]
+    },
+    {
+      "title": "Ad rows, promos and content providers on the home screen",
+      "packages": [
+        {
+          "pkg": "com.mitv.tvhome.oemtab",
+          "note": "holds ACCESS_ADSERVICES_AD_ID/_ATTRIBUTION - the ad row"
+        },
+        {
+          "pkg": "com.mitv.tvhome.michannel",
+          "note": "Mi content rows"
+        },
+        {
+          "pkg": "com.mitv.tvhome.mitvplus",
+          "note": "Mi TV+ ad-funded channels"
+        },
+        {
+          "pkg": "com.mitv.tvhome.atv",
+          "note": "PatchWall home; not a HOME candidate on this build"
+        },
+        {
+          "pkg": "com.xm.webcontent",
+          "note": "Xiaomi web promo WebView"
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "Google RLZ attribution pings"
+        }
+      ]
+    },
+    {
+      "title": "Retail demo mode",
+      "packages": [
+        {
+          "pkg": "fusion.android.tv.demo",
+          "note": "in-store demo loop (.HorizontalActivity/.VerticalActivity)"
+        }
+      ]
+    },
+    {
+      "title": "Xiaomi nagware and dead weight",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.mitv.tvmanager",
+          "note": "\"TV Manager\" cleaner"
+        },
+        {
+          "pkg": "com.mitv.toolhouse"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.manualhelp",
+          "note": "on-screen user manual"
+        },
+        {
+          "pkg": "com.xiaomo.tv.milegal",
+          "note": "legal notices app"
+        },
+        {
+          "pkg": "android.autoinstalls.config.xiaomi.amelie",
+          "note": "silent preload installer config"
+        }
+      ]
+    },
+    {
+      "title": "Mi Cast / Miracast - Chromecast still works without them",
+      "packages": [
+        {
+          "pkg": "com.mitv.milinkservice"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.smartshare"
+        },
+        {
+          "pkg": "com.xiaomi.wfdsinkhelperservice"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps, off by choice - re-enable any you use",
+      "packages": [
+        {
+          "pkg": "com.graymatrix.did",
+          "note": "ZEE5"
+        },
+        {
+          "pkg": "com.xiaomi.mimusic2",
+          "note": "Mi Music"
+        },
+        {
+          "pkg": "com.google.android.play.games",
+          "note": "Play Games"
+        }
+      ]
+    },
+    {
+      "title": "Trade-off: setupwraith is the first-run setup wizard. Everyday use is unaffected, but re-enable it",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith",
+          "note": "setup wizard; blocks a third-party launcher from Home"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/xiaomi-mitv-moor2/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

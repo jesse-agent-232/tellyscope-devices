@@ -1,0 +1,175 @@
+{
+  "schema": 1,
+  "id": "sony-xr-65x90j-cn",
+  "name": "Sony XR-65X90J",
+  "tested": {
+    "os": "Android 10",
+    "sdk": 29,
+    "build": "BRAVIA_VH2_M_CN-user"
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "telemetry, device agents and remote support",
+      "packages": [
+        {
+          "pkg": "com.sonyericsson.idd.agent",
+          "note": "Sony IDD usage-data agent; native iddd keeps running without root"
+        },
+        {
+          "pkg": "com.sony.dtv.sonybugreportsys",
+          "note": "bug report uploader"
+        },
+        {
+          "pkg": "com.sony.dtv.usercontext",
+          "note": "viewing context providers used for recommendations and profiling"
+        },
+        {
+          "pkg": "com.sony.dtv.seeds.auth",
+          "note": "BRAVIA Connect / phone remote-start authorisation"
+        }
+      ]
+    },
+    {
+      "title": "demo / shop mode",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.demosupport"
+        },
+        {
+          "pkg": "com.sony.dtv.demosystemsupport"
+        },
+        {
+          "pkg": "com.sony.dtv.multiscreendemo"
+        }
+      ]
+    },
+    {
+      "title": "help, support and unused Sony surfaces",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.customersupport",
+          "note": "Help / Support tile"
+        },
+        {
+          "pkg": "com.sony.dtv.customersupport.provider.res"
+        },
+        {
+          "pkg": "com.sony.dtv.helpguidecontents",
+          "note": "built-in help guide contents"
+        },
+        {
+          "pkg": "com.sony.dtv.distancealert",
+          "note": "viewing-distance warning"
+        },
+        {
+          "pkg": "com.sony.dtv.osat.music",
+          "note": "Sony music entry"
+        }
+      ]
+    },
+    {
+      "title": "BRAVIA CAM leftovers: this model has no camera",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.sensingfusionservice"
+        },
+        {
+          "pkg": "com.sony.dtv.sensingcamera.settings"
+        },
+        {
+          "pkg": "com.sony.dtv.sensingcamera.fwupdate"
+        },
+        {
+          "pkg": "com.sony.dtv.gestureapp",
+          "note": "BRAVIA CAM gesture control"
+        },
+        {
+          "pkg": "com.sony.dtv.videochatrecord",
+          "note": "BRAVIA CAM video chat recording"
+        }
+      ]
+    },
+    {
+      "title": "China promotion / IoT",
+      "packages": [
+        {
+          "pkg": "com.jd.smartservicetwo",
+          "note": "JD SmartService"
+        }
+      ]
+    },
+    {
+      "title": "always-running services, off by choice to free memory",
+      "packages": [
+        {
+          "pkg": "com.uei.quicksetsdk.sony",
+          "note": "UEI QuickSet: IR control of set-top boxes and soundbars; HDMI-CEC unaffected"
+        }
+      ]
+    },
+    {
+      "title": "commercial / hotel (b2b) packages, none used on a home set",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.b2b.hotelmode",
+          "note": "PERSISTENT, but the process did not return after a reboot here"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.adminpassword"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.deviceadminsettings"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.frameworkextension"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.importexport"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.noderuntime.normal"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.noderuntime.privilege"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.noderuntimeextension.bpk"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.noderuntimeextension.node_16_13_1",
+          "note": "node_20_11_1 on the newer VH21 builds"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.prosettings"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.rs232csupport"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.webappruntimedrm"
+        }
+      ]
+    },
+    {
+      "title": "DLNA, off by choice; HappyCast (com.hpplay.happyplay.aw) is the casting path that is kept",
+      "packages": [
+        {
+          "pkg": "com.sonyericsson.dlna"
+        },
+        {
+          "pkg": "com.sony.huey.dlna.module"
+        },
+        {
+          "pkg": "com.sony.huey.dlna.renderersettings"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/sony-xr-65x90j-cn/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

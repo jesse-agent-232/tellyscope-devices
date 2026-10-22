@@ -1,0 +1,172 @@
+{
+  "schema": 1,
+  "id": "tcl-55c725",
+  "name": "TCL 55C725",
+  "tested": {
+    "os": "Android TV 11",
+    "sdk": 30,
+    "build": "RP1A.200622.001"
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "TCL and Google content, ads and promos",
+      "packages": [
+        {
+          "pkg": "com.tcl.tv.tclhome_passive",
+          "note": "pushes TCL content to the home screen at boot"
+        },
+        {
+          "pkg": "com.tcl.waterfall.overseas",
+          "note": "\"TCL Channel\" content browser"
+        },
+        {
+          "pkg": "com.tcl.channelplus",
+          "note": "TCL Live FAST channels"
+        },
+        {
+          "pkg": "com.tcl.overseasappshow"
+        },
+        {
+          "pkg": "com.tcl.partnercustomizer"
+        },
+        {
+          "pkg": "com.tcl.esticker",
+          "note": "store demo sticker"
+        },
+        {
+          "pkg": "com.tcl.messagebox"
+        },
+        {
+          "pkg": "com.tcl.bi",
+          "note": "TCL analytics"
+        },
+        {
+          "pkg": "com.google.android.partnersetup"
+        },
+        {
+          "pkg": "android.autoinstalls.config.google.gtvpai"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        }
+      ]
+    },
+    {
+      "title": "Background services not needed",
+      "packages": [
+        {
+          "pkg": "com.google.android.onetimeinitializer"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar"
+        },
+        {
+          "pkg": "org.chromium.webview_shell",
+          "note": "AOSP WebView test browser"
+        },
+        {
+          "pkg": "com.tcl.android.webview",
+          "note": "TCL WebView; TV Settings and TCL apps still work without it"
+        },
+        {
+          "pkg": "com.tcl.guard"
+        },
+        {
+          "pkg": "com.tcl.keyhelp"
+        },
+        {
+          "pkg": "com.tcl.useragreement"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps",
+      "packages": [
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google TV / Play Movies"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.marvin.talkback"
+        },
+        {
+          "pkg": "com.tcl.ocean.instructions",
+          "note": "e-manual"
+        },
+        {
+          "pkg": "com.tcl.ui_mediaCenter",
+          "note": "re-enable to play media from USB drives"
+        },
+        {
+          "pkg": "com.tcl.MultiScreenInteraction_TV",
+          "note": "TCL T-Cast (phone casting/remote, Firebase); Chromecast kept"
+        },
+        {
+          "pkg": "tv.wuaki.apptv",
+          "note": "Rakuten TV"
+        },
+        {
+          "pkg": "com.tcl.dashboard",
+          "note": "stock quick-settings panel; the gear key is remapped, see README.md"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.dreamx",
+          "note": "ambient mode; set screensaver_components first, see README.md"
+        }
+      ]
+    },
+    {
+      "title": "Google TV setup wizard: claims Home once launcherx is disabled. On Ethernet there is no Wi-Fi to lose; on Wi-Fi,",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith"
+        }
+      ]
+    },
+    {
+      "title": "Optional: kept on this unit by choice",
+      "packages": [
+        {
+          "pkg": "com.tcl.versionUpdateApp",
+          "note": "TCL firmware updater",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.miracast",
+          "note": "screen mirroring",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Chromecast",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.tv.remote.service",
+          "note": "Google TV phone remote; also carries the remote's mic on other TCL sets",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.gamebar",
+          "note": "console game-mode overlay",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.t_solo",
+          "note": "\"Listen alone\": TV audio to Bluetooth headphones",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tcl-55c725/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

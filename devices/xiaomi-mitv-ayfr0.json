@@ -1,0 +1,115 @@
+{
+  "schema": 1,
+  "id": "xiaomi-mitv-ayfr0",
+  "name": "Xiaomi TV Stick 4K",
+  "tested": {
+    "os": "Android TV 14",
+    "sdk": 34,
+    "build": null
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Xiaomi + Google telemetry and attribution",
+      "packages": [
+        {
+          "pkg": "com.miui.tv.analytics"
+        },
+        {
+          "pkg": "com.xiaomi.statistic"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.android.tv.feedbackconsent"
+        },
+        {
+          "pkg": "com.google.android.partnersetup"
+        }
+      ]
+    },
+    {
+      "title": "PatchWall, content rows, promos, auto-installs",
+      "packages": [
+        {
+          "pkg": "com.mitv.tvhome.atv"
+        },
+        {
+          "pkg": "com.mitv.tvhome.michannel"
+        },
+        {
+          "pkg": "com.mitv.tvhome.mitvplus"
+        },
+        {
+          "pkg": "com.xm.webcontent"
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations"
+        },
+        {
+          "pkg": "android.autoinstalls.config.soc.amlogic"
+        },
+        {
+          "pkg": "android.autoinstalls.config.xiaomi.mibox3"
+        },
+        {
+          "pkg": "android.autoinstalls.config.xioami.mibox3",
+          "note": "misspelled duplicate present on firmware (sic, \"xioami\")"
+        }
+      ]
+    },
+    {
+      "title": "Xiaomi update service (re-enable to check for firmware updates)",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.mitv.updateservice"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps",
+      "packages": [
+        {
+          "pkg": "com.netflix.ninja"
+        },
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.marvin.talkback"
+        },
+        {
+          "pkg": "com.mitv.videoplayer"
+        },
+        {
+          "pkg": "com.xiaomi.mimusic2"
+        },
+        {
+          "pkg": "com.android.printspooler"
+        }
+      ]
+    },
+    {
+      "title": "Stock Android TV launcher, replaced by launcher/ (build-and-install.sh disables it after Home moves)",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvlauncher",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/xiaomi-mitv-ayfr0/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

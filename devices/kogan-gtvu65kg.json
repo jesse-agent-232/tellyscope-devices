@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "kogan-gtvu65kg",
+  "name": "Kogan Google TV",
+  "tested": {
+    "os": "Google TV 14",
+    "sdk": 34,
+    "build": null
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "Telemetry and ad services",
+      "packages": [
+        {
+          "pkg": "android.autoinstalls.config.google.gtvpai",
+          "note": "Play partner auto-installs"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.android.tv.feedbackconsent"
+        },
+        {
+          "pkg": "com.android.adservices.api"
+        }
+      ]
+    },
+    {
+      "title": "Changhong / Homwee store and help",
+      "packages": [
+        {
+          "pkg": "com.homwee.store"
+        },
+        {
+          "pkg": "com.homwee.help"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps",
+      "packages": [
+        {
+          "pkg": "com.android.printspooler"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.marvin.talkback",
+          "note": "re-enable if you use the screen reader"
+        }
+      ]
+    },
+    {
+      "title": "Streaming apps not used in this home (by choice; keep the ones you use)",
+      "packages": [
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        },
+        {
+          "pkg": "au.net.abc.iview",
+          "note": "user-installed on this set"
+        },
+        {
+          "pkg": "com.sbs.ondemand.tv",
+          "note": "user-installed on this set"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/kogan-gtvu65kg/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

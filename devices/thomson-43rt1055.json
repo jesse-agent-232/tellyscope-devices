@@ -1,0 +1,136 @@
+{
+  "schema": 1,
+  "id": "thomson-43rt1055",
+  "name": "Thomson 43RT1055 FA Series",
+  "tested": {
+    "os": "Android TV 14",
+    "sdk": 34,
+    "build": "UKRE.260524.055"
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Telemetry and ad services",
+      "packages": [
+        {
+          "pkg": "tv.anoki.acr.anokiacroptin",
+          "note": "automatic content recognition (Anoki ACR)"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.android.tv.feedbackconsent"
+        },
+        {
+          "pkg": "com.android.adservices.api"
+        },
+        {
+          "pkg": "com.android.ondevicepersonalization.services"
+        },
+        {
+          "pkg": "com.android.federatedcompute.services"
+        }
+      ]
+    },
+    {
+      "title": "Content, promos and partner installs",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvrecommendations"
+        },
+        {
+          "pkg": "android.autoinstalls.config.rplus.device",
+          "note": "Play auto-installs of partner apps"
+        },
+        {
+          "pkg": "com.vewd.core.service",
+          "note": "Vewd HbbTV/operator-app engine and minidump uploader; India has no HbbTV"
+        },
+        {
+          "pkg": "com.realtek.retailmode",
+          "note": "store demo"
+        }
+      ]
+    },
+    {
+      "title": "Background services",
+      "packages": [
+        {
+          "pkg": "com.google.android.syncadapters.calendar"
+        }
+      ]
+    },
+    {
+      "title": "Off by choice on this unit (comment out what you use)",
+      "packages": [
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        },
+        {
+          "pkg": "com.recisio.kfandroid",
+          "note": "KaraFun"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google TV (Play Movies)"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.rtk.mediabrowser",
+          "note": "Media Player for USB drives"
+        },
+        {
+          "pkg": "com.cltv.fast",
+          "note": "Anoki \"TV\" free ad-supported channels; registers its own TV input"
+        },
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Chromecast built-in"
+        },
+        {
+          "pkg": "com.realsil.ota",
+          "note": "firmware updater for Bluetooth remotes; this remote is infrared"
+        },
+        {
+          "pkg": "com.google.android.tv.dfuservice",
+          "note": "remote firmware updates and Find my remote"
+        },
+        {
+          "pkg": "com.google.android.backdrop",
+          "note": "Ambient screensaver, 58 MB while idle; pick another screensaver first"
+        },
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "voice search and the mic button - kept",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.tv.remote.service",
+          "note": "KEEP while voice search is used: the mic needs it (see header)",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Stock launcher and its partner rows. Do this LAST, after launcher/ is installed and set as Home.",
+      "packages": [
+        {
+          "pkg": "com.realtek.leanbacklauncher.partnercustomizer",
+          "note": "only feeds tvlauncher's rows and Inputs button"
+        },
+        {
+          "pkg": "com.google.android.tvlauncher"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/thomson-43rt1055/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

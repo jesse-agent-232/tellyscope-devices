@@ -1,0 +1,225 @@
+{
+  "schema": 1,
+  "id": "tcl-c845x2-google-tv",
+  "name": "TCL 75\" C845X2 Google TV",
+  "tested": {
+    "os": "Android 14",
+    "sdk": null,
+    "build": null
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "TCL tracking and analytics",
+      "packages": [
+        {
+          "pkg": "com.tcl.ttvs",
+          "note": "Samba TV ACR viewing tracking, TCL \"BI\" analytics, Alexa core, T-Cast"
+        },
+        {
+          "pkg": "com.tcl.logkit",
+          "note": "log capture and upload"
+        },
+        {
+          "pkg": "com.tcl.usercenter",
+          "note": "TCL account sign-in nags"
+        }
+      ]
+    },
+    {
+      "title": "TCL content, ads and promos",
+      "packages": [
+        {
+          "pkg": "com.tcl.channelplus",
+          "note": "TCL Live FAST channels"
+        },
+        {
+          "pkg": "com.tcl.tv.tclhome_passive",
+          "note": "pushes TCL content to the home screen at boot"
+        },
+        {
+          "pkg": "com.tcl.partnercustomizer",
+          "note": "TCL tweaks to Google TV home rows"
+        },
+        {
+          "pkg": "com.tcl.interactive",
+          "note": "TCL TIAS background service"
+        },
+        {
+          "pkg": "com.tcl.messagebox",
+          "note": "TCL push messages and promos"
+        },
+        {
+          "pkg": "com.tcl.waterfall.overseas",
+          "note": "TCL movie/show recommendation browser"
+        }
+      ]
+    },
+    {
+      "title": "Retail demo / hotel mode",
+      "packages": [
+        {
+          "pkg": "com.tcl.exhibit"
+        },
+        {
+          "pkg": "com.tcl.esticker"
+        },
+        {
+          "pkg": "com.tcl.hotelmenu"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps and services",
+      "packages": [
+        {
+          "pkg": "com.tcl.ocean.instructions",
+          "note": "e-manual"
+        },
+        {
+          "pkg": "com.tcl.repairguide"
+        },
+        {
+          "pkg": "com.tcl.smartalexa",
+          "note": "Alexa"
+        },
+        {
+          "pkg": "com.tcl.guard",
+          "note": "TCL \"cleaner\" / app manager"
+        },
+        {
+          "pkg": "android.autoinstalls.config.google.gtvpai",
+          "note": "silently installs partner apps"
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "partner attribution"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.android.tv.feedbackconsent"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google Play Movies & TV / Google TV app (movies you bought now play in YouTube)"
+        },
+        {
+          "pkg": "au.com.stan.and",
+          "note": "Stan"
+        }
+      ]
+    },
+    {
+      "title": "Off by choice on this unit (casting, mirroring and extras not used here)",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Chromecast",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.airplay2",
+          "note": "AirPlay, together with the next two lines",
+          "optional": true
+        },
+        {
+          "pkg": "com.mediatek.AirplayAPK",
+          "optional": true
+        },
+        {
+          "pkg": "com.mediatek.airplaydaemon",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.miracast",
+          "note": "Miracast screen mirroring"
+        },
+        {
+          "pkg": "com.tcl.magiconnectfree",
+          "note": "TCL T-Cast / Magiconnect phone mirroring"
+        },
+        {
+          "pkg": "com.tcl.gamebar",
+          "note": "game mode / VRR overlay for consoles",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.ui_mediaCenter",
+          "note": "USB media player"
+        },
+        {
+          "pkg": "com.tcl.gallery",
+          "note": "USB photo gallery + TCL screensaver"
+        },
+        {
+          "pkg": "com.tcl.UpdatePeripheral",
+          "note": "TCL soundbar firmware updates"
+        },
+        {
+          "pkg": "com.google.android.youtube.tv",
+          "note": "YouTube (this owner uses SmartTube); comment out to keep it"
+        }
+      ]
+    },
+    {
+      "title": "Needed for the custom launcher. Disable only AFTER launcher/ is installed and set as Home",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.tv.dreamx",
+          "note": "ambient screensaver (promos); switch screensaver_components first"
+        },
+        {
+          "pkg": "com.google.android.tungsten.setupwraith"
+        },
+        {
+          "pkg": "com.spocky.projengmenu",
+          "note": "Projectivy Launcher: installed by the owner, not a preload; left out of the shared list",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Kept on this unit: uncomment if you don't use them",
+      "packages": [
+        {
+          "pkg": "com.google.android.tv.remote.service",
+          "note": "phone-app remote AND the BT remote's mic button (see above)",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google Assistant voice (mic button)",
+          "optional": true
+        },
+        {
+          "pkg": "com.netflix.ninja",
+          "note": "Netflix, together with the next line",
+          "optional": true
+        },
+        {
+          "pkg": "com.netflix.tokenmanager",
+          "optional": true
+        },
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom",
+          "note": "Prime Video",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tcl-c845x2-google-tv/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

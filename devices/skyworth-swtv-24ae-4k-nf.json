@@ -1,0 +1,145 @@
+{
+  "schema": 1,
+  "id": "skyworth-swtv-24ae-4k-nf",
+  "name": "Skyworth SWTV-24AE-4K NF",
+  "tested": {
+    "os": "Google TV 14",
+    "sdk": 34,
+    "build": "UKN6.260116.056"
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Skyworth telemetry and activation",
+      "packages": [
+        {
+          "pkg": "com.smartdevice.recordactivation",
+          "note": "records first activation; boot + network receivers"
+        },
+        {
+          "pkg": "com.smartdevice.aftersale",
+          "note": "\"after-sale\" service: can silently install APKs"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.android.tv.feedbackconsent"
+        }
+      ]
+    },
+    {
+      "title": "Android ad and personalisation services",
+      "packages": [
+        {
+          "pkg": "com.android.adservices.api"
+        },
+        {
+          "pkg": "com.android.ondevicepersonalization.services"
+        },
+        {
+          "pkg": "com.android.federatedcompute.services"
+        }
+      ]
+    },
+    {
+      "title": "Skyworth content rows and analytics",
+      "packages": [
+        {
+          "pkg": "com.smartdevice.recommendation",
+          "note": "Coocaa recommendation rows; bundles Sensors Data analytics"
+        },
+        {
+          "pkg": "com.smartdevice.leanbacklauncher.customizer",
+          "note": "partner config that injects rows into the home screen"
+        }
+      ]
+    },
+    {
+      "title": "Regional broadcast extras (neither used in ZA/Global market)",
+      "packages": [
+        {
+          "pkg": "tv.mopa.ginga",
+          "note": "Brazilian Ginga interactive TV"
+        },
+        {
+          "pkg": "org.obs.mhegservice",
+          "note": "UK MHEG interactive TV"
+        }
+      ]
+    },
+    {
+      "title": "Not needed on a TV",
+      "packages": [
+        {
+          "pkg": "com.android.healthconnect.controller"
+        },
+        {
+          "pkg": "com.android.health.connect.backuprestore"
+        },
+        {
+          "pkg": "com.Smartdevice.emanual",
+          "note": "on-screen manual"
+        },
+        {
+          "pkg": "com.smartdevice.dailymanage",
+          "note": "TV Guard / cleaner"
+        },
+        {
+          "pkg": "com.smartdevice.myapp",
+          "note": "Daily Key / app manager"
+        },
+        {
+          "pkg": "com.google.android.play.games",
+          "note": "Play Games"
+        }
+      ]
+    },
+    {
+      "title": "Streaming apps disabled by owner's choice (not used)",
+      "packages": [
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        },
+        {
+          "pkg": "com.dstvmobile.android"
+        },
+        {
+          "pkg": "tv.sabcplus.vod"
+        },
+        {
+          "pkg": "com.stremio.one"
+        },
+        {
+          "pkg": "com.smartdevice.dtv.icast",
+          "note": "Miracast / DLNA screen mirroring"
+        },
+        {
+          "pkg": "com.mediatek.tv.systemupdater",
+          "note": "automatic OTA firmware updates"
+        }
+      ]
+    },
+    {
+      "title": "Stock home — disabled LAST, after the new launcher is installed and verified as Home.",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith",
+          "note": "RecoveryActivity claims HOME at priority 1"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.launcherx"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/skyworth-swtv-24ae-4k-nf/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

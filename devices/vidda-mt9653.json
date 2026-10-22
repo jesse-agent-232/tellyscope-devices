@@ -1,0 +1,143 @@
+{
+  "schema": 1,
+  "id": "vidda-mt9653",
+  "name": "Vidda VIDAA_TV",
+  "tested": {
+    "os": "Android TV 11",
+    "sdk": null,
+    "build": "RP1A.200720.011"
+  },
+  "launcher": "com.jamdeo.tv.vod",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Hisense telemetry, reporting and push",
+      "packages": [
+        {
+          "pkg": "com.hisense.hitv.das",
+          "note": "DasApp: DataReportReceiver only"
+        },
+        {
+          "pkg": "com.hisense.platformreport"
+        },
+        {
+          "pkg": "com.hisense.logupload"
+        },
+        {
+          "pkg": "com.hisense.service.hproxy",
+          "note": "LoopingService + network-change receiver, polls forever"
+        },
+        {
+          "pkg": "com.hisense.service.message",
+          "note": "HiMsgService, the vendor push channel"
+        }
+      ]
+    },
+    {
+      "title": "Ads, shopping and home operator rows",
+      "packages": [
+        {
+          "pkg": "com.hisense.business.ad",
+          "note": "ships Alibaba Baichuan + CIBN shopping SDKs; installed as a user app"
+        },
+        {
+          "pkg": "com.hisense.service.ad",
+          "note": "its WatchingAccessibilityService was registered in enabled_accessibility_services"
+        },
+        {
+          "pkg": "com.hisense.widget.pro",
+          "note": "home operator widget rows"
+        },
+        {
+          "pkg": "com.hisense.tv.weather",
+          "note": "weather card, another content feed"
+        }
+      ]
+    },
+    {
+      "title": "Retail, hotel, factory and leftovers",
+      "packages": [
+        {
+          "pkg": "com.hisense.demonstrate",
+          "note": "DbxDemo / multi-channel sound demo reels"
+        },
+        {
+          "pkg": "com.hisense.hotelmenu"
+        },
+        {
+          "pkg": "com.meetingroom"
+        },
+        {
+          "pkg": "com.hisense.autotest"
+        },
+        {
+          "pkg": "com.hisense.electronictutorial",
+          "note": "e-manual"
+        },
+        {
+          "pkg": "com.hisense.ar.baike"
+        },
+        {
+          "pkg": "com.jamdeo.tv.fte",
+          "note": "first-run wizard, done; the saved Wi-Fi belongs to android.uid.system"
+        },
+        {
+          "pkg": "com.hisense.usbupgrade"
+        }
+      ]
+    },
+    {
+      "title": "Duplicate / unused sharing and lifestyle apps (casting stacks deliberately kept)",
+      "packages": [
+        {
+          "pkg": "com.hisense.tv.videoconference"
+        },
+        {
+          "pkg": "com.hisense.tv.fitmirror"
+        },
+        {
+          "pkg": "com.hisense.tv.foodmanage"
+        },
+        {
+          "pkg": "com.jamdeo.calendar"
+        },
+        {
+          "pkg": "com.vision.aibook"
+        }
+      ]
+    },
+    {
+      "title": "Screensaver is an ad surface on this firmware: 拍信创意 stock photos with a caption and a like button.",
+      "packages": [
+        {
+          "pkg": "com.jamdeo.screensaver"
+        }
+      ]
+    },
+    {
+      "title": "AOSP leftovers on a TV",
+      "packages": [
+        {
+          "pkg": "com.android.printspooler"
+        }
+      ]
+    },
+    {
+      "title": "The two vendor home screens. Disable both so yours keeps the foreground; see the notes above.",
+      "packages": [
+        {
+          "pkg": "com.jamdeo.tv.vod",
+          "optional": true
+        },
+        {
+          "pkg": "com.keylab.speech.view.vidaa"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/vidda-mt9653/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

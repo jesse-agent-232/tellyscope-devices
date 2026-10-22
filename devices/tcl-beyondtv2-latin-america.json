@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "tcl-beyondtv2-latin-america",
+  "name": "TCL BeyondTV2",
+  "tested": {
+    "os": "Android TV 9",
+    "sdk": 28,
+    "build": "PPR1.180610.011"
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "TCL analytics (telemetry)",
+      "packages": [
+        {
+          "pkg": "com.tcl.bi",
+          "note": "analytics / telemetry service"
+        }
+      ]
+    },
+    {
+      "title": "Content pushed to the home screen at boot",
+      "packages": [
+        {
+          "pkg": "com.tcl.tv.tclhome_passive",
+          "note": "pushes TCL content to the home screen at boot"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tcl-beyondtv2-latin-america/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

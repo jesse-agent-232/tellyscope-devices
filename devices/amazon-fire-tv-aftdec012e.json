@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "amazon-fire-tv-aftdec012e",
+  "name": "Amazon Fire TV",
+  "tested": {
+    "os": "Android 11",
+    "sdk": 30,
+    "build": "RS8185.3885N"
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "Ads, content recognition, shopping",
+      "packages": [
+        {
+          "pkg": "com.amazon.shoptv.client"
+        },
+        {
+          "pkg": "com.amazon.tv.acr"
+        },
+        {
+          "pkg": "com.amazon.tv.democontent.provider"
+        }
+      ]
+    },
+    {
+      "title": "Telemetry and metrics",
+      "packages": [
+        {
+          "pkg": "com.amazon.neo.minerva"
+        },
+        {
+          "pkg": "com.amazon.neo.minerva.logcat"
+        },
+        {
+          "pkg": "com.amazon.wirelessmetrics.service"
+        },
+        {
+          "pkg": "com.amazon.perfcollection"
+        },
+        {
+          "pkg": "com.amazon.perfc"
+        },
+        {
+          "pkg": "com.amazon.dp.logger"
+        }
+      ]
+    },
+    {
+      "title": "Tutorials, promos and Amazon content preloads",
+      "packages": [
+        {
+          "pkg": "com.amazon.storm.lightning.tutorial"
+        },
+        {
+          "pkg": "com.amazon.tmm.tutorial"
+        },
+        {
+          "pkg": "com.amazon.gamehub"
+        },
+        {
+          "pkg": "com.amazon.bueller.music"
+        },
+        {
+          "pkg": "com.amazon.bueller.photos"
+        },
+        {
+          "pkg": "com.amazon.naatyam"
+        }
+      ]
+    },
+    {
+      "title": "Not disabled yet, the owner's choice: Miracast receiver (com.amazon.cast.sink), Freevee/MiniTV (com.amazon.minitv.android.app),",
+      "packages": [
+        {
+          "pkg": "com.amazon.cast.sink",
+          "optional": true
+        },
+        {
+          "pkg": "com.amazon.minitv.android.app",
+          "optional": true
+        },
+        {
+          "pkg": "com.disney.disneyplus",
+          "optional": true
+        },
+        {
+          "pkg": "com.tubitv.ott",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/amazon-fire-tv-aftdec012e/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

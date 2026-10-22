@@ -1,0 +1,364 @@
+{
+  "schema": 1,
+  "id": "insignia-ns55f301na25",
+  "name": "Insignia 55\" Class F30 4K Fire TV",
+  "tested": {
+    "os": "Fire OS 7",
+    "sdk": 28,
+    "build": null
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "Amazon telemetry, ACR & analytics",
+      "packages": [
+        {
+          "pkg": "com.amazon.tv.acr",
+          "note": "Automatic Content Recognition (viewing habits)"
+        },
+        {
+          "pkg": "com.amazon.device.metrics"
+        },
+        {
+          "pkg": "com.amazon.client.metrics"
+        },
+        {
+          "pkg": "com.amazon.client.metrics.api"
+        },
+        {
+          "pkg": "com.amazon.device.logmanager"
+        },
+        {
+          "pkg": "com.amazon.dp.logger"
+        },
+        {
+          "pkg": "com.amazon.perfcollection"
+        },
+        {
+          "pkg": "com.amazon.perfc"
+        },
+        {
+          "pkg": "com.amazon.tv.fw.metrics"
+        },
+        {
+          "pkg": "com.amazon.wirelessmetrics.service"
+        },
+        {
+          "pkg": "com.amazon.device.crashmanager"
+        },
+        {
+          "pkg": "com.amazon.hybridadidservice",
+          "note": "advertising ID service"
+        },
+        {
+          "pkg": "com.amazon.privacypassservice"
+        },
+        {
+          "pkg": "com.fireos.usagestats.proxy"
+        },
+        {
+          "pkg": "com.amazon.livedeviceservice"
+        },
+        {
+          "pkg": "com.amazon.audiolatencymeasurer"
+        }
+      ]
+    },
+    {
+      "title": "Sponsored ads, shopping & home screen recommendations",
+      "packages": [
+        {
+          "pkg": "com.amazon.ftvads.deeplinking",
+          "note": "Fire TV ad deep-linking"
+        },
+        {
+          "pkg": "com.amazon.media.recommendations"
+        },
+        {
+          "pkg": "com.amazon.tv.democontent.provider",
+          "note": "retail store demo videos"
+        },
+        {
+          "pkg": "com.amazon.sneakpeek"
+        },
+        {
+          "pkg": "com.amazon.shoptv.firetv.client",
+          "note": "Amazon Shopping on TV"
+        },
+        {
+          "pkg": "com.amazon.shoptv.client"
+        },
+        {
+          "pkg": "com.amazon.tv.csapp"
+        },
+        {
+          "pkg": "com.amazon.minerva.client.api"
+        },
+        {
+          "pkg": "com.amazon.providers.contentsupport"
+        }
+      ]
+    },
+    {
+      "title": "Amazon background sync, tutorials & cloud services",
+      "packages": [
+        {
+          "pkg": "com.amazon.device.sync"
+        },
+        {
+          "pkg": "com.amazon.sync.service"
+        },
+        {
+          "pkg": "com.amazon.sync.provider.ipc"
+        },
+        {
+          "pkg": "com.amazon.device.sync.sdk.internal"
+        },
+        {
+          "pkg": "com.amazon.device_remote_config_sync_service"
+        },
+        {
+          "pkg": "com.amazon.securitysyncclient"
+        },
+        {
+          "pkg": "com.amazon.ods.kindleconnect"
+        },
+        {
+          "pkg": "com.amazon.wifilocker",
+          "note": "saves Wi-Fi passwords to Amazon cloud"
+        },
+        {
+          "pkg": "com.amazon.tahoe",
+          "note": "FreeTime / Amazon Kids"
+        },
+        {
+          "pkg": "com.amazon.tcomm"
+        },
+        {
+          "pkg": "com.amazon.tcomm.client"
+        },
+        {
+          "pkg": "com.amazon.tcomm.jackson"
+        },
+        {
+          "pkg": "com.amazon.logan"
+        },
+        {
+          "pkg": "com.amazon.neopactservice"
+        },
+        {
+          "pkg": "com.amazon.neodelegate"
+        },
+        {
+          "pkg": "com.amazon.cloud9",
+          "note": "Silk Browser background service"
+        },
+        {
+          "pkg": "com.amazon.fireos.cirruscloud"
+        },
+        {
+          "pkg": "com.fireos.arcus.proxy"
+        },
+        {
+          "pkg": "com.amazon.alta.h2clientservice"
+        },
+        {
+          "pkg": "com.amazon.rtcsessioncontroller"
+        },
+        {
+          "pkg": "com.amazon.communication.discovery"
+        },
+        {
+          "pkg": "com.amazon.dpcclient"
+        },
+        {
+          "pkg": "com.amazon.uxnotification"
+        },
+        {
+          "pkg": "com.amazon.tv.notificationcenter"
+        },
+        {
+          "pkg": "com.amazon.systemnotices"
+        },
+        {
+          "pkg": "com.amazon.tv.releasenotes"
+        },
+        {
+          "pkg": "com.amazon.storm.lightning.tutorial"
+        },
+        {
+          "pkg": "com.amazon.tmm.tutorial"
+        },
+        {
+          "pkg": "com.amazon.tv.oobe"
+        },
+        {
+          "pkg": "com.amazon.tv.ooberesource"
+        },
+        {
+          "pkg": "com.amazon.tv.legal.notices"
+        },
+        {
+          "pkg": "com.amazon.tv.legalresources"
+        },
+        {
+          "pkg": "com.amazon.tv.support"
+        },
+        {
+          "pkg": "com.amazon.cardinal"
+        },
+        {
+          "pkg": "com.amazon.csm.htmlruntime"
+        },
+        {
+          "pkg": "com.amazon.spiderpork"
+        },
+        {
+          "pkg": "com.amazon.recess"
+        },
+        {
+          "pkg": "com.amazon.diode"
+        },
+        {
+          "pkg": "com.amazon.platform.fdrw"
+        },
+        {
+          "pkg": "com.amazon.dummy.settings"
+        },
+        {
+          "pkg": "com.amazon.dummy.contacts"
+        },
+        {
+          "pkg": "com.amazon.dummy.calendar"
+        },
+        {
+          "pkg": "com.amazon.dummy.gallery"
+        },
+        {
+          "pkg": "com.amazon.dummy.alarmclock"
+        },
+        {
+          "pkg": "com.amazon.dummy.music"
+        },
+        {
+          "pkg": "com.amazon.tv.legal.notices.overlay.localisation.common"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded Amazon apps (personal choice)",
+      "packages": [
+        {
+          "pkg": "com.amazon.bueller.photos",
+          "note": "Amazon Photos"
+        },
+        {
+          "pkg": "com.amazon.bueller.music",
+          "note": "Amazon Music"
+        },
+        {
+          "pkg": "com.amazon.gamehub",
+          "note": "Amazon Luna / GameHub"
+        },
+        {
+          "pkg": "com.amazon.tv.localgallery"
+        },
+        {
+          "pkg": "com.amazon.minitv.android.app",
+          "note": "Amazon MiniTV"
+        },
+        {
+          "pkg": "com.amazon.tv.website_launcher"
+        },
+        {
+          "pkg": "com.amazon.avod",
+          "note": "Prime Video (comment out if you watch Prime Video)"
+        }
+      ]
+    },
+    {
+      "title": "Personal choice: Alexa (the voice remote stops working), Miracast/DIAL casting, OTA firmware updates (re-enable to",
+      "packages": [
+        {
+          "pkg": "com.amazon.alexamediaplayer.runtime.ftv"
+        },
+        {
+          "pkg": "com.amazon.alexa.datastore.app"
+        },
+        {
+          "pkg": "com.amazon.alexa.externalmediaplayer.fireos"
+        },
+        {
+          "pkg": "com.amazon.alexadirectivebrokerservice"
+        },
+        {
+          "pkg": "com.amazon.tv.alexanotifications"
+        },
+        {
+          "pkg": "com.amazon.tv.alexaalerts"
+        },
+        {
+          "pkg": "com.amazon.aca"
+        },
+        {
+          "pkg": "com.ivona.orchestrator",
+          "note": "Alexa TTS engine"
+        },
+        {
+          "pkg": "com.ivona.tts.oem"
+        },
+        {
+          "pkg": "com.amazon.audiohome",
+          "note": "Alexa Home Theater"
+        },
+        {
+          "pkg": "com.amazon.cast.sink",
+          "note": "Miracast / Fire Cast sink (AirPlay is separate)"
+        },
+        {
+          "pkg": "com.amazon.whisperplay.contracts"
+        },
+        {
+          "pkg": "com.amazon.whisperplay.service.install"
+        },
+        {
+          "pkg": "com.amazon.whisperlink.core.android"
+        },
+        {
+          "pkg": "com.amazon.awvflingreceiver"
+        },
+        {
+          "pkg": "com.amazon.dialservice",
+          "note": "DIAL cast receiver"
+        },
+        {
+          "pkg": "com.amazon.device.software.ota",
+          "note": "re-enable to check for firmware updates"
+        },
+        {
+          "pkg": "com.amazon.device.software.ota.override",
+          "note": "re-enable to check for firmware updates"
+        },
+        {
+          "pkg": "com.amazon.tv.forcedotaupdater.v2",
+          "note": "re-enable to check for firmware updates"
+        },
+        {
+          "pkg": "com.amazon.tv.easyupgrade"
+        },
+        {
+          "pkg": "com.amazon.tv.mattercohost"
+        },
+        {
+          "pkg": "com.amazon.tv.ottssocompanionapp"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/insignia-ns55f301na25/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

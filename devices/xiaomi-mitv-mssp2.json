@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "xiaomi-mitv-mssp2",
+  "name": "Xiaomi MiTV-MSSP2",
+  "tested": {
+    "os": "Android TV 9",
+    "sdk": 28,
+    "build": null
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Xiaomi + Google telemetry",
+      "packages": [
+        {
+          "pkg": "com.miui.tv.analytics"
+        },
+        {
+          "pkg": "com.xiaomi.statistic"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.tv.bugreportsender"
+        }
+      ]
+    },
+    {
+      "title": "PatchWall, content rows, sponsored rows",
+      "packages": [
+        {
+          "pkg": "com.mitv.tvhome.atv",
+          "note": "PatchWall"
+        },
+        {
+          "pkg": "com.xm.webcontent"
+        },
+        {
+          "pkg": "android.autoinstalls.config.xiaomi.amelie",
+          "note": "Play auto-install of partner apps"
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations"
+        },
+        {
+          "pkg": "com.google.android.leanbacklauncher.recommendations"
+        }
+      ]
+    },
+    {
+      "title": "Xiaomi + Android background services",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.mitv.tvmanager",
+          "note": "\"TV Manager\" cleaner"
+        },
+        {
+          "pkg": "com.android.printspooler",
+          "note": "no printing on a TV"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps",
+      "packages": [
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.music",
+          "note": "Play Music, discontinued"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Play Movies & TV"
+        }
+      ]
+    },
+    {
+      "title": "Stock Android TV launchers, replaced by launcher/",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvlauncher"
+        },
+        {
+          "pkg": "com.google.android.leanbacklauncher",
+          "note": "older Android TV home, still installed, see header"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/xiaomi-mitv-mssp2/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

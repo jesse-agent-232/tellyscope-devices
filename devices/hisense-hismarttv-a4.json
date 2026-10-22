@@ -1,0 +1,116 @@
+{
+  "schema": 1,
+  "id": "hisense-hismarttv-a4",
+  "name": "Hisense HiSmartTV A4",
+  "tested": {
+    "os": "Android TV 9",
+    "sdk": null,
+    "build": "01.00.00.04"
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Group 1: telemetry",
+      "packages": [
+        {
+          "pkg": "com.hisense.app.logreport",
+          "note": "Hisense LogReportManagerService"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.tv.bugreportsender"
+        }
+      ]
+    },
+    {
+      "title": "Group 2: recommendation rows, retail demo, silent preload installs",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvrecommendations"
+        },
+        {
+          "pkg": "com.google.android.leanbacklauncher.recommendations"
+        },
+        {
+          "pkg": "com.google.android.leanbacklauncher",
+          "note": "old launcher, not a HOME candidate on this firmware"
+        },
+        {
+          "pkg": "com.hisense.storemode"
+        },
+        {
+          "pkg": "fusion.android.tv.demo",
+          "note": "retail display"
+        },
+        {
+          "pkg": "com.mstar.android.tv.disclaimercustomization",
+          "note": "store disclaimer screen"
+        },
+        {
+          "pkg": "android.autoinstalls.config.hisense.xiaoyushan"
+        }
+      ]
+    },
+    {
+      "title": "Group 3: preloaded apps",
+      "packages": [
+        {
+          "pkg": "com.seraphic.browser",
+          "note": "Hisense browser"
+        },
+        {
+          "pkg": "com.google.android.music",
+          "note": "Play Music, discontinued"
+        },
+        {
+          "pkg": "com.google.android.videos"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.apps.nbu.smartconnect.tv"
+        },
+        {
+          "pkg": "com.netflix.ninja",
+          "note": "off by choice"
+        },
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom",
+          "note": "Prime Video, off by choice"
+        },
+        {
+          "pkg": "com.hisense.tv.hisremotenow",
+          "note": "RemoteNOW phone remote, off by choice"
+        },
+        {
+          "pkg": "com.jamdeo.tv.mediacenter",
+          "note": "USB media player, off by choice"
+        },
+        {
+          "pkg": "com.hisense.myapplication",
+          "note": "Hisense screensaver (DayDreamService), off by choice"
+        }
+      ]
+    },
+    {
+      "title": "Group 4: firmware updates. Re-enable both to receive an OTA update.",
+      "packages": [
+        {
+          "pkg": "com.hisense.tv.ota"
+        },
+        {
+          "pkg": "com.hisense.remoteupgrade"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/hisense-hismarttv-a4/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

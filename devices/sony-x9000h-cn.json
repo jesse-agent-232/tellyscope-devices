@@ -1,0 +1,165 @@
+{
+  "schema": 1,
+  "id": "sony-x9000h-cn",
+  "name": "Sony BRAVIA X9000H",
+  "tested": {
+    "os": "Android 12",
+    "sdk": 31,
+    "build": "BRAVIA_VH1_CN-user"
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "telemetry and remote support",
+      "packages": [
+        {
+          "pkg": "com.qterics.da.product",
+          "note": "Qterics device agent"
+        },
+        {
+          "pkg": "com.sony.dtv.da.service",
+          "note": "remote-support session service"
+        },
+        {
+          "pkg": "com.sonyericsson.idd.agent",
+          "note": "Sony IDD usage-data agent"
+        },
+        {
+          "pkg": "com.sony.dtv.usercontext",
+          "note": "user context providers, boot receiver only"
+        },
+        {
+          "pkg": "com.sony.dtv.sonybugreportsys",
+          "note": "Sony bug-report/log uploader"
+        }
+      ]
+    },
+    {
+      "title": "demo / shop mode",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.demosupport"
+        },
+        {
+          "pkg": "com.sony.dtv.demosystemsupport"
+        },
+        {
+          "pkg": "com.sony.dtv.multiscreendemo"
+        }
+      ]
+    },
+    {
+      "title": "help content: the Settings help tiles disappear",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.customersupport"
+        },
+        {
+          "pkg": "com.sony.dtv.smarthelp"
+        },
+        {
+          "pkg": "com.sony.dtv.helpguidecontents"
+        }
+      ]
+    },
+    {
+      "title": "no camera on this model (BRAVIA CAM / sensing camera)",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.gestureapp"
+        },
+        {
+          "pkg": "com.sony.dtv.sensingcamera.fwupdate"
+        },
+        {
+          "pkg": "com.sony.dtv.sensingcamera.settings"
+        },
+        {
+          "pkg": "com.sony.dtv.sensingfusionservice"
+        },
+        {
+          "pkg": "com.sony.dtv.videochatrecord"
+        }
+      ]
+    },
+    {
+      "title": "features the owner did not use",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.distancealert"
+        },
+        {
+          "pkg": "com.sony.dtv.ecodashboard"
+        }
+      ]
+    },
+    {
+      "title": "China-only bloat",
+      "packages": [
+        {
+          "pkg": "com.jd.smartservicetwo",
+          "note": "JD SmartService"
+        }
+      ]
+    },
+    {
+      "title": "hotel / B2B mode (consumer set; 13 packages)",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.b2b.adminpassword"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.deviceadminsettings"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.frameworkextension"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.hotelmode",
+          "note": "PERSISTENT process survives a reboot; components disabled"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.importexport"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.ipcontrolsettings"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.noderuntime.normal"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.noderuntime.privilege"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.noderuntimeextension.bpk"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.noderuntimeextension.node_20_11_1"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.prosettings"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.rs232csupport"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.webappruntimedrm"
+        }
+      ]
+    },
+    {
+      "title": "kids profile",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.kidsprofileadapter"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/sony-x9000h-cn/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

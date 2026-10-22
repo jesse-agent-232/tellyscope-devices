@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "tcl-43s5k",
+  "name": "TCL 43S5K",
+  "tested": {
+    "os": "Google TV 14",
+    "sdk": 34,
+    "build": "UKN2.241110.001"
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Batch 1: TCL tracking, ads and auto-installs",
+      "packages": [
+        {
+          "pkg": "com.tcl.ttvs",
+          "note": "TCL analytics AND the firmware updater: kept on so updates arrive (#322)",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.messagebox",
+          "note": "TCL push messages and promos; carries an org.tcl.ttvs receiver"
+        },
+        {
+          "pkg": "com.tcl.logkit",
+          "note": "log capture and upload"
+        },
+        {
+          "pkg": "com.tcl.partnercustomizer",
+          "note": "TCL promo rows on the Google TV home"
+        },
+        {
+          "pkg": "android.autoinstalls.config.google.gtvpai",
+          "note": "silently installs partner apps"
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "partner attribution (RLZ pings)"
+        }
+      ]
+    },
+    {
+      "title": "Batch 2: preloaded apps and extras not used on this unit",
+      "packages": [
+        {
+          "pkg": "com.tcl.browser",
+          "note": "TCL \"BrowseHere\" browser and web-video portal"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.android.tv.feedbackconsent"
+        },
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google Assistant voice (mic button), about 63 MB in two processes; off by choice"
+        }
+      ]
+    },
+    {
+      "title": "Batch 3: setup wizard. It claims HOME (RecoveryActivity, priority 1) once launcherx is gone.",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith"
+        }
+      ]
+    },
+    {
+      "title": "Batch 4: after launcher/ is Home and the screensaver is switched to the launcher's clock",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.tv.dreamx",
+          "note": "Google TV Ambient mode screensaver (promos)"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tcl-43s5k/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

@@ -1,0 +1,259 @@
+{
+  "schema": 1,
+  "id": "tcl-43p615",
+  "name": "TCL 43P615",
+  "tested": {
+    "os": "Android TV 11",
+    "sdk": 30,
+    "build": "PPR1.180610.011"
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [
+    {
+      "pkg": "com.tcl.keycustomfunctionservice",
+      "note": "remote key handling, fallback home"
+    },
+    {
+      "pkg": "com.tcl.common.shortcutmenu",
+      "note": "custom-key/quick-start menu module"
+    },
+    {
+      "pkg": "com.tcl.inputmethod.international",
+      "note": "default keyboard"
+    },
+    {
+      "pkg": "com.tcl.xian.StartandroidService",
+      "note": "device authentication"
+    },
+    {
+      "pkg": "com.tcl.partnercustomizer",
+      "note": "carries the remote's TKey activity (see"
+    },
+    {
+      "pkg": "com.tvos",
+      "note": "/system/framework/tvos-framework-res.apk"
+    },
+    {
+      "pkg": "com.google.android.apps.mediashell",
+      "note": "Chromecast (kept by choice)"
+    },
+    {
+      "pkg": "com.tcl.versionUpdateApp",
+      "note": "TCL OTA updater (kept by choice)"
+    },
+    {
+      "pkg": "com.google.android.tv.remote.service",
+      "note": "phone-app remote (kept by choice)"
+    }
+  ],
+  "groups": [
+    {
+      "title": "1. Telemetry, analytics and attribution",
+      "packages": [
+        {
+          "pkg": "com.tcl.bi",
+          "note": "TCL BI analytics (Firebase, Crashlytics, net monitor)"
+        },
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "\"send feedback\""
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations",
+          "note": "home-screen recommendation rows"
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "partner-app attribution"
+        },
+        {
+          "pkg": "com.google.android.onetimeinitializer",
+          "note": "one-time setup leftovers"
+        },
+        {
+          "pkg": "android.autoinstalls.config.tcl.device",
+          "note": "partner-app auto installer"
+        }
+      ]
+    },
+    {
+      "title": "2. TCL content, promos and background extras",
+      "packages": [
+        {
+          "pkg": "com.tcl.overseasappshow",
+          "note": "factory promo/app-show service; re-enables partner"
+        },
+        {
+          "pkg": "com.tcl.tv.tclhome_passive",
+          "note": "pushes TCL content onto the home screen at boot"
+        },
+        {
+          "pkg": "com.tcl.waterfall.overseas",
+          "note": "TCL web content feed / recommendation waterfall"
+        },
+        {
+          "pkg": "com.tcl.messagebox",
+          "note": "pushed messages and promos (ttvs)"
+        },
+        {
+          "pkg": "com.tcl.esticker",
+          "note": "retail demo energy-label sticker"
+        },
+        {
+          "pkg": "com.tcl.guard",
+          "note": "TGuard: device-use tracking, \"health info\", cleaner"
+        },
+        {
+          "pkg": "com.tcl.usercenter",
+          "note": "TCL account / bind-phone centre"
+        },
+        {
+          "pkg": "com.tcl.dashboard",
+          "note": "TCL IoT dashboard, giftbox and MessageBox promos"
+        },
+        {
+          "pkg": "com.tcl.copydatatotv",
+          "note": "phone-to-TV data migration app (boot receiver)"
+        },
+        {
+          "pkg": "com.tcl.useragreement",
+          "note": "end-user agreement screens"
+        },
+        {
+          "pkg": "com.tcl.notereminder",
+          "note": "notes & reminder widget, has a launcher tile"
+        },
+        {
+          "pkg": "com.tcl.ui_mediaCenter",
+          "note": "USB media centre (nothing on USB; players kept)"
+        }
+      ]
+    },
+    {
+      "title": "3. Voice, off by choice. The mic button goes dead. Comment out to keep the assistant.",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google Assistant / voice search"
+        },
+        {
+          "pkg": "com.google.android.tv.assistant",
+          "note": "Assistant LED service"
+        },
+        {
+          "pkg": "com.tcl.assistant",
+          "note": "TCL voice service"
+        },
+        {
+          "pkg": "com.tcl.micmanager",
+          "note": "TCL microphone manager"
+        },
+        {
+          "pkg": "com.tcl.smartalexa",
+          "note": "Alexa (enabled on this unit, unlike AR05)"
+        }
+      ]
+    },
+    {
+      "title": "4. Mirroring, off by choice. Chromecast itself stays (com.google.android.apps.mediashell).",
+      "packages": [
+        {
+          "pkg": "com.tcl.miracast",
+          "note": "Miracast screen mirroring"
+        },
+        {
+          "pkg": "com.tcl.MultiScreenInteraction_TV",
+          "note": "MagiConnect mirroring/casting companion"
+        }
+      ]
+    },
+    {
+      "title": "5. Stock screensaver, off by choice (the replacement launcher has a clock screensaver).",
+      "packages": [
+        {
+          "pkg": "com.google.android.backdrop",
+          "note": "stock ambient photo screensaver"
+        }
+      ]
+    },
+    {
+      "title": "6. Streaming apps and preloads, off by choice on this unit: reinstalled from the Play Store",
+      "packages": [
+        {
+          "pkg": "com.netflix.ninja",
+          "note": "Netflix"
+        },
+        {
+          "pkg": "com.google.android.youtube.tv",
+          "note": "YouTube"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic",
+          "note": "YouTube Music"
+        },
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom",
+          "note": "Prime Video"
+        },
+        {
+          "pkg": "com.disney.disneyplus",
+          "note": "Disney+"
+        },
+        {
+          "pkg": "com.disney.starplus",
+          "note": "Star+"
+        },
+        {
+          "pkg": "com.wbd.stream",
+          "note": "Max"
+        },
+        {
+          "pkg": "com.dazn",
+          "note": "DAZN"
+        },
+        {
+          "pkg": "com.spotify.tv.android",
+          "note": "Spotify"
+        },
+        {
+          "pkg": "tv.pluto.android",
+          "note": "Pluto TV"
+        },
+        {
+          "pkg": "tv.wuaki.apptv",
+          "note": "Rakuten TV"
+        },
+        {
+          "pkg": "com.internet.tvbrowser",
+          "note": "TV browser (Play-installed)"
+        },
+        {
+          "pkg": "com.apgsolutionsllc.APGSOLUTIONSLLC0007",
+          "note": "white-label TV browser (Play, 2022), replaced by"
+        },
+        {
+          "pkg": "com.google.android.play.games",
+          "note": "Play Games (off by choice on this unit)"
+        },
+        {
+          "pkg": "com.android.printspooler",
+          "note": "printing service, nothing to print from"
+        },
+        {
+          "pkg": "com.android.dreams.basic",
+          "note": "stock \"colors\" screensaver"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Play Movies & TV: firmware re-enables it on every",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tcl-43p615/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

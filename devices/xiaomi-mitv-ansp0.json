@@ -1,0 +1,191 @@
+{
+  "schema": 1,
+  "id": "xiaomi-mitv-ansp0",
+  "name": "Xiaomi MiTV-ANSP0",
+  "tested": {
+    "os": "Android 9",
+    "sdk": 28,
+    "build": null
+  },
+  "launcher": "com.mitv.tvhome",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Xiaomi telemetry / push / cloud control",
+      "packages": [
+        {
+          "pkg": "com.miui.analytics",
+          "note": "Mi analytics"
+        },
+        {
+          "pkg": "com.miui.tv.analytics",
+          "note": "TV analytics"
+        },
+        {
+          "pkg": "com.xiaomi.statistic",
+          "note": "statistics upload"
+        },
+        {
+          "pkg": "com.xiaomi.tvqs",
+          "note": "quality system: uploads crash/perf/dropbox entries"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.csi",
+          "note": "\"after-sales assistant\": satisfaction survey upload"
+        },
+        {
+          "pkg": "com.mitv.cloudcontrol",
+          "note": "cloud control: starts on connectivity, pushes apps remotely"
+        },
+        {
+          "pkg": "com.android.smspush",
+          "note": "SMS push, useless on a TV"
+        }
+      ]
+    },
+    {
+      "title": "Ads / promoted content",
+      "packages": [
+        {
+          "pkg": "com.xm.webcontent",
+          "note": "MiWebView promo container; also fetches the screensaver ads"
+        },
+        {
+          "pkg": "com.mitv.shoplugin",
+          "note": "TV shopping channel plugin (Taobao SDK)"
+        },
+        {
+          "pkg": "com.gitvdemo.video",
+          "note": "GITV promo demo reel"
+        },
+        {
+          "pkg": "com.duokan.videodaily",
+          "note": "video daily promos"
+        }
+      ]
+    },
+    {
+      "title": "Xiaomi background services",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.mitv.tvmanager",
+          "note": "\"TV Manager\" cleaner"
+        },
+        {
+          "pkg": "com.xiaomi.gamecenter.sdk.service.mibox",
+          "note": "game centre SDK"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.upgrade",
+          "note": "firmware updater: kept on so updates arrive (#322)",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps not used",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.mimusic2",
+          "note": "Mi Music"
+        },
+        {
+          "pkg": "com.xiaomi.tv.gallery",
+          "note": "Mi photo album"
+        },
+        {
+          "pkg": "com.mitv.gallery",
+          "note": "Media Explorer as a tile; USB browsing still works"
+        },
+        {
+          "pkg": "com.xiaomi.screenrecorder",
+          "note": "screen recorder"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.calendar",
+          "note": "calendar"
+        },
+        {
+          "pkg": "com.mitv.alarmcenter",
+          "note": "alarms"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.handbook",
+          "note": "user handbook"
+        },
+        {
+          "pkg": "com.xiaomi.tweather",
+          "note": "weather"
+        }
+      ]
+    },
+    {
+      "title": "Off by choice: features this owner does not use (comment out what you do use)",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.mitv.karaoke.service",
+          "note": "karaoke"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.tvvideocall",
+          "note": "MiTime video calls"
+        },
+        {
+          "pkg": "com.xiaomi.eetv.litehome",
+          "note": "a second home screen (\"办公模式\" office mode)"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.light",
+          "note": "light-effect app (\"Symphony of Shadows\")"
+        }
+      ]
+    },
+    {
+      "title": "Voice and Mi Home. KEEP THESE if an external Xiao Ai (小爱) speaker should be able to control the",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.mitv.smartpanel",
+          "note": "smart-home panel"
+        },
+        {
+          "pkg": "com.xiaomi.smarthome.tv",
+          "note": "Mi Home"
+        },
+        {
+          "pkg": "com.xiaomi.voicecontrol",
+          "note": "Xiao Ai voice control"
+        },
+        {
+          "pkg": "com.xiaomi.wakeupservice",
+          "note": "voice wake-up"
+        },
+        {
+          "pkg": "com.xiaomi.mico.mqtt.service.application.tv",
+          "note": "Mico voice MQTT service"
+        }
+      ]
+    },
+    {
+      "title": "Stock screensaver, replaced by the launcher's ClockDream. Apply only AFTER the launcher is Home and",
+      "packages": [
+        {
+          "pkg": "com.mitv.screensaver"
+        }
+      ]
+    },
+    {
+      "title": "Stock launcher: KEEP ENABLED (see \"Home\" above). It is the only app left that can answer HOME if the",
+      "packages": [
+        {
+          "pkg": "com.mitv.tvhome",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/xiaomi-mitv-ansp0/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

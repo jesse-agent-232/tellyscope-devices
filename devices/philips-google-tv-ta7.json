@@ -1,0 +1,107 @@
+{
+  "schema": 1,
+  "id": "philips-google-tv-ta7",
+  "name": "Philips Google TV TA7",
+  "tested": {
+    "os": "Google TV 14",
+    "sdk": 34,
+    "build": "UTT1.250308.001"
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Batch 1: telemetry and attribution",
+      "packages": [
+        {
+          "pkg": "org.droidtv.candeebug",
+          "note": "TP Vision \"DAC\" analytics: CollectionService, boot receiver, ~55 MB resident"
+        },
+        {
+          "pkg": "org.droidtv.gel",
+          "note": "TP Vision metrics GatheringService, shares candeebug's cache provider"
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "partner referrer / RLZ ping"
+        },
+        {
+          "pkg": "android.autoinstalls.config.tpv.device",
+          "note": "Play auto-install of TPV partner apps"
+        }
+      ]
+    },
+    {
+      "title": "Batch 2: manufacturer content and popups",
+      "packages": [
+        {
+          "pkg": "com.mediatek.opapp",
+          "note": "European satellite operator apps (Canal Digitaal, HD+, Skylink...), unused in Brazil"
+        },
+        {
+          "pkg": "org.droidtv.consentcmpapp",
+          "note": "TP Vision ad-consent (CMP) screen"
+        },
+        {
+          "pkg": "com.mstar.android.tv.disclaimercustomization",
+          "note": "disclaimer popup"
+        }
+      ]
+    },
+    {
+      "title": "Batch 3: background extras",
+      "packages": [
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.onetimeinitializer",
+          "note": "runs once at first setup"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar",
+          "note": "no calendar app on a TV"
+        },
+        {
+          "pkg": "com.android.printspooler"
+        }
+      ]
+    },
+    {
+      "title": "Batch 4: by owner's choice (not used)",
+      "packages": [
+        {
+          "pkg": "com.netflix.ninja"
+        },
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom",
+          "note": "Prime Video"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google TV films/shop app"
+        },
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Chromecast built-in, ~75 MB resident"
+        }
+      ]
+    },
+    {
+      "title": "Batch 5: stock home. Disable only after the new launcher is installed (build-and-install.sh with STOCK_LAUNCHER does this).",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.launcherx"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/philips-google-tv-ta7/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

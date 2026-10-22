@@ -1,0 +1,132 @@
+{
+  "schema": 1,
+  "id": "tcl-g10-google-tv",
+  "name": "TCL 55\" 4K Google TV",
+  "tested": {
+    "os": "Android 12",
+    "sdk": null,
+    "build": "STT2.230203.001"
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "TCL content, ads and promos",
+      "packages": [
+        {
+          "pkg": "com.tcl.tv.plus",
+          "note": "TCL TV+ content app"
+        },
+        {
+          "pkg": "com.tcl.channelplus",
+          "note": "TCL Live FAST channels, also removes them from Live TV"
+        },
+        {
+          "pkg": "com.tcl.tv.tclhome_passive",
+          "note": "pushes TCL content to the home screen at boot"
+        },
+        {
+          "pkg": "com.tcl.partnercustomizer",
+          "note": "TCL tweaks to Google TV home rows"
+        },
+        {
+          "pkg": "com.tcl.interactive",
+          "note": "TCL TIAS background service"
+        },
+        {
+          "pkg": "com.tcl.smartlink.core",
+          "note": "bundles a silent app installer (CustomInstallService)"
+        }
+      ]
+    },
+    {
+      "title": "Retail demo / store mode",
+      "packages": [
+        {
+          "pkg": "com.tcl.exhibit"
+        },
+        {
+          "pkg": "com.tcl.esticker"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps and services",
+      "packages": [
+        {
+          "pkg": "com.tcl.ocean.instructions",
+          "note": "e-manual"
+        },
+        {
+          "pkg": "com.tcl.repairguide"
+        },
+        {
+          "pkg": "com.tcl.gamebar",
+          "note": "re-enable for the console game-mode overlay"
+        },
+        {
+          "pkg": "com.tcl.ui_mediaCenter",
+          "note": "re-enable to play media from USB drives"
+        },
+        {
+          "pkg": "com.tcl.UpdatePeripheral",
+          "note": "re-enable to update a TCL soundbar"
+        },
+        {
+          "pkg": "android.autoinstalls.config.google.gtvpai"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.marvin.talkback"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.dreamx",
+          "note": "ambient mode screensaver, see quirks above"
+        },
+        {
+          "pkg": "com.google.android.tv.remote.service",
+          "note": "Google TV phone-app remote"
+        }
+      ]
+    },
+    {
+      "title": "Optional: uncomment what you don't use",
+      "packages": [
+        {
+          "pkg": "com.tcl.airplay2",
+          "note": "AirPlay, together with the next line",
+          "optional": true
+        },
+        {
+          "pkg": "com.realtek.airplay2",
+          "optional": true
+        },
+        {
+          "pkg": "com.netflix.ninja",
+          "note": "Netflix, together with the next line",
+          "optional": true
+        },
+        {
+          "pkg": "com.netflix.tokenmanager",
+          "optional": true
+        },
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom",
+          "note": "Prime Video",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.youtube.tv",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tcl-g10-google-tv/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "telesystem-ont2hd",
+  "name": "Tele System TS ON T2/HD",
+  "tested": {
+    "os": "Android TV 11",
+    "sdk": 30,
+    "build": null
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "SDMC vendor bloat and diagnostics",
+      "packages": [
+        {
+          "pkg": "com.sdmc.facTest",
+          "note": "SDMC factory test menu"
+        },
+        {
+          "pkg": "com.sdmc.leakbackcustomer",
+          "note": "SDMC partner customer service (purpose unclear; comment out if anything breaks)"
+        },
+        {
+          "pkg": "com.sdmc.hwinfo",
+          "note": "SDMC hardware info and diagnostics"
+        },
+        {
+          "pkg": "android.autoinstalls.config.sdmc",
+          "note": "silently installs partner apps"
+        }
+      ]
+    },
+    {
+      "title": "Google TV / Android TV bloat",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Voice assistant / search"
+        },
+        {
+          "pkg": "com.google.android.marvin.talkback",
+          "note": "TalkBack accessibility"
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations",
+          "note": "Stock recommendation rows"
+        },
+        {
+          "pkg": "com.google.android.tvlauncher",
+          "note": "Stock launcher: the installer disables it once the new Home is in",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic",
+          "note": "YouTube Music"
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "Google partner promotions"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google TV / Play Movies"
+        },
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "Crash reporter"
+        },
+        {
+          "pkg": "com.google.android.play.games",
+          "note": "Play Games"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/telesystem-ont2hd/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

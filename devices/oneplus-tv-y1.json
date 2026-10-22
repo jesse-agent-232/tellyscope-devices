@@ -1,0 +1,124 @@
+{
+  "schema": 1,
+  "id": "oneplus-tv-y1",
+  "name": "OnePlus TV",
+  "tested": {
+    "os": "Android TV 11",
+    "sdk": 30,
+    "build": null
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Skyworth auto-installs, retail demo and setup leftovers",
+      "packages": [
+        {
+          "pkg": "android.autoinstalls.config.skyworth",
+          "note": "Skyworth OEM partner configuration"
+        },
+        {
+          "pkg": "fusion.android.tv.demo",
+          "note": "OnePlus retail display demo, starts at boot"
+        },
+        {
+          "pkg": "com.smartdevice.common.demonow",
+          "note": "In-store retail demo"
+        },
+        {
+          "pkg": "com.mstar.android.tv.disclaimercustomization",
+          "note": "MStar disclaimer splash screen"
+        },
+        {
+          "pkg": "com.Smartdevice.emanual",
+          "note": "Built-in electronic user manual"
+        }
+      ]
+    },
+    {
+      "title": "Telemetry and background services",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "User feedback agent"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar",
+          "note": "Background calendar synchronization"
+        },
+        {
+          "pkg": "com.android.providers.calendar",
+          "note": "Calendar content provider"
+        },
+        {
+          "pkg": "com.google.android.boot.appsplashscreen",
+          "note": "Boot splash screen animator"
+        }
+      ]
+    },
+    {
+      "title": "Recommendation rows and stock-launcher partner customizer",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvrecommendations",
+          "note": "Home screen recommendation ad service"
+        },
+        {
+          "pkg": "com.google.android.leanbacklauncher.partnercustomizer",
+          "note": "Sponsored leanback partner channels"
+        }
+      ]
+    },
+    {
+      "title": "Factory testing tools (verified safe on this set)",
+      "packages": [
+        {
+          "pkg": "com.coocaa.factory",
+          "note": "Coocaa factory test suite; lived with disabled without trouble"
+        },
+        {
+          "pkg": "com.mediatek.testpq",
+          "note": "MediaTek picture quality test tool"
+        },
+        {
+          "pkg": "com.mediatek.tv.factory",
+          "note": "MediaTek TV factory diagnostics; lived with disabled without trouble"
+        },
+        {
+          "pkg": "com.airoha.ble.ota",
+          "note": "Airoha Bluetooth OTA updater; remote pairing still works"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded / unused streaming apps (user confirmed)",
+      "packages": [
+        {
+          "pkg": "com.vodafone.vodafoneplay",
+          "note": "Vodafone Play"
+        },
+        {
+          "pkg": "com.viacom18.tv.voot",
+          "note": "Voot TV"
+        },
+        {
+          "pkg": "com.jio.media.stb.ondemand",
+          "note": "JioCinema / Jio TV"
+        },
+        {
+          "pkg": "com.google.android.play.games",
+          "note": "Google Play Games"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google TV / Play Movies"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/oneplus-tv-y1/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

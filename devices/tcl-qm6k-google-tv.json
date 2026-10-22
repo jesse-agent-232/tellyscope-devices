@@ -1,0 +1,231 @@
+{
+  "schema": 1,
+  "id": "tcl-qm6k-google-tv",
+  "name": "TCL QM6K Pro Google TV",
+  "tested": {
+    "os": "Android 14",
+    "sdk": null,
+    "build": null
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "TCL tracking and analytics",
+      "packages": [
+        {
+          "pkg": "com.tcl.ttvs",
+          "note": "Samba TV ACR viewing tracking, TCL \"BI\" analytics, Alexa core, T-Cast"
+        },
+        {
+          "pkg": "com.tcl.logkit",
+          "note": "log capture and upload"
+        },
+        {
+          "pkg": "com.tcl.usercenter",
+          "note": "TCL account sign-in nags"
+        }
+      ]
+    },
+    {
+      "title": "TCL content, ads and promos",
+      "packages": [
+        {
+          "pkg": "com.tcl.tv.plus",
+          "note": "TCL TV+ content app"
+        },
+        {
+          "pkg": "com.tcl.channelplus",
+          "note": "TCL Live FAST channels"
+        },
+        {
+          "pkg": "com.tcl.tv.tclhome_passive",
+          "note": "pushes TCL content to the home screen at boot"
+        },
+        {
+          "pkg": "com.tcl.partnercustomizer",
+          "note": "TCL tweaks to Google TV home rows"
+        },
+        {
+          "pkg": "com.tcl.interactive",
+          "note": "TCL TIAS background service"
+        },
+        {
+          "pkg": "com.tcl.smartlink.core",
+          "note": "bundles a silent app installer"
+        },
+        {
+          "pkg": "com.tcl.messagebox",
+          "note": "TCL push messages and promos"
+        }
+      ]
+    },
+    {
+      "title": "Retail demo / hotel mode",
+      "packages": [
+        {
+          "pkg": "com.tcl.exhibit"
+        },
+        {
+          "pkg": "com.tcl.esticker"
+        },
+        {
+          "pkg": "com.tcl.hotelmenu"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps and services",
+      "packages": [
+        {
+          "pkg": "com.tcl.ocean.instructions",
+          "note": "e-manual"
+        },
+        {
+          "pkg": "com.tcl.repairguide"
+        },
+        {
+          "pkg": "com.tcl.browser",
+          "note": "TCL web browser"
+        },
+        {
+          "pkg": "com.tcl.ui_mediaCenter",
+          "note": "re-enable to play media from USB drives"
+        },
+        {
+          "pkg": "com.tcl.smartalexa",
+          "note": "Alexa"
+        },
+        {
+          "pkg": "android.autoinstalls.config.google.gtvpai",
+          "note": "silently installs partner apps"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.android.tv.feedbackconsent"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.dreamx",
+          "note": "ambient mode screensaver (shows promos)"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        }
+      ]
+    },
+    {
+      "title": "Needed for the custom launcher: see quirks above. Disable only AFTER launcher/ is installed.",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith"
+        }
+      ]
+    },
+    {
+      "title": "Optional: uncomment what you don't use",
+      "packages": [
+        {
+          "pkg": "com.netflix.ninja",
+          "note": "Netflix, together with the next line",
+          "optional": true
+        },
+        {
+          "pkg": "com.netflix.tokenmanager",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.tv.remote.service",
+          "note": "Google TV phone-app remote",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.marvin.talkback",
+          "note": "screen reader",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Chromecast",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.gamebar",
+          "note": "game mode / VRR overlay for consoles",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.airplay2",
+          "note": "AirPlay, together with the next two lines",
+          "optional": true
+        },
+        {
+          "pkg": "com.mediatek.AirplayAPK",
+          "optional": true
+        },
+        {
+          "pkg": "com.mediatek.airplaydaemon",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.UpdatePeripheral",
+          "note": "TCL soundbar firmware updates",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google Assistant voice",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Reported safe on the AU14 firmware of the same G08 board (#23), not tried on this AU16 set",
+      "packages": [
+        {
+          "pkg": "com.tcl.android.webview",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.t_solo",
+          "note": "\"listen alone\" Bluetooth pairing helper",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "partner attribution",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.onetimeinitializer",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar",
+          "optional": true
+        },
+        {
+          "pkg": "com.mediatek.speakerservice",
+          "optional": true
+        },
+        {
+          "pkg": "com.mediatek.backgrounddetection",
+          "optional": true
+        },
+        {
+          "pkg": "com.mediatek.support.webview",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tcl-qm6k-google-tv/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

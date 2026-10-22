@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "id": "vision-2024vision43stv",
+  "name": "Vision 2024VISION43STV",
+  "tested": {
+    "os": "Android 13",
+    "sdk": 33,
+    "build": null
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "Ads and telemetry",
+      "packages": [
+        {
+          "pkg": "com.cvte.gaia.ad.service",
+          "note": "ad service, Google Mobile Ads, SensorsData analytics, Sentry"
+        },
+        {
+          "pkg": "com.cvte.wonder.cloud.service",
+          "note": "\"UniAdService\", Firebase, Sentry"
+        },
+        {
+          "pkg": "com.cvte.industries",
+          "note": "push messenger (ACTION_INDUSTRY_MESSENGER) + AdReceiver"
+        }
+      ]
+    },
+    {
+      "title": "Manufacturer content and ad services",
+      "packages": [
+        {
+          "pkg": "com.zeasn.services.general",
+          "note": "Zeasn search / content service, boots with the TV"
+        },
+        {
+          "pkg": "com.cvte.tv.pictorial",
+          "note": "screensaver with ads; switch to com.android.dreams.basic Colors"
+        },
+        {
+          "pkg": "com.cvte.tv.weather"
+        },
+        {
+          "pkg": "com.cvte.tv.steward",
+          "note": "\"cleaner\" with scheduled \"optimisation\""
+        }
+      ]
+    },
+    {
+      "title": "Stock launcher and its skin: ONLY with a direct-boot-aware replacement Home (see header)",
+      "packages": [
+        {
+          "pkg": "com.cvte.tv.launcher.space",
+          "note": "ads, SensorsData, Sentry, Firebase; also a live-TV preview"
+        },
+        {
+          "pkg": "com.cvte.tv.launcher.space.skin"
+        }
+      ]
+    },
+    {
+      "title": "Off by choice on the tested set (keep what you use)",
+      "packages": [
+        {
+          "pkg": "com.netflix.mediaclient"
+        },
+        {
+          "pkg": "com.amazon.avod.thirdpartyclient",
+          "note": "Prime Video"
+        },
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom",
+          "note": "Prime Video"
+        },
+        {
+          "pkg": "com.amazon.rialto.cordova.webapp.webapp2660c968ef8949678398aeb6fd6cb036",
+          "note": "preloaded Amazon web app"
+        },
+        {
+          "pkg": "com.tiktok.tv"
+        },
+        {
+          "pkg": "deezer.android.tv"
+        },
+        {
+          "pkg": "com.ted.android.tv"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/vision-2024vision43stv/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

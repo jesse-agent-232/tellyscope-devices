@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "hisense-hismarttv-a4-android11",
+  "name": "Hisense HiSmartTV A4",
+  "tested": {
+    "os": "Android TV 11",
+    "sdk": null,
+    "build": "00.00.00.18"
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Group 1: telemetry, ACR and tracking",
+      "packages": [
+        {
+          "pkg": "com.hisense.evservice",
+          "note": "codePath /system/app/acr: automatic content recognition"
+        },
+        {
+          "pkg": "com.hisense.service.message",
+          "note": "/system/app/HiMsgService: Hisense push messages"
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "partner referral tracking"
+        },
+        {
+          "pkg": "android.autoinstalls.config.hisense.xiaoyushan",
+          "note": "silent partner-app auto-installs"
+        },
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "crash/feedback uploader"
+        },
+        {
+          "pkg": "com.google.android.tv.bugreportsender"
+        }
+      ]
+    },
+    {
+      "title": "Group 2: promo content, retail and commercial modes, Hisense preloads",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvrecommendations",
+          "note": "recommendation rows"
+        },
+        {
+          "pkg": "com.mstar.android.tv.disclaimercustomization",
+          "note": "/system/product/app/VendorDisclaimer: store disclaimer"
+        },
+        {
+          "pkg": "com.hisense.tv.b2b",
+          "note": "/system/app/HisenseB2B: hotel/commercial mode"
+        },
+        {
+          "pkg": "net.vidaatv.hisense.android.tv",
+          "note": "\"Hisense Channels\", VIDAA free ad-supported channels"
+        },
+        {
+          "pkg": "com.hisense.alexa",
+          "note": "/system/app/HiAlexa"
+        }
+      ]
+    },
+    {
+      "title": "Group 3: preloaded streaming apps, optional. Comment out the ones you use.",
+      "packages": [
+        {
+          "pkg": "com.netflix.ninja",
+          "note": "the remote's Netflix key does nothing while this is off"
+        },
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom",
+          "note": "Prime Video"
+        },
+        {
+          "pkg": "com.pandora.android.atv"
+        }
+      ]
+    },
+    {
+      "title": "Group 4: unused on a television",
+      "packages": [
+        {
+          "pkg": "com.android.printspooler"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/hisense-hismarttv-a4-android11/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

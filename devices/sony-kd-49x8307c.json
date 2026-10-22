@@ -1,0 +1,172 @@
+{
+  "schema": 1,
+  "id": "sony-kd-49x8307c",
+  "name": "Sony BRAVIA KD-49X8307C",
+  "tested": {
+    "os": "Android TV 7.0",
+    "sdk": 24,
+    "build": "SVP4KDTV15_EU-user"
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "Telemetry, remote support, bug reports",
+      "packages": [
+        {
+          "pkg": "com.qterics.da.product",
+          "note": "Qterics device agent telemetry"
+        },
+        {
+          "pkg": "com.sony.dtv.da.service",
+          "note": "Sony device agent / remote support"
+        },
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "Feedback / crash reporter"
+        },
+        {
+          "pkg": "com.google.android.tv.bugreportsender",
+          "note": "Bug report sender"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.vendorprotocol",
+          "note": "Node.js broadcasting for Control4 home automation"
+        },
+        {
+          "pkg": "tv.samba.ssm",
+          "note": "Samba TV telemetry & ACR ad tracker"
+        }
+      ]
+    },
+    {
+      "title": "Sony content, ads, shelves and recommendation background services",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.discovery",
+          "note": "Discover bar (~22 MB RAM)"
+        },
+        {
+          "pkg": "com.sony.dtv.bivlinfo",
+          "note": "Feeds Discover"
+        },
+        {
+          "pkg": "com.sony.dtv.sonyselect",
+          "note": "Sony Select app store/promo tile"
+        },
+        {
+          "pkg": "com.sony.dtv.sonyshelf",
+          "note": "Sony Shelf recommendation row"
+        },
+        {
+          "pkg": "com.sony.dtv.recommendationservice",
+          "note": "Recommendation service"
+        },
+        {
+          "pkg": "com.sony.dtv.woprecommendation",
+          "note": "What's on Play recommendations"
+        },
+        {
+          "pkg": "com.sony.dtv.irbrecommendation",
+          "note": "IRB recommendations"
+        },
+        {
+          "pkg": "com.sony.dtv.networkrecommendation",
+          "note": "Network recommendations"
+        },
+        {
+          "pkg": "com.sony.dtv.watchtvrecommendation",
+          "note": "Watch TV recommendations"
+        },
+        {
+          "pkg": "android.autoinstalls.config.sony.bravia",
+          "note": "Play auto-install of partner apps"
+        }
+      ]
+    },
+    {
+      "title": "Retail demo",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.demomode",
+          "note": "Shop demo mode"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded help and unused Sony apps",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.customersupport",
+          "note": "Customer support"
+        },
+        {
+          "pkg": "com.sony.dtv.smarthelp",
+          "note": "Smart help"
+        },
+        {
+          "pkg": "com.sony.dtv.imanual",
+          "note": "i-Manual electronic guide"
+        },
+        {
+          "pkg": "com.sony.dtv.bravialifehack",
+          "note": "Bravia Lifehack"
+        },
+        {
+          "pkg": "com.google.android.inputmethod.japanese",
+          "note": "Japanese IME (keyboard is leanback.ime)"
+        },
+        {
+          "pkg": "com.opera.sdk.example",
+          "note": "Preinstalled Internet Browser (Opera TV SDK)"
+        }
+      ]
+    },
+    {
+      "title": "Discontinued / unused Google services",
+      "packages": [
+        {
+          "pkg": "com.google.android.music",
+          "note": "Google Play Music (discontinued)"
+        },
+        {
+          "pkg": "com.google.android.play.games",
+          "note": "Google Play Games"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google Play Movies & TV (discontinued)"
+        }
+      ]
+    },
+    {
+      "title": "Voice assistant (disabled if not using voice search / remote)",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google Assistant / voice search"
+        },
+        {
+          "pkg": "com.google.android.speech.pumpkin",
+          "note": "Voice recognition backend"
+        }
+      ]
+    },
+    {
+      "title": "YouView (UK broadcast service, unused in other regions)",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.youview"
+        },
+        {
+          "pkg": "com.youview.tv.servicehost"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/sony-kd-49x8307c/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

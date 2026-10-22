@@ -1,0 +1,144 @@
+{
+  "schema": 1,
+  "id": "tcl-g08-au-android12",
+  "name": "TCL Smart TV Pro",
+  "tested": {
+    "os": "Android 12",
+    "sdk": null,
+    "build": null
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "TCL promo, demo and help",
+      "packages": [
+        {
+          "pkg": "com.tcl.dashboard",
+          "note": "home-screen push messages"
+        },
+        {
+          "pkg": "com.tcl.exhibit",
+          "note": "store demo mode"
+        },
+        {
+          "pkg": "com.tcl.esticker",
+          "note": "retail-demo sticker"
+        },
+        {
+          "pkg": "com.tcl.hotelmenu",
+          "note": "hotel-mode portal"
+        },
+        {
+          "pkg": "com.tcl.ocean.instructions",
+          "note": "onboarding/tips overlay"
+        },
+        {
+          "pkg": "com.tcl.repairguide"
+        },
+        {
+          "pkg": "com.tcl.logkit",
+          "note": "log collection"
+        }
+      ]
+    },
+    {
+      "title": "TCL extras",
+      "packages": [
+        {
+          "pkg": "com.tcl.hearaid"
+        },
+        {
+          "pkg": "com.tcl.t_solo"
+        },
+        {
+          "pkg": "com.tcl.eva",
+          "note": "TCL voice assistant layer"
+        },
+        {
+          "pkg": "com.tcl.magiconnectfree",
+          "note": "MagicConnect pairing promo"
+        },
+        {
+          "pkg": "com.tcl.gamebar"
+        },
+        {
+          "pkg": "com.tcl.UpdatePeripheral",
+          "note": "peripheral firmware helper"
+        },
+        {
+          "pkg": "com.tcl.guard",
+          "note": "cleaner / \"permission shield\""
+        }
+      ]
+    },
+    {
+      "title": "Duplicate webviews (com.google.android.webview stays the active one), MediaTek leftovers, Google extras",
+      "packages": [
+        {
+          "pkg": "com.tcl.android.webview"
+        },
+        {
+          "pkg": "com.iplayer.android.webview"
+        },
+        {
+          "pkg": "com.mediatek.support.webview"
+        },
+        {
+          "pkg": "com.mediatek.backgrounddetection"
+        },
+        {
+          "pkg": "com.mediatek.network"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.dreamx",
+          "note": "photo screensaver; the basic one takes over"
+        },
+        {
+          "pkg": "com.google.android.tts"
+        },
+        {
+          "pkg": "com.android.printspooler"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        }
+      ]
+    },
+    {
+      "title": "Content apps",
+      "packages": [
+        {
+          "pkg": "com.tcl.waterfall.overseas",
+          "note": "TCL Channel"
+        },
+        {
+          "pkg": "com.tcl.channelplus",
+          "note": "TCL Live free channels - see the README: with no aerial this is all Live TV has"
+        },
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom",
+          "note": "Prime Video, off by choice"
+        }
+      ]
+    },
+    {
+      "title": "Home takeover for launcher/. On the tested set the saved Wi-Fi belonged to com.android.tv.settings, so the",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.tv.launcherx",
+          "note": "stock Google TV home"
+        },
+        {
+          "pkg": "com.google.android.tungsten.setupwraith",
+          "note": "setup wizard; its RecoveryActivity takes Home when launcherx is off"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tcl-g08-au-android12/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

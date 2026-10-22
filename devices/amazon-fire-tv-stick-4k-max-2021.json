@@ -1,0 +1,144 @@
+{
+  "schema": 1,
+  "id": "amazon-fire-tv-stick-4k-max-2021",
+  "name": "Amazon Fire TV Stick 4K Max",
+  "tested": {
+    "os": "Fire OS 7.7.1.3",
+    "sdk": 28,
+    "build": "PS7713.5443N"
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "Amazon telemetry, metrics, logs, usage reporting",
+      "packages": [
+        {
+          "pkg": "com.amazon.client.metrics.api"
+        },
+        {
+          "pkg": "com.amazon.tv.fw.metrics"
+        },
+        {
+          "pkg": "com.amazon.wirelessmetrics.service"
+        },
+        {
+          "pkg": "com.amazon.perfcollection"
+        },
+        {
+          "pkg": "com.amazon.perfc"
+        },
+        {
+          "pkg": "com.amazon.dp.logger"
+        },
+        {
+          "pkg": "com.amazon.ceviche",
+          "note": "data collection pipelines"
+        },
+        {
+          "pkg": "com.amazon.tv.developer.dataservice",
+          "note": "content personalization data for third-party apps"
+        },
+        {
+          "pkg": "com.amazon.livedeviceservice"
+        },
+        {
+          "pkg": "com.amazon.privacypassservice",
+          "note": "privacy pass token service"
+        },
+        {
+          "pkg": "com.amazon.wifilocker",
+          "note": "uploads Wi-Fi passwords to Amazon"
+        },
+        {
+          "pkg": "com.amazon.tv.acr",
+          "note": "Automatic Content Recognition"
+        }
+      ]
+    },
+    {
+      "title": "Ads, sponsored rows, recommendations, promos, shopping",
+      "packages": [
+        {
+          "pkg": "com.amazon.kso.blackbird",
+          "note": "launcher ad sync / bidding"
+        },
+        {
+          "pkg": "com.amazon.sneakpeek",
+          "note": "sponsored \"Sneak Peek\" previews"
+        },
+        {
+          "pkg": "com.amazon.hybridadidservice",
+          "note": "advertising ID service"
+        },
+        {
+          "pkg": "com.amazon.providers.contentsupport"
+        },
+        {
+          "pkg": "com.amazon.tv.easyupgrade",
+          "note": "\"upgrade your Fire TV\" promos"
+        },
+        {
+          "pkg": "com.amazon.shoptv.client",
+          "note": "Amazon Shopping on TV"
+        },
+        {
+          "pkg": "com.amazon.shoptv.firetv.client"
+        },
+        {
+          "pkg": "com.amazon.hedwig",
+          "note": "Fire TV Channels"
+        },
+        {
+          "pkg": "com.amazon.tv.livetv",
+          "note": "Live tab and guide (no tuner on a stick)"
+        },
+        {
+          "pkg": "com.amazon.franktvinput",
+          "note": "live TV input feeding the Live tab"
+        },
+        {
+          "pkg": "com.amazon.gamehub",
+          "note": "games hub / Luna cards"
+        },
+        {
+          "pkg": "com.amazon.systemnotices"
+        },
+        {
+          "pkg": "com.amazon.tv.releasenotes",
+          "note": "\"what's new\" release notes"
+        },
+        {
+          "pkg": "com.amazon.uxnotification",
+          "note": "UX notification popups"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded Amazon apps (personal choice)",
+      "packages": [
+        {
+          "pkg": "com.amazon.tahoe",
+          "note": "Amazon Kids (FreeTime)"
+        },
+        {
+          "pkg": "com.amazon.bueller.music",
+          "note": "Amazon Music"
+        },
+        {
+          "pkg": "com.amazon.bueller.photos",
+          "note": "Amazon Photos"
+        },
+        {
+          "pkg": "com.amazon.tmm.tutorial",
+          "note": "remote tutorial"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/amazon-fire-tv-stick-4k-max-2021/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

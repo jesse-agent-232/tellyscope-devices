@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "id": "redmi-mitv-antl0",
+  "name": "Redmi TV",
+  "tested": {
+    "os": "Android 5.1.1",
+    "sdk": 22,
+    "build": null
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "Xiaomi telemetry / analytics / quality uploads",
+      "packages": [
+        {
+          "pkg": "com.miui.tv.analytics"
+        },
+        {
+          "pkg": "com.xiaomi.statistic"
+        },
+        {
+          "pkg": "com.xiaomi.tvqs",
+          "note": "quality system: uploads crash/perf/dropbox entries"
+        }
+      ]
+    },
+    {
+      "title": "Ad delivery: push service, promo web-content renderer, cloud app-push",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.mitv.tvpush.tvpushservice"
+        },
+        {
+          "pkg": "com.xm.webcontent",
+          "note": "webview/RN container for promos; fetches screensaver ads too"
+        },
+        {
+          "pkg": "com.mitv.cloudcontrol",
+          "note": "cloud control: starts on connectivity, remotely pushes apps"
+        }
+      ]
+    },
+    {
+      "title": "Shopping plugin (Alibaba Baichuan / TV Taobao SDK)",
+      "packages": [
+        {
+          "pkg": "com.mitv.shoplugin"
+        }
+      ]
+    },
+    {
+      "title": "Stock screensaver, replaced by the launcher's ClockDream",
+      "packages": [
+        {
+          "pkg": "com.mitv.screensaver"
+        }
+      ]
+    },
+    {
+      "title": "OTA updater: stops firmware updates re-enabling everything above. Trade-off: no security updates",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.mitv.upgrade"
+        }
+      ]
+    },
+    {
+      "title": "Cleaner app and game SDK; both have a /system base, hiding the package is enough",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.mitv.tvmanager"
+        },
+        {
+          "pkg": "com.xiaomi.gamecenter.sdk.service.mibox"
+        }
+      ]
+    },
+    {
+      "title": "Stock launcher (duokan content wall, incl. a PREDETAIL_AD_ACTIVITY); replaced by launcher/.",
+      "packages": [
+        {
+          "pkg": "com.mitv.tvhome",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/redmi-mitv-antl0/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

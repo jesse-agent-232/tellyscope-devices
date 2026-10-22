@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  },
+  "devices": [
+    {
+      "id": "philips-55oled708",
+      "name": "Philips 55OLED708/12",
+      "match": {
+        "manufacturer": [
+          "TPV"
+        ],
+        "model": [
+          "Philips Google TV TA1"
+        ],
+        "device": [
+          "PH1M_WW_9972"
+        ]
+      },
+      "sdk": 31,
+      "file": "devices/philips-55oled708.json",
+      "sha256": "0216b849312d3c40e286e8a13000ab3b4811cc698bb6381972ba8fce8dc6eb36"
+    }
+  ]
+}

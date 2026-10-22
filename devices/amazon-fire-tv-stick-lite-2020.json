@@ -1,0 +1,249 @@
+{
+  "schema": 1,
+  "id": "amazon-fire-tv-stick-lite-2020",
+  "name": "Amazon Fire TV Stick Lite",
+  "tested": {
+    "os": "Fire OS 7.7.1.7",
+    "sdk": 28,
+    "build": "PS7717.5741N"
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "Amazon telemetry, metrics, logs, usage reporting",
+      "packages": [
+        {
+          "pkg": "com.amazon.client.metrics.api"
+        },
+        {
+          "pkg": "com.amazon.minerva.client.api",
+          "note": "protected by Fire OS",
+          "optional": true
+        },
+        {
+          "pkg": "com.amazon.neo.minerva"
+        },
+        {
+          "pkg": "com.amazon.neo.minerva.logcat"
+        },
+        {
+          "pkg": "com.amazon.tv.fw.metrics"
+        },
+        {
+          "pkg": "com.amazon.wirelessmetrics.service"
+        },
+        {
+          "pkg": "com.amazon.perfcollection"
+        },
+        {
+          "pkg": "com.amazon.perfc"
+        },
+        {
+          "pkg": "com.amazon.device.logmanager",
+          "note": "protected by Fire OS",
+          "optional": true
+        },
+        {
+          "pkg": "com.amazon.device.crashmanager",
+          "note": "protected by Fire OS",
+          "optional": true
+        },
+        {
+          "pkg": "com.amazon.dp.logger"
+        },
+        {
+          "pkg": "com.amazon.diode",
+          "note": "protected by Fire OS",
+          "optional": true
+        },
+        {
+          "pkg": "com.amazon.ceviche",
+          "note": "data collection pipelines"
+        },
+        {
+          "pkg": "com.amazon.tv.developer.dataservice",
+          "note": "content personalization data for third-party apps"
+        },
+        {
+          "pkg": "com.fireos.usagestats.proxy",
+          "note": "protected by Fire OS",
+          "optional": true
+        },
+        {
+          "pkg": "com.amazon.livedeviceservice"
+        },
+        {
+          "pkg": "com.amazon.privacypassservice",
+          "note": "privacy pass token service"
+        },
+        {
+          "pkg": "com.amazon.wifilocker",
+          "note": "uploads Wi-Fi passwords to Amazon"
+        },
+        {
+          "pkg": "com.amazon.tv.acr",
+          "note": "Automatic Content Recognition"
+        }
+      ]
+    },
+    {
+      "title": "Ads, sponsored rows, recommendations, promos, shopping",
+      "packages": [
+        {
+          "pkg": "com.amazon.kso.blackbird",
+          "note": "launcher ad sync / bidding"
+        },
+        {
+          "pkg": "com.amazon.sneakpeek",
+          "note": "sponsored \"Sneak Peek\" previews"
+        },
+        {
+          "pkg": "com.amazon.hybridadidservice",
+          "note": "advertising ID service"
+        },
+        {
+          "pkg": "com.amazon.media.recommendations"
+        },
+        {
+          "pkg": "com.amazon.providers.contentsupport"
+        },
+        {
+          "pkg": "com.amazon.tv.easyupgrade",
+          "note": "\"upgrade your Fire TV\" promos"
+        },
+        {
+          "pkg": "com.amazon.shoptv.client",
+          "note": "Amazon Shopping on TV"
+        },
+        {
+          "pkg": "com.amazon.shoptv.firetv.client"
+        },
+        {
+          "pkg": "com.amazon.hedwig",
+          "note": "Fire TV Channels"
+        },
+        {
+          "pkg": "com.amazon.tv.livetv",
+          "note": "Live tab and guide (no tuner on a stick)"
+        },
+        {
+          "pkg": "com.amazon.franktvinput",
+          "note": "live TV input feeding the Live tab"
+        },
+        {
+          "pkg": "com.amazon.gamehub",
+          "note": "games hub / Luna cards"
+        },
+        {
+          "pkg": "com.amazon.systemnotices"
+        },
+        {
+          "pkg": "com.amazon.tv.releasenotes",
+          "note": "\"what's new\" release notes"
+        },
+        {
+          "pkg": "com.amazon.uxnotification",
+          "note": "UX notification popups"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded Amazon apps and setup helpers (personal choice)",
+      "packages": [
+        {
+          "pkg": "com.amazon.tahoe",
+          "note": "Amazon Kids (FreeTime)"
+        },
+        {
+          "pkg": "com.amazon.bueller.music",
+          "note": "Amazon Music"
+        },
+        {
+          "pkg": "com.amazon.bueller.photos",
+          "note": "Amazon Photos"
+        },
+        {
+          "pkg": "com.amazon.cloud9",
+          "note": "Silk browser"
+        },
+        {
+          "pkg": "com.amazon.tv.website_launcher",
+          "note": "opens websites in Silk"
+        },
+        {
+          "pkg": "com.amazon.tmm.tutorial",
+          "note": "remote tutorial"
+        },
+        {
+          "pkg": "com.amazon.storm.lightning.tutorial",
+          "note": "remote app tutorial"
+        },
+        {
+          "pkg": "com.amazon.naatyam"
+        },
+        {
+          "pkg": "com.amazon.whisperjoin.middleware.np",
+          "note": "frustration-free setup of other Amazon devices"
+        },
+        {
+          "pkg": "com.amazon.tv.ffsprovisioneeclient"
+        },
+        {
+          "pkg": "com.amazon.ods.kindleconnect",
+          "note": "\"show on Fire TV\" from Echo / Fire tablet"
+        },
+        {
+          "pkg": "com.amazon.tv.mattercohost",
+          "note": "Matter smart-home controller"
+        }
+      ]
+    },
+    {
+      "title": "Alexa extras (voice search on the remote mic keeps working with all of these off)",
+      "packages": [
+        {
+          "pkg": "com.amazon.tv.alexaalerts",
+          "note": "alarms, timers, reminders"
+        },
+        {
+          "pkg": "com.amazon.tv.alexanotifications"
+        },
+        {
+          "pkg": "com.amazon.alexa.externalmediaplayer.fireos",
+          "note": "Alexa music playback"
+        },
+        {
+          "pkg": "com.amazon.alexamediaplayer.runtime.ftv"
+        },
+        {
+          "pkg": "com.amazon.aiondec",
+          "note": "Alexa skill connections"
+        },
+        {
+          "pkg": "com.amazon.audiohome",
+          "note": "Alexa Home Theater"
+        },
+        {
+          "pkg": "com.amazon.whad",
+          "note": "whole-home audio (multi-room music)"
+        },
+        {
+          "pkg": "com.amazon.whasettings"
+        },
+        {
+          "pkg": "com.amazon.wha.mediabrowserservice"
+        },
+        {
+          "pkg": "com.amazon.aca",
+          "note": "Alexa hints/cues providers (HintsProvider, InstaHintsProvider), ~44 MB resident"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/amazon-fire-tv-stick-lite-2020/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

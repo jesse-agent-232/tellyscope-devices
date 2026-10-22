@@ -1,0 +1,137 @@
+{
+  "schema": 1,
+  "id": "xiaomi-tv-a-pro-2026",
+  "name": "Xiaomi TV A Pro 75\" 2026",
+  "tested": {
+    "os": "Android 14",
+    "sdk": 34,
+    "build": null
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Xiaomi + Google telemetry",
+      "packages": [
+        {
+          "pkg": "com.miui.tv.analytics"
+        },
+        {
+          "pkg": "com.xiaomi.statistic"
+        },
+        {
+          "pkg": "com.xiaomi.tvqs.overseas.y24",
+          "note": "Xiaomi quality-stats uploader (DROPBOX_ENTRY_ADDED, upload log)"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        }
+      ]
+    },
+    {
+      "title": "PatchWall / \"Mi Home\" tab, content rows, promos",
+      "packages": [
+        {
+          "pkg": "com.mitv.tvhome.atv",
+          "note": "PatchWall"
+        },
+        {
+          "pkg": "com.mitv.tvhome.michannel"
+        },
+        {
+          "pkg": "com.mitv.tvhome.mitvplus",
+          "note": "Mi TV+ FAST channels"
+        },
+        {
+          "pkg": "com.mitv.tvhome.oemtab",
+          "note": "the \"Mi Home\" tab injected into Google TV home"
+        },
+        {
+          "pkg": "com.xm.webcontent"
+        },
+        {
+          "pkg": "android.autoinstalls.config.google.gtvpai",
+          "note": "Play auto-install of partner apps"
+        }
+      ]
+    },
+    {
+      "title": "Xiaomi background services",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.mitv.tvmanager",
+          "note": "\"TV Manager\" cleaner / booster"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.updateservice",
+          "note": "firmware updates: re-enable these three to check for one"
+        },
+        {
+          "pkg": "com.mitv.upgrader"
+        },
+        {
+          "pkg": "com.mediatek.tv.systemupdater"
+        }
+      ]
+    },
+    {
+      "title": "Google TV setup wizard: only its RecoveryActivity matters after setup, see the quirk above.",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith"
+        }
+      ]
+    },
+    {
+      "title": "Chromecast built-in (AirPlay, Miracast and Mi Cast are left enabled).",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps",
+      "packages": [
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.xiaomi.mimusic2"
+        }
+      ]
+    },
+    {
+      "title": "Personal choice: preloaded streaming apps not used (YouTube and Netflix kept)",
+      "packages": [
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        }
+      ]
+    },
+    {
+      "title": "Optional, uncomment if unused",
+      "packages": [
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google TV / Play Movies app",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.apps.tv.dreamx",
+          "note": "Google ambient screensaver (switch to the Clock dream first)",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/xiaomi-tv-a-pro-2026/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

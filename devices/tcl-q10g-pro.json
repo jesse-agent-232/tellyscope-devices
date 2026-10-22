@@ -1,0 +1,119 @@
+{
+  "schema": 1,
+  "id": "tcl-q10g-pro",
+  "name": "TCL 55Q10G Pro",
+  "tested": {
+    "os": "Android 11",
+    "sdk": 30,
+    "build": "RQ3A.210705.001"
+  },
+  "launcher": "com.tcl.cyberui",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Ad and telemetry reporting",
+      "packages": [
+        {
+          "pkg": "com.tcl.bootadservice",
+          "note": "full-screen ad before Home"
+        },
+        {
+          "pkg": "com.tcl.profilemanager",
+          "note": "audience / profile reporting"
+        },
+        {
+          "pkg": "com.tcl.bi",
+          "note": "analytics and behaviour reporting"
+        },
+        {
+          "pkg": "com.tcl.xian.StartandroidService",
+          "note": "background reporting service"
+        },
+        {
+          "pkg": "com.tcl.logkit",
+          "note": "log collection and upload"
+        },
+        {
+          "pkg": "com.tcl.recognize.service",
+          "note": "screen recognition; also receives PackageInstall.renew and"
+        },
+        {
+          "pkg": "com.tcl.appreciate.art",
+          "note": "art-wallpaper / screensaver promo content"
+        },
+        {
+          "pkg": "com.tcl.atomic.servicecenter",
+          "note": "home-screen recommendation cards (plugin host)"
+        },
+        {
+          "pkg": "com.tcl.c2dm.client",
+          "note": "TCL push, long-lived connection"
+        },
+        {
+          "pkg": "com.tcl.wholenetsearch",
+          "note": "whole-net search; results carry VOD promotions"
+        },
+        {
+          "pkg": "com.tcl.playskill",
+          "note": "\"tips\" promo app"
+        },
+        {
+          "pkg": "com.tcl.repairguide",
+          "note": "repair-guide app"
+        },
+        {
+          "pkg": "com.tcl.useragreement",
+          "note": "user-agreement popup"
+        },
+        {
+          "pkg": "android.autoinstalls.config.tcl.device",
+          "note": "first-boot auto-install of preloaded apps"
+        }
+      ]
+    },
+    {
+      "title": "Content apps that carry their own promo surfaces",
+      "packages": [
+        {
+          "pkg": "com.tcl.ffeducation",
+          "note": "kids / education content"
+        },
+        {
+          "pkg": "com.tcl.ffkaraoke",
+          "note": "karaoke"
+        }
+      ]
+    },
+    {
+      "title": "OTA and account — re-enable com.tcl.versionUpdateApp when you want firmware updates",
+      "packages": [
+        {
+          "pkg": "com.tcl.versionUpdateApp",
+          "note": "system OTA and app auto-update"
+        },
+        {
+          "pkg": "com.tcl.UpdatePeripheral",
+          "note": "peripheral firmware OTA; ~210 MB resident, the top RSS here"
+        },
+        {
+          "pkg": "com.tcl.usercenter",
+          "note": "account / wallet / VIP + XMPP; re-enable to sign in"
+        }
+      ]
+    },
+    {
+      "title": "Voice, off by choice — the remote's voice key does nothing afterwards",
+      "packages": [
+        {
+          "pkg": "com.tcl.walleve",
+          "note": "iFlytek voice engine; registers an AccessibilityService"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tcl-q10g-pro/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "id": "onn-4k-plus-2025",
+  "name": "onn. 4K Plus Streaming",
+  "tested": {
+    "os": "Google TV 14",
+    "sdk": 34,
+    "build": "URO4.260304.011.B1.15051976"
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Telemetry and feedback",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.android.tv.feedbackconsent"
+        }
+      ]
+    },
+    {
+      "title": "Privacy Sandbox / federated learning. APEX modules here, under com.android.* names (com.google.android.*",
+      "packages": [
+        {
+          "pkg": "com.android.adservices.api"
+        },
+        {
+          "pkg": "com.android.ondevicepersonalization.services"
+        },
+        {
+          "pkg": "com.android.federatedcompute.services"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps",
+      "packages": [
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.android.printspooler"
+        },
+        {
+          "pkg": "com.google.android.marvin.talkback",
+          "note": "re-enable if you need the screen reader"
+        }
+      ]
+    },
+    {
+      "title": "Google ambient mode screensaver (replaced by the launcher's Clock screensaver)",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.tv.dreamx"
+        }
+      ]
+    },
+    {
+      "title": "Off by choice on the tested box: comment out the ones you use",
+      "packages": [
+        {
+          "pkg": "com.google.android.youtube.tv",
+          "note": "official YouTube (SmartTube used instead)"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        },
+        {
+          "pkg": "com.netflix.ninja"
+        },
+        {
+          "pkg": "com.netflix.tokenmanager",
+          "note": "Netflix partner token service, only serves Netflix"
+        },
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Chromecast built-in"
+        }
+      ]
+    },
+    {
+      "title": "Stock home. launcher/build-and-install.sh disables launcherx itself once the new launcher is installed",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.tv.launcherx",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.tungsten.setupwraith",
+          "note": "setup wizard; forget and re-join Wi-Fi first (see quirks)"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/onn-4k-plus-2025/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

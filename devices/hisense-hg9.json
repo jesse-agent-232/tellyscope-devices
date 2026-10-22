@@ -1,0 +1,150 @@
+{
+  "schema": 1,
+  "id": "hisense-hg9",
+  "name": "Hisense HG9",
+  "tested": {
+    "os": "Android TV 9",
+    "sdk": 28,
+    "build": "PTMR.190127.037"
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Hisense telemetry and viewing-data collection",
+      "packages": [
+        {
+          "pkg": "com.hisense.app.logreport",
+          "note": "LogReportManagerService, persistent system reporter"
+        },
+        {
+          "pkg": "com.hisense.evservice",
+          "note": "ACR collector (/system/priv-app/acr), watches HDMI too"
+        },
+        {
+          "pkg": "com.hisense.tv.smartsense",
+          "note": "Smartsense analytics"
+        },
+        {
+          "pkg": "com.hisense.tv.smartservice",
+          "note": "SmartsenseService background service"
+        },
+        {
+          "pkg": "com.vt.tv.smartsense.ui",
+          "note": "Smartsense companion UI"
+        },
+        {
+          "pkg": "com.mstar.netflixobserver",
+          "note": "MNetflixObserver measurement service (Netflix app untouched)"
+        },
+        {
+          "pkg": "com.hisense.service.message",
+          "note": "HiMsgService push messaging"
+        },
+        {
+          "pkg": "com.hisense.hitv.hicloud.account",
+          "note": "HiCloud account manager"
+        },
+        {
+          "pkg": "android.autoinstalls.config.hisense.laohushan",
+          "note": "partner silent app auto-installs"
+        }
+      ]
+    },
+    {
+      "title": "Hisense promos, cleaners, demo, business mode",
+      "packages": [
+        {
+          "pkg": "com.hisense.tv.customerlauncher",
+          "note": "CustomerLauncher home-screen tweaks"
+        },
+        {
+          "pkg": "com.hisense.tv.protector",
+          "note": "TvProtector \"speedup\" cleaner"
+        },
+        {
+          "pkg": "com.hisense.storemode",
+          "note": "retail store demo mode"
+        },
+        {
+          "pkg": "com.hisense.tv.b2b",
+          "note": "HisenseB2B hotel/business mode"
+        },
+        {
+          "pkg": "fusion.android.tv.demo",
+          "note": "fusion demo app"
+        }
+      ]
+    },
+    {
+      "title": "Google recommendation rows and reporters",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvrecommendations"
+        },
+        {
+          "pkg": "com.google.android.leanbacklauncher.recommendations"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.tv.bugreportsender"
+        },
+        {
+          "pkg": "com.google.android.backdrop",
+          "note": "Backdrop Daydream idle/cast screensaver (owner choice)"
+        },
+        {
+          "pkg": "com.google.android.tts",
+          "note": "Speech recognition & synthesis (owner choice; kills voice search)"
+        }
+      ]
+    },
+    {
+      "title": "Owner-confirmed streaming preload removals",
+      "packages": [
+        {
+          "pkg": "com.pandora.android.atv"
+        },
+        {
+          "pkg": "com.peacocktv.peacockandroid"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvkids"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.wbd.stream",
+          "note": "Max"
+        },
+        {
+          "pkg": "com.cbs.ott",
+          "note": "Paramount+"
+        },
+        {
+          "pkg": "com.jamdeo.tv.mediacenter",
+          "note": "Hisense MediaCenter DLNA/USB player"
+        }
+      ]
+    },
+    {
+      "title": "Launchers (stock replaced by FLauncher)",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvlauncher"
+        },
+        {
+          "pkg": "com.google.android.tungsten.setupwraith"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/hisense-hg9/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

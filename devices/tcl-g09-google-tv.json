@@ -1,0 +1,184 @@
+{
+  "schema": 1,
+  "id": "tcl-g09-google-tv",
+  "name": "TCL Smart TV Pro",
+  "tested": {
+    "os": "Android 12",
+    "sdk": null,
+    "build": null
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "TCL telemetry and analytics",
+      "packages": [
+        {
+          "pkg": "com.tcl.ttvs",
+          "note": "TCL BI/awareness/identifier services; see the README on TvSettings without it"
+        },
+        {
+          "pkg": "com.tcl.logkit",
+          "note": "log capture and upload"
+        },
+        {
+          "pkg": "com.tcl.interactive",
+          "note": "TCL TIAS background service"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.graymatrix.did",
+          "note": "device analytics (data app; on the AS23 unit)"
+        },
+        {
+          "pkg": "com.mirakulo.astrotv.service",
+          "note": "Ginga (ISDB-Tb broadcast apps), not analytics"
+        }
+      ]
+    },
+    {
+      "title": "TCL content, ads and promos",
+      "packages": [
+        {
+          "pkg": "com.tcl.channelplus",
+          "note": "TCL Live FAST channels, also removes them from Live TV"
+        },
+        {
+          "pkg": "com.tcl.waterfall.overseas",
+          "note": "TCL content \"waterfall\" recommendations"
+        },
+        {
+          "pkg": "com.tcl.tv.tclhome_passive",
+          "note": "pushes TCL content to the home screen at boot"
+        },
+        {
+          "pkg": "com.tcl.partnercustomizer",
+          "note": "TCL tweaks to Google TV home rows"
+        },
+        {
+          "pkg": "com.tcl.messagebox",
+          "note": "TCL pushed messages and promos"
+        },
+        {
+          "pkg": "android.autoinstalls.config.google.gtvpai",
+          "note": "partner auto-installs"
+        },
+        {
+          "pkg": "com.tcl.smartlink.core",
+          "note": "bundles a silent app installer"
+        }
+      ]
+    },
+    {
+      "title": "Background services",
+      "packages": [
+        {
+          "pkg": "com.tcl.guard",
+          "note": "TGuard: device-use tracking, memory cleaner"
+        },
+        {
+          "pkg": "com.tcl.smartalexa",
+          "note": "Alexa client (AS23 unit; keep it if you use Alexa)"
+        },
+        {
+          "pkg": "com.tcl.useragreement",
+          "note": "EULA/privacy screens (AS23 unit)"
+        },
+        {
+          "pkg": "com.tcl.initsetup",
+          "note": "TCL first-run setup incl. SambaTV ACR hooks; re-enable before rescanning channels"
+        },
+        {
+          "pkg": "com.tcl.usercenter",
+          "note": "TCL account sign-in"
+        },
+        {
+          "pkg": "com.tcl.exhibit",
+          "note": "store demo"
+        },
+        {
+          "pkg": "com.tcl.esticker",
+          "note": "store demo stickers"
+        },
+        {
+          "pkg": "com.tcl.hotelmenu",
+          "note": "hotel mode"
+        },
+        {
+          "pkg": "com.google.android.tv.remote.service",
+          "note": "phone remote apps and the mic too; pm enable restores it"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps",
+      "packages": [
+        {
+          "pkg": "com.tcl.ocean.instructions",
+          "note": "e-manual"
+        },
+        {
+          "pkg": "com.tcl.repairguide"
+        },
+        {
+          "pkg": "com.tcl.gamebar",
+          "note": "re-enable for the console game-mode overlay"
+        },
+        {
+          "pkg": "com.tcl.UpdatePeripheral",
+          "note": "re-enable to update a TCL soundbar"
+        },
+        {
+          "pkg": "com.tcl.hearaid",
+          "note": "hearing test / volume adaptation"
+        },
+        {
+          "pkg": "com.google.android.marvin.talkback"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google TV / Play Movies storefront"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.dreamx",
+          "note": "ambient screensaver; use the launcher's Clock screensaver"
+        }
+      ]
+    },
+    {
+      "title": "Off by choice",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Chromecast built-in"
+        },
+        {
+          "pkg": "com.tcl.ui_mediaCenter",
+          "note": "USB media player"
+        }
+      ]
+    },
+    {
+      "title": "Second Home claimant: disable it once the new launcher is Home (disable.sh checks the Wi-Fi owner first)",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith",
+          "note": "setup wizard, claims HOME after launcherx is disabled"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tcl-g09-google-tv/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

@@ -1,0 +1,179 @@
+{
+  "schema": 1,
+  "id": "sony-xbr-65x900f",
+  "name": "Sony BRAVIA XBR-65X900F",
+  "tested": {
+    "os": "Android TV 9",
+    "sdk": 28,
+    "build": "as"
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "ACR viewing tracker",
+      "packages": [
+        {
+          "pkg": "tv.samba.ssm",
+          "note": "Samba TV fingerprints what's on screen"
+        }
+      ]
+    },
+    {
+      "title": "Sony and Google content, ads and promos",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.promos",
+          "note": "My BRAVIA promos"
+        },
+        {
+          "pkg": "com.sony.dtv.sonyselect",
+          "note": "Sony Select app store/promo tile"
+        },
+        {
+          "pkg": "com.sony.dtv.discovery",
+          "note": "Sony Discover content bar"
+        },
+        {
+          "pkg": "com.sony.dtv.bivlinfo",
+          "note": "BIVL content service list (feeds Discover)"
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations",
+          "note": "recommendation rows for the stock launcher"
+        },
+        {
+          "pkg": "android.autoinstalls.config.sony.bravia",
+          "note": "Play auto-install of partner apps"
+        }
+      ]
+    },
+    {
+      "title": "Retail demo",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.demomode"
+        },
+        {
+          "pkg": "com.sony.dtv.demosupport"
+        },
+        {
+          "pkg": "com.sony.dtv.multiscreendemo"
+        }
+      ]
+    },
+    {
+      "title": "Telemetry, remote support and feedback",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.da.service",
+          "note": "Sony device agent / remote support"
+        },
+        {
+          "pkg": "com.qterics.da.product",
+          "note": "Qterics device agent"
+        },
+        {
+          "pkg": "com.sony.dtv.sonybugreportsys"
+        },
+        {
+          "pkg": "com.google.android.tv.bugreportsender"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.vendorprotocol",
+          "note": "Node.js SDDP broadcaster for Control4-style automation;"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded help apps",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.customersupport",
+          "note": "Help tile"
+        },
+        {
+          "pkg": "com.sony.dtv.smarthelp"
+        },
+        {
+          "pkg": "com.sony.dtv.imanual",
+          "note": "i-Manual"
+        }
+      ]
+    },
+    {
+      "title": "Off by choice on this TV: features the owner doesn't use. Comment out any you want.",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google Assistant / voice search (mic button)"
+        },
+        {
+          "pkg": "screnmirroring.com",
+          "note": "Screen mirroring (Miracast)"
+        },
+        {
+          "pkg": "com.sony.dtv.networkapp.wifidirect"
+        },
+        {
+          "pkg": "com.sony.huey.dlna.module",
+          "note": "DLNA renderer"
+        },
+        {
+          "pkg": "com.sony.huey.dlna.renderersettings"
+        },
+        {
+          "pkg": "com.sonyericsson.dlna"
+        },
+        {
+          "pkg": "com.google.android.tv.remote.service",
+          "note": "Android TV phone-app remote"
+        },
+        {
+          "pkg": "com.google.android.inputmethod.japanese",
+          "note": "Japanese keyboard (Gboard stays the default)"
+        },
+        {
+          "pkg": "com.sony.dtv.smarthomesettings",
+          "note": "\"Works with Alexa\" setup: Amazon login, Firebase push, runs at boot"
+        },
+        {
+          "pkg": "com.sony.dtv.smartmediaapp",
+          "note": "Media Player, plays files from USB"
+        },
+        {
+          "pkg": "com.sony.dtv.osat.music",
+          "note": "Music, plays music from USB"
+        }
+      ]
+    },
+    {
+      "title": "Left enabled on purpose: features, not bloat. Uncomment any line to disable it too.",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Chromecast built-in",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic",
+          "note": "YouTube Music",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.backdrop",
+          "note": "ambient screensaver",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/sony-xbr-65x900f/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

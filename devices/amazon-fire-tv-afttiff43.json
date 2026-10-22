@@ -1,0 +1,132 @@
+{
+  "schema": 1,
+  "id": "amazon-fire-tv-afttiff43",
+  "name": "Amazon Fire TV 50\" 4K smart TV",
+  "tested": {
+    "os": "Fire OS 7.7.1.7",
+    "sdk": 28,
+    "build": "PS7717.5741N"
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "Content recognition, telemetry and metrics",
+      "packages": [
+        {
+          "pkg": "com.amazon.tv.acr"
+        },
+        {
+          "pkg": "com.amazon.tv.fw.metrics"
+        },
+        {
+          "pkg": "com.amazon.neo.minerva"
+        },
+        {
+          "pkg": "com.amazon.neo.minerva.logcat"
+        },
+        {
+          "pkg": "com.amazon.wirelessmetrics.service"
+        },
+        {
+          "pkg": "com.amazon.perfcollection"
+        },
+        {
+          "pkg": "com.amazon.perfc"
+        },
+        {
+          "pkg": "com.amazon.dp.logger"
+        },
+        {
+          "pkg": "com.amazon.hybridadidservice",
+          "note": "advertising ID"
+        }
+      ]
+    },
+    {
+      "title": "Ads, shopping, retail demo, tutorials",
+      "packages": [
+        {
+          "pkg": "com.amazon.sneakpeek"
+        },
+        {
+          "pkg": "com.amazon.tv.democontent.provider"
+        },
+        {
+          "pkg": "com.amazon.shoptv.client"
+        },
+        {
+          "pkg": "com.amazon.shoptv.firetv.client"
+        },
+        {
+          "pkg": "com.amazon.storm.lightning.tutorial"
+        },
+        {
+          "pkg": "com.amazon.tmm.tutorial"
+        }
+      ]
+    },
+    {
+      "title": "Amazon apps (owner's choice)",
+      "packages": [
+        {
+          "pkg": "com.amazon.bueller.music",
+          "note": "Amazon Music"
+        },
+        {
+          "pkg": "com.amazon.bueller.photos",
+          "note": "Amazon Photos"
+        },
+        {
+          "pkg": "com.amazon.tv.localgallery"
+        },
+        {
+          "pkg": "com.amazon.gamehub",
+          "note": "Luna / Game Hub"
+        },
+        {
+          "pkg": "com.amazon.minitv.android.app"
+        },
+        {
+          "pkg": "com.amazon.naatyam"
+        },
+        {
+          "pkg": "com.amazon.tahoe",
+          "note": "Amazon Kids"
+        }
+      ]
+    },
+    {
+      "title": "Alexa extras (Alexa core kept)",
+      "packages": [
+        {
+          "pkg": "com.amazon.tv.alexaalerts"
+        },
+        {
+          "pkg": "com.amazon.tv.alexanotifications"
+        },
+        {
+          "pkg": "com.amazon.audiohome",
+          "note": "Alexa Home Theater"
+        }
+      ]
+    },
+    {
+      "title": "Screensaver (screensaver_enabled was already 0; idle screen comes from these)",
+      "packages": [
+        {
+          "pkg": "com.amazon.tv.ftvambient",
+          "note": "Ambient Experience"
+        },
+        {
+          "pkg": "com.amazon.ftv.screensaver"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/amazon-fire-tv-afttiff43/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

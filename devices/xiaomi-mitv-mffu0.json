@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "xiaomi-mitv-mffu0",
+  "name": "Xiaomi TV S Pro 100 Mini LED 2025",
+  "tested": {
+    "os": "Android 14",
+    "sdk": 34,
+    "build": "in"
+  },
+  "launcher": "com.mitv.tvhome",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Xiaomi telemetry / diagnostics / cloud control",
+      "packages": [
+        {
+          "pkg": "com.miui.analytics",
+          "note": "OneTrack analytics SDK host"
+        },
+        {
+          "pkg": "com.miui.tv.analytics",
+          "note": "TV usage statistics, ~100 MB resident"
+        },
+        {
+          "pkg": "com.miui.misightservice",
+          "note": "MiSight remote diagnostics and log upload"
+        },
+        {
+          "pkg": "com.xiaomi.tvqs",
+          "note": "quality/performance reporting, ~86 MB resident"
+        },
+        {
+          "pkg": "com.mitv.cloudcontrol",
+          "note": "cloud control: remote configuration pushes"
+        }
+      ]
+    },
+    {
+      "title": "Ads / shopping / promoted content",
+      "packages": [
+        {
+          "pkg": "com.duokan.videodaily",
+          "note": "short-video promos; bundles the Xiaomi ad SDK and a P2P upload service"
+        },
+        {
+          "pkg": "com.mitv.shoplugin",
+          "note": "TV Taobao shopping plugin"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.shop",
+          "note": "Xiaomi store"
+        },
+        {
+          "pkg": "com.xm.webcontent",
+          "note": "webview container for promotions"
+        },
+        {
+          "pkg": "com.xiaomi.tv.gallery",
+          "note": "\"Pictorial\" wallpaper app, ships ad classes; preinstalled to /data,"
+        }
+      ]
+    },
+    {
+      "title": "Features not used (off by choice)",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.aitranslate",
+          "note": "AI subtitle translation, ~117 MB resident"
+        },
+        {
+          "pkg": "com.mitv.alarmcenter",
+          "note": "reminders/alarms: re-enable it if you set alarms with XiaoAI voice"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.health",
+          "note": "MiHealth"
+        },
+        {
+          "pkg": "com.xiaomi.gamecenter.sdk.service.mibox",
+          "note": "game center SDK"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/xiaomi-mitv-mffu0/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

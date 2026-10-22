@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "skyworth-swtv-22ae-fhd",
+  "name": "Skyworth SWTV-22AE-FHD",
+  "tested": {
+    "os": "Android 14",
+    "sdk": 34,
+    "build": null
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Skyworth / Coocaa factory test & store demo apps",
+      "packages": [
+        {
+          "pkg": "com.coocaa.demonow.lightining"
+        },
+        {
+          "pkg": "fusion.android.tv.demo"
+        },
+        {
+          "pkg": "com.smartdevice.factory"
+        },
+        {
+          "pkg": "mediatek.factorymenu.ui"
+        }
+      ]
+    },
+    {
+      "title": "Skyworth telemetry, ads, recommendation rows",
+      "packages": [
+        {
+          "pkg": "com.smartdevice.aftersale"
+        },
+        {
+          "pkg": "com.smartdevice.recordactivation"
+        },
+        {
+          "pkg": "com.smartdevice.dailymanage"
+        },
+        {
+          "pkg": "com.smartdevice.dailyshortcut"
+        },
+        {
+          "pkg": "com.smartdevice.recommendation"
+        },
+        {
+          "pkg": "com.smartdevice.leanbacklauncher.customizer"
+        },
+        {
+          "pkg": "com.smartdevice.myapp"
+        },
+        {
+          "pkg": "com.Smartdevice.emanual"
+        }
+      ]
+    },
+    {
+      "title": "Google feedback",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback"
+        }
+      ]
+    },
+    {
+      "title": "Google TV setup wizard: RecoveryActivity claims Home with priority 1.",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded / unused apps (user opted out)",
+      "packages": [
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/skyworth-swtv-22ae-fhd/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

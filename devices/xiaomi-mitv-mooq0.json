@@ -1,0 +1,222 @@
+{
+  "schema": 1,
+  "id": "xiaomi-mitv-mooq0",
+  "name": "Xiaomi Mi TV",
+  "tested": {
+    "os": "Android TV 10",
+    "sdk": null,
+    "build": null
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "---- Xiaomi telemetry and analytics ----",
+      "packages": [
+        {
+          "pkg": "com.miui.tv.analytics"
+        },
+        {
+          "pkg": "com.xiaomi.statistic"
+        },
+        {
+          "pkg": "com.google.android.tv.bugreportsender",
+          "note": "automatic bug report upload"
+        },
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "crash / feedback reporting"
+        }
+      ]
+    },
+    {
+      "title": "---- Xiaomi content, ads and recommendation rows ----",
+      "packages": [
+        {
+          "pkg": "com.mitv.tvhome.atv",
+          "note": "PatchWall (.app.PatchWallActivity)"
+        },
+        {
+          "pkg": "com.mitv.tvhome.michannel",
+          "note": "Mi recommendation channels, Firebase + GMS measurement"
+        },
+        {
+          "pkg": "com.xm.webcontent",
+          "note": "Xiaomi promo web content"
+        },
+        {
+          "pkg": "com.xiaomi.floatingframe",
+          "note": "floating promo overlay service"
+        },
+        {
+          "pkg": "android.autoinstalls.config.xiaomi.amelie",
+          "note": "partner app auto-install config"
+        }
+      ]
+    },
+    {
+      "title": "---- Background services not needed ----",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.mitv.tvmanager",
+          "note": "\"TV Manager\" cleaner / boost / data usage"
+        },
+        {
+          "pkg": "com.xiaomi.amazon.alexa",
+          "note": "Alexa bridge; Google voice search is kept"
+        },
+        {
+          "pkg": "com.aha.mitv",
+          "note": "dormant duplicate Aha 2.0.8; ahaflix.tv 2.0.22 is kept"
+        },
+        {
+          "pkg": "com.mitv.gallery",
+          "note": "Mi Gallery: MiCloud + Xiaomi market SDK"
+        },
+        {
+          "pkg": "com.mitv.dream",
+          "note": "Xiaomi MiDream screensaver, Firebase + skyeye monitor"
+        },
+        {
+          "pkg": "com.google.android.backdrop",
+          "note": "Google ambient screensaver, replaced by the Clock dream"
+        }
+      ]
+    },
+    {
+      "title": "---- Preloaded apps nobody asked for ----",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.mitv.handbook",
+          "note": "on-screen user manual"
+        },
+        {
+          "pkg": "com.mitv.tvlock",
+          "note": "Xiaomi TV lock / parental password"
+        },
+        {
+          "pkg": "com.xiaomo.tv.milegal",
+          "note": "Xiaomi legal / privacy screens"
+        },
+        {
+          "pkg": "com.mstar.android.tv.disclaimercustomization",
+          "note": "vendor disclaimer screen"
+        },
+        {
+          "pkg": "com.mediatek.wwtv.webview",
+          "note": "vendor web view shell"
+        },
+        {
+          "pkg": "fusion.android.tv.demo",
+          "note": "retail store demo loop"
+        },
+        {
+          "pkg": "com.xiaomi.mimusic2",
+          "note": "Mi Music"
+        },
+        {
+          "pkg": "com.google.android.play.games",
+          "note": "Play Games"
+        }
+      ]
+    },
+    {
+      "title": "---- Streaming apps not used (per owner's checklist) ----",
+      "packages": [
+        {
+          "pkg": "com.jio.web.androidtv",
+          "note": "JioTV"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvkids",
+          "note": "YouTube Kids"
+        }
+      ]
+    },
+    {
+      "title": "---- Home-screen claimants replaced by launcher/ ----",
+      "packages": [
+        {
+          "pkg": "com.duokan.factorytest"
+        }
+      ]
+    },
+    {
+      "title": "---- Stock launcher recommendation plumbing (replaced by launcher/) ----",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvrecommendations"
+        },
+        {
+          "pkg": "com.google.android.leanbacklauncher"
+        },
+        {
+          "pkg": "com.google.android.leanbacklauncher.recommendations"
+        }
+      ]
+    },
+    {
+      "title": "---- Optional, by choice (reported fine on the same firmware, #81); uncomment what you don't use ----",
+      "packages": [
+        {
+          "pkg": "com.mitv.tvhome.mitvplus",
+          "note": "Mi TV+ FAST channels",
+          "optional": true
+        },
+        {
+          "pkg": "com.xiaomi.mitv.updateservice",
+          "note": "firmware updates",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "voice assistant (the mic button stops working)",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Chromecast built-in",
+          "optional": true
+        },
+        {
+          "pkg": "com.mitv.milinkservice",
+          "note": "Mi Cast",
+          "optional": true
+        },
+        {
+          "pkg": "com.xiaomi.mitv.smartshare",
+          "optional": true
+        },
+        {
+          "pkg": "com.xiaomi.wfdsinkhelperservice",
+          "note": "Miracast sink",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Play Movies & TV",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic",
+          "optional": true
+        },
+        {
+          "pkg": "com.xiaomi.mitv.mediaexplorer",
+          "note": "USB media player",
+          "optional": true
+        },
+        {
+          "pkg": "com.mitv.videoplayer",
+          "note": "Mi video player",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/xiaomi-mitv-mooq0/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

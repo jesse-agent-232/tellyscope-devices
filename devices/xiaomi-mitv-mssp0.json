@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "xiaomi-mitv-mssp0",
+  "name": "Xiaomi MiTV-MSSP0 / Xiaomi Mi TV 4A 32",
+  "tested": {
+    "os": "Android TV 9",
+    "sdk": 28,
+    "build": null
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Xiaomi telemetry and Google TV bug-report uploader",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.statistic"
+        },
+        {
+          "pkg": "com.google.android.tv.bugreportsender"
+        }
+      ]
+    },
+    {
+      "title": "Promotional content and stock-home recommendation feeds",
+      "packages": [
+        {
+          "pkg": "com.xm.webcontent"
+        },
+        {
+          "pkg": "com.xiaomi.floatingframe"
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations"
+        },
+        {
+          "pkg": "com.google.android.leanbacklauncher.recommendations"
+        }
+      ]
+    },
+    {
+      "title": "Assistant - off by owner choice",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google Assistant; voice search is lost"
+        },
+        {
+          "pkg": "com.google.android.speech.pumpkin",
+          "note": "Assistant speech models"
+        }
+      ]
+    },
+    {
+      "title": "Unused preloaded apps - off by owner choice",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.mitv.mediaexplorer",
+          "note": "Xiaomi USB/media file browser; keep if used"
+        },
+        {
+          "pkg": "com.mitv.gallery",
+          "note": "Xiaomi photo gallery"
+        }
+      ]
+    },
+    {
+      "title": "Original photo screensaver, replaced by the launcher's Clock (see above)",
+      "packages": [
+        {
+          "pkg": "com.google.android.backdrop"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/xiaomi-mitv-mssp0/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

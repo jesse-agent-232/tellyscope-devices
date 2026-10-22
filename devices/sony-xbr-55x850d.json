@@ -1,0 +1,108 @@
+{
+  "schema": 1,
+  "id": "sony-xbr-55x850d",
+  "name": "Sony BRAVIA XBR-55X850D — Android TV 8.0.0 / API 26",
+  "tested": {
+    "os": "Android TV 8.0.0",
+    "sdk": 26,
+    "build": null
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Viewing tracker",
+      "packages": [
+        {
+          "pkg": "tv.samba.ssm",
+          "note": "Samba TV automatic content recognition"
+        }
+      ]
+    },
+    {
+      "title": "Sony/Google content rows, promotions and partner installs",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.sonyselect"
+        },
+        {
+          "pkg": "com.sony.dtv.discovery"
+        },
+        {
+          "pkg": "com.sony.dtv.bivlinfo"
+        },
+        {
+          "pkg": "com.sony.dtv.tvlaunchercustomizer"
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations"
+        },
+        {
+          "pkg": "android.autoinstalls.config.sony.bravia"
+        }
+      ]
+    },
+    {
+      "title": "Device agents, feedback and optional home-automation discovery",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.da.service",
+          "note": "Sony remote-support/device agent"
+        },
+        {
+          "pkg": "com.qterics.da.product"
+        },
+        {
+          "pkg": "com.google.android.tv.bugreportsender"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.vendorprotocol",
+          "note": "Re-enable if Control4/SDDP discovery is needed"
+        }
+      ]
+    },
+    {
+      "title": "Optional help/media/apps not used in this Roku-primary setup",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.smarthelp",
+          "note": "Smart Help; keep if used"
+        },
+        {
+          "pkg": "com.sony.dtv.imanual",
+          "note": "i-Manual; keep if used"
+        },
+        {
+          "pkg": "com.sony.dtv.osat.music",
+          "note": "Re-enable for the native USB music player"
+        },
+        {
+          "pkg": "com.google.android.videos"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.crackle.androidtv"
+        }
+      ]
+    },
+    {
+      "title": "Home handover ONLY after installing, launching and verifying the new launcher",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvlauncher",
+          "note": "Restore stock Home before disabling the replacement"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/sony-xbr-55x850d/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

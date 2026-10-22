@@ -1,0 +1,145 @@
+{
+  "schema": 1,
+  "id": "xiaomi-mitv-axfr1",
+  "name": "Xiaomi MiTV-AXFR1",
+  "tested": {
+    "os": "Android TV 11",
+    "sdk": 30,
+    "build": null
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Xiaomi + Google telemetry",
+      "packages": [
+        {
+          "pkg": "com.miui.tv.analytics"
+        },
+        {
+          "pkg": "com.xiaomi.statistic",
+          "note": "log upload receiver"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        }
+      ]
+    },
+    {
+      "title": "PatchWall, content rows, sponsored rows",
+      "packages": [
+        {
+          "pkg": "com.mitv.tvhome.atv",
+          "note": "PatchWall"
+        },
+        {
+          "pkg": "com.xm.webcontent"
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations",
+          "note": "sponsored rows in the stock launcher"
+        },
+        {
+          "pkg": "android.autoinstalls.config.xioami.dangal",
+          "note": "Play auto-install of partner apps (sic, \"xioami\")"
+        },
+        {
+          "pkg": "com.mitv.tvhome.mitvplus",
+          "note": "Mi TV+ sponsored live channels"
+        }
+      ]
+    },
+    {
+      "title": "Xiaomi background services",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.mitv.tvmanager",
+          "note": "\"TV Manager\" cleaner"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.handbook"
+        },
+        {
+          "pkg": "com.xiaomo.tv.milegal",
+          "note": "static legal / privacy text screens"
+        }
+      ]
+    },
+    {
+      "title": "Personal choice: screen mirroring (Chromecast built-in kept)",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.mitv.smartshare",
+          "note": "Miracast + MiPlay receiver"
+        },
+        {
+          "pkg": "com.xiaomi.wfdsinkhelperservice",
+          "note": "Miracast sink"
+        },
+        {
+          "pkg": "com.mitv.milinkservice",
+          "note": "Mi Cast discovery"
+        }
+      ]
+    },
+    {
+      "title": "Personal choice: firmware updates (re-enable to check for one)",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.mitv.updateservice"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.mimusic2"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Play Movies & TV"
+        },
+        {
+          "pkg": "com.mitv.dream",
+          "note": "Mi screensaver; Google Ambient mode (backdrop) kept"
+        }
+      ]
+    },
+    {
+      "title": "Personal choice: preloaded streaming apps not used",
+      "packages": [
+        {
+          "pkg": "com.jio.media.stb.ondemand",
+          "note": "JioCinema / JioTV"
+        },
+        {
+          "pkg": "com.sonyliv"
+        },
+        {
+          "pkg": "com.graymatrix.did",
+          "note": "ZEE5"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        },
+        {
+          "pkg": "com.mxtech.videoplayer.television",
+          "note": "MX Player"
+        },
+        {
+          "pkg": "com.formulaone.production",
+          "note": "F1 TV"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/xiaomi-mitv-axfr1/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

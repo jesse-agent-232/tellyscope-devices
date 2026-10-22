@@ -1,0 +1,114 @@
+{
+  "schema": 1,
+  "id": "xiaomi-mitv-moeu0",
+  "name": "Xiaomi TV S Mini LED 75 2025",
+  "tested": {
+    "os": "Android 14",
+    "sdk": 34,
+    "build": null
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Telemetry",
+      "packages": [
+        {
+          "pkg": "com.miui.tv.analytics"
+        },
+        {
+          "pkg": "com.xiaomi.statistic"
+        },
+        {
+          "pkg": "com.android.tv.feedbackconsent"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        }
+      ]
+    },
+    {
+      "title": "Content, ads and recommendations",
+      "packages": [
+        {
+          "pkg": "com.mitv.tvhome.michannel",
+          "note": "recommendation channels, Firebase"
+        },
+        {
+          "pkg": "com.mitv.tvhome.mitvplus",
+          "note": "Xiaomi TV+ promo banners"
+        },
+        {
+          "pkg": "com.mitv.tvhome.oemtab"
+        },
+        {
+          "pkg": "com.mitv.tvhome.atv",
+          "note": "banner tiles"
+        },
+        {
+          "pkg": "com.xm.webcontent"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.manualhelp"
+        },
+        {
+          "pkg": "android.autoinstalls.config.google.gtvpai",
+          "note": "Play auto-installs"
+        }
+      ]
+    },
+    {
+      "title": "Cleaner with Firebase analytics",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.mitv.tvmanager"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps",
+      "packages": [
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.xiaomi.mimusic2"
+        },
+        {
+          "pkg": "com.mitv.gallery"
+        },
+        {
+          "pkg": "com.mitv.videoplayer"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.mediaexplorer"
+        }
+      ]
+    },
+    {
+      "title": "Setup wizard; takes Home once launcherx is off",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith"
+        }
+      ]
+    },
+    {
+      "title": "Stock launcher; build-and-install.sh disables it once the new launcher owns Home",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.tv.launcherx",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/xiaomi-mitv-moeu0/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

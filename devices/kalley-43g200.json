@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "kalley-43g200",
+  "name": "Kalley 43G200",
+  "tested": {
+    "os": "Android 14",
+    "sdk": null,
+    "build": null
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Telemetry",
+      "packages": [
+        {
+          "pkg": "com.android.tv.feedbackconsent"
+        }
+      ]
+    },
+    {
+      "title": "Android ad and personalisation services",
+      "packages": [
+        {
+          "pkg": "com.android.adservices.api"
+        },
+        {
+          "pkg": "com.android.ondevicepersonalization.services"
+        },
+        {
+          "pkg": "com.android.federatedcompute.services"
+        }
+      ]
+    },
+    {
+      "title": "Manufacturer content",
+      "packages": [
+        {
+          "pkg": "com.realtek.leanbacklauncher.partnercustomizer",
+          "note": "partner config that injects apps and rows into the home screen"
+        }
+      ]
+    },
+    {
+      "title": "Not needed on a TV",
+      "packages": [
+        {
+          "pkg": "com.android.healthconnect.controller"
+        },
+        {
+          "pkg": "com.android.health.connect.backuprestore"
+        },
+        {
+          "pkg": "com.apps.wifihotspot",
+          "note": "MOKA hotspot app"
+        },
+        {
+          "pkg": "com.android.printspooler"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/kalley-43g200/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

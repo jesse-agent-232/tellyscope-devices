@@ -1,0 +1,142 @@
+{
+  "schema": 1,
+  "id": "tcl-uniontv-latin-america",
+  "name": "TCL UnionTV",
+  "tested": {
+    "os": "Android TV 9",
+    "sdk": 28,
+    "build": "PPR2.180905.006.A1"
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Telemetry and feedback",
+      "packages": [
+        {
+          "pkg": "com.tcl.bi",
+          "note": "TCL analytics / telemetry service"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.tv.bugreportsender"
+        }
+      ]
+    },
+    {
+      "title": "Content rows, promos and auto-installs",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvrecommendations"
+        },
+        {
+          "pkg": "com.google.android.leanbacklauncher.recommendations"
+        },
+        {
+          "pkg": "com.tcl.partnercustomizer",
+          "note": "TCL promo rows / T-key content"
+        },
+        {
+          "pkg": "android.autoinstalls.config.tcl.device",
+          "note": "Play auto-installs of partner apps"
+        },
+        {
+          "pkg": "com.tcl.esticker",
+          "note": "retail demo stickers"
+        },
+        {
+          "pkg": "com.tcl.appmarket2",
+          "note": "TCL app store (Google Play Store stays)"
+        },
+        {
+          "pkg": "com.tcl.tvweishi",
+          "note": "\"cleaner\" widget service"
+        },
+        {
+          "pkg": "com.tcl.usercenter",
+          "note": "TCL account sign-in nags"
+        },
+        {
+          "pkg": "com.tcl.copydatatotv",
+          "note": "phone-to-TV copy helper, starts at boot"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps",
+      "packages": [
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Play Movies & TV"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.music"
+        },
+        {
+          "pkg": "com.android.printspooler"
+        }
+      ]
+    },
+    {
+      "title": "Off by choice on this unit (voice, and two third-party apps installed on this unit); re-enable if wanted",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google Assistant / voice search"
+        },
+        {
+          "pkg": "com.nousguide.android.rbtv",
+          "note": "Red Bull TV"
+        },
+        {
+          "pkg": "tv.twitch.android.app"
+        }
+      ]
+    },
+    {
+      "title": "Second pass, applied the same day. The launcher's Clock screensaver replaces Ambient Mode",
+      "packages": [
+        {
+          "pkg": "com.google.android.backdrop",
+          "note": "Ambient Mode screensaver (Google content)"
+        },
+        {
+          "pkg": "com.google.android.tts",
+          "note": "Google text-to-speech, ~18 MB resident; only accessibility uses it"
+        },
+        {
+          "pkg": "com.google.android.marvin.talkback",
+          "note": "screen reader; re-enable if someone needs it"
+        },
+        {
+          "pkg": "com.google.android.speech.pumpkin",
+          "note": "offline hotword, unused once katniss is off"
+        },
+        {
+          "pkg": "com.android.gallery3d",
+          "note": "old AOSP gallery; TCL Media Center opens photos"
+        },
+        {
+          "pkg": "com.android.wallpaper.livepicker"
+        },
+        {
+          "pkg": "com.android.dreams.basic"
+        },
+        {
+          "pkg": "com.tcl.common.terminalmanagerplus",
+          "note": "TCL device-management service, starts at boot and watches"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tcl-uniontv-latin-america/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

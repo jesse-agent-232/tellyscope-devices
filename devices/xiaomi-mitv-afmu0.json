@@ -1,0 +1,168 @@
+{
+  "schema": 1,
+  "id": "xiaomi-mitv-afmu0",
+  "name": "Xiaomi TV Box S 3rd gen",
+  "tested": {
+    "os": "Android 14",
+    "sdk": 34,
+    "build": null
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "Telemetry and feedback",
+      "packages": [
+        {
+          "pkg": "com.miui.tv.analytics"
+        },
+        {
+          "pkg": "com.xiaomi.statistic"
+        },
+        {
+          "pkg": "com.xiaomi.tvqs.overseas.y24",
+          "note": "Xiaomi quality-stats uploader"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.android.tv.feedbackconsent"
+        }
+      ]
+    },
+    {
+      "title": "PatchWall, content rows, promos, auto-installs",
+      "packages": [
+        {
+          "pkg": "com.mitv.tvhome.atv"
+        },
+        {
+          "pkg": "com.mitv.tvhome.michannel"
+        },
+        {
+          "pkg": "com.mitv.tvhome.mitvplus"
+        },
+        {
+          "pkg": "com.mitv.tvhome.oemtab"
+        },
+        {
+          "pkg": "com.xm.webcontent"
+        },
+        {
+          "pkg": "android.autoinstalls.config.soc.amlogic"
+        }
+      ]
+    },
+    {
+      "title": "Personal choice: voice assistant, phone remote, Mi cast/share (the mic button stops working)",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.tv.remote.service",
+          "optional": true
+        },
+        {
+          "pkg": "com.xiaomi.mitv.smartshare"
+        },
+        {
+          "pkg": "com.xiaomi.wfdsinkhelperservice"
+        },
+        {
+          "pkg": "com.xiaomi.mi_connect_service"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps",
+      "packages": [
+        {
+          "pkg": "com.disney.disneyplus"
+        },
+        {
+          "pkg": "com.wbd.hbomax"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.marvin.talkback"
+        },
+        {
+          "pkg": "com.xiaomi.mimusic2"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.mediaexplorer"
+        },
+        {
+          "pkg": "com.mitv.videoplayer"
+        },
+        {
+          "pkg": "com.android.printspooler"
+        },
+        {
+          "pkg": "com.mitv.gallery"
+        }
+      ]
+    },
+    {
+      "title": "Personal choice: preloaded streaming apps, kept enabled here. Uncomment the ones you don't use",
+      "packages": [
+        {
+          "pkg": "com.netflix.ninja",
+          "note": "Netflix",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.youtube.tv",
+          "note": "YouTube",
+          "optional": true
+        },
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom",
+          "note": "Prime Video",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Optional, uncomment if unused",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.tv.dreamx",
+          "note": "Google ambient screensaver (switch to the Clock dream first)",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Setup wizard, takes Home after the stock launcher is disabled",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith"
+        }
+      ]
+    },
+    {
+      "title": "Stock Google TV launcher, replaced by launcher/ (build-and-install.sh disables it; listed so restore brings it back)",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.tv.launcherx",
+          "note": "launcher/build-and-install.sh disables the stock launcher itself, after Home has moved",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/xiaomi-mitv-afmu0/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

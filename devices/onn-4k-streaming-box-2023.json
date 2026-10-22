@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "onn-4k-streaming-box-2023",
+  "name": "onn 4K Streaming Box",
+  "tested": {
+    "os": "Google TV 14",
+    "sdk": 34,
+    "build": "URO4.260304.011.B1.15051976"
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Telemetry and feedback",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.android.tv.feedbackconsent"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps",
+      "packages": [
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google TV / Play Movies"
+        },
+        {
+          "pkg": "com.android.printspooler"
+        },
+        {
+          "pkg": "com.google.android.marvin.talkback",
+          "note": "re-enable if you need the screen reader"
+        }
+      ]
+    },
+    {
+      "title": "Google ambient mode screensaver (replaced by the launcher's Clock screensaver). Kept here: the Google",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.tv.dreamx",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Stock home. launcher/build-and-install.sh disables launcherx itself once the new launcher is installed",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.tv.launcherx",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.tungsten.setupwraith",
+          "note": "setup wizard; its RecoveryActivity otherwise takes over Home"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/onn-4k-streaming-box-2023/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

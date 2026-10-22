@@ -1,0 +1,177 @@
+{
+  "schema": 1,
+  "id": "tcl-43c645",
+  "name": "TCL G03 / BeyondTV4 firmware V8-R51MT05-LF1V652",
+  "tested": {
+    "os": "Android TV 11",
+    "sdk": 30,
+    "build": null
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "1. Telemetry, promos, content rows",
+      "packages": [
+        {
+          "pkg": "com.tcl.bi"
+        },
+        {
+          "pkg": "com.tcl.dashboard"
+        },
+        {
+          "pkg": "com.tcl.esticker"
+        },
+        {
+          "pkg": "com.tcl.partnercustomizer"
+        },
+        {
+          "pkg": "com.tcl.messagebox"
+        },
+        {
+          "pkg": "com.tcl.overseasappshow"
+        },
+        {
+          "pkg": "com.google.android.partnersetup"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.onetimeinitializer"
+        }
+      ]
+    },
+    {
+      "title": "1b. Google TV first-run wizard (claims HOME once the stock launcher is off)",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith"
+        }
+      ]
+    },
+    {
+      "title": "2. Extras (the 60C635 kept com.tcl.android.webview and com.tcl.keyhelp; tested off on the 43C645 only)",
+      "packages": [
+        {
+          "pkg": "com.tcl.useragreement"
+        },
+        {
+          "pkg": "com.tcl.android.webview"
+        },
+        {
+          "pkg": "com.tcl.guard"
+        },
+        {
+          "pkg": "com.tcl.keyhelp"
+        },
+        {
+          "pkg": "com.tcl.tv.tclhome_passive"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar"
+        },
+        {
+          "pkg": "com.google.android.videos"
+        },
+        {
+          "pkg": "tv.wuaki.apptv"
+        }
+      ]
+    },
+    {
+      "title": "3. Off by choice (the 60C635 kept both)",
+      "packages": [
+        {
+          "pkg": "com.tcl.versionUpdateApp",
+          "note": "firmware updater"
+        },
+        {
+          "pkg": "com.tcl.miracast",
+          "note": "screen mirroring (Cast receiver kept)"
+        }
+      ]
+    },
+    {
+      "title": "4. More telemetry, TCL content and unused preloads (tested on the 60C635)",
+      "packages": [
+        {
+          "pkg": "com.tcl.ttvs",
+          "note": "TCL identifier/awareness services"
+        },
+        {
+          "pkg": "com.tcl.logkit",
+          "note": "log collection, remote diagnosis"
+        },
+        {
+          "pkg": "com.tcl.waterfall.overseas",
+          "note": "TCL content recommendations"
+        },
+        {
+          "pkg": "com.tcl.usercenter",
+          "note": "TCL account"
+        },
+        {
+          "pkg": "com.tcl.channelplus",
+          "note": "TCL Live: FAST IPTV channels with ads (its own TV input)"
+        },
+        {
+          "pkg": "com.tcl.smartalexa",
+          "note": "Alexa integration"
+        },
+        {
+          "pkg": "com.tcl.ocean.instructions",
+          "note": "on-screen manual"
+        },
+        {
+          "pkg": "com.tcl.hearaid"
+        },
+        {
+          "pkg": "com.google.android.apps.nbu.smartconnect.tv"
+        },
+        {
+          "pkg": "com.google.android.marvin.talkback"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.tcl.gallery"
+        },
+        {
+          "pkg": "com.tcl.browser"
+        },
+        {
+          "pkg": "com.tcl.ui_mediaCenter",
+          "note": "USB media player, re-enable for USB drives"
+        }
+      ]
+    },
+    {
+      "title": "5. Voice assistant (off by choice on the 60C635; the 43C645 kept it, comment these out to keep voice)",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss"
+        },
+        {
+          "pkg": "com.tcl.assistant"
+        },
+        {
+          "pkg": "com.tcl.micmanager"
+        },
+        {
+          "pkg": "com.google.android.tv.assistant",
+          "note": "assistant LED service"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tcl-43c645/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

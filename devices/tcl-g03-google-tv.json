@@ -1,0 +1,221 @@
+{
+  "schema": 1,
+  "id": "tcl-g03-google-tv",
+  "name": "TCL Smart TV Pro",
+  "tested": {
+    "os": "Android 11",
+    "sdk": 30,
+    "build": "RP1A.200622.001"
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "---- 1. TCL and Google telemetry ----",
+      "packages": [
+        {
+          "pkg": "com.tcl.bi",
+          "note": "TCL BI analytics"
+        },
+        {
+          "pkg": "com.tcl.logkit",
+          "note": "log capture and upload"
+        },
+        {
+          "pkg": "com.tcl.xian.StartandroidService",
+          "note": "background reporting service"
+        },
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "crash / feedback reporting"
+        }
+      ]
+    },
+    {
+      "title": "---- 2. TCL and Google content, ads and recommendation rows ----",
+      "packages": [
+        {
+          "pkg": "com.tcl.dashboard",
+          "note": "TCL dashboard / promo backend"
+        },
+        {
+          "pkg": "com.tcl.partnercustomizer",
+          "note": "partner customisation channel, promo rows"
+        },
+        {
+          "pkg": "com.tcl.messagebox",
+          "note": "TCL message / promo box"
+        },
+        {
+          "pkg": "com.tcl.overseasappshow",
+          "note": "\"recommended apps\" showcase"
+        },
+        {
+          "pkg": "com.tcl.esticker",
+          "note": "sticker / emoji overlay"
+        },
+        {
+          "pkg": "com.tcl.tv.tclhome_passive",
+          "note": "pushes TCL content to the home screen at boot"
+        },
+        {
+          "pkg": "com.tcl.waterfall.overseas",
+          "note": "TCL web-video recommendation portal"
+        },
+        {
+          "pkg": "android.autoinstalls.config.google.gtvpai",
+          "note": "silently installs partner apps"
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "partner-app attribution"
+        },
+        {
+          "pkg": "com.google.android.onetimeinitializer",
+          "note": "one-time setup leftovers"
+        }
+      ]
+    },
+    {
+      "title": "---- 3. Background services and preloaded extras ----",
+      "packages": [
+        {
+          "pkg": "com.tcl.guard",
+          "note": "TCL online support"
+        },
+        {
+          "pkg": "com.tcl.usercenter",
+          "note": "TCL account sign-in nags"
+        },
+        {
+          "pkg": "com.tcl.ocean.instructions",
+          "note": "e-manual"
+        },
+        {
+          "pkg": "com.tcl.android.webview",
+          "note": "TCL WebView; com.google.android.webview stays the provider"
+        },
+        {
+          "pkg": "org.chromium.webview_shell",
+          "note": "WebView test shell"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar",
+          "note": "calendar sync, no calendar on a TV"
+        },
+        {
+          "pkg": "com.google.android.play.games",
+          "note": "Play Games"
+        },
+        {
+          "pkg": "com.tcl.gallery",
+          "note": "TCL photo gallery"
+        }
+      ]
+    },
+    {
+      "title": "---- 4. Off by choice: streaming apps and TCL extras (comment out what you use) ----",
+      "packages": [
+        {
+          "pkg": "com.netflix.ninja",
+          "note": "Netflix (the remote's Netflix button then opens nothing)"
+        },
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom",
+          "note": "Prime Video"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic",
+          "note": "YouTube Music"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google TV / Play Movies"
+        },
+        {
+          "pkg": "com.tcl.ui_mediaCenter",
+          "note": "USB media player; re-enable to play media from USB drives"
+        },
+        {
+          "pkg": "com.tcl.gamebar",
+          "note": "game mode / VRR overlay for consoles"
+        },
+        {
+          "pkg": "com.tcl.channelplus",
+          "note": "TCL Live FAST channels"
+        },
+        {
+          "pkg": "com.tcl.browser",
+          "note": "TCL web browser; removes the \"BrowseHere\" row from the stock home"
+        }
+      ]
+    },
+    {
+      "title": "---- 5. Off by choice: voice, casting, mirroring (comment out what you use) ----",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google search / voice (the remote's mic button)"
+        },
+        {
+          "pkg": "com.google.android.tv.assistant",
+          "note": "Google Assistant for TV"
+        },
+        {
+          "pkg": "com.tcl.assistant",
+          "note": "TCL voice assistant"
+        },
+        {
+          "pkg": "com.tcl.smartalexa",
+          "note": "Alexa bridge"
+        },
+        {
+          "pkg": "com.tcl.micmanager",
+          "note": "remote microphone manager"
+        },
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Chromecast receiver"
+        },
+        {
+          "pkg": "com.tcl.miracast",
+          "note": "Miracast screen mirroring"
+        },
+        {
+          "pkg": "com.tcl.MultiScreenInteraction_TV",
+          "note": "T-Cast / MagiConnect phone link"
+        }
+      ]
+    },
+    {
+      "title": "---- 6. Google TV first-run wizard: claims HOME once launcherx is off (read the Wi-Fi note above) ----",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith"
+        }
+      ]
+    },
+    {
+      "title": "---- 7. Google ambient screensaver (promos) ----",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.tv.dreamx"
+        }
+      ]
+    },
+    {
+      "title": "Kept: com.tcl.versionUpdateApp (TCL firmware updater) by choice on the test unit. Uncomment to freeze updates.",
+      "packages": [
+        {
+          "pkg": "com.tcl.versionUpdateApp",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tcl-g03-google-tv/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

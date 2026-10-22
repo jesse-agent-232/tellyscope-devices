@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "skyworth-swtv-21ae",
+  "name": "Skyworth SWTV-21AE",
+  "tested": {
+    "os": "Android TV 14",
+    "sdk": null,
+    "build": null
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Skyworth content, ads and preloads",
+      "packages": [
+        {
+          "pkg": "com.smartdevice.leanbacklauncher.customizer",
+          "note": "partner config that injects rows into the home screen"
+        },
+        {
+          "pkg": "fusion.android.tv.demo",
+          "note": "shop demo player (Skyworth ePop)"
+        },
+        {
+          "pkg": "com.Smartdevice.emanual",
+          "note": "on-screen manual"
+        }
+      ]
+    },
+    {
+      "title": "Telemetry and feedback",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.android.tv.feedbackconsent"
+        }
+      ]
+    },
+    {
+      "title": "Not used (by choice)",
+      "packages": [
+        {
+          "pkg": "com.google.android.youtube.tv",
+          "note": "official YouTube; SmartTube is used instead"
+        },
+        {
+          "pkg": "com.cltv.fast",
+          "note": "iWedia free channels with ads; starts at boot"
+        },
+        {
+          "pkg": "com.google.android.backdrop",
+          "note": "ambient screensaver; screensaver_components still names it, so"
+        }
+      ]
+    },
+    {
+      "title": "Stock home. Disable only after the new launcher is installed and set as home.",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvrecommendations",
+          "note": "recommendation rows for the stock launcher"
+        },
+        {
+          "pkg": "com.google.android.tvlauncher",
+          "note": "launcher/build-and-install.sh disables the stock launcher itself, after Home has moved",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/skyworth-swtv-21ae/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

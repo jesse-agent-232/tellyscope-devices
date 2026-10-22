@@ -1,0 +1,121 @@
+{
+  "schema": 1,
+  "id": "coocaa-k3-pro-90p3d-max",
+  "name": "Skyworth Coocaa K3 Pro 90P3D Max",
+  "tested": {
+    "os": "Android 11",
+    "sdk": 30,
+    "build": "eng.www-da.20231205.132148"
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "=============================================================================",
+      "packages": [
+        {
+          "pkg": "com.tianci.ad",
+          "note": "Coocaa ad SDK: boot/shutdown/screensaver/landing ads"
+        },
+        {
+          "pkg": "com.skyworth.aisense",
+          "note": "ACR content recognition (pushes ads)"
+        },
+        {
+          "pkg": "com.coocaa.sysreport",
+          "note": "system telemetry reporting"
+        },
+        {
+          "pkg": "com.tianci.push",
+          "note": "push channel (can remotely launch apps / ads)"
+        },
+        {
+          "pkg": "com.dstv.ad1",
+          "note": "bundled third-party ad app"
+        },
+        {
+          "pkg": "com.coocaa.tvpi",
+          "note": "TV+ streaming (bundled UMeng push ad component)"
+        },
+        {
+          "pkg": "com.tianci.autoinstaller",
+          "note": "silent auto-install service (remote app pushing)"
+        }
+      ]
+    },
+    {
+      "title": "Vendor content / preinstalled bloat",
+      "packages": [
+        {
+          "pkg": "com.coocaa.sport",
+          "note": "Coocaa Sports"
+        },
+        {
+          "pkg": "com.coocaa.educate",
+          "note": "Coocaa Education"
+        },
+        {
+          "pkg": "com.coocaa.lifeassistant",
+          "note": "Life Assistant"
+        },
+        {
+          "pkg": "com.coocaa.app_browser",
+          "note": "App Browser"
+        },
+        {
+          "pkg": "com.coocaa.teampresent",
+          "note": "Team Presentation"
+        },
+        {
+          "pkg": "com.coocaa.mitee.tv",
+          "note": "Kids content"
+        },
+        {
+          "pkg": "com.coocaa.miitee.guard",
+          "note": "Kids guard"
+        },
+        {
+          "pkg": "com.tianci.family.photograph",
+          "note": "Family photo album"
+        },
+        {
+          "pkg": "com.coocaa.os.thememanager",
+          "note": "Theme manager"
+        },
+        {
+          "pkg": "com.coocaa.theme_package_ccos_nine",
+          "note": "Theme package"
+        },
+        {
+          "pkg": "com.coocaa.theme_package_ccos_seven",
+          "note": "Theme package"
+        },
+        {
+          "pkg": "com.coocaa.os.customerservice",
+          "note": "Online customer service"
+        },
+        {
+          "pkg": "com.coocaa.messageprovider",
+          "note": "Message provider"
+        },
+        {
+          "pkg": "com.coocaa.playtvskill",
+          "note": "TV skill"
+        },
+        {
+          "pkg": "com.coocaa.guide",
+          "note": "First-boot guide"
+        },
+        {
+          "pkg": "com.itwgame.mota.nearme.gamecenter",
+          "note": "Bundled third-party game center"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/coocaa-k3-pro-90p3d-max/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

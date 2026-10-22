@@ -1,0 +1,109 @@
+{
+  "schema": 1,
+  "id": "turkcell-tv-plus-4k-box-dv6069y",
+  "name": "Turkcell TV+ 4K Box",
+  "tested": {
+    "os": "Android TV 10",
+    "sdk": 29,
+    "build": "QT.20230328"
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Telemetry, log collection, factory test",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.tv.bugreportsender"
+        },
+        {
+          "pkg": "com.droidlogic.readlog",
+          "note": "copies logs to a USB drive when one is mounted"
+        },
+        {
+          "pkg": "com.sdmc.facTest",
+          "note": "factory tester, starts at boot; checked with dumpsys only, never opened"
+        }
+      ]
+    },
+    {
+      "title": "Recommendations, operator customisation, auto-installs",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvrecommendations"
+        },
+        {
+          "pkg": "com.sdmc.leakbackcustomer",
+          "note": "operator rows and widgets for the stock launcher (PARTNER_CONFIGURATION)"
+        },
+        {
+          "pkg": "android.autoinstalls.config.sdmc",
+          "note": "Play auto-install of partner apps"
+        },
+        {
+          "pkg": "com.sdmc.autorunapp",
+          "note": "starts the operator app at boot"
+        }
+      ]
+    },
+    {
+      "title": "Personal choice: voice, casting, YouTube",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "voice assistant; the mic button stops working"
+        },
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Chromecast built-in"
+        },
+        {
+          "pkg": "com.google.android.youtube.tv",
+          "note": "replaced by SmartTube here; read the GlobalKey note above first"
+        }
+      ]
+    },
+    {
+      "title": "Personal choice: the operator app (the test box had it removed for user 0 instead, so disable-user is untested)",
+      "packages": [
+        {
+          "pkg": "com.turkcell.ott",
+          "note": "TV+; the remote's TV+ button opens its Play Store page once it is gone",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps",
+      "packages": [
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Play Movies"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.marvin.talkback"
+        },
+        {
+          "pkg": "com.android.printspooler"
+        },
+        {
+          "pkg": "com.android.camera2"
+        },
+        {
+          "pkg": "com.android.gallery3d"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/turkcell-tv-plus-4k-box-dv6069y/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

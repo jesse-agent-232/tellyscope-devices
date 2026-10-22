@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "haier-h32s80efx",
+  "name": "Haier H32S80EFX",
+  "tested": {
+    "os": "Google TV 14",
+    "sdk": 34,
+    "build": null
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Haier / partner telemetry and IoT",
+      "packages": [
+        {
+          "pkg": "it.hon.service",
+          "note": "Haier hOn IoT service"
+        },
+        {
+          "pkg": "com.haierubic.usmartdevice",
+          "note": "Haier smart-device service"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        }
+      ]
+    },
+    {
+      "title": "Haier content and ads on the stock home",
+      "packages": [
+        {
+          "pkg": "com.haier.oemtabprovider",
+          "note": "the \"Haier\" tab on the Google TV home"
+        },
+        {
+          "pkg": "com.haier.apps",
+          "note": "Kinopoisk promo activity"
+        },
+        {
+          "pkg": "com.mediatek.android.leanbacklauncher.partnercustomizer"
+        }
+      ]
+    },
+    {
+      "title": "Retail demo, cleaner, manual",
+      "packages": [
+        {
+          "pkg": "fusion.android.tv.demo",
+          "note": "retail demo mode"
+        },
+        {
+          "pkg": "com.haier.tvhousekeeper",
+          "note": "\"TV housekeeper\" cleaner"
+        },
+        {
+          "pkg": "com.haier.emanual"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps",
+      "packages": [
+        {
+          "pkg": "com.google.android.play.games"
+        }
+      ]
+    },
+    {
+      "title": "Streaming apps not used in this home (by choice; keep the ones you use)",
+      "packages": [
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google TV (movies store)"
+        }
+      ]
+    },
+    {
+      "title": "Stock home. Disable only after the new launcher is installed and set as home.",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith",
+          "note": "its RecoveryActivity otherwise takes over Home"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.launcherx"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/haier-h32s80efx/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

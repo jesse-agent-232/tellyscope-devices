@@ -1,0 +1,109 @@
+{
+  "schema": 1,
+  "id": "panasonic-th-40hs550k",
+  "name": "Panasonic TH-40HS550K",
+  "tested": {
+    "os": "Android TV 11",
+    "sdk": 30,
+    "build": null
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Skyworth auto-installs, shop demo and setup leftovers",
+      "packages": [
+        {
+          "pkg": "android.autoinstalls.config.skyworth",
+          "note": "Play Auto Installs config for preloaded apps"
+        },
+        {
+          "pkg": "fusion.android.tv.demo",
+          "note": "Skyworth retail demo service, starts at boot"
+        },
+        {
+          "pkg": "com.smartdevice.common.demonow",
+          "note": "\"Demo Now\" store demo app"
+        },
+        {
+          "pkg": "com.mstar.android.tv.disclaimercustomization",
+          "note": "disclaimer screen used only by the first-run setup"
+        },
+        {
+          "pkg": "com.Smartdevice.emanual",
+          "note": "on-screen manual (E-Manual)"
+        }
+      ]
+    },
+    {
+      "title": "Telemetry and background services",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.apps.nbu.smartconnect.tv",
+          "note": "Google background data service (registers a VpnService), starts at boot"
+        },
+        {
+          "pkg": "com.mediatek.testpq",
+          "note": "MediaTek picture-quality test tool, starts at boot"
+        }
+      ]
+    },
+    {
+      "title": "Recommendation rows and stock-launcher partner config",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvrecommendations"
+        },
+        {
+          "pkg": "com.google.android.leanbacklauncher.partnercustomizer",
+          "note": "see the top-bar quirk above"
+        }
+      ]
+    },
+    {
+      "title": "Not used (by choice)",
+      "packages": [
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Play Movies & TV"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.mediatek.wwtv.mediaplayer",
+          "note": "the \"Media\" tile: plays files from a USB drive"
+        },
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google Assistant / voice search"
+        },
+        {
+          "pkg": "com.airoha.ble.ota",
+          "note": "\"RC Upgrade\": firmware updater for the Bluetooth remote; pairing still works"
+        }
+      ]
+    },
+    {
+      "title": "Stock launcher, replaced by launcher/",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvlauncher",
+          "note": "launcher/build-and-install.sh disables the stock launcher itself, after Home has moved",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/panasonic-th-40hs550k/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

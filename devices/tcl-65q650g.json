@@ -1,0 +1,126 @@
+{
+  "schema": 1,
+  "id": "tcl-65q650g",
+  "name": "TCL 65Q650G",
+  "tested": {
+    "os": "Android TV 11",
+    "sdk": 30,
+    "build": null
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "1. Telemetry, partner auto-installs, account and EULA nags",
+      "packages": [
+        {
+          "pkg": "com.tcl.bi"
+        },
+        {
+          "pkg": "com.tcl.esticker"
+        },
+        {
+          "pkg": "com.tcl.partnercustomizer"
+        },
+        {
+          "pkg": "com.tcl.messagebox"
+        },
+        {
+          "pkg": "com.google.android.partnersetup"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.onetimeinitializer"
+        },
+        {
+          "pkg": "android.autoinstalls.config.google.gtvpai",
+          "note": "silently installs partner apps"
+        },
+        {
+          "pkg": "com.tcl.usercenter",
+          "note": "TCL account sign-in nags"
+        },
+        {
+          "pkg": "com.tcl.useragreement",
+          "note": "EULA screen, done after setup"
+        }
+      ]
+    },
+    {
+      "title": "1b. Google TV first-run wizard (claims HOME once the stock launcher is off)",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith"
+        }
+      ]
+    },
+    {
+      "title": "2. Unused apps (off by choice) and extras",
+      "packages": [
+        {
+          "pkg": "com.tubitv"
+        },
+        {
+          "pkg": "tv.pluto.android"
+        },
+        {
+          "pkg": "com.tcl.channelplus",
+          "note": "TCL Live FAST channels, also removes them from Live TV"
+        },
+        {
+          "pkg": "com.tcl.tv.plus",
+          "note": "TCL TV+ content app"
+        },
+        {
+          "pkg": "com.tcl.waterfall.overseas",
+          "note": "TCL web-video / recommendation portal"
+        },
+        {
+          "pkg": "com.espn.score_center"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.videos"
+        },
+        {
+          "pkg": "com.tcl.smartalexa",
+          "note": "Works with Alexa"
+        },
+        {
+          "pkg": "com.tcl.guard",
+          "note": "TGuard memory cleaner"
+        },
+        {
+          "pkg": "com.tcl.android.webview"
+        },
+        {
+          "pkg": "com.tcl.ocean.instructions",
+          "note": "e-manual"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar"
+        }
+      ]
+    },
+    {
+      "title": "3. TCL Home panel and remote key helper (disabled on their own; Input panel still worked)",
+      "packages": [
+        {
+          "pkg": "com.tcl.dashboard"
+        },
+        {
+          "pkg": "com.tcl.keyhelp"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tcl-65q650g/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

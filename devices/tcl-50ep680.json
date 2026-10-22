@@ -1,0 +1,197 @@
+{
+  "schema": 1,
+  "id": "tcl-50ep680",
+  "name": "TCL 50EP680",
+  "tested": {
+    "os": "Android TV 11",
+    "sdk": 30,
+    "build": null
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "TCL telemetry, promos and content feeds",
+      "packages": [
+        {
+          "pkg": "com.tcl.bi",
+          "note": "analytics / telemetry service"
+        },
+        {
+          "pkg": "com.tcl.tv.tclhome_passive",
+          "note": "pushes TCL content to the home screen at boot"
+        },
+        {
+          "pkg": "com.tcl.waterfall.overseas",
+          "note": "TCL web content feed"
+        },
+        {
+          "pkg": "com.tcl.esticker",
+          "note": "retail demo stickers. Worth re-checking here: the BeyondTV2"
+        },
+        {
+          "pkg": "com.tcl.notereminder"
+        },
+        {
+          "pkg": "com.tcl.overseasappshow"
+        },
+        {
+          "pkg": "com.tcl.copydatatotv",
+          "note": "\"copy your phone's data to the TV\" setup helper"
+        },
+        {
+          "pkg": "com.tcl.dashboard",
+          "note": "TCL dashboard; carries a /giftbox promo activity"
+        },
+        {
+          "pkg": "com.tcl.partnercustomizer",
+          "note": "installs partner/preload apps"
+        }
+      ]
+    },
+    {
+      "title": "Voice assistant (off by choice)",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google Assistant voice search"
+        },
+        {
+          "pkg": "com.google.android.tv.assistant",
+          "note": "Google Assistant for TV"
+        },
+        {
+          "pkg": "com.tcl.assistant",
+          "note": "TCL's assistant surface"
+        }
+      ]
+    },
+    {
+      "title": "Google extras, recommendation rows and Play Movies",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvrecommendations"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Play Movies & TV"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        },
+        {
+          "pkg": "com.google.android.music"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.backdrop",
+          "note": "ambient screensaver. Once it is gone the screensaver has to"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded games (user-space apps: disable-user is enough, and reversible)",
+      "packages": [
+        {
+          "pkg": "com.king.candycrushsaga"
+        },
+        {
+          "pkg": "com.asanteegames.magicrampage"
+        },
+        {
+          "pkg": "com.mautilus.tvgames.portal.androidtv"
+        },
+        {
+          "pkg": "com.popoko.tictactoe"
+        },
+        {
+          "pkg": "com.secretexit.turbodismount"
+        },
+        {
+          "pkg": "com.vectorunit.purple.googleplay"
+        },
+        {
+          "pkg": "com.wrcplus.release"
+        },
+        {
+          "pkg": "paskov.biz.happyfruits"
+        },
+        {
+          "pkg": "rocks.funkykarts"
+        },
+        {
+          "pkg": "ro.pontes.forinaline"
+        },
+        {
+          "pkg": "net.hexage.ritual"
+        },
+        {
+          "pkg": "com.joxdev.orbia"
+        },
+        {
+          "pkg": "com.bruyere.android.solitaire"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded news, video and remote-support apps",
+      "packages": [
+        {
+          "pkg": "ca.cbc.mobile.android.cbcnewsandroidwebview"
+        },
+        {
+          "pkg": "com.abc.abcnews"
+        },
+        {
+          "pkg": "com.bloomberg.btva"
+        },
+        {
+          "pkg": "com.cnn.mobile.android.tv"
+        },
+        {
+          "pkg": "com.nousguide.android.rbtv"
+        },
+        {
+          "pkg": "com.ted.android.tv"
+        },
+        {
+          "pkg": "com.vimeo.android.videoapp"
+        },
+        {
+          "pkg": "dw.com.androidtv.live"
+        },
+        {
+          "pkg": "net.aljazeera.english"
+        },
+        {
+          "pkg": "jp.co.rarity.tvweb"
+        },
+        {
+          "pkg": "com.cloudmosa.puffinTV"
+        },
+        {
+          "pkg": "cm.aptoidetv.pt"
+        },
+        {
+          "pkg": "com.curiosity.curiositystream.androidtv"
+        },
+        {
+          "pkg": "com.teamviewer.quicksupport.market"
+        },
+        {
+          "pkg": "io.tiv.dvtv.tv"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tcl-50ep680/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

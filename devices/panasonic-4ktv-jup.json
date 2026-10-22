@@ -1,0 +1,122 @@
+{
+  "schema": 1,
+  "id": "panasonic-4ktv-jup",
+  "name": "Panasonic 4KTV-JUP",
+  "tested": {
+    "os": "Android TV 11",
+    "sdk": 30,
+    "build": null
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Google telemetry / setup leftovers",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.partnersetup"
+        },
+        {
+          "pkg": "com.google.android.onetimeinitializer"
+        }
+      ]
+    },
+    {
+      "title": "Recommendation and content services",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvrecommendations"
+        },
+        {
+          "pkg": "com.mediatek.wwtv.tvrecommendation"
+        },
+        {
+          "pkg": "com.google.android.backdrop",
+          "note": "ambient-mode screensaver"
+        },
+        {
+          "pkg": "com.google.android.leanbacklauncher.partnercustomizer"
+        }
+      ]
+    },
+    {
+      "title": "Background services nobody needs on a TV",
+      "packages": [
+        {
+          "pkg": "com.android.printspooler"
+        },
+        {
+          "pkg": "com.android.htmlviewer"
+        },
+        {
+          "pkg": "com.android.backupconfirm"
+        },
+        {
+          "pkg": "com.android.sharedstoragebackup"
+        },
+        {
+          "pkg": "com.android.wallpaperbackup"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar"
+        },
+        {
+          "pkg": "com.android.providers.calendar"
+        },
+        {
+          "pkg": "com.google.android.tungsten.setupwraith",
+          "note": "setup wizard; re-enable before a factory-style re-setup"
+        }
+      ]
+    },
+    {
+      "title": "Panasonic preloads",
+      "packages": [
+        {
+          "pkg": "com.panasonic.ehelp"
+        },
+        {
+          "pkg": "com.panasonic.demomode"
+        },
+        {
+          "pkg": "com.panasonic.hotelmode"
+        }
+      ]
+    },
+    {
+      "title": "Streaming apps disabled by choice (comment out the ones you use)",
+      "packages": [
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        },
+        {
+          "pkg": "com.google.android.videos"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        }
+      ]
+    },
+    {
+      "title": "Stock Google TV launcher, replaced by launcher/",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvlauncher",
+          "note": "launcher/build-and-install.sh disables this one itself, after Home has moved",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/panasonic-4ktv-jup/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

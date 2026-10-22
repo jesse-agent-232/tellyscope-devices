@@ -1,0 +1,118 @@
+{
+  "schema": 1,
+  "id": "hisense-smarttv-4k-ffm-lushan",
+  "name": "Hisense SmartTV 4K FFM",
+  "tested": {
+    "os": "Google TV 12",
+    "sdk": null,
+    "build": null
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Hisense telemetry",
+      "packages": [
+        {
+          "pkg": "com.vt.tv.evservice",
+          "note": "viewing-data (ACR) service"
+        }
+      ]
+    },
+    {
+      "title": "Google tracking and feedback",
+      "packages": [
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "partner referral tracking"
+        },
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "crash/feedback uploader"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar",
+          "note": "calendar sync, unused on a TV"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps",
+      "packages": [
+        {
+          "pkg": "com.hisense.odinbrowser",
+          "note": "Hisense browser"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic",
+          "note": "YouTube Music"
+        },
+        {
+          "pkg": "com.google.android.play.games",
+          "note": "Play Games"
+        },
+        {
+          "pkg": "com.vt.hishow",
+          "note": "\"Family Moment\" screensaver and photo content"
+        }
+      ]
+    },
+    {
+      "title": "Store/hotel demo mode and the first-time setup flow (setup already complete)",
+      "packages": [
+        {
+          "pkg": "com.vt.storemode"
+        },
+        {
+          "pkg": "com.vt.fte"
+        }
+      ]
+    },
+    {
+      "title": "Streaming apps and voice, off by choice (comment out any you use)",
+      "packages": [
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom",
+          "note": "Prime Video"
+        },
+        {
+          "pkg": "com.iqiyi.i18n.tv",
+          "note": "iQIYI"
+        },
+        {
+          "pkg": "com.mercadolibre.android.mplay_tv",
+          "note": "Mercado Play"
+        },
+        {
+          "pkg": "com.wbd.stream",
+          "note": "HBO Max"
+        },
+        {
+          "pkg": "com.vt.alexa",
+          "note": "Hisense Alexa (Google Assistant is kept)"
+        }
+      ]
+    },
+    {
+      "title": "Hisense device assistant: a cleaner with a boot receiver (cache clean, \"turbo mode\")",
+      "packages": [
+        {
+          "pkg": "com.vt.tv.protector"
+        }
+      ]
+    },
+    {
+      "title": "Google TV setup wizard. Its RecoveryActivity claims HOME and beats the new launcher once",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/hisense-smarttv-4k-ffm-lushan/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

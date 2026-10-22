@@ -1,0 +1,195 @@
+{
+  "schema": 1,
+  "id": "nvidia-shield-tv-pro-2019",
+  "name": "NVIDIA SHIELD TV Pro",
+  "tested": {
+    "os": "Android TV 11",
+    "sdk": 30,
+    "build": "RQ1A.210105.003.7825230_4387.0822"
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "NVIDIA and Google telemetry and feedback",
+      "packages": [
+        {
+          "pkg": "com.nvidia.stats",
+          "note": "anonymous usage statistics"
+        },
+        {
+          "pkg": "com.nvidia.feedback",
+          "note": "crash reports and the \"send feedback\" form"
+        },
+        {
+          "pkg": "com.nvidia.diagtools",
+          "note": "log collector; re-enable if NVIDIA support asks for logs"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        }
+      ]
+    },
+    {
+      "title": "Sponsored rows and auto-installs",
+      "packages": [
+        {
+          "pkg": "android.autoinstalls.config.nvidia",
+          "note": "Play auto-installs of partner apps"
+        }
+      ]
+    },
+    {
+      "title": "NVIDIA gaming leftovers (GameStream closed in 2023)",
+      "packages": [
+        {
+          "pkg": "com.nvidia.nvgamecast",
+          "note": "GameStream receiver; Moonlight and Sunshine don't use it"
+        },
+        {
+          "pkg": "com.nvidia.tegrazone3",
+          "note": "\"NVIDIA Games\" app and row; GeForce NOW is a separate app"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps",
+      "packages": [
+        {
+          "pkg": "com.android.gallery3d",
+          "note": "legacy photo viewer"
+        },
+        {
+          "pkg": "com.android.printspooler"
+        }
+      ]
+    },
+    {
+      "title": "Personal choice: uncomment what you don't use",
+      "packages": [
+        {
+          "pkg": "com.nvidia.ota",
+          "note": "firmware updates; NVIDIA still ships security patches",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google Assistant (the mic button stops working)",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.speech.pumpkin",
+          "note": "on-device speech; also breaks in-app mic buttons",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Chromecast built-in",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.backdrop",
+          "note": "Ambient mode screensaver, see notes",
+          "optional": true
+        },
+        {
+          "pkg": "com.nvidia.osc",
+          "note": "NVIDIA's in-game overlay",
+          "optional": true
+        },
+        {
+          "pkg": "com.nvidia.shield.smbserver",
+          "note": "\"Transfer files over local network\" SMB share",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.tv",
+          "note": "Live Channels; keep it for a network tuner",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.play.games",
+          "optional": true
+        },
+        {
+          "pkg": "com.netflix.ninja",
+          "note": "Netflix",
+          "optional": true
+        },
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom.nvidia",
+          "note": "Prime Video (system copy)",
+          "optional": true
+        },
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom",
+          "note": "Prime Video (Play Store copy)",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.youtube.tv",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Advanced: also off on the tested unit, together with com.nvidia.ota. They were removed there",
+      "packages": [
+        {
+          "pkg": "com.nvidia.shieldtech.hooks",
+          "note": "maps an Xbox controller's Guide button to Home",
+          "optional": true
+        },
+        {
+          "pkg": "com.nvidia.shieldtech.proxy",
+          "optional": true
+        },
+        {
+          "pkg": "com.nvidia.shield.nvcustomize",
+          "optional": true
+        },
+        {
+          "pkg": "com.nvidia.shield.registration",
+          "optional": true
+        },
+        {
+          "pkg": "com.nvidia.shieldbeta",
+          "optional": true
+        },
+        {
+          "pkg": "com.nvidia.hotwordsetup",
+          "optional": true
+        },
+        {
+          "pkg": "com.nvidia.factorybundling",
+          "optional": true
+        },
+        {
+          "pkg": "com.nvidia.benchmarkblocker",
+          "optional": true
+        },
+        {
+          "pkg": "com.nvidia.NvCPLUpdater",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Stock Android TV launcher, replaced by launcher/",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvlauncher"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/nvidia-shield-tv-pro-2019/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

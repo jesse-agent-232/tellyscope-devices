@@ -1,0 +1,185 @@
+{
+  "schema": 1,
+  "id": "tcl-g08-us-google-tv",
+  "name": "TCL 75\" T7 Series 4K 144Hz QLED Google TV",
+  "tested": {
+    "os": "Android 14",
+    "sdk": null,
+    "build": null
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "TCL promo, push messages and retail / hotel demo",
+      "packages": [
+        {
+          "pkg": "com.tcl.tv.plus",
+          "note": "TCL TV+ free channels"
+        },
+        {
+          "pkg": "com.tcl.messagebox",
+          "note": "TCL pushed messages and promos"
+        },
+        {
+          "pkg": "com.tcl.esticker",
+          "note": "retail-demo sticker"
+        },
+        {
+          "pkg": "com.tcl.hotelmenu",
+          "note": "hotel-mode portal"
+        },
+        {
+          "pkg": "com.tcl.exhibit",
+          "note": "store demo"
+        },
+        {
+          "pkg": "com.tcl.tv.tclhome_passive",
+          "note": "TCL content pushed to the home screen at boot"
+        },
+        {
+          "pkg": "com.tcl.dashboard",
+          "note": "TCL Home panel and its promos"
+        }
+      ]
+    },
+    {
+      "title": "Telemetry, diagnostics and Android 14 ad / privacy services",
+      "packages": [
+        {
+          "pkg": "com.tcl.logkit",
+          "note": "log capture"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.android.tv.feedbackconsent"
+        },
+        {
+          "pkg": "com.android.adservices.api",
+          "note": "Privacy Sandbox"
+        },
+        {
+          "pkg": "com.android.ondevicepersonalization.services"
+        },
+        {
+          "pkg": "com.android.federatedcompute.services"
+        }
+      ]
+    },
+    {
+      "title": "Extras nobody asked for",
+      "packages": [
+        {
+          "pkg": "com.tcl.ocean.instructions",
+          "note": "on-TV manual"
+        },
+        {
+          "pkg": "com.tcl.hearaid",
+          "note": "hearing test / accessibility helper"
+        },
+        {
+          "pkg": "com.tcl.t_solo",
+          "note": "Bluetooth \"listen alone\""
+        },
+        {
+          "pkg": "com.tcl.repairguide",
+          "note": "self-diagnosis"
+        },
+        {
+          "pkg": "com.android.printspooler"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar"
+        },
+        {
+          "pkg": "com.google.android.onetimeinitializer"
+        },
+        {
+          "pkg": "com.tcl.usercenter",
+          "note": "TCL account"
+        },
+        {
+          "pkg": "com.tcl.browser"
+        },
+        {
+          "pkg": "com.tcl.channelplus",
+          "note": "TCL Live FAST channels (a Live TV input)"
+        }
+      ]
+    },
+    {
+      "title": "Alexa and AirPlay, off by choice",
+      "packages": [
+        {
+          "pkg": "com.tcl.smartalexa"
+        },
+        {
+          "pkg": "com.tcl.airplay2"
+        },
+        {
+          "pkg": "com.mediatek.AirplayAPK"
+        },
+        {
+          "pkg": "com.mediatek.airplaydaemon"
+        }
+      ]
+    },
+    {
+      "title": "Streaming preloads on the US firmware, off by choice",
+      "packages": [
+        {
+          "pkg": "com.disney.disneyplus"
+        },
+        {
+          "pkg": "com.hulu.livingroomplus"
+        },
+        {
+          "pkg": "com.tubitv"
+        },
+        {
+          "pkg": "com.wbd.stream",
+          "note": "Max"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google TV / Play Movies storefront"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvunplugged",
+          "note": "YouTube TV"
+        },
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom",
+          "note": "Prime Video"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        }
+      ]
+    },
+    {
+      "title": "Stock launcher, off once the new launcher is Home",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.tv.launcherx"
+        }
+      ]
+    },
+    {
+      "title": "Second Home claimant: disable it once the new launcher is Home, after the saved Wi-Fi no longer belongs to it",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith",
+          "note": "setup wizard; its RecoveryActivity takes Home when launcherx is off"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tcl-g08-us-google-tv/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

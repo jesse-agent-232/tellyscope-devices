@@ -1,0 +1,156 @@
+{
+  "schema": 1,
+  "id": "tcl-55p7k",
+  "name": "TCL 55P7K",
+  "tested": {
+    "os": "Android 12",
+    "sdk": null,
+    "build": "as"
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "TCL tracking and analytics",
+      "packages": [
+        {
+          "pkg": "tv.samba.ssm.ui",
+          "note": "Samba TV ACR viewing tracking (enabled at the factory here)"
+        },
+        {
+          "pkg": "com.tcl.ttvs",
+          "note": "TCL analytics service; re-enable if firmware updates stop arriving"
+        },
+        {
+          "pkg": "com.tcl.logkit",
+          "note": "log capture and upload"
+        },
+        {
+          "pkg": "com.tcl.usercenter",
+          "note": "TCL account sign-in nags"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        }
+      ]
+    },
+    {
+      "title": "TCL content, ads and promos",
+      "packages": [
+        {
+          "pkg": "com.tcl.waterfall.overseas",
+          "note": "TCL Channel / content feed"
+        },
+        {
+          "pkg": "com.tcl.channelplus",
+          "note": "TCL Live FAST channels"
+        },
+        {
+          "pkg": "com.tcl.tv.tclhome_passive",
+          "note": "pushes TCL content to the home screen at boot"
+        },
+        {
+          "pkg": "com.tcl.partnercustomizer",
+          "note": "TCL tweaks to Google TV home rows"
+        },
+        {
+          "pkg": "com.tcl.interactive",
+          "note": "TCL TIAS background service"
+        },
+        {
+          "pkg": "com.tcl.messagebox",
+          "note": "TCL push messages and promos"
+        },
+        {
+          "pkg": "android.autoinstalls.config.google.gtvpai",
+          "note": "silently installs partner apps"
+        }
+      ]
+    },
+    {
+      "title": "Retail demo / hotel mode",
+      "packages": [
+        {
+          "pkg": "com.tcl.exhibit"
+        },
+        {
+          "pkg": "com.tcl.esticker"
+        },
+        {
+          "pkg": "com.tcl.hotelmenu"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps and services",
+      "packages": [
+        {
+          "pkg": "com.tcl.guard",
+          "note": "TGuard memory \"cleaner\""
+        },
+        {
+          "pkg": "com.tcl.ocean.instructions",
+          "note": "e-manual"
+        },
+        {
+          "pkg": "com.tcl.repairguide"
+        },
+        {
+          "pkg": "com.tcl.smartalexa",
+          "note": "Alexa"
+        },
+        {
+          "pkg": "com.tcl.t_solo",
+          "note": "T-Solo \"listen alone\" (Bluetooth headphones while the speakers stay off)"
+        }
+      ]
+    },
+    {
+      "title": "Needed for a custom launcher. Disable only AFTER the new launcher is installed.",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.tv.launcherx"
+        },
+        {
+          "pkg": "com.google.android.tungsten.setupwraith"
+        }
+      ]
+    },
+    {
+      "title": "Disabled by choice on this TV (unused streaming apps): comment out the ones you watch",
+      "packages": [
+        {
+          "pkg": "com.netflix.ninja"
+        },
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom",
+          "note": "Prime Video"
+        },
+        {
+          "pkg": "com.disneyplus.mea",
+          "note": "Disney+ (Middle East)"
+        },
+        {
+          "pkg": "com.osn.go",
+          "note": "OSN+"
+        },
+        {
+          "pkg": "com.iqiyi.i18n.tv",
+          "note": "iQIYI"
+        },
+        {
+          "pkg": "com.spotify.tv.android"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google TV / Play Movies"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tcl-55p7k/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "schema": 1,
+  "id": "challenger-32t22bt",
+  "name": "Challenger 32T22 BT",
+  "tested": {
+    "os": "Android 7.0",
+    "sdk": 24,
+    "build": null
+  },
+  "launcher": "com.cvte.tv.launcher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Factory test and diagnostic tools (CVTE & TCL ODM)",
+      "packages": [
+        {
+          "pkg": "cn.cvte.tv.factory.autotest"
+        },
+        {
+          "pkg": "com.cvte.tcl.factory.at"
+        },
+        {
+          "pkg": "com.cvte.tv.audiotest"
+        },
+        {
+          "pkg": "com.cvte.fac.menu"
+        },
+        {
+          "pkg": "com.tcl.FactoryMode"
+        },
+        {
+          "pkg": "com.tcl.sticker"
+        }
+      ]
+    },
+    {
+      "title": "Bloatware, cleaners, and third-party stores",
+      "packages": [
+        {
+          "pkg": "com.cvte.tvclean",
+          "note": "Background memory cleaner"
+        },
+        {
+          "pkg": "com.cvte.tv.appstore",
+          "note": "Proprietary app store"
+        },
+        {
+          "pkg": "cm.aptoidetv.pt.cvt_platform7",
+          "note": "Preinstalled Aptoide TV build"
+        },
+        {
+          "pkg": "cn.tcl.odm.android.vstoresubclient",
+          "note": "Zeasn / TCL store client"
+        },
+        {
+          "pkg": "com.talents.huanclientauth",
+          "note": "Huan client authentication"
+        },
+        {
+          "pkg": "com.creative.fastscreen.tv",
+          "note": "Screen mirroring adware/service"
+        }
+      ]
+    },
+    {
+      "title": "Background services and redundant media apps",
+      "packages": [
+        {
+          "pkg": "com.cvte.tv.ucservice",
+          "note": "CVTE UserCenter service"
+        },
+        {
+          "pkg": "com.mediatek.androidbox",
+          "note": "MediaTek WFD Sink test utility"
+        },
+        {
+          "pkg": "com.apps.usbmediaplayer",
+          "note": "Redundant USB player"
+        },
+        {
+          "pkg": "com.cvte.tv.media",
+          "note": "Stock media center"
+        },
+        {
+          "pkg": "com.cvte.tv.player",
+          "note": "Stock media player"
+        },
+        {
+          "pkg": "com.ecloud.emedia",
+          "note": "DLNA/media cloud service"
+        }
+      ]
+    },
+    {
+      "title": "System extras & browsers",
+      "packages": [
+        {
+          "pkg": "com.android.htmlviewer"
+        },
+        {
+          "pkg": "com.android.browser",
+          "note": "Outdated stock browser (AOSP)"
+        }
+      ]
+    },
+    {
+      "title": "Stock launcher (disable only after installing and setting an alternative launcher as Home)",
+      "packages": [
+        {
+          "pkg": "com.cvte.tv.launcher"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/challenger-32t22bt/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

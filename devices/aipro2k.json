@@ -1,0 +1,106 @@
+{
+  "schema": 1,
+  "id": "aipro2k",
+  "name": "AiPro2K",
+  "tested": {
+    "os": "Android TV 14",
+    "sdk": null,
+    "build": null
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Telemetry and ad services",
+      "packages": [
+        {
+          "pkg": "tv.anoki.acr.anokiacroptin",
+          "note": "automatic content recognition"
+        },
+        {
+          "pkg": "com.android.adservices.api"
+        },
+        {
+          "pkg": "com.android.ondevicepersonalization.services"
+        },
+        {
+          "pkg": "com.android.federatedcompute.services"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.android.tv.feedbackconsent"
+        },
+        {
+          "pkg": "com.google.android.partnersetup"
+        }
+      ]
+    },
+    {
+      "title": "Content rows and partner junk",
+      "packages": [
+        {
+          "pkg": "com.mediatek.android.leanbacklauncher.partnercustomizer"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps and demos",
+      "packages": [
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "fusion.android.tv.demo",
+          "note": "retail demo mode"
+        },
+        {
+          "pkg": "com.mediatek.androidbox",
+          "note": "WFDSinkTest, Wi-Fi Display test app"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.dreamx",
+          "note": "Google screensaver; the new launcher has a Clock screensaver"
+        },
+        {
+          "pkg": "com.google.android.tts",
+          "note": "re-enable if you use accessibility speech"
+        }
+      ]
+    },
+    {
+      "title": "Stock launcher and its first-run wizard. Do this LAST, after the new launcher is installed and set as",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith",
+          "note": "its RecoveryActivity otherwise takes over Home"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.launcherx"
+        }
+      ]
+    },
+    {
+      "title": "",
+      "packages": [
+        {
+          "pkg": "com.mediatek.wwtv.mediaplayer",
+          "note": "MMP, USB media player; re-enable to play files from USB",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/aipro2k/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

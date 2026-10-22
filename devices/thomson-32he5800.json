@@ -1,0 +1,145 @@
+{
+  "schema": 1,
+  "id": "thomson-32he5800",
+  "name": "Thomson 32HE5800",
+  "tested": {
+    "os": "Android TV 9",
+    "sdk": 28,
+    "build": "PPR2.180905.006.A1"
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [
+    {
+      "pkg": "com.realtek.netflix.setting",
+      "note": "Netflix ESN/config"
+    }
+  ],
+  "groups": [
+    {
+      "title": "Telemetry and analytics",
+      "packages": [
+        {
+          "pkg": "com.tcl.bi",
+          "note": "TCL analytics (BI)"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.tv.bugreportsender"
+        },
+        {
+          "pkg": "android.autoinstalls.config.tcl.device",
+          "note": "Play auto-installs of partner apps"
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "partner-app attribution"
+        }
+      ]
+    },
+    {
+      "title": "Content, ads and promos",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvrecommendations"
+        },
+        {
+          "pkg": "com.google.android.leanbacklauncher.recommendations"
+        },
+        {
+          "pkg": "com.tcl.appmarket2",
+          "note": "TCL app store (Play Store stays)"
+        },
+        {
+          "pkg": "com.tcl.usercenter",
+          "note": "TCL account / phone binding web pages"
+        },
+        {
+          "pkg": "com.tcl.esticker",
+          "note": "retail energy-label sticker"
+        },
+        {
+          "pkg": "com.tcl.useragreement",
+          "note": "TCL agreement screen, done after setup"
+        }
+      ]
+    },
+    {
+      "title": "Background services",
+      "packages": [
+        {
+          "pkg": "com.tcl.tvweishi",
+          "note": "\"TV Guard\" cleaner with its own installer"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps",
+      "packages": [
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.music",
+          "note": "Play Music, service discontinued"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Play Movies & TV"
+        }
+      ]
+    },
+    {
+      "title": "Off by choice on this unit",
+      "packages": [
+        {
+          "pkg": "com.tcl.ui_mediaCenter",
+          "note": "USB media center"
+        },
+        {
+          "pkg": "com.tcl.videoplayer"
+        },
+        {
+          "pkg": "com.tcl.audioplayer"
+        },
+        {
+          "pkg": "com.tcl.imageplayer"
+        },
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google Assistant / voice search"
+        },
+        {
+          "pkg": "com.google.android.speech.pumpkin",
+          "note": "hotword"
+        },
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Chromecast - kept",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.versionUpdateApp",
+          "note": "TCL firmware updates - kept",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.rc.ota",
+          "note": "remote-control firmware updates - kept",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.backdrop",
+          "note": "Ambient screensaver - kept",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/thomson-32he5800/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

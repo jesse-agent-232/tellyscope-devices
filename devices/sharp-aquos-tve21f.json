@@ -1,0 +1,152 @@
+{
+  "schema": 1,
+  "id": "sharp-aquos-tve21f",
+  "name": "SHARP AQUOS TVE21F",
+  "tested": {
+    "os": "Android TV 14",
+    "sdk": 34,
+    "build": null
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "--- Manufacturer telemetry, recommendation rows and retail/partner plumbing ---",
+      "packages": [
+        {
+          "pkg": "tv.anoki.acr.anokiacroptin"
+        },
+        {
+          "pkg": "fusion.android.tv.demo",
+          "note": "retail demo mode"
+        },
+        {
+          "pkg": "android.autoinstalls.config.sharp",
+          "note": "PAI partner auto-install stub"
+        },
+        {
+          "pkg": "android.autoinstalls.config.hkc",
+          "note": "PAI partner auto-install stub"
+        },
+        {
+          "pkg": "com.mediatek.android.leanbacklauncher.partnercustomizer",
+          "note": "partner rows for the stock launcher"
+        }
+      ]
+    },
+    {
+      "title": "--- Manufacturer factory / test only apps ---",
+      "packages": [
+        {
+          "pkg": "com.cvte.tv.fac.menu",
+          "note": "factory menu"
+        },
+        {
+          "pkg": "com.cvte.tv.fac.aging",
+          "note": "factory aging test"
+        },
+        {
+          "pkg": "com.at.factory.factorymanager",
+          "note": "factory test manager"
+        },
+        {
+          "pkg": "com.at.factory.androidtvaidlservice",
+          "note": "factory test service"
+        },
+        {
+          "pkg": "com.cvte.tv.at",
+          "note": "factory auto-test activity"
+        }
+      ]
+    },
+    {
+      "title": "--- Google telemetry, recommendations, first-run wizard and phone remote ---",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvrecommendations"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "Play partner customizations"
+        },
+        {
+          "pkg": "com.google.android.backdrop",
+          "note": "ambient screensaver"
+        },
+        {
+          "pkg": "com.android.tv.feedbackconsent",
+          "note": "feedback consent dialog"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar",
+          "note": "calendar sync (calendar provider already disabled)"
+        },
+        {
+          "pkg": "com.google.android.tungsten.setupwraith",
+          "note": "Google TV first-run wizard, finished long ago"
+        },
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google Assistant / voice search, off by choice"
+        },
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Chromecast, off by choice"
+        },
+        {
+          "pkg": "com.google.android.tv.remote.service",
+          "note": "phone remote app, off by choice"
+        }
+      ]
+    },
+    {
+      "title": "--- Unused preloaded apps ---",
+      "packages": [
+        {
+          "pkg": "com.tcl.browser"
+        },
+        {
+          "pkg": "com.cxinventor.file.explorer",
+          "note": "X-plore file manager"
+        }
+      ]
+    },
+    {
+      "title": "--- Unused streaming / media apps (off by choice; all still installed) ---",
+      "packages": [
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom"
+        },
+        {
+          "pkg": "com.disney.disneyplus"
+        },
+        {
+          "pkg": "com.spotify.tv.android"
+        },
+        {
+          "pkg": "tv.arte.plus7"
+        },
+        {
+          "pkg": "fr.francetv.pluzz"
+        },
+        {
+          "pkg": "com.megogo.application"
+        },
+        {
+          "pkg": "com.limelight"
+        },
+        {
+          "pkg": "org.videolan.vlc"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/sharp-aquos-tve21f/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "schema": 1,
+  "id": "tcl-58s571f-fire-tv",
+  "name": "TCL 58S571F",
+  "tested": {
+    "os": "Fire OS 8",
+    "sdk": 30,
+    "build": null
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "Ads, shopping and content recognition",
+      "packages": [
+        {
+          "pkg": "com.amazon.shoptv.client",
+          "note": "Shop on Fire TV"
+        },
+        {
+          "pkg": "com.amazon.tv.acr",
+          "note": "Automatic Content Recognition (what's on screen, HDMI included)"
+        },
+        {
+          "pkg": "com.amazon.tv.democontent.provider",
+          "note": "retail demo content"
+        },
+        {
+          "pkg": "com.amazon.media.recommendations",
+          "note": "sponsored and recommendation rows"
+        },
+        {
+          "pkg": "com.amazon.sneakpeek",
+          "note": "autoplaying previews on Home"
+        },
+        {
+          "pkg": "com.amazon.hybridadidservice",
+          "note": "advertising ID"
+        },
+        {
+          "pkg": "com.amazon.kso.blackbird",
+          "note": "vendor service; purpose not established, nothing broke without it"
+        }
+      ]
+    },
+    {
+      "title": "Telemetry and metrics",
+      "packages": [
+        {
+          "pkg": "com.amazon.wirelessmetrics.service",
+          "note": "Wi-Fi metrics upload"
+        },
+        {
+          "pkg": "com.amazon.perfcollection",
+          "note": "performance telemetry"
+        },
+        {
+          "pkg": "com.amazon.perfc",
+          "note": "performance telemetry"
+        },
+        {
+          "pkg": "com.amazon.dp.logger",
+          "note": "device log upload"
+        },
+        {
+          "pkg": "com.amazon.device.telemetry.emitter",
+          "note": "telemetry emitter (see the header)"
+        }
+      ]
+    },
+    {
+      "title": "Tutorials",
+      "packages": [
+        {
+          "pkg": "com.amazon.storm.lightning.tutorial"
+        },
+        {
+          "pkg": "com.amazon.tmm.tutorial"
+        }
+      ]
+    },
+    {
+      "title": "Alexa (personal choice; vizzini itself comes back at every boot, see the header)",
+      "packages": [
+        {
+          "pkg": "com.amazon.tv.alexaalerts"
+        },
+        {
+          "pkg": "com.amazon.tv.alexanotifications"
+        },
+        {
+          "pkg": "com.amazon.alexamediaplayer.runtime.ftv"
+        },
+        {
+          "pkg": "com.amazon.alexa.externalmediaplayer.fireos"
+        }
+      ]
+    },
+    {
+      "title": "Preloads and placeholders (personal choice)",
+      "packages": [
+        {
+          "pkg": "com.amazon.tv.earlyaccess",
+          "note": "Early Access system stub"
+        },
+        {
+          "pkg": "com.amazon.bueller.music",
+          "note": "Amazon Music"
+        },
+        {
+          "pkg": "com.amazon.bueller.photos",
+          "note": "Amazon Photos"
+        },
+        {
+          "pkg": "com.amazon.minitv.android.app",
+          "note": "miniTV"
+        },
+        {
+          "pkg": "com.amazon.naatyam",
+          "note": "Naatyam"
+        },
+        {
+          "pkg": "com.amazon.gamehub",
+          "note": "games hub"
+        }
+      ]
+    },
+    {
+      "title": "Apps on this TCL (personal choice)",
+      "packages": [
+        {
+          "pkg": "com.mediatek.opapp",
+          "note": "OpApp (broadcast operator app)"
+        },
+        {
+          "pkg": "com.amazon.smarthomemapviewapp",
+          "note": "Alexa Smart Home"
+        },
+        {
+          "pkg": "com.amazon.spiderpork",
+          "note": "Amazon Luna"
+        },
+        {
+          "pkg": "com.amazon.tahoe",
+          "note": "Amazon Kids"
+        },
+        {
+          "pkg": "com.amazon.hedwig",
+          "note": "News"
+        },
+        {
+          "pkg": "com.amazon.tv.localgallery",
+          "note": "Gallery"
+        },
+        {
+          "pkg": "com.amazon.ssm",
+          "note": "System Status Monitor"
+        },
+        {
+          "pkg": "com.amazon.firebat",
+          "note": "Prime Video"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tcl-58s571f-fire-tv/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

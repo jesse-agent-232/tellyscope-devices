@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "id": "kalley-r10g",
+  "name": "Kalley R10G",
+  "tested": {
+    "os": "Android 14",
+    "sdk": null,
+    "build": null
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Google partner setup and store plumbing",
+      "packages": [
+        {
+          "pkg": "com.google.android.partnersetup"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Play Movies & TV"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic",
+          "note": "YouTube Music TV, off by choice"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded services",
+      "packages": [
+        {
+          "pkg": "com.seraphic.media.tv.interactive.app"
+        },
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom",
+          "note": "Prime Video preinstall, off by choice"
+        }
+      ]
+    },
+    {
+      "title": "Karaoke",
+      "packages": [
+        {
+          "pkg": "com.realtek.kara"
+        },
+        {
+          "pkg": "com.realtek.karaoke.userguide"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps not used on this set; comment out anything you use",
+      "packages": [
+        {
+          "pkg": "com.apple.atve.androidtv.appletv",
+          "note": "Apple TV"
+        },
+        {
+          "pkg": "com.nagra.ion.claroco",
+          "note": "Claro TV (operator app)"
+        },
+        {
+          "pkg": "com.kick.mobile",
+          "note": "Kick"
+        },
+        {
+          "pkg": "com.jio.web.androidtv",
+          "note": "JioTV"
+        },
+        {
+          "pkg": "com.cbs.ca",
+          "note": "CBS"
+        },
+        {
+          "pkg": "net.froemling.bombsquad",
+          "note": "Bombsquad"
+        },
+        {
+          "pkg": "com.yodo1.crossyroad",
+          "note": "Crossy Road"
+        }
+      ]
+    },
+    {
+      "title": "Stock home and the Google TV setup wizard. Disable only after the new launcher is installed and",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.tv.launcherx"
+        },
+        {
+          "pkg": "com.google.android.tungsten.setupwraith"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/kalley-r10g/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

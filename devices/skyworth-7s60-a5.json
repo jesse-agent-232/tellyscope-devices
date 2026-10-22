@@ -1,0 +1,138 @@
+{
+  "schema": 1,
+  "id": "skyworth-7s60-a5",
+  "name": "Skyworth 7S60_A5",
+  "tested": {
+    "os": "Android 8.0",
+    "sdk": 26,
+    "build": null
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "Ads and telemetry",
+      "packages": [
+        {
+          "pkg": "com.tianci.ad",
+          "note": "boot ad (persist.sys.ad.startboot)"
+        },
+        {
+          "pkg": "com.tianci.push",
+          "note": "push service with Sensors Data analytics"
+        },
+        {
+          "pkg": "com.coocaa.sysreport",
+          "note": "usage reporting on boot, screen and app install"
+        },
+        {
+          "pkg": "com.baidu.oases",
+          "note": "Baidu SDK service started at boot"
+        },
+        {
+          "pkg": "com.tianci.autoinstaller",
+          "note": "silently installs promoted apps"
+        },
+        {
+          "pkg": "com.skyworth.skymarket",
+          "note": "shop demo display"
+        },
+        {
+          "pkg": "com.coocaa.screensaver",
+          "note": "screensaver with an ad SDK (com.coocaa.adsdk)"
+        },
+        {
+          "pkg": "com.coocaa.guide",
+          "note": "boot/upgrade guide, push receiver"
+        }
+      ]
+    },
+    {
+      "title": "Preloads not used (by choice)",
+      "packages": [
+        {
+          "pkg": "com.coocaa.educate",
+          "note": "kids/education channel, ad SDK"
+        },
+        {
+          "pkg": "com.coocaa.lifeassistant",
+          "note": "morning call, sleep aid, weather"
+        },
+        {
+          "pkg": "com.tianci.appstore",
+          "note": "Coocaa app store"
+        },
+        {
+          "pkg": "com.coocaa.app_browser"
+        },
+        {
+          "pkg": "com.coocaa.tvmanager",
+          "note": "cleaner / \"speed up\", Baidu TV shield"
+        },
+        {
+          "pkg": "com.loostone.tuning",
+          "note": "karaoke mic tuning, starts at boot"
+        }
+      ]
+    },
+    {
+      "title": "Voice assistant and updates (by choice)",
+      "packages": [
+        {
+          "pkg": "com.skyworth.angel.voice"
+        },
+        {
+          "pkg": "com.skyworth.aimanager",
+          "note": "far-field mic AI service, starts at boot"
+        },
+        {
+          "pkg": "com.coocaa.os.upgrade",
+          "note": "firmware/OTA updates"
+        }
+      ]
+    },
+    {
+      "title": "Coocaa extras, unused with the new home (by choice)",
+      "packages": [
+        {
+          "pkg": "com.coocaa.teampresent",
+          "note": "help and customer service"
+        },
+        {
+          "pkg": "com.coocaa.os.thememanager",
+          "note": "theme store"
+        },
+        {
+          "pkg": "com.coocaa.messageprovider",
+          "note": "system message box, pushes notices and promotions"
+        },
+        {
+          "pkg": "com.coocaa.sky.ccapi",
+          "note": "Coocaa payment centre; breaks Coocaa membership purchases"
+        },
+        {
+          "pkg": "com.tianci.user",
+          "note": "Coocaa account centre; breaks Coocaa account login"
+        },
+        {
+          "pkg": "com.coocaa.skycast.tool",
+          "note": "cast component updater; casting itself still works"
+        }
+      ]
+    },
+    {
+      "title": "Stock home. Disable only after the new launcher and the homepage shim work (README.md): with it",
+      "packages": [
+        {
+          "pkg": "com.tianci.movieplatform",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/skyworth-7s60-a5/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "id": "philips-r8g-google-tv",
+  "name": "Philips R8G Google TV",
+  "tested": {
+    "os": "Google TV 14",
+    "sdk": 34,
+    "build": "UKRE.260524.058"
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Telemetry",
+      "packages": [
+        {
+          "pkg": "tv.anoki.acr.anokiacroptin",
+          "note": "Anoki ACR: fingerprints what is on screen"
+        },
+        {
+          "pkg": "com.apps.esticker3",
+          "note": "store-demo sticker overlay (ShopModeReceiver, boot receiver)"
+        },
+        {
+          "pkg": "com.android.tv.feedbackconsent"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        }
+      ]
+    },
+    {
+      "title": "Android ad and personalisation services",
+      "packages": [
+        {
+          "pkg": "com.android.adservices.api"
+        },
+        {
+          "pkg": "com.android.ondevicepersonalization.services"
+        },
+        {
+          "pkg": "com.android.federatedcompute.services"
+        }
+      ]
+    },
+    {
+      "title": "Manufacturer content",
+      "packages": [
+        {
+          "pkg": "com.realtek.leanbacklauncher.partnercustomizer",
+          "note": "partner config that injects apps and rows into the home screen"
+        },
+        {
+          "pkg": "com.seraphic.hbbtv.app",
+          "note": "HbbTV red-button overlays, unused with US ATSC"
+        }
+      ]
+    },
+    {
+      "title": "Not needed on a TV",
+      "packages": [
+        {
+          "pkg": "com.android.healthconnect.controller"
+        },
+        {
+          "pkg": "com.android.health.connect.backuprestore"
+        }
+      ]
+    },
+    {
+      "title": "Off by owner's choice",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Assistant / Gemini; the mic button does nothing without it"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.dreamx",
+          "note": "ambient screensaver; point screensaver_components elsewhere or turn it off"
+        }
+      ]
+    },
+    {
+      "title": "Stock home. Disable only after the new launcher is installed and set as home.",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith",
+          "note": "its RecoveryActivity otherwise takes over Home"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.launcherx"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/philips-r8g-google-tv/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "schema": 1,
+  "id": "prismplus-q65-ultra-r10g",
+  "name": "PRISM+ Q65 Ultra 2026 QLED 4K AI Google TV",
+  "tested": {
+    "os": "Android TV 14",
+    "sdk": null,
+    "build": null
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Launcher partner customization and Google partner setup",
+      "packages": [
+        {
+          "pkg": "com.realtek.leanbacklauncher.partnercustomizer"
+        },
+        {
+          "pkg": "com.google.android.partnersetup"
+        },
+        {
+          "pkg": "android.autoinstalls.config.google.gtvpai",
+          "note": "Play partner auto-installs"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded services",
+      "packages": [
+        {
+          "pkg": "com.seraphic.media.tv.interactive.app"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.dreamx",
+          "note": "ambient mode screensaver"
+        },
+        {
+          "pkg": "com.apps.scast",
+          "note": "likely screen mirroring"
+        },
+        {
+          "pkg": "com.apps.wifihotspot"
+        },
+        {
+          "pkg": "com.mk.tv.meeting.service"
+        },
+        {
+          "pkg": "com.apps.esticker3"
+        },
+        {
+          "pkg": "com.android.printspooler"
+        }
+      ]
+    },
+    {
+      "title": "Broadcast tuner apps not used here (DTMB, ISDB, ATSC)",
+      "packages": [
+        {
+          "pkg": "com.realtek.dtmb"
+        },
+        {
+          "pkg": "com.realtek.tv.isdb"
+        },
+        {
+          "pkg": "com.realtek.tv.atsc"
+        }
+      ]
+    },
+    {
+      "title": "Karaoke",
+      "packages": [
+        {
+          "pkg": "com.realtek.karaoke.userguide"
+        },
+        {
+          "pkg": "com.realtek.kara"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps",
+      "packages": [
+        {
+          "pkg": "com.apps.mk.gameui"
+        },
+        {
+          "pkg": "com.apps.puresound"
+        },
+        {
+          "pkg": "com.apps.usbmediaplayer"
+        },
+        {
+          "pkg": "com.wbd.stream",
+          "note": "Max, off by choice"
+        }
+      ]
+    },
+    {
+      "title": "Stock home. Disable only after the new launcher is installed and running, or Home lands on a factory test app.",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.tv.launcherx"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/prismplus-q65-ultra-r10g/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

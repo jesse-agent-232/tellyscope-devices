@@ -1,0 +1,250 @@
+{
+  "schema": 1,
+  "id": "xiaomi-mitv-mteq0",
+  "name": "Xiaomi TV EA Pro 55\"",
+  "tested": {
+    "os": "Android 10",
+    "sdk": 29,
+    "build": null
+  },
+  "launcher": "com.mitv.tvhome",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Xiaomi telemetry, diagnostics and log upload",
+      "packages": [
+        {
+          "pkg": "com.miui.analytics",
+          "note": "installed into /data/app by com.mitv.tvhome"
+        },
+        {
+          "pkg": "com.miui.tv.analytics"
+        },
+        {
+          "pkg": "com.xiaomi.statistic"
+        },
+        {
+          "pkg": "com.xiaomi.tvqs"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.healthdiagnosis"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.debug",
+          "note": "DebugService: log collection"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.csi",
+          "note": "satisfaction survey and privacy prompt"
+        },
+        {
+          "pkg": "com.xiaomi.screenrecorder",
+          "note": "screen capture for feedback uploads"
+        },
+        {
+          "pkg": "com.xiaomi.android.TV.audio",
+          "note": "audio debug tool"
+        },
+        {
+          "pkg": "com.mediatek.TimeMeasurementAgent",
+          "note": "persistent: keeps running after boot even when disabled"
+        },
+        {
+          "pkg": "com.mstar.android.media.tests",
+          "note": "media test cases"
+        }
+      ]
+    },
+    {
+      "title": "Push, cloud control, ads and promoted content",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.mitv.tvpush.tvpushservice"
+        },
+        {
+          "pkg": "com.mitv.cloudcontrol",
+          "note": "cloud config; the HOME allowlist it downloaded stays on disk"
+        },
+        {
+          "pkg": "com.xm.webcontent",
+          "note": "web promos, Sentry"
+        },
+        {
+          "pkg": "com.duokan.videodaily",
+          "note": "video promos"
+        },
+        {
+          "pkg": "com.mitv.screensaver",
+          "note": "Xiaomi screensaver with pushed content"
+        },
+        {
+          "pkg": "fusion.android.tv.demo",
+          "note": "retail demo"
+        },
+        {
+          "pkg": "com.xiaomi.gamecenter.sdk.service.mibox"
+        }
+      ]
+    },
+    {
+      "title": "Shopping, payment and Mi account",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.mitv.shop"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.pay"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.payment"
+        },
+        {
+          "pkg": "com.mipay.wallet.tv"
+        },
+        {
+          "pkg": "com.xiaomi.account",
+          "note": "Mi account; needed only for Xiaomi's paid content"
+        },
+        {
+          "pkg": "com.xiaomi.account.auth"
+        }
+      ]
+    },
+    {
+      "title": "Updates and app store",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.mitv.upgrade",
+          "note": "OTA, persistent like TimeMeasurementAgent; re-enable to update"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.appstore"
+        }
+      ]
+    },
+    {
+      "title": "Cleaners, panels and first-run setup",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.mitv.tvmanager",
+          "note": "\"TV Manager\" cleaner, log reporter"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.smartpanel",
+          "note": "long-press Menu panel"
+        },
+        {
+          "pkg": "com.xiaomi.setupwizard",
+          "note": "first-run setup only; does not claim HOME here"
+        }
+      ]
+    },
+    {
+      "title": "Casting (off by choice)",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.miplay"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.smartshare"
+        },
+        {
+          "pkg": "com.duokan.airkan.tvbox"
+        },
+        {
+          "pkg": "com.xiaomi.wfdsinkhelperservice",
+          "note": "Miracast sink"
+        }
+      ]
+    },
+    {
+      "title": "Smart home / IoT",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.smarthome.tv",
+          "note": "long-press Home opens it; nothing happens once disabled"
+        },
+        {
+          "pkg": "com.xiaomi.mico.mqtt.service.application.tv"
+        },
+        {
+          "pkg": "com.xiaomi.mi_connect_service"
+        }
+      ]
+    },
+    {
+      "title": "XiaoAI voice assistant. The remote's mic key only reaches com.xiaomi.voicecontrol (no key event),",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.voicecontrol"
+        },
+        {
+          "pkg": "com.xiaomi.wakeupservice"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps (off by choice)",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.mimusic2"
+        },
+        {
+          "pkg": "com.xiaomi.tweather"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.calendar"
+        },
+        {
+          "pkg": "com.mitv.mivideoplayer"
+        },
+        {
+          "pkg": "com.mitv.videoplayer"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.karaoke.service"
+        },
+        {
+          "pkg": "com.xiaomi.mibox.lockscreen",
+          "note": "child mode and privacy lock"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.handbook"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.legal.webview"
+        },
+        {
+          "pkg": "com.mitv.alarmcenter"
+        },
+        {
+          "pkg": "com.mitv.gallery"
+        },
+        {
+          "pkg": "com.xiaomi.tv.gallery"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.mediaexplorer",
+          "note": "USB media player"
+        },
+        {
+          "pkg": "com.mitv.toolhouse"
+        }
+      ]
+    },
+    {
+      "title": "The only keyboard on the set; it switches to Chinese input. Disable only after installing and",
+      "packages": [
+        {
+          "pkg": "com.sohu.inputmethod.sogou.tv",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/xiaomi-mitv-mteq0/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

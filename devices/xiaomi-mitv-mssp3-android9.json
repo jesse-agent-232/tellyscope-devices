@@ -1,0 +1,112 @@
+{
+  "schema": 1,
+  "id": "xiaomi-mitv-mssp3-android9",
+  "name": "Xiaomi MiTV-MSSP3",
+  "tested": {
+    "os": "Android TV 9",
+    "sdk": 28,
+    "build": null
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Xiaomi + Google telemetry",
+      "packages": [
+        {
+          "pkg": "com.miui.tv.analytics"
+        },
+        {
+          "pkg": "com.xiaomi.statistic"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        }
+      ]
+    },
+    {
+      "title": "PatchWall, content rows, sponsored rows",
+      "packages": [
+        {
+          "pkg": "com.mitv.tvhome.atv",
+          "note": "PatchWall"
+        },
+        {
+          "pkg": "com.mitv.tvhome.michannel",
+          "note": "PatchWall channels on the Android TV home"
+        },
+        {
+          "pkg": "com.xm.webcontent"
+        },
+        {
+          "pkg": "com.xiaomi.floatingframe"
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations"
+        },
+        {
+          "pkg": "android.autoinstalls.config.xiaomi.amelie",
+          "note": "Play auto-install of partner apps"
+        }
+      ]
+    },
+    {
+      "title": "Xiaomi background services",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.mitv.tvmanager",
+          "note": "\"TV Manager\" cleaner"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.updateservice",
+          "note": "firmware updates: re-enable to check for one"
+        }
+      ]
+    },
+    {
+      "title": "Personal choice: voice assistant",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "comes back at boot, see header"
+        }
+      ]
+    },
+    {
+      "title": "Personal choice: Ambient and Mi WallPaper screensavers",
+      "packages": [
+        {
+          "pkg": "com.google.android.backdrop"
+        },
+        {
+          "pkg": "com.mitv.dream",
+          "note": "stock screensaver, see header"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.mimusic2"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Play Movies & TV"
+        },
+        {
+          "pkg": "com.mitv.gallery",
+          "note": "Mi Gallery; Media Player still opens USB photos"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/xiaomi-mitv-mssp3-android9/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

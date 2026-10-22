@@ -1,0 +1,178 @@
+{
+  "schema": 1,
+  "id": "sony-bravia-4k-gb-us",
+  "name": "Sony BRAVIA 4K GB",
+  "tested": {
+    "os": "Android TV 9",
+    "sdk": null,
+    "build": "PTT1.190515.001.S54"
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "ACR viewing tracker",
+      "packages": [
+        {
+          "pkg": "tv.samba.ssm",
+          "note": "Samba TV fingerprints what's on screen"
+        }
+      ]
+    },
+    {
+      "title": "Sony and Google content, ads and promos",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.sonyselect",
+          "note": "Sony Select app store/promo tile"
+        },
+        {
+          "pkg": "com.sony.dtv.promos",
+          "note": "My BRAVIA promos"
+        },
+        {
+          "pkg": "com.sony.dtv.discovery",
+          "note": "Sony Discover content bar"
+        },
+        {
+          "pkg": "com.sony.dtv.bivlinfo",
+          "note": "BIVL content service list (feeds Discover)"
+        },
+        {
+          "pkg": "com.sony.dtv.tvlaunchercustomizer",
+          "note": "Sony tweaks to the stock home rows"
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations",
+          "note": "recommendation rows for the stock launcher"
+        },
+        {
+          "pkg": "android.autoinstalls.config.sony.bravia",
+          "note": "Play auto-install of partner apps"
+        }
+      ]
+    },
+    {
+      "title": "Retail demo",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.demomode"
+        },
+        {
+          "pkg": "com.sony.dtv.demosupport"
+        },
+        {
+          "pkg": "com.sony.dtv.multiscreendemo"
+        }
+      ]
+    },
+    {
+      "title": "Telemetry, remote support and feedback",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.da.service",
+          "note": "Sony device agent / remote support"
+        },
+        {
+          "pkg": "com.qterics.da.product",
+          "note": "Qterics device agent"
+        },
+        {
+          "pkg": "com.sony.dtv.sonybugreportsys"
+        },
+        {
+          "pkg": "com.google.android.tv.bugreportsender"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.customersupport",
+          "note": "Help tile"
+        },
+        {
+          "pkg": "com.sony.dtv.smarthelp"
+        },
+        {
+          "pkg": "com.sony.dtv.imanual",
+          "note": "i-Manual"
+        },
+        {
+          "pkg": "com.sony.dtv.osat.music",
+          "note": "re-enable to play music from USB"
+        },
+        {
+          "pkg": "com.sony.dtv.smartmediaapp",
+          "note": "Media Player, re-enable to play USB files"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        },
+        {
+          "pkg": "com.google.android.videos"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        }
+      ]
+    },
+    {
+      "title": "Optional features, off by owner's choice",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Chromecast built-in"
+        },
+        {
+          "pkg": "screnmirroring.com",
+          "note": "Screen mirroring (Miracast)"
+        },
+        {
+          "pkg": "com.sony.dtv.networkapp.wifidirect"
+        },
+        {
+          "pkg": "com.google.android.tv.remote.service",
+          "note": "Android TV phone-app remote"
+        }
+      ]
+    },
+    {
+      "title": "Kept by this owner; safe to disable if you don't use them (all disabled on the X900E list)",
+      "packages": [
+        {
+          "pkg": "com.google.android.backdrop",
+          "note": "ambient screensaver",
+          "optional": true
+        },
+        {
+          "pkg": "com.sony.huey.dlna.module",
+          "note": "DLNA renderer",
+          "optional": true
+        },
+        {
+          "pkg": "com.sony.huey.dlna.renderersettings",
+          "optional": true
+        },
+        {
+          "pkg": "com.sonyericsson.dlna",
+          "optional": true
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.vendorprotocol",
+          "note": "Node.js SDDP broadcaster for Control4-style home automation",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/sony-bravia-4k-gb-us/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

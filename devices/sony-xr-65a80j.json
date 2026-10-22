@@ -1,0 +1,193 @@
+{
+  "schema": 1,
+  "id": "sony-xr-65a80j",
+  "name": "Sony XR-65A80J",
+  "tested": {
+    "os": "Android 12",
+    "sdk": 31,
+    "build": "BRAVIA_VH2_EU-user"
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Batch 1: tracking and telemetry",
+      "packages": [
+        {
+          "pkg": "tv.samba.ssm",
+          "note": "Samba TV, fingerprints what's on screen (ACR)"
+        },
+        {
+          "pkg": "tv.samba.ssm.ui"
+        },
+        {
+          "pkg": "com.qterics.da.product",
+          "note": "Qterics device agent"
+        },
+        {
+          "pkg": "com.sony.dtv.da.service",
+          "note": "Sony device agent / remote support"
+        },
+        {
+          "pkg": "com.sonyericsson.idd.agent",
+          "note": "Sony usage-data agent"
+        },
+        {
+          "pkg": "com.sony.dtv.sonybugreportsys"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        }
+      ]
+    },
+    {
+      "title": "Batch 2: home-screen ads and promos",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.sonyselect",
+          "note": "Sony Select promo tile"
+        },
+        {
+          "pkg": "com.sony.dtv.sonytab",
+          "note": "Sony tab content on the Google TV home"
+        },
+        {
+          "pkg": "com.sony.dtv.launcherxcustomizer",
+          "note": "Sony config for the Google TV home"
+        },
+        {
+          "pkg": "android.autoinstalls.config.sony.bravia",
+          "note": "Play auto-install of partner apps"
+        }
+      ]
+    },
+    {
+      "title": "Batch 3: retail demo and help",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.demosupport"
+        },
+        {
+          "pkg": "com.sony.dtv.demosystemsupport"
+        },
+        {
+          "pkg": "com.sony.dtv.multiscreendemo"
+        },
+        {
+          "pkg": "com.sony.dtv.customersupport",
+          "note": "Help tile"
+        },
+        {
+          "pkg": "com.sony.dtv.smarthelp"
+        }
+      ]
+    },
+    {
+      "title": "Batch 4: setup leftovers and unused services",
+      "packages": [
+        {
+          "pkg": "com.android.printspooler"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar",
+          "note": "calendar sync; also carries Google's GrowthKit promo framework"
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "RLZ install-attribution provider"
+        },
+        {
+          "pkg": "com.google.android.onetimeinitializer",
+          "note": "runs once after first setup"
+        },
+        {
+          "pkg": "com.sony.dtv.QuickSetupCustomizer",
+          "note": "partner customisation for first setup"
+        }
+      ]
+    },
+    {
+      "title": "Batch 5: hotel / pro mode (not a hotel TV)",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.b2b.hotelmode",
+          "note": "always-running service"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.noderuntime.normal",
+          "note": "Node.js runtime for hotel apps"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.noderuntime.privilege"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.noderuntimeextension.bpk"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.noderuntimeextension.node_20_11_1"
+        }
+      ]
+    },
+    {
+      "title": "Batch 6: mirroring duplicates and HbbTV, off by owner's choice (Chromecast and Miracast stay)",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.airplayapp",
+          "note": "AirPlay"
+        },
+        {
+          "pkg": "com.sony.huey.dlna.module",
+          "note": "DLNA renderer"
+        },
+        {
+          "pkg": "com.sony.huey.dlna.renderersettings"
+        },
+        {
+          "pkg": "com.sonyericsson.dlna"
+        },
+        {
+          "pkg": "com.sony.dtv.hbbtvplayer",
+          "note": "HbbTV red-button player for broadcast channels"
+        }
+      ]
+    },
+    {
+      "title": "Batch 7: BRAVIA CAM (not owned), notifications app, old MTV app",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.gestureapp"
+        },
+        {
+          "pkg": "com.sony.dtv.distancealert"
+        },
+        {
+          "pkg": "com.sony.dtv.sensingcamera.fwupdate"
+        },
+        {
+          "pkg": "com.sony.dtv.sensingcamera.settings"
+        },
+        {
+          "pkg": "com.sony.dtv.notificationcenter",
+          "note": "\"BRAVIA notifications\" inbox"
+        },
+        {
+          "pkg": "fi.mtv.svod",
+          "note": "old MTV app (v1.0.56, last updated 2024-01); MTV Katsomo is fi.mtvkatsomo"
+        }
+      ]
+    },
+    {
+      "title": "Batch 8: setup wizard; disable only after a replacement launcher is installed",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/sony-xr-65a80j/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "schema": 1,
+  "id": "freebox-player-pop",
+  "name": "Freebox Player POP",
+  "tested": {
+    "os": "Android TV 10",
+    "sdk": 29,
+    "build": "QTT8.201201.002.v10.5.66"
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "Telemetry and log collection",
+      "packages": [
+        {
+          "pkg": "fr.freebox.fbxstats",
+          "note": "Free usage statistics (system uid, boot receiver)"
+        },
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "Google feedback reports"
+        },
+        {
+          "pkg": "com.google.android.tv.bugreportsender",
+          "note": "bug report uploader"
+        },
+        {
+          "pkg": "com.droidlogic.readlog",
+          "note": "Amlogic log dumper to USB storage"
+        }
+      ]
+    },
+    {
+      "title": "Ads, recommendations and partner auto-installs",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvrecommendations",
+          "note": "recommendation rows"
+        },
+        {
+          "pkg": "android.autoinstalls.config.sei",
+          "note": "auto-installs partner apps"
+        }
+      ]
+    },
+    {
+      "title": "Factory and test leftovers",
+      "packages": [
+        {
+          "pkg": "com.nes.dvb.playtest",
+          "note": "DVB playback factory test"
+        },
+        {
+          "pkg": "com.ctc",
+          "note": "\"MediaProcessorDemoActivity\""
+        },
+        {
+          "pkg": "com.utsmta.app",
+          "note": "factory test triggered by USB"
+        },
+        {
+          "pkg": "com.android.camera2",
+          "note": "no camera on the Player"
+        },
+        {
+          "pkg": "com.android.printspooler",
+          "note": "printing"
+        }
+      ]
+    },
+    {
+      "title": "Voice and casting (owner's choice; re-enable if you use them)",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google Assistant / voice search"
+        },
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Chromecast built-in: KEEP. Spotify Connect from a phone wakes Spotify through it",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Streaming apps the owner does not use (comment out the ones you watch)",
+      "packages": [
+        {
+          "pkg": "fr.tf1.mytf1.free",
+          "note": "TF1+"
+        },
+        {
+          "pkg": "fr.m6.m6replay.free",
+          "note": "M6+"
+        },
+        {
+          "pkg": "fr.francetv.pluzz",
+          "note": "france.tv"
+        },
+        {
+          "pkg": "com.google.android.youtube.tv",
+          "note": "YouTube"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic",
+          "note": "YouTube Music"
+        },
+        {
+          "pkg": "com.canal.android.canal",
+          "note": "Canal+"
+        },
+        {
+          "pkg": "com.disney.disneyplus",
+          "note": "Disney+"
+        },
+        {
+          "pkg": "fr.freebox.disneypluslauncher",
+          "note": "Free's Disney+ shortcut"
+        },
+        {
+          "pkg": "com.nextinteractive.rmcbfmplay.tv.free",
+          "note": "RMC BFM Play"
+        },
+        {
+          "pkg": "org.videolan.vlc",
+          "note": "VLC"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded extras (owner's choice)",
+      "packages": [
+        {
+          "pkg": "fr.free.aktu",
+          "note": "Free Aktu news"
+        },
+        {
+          "pkg": "fr.francetv.zouzous",
+          "note": "Okoo (france.tv kids)"
+        },
+        {
+          "pkg": "fr.tfou.max",
+          "note": "TFOU Max (TF1 kids)"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google TV / Play Movies"
+        },
+        {
+          "pkg": "com.google.android.play.games",
+          "note": "Play Games"
+        },
+        {
+          "pkg": "com.tcl.browser",
+          "note": "TCL Browser (preinstalled as a user app)"
+        }
+      ]
+    },
+    {
+      "title": "Stock launcher: left enabled here. Disabling it before the new launcher is Home leaves the box with",
+      "packages": [
+        {
+          "pkg": "net.oqee.launcher",
+          "note": "OQEE home screen",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/freebox-player-pop/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

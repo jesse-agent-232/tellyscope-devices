@@ -1,0 +1,184 @@
+{
+  "schema": 1,
+  "id": "tcl-43ep660",
+  "name": "TCL 43EP660",
+  "tested": {
+    "os": "Android TV 9",
+    "sdk": 28,
+    "build": "PPR1.180610.011"
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [
+    {
+      "pkg": "com.tcl.sourcemananger",
+      "note": "source/input menu"
+    },
+    {
+      "pkg": "com.tcl.inputmethod.international",
+      "note": "default keyboard (T_IME)"
+    },
+    {
+      "pkg": "com.tcl.showmode",
+      "note": "sound modes"
+    },
+    {
+      "pkg": "com.tcl.xian.StartandroidService",
+      "note": "device authentication (per tcl-beyondtv-rt2851)"
+    },
+    {
+      "pkg": "com.google.android.tungsten.setupwraith",
+      "note": "owns the Wi-Fi saved during first setup"
+    }
+  ],
+  "groups": [
+    {
+      "title": "1. Telemetry and analytics",
+      "packages": [
+        {
+          "pkg": "com.tcl.bi",
+          "note": "TCL BI analytics (Firebase, net monitor)"
+        },
+        {
+          "pkg": "com.tcl.appstatecontroller",
+          "note": "boot/network/package-change receivers; nothing broke without it"
+        },
+        {
+          "pkg": "com.tcl.usercenter",
+          "note": "TCL account"
+        },
+        {
+          "pkg": "com.google.android.tv.bugreportsender",
+          "note": "bug report uploader"
+        }
+      ]
+    },
+    {
+      "title": "2. Content, recommendation rows and promos",
+      "packages": [
+        {
+          "pkg": "com.tcl.cyberui",
+          "note": "TCL Channel / content service"
+        },
+        {
+          "pkg": "com.tcl.messagebox",
+          "note": "TCL message and promo box"
+        },
+        {
+          "pkg": "com.tcl.esticker",
+          "note": "on-screen sticker overlays"
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations",
+          "note": "home-screen recommendation rows"
+        },
+        {
+          "pkg": "com.google.android.leanbacklauncher.recommendations"
+        }
+      ]
+    },
+    {
+      "title": "3. Background extras",
+      "packages": [
+        {
+          "pkg": "com.tcl.tvweishi",
+          "note": "\"TV Guard\" cleaner"
+        },
+        {
+          "pkg": "com.tcl.MultiScreenInteraction_TV",
+          "note": "T-Cast / MagiConnect phone link (Chromecast kept)"
+        },
+        {
+          "pkg": "com.tcl.copydatatotv"
+        },
+        {
+          "pkg": "com.android.printspooler"
+        }
+      ]
+    },
+    {
+      "title": "4. Preloads",
+      "packages": [
+        {
+          "pkg": "com.tcl.imageplayer"
+        },
+        {
+          "pkg": "com.tcl.audioplayer"
+        },
+        {
+          "pkg": "com.tcl.videoplayer"
+        },
+        {
+          "pkg": "com.tcl.ui_mediaCenter",
+          "note": "USB media centre (\"Medijski centar\" in the source menu)"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.tcl.appmarket2",
+          "note": "TCL app store (Play Store stays)"
+        }
+      ]
+    },
+    {
+      "title": "5. Off by choice on this unit",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "voice search and the mic button"
+        },
+        {
+          "pkg": "com.google.android.tv.assistant"
+        },
+        {
+          "pkg": "com.google.android.speech.pumpkin"
+        },
+        {
+          "pkg": "com.tcl.assistant",
+          "note": "TCL's Assistant bridge"
+        },
+        {
+          "pkg": "com.tcl.micmanager",
+          "note": "remote microphone manager"
+        },
+        {
+          "pkg": "com.tcl.miracast",
+          "note": "Miracast screen mirroring"
+        },
+        {
+          "pkg": "com.tcl.versionUpdateApp",
+          "note": "firmware updater, kept",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.rc.ota",
+          "note": "remote-control firmware OTA, kept",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Chromecast, kept",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "6. After the launcher is installed",
+      "packages": [
+        {
+          "pkg": "com.tcl.partnercustomizer",
+          "note": "TCL rows in the stock launcher, T-key page"
+        },
+        {
+          "pkg": "com.google.android.tvlauncher",
+          "note": "stock launcher, replaced by launcher/"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tcl-43ep660/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "haier-android-tv-dvb2k",
+  "name": "Haier Android TV DVB2K",
+  "tested": {
+    "os": "Android TV 11",
+    "sdk": 30,
+    "build": null
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Content recognition and retail demo",
+      "packages": [
+        {
+          "pkg": "tv.anoki.acr.controller",
+          "note": "Anoki ACR"
+        },
+        {
+          "pkg": "fusion.android.tv.demo",
+          "note": "retail demo, HRetailDisplay_2K"
+        }
+      ]
+    },
+    {
+      "title": "Haier telemetry, share, and content apps",
+      "packages": [
+        {
+          "pkg": "com.haierubic.usmartdevice",
+          "note": "Haier smart-device service"
+        },
+        {
+          "pkg": "com.haier.yudee.tv",
+          "note": "Haier share service"
+        },
+        {
+          "pkg": "com.haier.sharetv.webview",
+          "note": "webview used by the share service"
+        },
+        {
+          "pkg": "com.haier.apps",
+          "note": "HaierApps_evoSmart promo"
+        },
+        {
+          "pkg": "com.haier.launcher.haiermatrix",
+          "note": "Zeasn content launcher, not the system Home"
+        },
+        {
+          "pkg": "com.haier.tvhousekeeper",
+          "note": "TV housekeeper / cleaner"
+        },
+        {
+          "pkg": "com.cvte.haier.tv.appmanager",
+          "note": "boot receiver that manages Haier apps"
+        }
+      ]
+    },
+    {
+      "title": "Stock-home recommendation rows and partner auto-install",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvrecommendations",
+          "note": "recommendation and ad rows"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.partnersetup"
+        },
+        {
+          "pkg": "com.mediatek.android.leanbacklauncher.partnercustomizer"
+        },
+        {
+          "pkg": "android.autoinstalls.config.haier.hanyang",
+          "note": "Haier auto-install stub"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/haier-android-tv-dvb2k/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

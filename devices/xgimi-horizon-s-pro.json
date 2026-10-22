@@ -1,0 +1,190 @@
+{
+  "schema": 1,
+  "id": "xgimi-horizon-s-pro",
+  "name": "XGIMI Horizon S Pro projector",
+  "tested": {
+    "os": "Android TV 11",
+    "sdk": 30,
+    "build": "RT.3.24.329"
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [
+    {
+      "pkg": "com.xgimi.autokst",
+      "note": "auto keystone correction (system uid)"
+    },
+    {
+      "pkg": "com.xgimi.windowsystem",
+      "note": "keystone/window service (kstActivity, WondowService)"
+    },
+    {
+      "pkg": "com.xgimi.tof",
+      "note": "ToF autofocus calibration"
+    },
+    {
+      "pkg": "com.xgimi.tvinput",
+      "note": "HDMI 1-3 TV input services"
+    },
+    {
+      "pkg": "com.xgimi.xhplayer",
+      "note": "HDMI input player + game mode"
+    },
+    {
+      "pkg": "com.xgimi.bluetoothservice",
+      "note": "Bluetooth remote service"
+    },
+    {
+      "pkg": "com.xgimi.misckey",
+      "note": "remote keys, focus/keystone shortcuts, wall-colour adaptation"
+    },
+    {
+      "pkg": "com.xgimi.uiconfiguration",
+      "note": "global key receiver, power listener"
+    },
+    {
+      "pkg": "com.xgimi.xrmservice",
+      "note": "picture/sound adaptation, brightness boost"
+    },
+    {
+      "pkg": "com.xgimi.soundermodeservice",
+      "note": "Bluetooth speaker mode"
+    },
+    {
+      "pkg": "com.xgimi.xgimiservice",
+      "note": "core XGIMI system service"
+    },
+    {
+      "pkg": "com.xgimi.simpservice",
+      "note": "install service, purpose unclear: kept"
+    },
+    {
+      "pkg": "com.xgimi.overseas.xgimiatvbootwizard",
+      "note": "first-boot wizard: kept, setup wizards can hold Home or provisioning"
+    }
+  ],
+  "groups": [
+    {
+      "title": "Store demo, factory and test tools",
+      "packages": [
+        {
+          "pkg": "fusion.android.tv.demo",
+          "note": "RetailDisplay store demo"
+        },
+        {
+          "pkg": "com.xgimi.burnin",
+          "note": "factory burn-in test, runs on boot"
+        },
+        {
+          "pkg": "com.xgimi.atvwifiverify",
+          "note": "factory Wi-Fi verification"
+        },
+        {
+          "pkg": "com.xgimi.minitvfactory",
+          "note": "factory menu, file transfer and burn-in services"
+        }
+      ]
+    },
+    {
+      "title": "Telemetry, feedback and auto-installs",
+      "packages": [
+        {
+          "pkg": "com.xgimi.bugreportsender",
+          "note": "XGIMI bug report uploader"
+        },
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "Google feedback"
+        },
+        {
+          "pkg": "android.autoinstalls.config.xgimi.xgimigalileo",
+          "note": "Play auto-install config for preloads"
+        }
+      ]
+    },
+    {
+      "title": "Google content and preloads",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvrecommendations",
+          "note": "recommendation rows"
+        },
+        {
+          "pkg": "com.google.android.play.games",
+          "note": "Play Games"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Play Movies"
+        },
+        {
+          "pkg": "com.google.android.marvin.talkback",
+          "note": "TalkBack (accessibility)"
+        }
+      ]
+    },
+    {
+      "title": "Streaming apps (off by choice; YouTube kept)",
+      "packages": [
+        {
+          "pkg": "com.google.android.youtube.tvmusic",
+          "note": "YouTube Music"
+        },
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom",
+          "note": "Prime Video"
+        },
+        {
+          "pkg": "com.ted.android.tv",
+          "note": "TED"
+        }
+      ]
+    },
+    {
+      "title": "Voice, casting, phone remote (off by choice)",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google Assistant / voice search"
+        },
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Chromecast built-in"
+        },
+        {
+          "pkg": "com.google.android.tv.remote.service",
+          "note": "Google TV phone remote"
+        }
+      ]
+    },
+    {
+      "title": "XGIMI and Google extras (off by choice)",
+      "packages": [
+        {
+          "pkg": "com.xgimi.filemanager",
+          "note": "file manager, DLNA/Samba servers, Baidu bridge"
+        },
+        {
+          "pkg": "com.xgimi.gimiplayer",
+          "note": "local video/photo player"
+        },
+        {
+          "pkg": "com.xgimi.doubanfm",
+          "note": "XGIMI music app, speaker-mode screen"
+        },
+        {
+          "pkg": "com.xgimi.atmosphere",
+          "note": "XGIMI animated screensaver / ambient scenes"
+        },
+        {
+          "pkg": "com.google.android.backdrop",
+          "note": "Backdrop screensaver"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/xgimi-horizon-s-pro/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "skyworth-65a3f",
+  "name": "Skyworth 65A3F",
+  "tested": {
+    "os": "Android 13",
+    "sdk": 33,
+    "build": "10.01.250328"
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "Kept on purpose: com.coocaa.aigc.home, com.skyworth.setting, com.tianci.system, com.coocaa.os.*",
+      "packages": [
+        {
+          "pkg": "com.tianci.ad"
+        },
+        {
+          "pkg": "com.coocaa.screensaver"
+        },
+        {
+          "pkg": "com.coocaa.guide"
+        },
+        {
+          "pkg": "com.coocaa.NewStoreSystem"
+        },
+        {
+          "pkg": "com.tianci.appstore"
+        },
+        {
+          "pkg": "com.overseas.store.appstore"
+        },
+        {
+          "pkg": "com.skyworth.performance.monitors"
+        },
+        {
+          "pkg": "com.skyworth.testtime"
+        },
+        {
+          "pkg": "com.coocaa.os.upgrade"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/skyworth-65a3f/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

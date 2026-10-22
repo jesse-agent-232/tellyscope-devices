@@ -1,0 +1,121 @@
+{
+  "schema": 1,
+  "id": "byintek-t5-max",
+  "name": "BYINTEK T5 Max projector",
+  "tested": {
+    "os": "Google TV 14",
+    "sdk": 34,
+    "build": "UKG3.260128.001.C3.3.5_20260723"
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "Telemetry and remote management",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "Google feedback reporter"
+        },
+        {
+          "pkg": "com.android.tv.feedbackconsent",
+          "note": "feedback consent screen"
+        },
+        {
+          "pkg": "com.oemservice",
+          "note": "xCPE remote-management agent (boot receiver only)"
+        },
+        {
+          "pkg": "com.sdt.deviceinfo",
+          "note": "Skyworth device-info reporter (boot receiver only)"
+        }
+      ]
+    },
+    {
+      "title": "Ads and personalization",
+      "packages": [
+        {
+          "pkg": "com.android.adservices.api",
+          "note": "Privacy Sandbox ad services"
+        },
+        {
+          "pkg": "com.android.ondevicepersonalization.services"
+        },
+        {
+          "pkg": "com.android.federatedcompute.services"
+        }
+      ]
+    },
+    {
+      "title": "Factory test apps",
+      "packages": [
+        {
+          "pkg": "com.oem.qa",
+          "note": "BoxFactoryTest"
+        },
+        {
+          "pkg": "com.sdt.producttest",
+          "note": "Skyworth product test, key check, USB command handler"
+        }
+      ]
+    },
+    {
+      "title": "Unused on a projector stick",
+      "packages": [
+        {
+          "pkg": "com.amlogic.voicesubtitle",
+          "note": "Amlogic voice subtitle overlay"
+        },
+        {
+          "pkg": "com.android.printspooler"
+        },
+        {
+          "pkg": "com.android.healthconnect.controller"
+        },
+        {
+          "pkg": "com.android.health.connect.backuprestore"
+        },
+        {
+          "pkg": "com.android.cameraextensions"
+        },
+        {
+          "pkg": "com.android.dynsystem"
+        },
+        {
+          "pkg": "com.android.hotspot2.osulogin"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        }
+      ]
+    },
+    {
+      "title": "Off by choice (uncomment if you don't use them)",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google Assistant / voice search (remote mic key)",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic",
+          "note": "YouTube Music",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.marvin.talkback",
+          "note": "TalkBack screen reader",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/byintek-t5-max/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

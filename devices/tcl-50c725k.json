@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "id": "tcl-50c725k",
+  "name": "TCL 50C725K",
+  "tested": {
+    "os": "Android TV 11",
+    "sdk": 30,
+    "build": "RP1A.200622.001"
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "TCL and Google content, ads, promos and telemetry",
+      "packages": [
+        {
+          "pkg": "com.tcl.tv.tclhome_passive",
+          "note": "pushes TCL content to the home screen"
+        },
+        {
+          "pkg": "com.tcl.channelplus",
+          "note": "TCL Live FAST channels"
+        },
+        {
+          "pkg": "com.tcl.overseasappshow",
+          "note": "promotes apps in the TCL menu"
+        },
+        {
+          "pkg": "com.tcl.esticker",
+          "note": "store demo sticker"
+        },
+        {
+          "pkg": "com.tcl.messagebox",
+          "note": "TCL notifications"
+        },
+        {
+          "pkg": "com.tcl.bi",
+          "note": "TCL analytics"
+        },
+        {
+          "pkg": "com.tcl.notereminder"
+        },
+        {
+          "pkg": "android.autoinstalls.config.tcl.device",
+          "note": "silent installs of preloaded apps"
+        },
+        {
+          "pkg": "com.google.android.partnersetup"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.onetimeinitializer"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar"
+        },
+        {
+          "pkg": "com.tcl.dashboard",
+          "note": "stock quick-settings panel"
+        },
+        {
+          "pkg": "com.tcl.browser",
+          "note": "TCL browser; also the biggest of these (~180 MB with data)"
+        },
+        {
+          "pkg": "com.tcl.gallery"
+        },
+        {
+          "pkg": "com.tcl.smartalexa"
+        },
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google voice assistant (~175 MB of RAM in use); off by choice"
+        },
+        {
+          "pkg": "com.google.android.marvin.talkback",
+          "note": "accessibility screen reader; off by choice"
+        },
+        {
+          "pkg": "com.google.android.tts",
+          "note": "speech engine, only used by TalkBack"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.netflix.ninja",
+          "note": "streaming apps off by choice"
+        },
+        {
+          "pkg": "au.com.stan.and"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tcl-50c725k/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

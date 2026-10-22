@@ -1,0 +1,135 @@
+{
+  "schema": 1,
+  "id": "grundig-kunyang",
+  "name": "Grundig Android UHD TV",
+  "tested": {
+    "os": "Android TV 14",
+    "sdk": 34,
+    "build": "UKNV.260115.001"
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "--- Telemetry, analytics and install attribution",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "Google feedback / bug report uploader"
+        },
+        {
+          "pkg": "com.android.tv.feedbackconsent",
+          "note": "feedback consent UI"
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "partner-app attribution (RLZ)"
+        },
+        {
+          "pkg": "android.autoinstalls.config.arcelik.gx",
+          "note": "Arcelik partner auto-installs config"
+        },
+        {
+          "pkg": "com.android.adservices.api",
+          "note": "Privacy Sandbox ad services"
+        },
+        {
+          "pkg": "com.android.ondevicepersonalization.services",
+          "note": "Privacy Sandbox on-device personalization"
+        },
+        {
+          "pkg": "com.android.federatedcompute.services",
+          "note": "Privacy Sandbox federated compute"
+        }
+      ]
+    },
+    {
+      "title": "--- Manufacturer content, ads and leftovers",
+      "packages": [
+        {
+          "pkg": "com.grundig.tv.channel",
+          "note": "\"Grundig Channel\": Hoppr FAST/ad tiles, home-screen program rows"
+        },
+        {
+          "pkg": "com.arcelik.arserviceapp",
+          "note": "HotelService (hotel/B2B mode), boot receiver, INSTALL_PACKAGES"
+        },
+        {
+          "pkg": "com.arcelik.tvcarehub",
+          "note": "TV Care Hub promo/help videos"
+        },
+        {
+          "pkg": "com.mstar.android.tv.disclaimercustomization",
+          "note": "disclaimer popups"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar",
+          "note": "calendar sync, no calendar app on a TV"
+        },
+        {
+          "pkg": "com.google.android.onetimeinitializer",
+          "note": "first-setup leftover"
+        }
+      ]
+    },
+    {
+      "title": "--- Owner's choice: not used",
+      "packages": [
+        {
+          "pkg": "com.google.android.youtube.tvkids",
+          "note": "YouTube Kids"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google Play Movies & TV"
+        },
+        {
+          "pkg": "com.google.android.play.games",
+          "note": "Google Play Games"
+        },
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google voice search / Assistant (remote mic button)"
+        },
+        {
+          "pkg": "com.google.android.tv.assistant",
+          "note": "Assistant LED/demo service"
+        },
+        {
+          "pkg": "com.ionitech.airscreen",
+          "note": "AirScreen (AirPlay/Miracast receiver; Chromecast kept)"
+        },
+        {
+          "pkg": "com.sand.aircasttv",
+          "note": "AirCast receiver"
+        },
+        {
+          "pkg": "com.arcelik.smartremotecompanion.grundig",
+          "note": "Grundig Smart Remote phone-app companion"
+        }
+      ]
+    },
+    {
+      "title": "--- After launcher/ owns Home (build-and-install.sh disables com.google.android.tvlauncher itself)",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvlauncher",
+          "note": "stock Android TV home: shopping tab, sponsored rows"
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations",
+          "note": "feeds the stock home's recommendation rows"
+        },
+        {
+          "pkg": "com.google.android.backdrop",
+          "note": "Ambient screensaver, ~160 MB resident; replaced by com.gathin.tvhome/.ClockDream"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/grundig-kunyang/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

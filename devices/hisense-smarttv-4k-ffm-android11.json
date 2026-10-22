@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "hisense-smarttv-4k-ffm-android11",
+  "name": "Hisense SmartTV 4K FFM",
+  "tested": {
+    "os": "Android 11",
+    "sdk": 30,
+    "build": null
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Retail / store demo",
+      "packages": [
+        {
+          "pkg": "com.hisense.storemode"
+        },
+        {
+          "pkg": "fusion.android.tv.demo"
+        }
+      ]
+    },
+    {
+      "title": "First-time experience (setup already complete)",
+      "packages": [
+        {
+          "pkg": "com.hisense.fte"
+        }
+      ]
+    },
+    {
+      "title": "Google partner auto-install stub (silent partner app installs)",
+      "packages": [
+        {
+          "pkg": "android.autoinstalls.config.google.gtvpai"
+        }
+      ]
+    },
+    {
+      "title": "On-screen disclaimer app (removed from the app grid)",
+      "packages": [
+        {
+          "pkg": "com.mstar.android.tv.disclaimercustomization"
+        }
+      ]
+    },
+    {
+      "title": "Google TV setup wizard. Its RecoveryActivity claims HOME and beats the new launcher once",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/hisense-smarttv-4k-ffm-android11/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

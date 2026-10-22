@@ -1,0 +1,115 @@
+{
+  "schema": 1,
+  "id": "skyworth-8r40-k5c",
+  "name": "Skyworth / Coocaa 8R40_K5C",
+  "tested": {
+    "os": "Android 8.0",
+    "sdk": 26,
+    "build": "OPR6.170623.012"
+  },
+  "launcher": "com.tianci.movieplatform",
+  "keep": [],
+  "groups": [
+    {
+      "title": "CRITICAL SAFETY TRAPS (READ BEFORE USING). Full details: docs/devices/skyworth-8r40-k5c.md",
+      "packages": [
+        {
+          "pkg": "com.tianci.de",
+          "optional": true
+        },
+        {
+          "pkg": "com.skyworthdigital.stb.dataprovider",
+          "optional": true
+        },
+        {
+          "pkg": "com.coocaa.sky.ccapi",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Boot ads and autostart queue (disabled from the factory on many units, zero risk)",
+      "packages": [
+        {
+          "pkg": "com.tianci.ad",
+          "note": "Coocaa ad engine (boot ad, started by bootQueue.xml at ~5 s)"
+        },
+        {
+          "pkg": "com.tianci.push",
+          "note": "Boot push notifications (bootQueue.xml, ~1.2 s)"
+        },
+        {
+          "pkg": "com.tianci.appstore",
+          "note": "Coocaa App Store"
+        },
+        {
+          "pkg": "com.tianci.ipc",
+          "note": "Tianci IPC helper"
+        },
+        {
+          "pkg": "com.tianci.autoinstaller",
+          "note": "Background APK auto-install service"
+        }
+      ]
+    },
+    {
+      "title": "Account service. Verified safe in one batch, BUT the reporter saw the About page crash after",
+      "packages": [
+        {
+          "pkg": "com.tianci.user",
+          "note": "Account management"
+        }
+      ]
+    },
+    {
+      "title": "Commercial bloatware and unused features",
+      "packages": [
+        {
+          "pkg": "com.baidu.oases",
+          "note": "Baidu Oases / security scanner"
+        },
+        {
+          "pkg": "com.coocaa.mall",
+          "note": "Shopping portal"
+        },
+        {
+          "pkg": "com.coocaa.activecenter",
+          "note": "Activity / promotions center"
+        },
+        {
+          "pkg": "com.coocaa.app_browser",
+          "note": "Built-in lightweight web browser"
+        },
+        {
+          "pkg": "com.coocaa.messageprovider",
+          "note": "System message popups"
+        },
+        {
+          "pkg": "com.coocaa.tvpitv",
+          "note": "PiTV aggregation service"
+        },
+        {
+          "pkg": "com.coocaa.theme.child",
+          "note": "Children's mode theme"
+        },
+        {
+          "pkg": "com.icoolme.tv.weather",
+          "note": "Weather preload"
+        },
+        {
+          "pkg": "com.skyworth.blockchain",
+          "note": "Blockchain preload"
+        },
+        {
+          "pkg": "com.skyworth.smarthome_tv",
+          "note": "Smart home dashboard"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/skyworth-8r40-k5c/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

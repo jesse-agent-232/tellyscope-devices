@@ -1,0 +1,188 @@
+{
+  "schema": 1,
+  "id": "philips-65pus8102",
+  "name": "Philips 65PUS8102/12",
+  "tested": {
+    "os": "Android TV 8.0.0",
+    "sdk": 26,
+    "build": "as"
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Google feedback, tutorials and recommendation rows (same as philips-55pus7503)",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "Market Feedback Agent"
+        },
+        {
+          "pkg": "com.google.android.tvtutorials",
+          "note": "Android TV first-run tutorials"
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations",
+          "note": "Android TV recommendations/content rows"
+        },
+        {
+          "pkg": "com.google.android.leanbacklauncher.recommendations"
+        }
+      ]
+    },
+    {
+      "title": "Philips promotion and telemetry",
+      "packages": [
+        {
+          "pkg": "org.droidtv.demome",
+          "note": "Retail/store demonstration app"
+        },
+        {
+          "pkg": "org.droidtv.nettvrecommender",
+          "note": "Philips NetTV / Top Picks recommendation row"
+        },
+        {
+          "pkg": "org.droidtv.usagelogger",
+          "note": "Boot stats, remote keypress counts, panel telemetry"
+        },
+        {
+          "pkg": "org.droidtv.candeebug",
+          "note": "\"DAC\" analytics uploader (see philips-50pus8517)"
+        },
+        {
+          "pkg": "org.droidtv.gel",
+          "note": "\"GEL\" metrics collector, runs inside the candeebug process; disable both"
+        },
+        {
+          "pkg": "org.droidtv.tv.frameworklogger",
+          "note": "Reads the reboot reasons and firmware-install records at boot and hands them to the Philips logger (uploadRebootDetails)"
+        },
+        {
+          "pkg": "tv.inscape.tvclient.inscapeacr",
+          "note": "\"Inscape\" ACR client: identifies what is on screen, HDMI included"
+        }
+      ]
+    },
+    {
+      "title": "Philips NetTV app store (pre-Android web app platform; Play Store replaces it)",
+      "packages": [
+        {
+          "pkg": "org.droidtv.nettv.market",
+          "note": "NetTV app gallery"
+        },
+        {
+          "pkg": "org.droidtv.nettvapps",
+          "note": "\"NetTvApps\" manager"
+        },
+        {
+          "pkg": "org.droidtv.nettv_launcherapp",
+          "note": "NetTV app launcher entry"
+        },
+        {
+          "pkg": "org.droidtv.nettvregistration",
+          "note": "Philips account registration for NetTV"
+        }
+      ]
+    },
+    {
+      "title": "Preinstalled NetTV web apps (labels from the APKs; comment out any you use)",
+      "packages": [
+        {
+          "pkg": "org.droidtv.nettvapp1814",
+          "note": "ARTE"
+        },
+        {
+          "pkg": "org.droidtv.nettvapp1984",
+          "note": "Dailymotion"
+        },
+        {
+          "pkg": "org.droidtv.nettvapp20004410",
+          "note": "Couchplay Games"
+        },
+        {
+          "pkg": "org.droidtv.nettvapp20004412",
+          "note": "Blockbuster Nordic"
+        },
+        {
+          "pkg": "org.droidtv.nettvapp3073",
+          "note": "Cinetrailer"
+        },
+        {
+          "pkg": "org.droidtv.nettvapp4546",
+          "note": "Megogo HD"
+        },
+        {
+          "pkg": "org.droidtv.nettvapp4649",
+          "note": "SF Anytime"
+        },
+        {
+          "pkg": "org.droidtv.nettvapp4655",
+          "note": "Deezer"
+        },
+        {
+          "pkg": "org.droidtv.nettvapp4771",
+          "note": "Divan.TV"
+        },
+        {
+          "pkg": "org.droidtv.nettvapp5225",
+          "note": "Filmbox Live"
+        },
+        {
+          "pkg": "org.droidtv.nettvapp5251",
+          "note": "Min Bio"
+        },
+        {
+          "pkg": "org.droidtv.nettvapp5326",
+          "note": "Toon Goggles"
+        },
+        {
+          "pkg": "org.droidtv.nettvapp5512",
+          "note": "Fishing TV"
+        }
+      ]
+    },
+    {
+      "title": "Preinstalled apps, off by choice",
+      "packages": [
+        {
+          "pkg": "com.gameloft.android.HEP.GloftANHP",
+          "note": "Gameloft game preload"
+        },
+        {
+          "pkg": "com.ted.android.tv",
+          "note": "TED"
+        },
+        {
+          "pkg": "com.opera.sdk.example",
+          "note": "Opera TV SDK sample app (leanback entry, no use)"
+        },
+        {
+          "pkg": "com.google.android.music",
+          "note": "Google Play Music (service discontinued)"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google Play Movies & TV"
+        }
+      ]
+    },
+    {
+      "title": "Voice assistants, off by choice: the remote's microphone button does nothing afterwards",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google Assistant / voice search"
+        },
+        {
+          "pkg": "org.droidtv.amazonalexa",
+          "note": "Alexa"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/philips-65pus8102/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

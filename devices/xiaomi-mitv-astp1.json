@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "id": "xiaomi-mitv-astp1",
+  "name": "Xiaomi MiTV-ASTP1",
+  "tested": {
+    "os": "Android 9",
+    "sdk": 28,
+    "build": null
+  },
+  "launcher": "com.mitv.tvhome",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Xiaomi telemetry / push / cloud control",
+      "packages": [
+        {
+          "pkg": "com.miui.analytics"
+        },
+        {
+          "pkg": "com.miui.tv.analytics"
+        },
+        {
+          "pkg": "com.mitv.cloudcontrol"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.tvpush.tvpushservice"
+        },
+        {
+          "pkg": "com.android.smspush"
+        }
+      ]
+    },
+    {
+      "title": "Ads / promoted content",
+      "packages": [
+        {
+          "pkg": "com.xm.webcontent"
+        },
+        {
+          "pkg": "com.mitv.shoplugin",
+          "note": "TV shopping channel plugin"
+        },
+        {
+          "pkg": "com.gitvdemo.video",
+          "note": "GITV promo demo reel"
+        },
+        {
+          "pkg": "com.duokan.videodaily",
+          "note": "video daily promos"
+        }
+      ]
+    },
+    {
+      "title": "Xiaomi background services",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.mitv.tvmanager",
+          "note": "\"TV Manager\" cleaner"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.upgrade",
+          "note": "firmware updates: re-enable to check for one"
+        },
+        {
+          "pkg": "com.xiaomi.gamecenter.sdk.service.mibox"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps not used",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.mimusic2",
+          "note": "Mi Music"
+        },
+        {
+          "pkg": "com.xiaomi.tv.gallery"
+        },
+        {
+          "pkg": "com.mitv.gallery",
+          "note": "Media Explorer still opens USB photos"
+        },
+        {
+          "pkg": "com.xiaomi.screenrecorder"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.smartpanel",
+          "note": "smart home panel"
+        },
+        {
+          "pkg": "com.newtv.cboxtv",
+          "note": "CCTV NewTV (owner does not use)"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/xiaomi-mitv-astp1/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

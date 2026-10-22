@@ -1,0 +1,173 @@
+{
+  "schema": 1,
+  "id": "hisense-fire-tv-aftcibfbd1",
+  "name": "Hisense Fire TV",
+  "tested": {
+    "os": "Fire OS 8.0",
+    "sdk": 30,
+    "build": null
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "Ads, shopping and content recognition",
+      "packages": [
+        {
+          "pkg": "com.amazon.shoptv.client",
+          "note": "Shop on Fire TV"
+        },
+        {
+          "pkg": "com.amazon.tv.acr",
+          "note": "Automatic Content Recognition (what's on screen, HDMI included)"
+        },
+        {
+          "pkg": "com.amazon.tv.democontent.provider",
+          "note": "retail demo content"
+        },
+        {
+          "pkg": "com.amazon.media.recommendations",
+          "note": "sponsored and recommendation rows"
+        },
+        {
+          "pkg": "com.amazon.sneakpeek",
+          "note": "autoplaying previews on Home"
+        },
+        {
+          "pkg": "com.amazon.hybridadidservice",
+          "note": "advertising ID"
+        },
+        {
+          "pkg": "com.amazon.kso.blackbird",
+          "note": "launcher ad sync / bidding (sponsored banner and rows); tested on 65U68QF"
+        },
+        {
+          "pkg": "com.amazon.ftvads.deeplinking",
+          "note": "ad deep links: protected on this firmware",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Telemetry and metrics",
+      "packages": [
+        {
+          "pkg": "com.amazon.client.metrics.api",
+          "note": "metrics client API; tested on 65U68QF"
+        },
+        {
+          "pkg": "com.amazon.wirelessmetrics.service",
+          "note": "Wi-Fi metrics upload"
+        },
+        {
+          "pkg": "com.amazon.perfcollection",
+          "note": "performance telemetry"
+        },
+        {
+          "pkg": "com.amazon.perfc",
+          "note": "performance telemetry"
+        },
+        {
+          "pkg": "com.amazon.dp.logger",
+          "note": "device log upload"
+        },
+        {
+          "pkg": "com.amazon.device.telemetry.emitter",
+          "note": "telemetry emitter"
+        },
+        {
+          "pkg": "com.amazon.device.crashmanager",
+          "note": "crash report upload: protected on this firmware",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Tutorials",
+      "packages": [
+        {
+          "pkg": "com.amazon.storm.lightning.tutorial"
+        },
+        {
+          "pkg": "com.amazon.tmm.tutorial"
+        }
+      ]
+    },
+    {
+      "title": "Alexa (personal choice; vizzini comes back at every boot, see the header)",
+      "packages": [
+        {
+          "pkg": "com.amazon.vizzini",
+          "note": "Alexa voice on Fire TV"
+        },
+        {
+          "pkg": "com.amazon.tv.alexaalerts"
+        },
+        {
+          "pkg": "com.amazon.tv.alexanotifications"
+        },
+        {
+          "pkg": "com.amazon.alexamediaplayer.runtime.ftv"
+        },
+        {
+          "pkg": "com.amazon.alexa.externalmediaplayer.fireos"
+        }
+      ]
+    },
+    {
+      "title": "Casting (personal choice)",
+      "packages": [
+        {
+          "pkg": "com.apple.airplay.amazon.airplay",
+          "note": "AirPlay receiver: keep if you cast from an iPhone or Mac"
+        },
+        {
+          "pkg": "com.amazon.cast.sink",
+          "note": "Miracast screen mirroring"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps (personal choice)",
+      "packages": [
+        {
+          "pkg": "com.tubitv.ott",
+          "note": "Tubi"
+        },
+        {
+          "pkg": "com.amazon.bueller.music",
+          "note": "Amazon Music"
+        },
+        {
+          "pkg": "com.amazon.bueller.photos",
+          "note": "Amazon Photos"
+        },
+        {
+          "pkg": "com.amazon.minitv.android.app",
+          "note": "miniTV"
+        },
+        {
+          "pkg": "com.amazon.naatyam",
+          "note": "Naatyam"
+        },
+        {
+          "pkg": "com.amazon.gamehub",
+          "note": "games hub"
+        },
+        {
+          "pkg": "com.amazon.hedwig",
+          "note": "Fire TV Channels (free ad-supported channels row); tested on 65U68QF"
+        },
+        {
+          "pkg": "com.amazon.tv.ftvambient",
+          "note": "Ambient Experience screensaver"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/hisense-fire-tv-aftcibfbd1/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

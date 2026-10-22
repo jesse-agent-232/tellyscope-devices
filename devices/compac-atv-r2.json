@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "id": "compac-atv-r2",
+  "name": "Compac ATV R2",
+  "tested": {
+    "os": "Android TV 9",
+    "sdk": 28,
+    "build": null
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "SCBC / Google telemetry and feedback",
+      "packages": [
+        {
+          "pkg": "com.apps.function.gdpr",
+          "note": "SCBC data-consent agent"
+        },
+        {
+          "pkg": "com.vewd.core.service",
+          "note": "Vewd app-store/HbbTV core service"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.tv.bugreportsender"
+        }
+      ]
+    },
+    {
+      "title": "Content rows, promos and auto-installs",
+      "packages": [
+        {
+          "pkg": "com.apps.channels",
+          "note": "\"S-Channel\" content rows on Home"
+        },
+        {
+          "pkg": "com.apps.eshow",
+          "note": "E-SHOW in-store demo / promo"
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations",
+          "note": "sponsored and recommendation rows on the stock Home"
+        },
+        {
+          "pkg": "com.google.android.leanbacklauncher.recommendations"
+        },
+        {
+          "pkg": "com.realtek.leanbacklauncher.partnercustomizer",
+          "note": "KEEP: supplies the Inputs button on the stock Home",
+          "optional": true
+        },
+        {
+          "pkg": "android.autoinstalls.config.scbc.device",
+          "note": "Play auto-installs of partner apps"
+        }
+      ]
+    },
+    {
+      "title": "Background services and duplicates",
+      "packages": [
+        {
+          "pkg": "com.apps.clear",
+          "note": "\"TV Booster\" cleaner"
+        },
+        {
+          "pkg": "com.google.android.apps.nbu.smartconnect.tv"
+        },
+        {
+          "pkg": "com.apps.wifihotspot",
+          "note": "TV as a Wi-Fi hotspot"
+        },
+        {
+          "pkg": "com.android.printspooler"
+        },
+        {
+          "pkg": "com.apps.networkspeed",
+          "note": "speed-test app"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps and casting (personal choice: comment out any you use)",
+      "packages": [
+        {
+          "pkg": "com.apps.timeclock",
+          "note": "WorldClock"
+        },
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Chromecast built-in; re-enable to cast from phones"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/compac-atv-r2/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

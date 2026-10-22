@@ -1,0 +1,202 @@
+{
+  "schema": 1,
+  "id": "tcl-g07-google-tv",
+  "name": "TCL Smart TV",
+  "tested": {
+    "os": "Android 11",
+    "sdk": 30,
+    "build": "RP1A.200622.001"
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "1. Telemetry and analytics",
+      "packages": [
+        {
+          "pkg": "com.tcl.ttvs",
+          "note": "TCL BI/analytics, also TCL's firmware updater (comment this line out to keep updates)"
+        },
+        {
+          "pkg": "com.tcl.guard",
+          "note": "TGuard device-use tracking, cleaner"
+        },
+        {
+          "pkg": "com.tcl.useragreement",
+          "note": "privacy-agreement proxy for ttvs business data"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.partnersetup"
+        },
+        {
+          "pkg": "com.google.android.onetimeinitializer"
+        }
+      ]
+    },
+    {
+      "title": "2. Content and ad services",
+      "packages": [
+        {
+          "pkg": "com.tcl.waterfall.overseas",
+          "note": "content \"waterfall\" recommendations"
+        },
+        {
+          "pkg": "com.tcl.channelplus",
+          "note": "TCL Live FAST channels (a TV input)"
+        },
+        {
+          "pkg": "com.tcl.dashboard",
+          "note": "TCL Home panel, promos"
+        },
+        {
+          "pkg": "com.tcl.partnercustomizer",
+          "note": "TCL tweaks to Google TV home rows"
+        },
+        {
+          "pkg": "com.tcl.messagebox",
+          "note": "pushed messages and promos"
+        },
+        {
+          "pkg": "com.tcl.notereminder",
+          "note": "reminders fed by the message box (already off on AR20; re-enabled at boot on AR07, hide in config.xml)"
+        },
+        {
+          "pkg": "com.tcl.tv.tclhome_passive",
+          "note": "TCL home content, starts at boot"
+        },
+        {
+          "pkg": "com.tcl.usercenter",
+          "note": "TCL account (re-enabled at boot on AR07, hide in config.xml)"
+        },
+        {
+          "pkg": "com.tcl.esticker",
+          "note": "retail-demo sticker"
+        },
+        {
+          "pkg": "com.tcl.hotelmenu",
+          "note": "hotel-mode portal"
+        },
+        {
+          "pkg": "android.autoinstalls.config.google.gtvpai",
+          "note": "partner app auto-installs"
+        }
+      ]
+    },
+    {
+      "title": "3. Background services (off by choice)",
+      "packages": [
+        {
+          "pkg": "com.tcl.MultiScreenInteraction_TV",
+          "note": "MagiConnect"
+        },
+        {
+          "pkg": "com.tcl.miracast",
+          "note": "screen mirroring (Chromecast kept)"
+        },
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google Assistant / voice search (mic button)"
+        },
+        {
+          "pkg": "com.tcl.assistant",
+          "note": "TCL voice service"
+        },
+        {
+          "pkg": "com.google.android.tv.assistant",
+          "note": "assistant LED service"
+        },
+        {
+          "pkg": "com.tcl.t_solo",
+          "note": "T-Solo Bluetooth \"listen alone\""
+        },
+        {
+          "pkg": "com.tcl.android.webview",
+          "note": "TCL support browser (the system WebView is Google's)"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar"
+        }
+      ]
+    },
+    {
+      "title": "4. Preloaded apps (off by choice)",
+      "packages": [
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom",
+          "note": "Prime Video"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google TV / Play Movies storefront (already off on AR20, enabled on AR07)"
+        },
+        {
+          "pkg": "com.tcl.ui_mediaCenter",
+          "note": "USB media player"
+        },
+        {
+          "pkg": "com.tcl.gallery"
+        },
+        {
+          "pkg": "com.iqiyi.i18n.tv",
+          "note": "partner auto-install"
+        },
+        {
+          "pkg": "com.globo.globotv",
+          "note": "Globoplay (check.py reported not installed after reboot on AR07)",
+          "optional": true
+        },
+        {
+          "pkg": "com.mercadolibre.android.mplay_tv",
+          "note": "Mercado Play",
+          "optional": true
+        },
+        {
+          "pkg": "br.com.sbt.mais",
+          "note": "+SBT",
+          "optional": true
+        },
+        {
+          "pkg": "br.com.claro.now.smarttvclient",
+          "note": "Claro tv+",
+          "optional": true
+        },
+        {
+          "pkg": "com.cbs.ca",
+          "note": "Paramount+",
+          "optional": true
+        },
+        {
+          "pkg": "tv.pluto.android",
+          "note": "Pluto TV",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "5. Launcher handover (setupwraith's RecoveryActivity claims HOME once launcherx is off; the install",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.dreamx",
+          "note": "ambient-mode screensaver"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tcl-g07-google-tv/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

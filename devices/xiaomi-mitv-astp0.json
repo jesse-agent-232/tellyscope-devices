@@ -1,0 +1,204 @@
+{
+  "schema": 1,
+  "id": "xiaomi-mitv-astp0",
+  "name": "Xiaomi MiTV-ASTP0",
+  "tested": {
+    "os": "Android 9",
+    "sdk": 28,
+    "build": "lacks"
+  },
+  "launcher": "com.mitv.tvhome",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Xiaomi telemetry / push / cloud control",
+      "packages": [
+        {
+          "pkg": "com.miui.analytics"
+        },
+        {
+          "pkg": "com.miui.tv.analytics"
+        },
+        {
+          "pkg": "com.xiaomi.statistic"
+        },
+        {
+          "pkg": "com.mitv.cloudcontrol"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.tvpush.tvpushservice"
+        },
+        {
+          "pkg": "com.android.smspush"
+        }
+      ]
+    },
+    {
+      "title": "Ads / promoted content / shopping",
+      "packages": [
+        {
+          "pkg": "com.xm.webcontent"
+        },
+        {
+          "pkg": "com.mitv.shoplugin",
+          "note": "TV shopping channel plugin"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.shop",
+          "note": "Xiaomi shop"
+        }
+      ]
+    },
+    {
+      "title": "Xiaomi background services",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.mitv.tvmanager",
+          "note": "\"TV Manager\" cleaner"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.upgrade",
+          "note": "firmware updates: re-enable to check for one"
+        },
+        {
+          "pkg": "com.xiaomi.gamecenter.sdk.service.mibox"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.karaoke.service"
+        },
+        {
+          "pkg": "com.xiaomi.wakeupservice",
+          "note": "Chinese wake word for the voice assistant, ~30% CPU all the time"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps not used",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.mimusic2",
+          "note": "Mi Music"
+        },
+        {
+          "pkg": "com.mitv.gallery",
+          "note": "Media Explorer still opens USB photos"
+        },
+        {
+          "pkg": "com.xiaomi.screenrecorder"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.smartpanel",
+          "note": "smart home panel"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.calendar"
+        },
+        {
+          "pkg": "com.xiaomi.tweather",
+          "note": "CN weather"
+        },
+        {
+          "pkg": "com.mitv.screensaver",
+          "note": "Xiaomi screensaver; the launcher's clock screensaver takes over"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.healthdiagnosis",
+          "note": "TV self-diagnosis"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.legal.webview",
+          "note": "terms and privacy viewer"
+        },
+        {
+          "pkg": "com.android.printspooler",
+          "note": "printing"
+        },
+        {
+          "pkg": "com.xiaomi.mibox.lockscreen",
+          "note": "child lock screen"
+        }
+      ]
+    },
+    {
+      "title": "Casting except AirPlay (com.xiaomi.mitv.smartshare keeps .mairplay.AirPlayService on port 47000)",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.miplay",
+          "note": "MiPlay, Xiaomi phone casting"
+        },
+        {
+          "pkg": "com.duokan.airkan.tvbox",
+          "note": "AirKan DLNA"
+        },
+        {
+          "pkg": "com.xiaomi.wfdsinkhelperservice",
+          "note": "Miracast sink helper"
+        },
+        {
+          "pkg": "com.xiaomi.mi_connect_service",
+          "note": "Mi Connect phone link"
+        }
+      ]
+    },
+    {
+      "title": "Phone remote, air mouse and the TV assistant relay. It reconnects to relay01.c.assistant.tv.mi.com,",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.mitv.remotecontroller.service"
+        }
+      ]
+    },
+    {
+      "title": "Chinese voice assistant (owner's choice)",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.voicecontrol"
+        },
+        {
+          "pkg": "com.xiaomi.mico.mqtt.service.application.tv",
+          "note": "Xiao AI speaker link"
+        }
+      ]
+    },
+    {
+      "title": "Chinese payment (owner's choice)",
+      "packages": [
+        {
+          "pkg": "com.mipay.wallet.tv"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.pay"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.payment"
+        }
+      ]
+    },
+    {
+      "title": "Content (owner's choice)",
+      "packages": [
+        {
+          "pkg": "com.mitv.mivideoplayer",
+          "note": "Mi Video, CN streaming; com.mitv.videoplayer still plays USB files"
+        },
+        {
+          "pkg": "com.xiaomi.smarthome.tv",
+          "note": "Mi Home on the TV"
+        }
+      ]
+    },
+    {
+      "title": "Keyboard: Gboard for Android TV 16.1.02 (com.google.android.inputmethod.latin, tv_release armeabi-v7a,",
+      "packages": [
+        {
+          "pkg": "com.sohu.inputmethod.sogou.tv"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/xiaomi-mitv-astp0/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

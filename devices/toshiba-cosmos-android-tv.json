@@ -1,0 +1,112 @@
+{
+  "schema": 1,
+  "id": "toshiba-cosmos-android-tv",
+  "name": "Toshiba",
+  "tested": {
+    "os": "Android TV 11",
+    "sdk": 30,
+    "build": null
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "--- Vestel telemetry and retail junk ---",
+      "packages": [
+        {
+          "pkg": "com.vestel.vestelreporter",
+          "note": "Vestel analytics/telemetry uploader"
+        },
+        {
+          "pkg": "fusion.android.tv.demo",
+          "note": "retail/shop demo loops"
+        },
+        {
+          "pkg": "android.autoinstalls.config.vestel.cosmos",
+          "note": "partner auto-preinstall config"
+        }
+      ]
+    },
+    {
+      "title": "--- Google services nobody asked for ---",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvrecommendations",
+          "note": "home-screen recommendation rows"
+        },
+        {
+          "pkg": "com.google.android.leanbacklauncher.partnercustomizer",
+          "note": "partner rows/channels for the stock launcher"
+        },
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "crash/feedback uploader to Google"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar",
+          "note": "calendar sync, on a TV"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google TV / Play Movies storefront"
+        },
+        {
+          "pkg": "com.google.android.play.games",
+          "note": "Play Games"
+        },
+        {
+          "pkg": "com.google.android.apps.nbu.smartconnect.tv",
+          "note": "Smart Connect"
+        },
+        {
+          "pkg": "com.google.android.backdrop",
+          "note": "ambient photo screensaver (launcher's ClockDream replaces it)"
+        }
+      ]
+    },
+    {
+      "title": "--- Owner's checklist choices (this unit: no stock YouTube, no Prime) ---",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google Assistant: disabled at first, re-enabled a day later",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.youtube.tv",
+          "note": "stock YouTube (SmartTube kept instead)"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic",
+          "note": "YouTube Music"
+        },
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom",
+          "note": "Prime Video (unused here)"
+        },
+        {
+          "pkg": "com.mediatek.wwtv.mediaplayer",
+          "note": "USB media player; re-enable: pm enable --user 0 com.mediatek.wwtv.mediaplayer"
+        },
+        {
+          "pkg": "com.mediatek.tv.freeviewplay",
+          "note": "Freeview Play (UK) integration, dead weight in Spain"
+        }
+      ]
+    },
+    {
+      "title": "--- Stock launcher: tools/disable.sh skips it until another app answers HOME ---",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvlauncher",
+          "note": "disable LAST, after launcher/build-and-install.sh"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/toshiba-cosmos-android-tv/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

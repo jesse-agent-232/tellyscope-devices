@@ -1,0 +1,112 @@
+{
+  "schema": 1,
+  "id": "karbonn-swtv-20ae",
+  "name": "Karbonn SWTV-20AE",
+  "tested": {
+    "os": "Android TV 10",
+    "sdk": 29,
+    "build": null
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Skyworth content, ads and preloads",
+      "packages": [
+        {
+          "pkg": "com.smartdevice.leanbacklauncher.customizer",
+          "note": "partner config that injects ad rows into home screen"
+        },
+        {
+          "pkg": "com.smartdevice.acr.recommendation",
+          "note": "ACR — listens to ambient audio for ad targeting"
+        },
+        {
+          "pkg": "com.smartdevice.recommendation",
+          "note": "Skyworth recommendation rows"
+        },
+        {
+          "pkg": "com.smartdevice.epopplayer",
+          "note": "ePop shop demo player"
+        },
+        {
+          "pkg": "com.Smartdevice.emanual",
+          "note": "on-screen manual"
+        },
+        {
+          "pkg": "fusion.android.tv.demo",
+          "note": "retail shop demo player"
+        },
+        {
+          "pkg": "com.mstar.android.tv.disclaimercustomization",
+          "note": "manufacturer branding/disclaimer screen"
+        }
+      ]
+    },
+    {
+      "title": "India-specific preloads (never asked for)",
+      "packages": [
+        {
+          "pkg": "tv.airtel.xstream.tvapp",
+          "note": "Airtel Xstream"
+        },
+        {
+          "pkg": "com.facebook.katana",
+          "note": "Facebook"
+        },
+        {
+          "pkg": "com.community.newroom",
+          "note": "Community Newroom"
+        },
+        {
+          "pkg": "com.community.oneroom",
+          "note": "Community OneRoom"
+        },
+        {
+          "pkg": "com.internet.tvbrowser",
+          "note": "generic TV browser"
+        },
+        {
+          "pkg": "com.qjy.browser",
+          "note": "unknown browser"
+        },
+        {
+          "pkg": "com.yablio.sendfilestotv",
+          "note": "Send Files to TV"
+        }
+      ]
+    },
+    {
+      "title": "Telemetry and feedback",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.tv.bugreportsender"
+        }
+      ]
+    },
+    {
+      "title": "Ambient screensaver (replaced by the ClockDream screensaver in launcher/)",
+      "packages": [
+        {
+          "pkg": "com.google.android.backdrop"
+        }
+      ]
+    },
+    {
+      "title": "Stock home recommendation rows; disable after the new launcher owns Home",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvrecommendations"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/karbonn-swtv-20ae/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

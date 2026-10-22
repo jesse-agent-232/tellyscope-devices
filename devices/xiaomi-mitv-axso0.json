@@ -1,0 +1,165 @@
+{
+  "schema": 1,
+  "id": "xiaomi-mitv-axso0",
+  "name": "Xiaomi MiTV-AXSO0",
+  "tested": {
+    "os": "Android TV 9",
+    "sdk": 28,
+    "build": null
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Xiaomi + Google telemetry",
+      "packages": [
+        {
+          "pkg": "com.miui.tv.analytics"
+        },
+        {
+          "pkg": "com.xiaomi.statistic"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.tv.bugreportsender"
+        }
+      ]
+    },
+    {
+      "title": "PatchWall, content rows, sponsored rows",
+      "packages": [
+        {
+          "pkg": "com.mitv.tvhome.atv"
+        },
+        {
+          "pkg": "com.xm.webcontent"
+        },
+        {
+          "pkg": "com.xiaomi.floatingframe"
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations"
+        },
+        {
+          "pkg": "com.google.android.leanbacklauncher.recommendations"
+        },
+        {
+          "pkg": "android.autoinstalls.config.xioami.dangal",
+          "note": "Play auto-install of partner apps (sic, \"xioami\")"
+        },
+        {
+          "pkg": "com.glance.tv",
+          "note": "Glance lock-screen news and ads"
+        },
+        {
+          "pkg": "com.mitv.tvhome.mitvplus",
+          "note": "Mi TV+ sponsored live channels"
+        },
+        {
+          "pkg": "co.sensara.tv.mitv",
+          "note": "Sensara partner TV guide (sponsored show recommendations)"
+        }
+      ]
+    },
+    {
+      "title": "Xiaomi background services",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.mitv.tvmanager",
+          "note": "\"TV Manager\" cleaner"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.handbook"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.updateservice",
+          "note": "firmware updates: re-enable to check for one"
+        },
+        {
+          "pkg": "com.xiaomo.tv.milegal",
+          "note": "static legal / privacy text screens"
+        }
+      ]
+    },
+    {
+      "title": "Personal choice: voice assistant (the mic button stops working)",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss"
+        },
+        {
+          "pkg": "com.google.android.speech.pumpkin"
+        }
+      ]
+    },
+    {
+      "title": "Personal choice: casting / mirroring",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Chromecast built-in"
+        },
+        {
+          "pkg": "com.mitv.milinkservice",
+          "note": "Mi Cast"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.smartshare"
+        },
+        {
+          "pkg": "com.xiaomi.wfdsinkhelperservice",
+          "note": "Miracast sink"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.mimusic2"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Play Movies & TV"
+        },
+        {
+          "pkg": "com.mitv.gallery",
+          "note": "Mi Gallery; Media Player still opens USB photos"
+        }
+      ]
+    },
+    {
+      "title": "Personal choice: preloaded streaming apps not used",
+      "packages": [
+        {
+          "pkg": "com.fancode.tv"
+        },
+        {
+          "pkg": "com.suntv.sunnxt.mitv"
+        },
+        {
+          "pkg": "com.eros.mitv"
+        },
+        {
+          "pkg": "com.discoveryplus.mitv"
+        },
+        {
+          "pkg": "com.ddnational.prasarbharati"
+        },
+        {
+          "pkg": "net.aljazeera.english"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/xiaomi-mitv-axso0/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

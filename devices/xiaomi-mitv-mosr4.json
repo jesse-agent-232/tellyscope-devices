@@ -1,0 +1,164 @@
+{
+  "schema": 1,
+  "id": "xiaomi-mitv-mosr4",
+  "name": "Xiaomi MiTV-MOSR4",
+  "tested": {
+    "os": "Android 11",
+    "sdk": 30,
+    "build": null
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Xiaomi telemetry / attribution",
+      "packages": [
+        {
+          "pkg": "com.miui.tv.analytics"
+        },
+        {
+          "pkg": "com.xiaomi.statistic"
+        },
+        {
+          "pkg": "com.xiaomi.tvqs.overseas",
+          "note": "Firebase analytics + DOWNLOAD_WITHOUT_NOTIFICATION"
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "Google RLZ attribution pings"
+        },
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "feedback reporter (second unit)"
+        }
+      ]
+    },
+    {
+      "title": "Ad rows, promos and content providers on the home screen (\"Teruskan menonton\", \"Film terlaris\")",
+      "packages": [
+        {
+          "pkg": "com.mitv.tvhome.oemtab",
+          "note": "holds ACCESS_ADSERVICES_AD_ID/_ATTRIBUTION - the ad row"
+        },
+        {
+          "pkg": "com.mitv.tvhome.michannel",
+          "note": "Mi content rows"
+        },
+        {
+          "pkg": "com.mitv.tvhome.mitvplus",
+          "note": "Mi TV+ ad-funded channels (Xiaomi TV+ tile)"
+        },
+        {
+          "pkg": "com.mitv.tvhome.atv",
+          "note": "PatchWall home; not a HOME candidate on this build"
+        },
+        {
+          "pkg": "com.xm.webcontent",
+          "note": "Xiaomi web promo WebView"
+        },
+        {
+          "pkg": "com.mitv.toolhouse"
+        }
+      ]
+    },
+    {
+      "title": "Retail demo mode and nagware",
+      "packages": [
+        {
+          "pkg": "fusion.android.tv.demo",
+          "note": "in-store demo loop"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.tvmanager",
+          "note": "\"TV Manager\" cleaner"
+        },
+        {
+          "pkg": "com.xiaomo.tv.milegal",
+          "note": "legal notices app"
+        },
+        {
+          "pkg": "android.autoinstalls.config.xiaomi.amelie",
+          "note": "silent preload installer config"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.manualhelp",
+          "note": "on-screen manual (second unit only)"
+        },
+        {
+          "pkg": "com.android.printspooler",
+          "note": "print spooler (second unit)"
+        }
+      ]
+    },
+    {
+      "title": "Mi Cast / Miracast - Chromecast built-in (mediashell) still works without them",
+      "packages": [
+        {
+          "pkg": "com.mitv.milinkservice",
+          "note": "not on this model",
+          "optional": true
+        },
+        {
+          "pkg": "com.xiaomi.mitv.smartshare"
+        },
+        {
+          "pkg": "com.xiaomi.wfdsinkhelperservice"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps, off by choice - re-enable any you use",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.mimusic2",
+          "note": "Mi Music"
+        },
+        {
+          "pkg": "com.google.android.play.games",
+          "note": "Play Games"
+        },
+        {
+          "pkg": "com.mitv.videoplayer",
+          "note": "Pemutar media"
+        },
+        {
+          "pkg": "com.mitv.gallery",
+          "note": "Galeri"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.dreamx",
+          "note": "ambient screensaver; set screensaver_components first",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Firmware updates off by request - re-enable com.xiaomi.mitv.updateservice to get OTA again",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.mitv.updateservice"
+        },
+        {
+          "pkg": "com.mitv.upgrader"
+        },
+        {
+          "pkg": "com.mitv.ABUpdateStatus"
+        }
+      ]
+    },
+    {
+      "title": "Trade-off: setupwraith is the first-run setup wizard. Everyday use is unaffected, but re-enable it",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith",
+          "note": "setup wizard; blocks a third-party launcher from Home"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/xiaomi-mitv-mosr4/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

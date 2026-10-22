@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "oneplus-tv-dubai",
+  "name": "OnePlus TV",
+  "tested": {
+    "os": "Android 14",
+    "sdk": null,
+    "build": null
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Google telemetry",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback"
+        }
+      ]
+    },
+    {
+      "title": "OnePlus / HeyTap extras",
+      "packages": [
+        {
+          "pkg": "com.heytap.olink",
+          "note": "OnePlus Connect (phone link)"
+        },
+        {
+          "pkg": "oneplus.smarthome",
+          "note": "OnePlus smart home control"
+        },
+        {
+          "pkg": "com.heytap.tv.assistant.oneplus",
+          "note": "OnePlus TV Assistant"
+        },
+        {
+          "pkg": "com.heytap.tv.btspeaker",
+          "note": "Bluetooth speaker mode"
+        },
+        {
+          "pkg": "com.heytap.tv.filebrowser",
+          "note": "File Browser"
+        },
+        {
+          "pkg": "com.oneplus.tv.launcher",
+          "note": "OnePlus content launcher page"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps",
+      "packages": [
+        {
+          "pkg": "com.tcl.browser",
+          "note": "\"BrowseHere\" web browser (not a system app: can also be uninstalled)"
+        }
+      ]
+    },
+    {
+      "title": "Stock Google TV launcher and its recommendation service, replaced by launcher/",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvlauncher"
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/oneplus-tv-dubai/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

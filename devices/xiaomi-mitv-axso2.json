@@ -1,0 +1,158 @@
+{
+  "schema": 1,
+  "id": "xiaomi-mitv-axso2",
+  "name": "Xiaomi MiTV-AXSO2",
+  "tested": {
+    "os": "Android TV 9",
+    "sdk": 28,
+    "build": null
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Xiaomi + Google telemetry",
+      "packages": [
+        {
+          "pkg": "com.miui.tv.analytics"
+        },
+        {
+          "pkg": "com.xiaomi.statistic"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.tv.bugreportsender"
+        }
+      ]
+    },
+    {
+      "title": "PatchWall, content rows, sponsored rows, partner auto-installs",
+      "packages": [
+        {
+          "pkg": "com.mitv.tvhome.atv"
+        },
+        {
+          "pkg": "com.xm.webcontent"
+        },
+        {
+          "pkg": "com.xiaomi.floatingframe"
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations",
+          "note": "also feeds the notification panel, see the sign-in note"
+        },
+        {
+          "pkg": "com.google.android.leanbacklauncher.recommendations"
+        },
+        {
+          "pkg": "android.autoinstalls.config.xiaomi.amelie",
+          "note": "Play auto-install of partner apps"
+        },
+        {
+          "pkg": "android.autoinstalls.config.xioami.dangal",
+          "note": "Play auto-install of partner apps (sic, \"xioami\")"
+        },
+        {
+          "pkg": "com.mitv.tvhome.mitvplus",
+          "note": "Mi TV+ sponsored live channels"
+        },
+        {
+          "pkg": "co.sensara.tv.mitv",
+          "note": "Sensara partner TV guide (sponsored show recommendations)"
+        }
+      ]
+    },
+    {
+      "title": "Xiaomi background services",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.mitv.tvmanager",
+          "note": "\"TV Manager\" cleaner"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.handbook"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.updateservice",
+          "note": "firmware updates: re-enable to check for one"
+        },
+        {
+          "pkg": "com.xiaomo.tv.milegal",
+          "note": "static legal / privacy text screens"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.mimusic2"
+        },
+        {
+          "pkg": "com.mitv.gallery",
+          "note": "Mi Gallery; Media Player still opens USB photos"
+        },
+        {
+          "pkg": "com.google.android.music",
+          "note": "Google Play Music, service shut down"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Play Movies & TV"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        },
+        {
+          "pkg": "com.tcl.browser"
+        }
+      ]
+    },
+    {
+      "title": "Personal choice: old partner copies of streaming apps (see notes)",
+      "packages": [
+        {
+          "pkg": "com.xiaomitv.sonyliv"
+        },
+        {
+          "pkg": "com.zee5.xiaomiTV"
+        }
+      ]
+    },
+    {
+      "title": "Android extras a TV without camera, printer or SIM doesn't use",
+      "packages": [
+        {
+          "pkg": "com.android.camera2"
+        },
+        {
+          "pkg": "com.android.gallery3d"
+        },
+        {
+          "pkg": "com.android.printspooler"
+        },
+        {
+          "pkg": "com.google.android.marvin.talkback",
+          "note": "screen reader: keep it if anyone in the house uses it"
+        },
+        {
+          "pkg": "com.android.smspush"
+        },
+        {
+          "pkg": "com.android.dreams.basic",
+          "note": "basic screensaver; Ambient mode (backdrop) stays"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/xiaomi-mitv-axso2/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

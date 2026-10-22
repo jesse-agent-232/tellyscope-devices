@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "id": "peaq-ptv43aqu-5023c",
+  "name": "PEAQ PTV 43AQU-5023C",
+  "tested": {
+    "os": "Android TV 11",
+    "sdk": 30,
+    "build": null
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Batch 1: telemetry, ads and recommendation rows",
+      "packages": [
+        {
+          "pkg": "tv.anoki.acr.controller",
+          "note": "Anoki automatic content recognition"
+        },
+        {
+          "pkg": "com.homwee.aipont",
+          "note": "AI PONT brand portal and its recommendation channels"
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations"
+        },
+        {
+          "pkg": "android.autoinstalls.config.homwee",
+          "note": "partner-app auto-installs"
+        }
+      ]
+    },
+    {
+      "title": "Batch 2: vendor and preloaded apps",
+      "packages": [
+        {
+          "pkg": "com.homwee.store"
+        },
+        {
+          "pkg": "com.homwee.help"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google Play Movies & TV"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar"
+        }
+      ]
+    },
+    {
+      "title": "Batch 3: personal choice, not used on this set: comment out what you use",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google Assistant (the mic button stops working)"
+        },
+        {
+          "pkg": "com.google.android.backdrop",
+          "note": "Ambient screensaver, replaced by the launcher's Clock"
+        }
+      ]
+    },
+    {
+      "title": "Batch 4: personal choice, preloaded streaming apps not used on this set (kept: Netflix, YouTube).",
+      "packages": [
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom",
+          "note": "Prime Video"
+        },
+        {
+          "pkg": "com.homwee.mmp.fileexplorer",
+          "note": "Media Player (USB files and media); not used on this set"
+        }
+      ]
+    },
+    {
+      "title": "Stock launcher, replaced by launcher/. Left to launcher/build-and-install.sh, which disables it only",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvlauncher",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/peaq-ptv43aqu-5023c/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

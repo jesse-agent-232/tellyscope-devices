@@ -1,0 +1,209 @@
+{
+  "schema": 1,
+  "id": "sony-kd-65x80j",
+  "name": "Sony BRAVIA KD-65X80J",
+  "tested": {
+    "os": "Android 10",
+    "sdk": 29,
+    "build": null
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Batch 1: tracking and telemetry",
+      "packages": [
+        {
+          "pkg": "tv.samba.ssm",
+          "note": "Samba TV, fingerprints what's on screen (ACR)"
+        },
+        {
+          "pkg": "com.sony.dtv.da.service",
+          "note": "Sony device agent / remote support"
+        },
+        {
+          "pkg": "com.qterics.da.product",
+          "note": "Qterics device agent"
+        },
+        {
+          "pkg": "com.sonyericsson.idd.agent",
+          "note": "Sony usage-data agent"
+        },
+        {
+          "pkg": "com.sony.dtv.sonybugreportsys"
+        },
+        {
+          "pkg": "com.google.android.tv.bugreportsender"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.vendorprotocol",
+          "note": "SDDP broadcast for Control4-style automation; re-enable if you use one"
+        }
+      ]
+    },
+    {
+      "title": "Batch 2: home-screen ads and promos",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.sonyselect",
+          "note": "Sony Select promo tile"
+        },
+        {
+          "pkg": "com.sony.dtv.sonytab",
+          "note": "Sony tab content on the Google TV home"
+        },
+        {
+          "pkg": "com.sony.dtv.launcherxcustomizer",
+          "note": "Sony config for the Google TV home"
+        },
+        {
+          "pkg": "android.autoinstalls.config.sony.bravia",
+          "note": "Play auto-install of partner apps"
+        }
+      ]
+    },
+    {
+      "title": "Batch 3: retail demo and help",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.demosupport"
+        },
+        {
+          "pkg": "com.sony.dtv.demosystemsupport"
+        },
+        {
+          "pkg": "com.sony.dtv.multiscreendemo"
+        },
+        {
+          "pkg": "com.sony.dtv.customersupport",
+          "note": "Help tile"
+        },
+        {
+          "pkg": "com.sony.dtv.smarthelp"
+        }
+      ]
+    },
+    {
+      "title": "Batch 4: preloaded apps, off by owner's choice",
+      "packages": [
+        {
+          "pkg": "com.sonypicturescore",
+          "note": "BRAVIA CORE (Conviva + Firebase analytics inside)"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google TV movies / purchases"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        }
+      ]
+    },
+    {
+      "title": "Batch 5: mirroring, off by owner's choice (Chromecast stays)",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.airplayapp",
+          "note": "AirPlay"
+        },
+        {
+          "pkg": "com.sony.dtv.networkapp.wifidirect"
+        },
+        {
+          "pkg": "com.sony.huey.dlna.module",
+          "note": "DLNA renderer; Media Player keeps playing USB files"
+        },
+        {
+          "pkg": "com.sony.huey.dlna.renderersettings"
+        },
+        {
+          "pkg": "com.sonyericsson.dlna"
+        }
+      ]
+    },
+    {
+      "title": "Batch 6: needed for a third-party launcher on Google TV (see notes above)",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith",
+          "note": "first-run setup wizard; re-enable before a factory reset"
+        }
+      ]
+    },
+    {
+      "title": "Batch 7: setup leftovers and unused services",
+      "packages": [
+        {
+          "pkg": "com.android.printspooler"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar",
+          "note": "calendar sync; also carries Google's GrowthKit promo framework"
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "RLZ install-attribution provider"
+        },
+        {
+          "pkg": "com.google.android.onetimeinitializer",
+          "note": "runs once after first setup"
+        },
+        {
+          "pkg": "com.sony.dtv.QuickSetupCustomizer",
+          "note": "partner customisation for first setup"
+        }
+      ]
+    },
+    {
+      "title": "Batch 8: hotel / pro mode (not a hotel TV)",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.b2b.hotelmode",
+          "note": "always-running service, boot + periodic restart receivers"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.noderuntime.normal",
+          "note": "Node.js runtime for hotel apps (also watches USB)"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.noderuntime.privilege"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.noderuntimeextension.bpk"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.noderuntimeextension.node_12_13_1"
+        }
+      ]
+    },
+    {
+      "title": "Batch 9: BRAVIA CAM features (the X80J has no camera support) and the notifications app",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.gestureapp"
+        },
+        {
+          "pkg": "com.sony.dtv.distancealert"
+        },
+        {
+          "pkg": "com.sony.dtv.sensingcamera.fwupdate"
+        },
+        {
+          "pkg": "com.sony.dtv.sensingcamera.settings"
+        },
+        {
+          "pkg": "com.sony.dtv.notificationcenter",
+          "note": "\"BRAVIA notifications\" inbox"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/sony-kd-65x80j/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

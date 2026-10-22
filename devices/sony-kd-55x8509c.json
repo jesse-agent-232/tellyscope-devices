@@ -1,0 +1,137 @@
+{
+  "schema": 1,
+  "id": "sony-kd-55x8509c",
+  "name": "Sony BRAVIA KD-55X8509C",
+  "tested": {
+    "os": "Android TV 7.0",
+    "sdk": 24,
+    "build": "SVP4KDTV15_EU-user"
+  },
+  "launcher": "com.google.android.leanbacklauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Telemetry, remote support, bug reports",
+      "packages": [
+        {
+          "pkg": "com.qterics.da.product",
+          "note": "Qterics device agent"
+        },
+        {
+          "pkg": "com.sony.dtv.da.service",
+          "note": "Sony device agent / remote support"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.tv.bugreportsender"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.vendorprotocol",
+          "note": "Node.js broadcasting model/MAC/IP for Control4-style home automation"
+        }
+      ]
+    },
+    {
+      "title": "Sony and Google content, ads and recommendations",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.discovery",
+          "note": "Discover bar, ~22 MB resident"
+        },
+        {
+          "pkg": "com.sony.dtv.bivlinfo",
+          "note": "feeds Discover"
+        },
+        {
+          "pkg": "com.sony.dtv.sonyselect",
+          "note": "Sony Select app store/promo tile"
+        },
+        {
+          "pkg": "com.sony.dtv.sonyshelf"
+        },
+        {
+          "pkg": "com.sony.dtv.recommendationservice"
+        },
+        {
+          "pkg": "com.sony.dtv.woprecommendation"
+        },
+        {
+          "pkg": "com.sony.dtv.irbrecommendation"
+        },
+        {
+          "pkg": "com.sony.dtv.networkrecommendation"
+        },
+        {
+          "pkg": "com.sony.dtv.watchtvrecommendation"
+        },
+        {
+          "pkg": "android.autoinstalls.config.sony.bravia",
+          "note": "Play auto-install of partner apps"
+        }
+      ]
+    },
+    {
+      "title": "Retail demo",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.demomode"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded help and apps",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.customersupport"
+        },
+        {
+          "pkg": "com.sony.dtv.smarthelp"
+        },
+        {
+          "pkg": "com.sony.dtv.imanual",
+          "note": "i-Manual"
+        },
+        {
+          "pkg": "com.sony.dtv.bravialifehack"
+        },
+        {
+          "pkg": "com.sony.snei.video.hhvu",
+          "note": "Sony Video Unlimited (service discontinued)"
+        },
+        {
+          "pkg": "com.google.android.inputmethod.japanese",
+          "note": "Japanese IME; the default keyboard is leanback.ime"
+        }
+      ]
+    },
+    {
+      "title": "Voice assistant, off by owner's choice (removes the remote's mic search)",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss"
+        },
+        {
+          "pkg": "com.google.android.speech.pumpkin"
+        }
+      ]
+    },
+    {
+      "title": "YouView (UK TV service), off by owner's choice",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.youview"
+        },
+        {
+          "pkg": "com.youview.tv.servicehost"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/sony-kd-55x8509c/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

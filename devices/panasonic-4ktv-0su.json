@@ -1,0 +1,198 @@
+{
+  "schema": 1,
+  "id": "panasonic-4ktv-0su",
+  "name": "Panasonic 4KTV-0SU",
+  "tested": {
+    "os": "Android TV 10",
+    "sdk": 29,
+    "build": null
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Skyworth retail demo, shop promos, auto-installs and first-run leftovers",
+      "packages": [
+        {
+          "pkg": "android.autoinstalls.config.SW",
+          "note": "Play Auto Installs config for preloaded apps"
+        },
+        {
+          "pkg": "fusion.android.tv.demo",
+          "note": "Skyworth retail demo service"
+        },
+        {
+          "pkg": "com.smartdevice.epopplayer",
+          "note": "e-POP shop-floor promo player"
+        },
+        {
+          "pkg": "com.mstar.android.tv.disclaimercustomization",
+          "note": "disclaimer screen used only by first-run setup"
+        },
+        {
+          "pkg": "com.Smartdevice.emanual",
+          "note": "on-screen manual (E-Manual)"
+        }
+      ]
+    },
+    {
+      "title": "Skyworth content, ads and telemetry",
+      "packages": [
+        {
+          "pkg": "com.smartdevice.recommendation",
+          "note": "the \"Daily Play\" sponsored row on the stock home (Coolita, viu, Puffin...)"
+        },
+        {
+          "pkg": "com.smartdevice.acr.recommendation",
+          "note": "ACR: automatic content recognition of what is on screen"
+        },
+        {
+          "pkg": "com.smartdevice.leanbacklauncher.customizer",
+          "note": "partner rows and the \"Shop\" tab on the stock launcher"
+        },
+        {
+          "pkg": "com.smartdevice.firewall",
+          "note": "Skyworth background service with camera, mic, contacts and account permissions; not running"
+        },
+        {
+          "pkg": "com.smartdevice.dtv.icast",
+          "note": "\"CastPlay\" screen mirroring, 4 services at boot; the Apple TV box handles mirroring here"
+        }
+      ]
+    },
+    {
+      "title": "Google telemetry, recommendations and setup leftovers",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.partnersetup"
+        },
+        {
+          "pkg": "com.google.android.onetimeinitializer"
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations",
+          "note": "recommendation rows"
+        },
+        {
+          "pkg": "com.google.android.backdrop",
+          "note": "ambient-mode screensaver; the launcher's Clock screensaver replaces it"
+        }
+      ]
+    },
+    {
+      "title": "Background services nobody needs on a TV",
+      "packages": [
+        {
+          "pkg": "com.android.printspooler"
+        },
+        {
+          "pkg": "com.android.htmlviewer"
+        },
+        {
+          "pkg": "com.android.backupconfirm"
+        },
+        {
+          "pkg": "com.android.sharedstoragebackup"
+        },
+        {
+          "pkg": "com.android.wallpaperbackup"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar"
+        },
+        {
+          "pkg": "com.android.providers.calendar"
+        }
+      ]
+    },
+    {
+      "title": "Not used (by choice, per the owner)",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google Assistant / voice search (39 MB resident)"
+        },
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Chromecast built-in"
+        },
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom",
+          "note": "Prime Video"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Play Movies & TV"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic",
+          "note": "YouTube Music"
+        },
+        {
+          "pkg": "com.disney.disneyplus",
+          "note": "Disney+"
+        },
+        {
+          "pkg": "com.google.android.play.games",
+          "note": "Play Games"
+        },
+        {
+          "pkg": "com.google.android.apps.tachyon",
+          "note": "Google Meet / Duo"
+        },
+        {
+          "pkg": "com.furnaghan.android.photoscreensaver",
+          "note": "third-party photo screensaver; may be one you installed:",
+          "optional": true
+        },
+        {
+          "pkg": "com.FDGEntertainment.redball4.gp",
+          "note": "game"
+        },
+        {
+          "pkg": "com.joxdev.orbia",
+          "note": "game"
+        },
+        {
+          "pkg": "com.pomelogames.MarsGame",
+          "note": "game"
+        },
+        {
+          "pkg": "com.rkgames.basisgame",
+          "note": "game"
+        },
+        {
+          "pkg": "com.liskovsoft.leankeyboard",
+          "note": "LeanKey keyboard (Gboard is the active one); may be one you",
+          "optional": true
+        },
+        {
+          "pkg": "com.qjy.browser",
+          "note": "preloaded web browser"
+        },
+        {
+          "pkg": "com.tianci.localmedia",
+          "note": "\"Media\" tile: plays files from a USB drive"
+        }
+      ]
+    },
+    {
+      "title": "Stock launcher, replaced by launcher/",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvlauncher",
+          "note": "launcher/build-and-install.sh disables the stock launcher itself, after Home has moved",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/panasonic-4ktv-0su/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

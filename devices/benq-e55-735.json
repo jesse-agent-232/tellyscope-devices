@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "benq-e55-735",
+  "name": "BenQ E55-735",
+  "tested": {
+    "os": "Google TV 14",
+    "sdk": null,
+    "build": null
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Changhong / Homwee store and help",
+      "packages": [
+        {
+          "pkg": "com.homwee.store"
+        },
+        {
+          "pkg": "com.homwee.help"
+        }
+      ]
+    },
+    {
+      "title": "Automatic content recognition (reports what is on screen)",
+      "packages": [
+        {
+          "pkg": "tv.anoki.acr.anokiacroptin"
+        }
+      ]
+    },
+    {
+      "title": "Google TV recommendations and screensaver (set another screensaver first)",
+      "packages": [
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google TV app, the home screen's recommendation source"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.dreamx",
+          "note": "ambient mode; mixes recommendations into the screensaver"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        }
+      ]
+    },
+    {
+      "title": "Streaming apps not used in this home (by choice; keep the ones you use)",
+      "packages": [
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom"
+        },
+        {
+          "pkg": "com.taiwanmobile.myVideotv"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        }
+      ]
+    },
+    {
+      "title": "Stock home. Disable only after the new launcher is installed and set as home.",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith",
+          "note": "its RecoveryActivity otherwise takes over Home"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.launcherx"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/benq-e55-735/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

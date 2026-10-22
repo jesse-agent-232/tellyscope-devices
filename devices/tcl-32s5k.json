@@ -1,0 +1,193 @@
+{
+  "schema": 1,
+  "id": "tcl-32s5k",
+  "name": "TCL 32S5K",
+  "tested": {
+    "os": "Android TV 11",
+    "sdk": 30,
+    "build": "AR2101"
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [
+    {
+      "pkg": "com.tcl.tv",
+      "note": "Live TV app, plays HDMI, source picker on the Input key"
+    },
+    {
+      "pkg": "com.tcl.tvinput",
+      "note": "TV input services for HDMI, AV and the tuner"
+    },
+    {
+      "pkg": "com.tcl.ttvs",
+      "note": "firmware updater; also hosts the BI telemetry and the"
+    },
+    {
+      "pkg": "com.tcl.messagebox",
+      "note": "carries a ttvs receiver; kept to be safe"
+    },
+    {
+      "pkg": "com.tcl.system.server",
+      "note": "remote-key plumbing"
+    },
+    {
+      "pkg": "com.tcl.tcl_bt_rcu_service",
+      "note": "Bluetooth remote"
+    },
+    {
+      "pkg": "com.tcl.autopair",
+      "note": "Bluetooth remote auto-pairing"
+    },
+    {
+      "pkg": "com.tcl.settings",
+      "note": "picture/sound settings"
+    },
+    {
+      "pkg": "com.tcl.dashboard",
+      "note": "\"TCL HOME\" tile"
+    },
+    {
+      "pkg": "com.tcl.suspension",
+      "note": "Quick Panel"
+    },
+    {
+      "pkg": "com.tcl.providers.config",
+      "note": "reported to drop Wi-Fi on the 65C725; not tried here"
+    },
+    {
+      "pkg": "com.tcl.keyhelp",
+      "note": "remote-key help/virtual keys"
+    }
+  ],
+  "groups": [
+    {
+      "title": "TCL account, promos and content",
+      "packages": [
+        {
+          "pkg": "com.tcl.usercenter",
+          "note": "TCL account; re-enabled by ttvs, see notes above"
+        },
+        {
+          "pkg": "com.tcl.guard",
+          "note": "TGuard cleaner/support"
+        },
+        {
+          "pkg": "com.tcl.partnercustomizer",
+          "note": "promo rows on the stock home"
+        },
+        {
+          "pkg": "com.tcl.waterfall.overseas",
+          "note": "TCL web-video portal"
+        },
+        {
+          "pkg": "com.tcl.esticker",
+          "note": "store-demo sticker"
+        },
+        {
+          "pkg": "android.autoinstalls.config.tcl.device",
+          "note": "partner-app auto installer config"
+        }
+      ]
+    },
+    {
+      "title": "Google extras",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Play Movies"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar"
+        },
+        {
+          "pkg": "com.google.android.tungsten.setupwraith",
+          "note": "first-run wizard, setup already done (owns no Wi-Fi here)"
+        }
+      ]
+    },
+    {
+      "title": "Stock home recommendation rows. The stock launcher itself is NOT disabled here: launcher/ was",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvlauncher",
+          "note": "launcher/build-and-install.sh disables this itself if you use it",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations"
+        }
+      ]
+    },
+    {
+      "title": "Off by choice on this unit: comment out what you use",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google search/voice; the stock home's search bar goes dead"
+        },
+        {
+          "pkg": "com.google.android.tv.remote.service",
+          "note": "phone-app remote (casting does not need it)"
+        },
+        {
+          "pkg": "com.google.android.tts",
+          "note": "Google text-to-speech"
+        },
+        {
+          "pkg": "com.google.android.marvin.talkback",
+          "note": "TalkBack"
+        },
+        {
+          "pkg": "com.google.android.backdrop",
+          "note": "photo screensaver, switch the screensaver first (see notes)"
+        },
+        {
+          "pkg": "com.tcl.ui_mediaCenter",
+          "note": "USB media player, together with the next three"
+        },
+        {
+          "pkg": "com.tcl.audioplayer"
+        },
+        {
+          "pkg": "com.tcl.videoplayer"
+        },
+        {
+          "pkg": "com.tcl.imageplayer"
+        },
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Cast receiver: kept here for casting from a phone",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Already disabled when this unit arrived; left as-is.",
+      "packages": [
+        {
+          "pkg": "au.com.stan.and",
+          "note": "Stan",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.smartalexa",
+          "note": "TCL Alexa bridge",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tcl-32s5k/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

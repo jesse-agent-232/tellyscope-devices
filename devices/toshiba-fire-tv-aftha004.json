@@ -1,0 +1,154 @@
+{
+  "schema": 1,
+  "id": "toshiba-fire-tv-aftha004",
+  "name": "Toshiba Fire TV",
+  "tested": {
+    "os": "Fire OS 7",
+    "sdk": 28,
+    "build": "PS7717.5741N.0036408028416"
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "Ads, shopping, content recognition",
+      "packages": [
+        {
+          "pkg": "com.amazon.shoptv.client"
+        },
+        {
+          "pkg": "com.amazon.shoptv.firetv.client"
+        },
+        {
+          "pkg": "com.amazon.tv.acr"
+        },
+        {
+          "pkg": "com.amazon.tv.democontent.provider"
+        }
+      ]
+    },
+    {
+      "title": "Telemetry and metrics",
+      "packages": [
+        {
+          "pkg": "com.amazon.tv.fw.metrics"
+        },
+        {
+          "pkg": "com.amazon.neo.minerva"
+        },
+        {
+          "pkg": "com.amazon.neo.minerva.logcat"
+        },
+        {
+          "pkg": "com.amazon.wirelessmetrics.service"
+        },
+        {
+          "pkg": "com.amazon.perfcollection"
+        },
+        {
+          "pkg": "com.amazon.perfc"
+        },
+        {
+          "pkg": "com.amazon.dp.logger"
+        }
+      ]
+    },
+    {
+      "title": "Tutorials and promos",
+      "packages": [
+        {
+          "pkg": "com.amazon.storm.lightning.tutorial"
+        },
+        {
+          "pkg": "com.amazon.tmm.tutorial"
+        },
+        {
+          "pkg": "com.amazon.gamehub"
+        }
+      ]
+    },
+    {
+      "title": "Amazon content apps",
+      "packages": [
+        {
+          "pkg": "com.amazon.bueller.music"
+        },
+        {
+          "pkg": "com.amazon.bueller.photos"
+        },
+        {
+          "pkg": "com.amazon.minitv.android.app"
+        },
+        {
+          "pkg": "com.amazon.naatyam"
+        }
+      ]
+    },
+    {
+      "title": "Cast-to-Fire-TV receiver (Miracast), personal choice",
+      "packages": [
+        {
+          "pkg": "com.amazon.cast.sink"
+        }
+      ]
+    },
+    {
+      "title": "Streaming apps not used (personal choice: comment out the ones you watch)",
+      "packages": [
+        {
+          "pkg": "com.disney.disneyplus"
+        },
+        {
+          "pkg": "in.startv.hotstar"
+        },
+        {
+          "pkg": "com.hbo.hbonow"
+        },
+        {
+          "pkg": "com.hulu.plus"
+        },
+        {
+          "pkg": "com.peacock.peacockfiretv"
+        },
+        {
+          "pkg": "com.tubitv.ott"
+        },
+        {
+          "pkg": "tv.pluto.android"
+        },
+        {
+          "pkg": "com.onemainstream.sonyliv.android"
+        },
+        {
+          "pkg": "com.zee5.amazon"
+        },
+        {
+          "pkg": "com.suntv.sunnxt"
+        },
+        {
+          "pkg": "com.yupptv.firetv"
+        },
+        {
+          "pkg": "com.jio.media.stb.ondemand"
+        },
+        {
+          "pkg": "com.hungama.movies"
+        },
+        {
+          "pkg": "com.aajtak.firetv"
+        },
+        {
+          "pkg": "com.july.ndtv"
+        },
+        {
+          "pkg": "com.nexgtv.tv"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/toshiba-fire-tv-aftha004/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "schema": 1,
+  "id": "tcl-mt9655-cn-android14",
+  "name": "TCL / FFalcon China 2026",
+  "tested": {
+    "os": "Android 14",
+    "sdk": 34,
+    "build": "tcl9655_cn_an64-user"
+  },
+  "launcher": "com.tcl.cyberui",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Ad and telemetry reporting",
+      "packages": [
+        {
+          "pkg": "com.tcl.bootadservice",
+          "note": "full-screen ad before Home"
+        },
+        {
+          "pkg": "com.tcl.profilemanager",
+          "note": "audience / profile reporting"
+        },
+        {
+          "pkg": "com.tcl.xian.StartandroidService",
+          "note": "background reporting service"
+        },
+        {
+          "pkg": "com.tcl.logkit",
+          "note": "log collection and upload"
+        },
+        {
+          "pkg": "com.tcl.atomic.servicecenter",
+          "note": "home-screen recommendation cards"
+        },
+        {
+          "pkg": "com.tcl.c2dm.client",
+          "note": "TCL push, long-lived connection"
+        },
+        {
+          "pkg": "com.tcl.wholenetsearch",
+          "note": "whole-net search with VOD promotions"
+        },
+        {
+          "pkg": "com.tcl.playskill",
+          "note": "\"tips\" promo app"
+        },
+        {
+          "pkg": "com.tcl.repairguide",
+          "note": "repair-guide app"
+        },
+        {
+          "pkg": "com.tcl.useragreement",
+          "note": "user-agreement popup"
+        },
+        {
+          "pkg": "com.tcl.appreciate.art",
+          "note": "art-wallpaper / screensaver promo content"
+        },
+        {
+          "pkg": "com.tcl.ffeducation",
+          "note": "kids / education content"
+        },
+        {
+          "pkg": "com.tcl.ffkaraoke",
+          "note": "karaoke"
+        }
+      ]
+    },
+    {
+      "title": "OPTIONAL: OTA. Re-enable when you want firmware updates. Keeping it off also stops an update from",
+      "packages": [
+        {
+          "pkg": "com.tcl.versionUpdateApp",
+          "note": "system OTA and app auto-update"
+        },
+        {
+          "pkg": "com.tcl.UpdatePeripheral",
+          "note": "peripheral firmware OTA, ~200 MB resident"
+        },
+        {
+          "pkg": "com.snm.upgrade",
+          "note": "updateos, a second updater"
+        }
+      ]
+    },
+    {
+      "title": "OPTIONAL: home widgets and content apps",
+      "packages": [
+        {
+          "pkg": "com.tcl.common.weather",
+          "note": "weather widget and its background service"
+        },
+        {
+          "pkg": "com.tcl.tshop",
+          "note": "TCL shop / shopping entry"
+        },
+        {
+          "pkg": "com.tcl.gamebar",
+          "note": "game bar"
+        },
+        {
+          "pkg": "com.tcl.t_solo",
+          "note": "game centre"
+        },
+        {
+          "pkg": "com.tcl.micmanager",
+          "note": "microphone manager (karaoke)"
+        },
+        {
+          "pkg": "com.audiocn.karaoke.micmanager",
+          "note": "karaoke microphone manager"
+        },
+        {
+          "pkg": "com.tcl.tvsmartalbum",
+          "note": "smart photo album"
+        },
+        {
+          "pkg": "com.tcl.hotelmenu",
+          "note": "hotel mode"
+        },
+        {
+          "pkg": "com.tcl.hearaid",
+          "note": "hearing aid"
+        },
+        {
+          "pkg": "com.tcl.vod",
+          "note": "TCL VOD entry"
+        },
+        {
+          "pkg": "com.tcl.qiyiguo",
+          "note": "iQIYI content entry"
+        },
+        {
+          "pkg": "com.tcl.tliveplay",
+          "note": "live TV content entry"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tcl-mt9655-cn-android14/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

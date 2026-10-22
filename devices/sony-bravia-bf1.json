@@ -1,0 +1,118 @@
+{
+  "schema": 1,
+  "id": "sony-bravia-bf1",
+  "name": "Sony BRAVIA BF1",
+  "tested": {
+    "os": "Android 12",
+    "sdk": 31,
+    "build": null
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "tracking / ads / promos",
+      "packages": [
+        {
+          "pkg": "tv.samba.ssm",
+          "note": "Samba TV: recognises what's on screen for ad targeting (10 MB, always running)"
+        },
+        {
+          "pkg": "com.sony.dtv.promos",
+          "note": "Sony promotions"
+        },
+        {
+          "pkg": "com.sony.dtv.sonyselect",
+          "note": "Sony Select: promoted-app picks"
+        },
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "Google feedback reporter"
+        }
+      ]
+    },
+    {
+      "title": "shop demo mode",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.demosupport"
+        },
+        {
+          "pkg": "com.sony.dtv.demosystemsupport"
+        },
+        {
+          "pkg": "com.sony.dtv.multiscreendemo"
+        },
+        {
+          "pkg": "com.sony.dtv.m2.seeds.iot",
+          "optional": true
+        },
+        {
+          "pkg": "com.sony.dtv.m2.seeds.iot.remotestart",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "preloaded apps (reinstall or re-enable any time)",
+      "packages": [
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google TV / Play Movies"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic",
+          "note": "YouTube Music"
+        },
+        {
+          "pkg": "com.google.android.play.games",
+          "note": "Play Games"
+        },
+        {
+          "pkg": "com.sonypicturescore",
+          "note": "Sony Pictures Core"
+        }
+      ]
+    },
+    {
+      "title": "Home: do these by hand, in steps, AFTER our launcher is installed (not with this file in one go).",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith",
+          "note": "setup wizard; its RecoveryActivity also claims Home",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "ambient screensaver: shows \"Unable to load content\" once launcherx is off. First point the",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.tv.dreamx",
+          "note": "ambient mode + smart-home panel (59 MB, always running)",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "voice search (optional, NOT applied on the tested TV): removes the remote's mic button and the",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google Assistant / voice search, always running",
+          "optional": true
+        },
+        {
+          "pkg": "com.sony.dtv.voicesearch",
+          "note": "Sony's voice search bridge",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/sony-bravia-bf1/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

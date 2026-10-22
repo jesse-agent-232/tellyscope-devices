@@ -1,0 +1,177 @@
+{
+  "schema": 1,
+  "id": "sony-bravia-4k-gb",
+  "name": "Sony BRAVIA 4K GB",
+  "tested": {
+    "os": "Android TV 9",
+    "sdk": 28,
+    "build": "as"
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "ACR viewing tracker",
+      "packages": [
+        {
+          "pkg": "tv.samba.ssm",
+          "note": "Samba TV fingerprints what's on screen"
+        }
+      ]
+    },
+    {
+      "title": "Sony and Google content, ads and promos",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.sonyselect",
+          "note": "Sony Select app store/promo tile"
+        },
+        {
+          "pkg": "com.sony.dtv.promos",
+          "note": "My BRAVIA promos"
+        },
+        {
+          "pkg": "com.sony.dtv.discovery",
+          "note": "Sony Discover content bar"
+        },
+        {
+          "pkg": "com.sony.dtv.bivlinfo",
+          "note": "BIVL content service list (feeds Discover)"
+        },
+        {
+          "pkg": "com.sony.dtv.tvlaunchercustomizer",
+          "note": "Sony tweaks to the stock home rows"
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations",
+          "note": "recommendation rows for the stock launcher"
+        },
+        {
+          "pkg": "android.autoinstalls.config.sony.bravia",
+          "note": "Play auto-install of partner apps"
+        }
+      ]
+    },
+    {
+      "title": "Retail demo",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.demomode"
+        },
+        {
+          "pkg": "com.sony.dtv.demosupport"
+        },
+        {
+          "pkg": "com.sony.dtv.multiscreendemo"
+        }
+      ]
+    },
+    {
+      "title": "Telemetry, remote support and feedback",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.da.service",
+          "note": "Sony device agent / remote support"
+        },
+        {
+          "pkg": "com.qterics.da.product",
+          "note": "Qterics device agent"
+        },
+        {
+          "pkg": "com.sony.dtv.sonybugreportsys"
+        },
+        {
+          "pkg": "com.google.android.tv.bugreportsender"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.vendorprotocol",
+          "note": "runs Node.js 4.2.4 (2015) broadcasting model/MAC/IP over SDDP"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.customersupport",
+          "note": "Help tile"
+        },
+        {
+          "pkg": "com.sony.dtv.smarthelp"
+        },
+        {
+          "pkg": "com.sony.dtv.imanual",
+          "note": "i-Manual"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        },
+        {
+          "pkg": "com.google.android.videos"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.backdrop",
+          "note": "ambient screensaver, replaced by the launcher's Clock"
+        }
+      ]
+    },
+    {
+      "title": "Left enabled on purpose: features, not bloat. Uncomment any line to disable it too.",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Chromecast built-in",
+          "optional": true
+        },
+        {
+          "pkg": "com.sony.dtv.smartmediaapp",
+          "note": "Media Player, plays files from USB",
+          "optional": true
+        },
+        {
+          "pkg": "com.sony.dtv.osat.music",
+          "note": "plays music from USB",
+          "optional": true
+        },
+        {
+          "pkg": "screnmirroring.com",
+          "note": "Screen mirroring (Miracast)",
+          "optional": true
+        },
+        {
+          "pkg": "com.sony.dtv.networkapp.wifidirect",
+          "optional": true
+        },
+        {
+          "pkg": "com.sony.huey.dlna.module",
+          "note": "DLNA renderer",
+          "optional": true
+        },
+        {
+          "pkg": "com.sony.huey.dlna.renderersettings",
+          "optional": true
+        },
+        {
+          "pkg": "com.sonyericsson.dlna",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.tv.remote.service",
+          "note": "Android TV phone-app remote",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/sony-bravia-4k-gb/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

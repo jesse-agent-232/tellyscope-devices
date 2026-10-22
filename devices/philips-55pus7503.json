@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "philips-55pus7503",
+  "name": "Philips 55PUS7503/12",
+  "tested": {
+    "os": "Android TV 8.0.0",
+    "sdk": 26,
+    "build": "4718"
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Google feedback and first-run tutorial",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "Market Feedback Agent"
+        },
+        {
+          "pkg": "com.google.android.tvtutorials",
+          "note": "Android TV first-run tutorials"
+        }
+      ]
+    },
+    {
+      "title": "Philips promotional services and telemetry",
+      "packages": [
+        {
+          "pkg": "org.droidtv.demome",
+          "note": "Retail/store demonstration app"
+        },
+        {
+          "pkg": "org.droidtv.nettvrecommender",
+          "note": "Philips NetTV / Top Picks recommendation row"
+        },
+        {
+          "pkg": "org.droidtv.usagelogger",
+          "note": "Philips usage and device logging"
+        }
+      ]
+    },
+    {
+      "title": "Stock launcher and its recommendation engines, replaced by launcher/",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvlauncher"
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations",
+          "note": "Android TV recommendations/content rows"
+        },
+        {
+          "pkg": "com.google.android.leanbacklauncher.recommendations"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/philips-55pus7503/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

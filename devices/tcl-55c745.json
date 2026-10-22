@@ -1,0 +1,242 @@
+{
+  "schema": 1,
+  "id": "tcl-55c745",
+  "name": "TCL 55C745",
+  "tested": {
+    "os": "Android 14",
+    "sdk": 34,
+    "build": "as"
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "TCL promo, push messages, content rows and store demo",
+      "packages": [
+        {
+          "pkg": "com.tcl.messagebox",
+          "note": "TCL pushed messages and promos"
+        },
+        {
+          "pkg": "com.tcl.esticker",
+          "note": "retail-demo sticker"
+        },
+        {
+          "pkg": "com.tcl.exhibit",
+          "note": "store demo"
+        },
+        {
+          "pkg": "com.tcl.tv.tclhome_passive",
+          "note": "TCL content pushed to the home screen at boot"
+        },
+        {
+          "pkg": "com.tcl.waterfall.overseas",
+          "note": "TCL Channel / content waterfall (movie detail pages, web)"
+        },
+        {
+          "pkg": "com.tcl.channelplus",
+          "note": "TCL Live FAST channels (a Live TV input)"
+        },
+        {
+          "pkg": "com.tcl.usercenter",
+          "note": "TCL account"
+        },
+        {
+          "pkg": "com.tcl.guard",
+          "note": "TCL \"app manager\" / cleaner, device-use service at boot"
+        },
+        {
+          "pkg": "com.tcl.dashboard",
+          "note": "TCL Home panel and its promos"
+        },
+        {
+          "pkg": "com.esaba.downloader",
+          "note": "background APK/content downloader, boot-started"
+        }
+      ]
+    },
+    {
+      "title": "Telemetry, diagnostics and Android 14 ad / privacy services",
+      "packages": [
+        {
+          "pkg": "com.tcl.logkit",
+          "note": "log capture"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.android.tv.feedbackconsent"
+        },
+        {
+          "pkg": "com.android.adservices.api",
+          "note": "Privacy Sandbox"
+        },
+        {
+          "pkg": "com.android.ondevicepersonalization.services"
+        },
+        {
+          "pkg": "com.android.federatedcompute.services"
+        },
+        {
+          "pkg": "com.mediatek.backgrounddetection"
+        },
+        {
+          "pkg": "com.mediatek.network",
+          "note": "Mediatek network monitor leftover"
+        }
+      ]
+    },
+    {
+      "title": "Extras nobody asked for",
+      "packages": [
+        {
+          "pkg": "com.tcl.ocean.instructions",
+          "note": "on-TV manual"
+        },
+        {
+          "pkg": "com.tcl.repairguide",
+          "note": "self-diagnosis"
+        },
+        {
+          "pkg": "com.android.printspooler"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar"
+        },
+        {
+          "pkg": "com.google.android.onetimeinitializer"
+        },
+        {
+          "pkg": "com.tcl.hearaid",
+          "note": "hearing test, TCL wireless speakers"
+        },
+        {
+          "pkg": "com.tcl.t_solo",
+          "note": "Bluetooth \"listen alone\""
+        },
+        {
+          "pkg": "com.tcl.UpdatePeripheral",
+          "note": "TCL soundbar/peripheral firmware updater"
+        },
+        {
+          "pkg": "com.tcl.smartalexa",
+          "note": "Alexa"
+        },
+        {
+          "pkg": "com.tcl.ui_mediaCenter",
+          "note": "USB / DLNA media player, off by choice (nothing on USB)"
+        },
+        {
+          "pkg": "com.tcl.eva",
+          "note": "TCL voice assistant layer (Katniss handles voice without it)"
+        },
+        {
+          "pkg": "com.tcl.gamebar",
+          "note": "gaming overlay HUD"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.dreamx",
+          "note": "photo screensaver"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        }
+      ]
+    },
+    {
+      "title": "Duplicate webviews and browsers (com.google.android.webview is the active one)",
+      "packages": [
+        {
+          "pkg": "com.tcl.browser"
+        },
+        {
+          "pkg": "com.tcl.android.webview"
+        },
+        {
+          "pkg": "com.mediatek.support.webview"
+        }
+      ]
+    },
+    {
+      "title": "AirPlay, off by choice (Miracast and MagicConnect mirroring are kept, see header)",
+      "packages": [
+        {
+          "pkg": "com.tcl.airplay2"
+        },
+        {
+          "pkg": "com.mediatek.AirplayAPK"
+        },
+        {
+          "pkg": "com.mediatek.airplaydaemon"
+        }
+      ]
+    },
+    {
+      "title": "Stock Google apps, off by choice (a third-party YouTube client and Stremio are used instead)",
+      "packages": [
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google TV / Play Movies storefront"
+        },
+        {
+          "pkg": "com.google.android.youtube.tv"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        }
+      ]
+    },
+    {
+      "title": "Streaming and catch-up apps, off by choice (France.tv, 6play, TF1+ and Arte are kept, see header)",
+      "packages": [
+        {
+          "pkg": "com.netflix.ninja"
+        },
+        {
+          "pkg": "com.netflix.tokenmanager"
+        },
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom",
+          "note": "Prime Video"
+        },
+        {
+          "pkg": "tv.twitch.android.app"
+        },
+        {
+          "pkg": "air.ITVMobilePlayer",
+          "note": "ITVX (UK)"
+        },
+        {
+          "pkg": "com.channel5.my5",
+          "note": "My5 (UK)"
+        },
+        {
+          "pkg": "tv.wuaki.apptv",
+          "note": "Rakuten TV / Wuaki"
+        }
+      ]
+    },
+    {
+      "title": "Stock launcher, off once the new launcher is Home",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.tv.launcherx"
+        }
+      ]
+    },
+    {
+      "title": "Second Home claimant: off once the new launcher is Home (this set is on Ethernet, so no saved Wi-Fi to lose)",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tcl-55c745/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

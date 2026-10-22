@@ -1,0 +1,186 @@
+{
+  "schema": 1,
+  "id": "tcl-q7c-google-tv",
+  "name": "TCL Q7C QD-Mini LED",
+  "tested": {
+    "os": "Android 14",
+    "sdk": 34,
+    "build": "as"
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "TCL promo, push messages, content rows and store demo",
+      "packages": [
+        {
+          "pkg": "com.tcl.messagebox",
+          "note": "TCL pushed messages and promos"
+        },
+        {
+          "pkg": "com.tcl.esticker",
+          "note": "retail-demo sticker"
+        },
+        {
+          "pkg": "com.tcl.exhibit",
+          "note": "store demo"
+        },
+        {
+          "pkg": "com.tcl.tv.tclhome_passive",
+          "note": "TCL content pushed to the home screen at boot"
+        },
+        {
+          "pkg": "com.tcl.waterfall.overseas",
+          "note": "TCL Channel / content waterfall (movie detail pages, web)"
+        },
+        {
+          "pkg": "com.tcl.channelplus",
+          "note": "TCL Live FAST channels (a Live TV input)"
+        },
+        {
+          "pkg": "com.tcl.usercenter",
+          "note": "TCL account"
+        },
+        {
+          "pkg": "com.tcl.guard",
+          "note": "TCL \"app manager\" / cleaner, device-use service at boot"
+        }
+      ]
+    },
+    {
+      "title": "Telemetry, diagnostics and Android 14 ad / privacy services",
+      "packages": [
+        {
+          "pkg": "com.tcl.logkit",
+          "note": "log capture"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.android.tv.feedbackconsent"
+        },
+        {
+          "pkg": "com.android.adservices.api",
+          "note": "Privacy Sandbox"
+        },
+        {
+          "pkg": "com.android.ondevicepersonalization.services"
+        },
+        {
+          "pkg": "com.android.federatedcompute.services"
+        }
+      ]
+    },
+    {
+      "title": "Extras nobody asked for",
+      "packages": [
+        {
+          "pkg": "com.tcl.ocean.instructions",
+          "note": "on-TV manual"
+        },
+        {
+          "pkg": "com.tcl.repairguide",
+          "note": "self-diagnosis"
+        },
+        {
+          "pkg": "com.android.printspooler"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar"
+        },
+        {
+          "pkg": "com.google.android.onetimeinitializer"
+        },
+        {
+          "pkg": "com.tcl.hearaid",
+          "note": "hearing test, TCL wireless speakers"
+        },
+        {
+          "pkg": "com.tcl.t_solo",
+          "note": "Bluetooth \"listen alone\""
+        },
+        {
+          "pkg": "com.tcl.UpdatePeripheral",
+          "note": "TCL soundbar firmware updater"
+        },
+        {
+          "pkg": "com.tcl.smartalexa",
+          "note": "Alexa"
+        },
+        {
+          "pkg": "com.tcl.ui_mediaCenter",
+          "note": "USB / DLNA media player, off by choice (nothing on USB)"
+        }
+      ]
+    },
+    {
+      "title": "Off by choice: voice, AirPlay, mirroring (with katniss off, the remote's mic button opens the Play Store search)",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google Assistant / voice search"
+        },
+        {
+          "pkg": "com.tcl.airplay2"
+        },
+        {
+          "pkg": "com.mediatek.AirplayAPK"
+        },
+        {
+          "pkg": "com.mediatek.airplaydaemon"
+        },
+        {
+          "pkg": "com.tcl.miracast"
+        },
+        {
+          "pkg": "com.tcl.magiconnectfree",
+          "note": "T-Cast / MagiConnect"
+        }
+      ]
+    },
+    {
+      "title": "Streaming preloads, off by choice (apps the owner installed and removed are left out of this list)",
+      "packages": [
+        {
+          "pkg": "com.netflix.ninja"
+        },
+        {
+          "pkg": "com.netflix.tokenmanager"
+        },
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom",
+          "note": "Prime Video"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google TV / Play Movies storefront"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        }
+      ]
+    },
+    {
+      "title": "Stock launcher, off once the new launcher is Home",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.tv.launcherx"
+        }
+      ]
+    },
+    {
+      "title": "Second Home claimant: off once the new launcher is Home (this set is on Ethernet, so no saved Wi-Fi to lose)",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tcl-q7c-google-tv/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

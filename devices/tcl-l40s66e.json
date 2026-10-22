@@ -1,0 +1,181 @@
+{
+  "schema": 1,
+  "id": "tcl-l40s66e",
+  "name": "TCL L40S66E",
+  "tested": {
+    "os": "Android TV 11",
+    "sdk": 30,
+    "build": "AR2101"
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [
+    {
+      "pkg": "com.tcl.tv",
+      "note": "Live TV app, plays HDMI, source picker on the Input key"
+    },
+    {
+      "pkg": "com.tcl.tvinput",
+      "note": "TV input services for HDMI, AV and the tuner"
+    },
+    {
+      "pkg": "com.tcl.suspension",
+      "note": "Quick Panel / input menu; only hidden in the launcher config"
+    },
+    {
+      "pkg": "com.tcl.providers.config",
+      "note": "TCL config provider"
+    },
+    {
+      "pkg": "com.tcl.initsetup",
+      "note": "setup flow, Wi-Fi"
+    },
+    {
+      "pkg": "com.tcl.ttvs",
+      "note": "firmware updater, not text-to-speech"
+    },
+    {
+      "pkg": "com.tcl.rc.ota",
+      "note": "remote control firmware updates"
+    },
+    {
+      "pkg": "com.tcl.autopair",
+      "note": "Bluetooth remote auto-pairing"
+    },
+    {
+      "pkg": "com.tcl.tcl_bt_rcu_service",
+      "note": "Bluetooth remote"
+    },
+    {
+      "pkg": "com.tcl.keyhelp",
+      "note": "remote-key help/virtual keys"
+    },
+    {
+      "pkg": "com.tcl.system.server",
+      "note": "remote-key plumbing"
+    },
+    {
+      "pkg": "com.tcl.settings",
+      "note": "picture/sound settings"
+    },
+    {
+      "pkg": "com.tcl.inputmethod.international",
+      "note": "keyboard"
+    },
+    {
+      "pkg": "com.google.android.tv.remote.service",
+      "note": "phone remote / Android TV remote"
+    },
+    {
+      "pkg": "com.android.location.fused",
+      "note": "reported to boot-loop when disabled"
+    }
+  ],
+  "groups": [
+    {
+      "title": "Telemetry",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "android.autoinstalls.config.tcl.device",
+          "note": "partner-app auto installer config"
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "RLZ pings"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar"
+        }
+      ]
+    },
+    {
+      "title": "Content, ads and promos",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvrecommendations"
+        },
+        {
+          "pkg": "com.tcl.partnercustomizer",
+          "note": "TKey Channel and promo rows on the stock home"
+        },
+        {
+          "pkg": "com.tcl.waterfall.overseas",
+          "note": "TCL Channel web-video portal"
+        },
+        {
+          "pkg": "com.tcl.messagebox",
+          "note": "TCL messages/popups, carries a ttvs receiver; updater unaffected"
+        },
+        {
+          "pkg": "com.tcl.esticker",
+          "note": "store-demo sticker"
+        },
+        {
+          "pkg": "com.tcl.useragreement"
+        },
+        {
+          "pkg": "com.tcl.usercenter",
+          "note": "TCL account, re-enabled by the system at boot (idle)"
+        }
+      ]
+    },
+    {
+      "title": "Background services",
+      "packages": [
+        {
+          "pkg": "com.tcl.guard",
+          "note": "TGuard memory manager/cleaner (see quirks)"
+        },
+        {
+          "pkg": "com.google.android.apps.nbu.smartconnect.tv",
+          "note": "data-saver VPN"
+        },
+        {
+          "pkg": "com.tcl.t_solo",
+          "note": "TCL Bluetooth \"listen alone\""
+        },
+        {
+          "pkg": "com.google.android.tungsten.setupwraith",
+          "note": "first-run wizard, setup already done (check its Wi-Fi first)"
+        }
+      ]
+    },
+    {
+      "title": "Stock home, replaced by launcher/",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvlauncher",
+          "note": "launcher/build-and-install.sh disables the stock launcher itself, after Home has moved",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Already disabled at the factory; left as-is.",
+      "packages": [
+        {
+          "pkg": "au.com.stan.and",
+          "note": "Stan",
+          "optional": true
+        },
+        {
+          "pkg": "tv.wuaki.apptv",
+          "note": "Rakuten TV",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.smartalexa",
+          "note": "TCL Alexa bridge",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tcl-l40s66e/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

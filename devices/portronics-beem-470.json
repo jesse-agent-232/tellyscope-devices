@@ -1,0 +1,244 @@
+{
+  "schema": 1,
+  "id": "portronics-beem-470",
+  "name": "Portronics Beem 470 Smart LED Projector",
+  "tested": {
+    "os": "Android 11",
+    "sdk": 30,
+    "build": "string"
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "Stock HTC launcher and its infrastructure, replaced by launcher/",
+      "packages": [
+        {
+          "pkg": "com.htc.htclauncherhighenglishd08",
+          "note": "stock Home; re-enable if the custom launcher is removed"
+        },
+        {
+          "pkg": "com.htc.expandsdk",
+          "note": "service used by the HTC launcher/theme stack"
+        },
+        {
+          "pkg": "com.htc.screensaver",
+          "note": "stock screensaver; ClockDream replaces it"
+        },
+        {
+          "pkg": "com.htc.storeos",
+          "note": "HTC app store"
+        }
+      ]
+    },
+    {
+      "title": "HTC telemetry, factory test and updates",
+      "packages": [
+        {
+          "pkg": "com.htc.eventuploadservice",
+          "note": "usage/event uploader"
+        },
+        {
+          "pkg": "com.htc.htcotaupdate",
+          "note": "OTA; re-enable to check for firmware updates"
+        },
+        {
+          "pkg": "com.htc.hyk_test",
+          "note": "factory test app"
+        },
+        {
+          "pkg": "com.hysd.vafocus",
+          "note": "vendor projector control/voice helper; see note below"
+        }
+      ]
+    },
+    {
+      "title": "Allwinner/Softwinner vendor apps not used on this model",
+      "packages": [
+        {
+          "pkg": "com.softwinner.awlivetv",
+          "note": "Live TV tuner UI; this model has no tuner"
+        },
+        {
+          "pkg": "com.softwinner.TvdVideo",
+          "note": "stock USB video player; VLC covers playback"
+        },
+        {
+          "pkg": "com.softwinner.TvdFileManager",
+          "note": "stock file manager"
+        },
+        {
+          "pkg": "com.softwinner.ImageParser",
+          "note": "stock image viewer"
+        },
+        {
+          "pkg": "com.softwinner.awlogsettings",
+          "note": "log-capture settings"
+        },
+        {
+          "pkg": "com.softwinner.screenshot",
+          "note": "Quick Settings screenshot tile"
+        },
+        {
+          "pkg": "com.softwinner.settingsassist",
+          "note": "settings OTA activity; re-enable with the OTA packages"
+        },
+        {
+          "pkg": "com.softwinner.settingssetup",
+          "note": "provisioning receiver; re-enable before a factory reset"
+        },
+        {
+          "pkg": "com.softwinner.provision",
+          "note": "provisioning app; re-enable before a factory reset"
+        },
+        {
+          "pkg": "com.softwinner.theme.color",
+          "note": "Allwinner theme overlay"
+        },
+        {
+          "pkg": "com.softwinner.theme.icon",
+          "note": "Allwinner theme overlay"
+        },
+        {
+          "pkg": "com.softwinner.update",
+          "note": "Allwinner OTA; re-enable to check for firmware updates"
+        },
+        {
+          "pkg": "android.rockchip.update.service",
+          "note": "Rockchip updater left in this Allwinner image"
+        }
+      ]
+    },
+    {
+      "title": "Vendor accessibility helper, separate from the NFC stack (com.android.nfc)",
+      "packages": [
+        {
+          "pkg": "com.android.nfx",
+          "note": "vendor NfxAccessibilityService, not a typo for com.android.nfc"
+        }
+      ]
+    },
+    {
+      "title": "Stock Google apps replaced here",
+      "packages": [
+        {
+          "pkg": "com.google.android.youtube.tv",
+          "note": "replaced by SmartTube"
+        },
+        {
+          "pkg": "com.google.android.apps.searchlite.overlay"
+        },
+        {
+          "pkg": "org.chromium.webview_shell",
+          "note": "WebView shell; the WebView provider stays installed"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded office suite",
+      "packages": [
+        {
+          "pkg": "com.mobisystems.office"
+        }
+      ]
+    },
+    {
+      "title": "AOSP apps and services with no use on a 1080p projector",
+      "packages": [
+        {
+          "pkg": "com.android.music"
+        },
+        {
+          "pkg": "com.android.musicfx"
+        },
+        {
+          "pkg": "com.android.dreams.basic"
+        },
+        {
+          "pkg": "com.android.wallpaperbackup"
+        },
+        {
+          "pkg": "com.android.wallpapercropper"
+        },
+        {
+          "pkg": "com.android.printspooler"
+        },
+        {
+          "pkg": "com.android.printservice.recommendation"
+        },
+        {
+          "pkg": "com.android.bips"
+        },
+        {
+          "pkg": "com.android.htmlviewer"
+        },
+        {
+          "pkg": "com.android.egg"
+        },
+        {
+          "pkg": "com.android.soundpicker"
+        },
+        {
+          "pkg": "com.android.providers.userdictionary"
+        },
+        {
+          "pkg": "com.android.providers.blockednumber"
+        },
+        {
+          "pkg": "com.android.cellbroadcastreceiver"
+        },
+        {
+          "pkg": "com.android.cellbroadcastservice"
+        },
+        {
+          "pkg": "com.android.nfc"
+        },
+        {
+          "pkg": "com.android.se"
+        },
+        {
+          "pkg": "com.android.bluetoothmidiservice"
+        },
+        {
+          "pkg": "com.android.hotspot2.osulogin"
+        },
+        {
+          "pkg": "com.android.pacprocessor"
+        },
+        {
+          "pkg": "com.android.proxyhandler"
+        },
+        {
+          "pkg": "com.android.localtransport"
+        },
+        {
+          "pkg": "com.android.backupconfirm"
+        },
+        {
+          "pkg": "com.android.sharedstoragebackup"
+        },
+        {
+          "pkg": "com.android.managedprovisioning"
+        },
+        {
+          "pkg": "com.android.onetimeinitializer"
+        },
+        {
+          "pkg": "com.android.dynsystem",
+          "note": "dynamic system updates, not used"
+        },
+        {
+          "pkg": "com.android.cts.ctsshim"
+        },
+        {
+          "pkg": "com.android.cts.priv.ctsshim"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/portronics-beem-470/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

@@ -1,0 +1,63 @@
+name: Sync from cleanyourtv
+
+# Daily: rebuild devices/ from cleanyourtv's main and open (or refresh) one pull request.
+# Nothing reaches apps until a maintainer merges it.
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency: sync
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/checkout@v7
+        with:
+          repository: Gathin23/cleanyourtv
+          path: upstream
+          persist-credentials: false
+
+      - name: Build
+        run: |
+          old=$(cut -d' ' -f2 upstream.txt)
+          echo "OLD=$old" >> "$GITHUB_ENV"
+          python3 tools/build.py sync upstream
+          python3 tools/build.py check
+
+      - name: Open or refresh the sync pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Already in step with cleanyourtv."
+            exit 0
+          fi
+          new=$(cut -d' ' -f2 upstream.txt)
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -C sync/cleanyourtv
+          git commit -q -m "Sync cleanyourtv ${new:0:12}"
+          git push -q --force origin sync/cleanyourtv
+          {
+            echo "Rebuilt \`devices/\` from cleanyourtv [\`${OLD:0:12}...${new:0:12}\`](https://github.com/Gathin23/cleanyourtv/compare/$OLD...$new)."
+            echo
+            echo "Merging publishes it to every app. Review the upstream diff first, and check that any"
+            echo "device with a \`match/\` rule still describes the same TV."
+            echo
+            echo '```'
+            git diff --stat HEAD~1 -- devices index.json | tail -40
+            echo '```'
+          } > body.md
+          if [ "$(gh pr view sync/cleanyourtv --json state -q .state 2>/dev/null)" = OPEN ]; then
+            gh pr edit sync/cleanyourtv --body-file body.md
+          else
+            gh pr create --base main --head sync/cleanyourtv --title "Sync from cleanyourtv" --body-file body.md
+          fi

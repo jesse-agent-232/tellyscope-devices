@@ -1,0 +1,113 @@
+{
+  "schema": 1,
+  "id": "skyworth-swtv-24na-4k-nf",
+  "name": "Skyworth SWTV-24NA-4K NF",
+  "tested": {
+    "os": "Google TV 14",
+    "sdk": 34,
+    "build": "UKN6.260116.056"
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Skyworth telemetry and trackers",
+      "packages": [
+        {
+          "pkg": "com.smartdevice.recordactivation",
+          "note": "records first activation"
+        },
+        {
+          "pkg": "com.smartdevice.aftersale",
+          "note": "\"after-sale\" service: boot + network receivers, can install APKs"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.android.tv.feedbackconsent"
+        }
+      ]
+    },
+    {
+      "title": "Android ad and personalisation services",
+      "packages": [
+        {
+          "pkg": "com.android.adservices.api"
+        },
+        {
+          "pkg": "com.android.ondevicepersonalization.services"
+        },
+        {
+          "pkg": "com.android.federatedcompute.services"
+        }
+      ]
+    },
+    {
+      "title": "Skyworth content and regional broadcast extras",
+      "packages": [
+        {
+          "pkg": "com.smartdevice.recommendation",
+          "note": "Coocaa recommendation rows; bundles Sensors Data analytics"
+        },
+        {
+          "pkg": "com.smartdevice.leanbacklauncher.customizer",
+          "note": "partner config that injects rows into the home screen"
+        },
+        {
+          "pkg": "tv.mopa.ginga",
+          "note": "Brazilian Ginga interactive TV, unused with US ATSC"
+        },
+        {
+          "pkg": "org.obs.mhegservice",
+          "note": "UK MHEG interactive TV, unused with US ATSC"
+        }
+      ]
+    },
+    {
+      "title": "Not needed on a TV",
+      "packages": [
+        {
+          "pkg": "com.android.healthconnect.controller"
+        },
+        {
+          "pkg": "com.android.health.connect.backuprestore"
+        },
+        {
+          "pkg": "com.Smartdevice.emanual",
+          "note": "on-screen manual"
+        }
+      ]
+    },
+    {
+      "title": "Off by owner's choice",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Assistant / Gemini"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.dreamx",
+          "note": "ambient screensaver (the screensaver was also turned off)"
+        }
+      ]
+    },
+    {
+      "title": "Stock home. Disable only after the new launcher is installed and set as home.",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith",
+          "note": "its RecoveryActivity otherwise takes over Home"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.launcherx"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/skyworth-swtv-24na-4k-nf/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

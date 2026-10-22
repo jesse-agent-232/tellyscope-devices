@@ -1,0 +1,207 @@
+{
+  "schema": 1,
+  "id": "sony-kd-43x80l",
+  "name": "Sony BRAVIA KD-43X80L",
+  "tested": {
+    "os": "Android 12",
+    "sdk": 31,
+    "build": "BRAVIA_VH22_M_EU-user"
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "ACR viewing tracker and telemetry",
+      "packages": [
+        {
+          "pkg": "tv.samba.ssm",
+          "note": "Samba TV fingerprints what is on screen (ACR)"
+        },
+        {
+          "pkg": "tv.samba.ssm.ui",
+          "note": "Samba TV UI"
+        },
+        {
+          "pkg": "com.qterics.da.product",
+          "note": "Qterics device agent"
+        },
+        {
+          "pkg": "com.sony.dtv.da.service",
+          "note": "Sony device agent / remote support"
+        },
+        {
+          "pkg": "com.sonyericsson.idd.agent",
+          "note": "Sony usage data / telemetry"
+        },
+        {
+          "pkg": "com.sony.dtv.sonybugreportsys",
+          "note": "Sony bug report uploader"
+        },
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "Google feedback client"
+        },
+        {
+          "pkg": "com.sony.dtv.usercontext",
+          "note": "User viewing context for recommendations"
+        }
+      ]
+    },
+    {
+      "title": "Sony content, ads and recommendations",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.promos",
+          "note": "My BRAVIA promos"
+        },
+        {
+          "pkg": "com.sony.dtv.sonyselect",
+          "note": "Sony Select app store / promo tile"
+        },
+        {
+          "pkg": "com.sony.dtv.sonytab",
+          "note": "Sony tab on Google TV home"
+        }
+      ]
+    },
+    {
+      "title": "Retail demo / shop mode and help",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.customersupport",
+          "note": "Help tile"
+        },
+        {
+          "pkg": "com.sony.dtv.smarthelp",
+          "note": "Smart Help"
+        },
+        {
+          "pkg": "com.sony.dtv.demosupport",
+          "note": "Retail demo support"
+        },
+        {
+          "pkg": "com.sony.dtv.demosystemsupport",
+          "note": "Retail demo system support"
+        },
+        {
+          "pkg": "com.sony.dtv.multiscreendemo",
+          "note": "Retail multi-screen demo"
+        }
+      ]
+    },
+    {
+      "title": "Extras and hardware services",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.gestureapp",
+          "note": "Gesture control app (BRAVIA CAM)"
+        },
+        {
+          "pkg": "com.vewd.core.integration.dia",
+          "note": "Vewd browser / HbbTV DIA service"
+        },
+        {
+          "pkg": "com.vewd.core.service",
+          "note": "Vewd core service"
+        },
+        {
+          "pkg": "com.uei.quicksetsdk.sony",
+          "note": "QuickSet remote setup SDK"
+        }
+      ]
+    },
+    {
+      "title": "Sony IoT and ambient services",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.seeds.iot",
+          "note": "Sony SEEDS IoT service"
+        },
+        {
+          "pkg": "com.sony.dtv.seeds.iot.remotestart",
+          "note": "Sony SEEDS IoT remote start"
+        },
+        {
+          "pkg": "com.sony.dtv.seeds.auth",
+          "note": "Sony SEEDS authentication"
+        }
+      ]
+    },
+    {
+      "title": "Hotel / professional B2B mode (unused in a home)",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.b2b.prosettings",
+          "note": "Pro mode settings"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.hotelmode",
+          "note": "Hotel mode service"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.adminpassword",
+          "note": "B2B admin password"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.deviceadminsettings",
+          "note": "B2B device admin settings"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.importexport",
+          "note": "B2B settings import/export"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.rs232csupport",
+          "note": "RS-232C serial control"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps and disused services",
+      "packages": [
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google TV / Play Movies & TV"
+        },
+        {
+          "pkg": "com.google.android.play.games",
+          "note": "Google Play Games"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic",
+          "note": "YouTube Music"
+        }
+      ]
+    },
+    {
+      "title": "Voice assistant (removes remote mic search; comment out these three to keep it)",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google Assistant / voice search"
+        },
+        {
+          "pkg": "com.sony.dtv.voicesearch",
+          "note": "Sony voice search component"
+        },
+        {
+          "pkg": "com.sony.dtv.assistantadapter",
+          "note": "Sony Assistant adapter"
+        }
+      ]
+    },
+    {
+      "title": "Google TV setup wizard: claims HOME once stock launcher is disabled",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/sony-kd-43x80l/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "schema": 1,
+  "id": "xiaomi-mi-box-s",
+  "name": "Xiaomi Mi Box S",
+  "tested": {
+    "os": "Android TV 9",
+    "sdk": 28,
+    "build": null
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Xiaomi + Google telemetry and ad tracking",
+      "packages": [
+        {
+          "pkg": "com.miui.tv.analytics",
+          "note": "Mi analytics: reads logs and app usage"
+        },
+        {
+          "pkg": "tv.alphonso.alphonso_eula",
+          "note": "Alphonso ad tracking, reads app usage stats"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.tv.bugreportsender"
+        }
+      ]
+    },
+    {
+      "title": "PatchWall, content rows, promos, auto-installs",
+      "packages": [
+        {
+          "pkg": "com.mitv.tvhome.atv",
+          "note": "PatchWall"
+        },
+        {
+          "pkg": "com.mitv.tvhome.michannel",
+          "note": "Mi Channel rows on the home screen"
+        },
+        {
+          "pkg": "com.xm.webcontent",
+          "note": "Xiaomi web promos"
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations"
+        },
+        {
+          "pkg": "android.autoinstalls.config.xioami.mibox3",
+          "note": "Play auto-install of partner apps (sic, \"xioami\")"
+        }
+      ]
+    },
+    {
+      "title": "Xiaomi background services",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.mitv.updateservice",
+          "note": "firmware and PatchWall updates, installs apps; re-enable to check for an update"
+        },
+        {
+          "pkg": "com.mitv.download.service",
+          "note": "its download helper"
+        }
+      ]
+    },
+    {
+      "title": "Personal choice: voice assistant (the mic button stops working)",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss"
+        },
+        {
+          "pkg": "com.google.android.speech.pumpkin"
+        }
+      ]
+    },
+    {
+      "title": "Personal choice: casting, mirroring and the phone remote",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Chromecast built-in"
+        },
+        {
+          "pkg": "com.mitv.milinkservice",
+          "note": "Mi cast (MiLink)"
+        },
+        {
+          "pkg": "com.mitv.videoplayer",
+          "note": "Mi video player, used by MiLink; VLC opens video files instead"
+        },
+        {
+          "pkg": "com.google.android.tv.remote.service",
+          "note": "Google TV / Android TV Remote phone app"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps",
+      "packages": [
+        {
+          "pkg": "com.google.android.tv",
+          "note": "Live Channels"
+        },
+        {
+          "pkg": "com.google.android.marvin.talkback",
+          "note": "screen reader (was off)"
+        },
+        {
+          "pkg": "com.android.printspooler"
+        }
+      ]
+    },
+    {
+      "title": "Google Ambient photo screensaver, replaced by the launcher's Clock. Switch the screensaver first",
+      "packages": [
+        {
+          "pkg": "com.google.android.backdrop"
+        }
+      ]
+    },
+    {
+      "title": "Already disabled on this unit before we started; uncomment the ones yours still has enabled",
+      "packages": [
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom",
+          "note": "Prime Video",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Play Movies & TV",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.play.games",
+          "optional": true
+        },
+        {
+          "pkg": "com.android.camera2",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.music",
+          "note": "Google Play Music, service closed in 2020 (second unit only)",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Stock Google TV launcher, replaced by launcher/",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvlauncher"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/xiaomi-mi-box-s/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

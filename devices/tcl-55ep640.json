@@ -1,0 +1,197 @@
+{
+  "schema": 1,
+  "id": "tcl-55ep640",
+  "name": "TCL 55EP640",
+  "tested": {
+    "os": "Android TV 11",
+    "sdk": 30,
+    "build": "PPR1.180610.011"
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [
+    {
+      "pkg": "com.tcl.keycustomfunctionservice",
+      "note": "remote key handling, fallback home"
+    },
+    {
+      "pkg": "com.tcl.inputmethod.international",
+      "note": "default keyboard"
+    },
+    {
+      "pkg": "com.tcl.xian.StartandroidService",
+      "note": "device authentication"
+    },
+    {
+      "pkg": "com.tcl.partnercustomizer",
+      "note": "carries the remote's TKey activity"
+    },
+    {
+      "pkg": "com.tvos",
+      "note": "tvos framework resources"
+    },
+    {
+      "pkg": "com.google.android.tungsten.setupwraith",
+      "note": "owns a saved Wi-Fi network on this unit"
+    },
+    {
+      "pkg": "com.google.android.apps.mediashell",
+      "note": "Chromecast (kept by choice)"
+    },
+    {
+      "pkg": "com.tcl.versionUpdateApp",
+      "note": "TCL OTA updater (kept by choice)"
+    },
+    {
+      "pkg": "com.google.android.tv.remote.service",
+      "note": "Google TV phone-app remote (kept by choice;"
+    }
+  ],
+  "groups": [
+    {
+      "title": "1. Telemetry, analytics and attribution",
+      "packages": [
+        {
+          "pkg": "com.tcl.bi",
+          "note": "TCL BI analytics"
+        },
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "\"send feedback\""
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations",
+          "note": "home-screen recommendation rows"
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "partner-app attribution"
+        },
+        {
+          "pkg": "com.google.android.onetimeinitializer",
+          "note": "one-time setup leftovers"
+        },
+        {
+          "pkg": "android.autoinstalls.config.tcl.device",
+          "note": "partner-app auto installer"
+        }
+      ]
+    },
+    {
+      "title": "2. TCL content, promos and background extras",
+      "packages": [
+        {
+          "pkg": "com.tcl.overseasappshow",
+          "note": "promo/app-show service; re-enables partner packages at boot"
+        },
+        {
+          "pkg": "com.tcl.tv.tclhome_master",
+          "note": "TCL's alternate home (StartUpActivity, message receivers)"
+        },
+        {
+          "pkg": "com.tcl.tv.tclhome_passive",
+          "note": "pushes TCL content onto the home screen at boot"
+        },
+        {
+          "pkg": "com.tcl.waterfall.overseas",
+          "note": "\"TCL Channel\" web content feed"
+        },
+        {
+          "pkg": "com.tcl.messagebox",
+          "note": "pushed messages and promos"
+        },
+        {
+          "pkg": "com.tcl.esticker",
+          "note": "retail demo energy-label sticker"
+        },
+        {
+          "pkg": "com.tcl.guard",
+          "note": "TGuard cleaner / device-use tracking"
+        },
+        {
+          "pkg": "com.tcl.usercenter",
+          "note": "TCL account"
+        },
+        {
+          "pkg": "com.tcl.dashboard",
+          "note": "TCL IoT dashboard, giftbox and MessageBox promos"
+        },
+        {
+          "pkg": "com.tcl.copydatatotv",
+          "note": "phone-to-TV data migration"
+        },
+        {
+          "pkg": "com.tcl.useragreement",
+          "note": "end-user agreement screens"
+        },
+        {
+          "pkg": "com.tcl.ui_mediaCenter",
+          "note": "USB media centre (only an LED strip on USB)"
+        }
+      ]
+    },
+    {
+      "title": "3. Voice, off by choice. The mic button goes dead. Comment out to keep the assistant.",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google Assistant / voice search"
+        },
+        {
+          "pkg": "com.google.android.tv.assistant",
+          "note": "Assistant LED service"
+        },
+        {
+          "pkg": "com.tcl.assistant",
+          "note": "TCL voice service"
+        },
+        {
+          "pkg": "com.tcl.micmanager",
+          "note": "TCL microphone manager"
+        }
+      ]
+    },
+    {
+      "title": "4. Apps, off by choice. Reinstall or re-enable as wanted.",
+      "packages": [
+        {
+          "pkg": "com.google.android.youtube.tvmusic",
+          "note": "YouTube Music"
+        },
+        {
+          "pkg": "com.spotify.tv.android",
+          "note": "Spotify"
+        },
+        {
+          "pkg": "tunein.player",
+          "note": "TuneIn"
+        },
+        {
+          "pkg": "com.hitv.explore",
+          "note": "\"File Manager\" (HiTV, Play-installed 2020)"
+        },
+        {
+          "pkg": "com.android.printspooler",
+          "note": "printing service"
+        },
+        {
+          "pkg": "com.android.dreams.basic",
+          "note": "stock \"colors\" screensaver"
+        }
+      ]
+    },
+    {
+      "title": "5. After the launcher is installed",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvlauncher",
+          "note": "stock launcher, replaced by launcher/"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tcl-55ep640/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

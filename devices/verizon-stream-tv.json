@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "verizon-stream-tv",
+  "name": "Verizon Stream TV",
+  "tested": {
+    "os": "Android 12",
+    "sdk": 31,
+    "build": "SC.v6.6.3-20250328"
+  },
+  "launcher": "com.verizon.tv.launcher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Telemetry",
+      "packages": [
+        {
+          "pkg": "com.verizon.tv.ams",
+          "note": "Verizon app/screen/power event recorder + Crashlytics"
+        }
+      ]
+    },
+    {
+      "title": "Off by owner's choice",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Assistant; the mic button does nothing without it"
+        },
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Chromecast built-in"
+        },
+        {
+          "pkg": "com.google.android.backdrop",
+          "note": "ambient screensaver"
+        },
+        {
+          "pkg": "com.google.android.marvin.talkback",
+          "note": "TalkBack"
+        },
+        {
+          "pkg": "com.google.android.tts",
+          "note": "text-to-speech"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Play Movies & TV"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic",
+          "note": "YouTube Music"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvunplugged",
+          "note": "YouTube TV"
+        },
+        {
+          "pkg": "com.hbo.hbonow",
+          "note": "HBO"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps",
+      "packages": [
+        {
+          "pkg": "com.android.gallery3d",
+          "note": "Gallery"
+        },
+        {
+          "pkg": "com.google.android.tv.setup.customizationsample"
+        }
+      ]
+    },
+    {
+      "title": "Stock home. Disable only after the new launcher is installed and set as home.",
+      "packages": [
+        {
+          "pkg": "com.verizon.tv.launcher",
+          "note": "Verizon home with sponsored Trending/Store tabs; also hosts the remote pairing screen"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/verizon-stream-tv/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

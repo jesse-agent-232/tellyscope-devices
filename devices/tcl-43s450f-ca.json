@@ -1,0 +1,238 @@
+{
+  "schema": 1,
+  "id": "tcl-43s450f-ca",
+  "name": "TCL 43S450F-CA",
+  "tested": {
+    "os": "Fire OS 8.1.8.5",
+    "sdk": 30,
+    "build": null
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "Amazon telemetry, metrics, logs, usage reporting",
+      "packages": [
+        {
+          "pkg": "com.amazon.client.metrics.api"
+        },
+        {
+          "pkg": "com.amazon.neo.minerva"
+        },
+        {
+          "pkg": "com.amazon.neo.minerva.logcat"
+        },
+        {
+          "pkg": "com.amazon.wirelessmetrics.service"
+        },
+        {
+          "pkg": "com.amazon.perfcollection"
+        },
+        {
+          "pkg": "com.amazon.perfc"
+        },
+        {
+          "pkg": "com.amazon.dp.logger"
+        },
+        {
+          "pkg": "com.amazon.ceviche",
+          "note": "data collection pipelines"
+        },
+        {
+          "pkg": "com.amazon.tv.developer.dataservice",
+          "note": "content personalization data for third-party apps"
+        },
+        {
+          "pkg": "com.amazon.device.telemetry.emitter"
+        },
+        {
+          "pkg": "com.amazon.livedeviceservice"
+        },
+        {
+          "pkg": "com.amazon.privacypassservice"
+        },
+        {
+          "pkg": "com.amazon.wifilocker",
+          "note": "uploads Wi-Fi passwords to Amazon"
+        },
+        {
+          "pkg": "com.amazon.tv.acr",
+          "note": "Automatic Content Recognition (what is on screen, HDMI included)"
+        },
+        {
+          "pkg": "com.amazon.audiolatencymeasurer"
+        }
+      ]
+    },
+    {
+      "title": "Ads, sponsored rows, recommendations, promos, shopping",
+      "packages": [
+        {
+          "pkg": "com.amazon.kso.blackbird",
+          "note": "launcher ad sync / bidding"
+        },
+        {
+          "pkg": "com.amazon.sneakpeek",
+          "note": "sponsored \"Sneak Peek\" autoplay previews"
+        },
+        {
+          "pkg": "com.amazon.hybridadidservice",
+          "note": "advertising ID"
+        },
+        {
+          "pkg": "com.amazon.media.recommendations",
+          "note": "sponsored and recommendation rows"
+        },
+        {
+          "pkg": "com.amazon.tv.easyupgrade",
+          "note": "\"upgrade your Fire TV\" promos"
+        },
+        {
+          "pkg": "com.amazon.shoptv.client",
+          "note": "Shop on Fire TV"
+        },
+        {
+          "pkg": "com.amazon.hedwig",
+          "note": "Fire TV Channels"
+        },
+        {
+          "pkg": "com.amazon.tv.democontent.provider",
+          "note": "retail demo content"
+        },
+        {
+          "pkg": "com.amazon.systemnotices"
+        },
+        {
+          "pkg": "com.amazon.tv.releasenotes",
+          "note": "\"what's new\" popups"
+        },
+        {
+          "pkg": "com.amazon.uxnotification",
+          "note": "UX notification popups"
+        },
+        {
+          "pkg": "com.amazon.tv.earlyaccess",
+          "note": "early-access / preview program stub"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps and tutorials (owner's choice)",
+      "packages": [
+        {
+          "pkg": "com.amazon.bueller.photos",
+          "note": "Amazon Photos"
+        },
+        {
+          "pkg": "com.amazon.tahoe",
+          "note": "Amazon Kids"
+        },
+        {
+          "pkg": "com.amazon.minitv.android.app",
+          "note": "miniTV stub"
+        },
+        {
+          "pkg": "com.amazon.cloud9",
+          "note": "Silk browser"
+        },
+        {
+          "pkg": "com.amazon.tv.website_launcher",
+          "note": "opens websites in Silk"
+        },
+        {
+          "pkg": "com.amazon.naatyam"
+        },
+        {
+          "pkg": "com.amazon.tmm.tutorial",
+          "note": "remote tutorial"
+        },
+        {
+          "pkg": "com.amazon.storm.lightning.tutorial",
+          "note": "remote app tutorial"
+        },
+        {
+          "pkg": "ca.bellmedia.cravetv",
+          "note": "Crave"
+        },
+        {
+          "pkg": "com.cbs.ca",
+          "note": "Paramount+ / CBS"
+        },
+        {
+          "pkg": "com.wbd.stream",
+          "note": "Max"
+        },
+        {
+          "pkg": "com.apple.atve.amazon.appletv",
+          "note": "Apple TV app (AirPlay is separate and stays)"
+        }
+      ]
+    },
+    {
+      "title": "Other Amazon devices, smart home, screensaver (owner's choice)",
+      "packages": [
+        {
+          "pkg": "com.amazon.whisperjoin.middleware.v2.np",
+          "note": "frustration-free setup of other Amazon devices"
+        },
+        {
+          "pkg": "com.amazon.tv.ffsprovisioneeclient"
+        },
+        {
+          "pkg": "com.amazon.ods.kindleconnect",
+          "note": "\"show on Fire TV\" from Echo / Fire tablet"
+        },
+        {
+          "pkg": "com.amazon.smarthomemapviewapp",
+          "note": "smart home dashboard"
+        },
+        {
+          "pkg": "com.amazon.tv.mattercohost",
+          "note": "Matter smart-home controller (com.amazon.tv.matter stays for casting)"
+        },
+        {
+          "pkg": "com.amazon.ftv.screensaver",
+          "note": "Amazon Photos screensaver"
+        }
+      ]
+    },
+    {
+      "title": "Protected on this build: pm disable-user answered \"Cannot disable a protected package\" for all seven, so they stay on",
+      "packages": [
+        {
+          "pkg": "com.amazon.device.metrics",
+          "optional": true
+        },
+        {
+          "pkg": "com.amazon.device.logmanager",
+          "optional": true
+        },
+        {
+          "pkg": "com.amazon.device.crashmanager",
+          "optional": true
+        },
+        {
+          "pkg": "com.amazon.diode",
+          "optional": true
+        },
+        {
+          "pkg": "com.fireos.usagestats.proxy",
+          "optional": true
+        },
+        {
+          "pkg": "com.amazon.ftvads.deeplinking",
+          "optional": true
+        },
+        {
+          "pkg": "com.amazon.tv.csapp",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tcl-43s450f-ca/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

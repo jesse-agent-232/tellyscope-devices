@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "id": "byintek-u4",
+  "name": "BYINTEK Love U4",
+  "tested": {
+    "os": "Android 9",
+    "sdk": null,
+    "build": "2025-09"
+  },
+  "launcher": "com.zeasn.whale.saas",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Zeasn ads and store",
+      "packages": [
+        {
+          "pkg": "com.zeasn.deviceportal.asdprovider.skyworth_hisi352",
+          "note": "ad/portal service for the Whale launcher"
+        },
+        {
+          "pkg": "zeasn.open.technical.tv.store",
+          "note": "Zeasn app store; Google Play stays"
+        }
+      ]
+    },
+    {
+      "title": "Preloads",
+      "packages": [
+        {
+          "pkg": "cn.wps.moffice_i18n_TV",
+          "note": "WPS Office"
+        },
+        {
+          "pkg": "ru.vk.store.tv"
+        }
+      ]
+    },
+    {
+      "title": "Phone and setup leftovers",
+      "packages": [
+        {
+          "pkg": "com.google.android.partnersetup"
+        },
+        {
+          "pkg": "com.google.android.carriersetup"
+        },
+        {
+          "pkg": "com.android.simappdialog",
+          "note": "SIM toolkit"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.contacts"
+        },
+        {
+          "pkg": "com.google.android.apps.pixelmigrate"
+        },
+        {
+          "pkg": "com.android.wallpaperbackup"
+        },
+        {
+          "pkg": "com.android.sharedstoragebackup"
+        }
+      ]
+    },
+    {
+      "title": "Wired phone casting (USB); wireless AirPlay/Chromecast/Miracast stay",
+      "packages": [
+        {
+          "pkg": "com.toofifi.lineserver"
+        },
+        {
+          "pkg": "com.mphotool.usbcastserver"
+        }
+      ]
+    },
+    {
+      "title": "Google extras",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.android.bips",
+          "note": "default print service"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/byintek-u4/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "schema": 1,
+  "id": "thomson-t32rtl6000",
+  "name": "Thomson T32RTL6000",
+  "tested": {
+    "os": "Android TV 9",
+    "sdk": 28,
+    "build": "337"
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "--- Telemetry, analytics, recommendation rows ---",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvrecommendations"
+        },
+        {
+          "pkg": "com.google.android.leanbacklauncher.recommendations"
+        },
+        {
+          "pkg": "com.google.android.apps.nbu.smartconnect.tv"
+        },
+        {
+          "pkg": "com.apps.function.gdpr"
+        },
+        {
+          "pkg": "com.realtek.leanbacklauncher.partnercustomizer"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.tv.bugreportsender"
+        }
+      ]
+    },
+    {
+      "title": "--- Content/promo rows and partner auto-installs ---",
+      "packages": [
+        {
+          "pkg": "com.apps.channels",
+          "note": "the SCBC \"S-Channels\" content app"
+        },
+        {
+          "pkg": "android.autoinstalls.config.scbc.device",
+          "note": "partner auto-install config for SCBC devices"
+        },
+        {
+          "pkg": "com.android.printspooler"
+        }
+      ]
+    },
+    {
+      "title": "--- Google Assistant (the mic button on the remote goes dead) ---",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss"
+        }
+      ]
+    },
+    {
+      "title": "--- Preinstalled service and stores ---",
+      "packages": [
+        {
+          "pkg": "com.vewd.core.service"
+        }
+      ]
+    },
+    {
+      "title": "--- Streaming apps off by choice (adjust to taste) ---",
+      "packages": [
+        {
+          "pkg": "com.netflix.ninja"
+        },
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom"
+        },
+        {
+          "pkg": "tv.okko.androidtv"
+        },
+        {
+          "pkg": "com.google.android.videos"
+        },
+        {
+          "pkg": "mobi.zona"
+        },
+        {
+          "pkg": "de.benzac.msx"
+        },
+        {
+          "pkg": "limehd.ru.lise"
+        },
+        {
+          "pkg": "limehd.ru.lite"
+        },
+        {
+          "pkg": "limehd.ru.ctv"
+        },
+        {
+          "pkg": "limehd.ru.ctvshka"
+        }
+      ]
+    },
+    {
+      "title": "--- Google add-ons ---",
+      "packages": [
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        }
+      ]
+    },
+    {
+      "title": "--- OEM leftovers (factory/demo/test utilities, com.apps.*) ---",
+      "packages": [
+        {
+          "pkg": "com.apps.esticker"
+        },
+        {
+          "pkg": "com.apps.factory.ui"
+        },
+        {
+          "pkg": "com.rtk.engmenu"
+        },
+        {
+          "pkg": "com.realtek.factorytools"
+        },
+        {
+          "pkg": "com.apps.clear"
+        },
+        {
+          "pkg": "com.apps.networkspeed"
+        },
+        {
+          "pkg": "com.apps.usbmediaplayer"
+        },
+        {
+          "pkg": "com.apps.wifihotspot"
+        }
+      ]
+    },
+    {
+      "title": "--- Firmware OTA (keeps an update from reinstalling the junk) ---",
+      "packages": [
+        {
+          "pkg": "com.apps.ota"
+        },
+        {
+          "pkg": "com.apps.authota"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/thomson-t32rtl6000/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

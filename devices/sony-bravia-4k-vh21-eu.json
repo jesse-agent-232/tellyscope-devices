@@ -1,0 +1,151 @@
+{
+  "schema": 1,
+  "id": "sony-bravia-4k-vh21-eu",
+  "name": "Sony BRAVIA 4K VH21",
+  "tested": {
+    "os": "Android 12",
+    "sdk": 31,
+    "build": "BRAVIA_VH21_EU-user"
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "ACR viewing tracker",
+      "packages": [
+        {
+          "pkg": "tv.samba.ssm",
+          "note": "Samba TV fingerprints what's on screen"
+        },
+        {
+          "pkg": "tv.samba.ssm.ui"
+        }
+      ]
+    },
+    {
+      "title": "telemetry and remote support",
+      "packages": [
+        {
+          "pkg": "com.sonyericsson.idd.agent",
+          "note": "Sony IDD usage-data agent"
+        },
+        {
+          "pkg": "com.sony.dtv.usercontext",
+          "note": "user context providers, boot receiver only"
+        },
+        {
+          "pkg": "com.qterics.da.product",
+          "note": "Qterics device agent"
+        },
+        {
+          "pkg": "com.sony.dtv.da.service",
+          "note": "remote-support session service"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        }
+      ]
+    },
+    {
+      "title": "Sony ads and recommendations",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.sonyselect",
+          "note": "Sony Select app recommendations"
+        }
+      ]
+    },
+    {
+      "title": "demo / shop mode",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.demosupport"
+        },
+        {
+          "pkg": "com.sony.dtv.demosystemsupport"
+        },
+        {
+          "pkg": "com.sony.dtv.multiscreendemo"
+        }
+      ]
+    },
+    {
+      "title": "voice assistant (off by choice; the remote's mic button stops working)",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss"
+        },
+        {
+          "pkg": "com.sony.dtv.voicesearch"
+        },
+        {
+          "pkg": "com.sony.dtv.assistantadapter"
+        }
+      ]
+    },
+    {
+      "title": "preloaded apps (off by choice)",
+      "packages": [
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google TV movies (loses access to purchases in it)"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.vewd.core.service",
+          "note": "Vewd (its integration package is already disabled at the factory)"
+        },
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom",
+          "note": "Prime Video"
+        }
+      ]
+    },
+    {
+      "title": "features not used (off by choice)",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.hbbtvplayer",
+          "note": "HbbTV / red button"
+        },
+        {
+          "pkg": "com.sonyericsson.dlna",
+          "note": "DLNA media server/renderer"
+        },
+        {
+          "pkg": "com.sony.huey.dlna.module"
+        },
+        {
+          "pkg": "com.sony.huey.dlna.renderersettings"
+        },
+        {
+          "pkg": "com.uei.quicksetsdk.sony",
+          "note": "UEI QuickSet: IR control of cable boxes/soundbars; HDMI-CEC unaffected"
+        },
+        {
+          "pkg": "com.sony.dtv.gestureapp",
+          "note": "BRAVIA CAM gestures (no camera attached)"
+        },
+        {
+          "pkg": "com.google.android.tts",
+          "note": "Google text-to-speech: TalkBack and read-aloud stop working"
+        }
+      ]
+    },
+    {
+      "title": "Google TV setup wizard: with launcherx disabled its RecoveryActivity takes Home. Re-enable before a",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/sony-bravia-4k-vh21-eu/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

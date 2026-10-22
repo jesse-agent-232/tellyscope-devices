@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "benq-gv32",
+  "name": "BenQ GV32 portable projector",
+  "tested": {
+    "os": "Google TV 14",
+    "sdk": 34,
+    "build": null
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Batch 1: telemetry, ads and partner plumbing",
+      "packages": [
+        {
+          "pkg": "com.android.adservices.api",
+          "note": "Android ad services (Topics, attribution)"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.android.tv.feedbackconsent"
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "Google partner attribution pings"
+        },
+        {
+          "pkg": "com.mstar.android.tv.disclaimercustomization",
+          "note": "setup-only disclaimer screen"
+        }
+      ]
+    },
+    {
+      "title": "Batch 2: preloaded / unused apps (owner's choice)",
+      "packages": [
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.instagram.airwave"
+        },
+        {
+          "pkg": "com.sdmc.implayer",
+          "note": "USB media player; asks for TV_INPUT_HARDWARE, see header",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Disabling setupwraith gives Home back but can break casting (Chromecast built-in); comment out its",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/benq-gv32/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

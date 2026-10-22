@@ -1,0 +1,191 @@
+{
+  "schema": 1,
+  "id": "philips-55oled707",
+  "name": "Philips 55OLED707/12",
+  "tested": {
+    "os": "Android TV 11",
+    "sdk": null,
+    "build": "21029"
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "TP Vision telemetry, as in 50PUS8517. Disable candeebug and gel together.",
+      "packages": [
+        {
+          "pkg": "org.droidtv.candeebug",
+          "note": "\"DAC\" analytics uploader"
+        },
+        {
+          "pkg": "org.droidtv.gel",
+          "note": "metrics collector that runs inside candeebug's process"
+        },
+        {
+          "pkg": "org.droidtv.usagelogger",
+          "note": "usage and device logging feeding the above"
+        }
+      ]
+    },
+    {
+      "title": "Philips content promos and the app gallery",
+      "packages": [
+        {
+          "pkg": "org.droidtv.nettvrecommender",
+          "note": "\"Top Picks\" content row"
+        },
+        {
+          "pkg": "org.droidtv.recommendation",
+          "note": "its backend; disable the row above first"
+        },
+        {
+          "pkg": "org.droidtv.nettv.market",
+          "note": "\"Smart TV Collection\" app storefront"
+        },
+        {
+          "pkg": "org.droidtv.nettvapps",
+          "note": "\"NetTvApps\", headless; holds TV_INSTALL_PACKAGES_SILENT and handles START_NETTV_VIRGINAPPS, i.e. the gallery's preload installer (read from its manifest, behaviour not traced)"
+        },
+        {
+          "pkg": "org.droidtv.nettvapp1814",
+          "note": "ARTE"
+        },
+        {
+          "pkg": "org.droidtv.nettvapp4546",
+          "note": "MEGOGO"
+        },
+        {
+          "pkg": "org.droidtv.nettvapp4932",
+          "note": "Free Games by PlayWorks"
+        },
+        {
+          "pkg": "org.droidtv.nettvapp5326",
+          "note": "Toon Goggles"
+        },
+        {
+          "pkg": "org.droidtv.nettvapp5512",
+          "note": "Fishing TV"
+        },
+        {
+          "pkg": "org.droidtv.nettvapp5527",
+          "note": "Flix Premiere"
+        },
+        {
+          "pkg": "org.droidtv.nettvapp20004410",
+          "note": "Couchplay Games"
+        },
+        {
+          "pkg": "org.droidtv.android.fitness",
+          "note": "Fitness Buddy"
+        }
+      ]
+    },
+    {
+      "title": "Philips features this owner does not use. Check each against your own setup.",
+      "packages": [
+        {
+          "pkg": "org.droidtv.amazonalexa",
+          "note": "Alexa bridge; 50PUS8517 warns that live TV binds into it. Channel changes and the TV guide still work with it disabled here"
+        },
+        {
+          "pkg": "org.droidtv.demome",
+          "note": "\"Demo me\" retail demo mode"
+        },
+        {
+          "pkg": "com.phorus.playfi.tv",
+          "note": "Play-Fi multi-room audio; re-enables itself at every boot, see note 2",
+          "optional": true
+        },
+        {
+          "pkg": "com.phorus.playfi.softap",
+          "note": "DTSPlayFiSoftAP, Play-Fi's soft access point helper; stayed disabled"
+        }
+      ]
+    },
+    {
+      "title": "Google telemetry and first-setup leftovers",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "Market Feedback Agent"
+        },
+        {
+          "pkg": "com.google.android.tungsten.setupwraith",
+          "note": "\"Setup Wizard\", 24 MB resident at idle. On Google TV sets in this repo it owned the Wi-Fi network saved at setup, and disabling it deleted that network. This TV is on Ethernet, so that was NOT checked here; keep it if your TV uses Wi-Fi"
+        }
+      ]
+    },
+    {
+      "title": "Google apps this owner does not use",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Assistant and voice search; this remote has no mic button"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google TV / Play Movies"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic",
+          "note": "YouTube Music"
+        }
+      ]
+    },
+    {
+      "title": "Preinstalled streaming apps, all in /data/app",
+      "packages": [
+        {
+          "pkg": "com.mgmedia.androidApp",
+          "note": "CHILI"
+        },
+        {
+          "pkg": "com.singa.client",
+          "note": "Singa (karaoke)"
+        },
+        {
+          "pkg": "com.ted.android.tv",
+          "note": "TED"
+        },
+        {
+          "pkg": "com.zeasn.whalelive",
+          "note": "WhaleLive, ad-supported FAST channels"
+        },
+        {
+          "pkg": "tv.pluto.android",
+          "note": "Pluto TV"
+        },
+        {
+          "pkg": "tv.wuaki.apptv",
+          "note": "Rakuten TV"
+        },
+        {
+          "pkg": "com.boosteroidtv.streaming",
+          "note": "Boosteroid TV cloud gaming"
+        }
+      ]
+    },
+    {
+      "title": "Stock launcher and its content engine. Disable the launcher FIRST; see 50PUS8517 for why.",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvlauncher",
+          "note": "launcher/build-and-install.sh disables it after Home has moved; 182 MB resident at idle on this unit",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations",
+          "note": "recommendation rows, channels and the notification panel"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/philips-55oled707/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

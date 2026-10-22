@@ -1,0 +1,108 @@
+{
+  "schema": 1,
+  "id": "formovie-mprojm05",
+  "name": "Formovie / Fengmi projector MiProjM05",
+  "tested": {
+    "os": "Android TV 9",
+    "sdk": 28,
+    "build": "PQ3B.190705.003.2102"
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Telemetry and partner auto-installs",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.tv.bugreportsender"
+        },
+        {
+          "pkg": "android.autoinstalls.config.xiaomi"
+        },
+        {
+          "pkg": "com.google.android.apps.nbu.smartconnect.tv",
+          "note": "Google data meter / VPN client"
+        }
+      ]
+    },
+    {
+      "title": "Recommendations and content",
+      "packages": [
+        {
+          "pkg": "com.google.android.leanbacklauncher.recommendations"
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations"
+        },
+        {
+          "pkg": "com.google.android.backdrop",
+          "note": "Ambient screensaver, off by choice"
+        },
+        {
+          "pkg": "cn.formovie.fengos.usermanual"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps, off by choice",
+      "packages": [
+        {
+          "pkg": "com.espn.score_center"
+        },
+        {
+          "pkg": "com.cbsnews.ott"
+        },
+        {
+          "pkg": "com.ted.android.tv"
+        },
+        {
+          "pkg": "com.nousguide.android.rbtv"
+        },
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.videos"
+        }
+      ]
+    },
+    {
+      "title": "Unused system apps",
+      "packages": [
+        {
+          "pkg": "com.android.camera2",
+          "note": "the webcam is driven by Formovie's own cameraservice_fm, not this app"
+        },
+        {
+          "pkg": "com.android.printspooler"
+        },
+        {
+          "pkg": "com.fengmi.testsuite",
+          "note": "factory test suite: disabled, never launched"
+        }
+      ]
+    },
+    {
+      "title": "Stock launcher (only after the new launcher is Home)",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvlauncher"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/formovie-mprojm05/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "schema": 1,
+  "id": "xiaomi-mitv-astr0",
+  "name": "Xiaomi Redmi Smart TV A Pro 55\" 2025 Energy-saving",
+  "tested": {
+    "os": "Android 14",
+    "sdk": 34,
+    "build": "the"
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "Xiaomi telemetry / ads / push",
+      "packages": [
+        {
+          "pkg": "com.miui.tv.analytics",
+          "note": "TV usage statistics"
+        },
+        {
+          "pkg": "com.xiaomi.tvqs",
+          "note": "quality/performance reporting"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.tvpush.tvpushservice",
+          "note": "push ads/notifications"
+        },
+        {
+          "pkg": "com.mitv.overseaservice",
+          "note": "overseas service partner helper"
+        },
+        {
+          "pkg": "com.miui.hybrid.tv",
+          "note": "hybrid runtime container"
+        },
+        {
+          "pkg": "com.xm.webcontent",
+          "note": "webview container for promotions"
+        },
+        {
+          "pkg": "com.mitv.shoplugin",
+          "note": "TV Taobao shopping plugin"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.shop",
+          "note": "Xiaomi store"
+        },
+        {
+          "pkg": "com.duokan.videodaily",
+          "note": "short-video promos, bundles the Mi ad SDK"
+        },
+        {
+          "pkg": "com.xiaomi.gamecenter.sdk.service.mibox",
+          "note": "game center SDK"
+        },
+        {
+          "pkg": "com.android.adservices.api"
+        },
+        {
+          "pkg": "com.android.ext.adservices.api"
+        },
+        {
+          "pkg": "com.android.ondevicepersonalization.services"
+        },
+        {
+          "pkg": "com.android.federatedcompute.services"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps (WPS cn.wps.moffice_i18n_TV kept at owner request)",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.mitv.calendar"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.health"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.healthdiagnosis"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.karaoke.service"
+        },
+        {
+          "pkg": "com.xiaomi.screenrecorder"
+        },
+        {
+          "pkg": "com.xiaomi.tweather",
+          "note": "weather provider; also feeds the Hyper screensaver"
+        },
+        {
+          "pkg": "com.mitv.gallery"
+        },
+        {
+          "pkg": "com.xiaomi.tv.gallery",
+          "note": "\"Pictorial\" wallpaper app"
+        }
+      ]
+    },
+    {
+      "title": "Mi Home + cleaner (owner confirmed unused; re-enable tvmanager if XiaoAI \"open app\" goes quiet)",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.smarthome.tv"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.tvmanager",
+          "note": "cf. MFFU0: XiaoAI app-opening runs through its provider"
+        },
+        {
+          "pkg": "com.mitv.toolhouse"
+        }
+      ]
+    },
+    {
+      "title": "Screensaver ads (verified: resumed activity while the ad carousel showed, own cache)",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.mitv.hyper.screensaver",
+          "note": "HyperOS screensaver Activity; see device doc"
+        }
+      ]
+    },
+    {
+      "title": "Stock launcher - LEFT COMMENTED OUT by default: uncomment ONLY together with the",
+      "packages": [
+        {
+          "pkg": "com.mitv.tvhome",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/xiaomi-mitv-astr0/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

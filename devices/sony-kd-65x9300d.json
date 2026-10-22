@@ -1,0 +1,155 @@
+{
+  "schema": 1,
+  "id": "sony-kd-65x9300d",
+  "name": "Sony BRAVIA KD-65X9300D",
+  "tested": {
+    "os": "Android TV 8.0",
+    "sdk": null,
+    "build": "OPR2.170623.027.S16"
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Sony and Google content, ads and promos",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.sonyselect",
+          "note": "Sony Select app store/promo tile"
+        },
+        {
+          "pkg": "com.sony.dtv.discovery",
+          "note": "Sony Discover content bar"
+        },
+        {
+          "pkg": "com.sony.dtv.bivlinfo",
+          "note": "BIVL content service list (feeds Discover)"
+        },
+        {
+          "pkg": "com.sony.dtv.tvlaunchercustomizer",
+          "note": "Sony tweaks to the stock home rows"
+        },
+        {
+          "pkg": "com.sony.dtv.indiametarecommendation",
+          "note": "content recommendation feed (India per its name)"
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations",
+          "note": "recommendation rows for the stock launcher"
+        },
+        {
+          "pkg": "android.autoinstalls.config.sony.bravia",
+          "note": "Play auto-install of partner apps"
+        }
+      ]
+    },
+    {
+      "title": "Telemetry, remote support and feedback",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.da.service",
+          "note": "Sony device agent / remote support"
+        },
+        {
+          "pkg": "com.qterics.da.product",
+          "note": "Qterics device agent"
+        },
+        {
+          "pkg": "com.google.android.tv.bugreportsender"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.vendorprotocol",
+          "note": "SDDP model/MAC/IP broadcast for Control4-style home"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps and tutorials",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.customersupport",
+          "note": "Help tile"
+        },
+        {
+          "pkg": "com.sony.dtv.smarthelp"
+        },
+        {
+          "pkg": "com.sony.dtv.imanual",
+          "note": "i-Manual"
+        },
+        {
+          "pkg": "com.sony.dtv.touchpad.tutorial",
+          "note": "touchpad remote tutorial"
+        },
+        {
+          "pkg": "com.google.android.tvtutorials"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google Play Movies"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.music",
+          "note": "Google Play Music, shut down in 2020"
+        },
+        {
+          "pkg": "com.google.android.backdrop",
+          "note": "ambient screensaver, replaced by the launcher's Clock"
+        },
+        {
+          "pkg": "com.amazon.aiv.us",
+          "note": "US Prime Video stub; the real app is amazonvideo.livingroom"
+        }
+      ]
+    },
+    {
+      "title": "Optional features, off by owner's choice",
+      "packages": [
+        {
+          "pkg": "com.sony.huey.dlna.module",
+          "note": "DLNA renderer"
+        },
+        {
+          "pkg": "com.sony.huey.dlna.renderersettings"
+        },
+        {
+          "pkg": "com.sonyericsson.dlna"
+        },
+        {
+          "pkg": "com.sonyericsson.dlna.dtcpplayer"
+        },
+        {
+          "pkg": "com.sony.dtv.osat.music",
+          "note": "re-enable to play music from USB"
+        },
+        {
+          "pkg": "com.sony.dtv.osat.album",
+          "note": "re-enable to view photos from USB"
+        },
+        {
+          "pkg": "com.sony.dtv.osat.video",
+          "note": "re-enable to play videos from USB"
+        },
+        {
+          "pkg": "com.vewd.core.integration.dia",
+          "note": "Vewd (Opera TV) web app store"
+        },
+        {
+          "pkg": "com.google.android.inputmethod.japanese",
+          "note": "Japanese keyboard"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/sony-kd-65x9300d/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

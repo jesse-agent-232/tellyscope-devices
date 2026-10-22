@@ -1,0 +1,127 @@
+{
+  "schema": 1,
+  "id": "xiaomi-mitv-mftr0",
+  "name": "Xiaomi MiTV-MFTR0",
+  "tested": {
+    "os": "Android 11",
+    "sdk": 30,
+    "build": null
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "Xiaomi telemetry / ads / push",
+      "packages": [
+        {
+          "pkg": "com.miui.tv.analytics",
+          "note": "TV usage statistics"
+        },
+        {
+          "pkg": "com.xiaomi.tvqs",
+          "note": "quality/performance reporting"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.tvpush.tvpushservice",
+          "note": "push ads/notifications"
+        },
+        {
+          "pkg": "com.miui.hybrid.tv",
+          "note": "hybrid runtime container"
+        },
+        {
+          "pkg": "com.xm.webcontent",
+          "note": "webview container for promotions"
+        },
+        {
+          "pkg": "com.mitv.shoplugin",
+          "note": "TV Taobao shopping plugin"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.shop",
+          "note": "Xiaomi store"
+        },
+        {
+          "pkg": "com.duokan.videodaily",
+          "note": "short-video promos, bundles the Mi ad SDK"
+        },
+        {
+          "pkg": "com.xiaomi.gamecenter.sdk.service.mibox",
+          "note": "game center SDK"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps",
+      "packages": [
+        {
+          "pkg": "com.emotn.browser",
+          "note": "Emotn browser preload (the launcher itself is a separate owner-installed app)"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.calendar"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.health"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.healthdiagnosis"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.karaoke.service"
+        },
+        {
+          "pkg": "com.xiaomi.screenrecorder"
+        },
+        {
+          "pkg": "com.xiaomi.tweather",
+          "note": "weather provider; also feeds the Hyper screensaver"
+        },
+        {
+          "pkg": "com.mitv.gallery"
+        },
+        {
+          "pkg": "com.xiaomi.tv.gallery",
+          "note": "\"Pictorial\" wallpaper app"
+        }
+      ]
+    },
+    {
+      "title": "Mi Home + cleaner (re-enable tvmanager if XiaoAI \"open app\" goes quiet, cf. MFFU0)",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.smarthome.tv"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.tvmanager"
+        },
+        {
+          "pkg": "com.mitv.toolhouse"
+        }
+      ]
+    },
+    {
+      "title": "Screensaver ads (same carrier as OS3; verified by settings + package state)",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.mitv.hyper.screensaver",
+          "note": "HyperOS screensaver Activity; see device doc"
+        }
+      ]
+    },
+    {
+      "title": "Stock launcher - LEFT COMMENTED OUT by default: on this build the stock launcher",
+      "packages": [
+        {
+          "pkg": "com.mitv.tvhome",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/xiaomi-mitv-mftr0/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

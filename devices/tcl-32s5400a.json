@@ -1,0 +1,109 @@
+{
+  "schema": 1,
+  "id": "tcl-32s5400a",
+  "name": "TCL 32S5400A",
+  "tested": {
+    "os": "Android TV 11",
+    "sdk": 30,
+    "build": "AR2101"
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "TCL account, promos and content",
+      "packages": [
+        {
+          "pkg": "com.tcl.usercenter",
+          "note": "TCL account; may be re-enabled by the system at boot"
+        },
+        {
+          "pkg": "com.tcl.guard",
+          "note": "TGuard cleaner/support"
+        },
+        {
+          "pkg": "com.tcl.partnercustomizer",
+          "note": "promo rows on the stock home"
+        },
+        {
+          "pkg": "com.tcl.waterfall.overseas",
+          "note": "TCL web-video portal"
+        },
+        {
+          "pkg": "com.tcl.esticker",
+          "note": "store-demo sticker (already off on this unit)"
+        },
+        {
+          "pkg": "com.tcl.audioplayer"
+        },
+        {
+          "pkg": "com.tcl.imageplayer"
+        },
+        {
+          "pkg": "com.tcl.copydatatotv",
+          "note": "already off on this unit"
+        }
+      ]
+    },
+    {
+      "title": "Google extras",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Play Movies"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        }
+      ]
+    },
+    {
+      "title": "Regional preloads not used on this unit",
+      "packages": [
+        {
+          "pkg": "com.sonyliv"
+        },
+        {
+          "pkg": "com.yupptv.scope.tvapp"
+        }
+      ]
+    },
+    {
+      "title": "Firmware updater: kept, as on the 40S5400A; uncomment to stay on this build",
+      "packages": [
+        {
+          "pkg": "com.tcl.ttvs",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Already disabled when this unit arrived; left as-is (not part of this list).",
+      "packages": [
+        {
+          "pkg": "au.com.stan.and",
+          "optional": true
+        },
+        {
+          "pkg": "tv.wuaki.apptv",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.keyhelp",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tcl-32s5400a/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}

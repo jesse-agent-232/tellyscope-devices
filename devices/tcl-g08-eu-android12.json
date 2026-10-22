@@ -1,0 +1,132 @@
+{
+  "schema": 1,
+  "id": "tcl-g08-eu-android12",
+  "name": "TCL Smart TV Pro",
+  "tested": {
+    "os": "Android 12",
+    "sdk": null,
+    "build": null
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "TCL promo, push messages, help/demo apps and log capture",
+      "packages": [
+        {
+          "pkg": "com.tcl.dashboard",
+          "note": "home-screen push messages"
+        },
+        {
+          "pkg": "com.tcl.messagebox"
+        },
+        {
+          "pkg": "com.tcl.exhibit",
+          "note": "store demo mode"
+        },
+        {
+          "pkg": "com.tcl.hearaid"
+        },
+        {
+          "pkg": "com.tcl.ocean.instructions",
+          "note": "onboarding/tips overlay"
+        },
+        {
+          "pkg": "com.tcl.repairguide"
+        },
+        {
+          "pkg": "com.tcl.logkit",
+          "note": "log collection"
+        },
+        {
+          "pkg": "com.tcl.browser",
+          "note": "TCL light browser (Google WebView stays)"
+        },
+        {
+          "pkg": "com.tcl.smartalexa"
+        },
+        {
+          "pkg": "com.tcl.t_solo"
+        },
+        {
+          "pkg": "com.tcl.eva",
+          "note": "TCL voice assistant layer (Katniss handles voice without it)"
+        },
+        {
+          "pkg": "com.tcl.magiconnectfree",
+          "note": "MagicConnect pairing promo"
+        },
+        {
+          "pkg": "com.tcl.gamebar"
+        },
+        {
+          "pkg": "com.tcl.UpdatePeripheral",
+          "note": "peripheral firmware helper"
+        }
+      ]
+    },
+    {
+      "title": "Duplicate webviews on this firmware (com.google.android.webview is the active one)",
+      "packages": [
+        {
+          "pkg": "com.tcl.android.webview"
+        },
+        {
+          "pkg": "com.iplayer.android.webview"
+        },
+        {
+          "pkg": "com.mediatek.support.webview"
+        }
+      ]
+    },
+    {
+      "title": "Mediatek casting/telemetry leftovers",
+      "packages": [
+        {
+          "pkg": "com.mediatek.airplaydaemon",
+          "note": "AirPlay daemon; the AirplayAPK frontend is not on this firmware"
+        },
+        {
+          "pkg": "com.mediatek.backgrounddetection"
+        },
+        {
+          "pkg": "com.mediatek.network"
+        }
+      ]
+    },
+    {
+      "title": "Google storefront and extras",
+      "packages": [
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Play Movies storefront"
+        },
+        {
+          "pkg": "com.google.android.tts",
+          "note": "TTS (left on purpose if you use voice TTS screens)"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.dreamx",
+          "note": "photo screensaver"
+        },
+        {
+          "pkg": "com.android.printspooler"
+        }
+      ]
+    },
+    {
+      "title": "Setup wizard: kept enabled here, and to be disabled only before installing a custom launcher.",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tcl-g08-eu-android12/debloat.txt",
+    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+  }
+}
