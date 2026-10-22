@@ -8,6 +8,7 @@ on:
   workflow_dispatch:
 
 permissions:
+  actions: write
   contents: write
   pull-requests: write
 
@@ -61,3 +62,5 @@ jobs:
           else
             gh pr create --base main --head sync/cleanyourtv --title "Sync from cleanyourtv" --body-file body.md
           fi
+          # Its PR starts no workflows, but a dispatch does, and the result lands on the branch's commit.
+          gh workflow run check.yml --ref sync/cleanyourtv

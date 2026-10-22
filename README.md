@@ -90,7 +90,8 @@ one entry per device file, with `match` copied from `match/<id>.json` (`null` wh
 - Before a pull request: `python3 -m unittest discover -s tests` and `python3 tools/build.py check`.
 
 The sync runs daily (and on demand from the Actions tab). It rebuilds `devices/` and opens or refreshes
-one pull request from `sync/cleanyourtv`; it force-pushes that branch, so don't commit to it.
+one pull request from `sync/cleanyourtv`; it force-pushes that branch, so don't commit to it. A pull
+request opened by Actions starts no workflows, so the sync starts `Check` on that branch itself.
 
 ## Credits
 
