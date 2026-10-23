@@ -37,6 +37,17 @@ proves nothing about who wrote it. The protection is the review before merge, pl
 `keep` can only add to the packages an app refuses to touch, never remove from them, and an app acts
 only on packages the TV itself lists.
 
+## Use your own lists
+
+1. Fork this repo and edit the lists.
+2. Run `python3 tools/build.py index`, then `python3 tools/build.py check`, so `index.json` stays on
+   schema 1 with fresh `sha256` values.
+3. In Tellyscope 0.2.0 or later, open Settings → Debloat lists → Change and paste the address of the
+   folder that holds `index.json`, like `https://raw.githubusercontent.com/<you>/tellyscope-devices/main/`.
+   Reset to default switches back.
+
+Protected apps stay protected whatever a list says.
+
 ## File format
 
 All files are plain JSON (UTF-8, no comments).
