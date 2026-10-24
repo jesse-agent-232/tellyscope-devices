@@ -1,0 +1,133 @@
+{
+  "schema": 1,
+  "id": "philips-65pml9506",
+  "name": "Philips 65PML9506/12",
+  "tested": {
+    "os": "Android TV 11",
+    "sdk": 30,
+    "build": "RTT2.211108.001"
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "Batch 1: TP Vision telemetry",
+      "packages": [
+        {
+          "pkg": "org.droidtv.candeebug",
+          "note": "\"DAC\" analytics uploader"
+        },
+        {
+          "pkg": "org.droidtv.gel",
+          "note": "metrics collector inside the candeebug process"
+        },
+        {
+          "pkg": "org.droidtv.usagelogger",
+          "note": "boot stats, keypress counts, panel telemetry"
+        },
+        {
+          "pkg": "org.droidtv.tv.frameworklogger",
+          "note": "reboot reasons handed to the Philips logger"
+        },
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "Market Feedback Agent"
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "partner referrer / attribution"
+        },
+        {
+          "pkg": "com.google.android.onetimeinitializer",
+          "note": "first-setup leftover"
+        }
+      ]
+    },
+    {
+      "title": "Batch 2: Philips promotion, NetTV store and preloaded web apps",
+      "packages": [
+        {
+          "pkg": "org.droidtv.nettvrecommender",
+          "note": "\"Top Picks\" promotion row"
+        },
+        {
+          "pkg": "org.droidtv.recommendation",
+          "note": "its backend"
+        },
+        {
+          "pkg": "org.droidtv.nettv.market",
+          "note": "app storefront"
+        },
+        {
+          "pkg": "org.droidtv.nettvapp1814",
+          "note": "ARTE"
+        },
+        {
+          "pkg": "org.droidtv.nettvapp4546",
+          "note": "MEGOGO"
+        },
+        {
+          "pkg": "org.droidtv.nettvapp4655",
+          "note": "Deezer"
+        },
+        {
+          "pkg": "org.droidtv.nettvapp4932",
+          "note": "Free Games by PlayWorks"
+        },
+        {
+          "pkg": "org.droidtv.nettvapp20004410",
+          "note": "Couchplay Games"
+        },
+        {
+          "pkg": "org.droidtv.demome",
+          "note": "retail demo mode"
+        }
+      ]
+    },
+    {
+      "title": "Batch 3: Google leftovers and preloaded apps not used",
+      "packages": [
+        {
+          "pkg": "com.google.android.sss.authbridge",
+          "note": "set-up-from-phone helper"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar",
+          "note": "Calendar sync, no calendar app"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google TV / Play Movies"
+        },
+        {
+          "pkg": "com.zeasn.whalelive",
+          "note": "WhaleLive ad-supported FAST channels"
+        },
+        {
+          "pkg": "com.boosteroidtv.streaming",
+          "note": "Boosteroid cloud gaming"
+        },
+        {
+          "pkg": "tv.wuaki.apptv",
+          "note": "Rakuten TV"
+        }
+      ]
+    },
+    {
+      "title": "Batch 4: silent installer. On every screen-on it re-installed the ~26 \"NetTV\" apps",
+      "packages": [
+        {
+          "pkg": "org.droidtv.nettvapps"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/philips-65pml9506/debloat.txt",
+    "commit": "eb0131a32fd8567086f39002f1782f7c1b078ca6"
+  }
+}

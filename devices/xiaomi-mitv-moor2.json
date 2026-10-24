@@ -126,11 +126,41 @@
           "note": "setup wizard; blocks a third-party launcher from Home"
         }
       ]
+    },
+    {
+      "title": "---------------------------------------------------------------------------------------------",
+      "packages": [
+        {
+          "pkg": "com.android.dynsystem",
+          "note": "DSU: boots a temporary GSI image (developer feature)",
+          "optional": true
+        },
+        {
+          "pkg": "com.android.soundpicker",
+          "note": "ringtone picker",
+          "optional": true
+        },
+        {
+          "pkg": "com.android.wallpaperbackup",
+          "note": "wallpaper backup agent",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.onetimeinitializer",
+          "note": "one-off task after first setup, runs at boot",
+          "optional": true
+        },
+        {
+          "pkg": "com.mstar.android.tv.disclaimercustomization",
+          "note": "legal screen of the first-run setup wizard only",
+          "optional": true
+        }
+      ]
     }
   ],
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/xiaomi-mitv-moor2/debloat.txt",
-    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+    "commit": "eb0131a32fd8567086f39002f1782f7c1b078ca6"
   }
 }

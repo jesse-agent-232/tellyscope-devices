@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "inclo-google-tv-4k",
+  "name": "INCLO Google TV 4K",
+  "tested": {
+    "os": "Google TV 4",
+    "sdk": 30,
+    "build": "RTK5.250429.013"
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Ads and auto-installs",
+      "packages": [
+        {
+          "pkg": "android.autoinstalls.config.google.gtvpai",
+          "note": "Play auto-installs of promoted apps"
+        },
+        {
+          "pkg": "com.realtek.leanbacklauncher.partnercustomizer",
+          "note": "partner rows for the home screen"
+        }
+      ]
+    },
+    {
+      "title": "Telemetry",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "feedback reports to Google"
+        }
+      ]
+    },
+    {
+      "title": "Manufacturer and Google preloads",
+      "packages": [
+        {
+          "pkg": "com.realtek.storemode",
+          "note": "KtcStoreMode, retail demo"
+        },
+        {
+          "pkg": "com.electronic.manual",
+          "note": "on-TV e-manual"
+        },
+        {
+          "pkg": "com.google.android.play.games",
+          "note": "Google Play Games"
+        }
+      ]
+    },
+    {
+      "title": "Home handover (restore re-enables it; do that before a factory reset)",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith",
+          "note": "first-run wizard; its RecoveryActivity claims Home"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/inclo-google-tv-4k/debloat.txt",
+    "commit": "eb0131a32fd8567086f39002f1782f7c1b078ca6"
+  }
+}

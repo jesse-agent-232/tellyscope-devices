@@ -1,0 +1,180 @@
+{
+  "schema": 1,
+  "id": "oneplus-tv-cebu",
+  "name": "OnePlus TV",
+  "tested": {
+    "os": "Android TV 10",
+    "sdk": 29,
+    "build": null
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Telemetry and diagnostics",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "Google feedback agent"
+        },
+        {
+          "pkg": "com.google.android.tv.bugreportsender",
+          "note": "Bug report sender"
+        },
+        {
+          "pkg": "com.heytap.mcs",
+          "note": "HeyTap push messaging, with nearx tracking"
+        },
+        {
+          "pkg": "com.heytap.tv.remotediagnosing",
+          "note": "HeyTap remote diagnosis"
+        },
+        {
+          "pkg": "net.oneplus.odm",
+          "note": "OnePlus device manager (analytics)"
+        },
+        {
+          "pkg": "net.oneplus.odm.provider",
+          "note": "its data provider"
+        }
+      ]
+    },
+    {
+      "title": "OnePlus content, recommendation rows, auto-installs and preloaded extras",
+      "packages": [
+        {
+          "pkg": "com.oneplus.tv.launcher",
+          "note": "OxygenPlay content page"
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations",
+          "note": "Stock home recommendation rows; also its notification count"
+        },
+        {
+          "pkg": "com.mediatek.android.leanbacklauncher.partnercustomizer",
+          "note": "KEEP for the stock home: without it its top bar loses the Inputs and Wi-Fi icons (re-enabled)",
+          "optional": true
+        },
+        {
+          "pkg": "android.autoinstalls.config.OnePlus",
+          "note": "Play auto-installs config"
+        },
+        {
+          "pkg": "com.coloros.relax.tv",
+          "note": "\"Relax\" ambient sounds app, with nearx tracking"
+        },
+        {
+          "pkg": "com.heytap.tv.imagewall",
+          "note": "Image wall"
+        },
+        {
+          "pkg": "com.oneplus.tv.userguide",
+          "note": "Built-in user guide"
+        },
+        {
+          "pkg": "com.heytap.tv.assistant.oneplus",
+          "note": "OnePlus TV Manager (cleaner, bandwidth alerts)"
+        }
+      ]
+    },
+    {
+      "title": "Casting, mirroring and OnePlus extras (off by choice)",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Chromecast built-in"
+        },
+        {
+          "pkg": "com.heytap.optvmiracastservice",
+          "note": "Miracast"
+        },
+        {
+          "pkg": "com.heytap.ars.sink",
+          "note": "OnePlus \"TV Mirror\" screen sharing"
+        },
+        {
+          "pkg": "com.heytap.olink",
+          "note": "OnePlus Connect phone link"
+        },
+        {
+          "pkg": "oneplus.smarthome",
+          "note": "OnePlus smart home control"
+        },
+        {
+          "pkg": "net.oneplus.weather",
+          "note": "Weather"
+        },
+        {
+          "pkg": "com.heytap.tv.filebrowser",
+          "note": "File manager (USB)"
+        },
+        {
+          "pkg": "com.heytap.tv.gallery3d",
+          "note": "Gallery (USB)"
+        },
+        {
+          "pkg": "com.heytap.tv.musicplayer",
+          "note": "Music player (USB)"
+        },
+        {
+          "pkg": "com.heytap.tv.videoplayer",
+          "note": "Video player (USB)"
+        },
+        {
+          "pkg": "com.heytap.tv.camera",
+          "note": "Camera app"
+        },
+        {
+          "pkg": "com.heytap.tv.btspeaker",
+          "note": "Bluetooth speaker mode"
+        }
+      ]
+    },
+    {
+      "title": "Streaming and preloaded apps (off by choice)",
+      "packages": [
+        {
+          "pkg": "tv.airtel.xstream.tvapp",
+          "note": "Airtel Xstream Play"
+        },
+        {
+          "pkg": "com.spotify.tv.android",
+          "note": "Spotify"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic",
+          "note": "YouTube Music"
+        },
+        {
+          "pkg": "com.discoveryplus.tv.android",
+          "note": "Discovery+"
+        },
+        {
+          "pkg": "video.laminar.tv.chaupal.android",
+          "note": "Chaupal"
+        },
+        {
+          "pkg": "com.jio.media.stb.ondemand",
+          "note": "JioCinema / JioTV"
+        },
+        {
+          "pkg": "com.jio.web.androidtv",
+          "note": "JioPages browser"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google Play Movies & TV"
+        },
+        {
+          "pkg": "com.google.android.play.games",
+          "note": "Google Play Games"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/oneplus-tv-cebu/debloat.txt",
+    "commit": "eb0131a32fd8567086f39002f1782f7c1b078ca6"
+  }
+}

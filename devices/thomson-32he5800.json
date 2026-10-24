@@ -62,6 +62,10 @@
         {
           "pkg": "com.tcl.useragreement",
           "note": "TCL agreement screen, done after setup"
+        },
+        {
+          "pkg": "com.tcl.waterfall.overseas",
+          "note": "TCL content app, Mobile Ads + Firebase (second unit)"
         }
       ]
     },
@@ -140,6 +144,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/thomson-32he5800/debloat.txt",
-    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+    "commit": "eb0131a32fd8567086f39002f1782f7c1b078ca6"
   }
 }

@@ -5,7 +5,7 @@
   "tested": {
     "os": "Android TV 12",
     "sdk": 31,
-    "build": null
+    "build": "200260"
   },
   "launcher": "com.google.android.tvlauncher",
   "keep": [],
@@ -122,6 +122,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/philips-tpm191e/debloat.txt",
-    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+    "commit": "eb0131a32fd8567086f39002f1782f7c1b078ca6"
   }
 }

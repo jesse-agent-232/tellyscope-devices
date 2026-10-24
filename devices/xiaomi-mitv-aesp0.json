@@ -76,6 +76,15 @@
       ]
     },
     {
+      "title": "Xiaomi extras (third set)",
+      "packages": [
+        {
+          "pkg": "com.xiaomo.tv.milegal",
+          "note": "Xiaomi privacy-policy screen (sic, \"xiaomo\"); nothing else uses it"
+        }
+      ]
+    },
+    {
       "title": "Xiaomi services (second set)",
       "packages": [
         {
@@ -239,6 +248,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/xiaomi-mitv-aesp0/debloat.txt",
-    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+    "commit": "eb0131a32fd8567086f39002f1782f7c1b078ca6"
   }
 }

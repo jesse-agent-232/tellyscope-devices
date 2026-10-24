@@ -15,7 +15,7 @@
       "packages": [
         {
           "pkg": "com.tcl.ttvs",
-          "note": "Samba TV ACR viewing tracking, TCL \"BI\" analytics, Alexa core, T-Cast"
+          "note": "Samba TV ACR viewing tracking, TCL \"BI\" analytics, Alexa core, T-Cast, firmware updater"
         },
         {
           "pkg": "com.tcl.logkit",
@@ -209,6 +209,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/tcl-55c7k-uk/debloat.txt",
-    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+    "commit": "eb0131a32fd8567086f39002f1782f7c1b078ca6"
   }
 }

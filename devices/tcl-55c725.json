@@ -148,7 +148,7 @@
         },
         {
           "pkg": "com.google.android.tv.remote.service",
-          "note": "Google TV phone remote; also carries the remote's mic on other TCL sets",
+          "note": "Google TV phone remote; also carries the remote's mic on other TCL sets,",
           "optional": true
         },
         {
@@ -167,6 +167,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/tcl-55c725/debloat.txt",
-    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+    "commit": "eb0131a32fd8567086f39002f1782f7c1b078ca6"
   }
 }

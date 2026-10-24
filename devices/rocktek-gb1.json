@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "rocktek-gb1",
+  "name": "RockTek GB1",
+  "tested": {
+    "os": "Google TV 14",
+    "sdk": null,
+    "build": null
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "Android advertising / personalization and feedback",
+      "packages": [
+        {
+          "pkg": "com.android.ondevicepersonalization.services"
+        },
+        {
+          "pkg": "com.android.adservices.api"
+        },
+        {
+          "pkg": "com.android.federatedcompute.services"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps unused on this box",
+      "packages": [
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        },
+        {
+          "pkg": "com.netflix.ninja"
+        },
+        {
+          "pkg": "com.rtk.mediabrowser"
+        }
+      ]
+    },
+    {
+      "title": "Google TV setup wizard: disable only after the Wi-Fi ownership check above and after the new Home works",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith"
+        }
+      ]
+    },
+    {
+      "title": "Stock Google TV Home: build-and-install.sh handles this after it confirms the replacement launcher",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.tv.launcherx",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/rocktek-gb1/debloat.txt",
+    "commit": "eb0131a32fd8567086f39002f1782f7c1b078ca6"
+  }
+}

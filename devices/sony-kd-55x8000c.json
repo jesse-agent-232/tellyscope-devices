@@ -1,0 +1,222 @@
+{
+  "schema": 1,
+  "id": "sony-kd-55x8000c",
+  "name": "Sony BRAVIA KD-55X8000C",
+  "tested": {
+    "os": "Android TV 7.0",
+    "sdk": 24,
+    "build": "SVP4KDTV15_CN-user"
+  },
+  "launcher": "com.google.android.leanbacklauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Video/content apps the owner does not use (they start at boot and held ~250 MB of the 1.5 GB)",
+      "packages": [
+        {
+          "pkg": "com.wasu.wasutvcs",
+          "note": "华数TV, preloaded"
+        },
+        {
+          "pkg": "com.tencent.qqmusictv",
+          "note": "QQ音乐, preloaded and updated"
+        },
+        {
+          "pkg": "com.sony.dtv.qq",
+          "note": "QQ音乐 preload, with Tencent remote-device service"
+        },
+        {
+          "pkg": "com.sony.dtv.mysony",
+          "note": "My Sony 会员尊享 (membership/promo app)"
+        }
+      ]
+    },
+    {
+      "title": "Sony's preloaded 应用中心 (a partner build of 当贝市场): it is what fills the home's 推荐 row with",
+      "packages": [
+        {
+          "pkg": "com.sony.dangbeimarket"
+        }
+      ]
+    },
+    {
+      "title": "Sony Discovery / recommendation rows and promo feeds",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.discovery",
+          "note": "Discover bar, ~28 MB resident"
+        },
+        {
+          "pkg": "com.sony.dtv.discovery.plugin.wasuplugin",
+          "note": "华数 plugin feeding Discover"
+        },
+        {
+          "pkg": "com.sony.dtv.discovery.plugin.wasusearch",
+          "note": "华数 search provider"
+        },
+        {
+          "pkg": "com.sony.dtv.bivlinfo",
+          "note": "BIVL service behind Discover"
+        },
+        {
+          "pkg": "com.sony.dtv.recommendationservice"
+        },
+        {
+          "pkg": "com.sony.dtv.watchtvrecommendation"
+        },
+        {
+          "pkg": "com.sony.dtv.irbrecommendation"
+        },
+        {
+          "pkg": "com.sony.dtv.networkrecommendation"
+        }
+      ]
+    },
+    {
+      "title": "Help, tutorials, manual",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.customersupport"
+        },
+        {
+          "pkg": "com.sony.dtv.smarthelp"
+        },
+        {
+          "pkg": "com.sony.dtv.imanual",
+          "note": "i-Manual"
+        },
+        {
+          "pkg": "com.sony.dtv.touchpad.tutorial"
+        }
+      ]
+    },
+    {
+      "title": "Retail demo / shop mode",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.demomode"
+        },
+        {
+          "pkg": "com.sony.dtv.shopsettings"
+        }
+      ]
+    },
+    {
+      "title": "Telemetry, remote support, device-ID and push",
+      "packages": [
+        {
+          "pkg": "com.qterics.da.product",
+          "note": "Qterics device agent"
+        },
+        {
+          "pkg": "com.sony.dtv.da.service",
+          "note": "Sony device agent"
+        },
+        {
+          "pkg": "com.sony.dtv.remoteaccess",
+          "note": "Sony remote support"
+        },
+        {
+          "pkg": "com.sony.dtv.duid.generator",
+          "note": "tracking ID generator"
+        },
+        {
+          "pkg": "com.sony.dtv.servermgr",
+          "note": "Sony push (C2DM receiver)"
+        }
+      ]
+    },
+    {
+      "title": "Hotel / commercial / pro mode",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.b2b.importexport"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.prosettings"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.rs232csupport"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.vendorprotocol",
+          "note": "Control4-style automation; also keeps node alive"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.noderuntime"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.noderuntime.normal"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.noderuntime.privilege"
+        }
+      ]
+    },
+    {
+      "title": "Firmware update, left enabled: the other SVP-DTV15 lists keep it too, and an updater is the one service",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.systemupdate",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "USB media players, casting and camera",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.osat.album"
+        },
+        {
+          "pkg": "com.sony.dtv.osat.music"
+        },
+        {
+          "pkg": "com.sony.dtv.osat.video"
+        },
+        {
+          "pkg": "com.sony.dtv.tvcamera",
+          "note": "电视摄像机 (no camera on this set)"
+        },
+        {
+          "pkg": "com.sony.huey.dlna.module"
+        },
+        {
+          "pkg": "com.sony.huey.dlna.renderersettings"
+        },
+        {
+          "pkg": "com.sonyericsson.dlna"
+        },
+        {
+          "pkg": "com.sonyericsson.dlna.dtcpplayer"
+        }
+      ]
+    },
+    {
+      "title": "Screensaver and leftover launcher entry",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.braviashow",
+          "note": "BRAVIA Show DreamService"
+        },
+        {
+          "pkg": "com.sony.dtv.moreapps",
+          "note": "更多应用 partner row"
+        }
+      ]
+    },
+    {
+      "title": "IR blaster settings (the daemon com.sony.dtv.irbservice is kept: it also listens to audio output)",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.irblaster"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/sony-kd-55x8000c/debloat.txt",
+    "commit": "eb0131a32fd8567086f39002f1782f7c1b078ca6"
+  }
+}

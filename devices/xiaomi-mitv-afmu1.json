@@ -168,6 +168,16 @@
           "pkg": "com.xiaomi.mitv.updateservice",
           "note": "kept: firmware updates. One owner disabled it (no updates were offered); uncomment to do the same",
           "optional": true
+        },
+        {
+          "pkg": "com.xiaomi.android.tvsetup.partnercustomizer",
+          "note": "third unit only, one day: Xiaomi first-run wizard and region pages (see \"Leave alone\" above)",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "third unit only, one day: Google partner setup, RLZ install ping",
+          "optional": true
         }
       ]
     },
@@ -187,6 +197,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/xiaomi-mitv-afmu1/debloat.txt",
-    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+    "commit": "eb0131a32fd8567086f39002f1782f7c1b078ca6"
   }
 }

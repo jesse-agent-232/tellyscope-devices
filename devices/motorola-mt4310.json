@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "id": "motorola-mt4310",
+  "name": "Motorola MT4310",
+  "tested": {
+    "os": "Android TV 11",
+    "sdk": 30,
+    "build": "RTM7.230903.035"
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "--- Batch 1: silent installs, store demo, setup leftovers, telemetry",
+      "packages": [
+        {
+          "pkg": "android.autoinstalls.config.hisense.hayward",
+          "note": "silently installs promoted apps"
+        },
+        {
+          "pkg": "fusion.android.tv.demo",
+          "note": "store demo mode, starts at boot"
+        },
+        {
+          "pkg": "com.mstar.android.tv.disclaimercustomization",
+          "note": "store-mode disclaimer from first setup"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "partner referral tracking (RLZ ping)"
+        }
+      ]
+    },
+    {
+      "title": "--- Batch 2: recommendation and promo rows",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvrecommendations",
+          "note": "re-enabled at every boot (header); fed the stock rows",
+          "optional": true
+        },
+        {
+          "pkg": "com.mediatek.android.leanbacklauncher.partnercustomizer",
+          "note": "partner promo rows (and the stock top-bar icons)"
+        }
+      ]
+    },
+    {
+      "title": "--- Batch 3: unused system services",
+      "packages": [
+        {
+          "pkg": "com.android.printspooler",
+          "note": "printing"
+        },
+        {
+          "pkg": "com.android.providers.calendar"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar"
+        }
+      ]
+    },
+    {
+      "title": "--- Batch 4: off by choice on the tested set (keep what you use)",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "re-enabled at every boot (header); voice search / Assistant",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google TV / Play Movies"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.marvin.talkback",
+          "note": "screen reader"
+        },
+        {
+          "pkg": "com.google.android.tts",
+          "note": "Google text-to-speech (only needed for screen reading)"
+        },
+        {
+          "pkg": "com.arkiv.player.light",
+          "note": "user-installed player the owner did not recognise; not bloat for everyone",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/motorola-mt4310/debloat.txt",
+    "commit": "eb0131a32fd8567086f39002f1782f7c1b078ca6"
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "schema": 1,
+  "id": "hotack-smart2kpjt",
+  "name": "HOTACK SMART2KPJT projector",
+  "tested": {
+    "os": "Android 13",
+    "sdk": 33,
+    "build": null
+  },
+  "launcher": "com.zeasn.whaleos.launcher3",
+  "keep": [],
+  "groups": [
+    {
+      "title": "--- Zeasn / Whale vendor services and store ---",
+      "packages": [
+        {
+          "pkg": "com.whaletv.logger",
+          "note": "WhaleLogger"
+        },
+        {
+          "pkg": "com.zeasn.tokenapp",
+          "note": "Zeasn token / tracker (BOOT_COMPLETED, key tracker)"
+        },
+        {
+          "pkg": "com.zeasn.deviceportal.asdprovider.certified",
+          "note": "device portal client"
+        },
+        {
+          "pkg": "com.zeasn.whaleos.appgallery",
+          "note": "Whale app gallery: the ONLY app store here (no Play Store), KEEP it",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "--- Factory test apps ---",
+      "packages": [
+        {
+          "pkg": "com.stm"
+        },
+        {
+          "pkg": "com.stm.factorytest"
+        }
+      ]
+    },
+    {
+      "title": "--- Phone-style Android bloat ---",
+      "packages": [
+        {
+          "pkg": "com.android.printspooler"
+        },
+        {
+          "pkg": "com.android.musicfx"
+        },
+        {
+          "pkg": "com.android.music"
+        },
+        {
+          "pkg": "com.android.providers.calendar"
+        },
+        {
+          "pkg": "com.android.adservices.api"
+        },
+        {
+          "pkg": "com.android.ondevicepersonalization.services"
+        },
+        {
+          "pkg": "com.android.wallpaperbackup"
+        },
+        {
+          "pkg": "com.android.dreams.phototable"
+        },
+        {
+          "pkg": "org.chromium.webview_shell"
+        }
+      ]
+    },
+    {
+      "title": "--- Chosen by the owner: Netflix, casting and mirroring not used ---",
+      "packages": [
+        {
+          "pkg": "com.netflix.ninja"
+        },
+        {
+          "pkg": "com.netflix.dial"
+        },
+        {
+          "pkg": "com.netflix.tokenmanager"
+        },
+        {
+          "pkg": "com.zeasn.tv.cast",
+          "note": "WhaleCast"
+        },
+        {
+          "pkg": "com.droidlogic.miracast"
+        },
+        {
+          "pkg": "com.aml.dial",
+          "note": "YouTube DIAL (cast) server"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/hotack-smart2kpjt/debloat.txt",
+    "commit": "eb0131a32fd8567086f39002f1782f7c1b078ca6"
+  }
+}

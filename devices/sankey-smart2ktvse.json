@@ -39,7 +39,8 @@
         },
         {
           "pkg": "com.zeasn.livetv",
-          "note": "Live TV service - SKIPPED during disable (needed for HDMI inputs)"
+          "note": "Live TV service: keep it. Disabling it gives \"No Signal\" on every input (HDMI included)",
+          "optional": true
         },
         {
           "pkg": "com.zeasn.whaleos.settings",
@@ -87,11 +88,21 @@
       ]
     },
     {
+      "title": "Camera app: this set has none. Disabled by hand on that unit, not by this list;",
+      "packages": [
+        {
+          "pkg": "com.android.camera2",
+          "note": "Camera (a system app: pm disable-user works, pm uninstall fails with DELETE_FAILED_INTERNAL_ERROR)",
+          "optional": true
+        }
+      ]
+    },
+    {
       "title": "Unknown services",
       "packages": [
         {
           "pkg": "com.mirakulo.astrotv.service",
-          "note": "Unknown service (safe to disable)"
+          "note": "Ginga interactive TV for ISDB-Tb broadcasts; disabling only turns broadcast interactivity off"
         }
       ]
     },
@@ -121,6 +132,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/sankey-smart2ktvse/debloat.txt",
-    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+    "commit": "eb0131a32fd8567086f39002f1782f7c1b078ca6"
   }
 }

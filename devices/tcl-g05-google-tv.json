@@ -5,7 +5,7 @@
   "tested": {
     "os": "Android 11",
     "sdk": null,
-    "build": "is"
+    "build": "ID"
   },
   "launcher": "com.google.android.apps.tv.launcherx",
   "keep": [],
@@ -56,7 +56,7 @@
       "packages": [
         {
           "pkg": "com.tcl.ttvs",
-          "note": "TCL BI/awareness/identifier services"
+          "note": "TCL BI/awareness/identifier services and Samba TV ACR; on AR71"
         },
         {
           "pkg": "com.tcl.guard",
@@ -121,6 +121,32 @@
       ]
     },
     {
+      "title": "Streaming apps one owner did not use (55Q750G); uncomment the ones you don't use either",
+      "packages": [
+        {
+          "pkg": "com.google.android.youtube.tvunplugged",
+          "note": "YouTube TV",
+          "optional": true
+        },
+        {
+          "pkg": "com.tubitv",
+          "optional": true
+        },
+        {
+          "pkg": "com.plexapp.android",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "For the Clean Your TV launcher (see \"Replacing the launcher\" above). disable.sh skips it while it owns",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith"
+        }
+      ]
+    },
+    {
       "title": "Voice, casting and assistants (owner's choice; comment out what you use)",
       "packages": [
         {
@@ -158,6 +184,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/tcl-g05-google-tv/debloat.txt",
-    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+    "commit": "eb0131a32fd8567086f39002f1782f7c1b078ca6"
   }
 }

@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "id": "haier-hr9216eu",
+  "name": "Haier MatrixTV GE",
+  "tested": {
+    "os": "Google TV 14",
+    "sdk": 34,
+    "build": null
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Haier content, ads, IoT, cleaner, e-manual",
+      "packages": [
+        {
+          "pkg": "com.haierubic.usmartdevice",
+          "note": "Haier smart-device / IoT service"
+        },
+        {
+          "pkg": "com.haier.oemtabprovider",
+          "note": "the \"Haier\" tab on the Google TV home (re-enabled at boot)"
+        },
+        {
+          "pkg": "com.haier.apps",
+          "note": "Haier promo content app"
+        },
+        {
+          "pkg": "com.haier.launcher.haiermatrix",
+          "note": "Zeasn content launcher, not the system Home (re-enabled at boot)"
+        },
+        {
+          "pkg": "com.haier.tvhousekeeper",
+          "note": "\"TV housekeeper\" cleaner"
+        },
+        {
+          "pkg": "com.haier.emanual9603",
+          "note": "e-manual"
+        }
+      ]
+    },
+    {
+      "title": "Telemetry, partner rows, preloads, retail demo",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "Google usage feedback"
+        },
+        {
+          "pkg": "tv.anoki.acr.anokiacroptin",
+          "note": "Anoki ACR opt-in (content recognition)"
+        },
+        {
+          "pkg": "com.mediatek.android.leanbacklauncher.partnercustomizer",
+          "note": "partner rows on the stock home"
+        },
+        {
+          "pkg": "com.google.android.play.games",
+          "note": "preloaded"
+        },
+        {
+          "pkg": "fusion.android.tv.demo",
+          "note": "retail demo mode"
+        }
+      ]
+    },
+    {
+      "title": "By owner choice",
+      "packages": [
+        {
+          "pkg": "com.google.android.youtube.tvmusic",
+          "note": "YouTube Music, not used"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.dreamx",
+          "note": "Google TV ambient / AI screensaver, not wanted"
+        }
+      ]
+    },
+    {
+      "title": "Google TV home handover. setupwraith's RecoveryActivity claims HOME at priority 1 and takes over",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/haier-hr9216eu/debloat.txt",
+    "commit": "eb0131a32fd8567086f39002f1782f7c1b078ca6"
+  }
+}

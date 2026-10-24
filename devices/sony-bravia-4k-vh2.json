@@ -75,10 +75,42 @@
       ]
     },
     {
+      "title": "Sony promo and IoT apps: already off at the factory on the EU unit, shipped enabled on the UC one",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.promos",
+          "note": "\"Freeplay\" tile"
+        },
+        {
+          "pkg": "com.sony.dtv.sonyselect",
+          "note": "Sony Select app promos"
+        },
+        {
+          "pkg": "com.sony.dtv.seeds.iot"
+        },
+        {
+          "pkg": "com.sony.dtv.seeds.iot.remotestart"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.vendorprotocol",
+          "note": "hotel/B2B control protocol"
+        }
+      ]
+    },
+    {
       "title": "Google TV setup wizard: claims HOME and takes over once the stock launcher is disabled",
       "packages": [
         {
           "pkg": "com.google.android.tungsten.setupwraith"
+        }
+      ]
+    },
+    {
+      "title": "Stock Google TV launcher. Left ENABLED on the EU unit, where Home resolved to the new launcher by",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.tv.launcherx",
+          "optional": true
         }
       ]
     }
@@ -86,6 +118,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/sony-bravia-4k-vh2/debloat.txt",
-    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+    "commit": "eb0131a32fd8567086f39002f1782f7c1b078ca6"
   }
 }

@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "sony-bravia-4k-ur3",
+  "name": "Sony BRAVIA 4K UR3",
+  "tested": {
+    "os": "Android 10",
+    "sdk": 29,
+    "build": null
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "tracking / ads / recommendations",
+      "packages": [
+        {
+          "pkg": "tv.samba.ssm",
+          "note": "Samba TV (ACR viewing data)"
+        },
+        {
+          "pkg": "com.qterics.da.product"
+        },
+        {
+          "pkg": "com.sony.dtv.da.service"
+        },
+        {
+          "pkg": "com.sonyericsson.idd.agent"
+        },
+        {
+          "pkg": "com.sony.dtv.promos"
+        },
+        {
+          "pkg": "com.sony.dtv.sonyselect"
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations",
+          "note": "only the stock launcher uses it"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        }
+      ]
+    },
+    {
+      "title": "demo / shop mode",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.demosupport"
+        },
+        {
+          "pkg": "com.sony.dtv.demosystemsupport"
+        },
+        {
+          "pkg": "com.sony.dtv.multiscreendemo"
+        }
+      ]
+    },
+    {
+      "title": "voice assistant (removes the remote's mic search; skip these three to keep it)",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss"
+        },
+        {
+          "pkg": "com.google.android.tv.assistant"
+        },
+        {
+          "pkg": "com.sony.dtv.assistantadapter"
+        }
+      ]
+    },
+    {
+      "title": "preloaded apps, disabled by choice (com.apple.atve.sony.appletv kept here — used as a dock app)",
+      "packages": [
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.videos"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/sony-bravia-4k-ur3/debloat.txt",
+    "commit": "eb0131a32fd8567086f39002f1782f7c1b078ca6"
+  }
+}

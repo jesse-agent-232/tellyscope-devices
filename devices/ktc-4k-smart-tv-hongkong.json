@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "ktc-4k-smart-tv-hongkong",
+  "name": "KTC 4K Smart TV",
+  "tested": {
+    "os": "Google TV 14",
+    "sdk": null,
+    "build": "UKNV.260626.001"
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "ACR (automatic content recognition) tracking",
+      "packages": [
+        {
+          "pkg": "tv.anoki.acr.anokiacroptin"
+        }
+      ]
+    },
+    {
+      "title": "Google feedback/crash telemetry",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback"
+        }
+      ]
+    },
+    {
+      "title": "OEM factory/production-line test tools",
+      "packages": [
+        {
+          "pkg": "com.ktc.serialport"
+        },
+        {
+          "pkg": "com.ktc.tv.factory"
+        },
+        {
+          "pkg": "ktc.factorymenu.ui"
+        },
+        {
+          "pkg": "mediatek.factorymenu.ui"
+        }
+      ]
+    },
+    {
+      "title": "Misc unused preinstalled apps",
+      "packages": [
+        {
+          "pkg": "com.electronic.manual"
+        },
+        {
+          "pkg": "fusion.android.tv.demo"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/ktc-4k-smart-tv-hongkong/debloat.txt",
+    "commit": "eb0131a32fd8567086f39002f1782f7c1b078ca6"
+  }
+}

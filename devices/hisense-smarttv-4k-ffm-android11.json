@@ -5,7 +5,7 @@
   "tested": {
     "os": "Android 11",
     "sdk": 30,
-    "build": null
+    "build": "RTT2.220118.001"
   },
   "launcher": "com.google.android.apps.tv.launcherx",
   "keep": [],
@@ -52,11 +52,20 @@
           "pkg": "com.google.android.tungsten.setupwraith"
         }
       ]
+    },
+    {
+      "title": "Second unit only: disabled for one session and one reboot (normal boot, Home and the key helper back), not",
+      "packages": [
+        {
+          "pkg": "com.hisense.evservice",
+          "optional": true
+        }
+      ]
     }
   ],
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/hisense-smarttv-4k-ffm-android11/debloat.txt",
-    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+    "commit": "eb0131a32fd8567086f39002f1782f7c1b078ca6"
   }
 }

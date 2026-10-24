@@ -1,0 +1,186 @@
+{
+  "schema": 1,
+  "id": "hisense-65d62qh",
+  "name": "Hisense 65D62QH",
+  "tested": {
+    "os": null,
+    "sdk": 30,
+    "build": "as"
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "BATCH 1 — telemetry, reporting and the vendor push channel (lowest risk, start here)",
+      "packages": [
+        {
+          "pkg": "com.hisense.hitv.das",
+          "note": "DasApp: DataReportReceiver only"
+        },
+        {
+          "pkg": "com.hisense.platformreport",
+          "note": "usage/telemetry reporting"
+        },
+        {
+          "pkg": "com.hisense.logupload",
+          "note": "log uploader"
+        },
+        {
+          "pkg": "com.hisense.service.hproxy",
+          "note": "LoopingService + network-change receiver, polls forever"
+        },
+        {
+          "pkg": "com.hisense.service.message",
+          "note": "HiMsgService, the vendor push channel"
+        }
+      ]
+    },
+    {
+      "title": "BATCH 2 — advertising, home operator rows and content feeds",
+      "packages": [
+        {
+          "pkg": "com.hisense.business.ad",
+          "note": "ad SDK (ships Alibaba Baichuan + CIBN shopping SDKs)"
+        },
+        {
+          "pkg": "com.hisense.service.ad",
+          "note": "ad service; registers a WatchingAccessibilityService"
+        },
+        {
+          "pkg": "com.hisense.widget.pro",
+          "note": "home operator widget rows"
+        },
+        {
+          "pkg": "com.hisense.tv.weather",
+          "note": "weather card, another content feed"
+        }
+      ]
+    },
+    {
+      "title": "BATCH 3 — retail, hotel, factory and first-run leftovers",
+      "packages": [
+        {
+          "pkg": "com.hisense.demonstrate",
+          "note": "DbxDemo / multi-channel sound demo reels"
+        },
+        {
+          "pkg": "com.hisense.hotelmenu",
+          "note": "hotel mode menu"
+        },
+        {
+          "pkg": "com.meetingroom",
+          "note": "meeting-room mode"
+        },
+        {
+          "pkg": "com.hisense.autotest",
+          "note": "factory autotest app (never launch it, see PROMPT.md)"
+        },
+        {
+          "pkg": "com.hisense.electronictutorial",
+          "note": "e-manual"
+        },
+        {
+          "pkg": "com.hisense.ar.baike",
+          "note": "AR encyclopedia"
+        },
+        {
+          "pkg": "com.jamdeo.tv.fte",
+          "note": "first-run wizard, already done; Wi-Fi belongs to android.uid.system"
+        },
+        {
+          "pkg": "com.hisense.usbupgrade",
+          "note": "USB firmware upgrade. Optional: only needed to flash",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "BATCH 4 — preloaded content nobody asked for",
+      "packages": [
+        {
+          "pkg": "com.hisense.tv.videoconference",
+          "note": "video conferencing"
+        },
+        {
+          "pkg": "com.hisense.tv.videochat.social",
+          "note": "preloaded video chat"
+        },
+        {
+          "pkg": "com.hisense.tv.fitmirror",
+          "note": "fitness mirror"
+        },
+        {
+          "pkg": "com.hisense.tv.foodmanage",
+          "note": "recipe app"
+        },
+        {
+          "pkg": "com.vision.aibook",
+          "note": "AI picture book"
+        },
+        {
+          "pkg": "com.jamdeo.calendar",
+          "note": "vendor calendar, not the AOSP one"
+        },
+        {
+          "pkg": "com.ju.miguvideoTV.cmcc",
+          "note": "Migu Video (咪咕视频) preload. Optional: keep if you use it",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "BATCH 5 — the screensaver ad surface and AOSP leftovers",
+      "packages": [
+        {
+          "pkg": "com.jamdeo.screensaver"
+        },
+        {
+          "pkg": "com.android.dreams.basic",
+          "note": "the AOSP screensaver it falls back to"
+        },
+        {
+          "pkg": "com.android.printspooler"
+        },
+        {
+          "pkg": "com.android.wallpaperbackup"
+        },
+        {
+          "pkg": "com.android.deskclock",
+          "optional": true
+        },
+        {
+          "pkg": "com.android.calendar",
+          "note": "RE-ENABLED BY THE FIRMWARE AT EVERY BOOT.",
+          "optional": true
+        },
+        {
+          "pkg": "com.android.music",
+          "note": "Verified 2026-10-22: disabled, rebooted, and",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "---------------------------------------------------------------------------------------------",
+      "packages": [
+        {
+          "pkg": "com.hisense.smartimages",
+          "optional": true
+        },
+        {
+          "pkg": "com.hisense.tv.infer",
+          "optional": true
+        },
+        {
+          "pkg": "com.hisense.singlelisten",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/hisense-65d62qh/debloat.txt",
+    "commit": "eb0131a32fd8567086f39002f1782f7c1b078ca6"
+  }
+}

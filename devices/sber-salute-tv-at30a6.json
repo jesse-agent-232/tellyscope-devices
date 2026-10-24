@@ -1,0 +1,162 @@
+{
+  "schema": 1,
+  "id": "sber-salute-tv-at30a6",
+  "name": "Sber Salute TV 43\"",
+  "tested": {
+    "os": "Android 13",
+    "sdk": null,
+    "build": "TP1A.220905.004.A2"
+  },
+  "launcher": "ru.sberdevices.starlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Sber content apps and preloads",
+      "packages": [
+        {
+          "pkg": "ru.sberdevices.music",
+          "note": "Zvuk music; its ~100 MB update stays in /data while disabled"
+        },
+        {
+          "pkg": "ru.sberdevices.starlivetv",
+          "note": "StarLiveTv, Sber's online channels"
+        },
+        {
+          "pkg": "ru.sberdevices.startube",
+          "note": "Sber's own \"YouTube\" wrapper; installed itself after a reboot"
+        },
+        {
+          "pkg": "ru.sberdevices.videos",
+          "note": "\"Видео\" catalogue"
+        },
+        {
+          "pkg": "ru.sberdevices.sberplay",
+          "note": "SberPlay games"
+        },
+        {
+          "pkg": "ru.sberdevices.subscriptions",
+          "note": "SberPrime subscriptions"
+        },
+        {
+          "pkg": "ru.sberdevices.starkidsroom.prod",
+          "note": "\"Детская комната\" (kids room); installed itself after a reboot"
+        },
+        {
+          "pkg": "ru.sberdevices.parentcontrol",
+          "note": "parental control"
+        },
+        {
+          "pkg": "ru.sberdevices.starprofile",
+          "note": "user profiles; the voice assistant still worked without it"
+        },
+        {
+          "pkg": "ru.sberdevices.smarthome.promo",
+          "note": "smart home promo"
+        },
+        {
+          "pkg": "com.salute.star",
+          "note": "\"Умный дом\" smart home app, ~45 MB resident; installed itself after a reboot"
+        },
+        {
+          "pkg": "ru.sberdevices.starbrowser",
+          "note": "Salute browser"
+        },
+        {
+          "pkg": "ru.sberdevices.starmarket",
+          "note": "Sber app catalogue; re-enable to install apps or apps.sber.ru/my APKs from it"
+        },
+        {
+          "pkg": "ru.sberdevices.tv",
+          "note": "\"Настройка провайдеров\", TV provider setup for Sber's channel guide; HDMI unaffected"
+        }
+      ]
+    },
+    {
+      "title": "Sber screensaver: point screensaver_components at another dream first (README), or it comes back enabled",
+      "packages": [
+        {
+          "pkg": "ru.sberdevices.starscreensaver",
+          "note": "~220 MB of cached artwork"
+        }
+      ]
+    },
+    {
+      "title": "Sber background services",
+      "packages": [
+        {
+          "pkg": "ru.sberdevices.survey",
+          "note": "surveys"
+        },
+        {
+          "pkg": "ru.sberdevices.openbeta",
+          "note": "beta programme"
+        },
+        {
+          "pkg": "ru.sberdevices.bugreporter",
+          "note": "StarBugReporter"
+        },
+        {
+          "pkg": "ru.sberdevices.starcleaner",
+          "note": "StarCleaner, the \"Очистка памяти\" screen"
+        },
+        {
+          "pkg": "ru.sberdevices.rcfupdater",
+          "note": "remote control firmware updater; the paired remote keeps working"
+        },
+        {
+          "pkg": "ru.sberdevices.gamepad.service",
+          "note": "gamepad service stub"
+        }
+      ]
+    },
+    {
+      "title": "Screen sharing receivers (Chromecast is not part of this firmware)",
+      "packages": [
+        {
+          "pkg": "ru.sberdevices.huaweicast",
+          "note": "Huawei Cast Plus"
+        },
+        {
+          "pkg": "com.maxhub.screenshare.server.tv",
+          "note": "MHshare"
+        },
+        {
+          "pkg": "com.screenshare.platform",
+          "note": "ScreenShare platform for MHshare"
+        },
+        {
+          "pkg": "com.cvte.dssshare.dlna",
+          "note": "DLNA renderer (Jetty on a random port); a normal app, gone for good once removed"
+        }
+      ]
+    },
+    {
+      "title": "Firmware updates stay on by default. The tested unit disabled both at its owner's request since 21 October,",
+      "packages": [
+        {
+          "pkg": "ru.sberdevices.updater",
+          "note": "OTA updater",
+          "optional": true
+        },
+        {
+          "pkg": "ru.sberdevices.services.core",
+          "note": "StarServicesCore, the updater core",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Stock launcher, replaced by launcher/ (disable.sh skips it while it still owns Home)",
+      "packages": [
+        {
+          "pkg": "ru.sberdevices.starlauncher"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/sber-salute-tv-at30a6/debloat.txt",
+    "commit": "eb0131a32fd8567086f39002f1782f7c1b078ca6"
+  }
+}

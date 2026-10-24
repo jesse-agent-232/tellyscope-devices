@@ -1,0 +1,111 @@
+{
+  "schema": 1,
+  "id": "lumio-vision-7",
+  "name": "Lumio Vision 7",
+  "tested": {
+    "os": "Google TV 14",
+    "sdk": 34,
+    "build": "UKRA.251202.032"
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Ad tracking / Privacy Sandbox",
+      "packages": [
+        {
+          "pkg": "tv.anoki.acr.anokiacroptin",
+          "note": "Anoki ACR: on-screen content recognition for ad targeting"
+        },
+        {
+          "pkg": "com.android.adservices.api",
+          "note": "Privacy Sandbox ad APIs (Topics, attribution)"
+        },
+        {
+          "pkg": "com.android.ondevicepersonalization.services"
+        },
+        {
+          "pkg": "com.android.federatedcompute.services"
+        }
+      ]
+    },
+    {
+      "title": "Retail demo + regional / unused preloads",
+      "packages": [
+        {
+          "pkg": "com.realtek.storemode",
+          "note": "KtcStoreMode: in-store demo mode"
+        },
+        {
+          "pkg": "com.realtek.kara",
+          "note": "Karaoke"
+        },
+        {
+          "pkg": "com.realtek.karaoke.userguide"
+        },
+        {
+          "pkg": "com.hk.gingaplayer.huangs",
+          "note": "Ginga (Latin-America ISDB-T middleware), inert on an EU DVB set"
+        }
+      ]
+    },
+    {
+      "title": "Google telemetry / bloat",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "crash / usage reporting"
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "partner / referrer telemetry"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar",
+          "note": "background calendar sync, unused on a TV"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.dreamx",
+          "note": "Google ambient screensaver (the fork launcher has its own clock)"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        }
+      ]
+    },
+    {
+      "title": "Voice assistant (optional): ~100 MB RAM in the background. Comment out to keep voice search / the mic button.",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss"
+        }
+      ]
+    },
+    {
+      "title": "Required for a third-party launcher to hold Home on this build (see header; needs FORCE_SETUPWRAITH=1)",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith"
+        }
+      ]
+    },
+    {
+      "title": "Owner's personal swap, NOT bloat - left commented so the list keeps YouTube by default",
+      "packages": [
+        {
+          "pkg": "com.google.android.youtube.tv",
+          "note": "removed in favour of SmartTube",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/lumio-vision-7/debloat.txt",
+    "commit": "eb0131a32fd8567086f39002f1782f7c1b078ca6"
+  }
+}

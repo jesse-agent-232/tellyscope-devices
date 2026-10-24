@@ -124,11 +124,43 @@
           "optional": true
         }
       ]
+    },
+    {
+      "title": "Candidates from the third unit, disabled there with no regression in one evening (not yet lived with)",
+      "packages": [
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "Google partner setup: INTERNET, boot receiver",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.feedback",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.onetimeinitializer",
+          "optional": true
+        },
+        {
+          "pkg": "android.autoinstalls.config.tpv.device",
+          "note": "PlayAutoInstallConfig: TPV's auto-install list",
+          "optional": true
+        },
+        {
+          "pkg": "com.android.providers.calendar",
+          "note": "no calendar app on a TV; boot receiver, runs in the background",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar",
+          "optional": true
+        }
+      ]
     }
   ],
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/philips-50pud7406/debloat.txt",
-    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+    "commit": "eb0131a32fd8567086f39002f1782f7c1b078ca6"
   }
 }

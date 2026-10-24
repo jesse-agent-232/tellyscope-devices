@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "rca-rc50a21s-4ksm",
+  "name": "RCA Android TV",
+  "tested": {
+    "os": "Android TV 9",
+    "sdk": 28,
+    "build": "id"
+  },
+  "launcher": "com.zeasn.rca.toptech",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Zeasn ad portal, store and background services",
+      "packages": [
+        {
+          "pkg": "com.zeasn.deviceportal.asdprovider.toptech",
+          "note": "ad/portal service; starts at boot, can install packages (~69 MB)"
+        },
+        {
+          "pkg": "com.zeasn.services.general",
+          "note": "Zeasn \"weather\" service; starts at boot, reads logs (~69 MB)"
+        },
+        {
+          "pkg": "cn.zeasn.toptech2851.rca.vstoresubclient",
+          "note": "Zeasn app store; Google Play stays"
+        }
+      ]
+    },
+    {
+      "title": "Partner auto-installs and unused services",
+      "packages": [
+        {
+          "pkg": "android.autoinstalls.config.realtek.device",
+          "note": "Play auto-installs of partner apps"
+        },
+        {
+          "pkg": "com.android.printspooler",
+          "note": "printing"
+        }
+      ]
+    },
+    {
+      "title": "Stock launcher: disable only once the reference launcher owns Home (build-and-install.sh with",
+      "packages": [
+        {
+          "pkg": "com.zeasn.rca.toptech",
+          "note": "Zeasn launcher with promo rows"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/rca-rc50a21s-4ksm/debloat.txt",
+    "commit": "eb0131a32fd8567086f39002f1782f7c1b078ca6"
+  }
+}

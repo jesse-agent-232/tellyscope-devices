@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "sankey-smart-tv-hi3751v350",
+  "name": "Sankey SMART_TV",
+  "tested": {
+    "os": "Android 12",
+    "sdk": null,
+    "build": "Hi3751V352E_DMO"
+  },
+  "launcher": "com.cvte.tv.launcher.space",
+  "keep": [],
+  "groups": [
+    {
+      "title": "CVTE ads and telemetry",
+      "packages": [
+        {
+          "pkg": "com.cvte.gaia.ad.service",
+          "note": "ad service, the largest app process after Play services (~27 MB)"
+        },
+        {
+          "pkg": "com.cvte.wonder.cloud.service",
+          "note": "\"UniAdService\""
+        },
+        {
+          "pkg": "com.cvte.industries",
+          "note": "push messenger and ad receiver"
+        }
+      ]
+    },
+    {
+      "title": "Manufacturer content",
+      "packages": [
+        {
+          "pkg": "com.cvte.tv.pictorial",
+          "note": "screensaver with ads"
+        },
+        {
+          "pkg": "com.cvte.tv.steward",
+          "note": "\"cleaner\" with scheduled optimisation"
+        },
+        {
+          "pkg": "com.cvte.tv.weather",
+          "note": "the stock launcher's weather; keep it if you keep the stock launcher"
+        }
+      ]
+    },
+    {
+      "title": "CVTE app store. The stock launcher's Apps grid is its AppSelectActivity: with the store disabled that grid does",
+      "packages": [
+        {
+          "pkg": "com.stark.store",
+          "note": "kept by default (it hosts the stock Apps grid); the tested set turned it off",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Google extras",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback"
+        }
+      ]
+    },
+    {
+      "title": "Off by choice on the tested set",
+      "packages": [
+        {
+          "pkg": "com.hisilicon.miracast",
+          "note": "Miracast receiver"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/sankey-smart-tv-hi3751v350/debloat.txt",
+    "commit": "eb0131a32fd8567086f39002f1782f7c1b078ca6"
+  }
+}

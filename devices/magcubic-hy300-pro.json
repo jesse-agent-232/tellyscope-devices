@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "magcubic-hy300-pro",
+  "name": "Magcubic HY300 Pro projector",
+  "tested": {
+    "os": "Android 11",
+    "sdk": 30,
+    "build": null
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "Apps nobody asked for",
+      "packages": [
+        {
+          "pkg": "com.android.calculator2"
+        },
+        {
+          "pkg": "com.android.music"
+        },
+        {
+          "pkg": "com.mobisystems.office",
+          "note": "Office suite"
+        },
+        {
+          "pkg": "com.softwinner.TvdFileManager"
+        },
+        {
+          "pkg": "com.softwinner.TvdVideo",
+          "note": "stock USB video player; VLC covers playback"
+        },
+        {
+          "pkg": "com.softwinner.miracastReceiver",
+          "note": "screen mirroring; re-enable if you cast from a phone"
+        },
+        {
+          "pkg": "com.htc.storeos",
+          "note": "HTC app store"
+        },
+        {
+          "pkg": "com.android.egg"
+        },
+        {
+          "pkg": "com.android.htmlviewer"
+        }
+      ]
+    },
+    {
+      "title": "Printing",
+      "packages": [
+        {
+          "pkg": "com.android.printspooler"
+        },
+        {
+          "pkg": "com.android.bips"
+        },
+        {
+          "pkg": "com.android.printservice.recommendation"
+        }
+      ]
+    },
+    {
+      "title": "Screensaver and backup extras",
+      "packages": [
+        {
+          "pkg": "com.android.dreams.web"
+        },
+        {
+          "pkg": "com.android.wallpaperbackup"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/magcubic-hy300-pro/debloat.txt",
+    "commit": "eb0131a32fd8567086f39002f1782f7c1b078ca6"
+  }
+}

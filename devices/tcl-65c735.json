@@ -31,7 +31,7 @@
         },
         {
           "pkg": "com.tcl.logkit",
-          "note": "55C728: TCL diagnostics/log collector",
+          "note": "55C728, 65C935, 65C745: TCL diagnostics/log collector",
           "optional": true
         }
       ]
@@ -69,17 +69,17 @@
         },
         {
           "pkg": "com.tcl.channelplus",
-          "note": "55C728: TCL's free ad-supported channels",
+          "note": "55C728, 65C935, 65C745: TCL's free ad-supported channels",
           "optional": true
         },
         {
           "pkg": "com.tcl.useragreement",
-          "note": "55C728: agreement screen shown once during setup",
+          "note": "55C728, 65C935, 65C745: agreement screen shown once during setup",
           "optional": true
         },
         {
           "pkg": "android.autoinstalls.config.google.gtvpai",
-          "note": "55C728: partner app auto-installer",
+          "note": "55C728, 65C935, 65C745: partner app auto-installer",
           "optional": true
         }
       ]
@@ -135,22 +135,22 @@
         },
         {
           "pkg": "com.tcl.ocean.instructions",
-          "note": "55C728: e-manual",
+          "note": "55C728, 65C935, 65C745: e-manual",
           "optional": true
         },
         {
           "pkg": "com.tcl.browser",
-          "note": "55C728: TCL browser",
+          "note": "55C728, 65C935, 65C745: TCL browser",
           "optional": true
         },
         {
           "pkg": "com.tcl.android.webview",
-          "note": "55C728: TCL's WebView (the active one is com.google.android.webview)",
+          "note": "55C728, 65C745: TCL's WebView (the active one is com.google.android.webview)",
           "optional": true
         },
         {
           "pkg": "com.tcl.t_solo",
-          "note": "55C728: Bluetooth \"listen alone\"",
+          "note": "55C728, 65C745: Bluetooth \"listen alone\"",
           "optional": true
         }
       ]
@@ -184,7 +184,7 @@
         },
         {
           "pkg": "com.tcl.miracast",
-          "note": "55C728: Miracast mirroring, off by choice",
+          "note": "55C728, 65C935, 65C745: Miracast mirroring, off by choice",
           "optional": true
         }
       ]
@@ -203,7 +203,7 @@
       "packages": [
         {
           "pkg": "com.google.android.apps.tv.dreamx",
-          "note": "55C728: Google TV ambient mode screensaver and smart-home panel",
+          "note": "55C728, 65C745: Google TV ambient mode screensaver and smart-home panel",
           "optional": true
         }
       ]
@@ -212,6 +212,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/tcl-65c735/debloat.txt",
-    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+    "commit": "eb0131a32fd8567086f39002f1782f7c1b078ca6"
   }
 }

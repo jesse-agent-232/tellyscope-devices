@@ -5,7 +5,7 @@
   "tested": {
     "os": "Android 10",
     "sdk": 29,
-    "build": null
+    "build": "QTG3.200305.006.S97"
   },
   "launcher": "com.google.android.tvlauncher",
   "keep": [],
@@ -38,6 +38,15 @@
         },
         {
           "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.tv.bugreportsender"
+        },
+        {
+          "pkg": "com.sony.dtv.sonybugreportsys"
+        },
+        {
+          "pkg": "com.sony.dtv.sonyloglevelsettingsys"
         }
       ]
     },
@@ -52,6 +61,47 @@
         },
         {
           "pkg": "com.sony.dtv.multiscreendemo"
+        }
+      ]
+    },
+    {
+      "title": "Sony IoT and ambient services",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.seeds.iot"
+        },
+        {
+          "pkg": "com.sony.dtv.seeds.iot.remotestart"
+        },
+        {
+          "pkg": "com.sony.dtv.seeds.auth"
+        },
+        {
+          "pkg": "com.sony.dtv.livingfit",
+          "note": "Living Decor / ambient service"
+        }
+      ]
+    },
+    {
+      "title": "hotel / professional mode (unused in a home)",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.b2b.prosettings"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.hotelmode"
+        },
+        {
+          "pkg": "com.sony.dtv.adminpassword"
+        },
+        {
+          "pkg": "com.sony.dtv.deviceadminsettings"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.importexport"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.rs232csupport"
         }
       ]
     },
@@ -78,6 +128,17 @@
       ]
     },
     {
+      "title": "screen mirroring / Wi-Fi Direct (skip to keep Miracast)",
+      "packages": [
+        {
+          "pkg": "com.mediatek.wfd"
+        },
+        {
+          "pkg": "com.sony.dtv.networkapp.wifidirect"
+        }
+      ]
+    },
+    {
       "title": "preloaded apps, disabled by choice",
       "packages": [
         {
@@ -99,6 +160,9 @@
           "pkg": "com.google.android.youtube.tvunplugged"
         },
         {
+          "pkg": "com.google.android.music"
+        },
+        {
           "pkg": "com.google.android.youtube.tvmusic"
         },
         {
@@ -116,6 +180,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/sony-bravia-4k-ur2/debloat.txt",
-    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+    "commit": "eb0131a32fd8567086f39002f1782f7c1b078ca6"
   }
 }

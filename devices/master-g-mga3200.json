@@ -1,0 +1,156 @@
+{
+  "schema": 1,
+  "id": "master-g-mga3200",
+  "name": "Master-G MGA3200",
+  "tested": {
+    "os": "Android TV 9",
+    "sdk": 28,
+    "build": "259"
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "--- Telemetry, analytics, recommendation rows ---",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvrecommendations"
+        },
+        {
+          "pkg": "com.google.android.leanbacklauncher.recommendations"
+        },
+        {
+          "pkg": "com.google.android.apps.nbu.smartconnect.tv"
+        },
+        {
+          "pkg": "com.apps.function.gdpr"
+        },
+        {
+          "pkg": "com.realtek.leanbacklauncher.partnercustomizer"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.tv.bugreportsender"
+        }
+      ]
+    },
+    {
+      "title": "--- Content/promo rows and partner auto-installs ---",
+      "packages": [
+        {
+          "pkg": "com.apps.channels",
+          "note": "the SCBC \"S-Channels\" content app"
+        },
+        {
+          "pkg": "android.autoinstalls.config.scbc.device",
+          "note": "partner auto-install config for SCBC devices"
+        },
+        {
+          "pkg": "com.android.printspooler"
+        }
+      ]
+    },
+    {
+      "title": "--- Google Assistant (the mic button on the remote goes dead, saves ~80 MB RAM) ---",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "--- Preinstalled service and stores ---",
+      "packages": [
+        {
+          "pkg": "com.vewd.core.service"
+        }
+      ]
+    },
+    {
+      "title": "--- Streaming apps off by choice (adjust to taste) ---",
+      "packages": [
+        {
+          "pkg": "com.netflix.ninja",
+          "optional": true
+        },
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.videos"
+        }
+      ]
+    },
+    {
+      "title": "--- Google add-ons ---",
+      "packages": [
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        }
+      ]
+    },
+    {
+      "title": "--- OEM leftovers (factory/demo/test utilities, com.apps.*) ---",
+      "packages": [
+        {
+          "pkg": "com.apps.eshow",
+          "note": "retail store demo mode"
+        },
+        {
+          "pkg": "com.apps.esticker",
+          "note": "store promotional sticker overlay"
+        },
+        {
+          "pkg": "com.apps.factory.ui",
+          "optional": true
+        },
+        {
+          "pkg": "com.rtk.engmenu",
+          "optional": true
+        },
+        {
+          "pkg": "com.realtek.factorytools",
+          "optional": true
+        },
+        {
+          "pkg": "com.apps.clear",
+          "note": "background task killer"
+        },
+        {
+          "pkg": "com.apps.networkspeed"
+        },
+        {
+          "pkg": "com.apps.usbmediaplayer"
+        },
+        {
+          "pkg": "com.apps.wifihotspot"
+        }
+      ]
+    },
+    {
+      "title": "--- Firmware updates: kept (uncomment both to stop updates; they can reinstall disabled junk) ---",
+      "packages": [
+        {
+          "pkg": "com.apps.ota",
+          "optional": true
+        },
+        {
+          "pkg": "com.apps.authota",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/master-g-mga3200/debloat.txt",
+    "commit": "eb0131a32fd8567086f39002f1782f7c1b078ca6"
+  }
+}

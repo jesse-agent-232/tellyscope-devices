@@ -4,7 +4,7 @@
   "name": "TCL 55\" 4K Google TV",
   "tested": {
     "os": "Android 12",
-    "sdk": null,
+    "sdk": 31,
     "build": "STT2.230203.001"
   },
   "launcher": "com.google.android.apps.tv.launcherx",
@@ -95,6 +95,36 @@
       "title": "Optional: uncomment what you don't use",
       "packages": [
         {
+          "pkg": "tv.samba.ssm.ui",
+          "note": "Samba TV ACR viewing tracking",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.ttvs",
+          "note": "TCL analytics; re-enable if firmware updates stop arriving",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.logkit",
+          "note": "log capture and upload",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.waterfall.overseas",
+          "note": "TCL Channel / content feed on the 43P69K",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.guard",
+          "note": "TGuard memory cleaner",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.magiconnectfree",
+          "note": "MagiConnect phone-to-TV app",
+          "optional": true
+        },
+        {
           "pkg": "com.tcl.airplay2",
           "note": "AirPlay, together with the next line",
           "optional": true
@@ -127,6 +157,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/tcl-g10-google-tv/debloat.txt",
-    "commit": "30626a8e4714f86bf837384b109b5c73ee736917"
+    "commit": "eb0131a32fd8567086f39002f1782f7c1b078ca6"
   }
 }

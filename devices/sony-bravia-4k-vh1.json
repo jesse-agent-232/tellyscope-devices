@@ -1,0 +1,178 @@
+{
+  "schema": 1,
+  "id": "sony-bravia-4k-vh1",
+  "name": "Sony BRAVIA 4K VH1",
+  "tested": {
+    "os": "Google TV 12",
+    "sdk": 31,
+    "build": "BRAVIA_VH1_EU-user"
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "ACR viewing tracker",
+      "packages": [
+        {
+          "pkg": "tv.samba.ssm",
+          "note": "Samba TV fingerprints what's on screen"
+        },
+        {
+          "pkg": "tv.samba.ssm.ui"
+        }
+      ]
+    },
+    {
+      "title": "telemetry and remote support",
+      "packages": [
+        {
+          "pkg": "com.qterics.da.product"
+        },
+        {
+          "pkg": "com.sony.dtv.da.service"
+        },
+        {
+          "pkg": "com.sonyericsson.idd.agent"
+        },
+        {
+          "pkg": "com.sony.dtv.sonybugreportsys"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        }
+      ]
+    },
+    {
+      "title": "demo / shop / hotel mode",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.demosupport"
+        },
+        {
+          "pkg": "com.sony.dtv.demosystemsupport"
+        },
+        {
+          "pkg": "com.sony.dtv.multiscreendemo"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.hotelmode"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.softap"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.rs232csupport"
+        }
+      ]
+    },
+    {
+      "title": "Sony promos, Select, help and partner install config",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.promos"
+        },
+        {
+          "pkg": "com.sony.dtv.sonyselect"
+        },
+        {
+          "pkg": "com.sony.dtv.sonytab"
+        },
+        {
+          "pkg": "com.sony.dtv.customersupport",
+          "note": "Help tile"
+        },
+        {
+          "pkg": "com.sony.dtv.smarthelp"
+        },
+        {
+          "pkg": "com.sony.dtv.helpguidecontents"
+        },
+        {
+          "pkg": "com.sony.dtv.accessibility.tutorial"
+        },
+        {
+          "pkg": "android.autoinstalls.config.sony.bravia"
+        }
+      ]
+    },
+    {
+      "title": "Sony extras unused on this set",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.homekit"
+        },
+        {
+          "pkg": "com.sony.dtv.livingfit"
+        },
+        {
+          "pkg": "com.sony.dtv.osat.music"
+        },
+        {
+          "pkg": "com.sony.dtv.gestureapp"
+        },
+        {
+          "pkg": "com.spocky.projengmenu",
+          "note": "engineering / project menu"
+        }
+      ]
+    },
+    {
+      "title": "Google rows and preloads",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvrecommendations"
+        },
+        {
+          "pkg": "com.google.android.backdrop"
+        },
+        {
+          "pkg": "com.google.android.marvin.talkback"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        },
+        {
+          "pkg": "com.google.android.videos"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.android.printspooler"
+        },
+        {
+          "pkg": "com.youview.poa",
+          "note": "YouView (UK); unused on this EU unit"
+        }
+      ]
+    },
+    {
+      "title": "Stock leanback Home (CleanYourTV owns HOME)",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvlauncher"
+        }
+      ]
+    },
+    {
+      "title": "Off by owner's choice (re-enable if you use them)",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google Assistant voice"
+        },
+        {
+          "pkg": "com.netflix.ninja"
+        },
+        {
+          "pkg": "com.netflix.partner.ncm"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/sony-bravia-4k-vh1/debloat.txt",
+    "commit": "eb0131a32fd8567086f39002f1782f7c1b078ca6"
+  }
+}

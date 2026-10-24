@@ -1,0 +1,141 @@
+{
+  "schema": 1,
+  "id": "tivo-stream-4k",
+  "name": "TiVo Stream 4K",
+  "tested": {
+    "os": "Android TV 12",
+    "sdk": 31,
+    "build": "SC.1272"
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Telemetry and feedback",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "Google RLZ partner attribution pings"
+        },
+        {
+          "pkg": "com.nes.tvbugtracker",
+          "note": "NES bug tracker"
+        }
+      ]
+    },
+    {
+      "title": "App blocker and NES background services",
+      "packages": [
+        {
+          "pkg": "com.nes.coreservice",
+          "note": "uninstalls launchers and sideload tools at boot; polls the update status once a second"
+        },
+        {
+          "pkg": "com.nes.daemon",
+          "note": "persistent: the system re-creates it, so suspending changes nothing visible"
+        },
+        {
+          "pkg": "com.tivo.sageservice",
+          "note": "TiVo service, no use outside the US"
+        }
+      ]
+    },
+    {
+      "title": "Recommendations, partner rows and auto-installs",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvrecommendations",
+          "note": "also switch its notification listener off: cmd notification disallow_listener"
+        },
+        {
+          "pkg": "android.autoinstalls.config.sei",
+          "note": "Play auto-install of partner apps"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps, off by choice",
+      "packages": [
+        {
+          "pkg": "com.android.printspooler"
+        },
+        {
+          "pkg": "com.google.android.marvin.talkback",
+          "note": "re-enable if you need the screen reader"
+        }
+      ]
+    },
+    {
+      "title": "Stock launcher and unused services: only once another launcher answers the Home key and the HOME role has",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvlauncher",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.backdrop",
+          "note": "ambient screensaver",
+          "optional": true
+        },
+        {
+          "pkg": "com.android.camera2",
+          "note": "no camera on a stick",
+          "optional": true
+        },
+        {
+          "pkg": "com.android.gallery3d",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Assistant; also clear settings assistant and voice_interaction_service, or the system keeps it alive",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Already removed by the owner before the list (pm uninstall --user 0), kept as comments so a fresh box can decide",
+      "packages": [
+        {
+          "pkg": "com.tivo.atom",
+          "optional": true
+        },
+        {
+          "pkg": "com.tivo.tivoplusplayer",
+          "optional": true
+        },
+        {
+          "pkg": "com.tivo.tvlaunchercustomization",
+          "optional": true
+        },
+        {
+          "pkg": "com.nes.skywayclient",
+          "note": "NES device manager: boot ads, silent installs, firmware check",
+          "optional": true
+        },
+        {
+          "pkg": "com.nes.tvglobalkeyhandler",
+          "note": "remote shortcut keys",
+          "optional": true
+        },
+        {
+          "pkg": "com.utsmta.app",
+          "note": "NES factory test app",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.play.games",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tivo-stream-4k/debloat.txt",
+    "commit": "eb0131a32fd8567086f39002f1782f7c1b078ca6"
+  }
+}

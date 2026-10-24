@@ -1,0 +1,131 @@
+{
+  "schema": 1,
+  "id": "xiaomi-mi-box-3",
+  "name": "Xiaomi Mi Box 3",
+  "tested": {
+    "os": "Android TV 9",
+    "sdk": 28,
+    "build": null
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Xiaomi + Google telemetry and ad tracking",
+      "packages": [
+        {
+          "pkg": "com.miui.tv.analytics"
+        },
+        {
+          "pkg": "tv.alphonso.alphonso_eula"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.tv.bugreportsender"
+        }
+      ]
+    },
+    {
+      "title": "PatchWall, content rows, promos, auto-installs",
+      "packages": [
+        {
+          "pkg": "com.mitv.tvhome.atv"
+        },
+        {
+          "pkg": "com.mitv.tvhome.michannel"
+        },
+        {
+          "pkg": "com.xm.webcontent"
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations"
+        },
+        {
+          "pkg": "android.autoinstalls.config.xioami.mibox3"
+        }
+      ]
+    },
+    {
+      "title": "Personal choice: voice assistant (the mic button stops working)",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss"
+        },
+        {
+          "pkg": "com.google.android.speech.pumpkin"
+        }
+      ]
+    },
+    {
+      "title": "Personal choice: Mi cast and the phone remote (Chromecast kept)",
+      "packages": [
+        {
+          "pkg": "com.mitv.milinkservice"
+        },
+        {
+          "pkg": "com.mitv.videoplayer"
+        },
+        {
+          "pkg": "com.google.android.tv.remote.service"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps (personal choice)",
+      "packages": [
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom"
+        },
+        {
+          "pkg": "com.netflix.ninja"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvkids"
+        },
+        {
+          "pkg": "com.google.android.videos"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.tv",
+          "note": "Live Channels"
+        },
+        {
+          "pkg": "com.google.android.marvin.talkback"
+        },
+        {
+          "pkg": "com.android.printspooler"
+        }
+      ]
+    },
+    {
+      "title": "Ambient screensaver: re-enabled by the firmware at boot, see header",
+      "packages": [
+        {
+          "pkg": "com.google.android.backdrop",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Stock launcher, replaced by launcher/ (build-and-install.sh disables it)",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvlauncher"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/xiaomi-mi-box-3/debloat.txt",
+    "commit": "eb0131a32fd8567086f39002f1782f7c1b078ca6"
+  }
+}

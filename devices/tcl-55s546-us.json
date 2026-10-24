@@ -1,0 +1,139 @@
+{
+  "schema": 1,
+  "id": "tcl-55s546-us",
+  "name": "TCL 55S546",
+  "tested": {
+    "os": "Android 11",
+    "sdk": 30,
+    "build": "RP1A.200622.001"
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "---- 1. TCL and Google telemetry ----",
+      "packages": [
+        {
+          "pkg": "com.tcl.bi",
+          "note": "TCL BI analytics"
+        },
+        {
+          "pkg": "com.tcl.xian.StartandroidService",
+          "note": "background reporting service"
+        },
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "crash / feedback reporting"
+        }
+      ]
+    },
+    {
+      "title": "---- 2. TCL and Google content, ads and recommendation rows ----",
+      "packages": [
+        {
+          "pkg": "com.tcl.dashboard",
+          "note": "TCL dashboard / promo backend"
+        },
+        {
+          "pkg": "com.tcl.partnercustomizer",
+          "note": "partner customisation channel, promo rows"
+        },
+        {
+          "pkg": "com.tcl.messagebox",
+          "note": "TCL message / promo box"
+        },
+        {
+          "pkg": "com.tcl.esticker",
+          "note": "sticker / emoji overlay"
+        },
+        {
+          "pkg": "com.tcl.waterfall.overseas",
+          "note": "older copy of TCL's web-video portal (TCL+ is its own package)"
+        },
+        {
+          "pkg": "android.autoinstalls.config.google.gtvpai",
+          "note": "silently installs partner apps"
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "partner-app attribution"
+        },
+        {
+          "pkg": "com.google.android.onetimeinitializer",
+          "note": "one-time setup leftovers"
+        }
+      ]
+    },
+    {
+      "title": "---- 3. Background services and preloaded extras ----",
+      "packages": [
+        {
+          "pkg": "com.tcl.guard",
+          "note": "TCL online support"
+        },
+        {
+          "pkg": "com.tcl.usercenter",
+          "note": "TCL account sign-in nags"
+        },
+        {
+          "pkg": "com.tcl.ocean.instructions",
+          "note": "e-manual"
+        },
+        {
+          "pkg": "com.tcl.android.webview",
+          "note": "TCL WebView; com.google.android.webview stays the provider"
+        },
+        {
+          "pkg": "org.chromium.webview_shell",
+          "note": "WebView test shell"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar",
+          "note": "calendar sync, no calendar on a TV"
+        },
+        {
+          "pkg": "com.google.android.play.games",
+          "note": "Play Games"
+        },
+        {
+          "pkg": "com.tcl.gallery",
+          "note": "TCL photo gallery"
+        }
+      ]
+    },
+    {
+      "title": "---- 4. Off by choice: voice assistants not used ----",
+      "packages": [
+        {
+          "pkg": "com.tcl.smartalexa",
+          "note": "Alexa bridge"
+        },
+        {
+          "pkg": "com.tcl.assistant",
+          "note": "TCL voice assistant / voice TV control"
+        }
+      ]
+    },
+    {
+      "title": "---- 5. Google TV first-run wizard: claims HOME once launcherx is off ----",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith"
+        }
+      ]
+    },
+    {
+      "title": "---- 6. Google ambient screensaver (promos) ----",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.tv.dreamx"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tcl-55s546-us/debloat.txt",
+    "commit": "eb0131a32fd8567086f39002f1782f7c1b078ca6"
+  }
+}
