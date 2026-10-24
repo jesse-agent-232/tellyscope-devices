@@ -5,7 +5,7 @@
   "tested": {
     "os": "Android TV 10",
     "sdk": null,
-    "build": "ships"
+    "build": null
   },
   "launcher": "com.google.android.tvlauncher",
   "keep": [],

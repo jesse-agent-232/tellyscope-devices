@@ -5,7 +5,7 @@
   "tested": {
     "os": "Android 14",
     "sdk": null,
-    "build": "as"
+    "build": null
   },
   "launcher": "com.google.android.apps.tv.launcherx",
   "keep": [],

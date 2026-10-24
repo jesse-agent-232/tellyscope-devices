@@ -5,7 +5,7 @@
   "tested": {
     "os": "Android TV 9",
     "sdk": 28,
-    "build": "id"
+    "build": null
   },
   "launcher": "com.zeasn.rca.toptech",
   "keep": [],

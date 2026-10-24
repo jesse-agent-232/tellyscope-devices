@@ -5,7 +5,7 @@
   "tested": {
     "os": "Android TV 14",
     "sdk": null,
-    "build": "is"
+    "build": "UKR1.260308"
   },
   "launcher": "com.google.android.tvlauncher",
   "keep": [],

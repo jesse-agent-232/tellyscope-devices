@@ -5,7 +5,7 @@
   "tested": {
     "os": "Android TV 9",
     "sdk": 28,
-    "build": "as"
+    "build": null
   },
   "launcher": "com.google.android.tvlauncher",
   "keep": [],

@@ -77,7 +77,9 @@ def parse_list(text):
     prose = " ".join(header)
     sdk = re.search(r"\b(?:SDK|API)\s*(\d{2})\b", prose)
     os_ = re.search(r"\b((?:Google TV|Android TV|Fire OS|Android)\s+\d+(?:\.\d+)*)", prose)
-    build = re.search(r"\bbuild\s+([A-Za-z0-9][A-Za-z0-9._-]*[A-Za-z0-9])", prose)
+    # The first "build <token>" whose token has a digit: "the build is the same" is prose, not an id.
+    build = next((m for m in re.finditer(r"\bbuild\s+([A-Za-z0-9][A-Za-z0-9._-]*[A-Za-z0-9])", prose, re.I)
+                  if re.search(r"\d", m.group(1))), None)
     launcher = re.search(r"Stock launcher:\s*(" + PACKAGE.pattern + r")", prose)
     name = re.split(r"\s\(|,", header[0], maxsplit=1)[0].strip() if header else ""
     return {

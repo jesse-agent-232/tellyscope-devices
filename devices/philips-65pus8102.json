@@ -5,7 +5,7 @@
   "tested": {
     "os": "Android TV 8.0.0",
     "sdk": 26,
-    "build": "as"
+    "build": null
   },
   "launcher": "com.google.android.tvlauncher",
   "keep": [],

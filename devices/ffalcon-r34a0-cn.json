@@ -5,7 +5,7 @@
   "tested": {
     "os": "Android 5.1.1",
     "sdk": 22,
-    "build": "of"
+    "build": null
   },
   "launcher": null,
   "keep": [],

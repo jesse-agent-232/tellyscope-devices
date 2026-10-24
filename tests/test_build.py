@@ -66,6 +66,16 @@ class ParseList(unittest.TestCase):
         self.assertEqual([p["pkg"] for p in d["keep"]], ["com.a.b"])
         self.assertEqual([p["pkg"] for g in d["groups"] for p in g["packages"]], ["com.c.d"])
 
+    def test_build_is_an_id_not_the_next_word(self):
+        for prose, want in [
+            ("Android TV 14, firmware UKR1.260308 Build UKR1.260308, incremental 3272", "UKR1.260308"),
+            ("Same board and firmware build as examples/tcl-c755-google-tv", None),
+            ("the build is the same. Android 11 (SDK 30), build RP1A.200720.011", "RP1A.200720.011"),
+            ("Android 9 (PPR1.180610.011), build date 20230208, locale zh-CN", None),
+        ]:
+            d = build.parse_list(f"# {prose}\n\n# Junk\ncom.a.b\n")
+            self.assertEqual(d["tested"]["build"], want, prose)
+
     def test_shell_metacharacters_are_not_package_names(self):
         d = build.parse_list("# T\n\n# Bad\ncom.a.b;reboot\n$(reboot)\ncom.ok.one\n")
         self.assertEqual([p["pkg"] for g in d["groups"] for p in g["packages"]], ["com.ok.one"])

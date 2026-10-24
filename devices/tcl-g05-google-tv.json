@@ -5,7 +5,7 @@
   "tested": {
     "os": "Android 11",
     "sdk": null,
-    "build": "ID"
+    "build": null
   },
   "launcher": "com.google.android.apps.tv.launcherx",
   "keep": [],

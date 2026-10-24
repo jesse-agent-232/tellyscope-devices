@@ -5,7 +5,7 @@
   "tested": {
     "os": "Android TV 9",
     "sdk": null,
-    "build": "date"
+    "build": null
   },
   "launcher": "com.tcl.cyberui",
   "keep": [],

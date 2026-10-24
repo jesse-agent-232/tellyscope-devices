@@ -5,7 +5,7 @@
   "tested": {
     "os": "Android TV 12",
     "sdk": 31,
-    "build": "as"
+    "build": null
   },
   "launcher": "com.google.android.tvlauncher",
   "keep": [],

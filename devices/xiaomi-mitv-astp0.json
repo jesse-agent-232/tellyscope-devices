@@ -5,7 +5,7 @@
   "tested": {
     "os": "Android 9",
     "sdk": 28,
-    "build": "lacks"
+    "build": null
   },
   "launcher": "com.mitv.tvhome",
   "keep": [],

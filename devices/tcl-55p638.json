@@ -5,7 +5,7 @@
   "tested": {
     "os": "Android TV 11",
     "sdk": null,
-    "build": null
+    "build": "RP1A.200622.001"
   },
   "launcher": null,
   "keep": [],

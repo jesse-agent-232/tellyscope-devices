@@ -5,7 +5,7 @@
   "tested": {
     "os": "Android 8.0",
     "sdk": 26,
-    "build": null
+    "build": "OPR5.170623.014"
   },
   "launcher": null,
   "keep": [],
