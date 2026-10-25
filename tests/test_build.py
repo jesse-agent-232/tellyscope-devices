@@ -61,6 +61,17 @@ class ParseList(unittest.TestCase):
         names = [p["pkg"] for g in self.d["groups"] for p in g["packages"]]
         self.assertEqual(names.count("com.acme.reporter"), 1)
 
+    def test_an_active_entry_wins_over_a_commented_copy_above_it(self):
+        d = build.parse_list("# T (SDK 30)\n\n# Removed before\n# com.a.b\n# com.c.d\n\n# Junk\ncom.a.b\n")
+        self.assertEqual(d["groups"], [
+            {"title": "Removed before", "packages": [{"pkg": "com.c.d", "optional": True}]},
+            {"title": "Junk", "packages": [{"pkg": "com.a.b"}]},
+        ])
+
+    def test_two_commented_copies_keep_the_first(self):
+        d = build.parse_list("# T (SDK 30)\n\n# First\n# com.a.b  # one\n\n# Second\n# com.a.b  # two\n")
+        self.assertEqual(d["groups"], [{"title": "First", "packages": [{"pkg": "com.a.b", "note": "one", "optional": True}]}])
+
     def test_keep_wins_over_a_list_entry(self):
         d = build.parse_list("# T (SDK 30)\n\n# Do not disable:\n# com.a.b\n\n# Junk\ncom.a.b\ncom.c.d\n")
         self.assertEqual([p["pkg"] for p in d["keep"]], ["com.a.b"])
