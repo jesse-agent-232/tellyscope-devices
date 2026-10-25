@@ -1,0 +1,115 @@
+{
+  "schema": 1,
+  "id": "kogan-g7",
+  "name": "Kogan G7 Google TV",
+  "tested": {
+    "os": "Android 11",
+    "sdk": 30,
+    "build": null
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Retail demo / store mode",
+      "packages": [
+        {
+          "pkg": "com.realtek.storemode"
+        },
+        {
+          "pkg": "com.realtek.retailmode"
+        }
+      ]
+    },
+    {
+      "title": "Content, ads and promos",
+      "packages": [
+        {
+          "pkg": "com.realtek.leanbacklauncher.partnercustomizer",
+          "note": "partner tweaks to the Google TV home rows"
+        },
+        {
+          "pkg": "android.autoinstalls.config.google.gtvpai",
+          "note": "silently installs partner apps"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.dreamx",
+          "note": "ambient mode screensaver (shows promos)"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps",
+      "packages": [
+        {
+          "pkg": "com.realtek.karaoke.userguide",
+          "note": "karaoke how-to screen"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic",
+          "note": "off by choice"
+        }
+      ]
+    },
+    {
+      "title": "Needed for the custom launcher: with launcherx disabled, setupwraith's RecoveryActivity claims HOME.",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith",
+          "note": "costs phone casting after a reboot (the Cast receiver reads its credentials from setupwraith)"
+        }
+      ]
+    },
+    {
+      "title": "Optional: uncomment what you don't use",
+      "packages": [
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom",
+          "note": "Prime Video",
+          "optional": true
+        },
+        {
+          "pkg": "com.netflix.ninja",
+          "note": "Netflix",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google TV movie store",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google Assistant voice",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Chromecast",
+          "optional": true
+        },
+        {
+          "pkg": "com.rtk.mediabrowser",
+          "note": "USB media player",
+          "optional": true
+        },
+        {
+          "pkg": "com.realtek.kara",
+          "note": "karaoke mic support",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/kogan-g7/debloat.txt",
+    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+  }
+}

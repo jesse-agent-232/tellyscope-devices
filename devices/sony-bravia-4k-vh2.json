@@ -11,6 +11,27 @@
   "keep": [],
   "groups": [
     {
+      "title": "Fourth unit: owner-selected streaming/social apps (off by choice there; uncomment the ones you don't use)",
+      "packages": [
+        {
+          "pkg": "com.spotify.tv.android",
+          "optional": true
+        },
+        {
+          "pkg": "com.aspiro.tidal",
+          "optional": true
+        },
+        {
+          "pkg": "com.curiosity.curiositystream.androidtv",
+          "optional": true
+        },
+        {
+          "pkg": "com.facebook.katana",
+          "optional": true
+        }
+      ]
+    },
+    {
       "title": "ACR viewing tracker",
       "packages": [
         {
@@ -204,7 +225,7 @@
       ]
     },
     {
-      "title": "Stock Google TV launcher. Left ENABLED on the EU unit, where Home resolved to the new launcher by",
+      "title": "Stock Google TV launcher. Left ENABLED on the original EU unit, where Home resolved to the new launcher",
       "packages": [
         {
           "pkg": "com.google.android.apps.tv.launcherx",
@@ -221,6 +242,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/sony-bravia-4k-vh2/debloat.txt",
-    "commit": "204143007f0bebfb14d6ef001a32e5836b1c90b5"
+    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
   }
 }

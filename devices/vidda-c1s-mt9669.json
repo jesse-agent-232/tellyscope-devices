@@ -1,0 +1,112 @@
+{
+  "schema": 1,
+  "id": "vidda-c1s-mt9669",
+  "name": "Vidda C1S 4K laser projector",
+  "tested": {
+    "os": "Android 9",
+    "sdk": null,
+    "build": "PPR2.180905.006.A1"
+  },
+  "launcher": "com.jamdeo.tv.vod",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Hisense telemetry, reporting and push",
+      "packages": [
+        {
+          "pkg": "com.hisense.hitv.das"
+        },
+        {
+          "pkg": "com.hisense.logupload"
+        },
+        {
+          "pkg": "com.hisense.service.hproxy",
+          "note": "LoopingService + network-change receiver, polls forever"
+        },
+        {
+          "pkg": "com.hisense.service.message",
+          "note": "the vendor push channel"
+        }
+      ]
+    },
+    {
+      "title": "Ads and operator content",
+      "packages": [
+        {
+          "pkg": "com.hisense.business.ad",
+          "note": "ships Alibaba Baichuan + CIBN shopping SDKs; installed as a user app"
+        },
+        {
+          "pkg": "com.hisense.service.ad",
+          "note": "its WatchingAccessibilityService was registered in enabled_accessibility_services"
+        },
+        {
+          "pkg": "com.hisense.tv.weather",
+          "note": "weather card, a content feed"
+        }
+      ]
+    },
+    {
+      "title": "Retail, hotel, factory and leftovers",
+      "packages": [
+        {
+          "pkg": "com.hisense.demonstrate"
+        },
+        {
+          "pkg": "com.hisense.hotelmenu"
+        },
+        {
+          "pkg": "com.hisense.autotest"
+        },
+        {
+          "pkg": "com.hisense.electronictutorial",
+          "note": "e-manual"
+        },
+        {
+          "pkg": "com.hisense.ar.baike"
+        },
+        {
+          "pkg": "com.jamdeo.tv.fte",
+          "note": "first-run wizard, long done"
+        },
+        {
+          "pkg": "com.hisense.usbupgrade",
+          "note": "kept: the USB firmware upgrade and recovery path",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Duplicate / unused lifestyle apps (casting stacks deliberately kept)",
+      "packages": [
+        {
+          "pkg": "com.hisense.tv.foodmanage"
+        },
+        {
+          "pkg": "com.jamdeo.calendar"
+        }
+      ]
+    },
+    {
+      "title": "The 拍信创意 ad screensaver; not the active screensaver here, and Aerial's dream owns",
+      "packages": [
+        {
+          "pkg": "com.jamdeo.screensaver"
+        }
+      ]
+    },
+    {
+      "title": "AOSP leftovers on a TV",
+      "packages": [
+        {
+          "pkg": "com.android.printspooler"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/vidda-c1s-mt9669/debloat.txt",
+    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+  }
+}

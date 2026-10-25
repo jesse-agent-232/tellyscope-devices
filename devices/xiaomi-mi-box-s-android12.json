@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "xiaomi-mi-box-s-android12",
+  "name": "Xiaomi Mi Box S",
+  "tested": {
+    "os": "Android TV 12",
+    "sdk": 31,
+    "build": null
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Xiaomi telemetry",
+      "packages": [
+        {
+          "pkg": "com.miui.tv.analytics",
+          "note": "Mi analytics: reads logs and app usage"
+        },
+        {
+          "pkg": "com.xiaomi.statistic",
+          "note": "Xiaomi usage stats uploader"
+        }
+      ]
+    },
+    {
+      "title": "PatchWall, content rows, ad-funded channels",
+      "packages": [
+        {
+          "pkg": "com.mitv.tvhome.atv",
+          "note": "PatchWall"
+        },
+        {
+          "pkg": "com.mitv.tvhome.michannel",
+          "note": "Mi Channel rows"
+        },
+        {
+          "pkg": "com.mitv.tvhome.mitvplus",
+          "note": "Mi TV+ ad-funded channels"
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations"
+        },
+        {
+          "pkg": "com.xm.webcontent",
+          "note": "Xiaomi web promos"
+        }
+      ]
+    },
+    {
+      "title": "Xiaomi updater: left enabled here. This unit has both disabled by the family's choice (no surprise",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.mitv.updateservice",
+          "note": "firmware and PatchWall updates, installs apps",
+          "optional": true
+        },
+        {
+          "pkg": "com.mitv.download.service",
+          "note": "its download helper",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Personal choice: Mi casting",
+      "packages": [
+        {
+          "pkg": "com.mitv.milinkservice",
+          "note": "Mi cast (MiLink); Chromecast is separate and keeps working"
+        }
+      ]
+    },
+    {
+      "title": "Xiaomi screensaver, replaced by the launcher's clock",
+      "packages": [
+        {
+          "pkg": "com.mitv.dream",
+          "note": "set screensaver_components to another dream first, or the screen stays on"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/xiaomi-mi-box-s-android12/debloat.txt",
+    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+  }
+}

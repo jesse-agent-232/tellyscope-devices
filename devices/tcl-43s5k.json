@@ -79,11 +79,26 @@
           "note": "Google TV Ambient mode screensaver (promos)"
         }
       ]
+    },
+    {
+      "title": "Brazilian unit only: partner apps preloaded on the Brazilian firmware, disabled there by choice. The Indian",
+      "packages": [
+        {
+          "pkg": "br.com.claro.now.smarttvclient",
+          "note": "Claro TV+",
+          "optional": true
+        },
+        {
+          "pkg": "com.mercadolibre.android.mplay_tv",
+          "note": "Mercado Play",
+          "optional": true
+        }
+      ]
     }
   ],
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/tcl-43s5k/debloat.txt",
-    "commit": "204143007f0bebfb14d6ef001a32e5836b1c90b5"
+    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
   }
 }

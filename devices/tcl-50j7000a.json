@@ -1,0 +1,136 @@
+{
+  "schema": 1,
+  "id": "tcl-50j7000a",
+  "name": "TCL 50J7000A",
+  "tested": {
+    "os": "Android TV 11",
+    "sdk": 30,
+    "build": "PPR1.180610.011"
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "1. Telemetry and attribution",
+      "packages": [
+        {
+          "pkg": "com.tcl.bi",
+          "note": "TCL analytics"
+        },
+        {
+          "pkg": "android.autoinstalls.config.tcl.device",
+          "note": "partner-app auto installer"
+        },
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "\"send feedback\""
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "partner-app attribution"
+        },
+        {
+          "pkg": "com.google.android.onetimeinitializer",
+          "note": "one-time setup leftovers"
+        }
+      ]
+    },
+    {
+      "title": "2. TCL content/promo feeds and recommendation rows",
+      "packages": [
+        {
+          "pkg": "com.tcl.tv.tclhome_passive",
+          "note": "pushes TCL content to the home screen at boot"
+        },
+        {
+          "pkg": "com.tcl.waterfall.overseas",
+          "note": "\"TCL Channel\" content feed"
+        },
+        {
+          "pkg": "com.tcl.overseasappshow",
+          "note": "\"recommended apps\" showcase"
+        },
+        {
+          "pkg": "com.tcl.messagebox",
+          "note": "TCL message/promo box"
+        },
+        {
+          "pkg": "com.tcl.esticker",
+          "note": "shop-mode stickers"
+        },
+        {
+          "pkg": "com.tcl.notereminder"
+        },
+        {
+          "pkg": "com.tcl.copydatatotv",
+          "note": "\"copy your phone's data to the TV\" helper"
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations",
+          "note": "home-screen recommendation rows"
+        }
+      ]
+    },
+    {
+      "title": "3. Unused Google extras",
+      "packages": [
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Play Movies & TV"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar"
+        }
+      ]
+    },
+    {
+      "title": "4. Preloaded apps and games nobody uses here",
+      "packages": [
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom",
+          "note": "Prime Video"
+        },
+        {
+          "pkg": "com.vectorunit.purple.googleplay"
+        },
+        {
+          "pkg": "com.doodle.turboracing3d"
+        },
+        {
+          "pkg": "com.xformgames.gokartgoair"
+        },
+        {
+          "pkg": "uk.co.powgames.gamecondiag"
+        }
+      ]
+    },
+    {
+      "title": "5. Voice, off by choice: the remote's mic button stops working",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google voice search"
+        },
+        {
+          "pkg": "com.google.android.tv.assistant",
+          "note": "Assistant for TV"
+        },
+        {
+          "pkg": "com.tcl.assistant",
+          "note": "TCL's Assistant bridge"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tcl-50j7000a/debloat.txt",
+    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+  }
+}

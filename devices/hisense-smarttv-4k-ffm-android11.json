@@ -54,10 +54,27 @@
       ]
     },
     {
-      "title": "Second unit only: disabled for one session and one reboot (normal boot, Home and the key helper back), not",
+      "title": "Second and third units only: disabled for one session and its reboots (normal boot; Home and the key helper",
       "packages": [
         {
           "pkg": "com.hisense.evservice",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Third unit only, the same one session: the feed of the \"Hisense\" (VIDAA) tab on the Google TV home, as on",
+      "packages": [
+        {
+          "pkg": "com.vidaa.oemtabcontentprovider",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.feedback",
           "optional": true
         }
       ]
@@ -66,6 +83,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/hisense-smarttv-4k-ffm-android11/debloat.txt",
-    "commit": "204143007f0bebfb14d6ef001a32e5836b1c90b5"
+    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
   }
 }

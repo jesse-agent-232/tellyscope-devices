@@ -1,0 +1,173 @@
+{
+  "schema": 1,
+  "id": "rocktek-gx1",
+  "name": "RockTek GX1",
+  "tested": {
+    "os": "Google TV 14",
+    "sdk": null,
+    "build": null
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "Android advertising, privacy sandbox, and telemetry",
+      "packages": [
+        {
+          "pkg": "com.android.adservices.api"
+        },
+        {
+          "pkg": "com.android.federatedcompute.services"
+        },
+        {
+          "pkg": "com.android.ondevicepersonalization.services"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.android.tv.feedbackconsent"
+        },
+        {
+          "pkg": "com.android.cts.ctsshim"
+        }
+      ]
+    },
+    {
+      "title": "OEM background services, testing, and tracking (Skyworth / Realtek)",
+      "packages": [
+        {
+          "pkg": "android.autoinstalls.config.RTKSTBAndroid.device"
+        },
+        {
+          "pkg": "com.oem.qa"
+        },
+        {
+          "pkg": "com.oemservice"
+        },
+        {
+          "pkg": "com.realtek.slices"
+        },
+        {
+          "pkg": "com.rtk.partnerinterface"
+        },
+        {
+          "pkg": "com.sdt.customization"
+        },
+        {
+          "pkg": "com.sdt.producttest"
+        }
+      ]
+    },
+    {
+      "title": "Google background services and setup",
+      "packages": [
+        {
+          "pkg": "com.android.cameraextensions"
+        },
+        {
+          "pkg": "com.android.dreams.basic"
+        },
+        {
+          "pkg": "com.android.healthconnect.controller"
+        },
+        {
+          "pkg": "com.android.hotspot2.osulogin"
+        },
+        {
+          "pkg": "com.android.managedprovisioning"
+        },
+        {
+          "pkg": "com.android.nearby.halfsheet"
+        },
+        {
+          "pkg": "com.android.providers.calendar"
+        },
+        {
+          "pkg": "com.android.wallpaperbackup"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.dreamx"
+        },
+        {
+          "pkg": "com.google.android.onetimeinitializer"
+        },
+        {
+          "pkg": "com.google.android.partnersetup"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar"
+        },
+        {
+          "pkg": "com.google.android.tts"
+        }
+      ]
+    },
+    {
+      "title": "Google TV setup wizard: disable only after the Wi-Fi ownership check above and after the new Home works",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith",
+          "note": "costs phone casting after a reboot (the Cast receiver reads its credentials from setupwraith)"
+        }
+      ]
+    },
+    {
+      "title": "Stock Google TV Home: build-and-install.sh handles this after it confirms the replacement launcher",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.tv.launcherx",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Left enabled on purpose: features, not bloat. Uncomment any line to disable it too.",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google Assistant",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Chromecast built-in",
+          "optional": true
+        },
+        {
+          "pkg": "com.netflix.ninja",
+          "note": "Netflix",
+          "optional": true
+        },
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom",
+          "note": "Prime Video",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.youtube.tv",
+          "note": "YouTube",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic",
+          "note": "YouTube Music",
+          "optional": true
+        },
+        {
+          "pkg": "com.sdt.ota",
+          "note": "RockTek system firmware updates",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/rocktek-gx1/debloat.txt",
+    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+  }
+}

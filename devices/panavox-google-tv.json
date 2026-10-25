@@ -1,0 +1,118 @@
+{
+  "schema": 1,
+  "id": "panavox-google-tv",
+  "name": "TV Brand/Model",
+  "tested": {
+    "os": null,
+    "sdk": null,
+    "build": null
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "Group 1: telemetry, ACR and tracking",
+      "packages": [
+        {
+          "pkg": "com.google.android.partnersetup"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.android.tv.feedbackconsent"
+        },
+        {
+          "pkg": "com.android.adservices.api"
+        },
+        {
+          "pkg": "com.android.ondevicepersonalization.services"
+        },
+        {
+          "pkg": "com.android.federatedcompute.services"
+        }
+      ]
+    },
+    {
+      "title": "Stock Launcher",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.tv.launcherx"
+        },
+        {
+          "pkg": "com.google.android.tungsten.setupwraith"
+        }
+      ]
+    },
+    {
+      "title": "Group 3: preloaded streaming apps, optional",
+      "packages": [
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom"
+        },
+        {
+          "pkg": "com.mediatek.androidbox",
+          "note": "wifi display sink"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.dreamx",
+          "note": "salvapantallas de google",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Group 4: unused on a television",
+      "packages": [
+        {
+          "pkg": "com.google.android.syncadapters.calendar"
+        },
+        {
+          "pkg": "com.android.providers.calendar"
+        },
+        {
+          "pkg": "com.android.providers.contacts"
+        },
+        {
+          "pkg": "com.mediatek.android.leanbacklauncher.partnercustomizer"
+        }
+      ]
+    },
+    {
+      "title": "Voice assistants. The remote's microphone button stops working.",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss"
+        }
+      ]
+    },
+    {
+      "title": "Google extras",
+      "packages": [
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        },
+        {
+          "pkg": "com.google.android.marvin.talkback"
+        },
+        {
+          "pkg": "com.google.android.apps.mediashell"
+        },
+        {
+          "pkg": "com.google.android.tts"
+        },
+        {
+          "pkg": "com.google.android.tv.remote.service"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/panavox-google-tv/debloat.txt",
+    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+  }
+}

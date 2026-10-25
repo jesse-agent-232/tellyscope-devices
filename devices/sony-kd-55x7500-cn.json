@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "sony-kd-55x7500-cn",
+  "name": "Sony KD-55X7500",
+  "tested": {
+    "os": "Android TV 9",
+    "sdk": 28,
+    "build": null
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "Sony content and recommendation surfaces",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.sonyselect",
+          "note": "Sony Select"
+        },
+        {
+          "pkg": "com.sony.dtv.discovery",
+          "note": "Sony Discover"
+        },
+        {
+          "pkg": "com.sony.dtv.bivlinfo",
+          "note": "Sony content information/recommendations"
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations",
+          "note": "Android TV recommendation rows"
+        }
+      ]
+    },
+    {
+      "title": "Store demonstration components",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.demomode"
+        },
+        {
+          "pkg": "com.sony.dtv.demosupport"
+        },
+        {
+          "pkg": "com.sony.dtv.multiscreendemo"
+        }
+      ]
+    },
+    {
+      "title": "Bug reporting and device agents",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.sonybugreportsys",
+          "note": "Sony bug-report service"
+        },
+        {
+          "pkg": "com.sony.dtv.da.service",
+          "note": "Sony device agent"
+        },
+        {
+          "pkg": "com.qterics.da.product",
+          "note": "Qterics device agent"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/sony-kd-55x7500-cn/debloat.txt",
+    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+  }
+}

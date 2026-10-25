@@ -1,0 +1,256 @@
+{
+  "schema": 1,
+  "id": "sony-kd-43x8000g",
+  "name": "Sony BRAVIA KD-43X8000G",
+  "tested": {
+    "os": "Android TV 9",
+    "sdk": 28,
+    "build": null
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "ACR viewing tracker",
+      "packages": [
+        {
+          "pkg": "tv.samba.ssm",
+          "note": "Samba TV fingerprints what's on screen"
+        }
+      ]
+    },
+    {
+      "title": "Sony and Google content, ads, and promos",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.sonyselect",
+          "note": "Sony Select app store/promo tile"
+        },
+        {
+          "pkg": "com.sony.dtv.promos",
+          "note": "My BRAVIA promos"
+        },
+        {
+          "pkg": "com.sony.dtv.discovery",
+          "note": "Sony Discover content bar"
+        },
+        {
+          "pkg": "com.sony.dtv.bivlinfo",
+          "note": "BIVL content service list (feeds Discover)"
+        },
+        {
+          "pkg": "com.sony.dtv.tvlaunchercustomizer",
+          "note": "Sony tweaks to the stock home rows"
+        },
+        {
+          "pkg": "com.sony.dtv.tvlaunchercustomizer.overlay.apporder"
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations",
+          "note": "recommendation rows for the stock launcher"
+        },
+        {
+          "pkg": "android.autoinstalls.config.sony.bravia",
+          "note": "Play auto-install of partner apps"
+        }
+      ]
+    },
+    {
+      "title": "Retail demo",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.demomode"
+        },
+        {
+          "pkg": "com.sony.dtv.demosupport"
+        },
+        {
+          "pkg": "com.sony.dtv.multiscreendemo"
+        }
+      ]
+    },
+    {
+      "title": "Telemetry, remote support, logging and diagnostics",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.da.service",
+          "note": "Sony device agent / remote support"
+        },
+        {
+          "pkg": "com.qterics.da.product",
+          "note": "Qterics device agent"
+        },
+        {
+          "pkg": "com.sony.dtv.sonybugreportsys"
+        },
+        {
+          "pkg": "com.google.android.tv.bugreportsender"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.sony.dtv.scrums.action",
+          "note": "Sony SCRUMS usage metrics"
+        },
+        {
+          "pkg": "com.mediatek.agent",
+          "note": "MediaTek diagnostics agent"
+        },
+        {
+          "pkg": "com.mediatek.dmagent",
+          "note": "MediaTek device management agent"
+        },
+        {
+          "pkg": "com.sony.dtv.sonyloglevelsettingsys",
+          "note": "system log level daemon"
+        },
+        {
+          "pkg": "com.sony.dtv.sonyloglevelsettingvnd",
+          "note": "vendor log level daemon"
+        }
+      ]
+    },
+    {
+      "title": "Commercial and B2B services",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.b2b.vendorprotocol",
+          "note": "SDDP Control4 broadcast service"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.rs232csupport",
+          "note": "RS232 serial control"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.hotelmode"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.noderuntime.normal"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.noderuntime.privilege"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.frameworkextension"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.prosettings"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.importexport"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.webappruntimedrm"
+        }
+      ]
+    },
+    {
+      "title": "Broadcast and unused extensions",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.browser.webappruntimeextension"
+        },
+        {
+          "pkg": "com.sony.dtv.tuningconfirmation_dvbt"
+        },
+        {
+          "pkg": "com.sony.dtv.hbbtvlauncher"
+        },
+        {
+          "pkg": "com.sony.dtv.serviceinformation"
+        },
+        {
+          "pkg": "com.uei.quicksetsdk.sony",
+          "note": "Universal remote setup daemon"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.customersupport",
+          "note": "Help tile"
+        },
+        {
+          "pkg": "com.sony.dtv.smarthelp"
+        },
+        {
+          "pkg": "com.sony.dtv.imanual",
+          "note": "i-Manual"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        },
+        {
+          "pkg": "com.google.android.videos"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.backdrop",
+          "note": "ambient screensaver"
+        }
+      ]
+    },
+    {
+      "title": "Left enabled on purpose: features, not bloat. Uncomment any line to disable it too.",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Chromecast built-in",
+          "optional": true
+        },
+        {
+          "pkg": "com.sony.dtv.smartmediaapp",
+          "note": "Media Player, plays files from USB",
+          "optional": true
+        },
+        {
+          "pkg": "com.sony.dtv.osat.music",
+          "note": "plays music from USB",
+          "optional": true
+        },
+        {
+          "pkg": "screnmirroring.com",
+          "note": "Screen mirroring (Miracast)",
+          "optional": true
+        },
+        {
+          "pkg": "com.sony.dtv.networkapp.wifidirect",
+          "optional": true
+        },
+        {
+          "pkg": "com.sony.huey.dlna.module",
+          "note": "DLNA renderer",
+          "optional": true
+        },
+        {
+          "pkg": "com.sony.huey.dlna.renderersettings",
+          "optional": true
+        },
+        {
+          "pkg": "com.sonyericsson.dlna",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.tv.remote.service",
+          "note": "Android TV phone-app remote",
+          "optional": true
+        },
+        {
+          "pkg": "com.sony.dtv.systemupdate",
+          "note": "Sony system firmware updater",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/sony-kd-43x8000g/debloat.txt",
+    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+  }
+}

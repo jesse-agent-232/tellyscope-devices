@@ -162,6 +162,181 @@
       ]
     },
     {
+      "title": "Fifth-unit groups: tested on that set only, so they stay commented in this shared list; uncomment what you want.",
+      "packages": [
+        {
+          "pkg": "com.android.backupconfirm",
+          "note": "Android's own backup agent",
+          "optional": true
+        },
+        {
+          "pkg": "com.android.dynsystem",
+          "note": "dynamic system; live devices only.",
+          "optional": true
+        },
+        {
+          "pkg": "com.android.pacprocessor",
+          "note": "PAC proxy autoconfig",
+          "optional": true
+        },
+        {
+          "pkg": "com.android.se",
+          "optional": true
+        },
+        {
+          "pkg": "com.android.htmlviewer",
+          "optional": true
+        },
+        {
+          "pkg": "com.android.localtransport",
+          "note": "carrier service transport",
+          "optional": true
+        },
+        {
+          "pkg": "com.android.proxyhandler",
+          "optional": true
+        },
+        {
+          "pkg": "com.android.sharedstoragebackup",
+          "optional": true
+        },
+        {
+          "pkg": "com.android.statementservice",
+          "note": "Digital Asset Links verification",
+          "optional": true
+        },
+        {
+          "pkg": "com.android.wallpaperbackup",
+          "optional": true
+        },
+        {
+          "pkg": "com.android.captiveportallogin",
+          "note": "portal login app for open Wi-Fi",
+          "optional": true
+        },
+        {
+          "pkg": "com.android.hotspot2.osulogin",
+          "note": "Passpoint sign-in UI",
+          "optional": true
+        },
+        {
+          "pkg": "com.android.companiondevicemanager",
+          "note": "companion-device pairing",
+          "optional": true
+        },
+        {
+          "pkg": "android.autoinstalls.config.google.gtvpai",
+          "note": "Play Auto Inflation auto-install rules",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.tts",
+          "note": "text-to-speech, off by choice (voice TTS screens need it)",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.apps.tv.dreamx",
+          "note": "photo screensaver, off by choice on the EU set",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Google mainline overlays (RROs), verified on the fifth unit. Never add the com.google.android.overlay.modules.*",
+      "packages": [
+        {
+          "pkg": "com.google.android.overlay.googlewebview",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.overlay.gtvsconfigx",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.overlay.gtvssettingsprovider",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Contacts/calendar provider stack, present on the EU builds (fifth unit)",
+      "packages": [
+        {
+          "pkg": "com.android.providers.calendar",
+          "optional": true
+        },
+        {
+          "pkg": "com.android.providers.contacts",
+          "optional": true
+        },
+        {
+          "pkg": "com.android.providers.userdictionary",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "TCL/MediaTek webview providers; the system webview is com.google.android.webview, not these (fifth unit)",
+      "packages": [
+        {
+          "pkg": "com.tcl.android.webview",
+          "optional": true
+        },
+        {
+          "pkg": "com.mediatek.support.webview",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "MediaTek extras (fifth unit)",
+      "packages": [
+        {
+          "pkg": "com.mediatek.network",
+          "optional": true
+        },
+        {
+          "pkg": "com.mediatek.backgrounddetection",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Disabled on the fifth unit, kept enabled on the Google TV home units - keep these lines commented out",
+      "packages": [
+        {
+          "pkg": "com.tcl.dashboard",
+          "note": "TCL dashboard; gear-button app on the stock home",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.gamebar",
+          "note": "game bar",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.eva",
+          "note": "boot service with camera and TCL BI permissions, purpose unclear",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.factory.view",
+          "note": "the factory app - the repo says never launch it",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.browser",
+          "note": "the remote's Web-key target on this firmware - keep",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.inputmethod.international",
+          "note": "the default keyboard - keep (4th unit: off only with Gboard set first)",
+          "optional": true
+        }
+      ]
+    },
+    {
       "title": "Stock launcher, off once the new launcher is Home",
       "packages": [
         {
@@ -181,6 +356,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/tcl-q7c-google-tv/debloat.txt",
-    "commit": "204143007f0bebfb14d6ef001a32e5836b1c90b5"
+    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
   }
 }

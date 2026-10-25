@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "tcl-c635",
+  "name": "TCL C635",
+  "tested": {
+    "os": "Android TV 11",
+    "sdk": 30,
+    "build": null
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "--- The critical entry: TCL re-enables promo packages on reboot",
+      "packages": [
+        {
+          "pkg": "com.tcl.overseasappshow",
+          "note": "factory promo/app-show service, re-enables partner packages"
+        },
+        {
+          "pkg": "com.tcl.bi",
+          "note": "TCL analytics & telemetry (BI service)"
+        },
+        {
+          "pkg": "com.tcl.logkit",
+          "note": "TCL log collection"
+        },
+        {
+          "pkg": "com.tcl.waterfall.overseas",
+          "note": "TCL recommendation waterfall feed"
+        },
+        {
+          "pkg": "com.tcl.channelplus",
+          "note": "TCL FAST streaming channels"
+        },
+        {
+          "pkg": "com.tcl.partnercustomizer",
+          "note": "partner customization/attribution"
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "partner app attribution"
+        },
+        {
+          "pkg": "com.tcl.browser",
+          "note": "stock TCL web browser"
+        },
+        {
+          "pkg": "com.tcl.gallery",
+          "note": "stock TCL gallery/media"
+        },
+        {
+          "pkg": "com.tcl.esticker",
+          "note": "retail demo energy-label overlay"
+        },
+        {
+          "pkg": "com.tcl.ocean.instructions",
+          "note": "first-run instructions overlay"
+        },
+        {
+          "pkg": "com.tcl.useragreement",
+          "note": "user agreement onboarding screen"
+        },
+        {
+          "pkg": "com.tcl.factory.view",
+          "note": "factory test/demo shortcut"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tcl-c635/debloat.txt",
+    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+  }
+}

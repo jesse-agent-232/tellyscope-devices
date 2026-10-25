@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "id": "asus-m1g",
+  "name": "ASUS M1G Google TV",
+  "tested": {
+    "os": "Android TV 11",
+    "sdk": 30,
+    "build": "RTK4.241026.032"
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Telemetry",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback"
+        }
+      ]
+    },
+    {
+      "title": "Manufacturer content",
+      "packages": [
+        {
+          "pkg": "com.realtek.leanbacklauncher.partnercustomizer",
+          "note": "partner config that injects apps and rows into the home screen"
+        },
+        {
+          "pkg": "com.aiconnx.app.stream.tv044",
+          "note": "\"Multi-Platform streamer plus\" preload"
+        },
+        {
+          "pkg": "com.realtek.officeweb",
+          "note": "OfficeWeb document viewer preload"
+        },
+        {
+          "pkg": "com.realtek.userguide",
+          "note": "on-TV user guide"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded or auto-installed apps, off by owner's choice",
+      "packages": [
+        {
+          "pkg": "com.instagram.airwave",
+          "note": "Instagram for TV, installed by the Play Store at setup"
+        },
+        {
+          "pkg": "com.haystack.android",
+          "note": "Haystack News"
+        },
+        {
+          "pkg": "com.realtek.miracast",
+          "note": "Cast2Display (Miracast mirroring); Chromecast stays"
+        },
+        {
+          "pkg": "com.rtk.mediabrowser",
+          "note": "Media Player; also the USB media player, re-enable for USB drives"
+        }
+      ]
+    },
+    {
+      "title": "Voice and ambient mode, off by owner's choice",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "voice assistant"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.dreamx",
+          "note": "ambient mode; the screensaver was also turned off"
+        }
+      ]
+    },
+    {
+      "title": "Launcher swap: setupwraith first, then launcherx (see the Wi-Fi quirk above)",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith",
+          "note": "costs phone casting after a reboot (the Cast receiver reads its credentials from setupwraith)"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.launcherx"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/asus-m1g/debloat.txt",
+    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+  }
+}

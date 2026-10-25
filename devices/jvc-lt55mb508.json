@@ -1,0 +1,114 @@
+{
+  "schema": 1,
+  "id": "jvc-lt55mb508",
+  "name": "JVC LT55MB508",
+  "tested": {
+    "os": "Android TV 11",
+    "sdk": 30,
+    "build": null
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Batch 1: telemetry",
+      "packages": [
+        {
+          "pkg": "tv.anoki.acr.controller",
+          "note": "Anoki automatic content recognition (boot receiver, opt-in activity)"
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "Google partner RLZ tracking pings"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        }
+      ]
+    },
+    {
+      "title": "Batch 2: auto-installs and background services",
+      "packages": [
+        {
+          "pkg": "android.autoinstalls.config.JVC",
+          "note": "Play Auto Install config: partner apps pushed after setup"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar"
+        }
+      ]
+    },
+    {
+      "title": "Batch 3: recommendation rows and notifications panel (test alone, closest to the stock launcher)",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvrecommendations"
+        }
+      ]
+    },
+    {
+      "title": "Batch 4: personal choice, comment out what you use",
+      "packages": [
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google TV / Play Movies"
+        },
+        {
+          "pkg": "com.spotify.tv.android"
+        },
+        {
+          "pkg": "com.ted.android.tv"
+        },
+        {
+          "pkg": "com.foxnews.android",
+          "note": "also adds a live channel input"
+        },
+        {
+          "pkg": "br.tv.horizonte.android.premierefc",
+          "note": "Premiere FC"
+        }
+      ]
+    },
+    {
+      "title": "Batch 5: personal choice, voice and features",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Assistant: the stock home's search stops working, voice AND keyboard"
+        },
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Chromecast built-in"
+        },
+        {
+          "pkg": "com.google.android.backdrop",
+          "note": "Ambient screensaver; set another one first: com.gathin.tvhome/.ClockDream"
+        },
+        {
+          "pkg": "com.mediatek.wwtv.mediaplayer",
+          "note": "MMP: the TV's USB and DLNA media player"
+        }
+      ]
+    },
+    {
+      "title": "Stock launcher, replaced by launcher/. Left to launcher/build-and-install.sh, which disables it only after the",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvlauncher",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/jvc-lt55mb508/debloat.txt",
+    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+  }
+}

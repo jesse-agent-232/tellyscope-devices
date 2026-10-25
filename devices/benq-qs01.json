@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "id": "benq-qs01",
+  "name": "BenQ QS01 Android TV dongle for BenQ projectors",
+  "tested": {
+    "os": "Android TV 12",
+    "sdk": 31,
+    "build": null
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Content, ads and promos",
+      "packages": [
+        {
+          "pkg": "android.autoinstalls.config.Inspur.benq.S905Y2",
+          "note": "silently installs partner apps"
+        },
+        {
+          "pkg": "com.benq.notification",
+          "note": "BenQ push messages and promos (Tag Manager)"
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations",
+          "note": "recommendation rows for the stock home screen"
+        },
+        {
+          "pkg": "com.google.android.backdrop",
+          "note": "ambient screensaver"
+        }
+      ]
+    },
+    {
+      "title": "Tracking",
+      "packages": [
+        {
+          "pkg": "com.inspur.firebase",
+          "note": "Inspur data collection (DCReceiver)"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps",
+      "packages": [
+        {
+          "pkg": "com.eshare.tutorial",
+          "note": "screen-mirroring tutorial (mirroring itself stays)"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic",
+          "note": "off by choice"
+        }
+      ]
+    },
+    {
+      "title": "Optional: uncomment what you don't use",
+      "packages": [
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom",
+          "note": "Prime Video",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google TV movie store",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google Assistant voice",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Chromecast",
+          "optional": true
+        },
+        {
+          "pkg": "com.ecloud.eshare.server",
+          "note": "eShare screen mirroring, together with the next line",
+          "optional": true
+        },
+        {
+          "pkg": "com.ecloud.eairplay",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/benq-qs01/debloat.txt",
+    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+  }
+}

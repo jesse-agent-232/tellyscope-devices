@@ -122,11 +122,108 @@
           "pkg": "com.amazon.ftv.screensaver"
         }
       ]
+    },
+    {
+      "title": "Added from the 75\" Omni unit (ads, telemetry, notices; tested there, see the header)",
+      "packages": [
+        {
+          "pkg": "com.amazon.kso.blackbird",
+          "note": "launcher ad sync / bidding (sponsored banner and rows)"
+        },
+        {
+          "pkg": "com.amazon.media.recommendations",
+          "note": "sponsored and recommendation rows"
+        },
+        {
+          "pkg": "com.amazon.tv.easyupgrade",
+          "note": "\"upgrade your Fire TV\" promos"
+        },
+        {
+          "pkg": "com.amazon.hedwig",
+          "note": "Fire TV Channels (free ad-supported channels row)"
+        },
+        {
+          "pkg": "com.amazon.client.metrics.api",
+          "note": "metrics client API"
+        },
+        {
+          "pkg": "com.amazon.ceviche",
+          "note": "data collection pipelines"
+        },
+        {
+          "pkg": "com.amazon.tv.developer.dataservice",
+          "note": "personalization data for third-party apps"
+        },
+        {
+          "pkg": "com.amazon.wifilocker",
+          "note": "syncs saved Wi-Fi passwords to Amazon"
+        },
+        {
+          "pkg": "com.amazon.systemnotices"
+        },
+        {
+          "pkg": "com.amazon.tv.releasenotes",
+          "note": "\"what's new\" notes"
+        },
+        {
+          "pkg": "com.amazon.uxnotification",
+          "note": "UX notification popups"
+        },
+        {
+          "pkg": "com.android.printspooler",
+          "note": "printing: nothing to print from on a TV"
+        },
+        {
+          "pkg": "com.android.bips"
+        }
+      ]
+    },
+    {
+      "title": "Disabled on the 75\" Omni unit by that owner's choice, kept by the first owner. Uncomment to disable.",
+      "packages": [
+        {
+          "pkg": "com.tubitv.ott",
+          "note": "Tubi",
+          "optional": true
+        },
+        {
+          "pkg": "com.amazon.vizzini",
+          "note": "Alexa voice: re-enables itself, see the header",
+          "optional": true
+        },
+        {
+          "pkg": "com.amazon.alexamediaplayer.runtime.ftv",
+          "optional": true
+        },
+        {
+          "pkg": "com.amazon.alexa.externalmediaplayer.fireos",
+          "optional": true
+        },
+        {
+          "pkg": "com.apple.airplay.amazon.airplay",
+          "note": "AirPlay receiver",
+          "optional": true
+        },
+        {
+          "pkg": "com.amazon.cast.sink",
+          "note": "Miracast receiver",
+          "optional": true
+        },
+        {
+          "pkg": "com.amazon.cloud9",
+          "note": "Silk",
+          "optional": true
+        },
+        {
+          "pkg": "com.amazon.tv.website_launcher",
+          "optional": true
+        }
+      ]
     }
   ],
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/amazon-fire-tv-afttiff43/debloat.txt",
-    "commit": "204143007f0bebfb14d6ef001a32e5836b1c90b5"
+    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
   }
 }
