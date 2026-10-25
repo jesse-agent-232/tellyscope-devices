@@ -65,12 +65,17 @@ def parse_list(text):
             groups.append({"title": title, "packages": packages})
 
     keep_names = {p["pkg"] for p in keep}
-    for g in groups:  # keep wins over a list entry; a name listed twice keeps its first entry
+    active = {p["pkg"] for g in groups for p in g["packages"] if not p.get("optional")}
+    # Keep wins over a list entry, and an active entry over a commented copy wherever it sits;
+    # otherwise a name listed twice keeps its first entry.
+    for g in groups:
         unique = []
         for p in g["packages"]:
-            if p["pkg"] not in keep_names and p["pkg"] not in seen:
-                unique.append(p)
-                seen.add(p["pkg"])
+            name = p["pkg"]
+            if name in keep_names or name in seen or (p.get("optional") and name in active):
+                continue
+            unique.append(p)
+            seen.add(name)
         g["packages"] = unique
     groups = [g for g in groups if g["packages"]]
 
