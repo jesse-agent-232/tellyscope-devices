@@ -1,0 +1,128 @@
+{
+  "schema": 1,
+  "id": "sony-bravia-vu3",
+  "name": "Sony KD-55X75K",
+  "tested": {
+    "os": "Google TV 14",
+    "sdk": 34,
+    "build": "UKR1.240726.001"
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Sony promos, demo content and help",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.promos",
+          "note": "My BRAVIA promos"
+        },
+        {
+          "pkg": "com.sony.dtv.sonyselect",
+          "note": "Sony Select"
+        },
+        {
+          "pkg": "com.sony.dtv.sonytab",
+          "note": "Sony content tab"
+        },
+        {
+          "pkg": "com.sony.dtv.multiscreendemo",
+          "note": "in-store demo"
+        },
+        {
+          "pkg": "com.sony.dtv.smarthelp",
+          "note": "Sony help tile"
+        },
+        {
+          "pkg": "com.sony.dtv.helpguidecontents",
+          "note": "help guide content"
+        },
+        {
+          "pkg": "com.sonypicturescore",
+          "note": "Sony Pictures Core preload"
+        }
+      ]
+    },
+    {
+      "title": "Android ad/personalization services",
+      "packages": [
+        {
+          "pkg": "com.android.adservices.api",
+          "note": "Privacy Sandbox ad services"
+        },
+        {
+          "pkg": "com.android.federatedcompute.services",
+          "note": "federated compute services"
+        },
+        {
+          "pkg": "com.android.ondevicepersonalization.services",
+          "note": "on-device personalization"
+        }
+      ]
+    },
+    {
+      "title": "Google reporting, setup leftovers and unused preloads",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "Google feedback reporter"
+        },
+        {
+          "pkg": "com.google.android.play.games",
+          "note": "Play Games"
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "partner setup/attribution"
+        },
+        {
+          "pkg": "com.google.android.onetimeinitializer",
+          "note": "one-time setup initializer"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar",
+          "note": "calendar sync adapter"
+        },
+        {
+          "pkg": "com.android.printspooler",
+          "note": "print service"
+        },
+        {
+          "pkg": "android.autoinstalls.config.google.gtvpai",
+          "note": "Google TV partner auto-installs"
+        },
+        {
+          "pkg": "com.android.gallery3d",
+          "note": "legacy gallery app"
+        }
+      ]
+    },
+    {
+      "title": "Google TV Ambient screensaver",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.tv.dreamx",
+          "note": "Ambient photos/art screensaver"
+        }
+      ]
+    },
+    {
+      "title": "Google TV Home handover: setup wizard first, then stock launcher after custom Home was confirmed",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith",
+          "note": "setup wizard; re-enable before a factory reset; costs phone casting after a reboot (the Cast receiver reads its credentials from setupwraith)"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.launcherx",
+          "note": "stock Google TV launcher"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/sony-bravia-vu3/debloat.txt",
+    "commit": "204143007f0bebfb14d6ef001a32e5836b1c90b5"
+  }
+}

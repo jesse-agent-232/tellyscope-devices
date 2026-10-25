@@ -1,0 +1,144 @@
+{
+  "schema": 1,
+  "id": "tuvio-td43ufbcv5",
+  "name": "Tuvio TD43UFBCV5",
+  "tested": {
+    "os": "Google TV 14",
+    "sdk": 34,
+    "build": null
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "Batch 1: telemetry and ad services",
+      "packages": [
+        {
+          "pkg": "tv.anoki.acr.anokiacroptin",
+          "note": "automatic content recognition (reports what is on screen)"
+        },
+        {
+          "pkg": "com.android.adservices.api",
+          "note": "Privacy Sandbox ads"
+        },
+        {
+          "pkg": "com.android.ondevicepersonalization.services"
+        },
+        {
+          "pkg": "com.android.federatedcompute.services"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.android.tv.feedbackconsent"
+        }
+      ]
+    },
+    {
+      "title": "Batch 2: vendor and Google extras",
+      "packages": [
+        {
+          "pkg": "com.homwee.store",
+          "note": "Changhong app store"
+        },
+        {
+          "pkg": "com.homwee.help"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google TV app, source of the home screen's recommendations"
+        }
+      ]
+    },
+    {
+      "title": "Batch 3: optional, uncomment what you do not use (this home kept the commented ones)",
+      "packages": [
+        {
+          "pkg": "com.netflix.ninja",
+          "note": "Netflix"
+        },
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom",
+          "note": "Prime Video"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic",
+          "note": "YouTube Music"
+        },
+        {
+          "pkg": "com.homwee.mmp.screenshare",
+          "note": "AirPlay receiver (iPhone casting)",
+          "optional": true
+        },
+        {
+          "pkg": "com.homwee.multiscreenshare",
+          "note": "screen sharing",
+          "optional": true
+        },
+        {
+          "pkg": "com.mediatek.androidbox",
+          "note": "WFDSinkTest_CH: the Miracast receiver on this set",
+          "optional": true
+        },
+        {
+          "pkg": "com.homwee.mmp.fileexplorer",
+          "note": "USB file browser (\"Media Player\")",
+          "optional": true
+        },
+        {
+          "pkg": "com.homwee.mmp.imageplayer",
+          "note": "USB photo viewer",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Chromecast",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "voice search / microphone button",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Batch 4: screensaver. First set the launcher's clock as screensaver",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.tv.dreamx",
+          "note": "ambient mode, mixes recommendations into the screensaver"
+        }
+      ]
+    },
+    {
+      "title": "Batch 5: stock home, LAST, only after launcher/ is installed.",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith",
+          "note": "disable before launcherx; costs phone casting after a reboot (the Cast receiver reads its credentials from setupwraith)"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.launcherx",
+          "note": "then: cmd package set-home-activity --user 0 com.gathin.tvhome/.MainActivity"
+        },
+        {
+          "pkg": "com.mediatek.android.leanbacklauncher.partnercustomizer",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tuvio-td43ufbcv5/debloat.txt",
+    "commit": "204143007f0bebfb14d6ef001a32e5836b1c90b5"
+  }
+}

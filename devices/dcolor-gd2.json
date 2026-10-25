@@ -1,0 +1,199 @@
+{
+  "schema": 1,
+  "id": "dcolor-gd2",
+  "name": "Dcolor GD2",
+  "tested": {
+    "os": "Google TV 14",
+    "sdk": 34,
+    "build": null
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "--- Ads, telemetry, on-device personalization, feedback",
+      "packages": [
+        {
+          "pkg": "com.android.adservices.api",
+          "note": "Android Privacy Sandbox ad services"
+        },
+        {
+          "pkg": "com.android.federatedcompute.services",
+          "note": "federated learning client"
+        },
+        {
+          "pkg": "com.android.ondevicepersonalization.services",
+          "note": "on-device personalization for ads"
+        },
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "sends feedback and bug reports to Google"
+        },
+        {
+          "pkg": "com.android.tv.feedbackconsent",
+          "note": "consent prompt for the feedback reporter"
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "partner (OEM) setup and attribution hooks"
+        }
+      ]
+    },
+    {
+      "title": "--- Assistant, speech, accessibility",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google Assistant and voice search (the remote's mic button)"
+        },
+        {
+          "pkg": "com.google.android.tts",
+          "note": "Google text-to-speech"
+        },
+        {
+          "pkg": "com.google.android.marvin.talkback",
+          "note": "TalkBack screen reader"
+        }
+      ]
+    },
+    {
+      "title": "--- Google TV extras",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Chromecast built-in receiver (casting to the TV)"
+        },
+        {
+          "pkg": "com.google.android.play.games",
+          "note": "Play Games"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic",
+          "note": "YouTube Music"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar",
+          "note": "Google Calendar sync"
+        }
+      ]
+    },
+    {
+      "title": "--- Screensavers",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.tv.dreamx",
+          "note": "Google TV ambient mode and its screensaver (Backdrop)"
+        },
+        {
+          "pkg": "com.android.dreams.basic",
+          "note": "AOSP basic dreams (Colors)"
+        }
+      ]
+    },
+    {
+      "title": "--- Health Connect and backup",
+      "packages": [
+        {
+          "pkg": "com.android.health.connect.backuprestore"
+        },
+        {
+          "pkg": "com.android.healthconnect.controller"
+        },
+        {
+          "pkg": "com.android.backupconfirm"
+        },
+        {
+          "pkg": "com.android.localtransport",
+          "note": "local backup transport"
+        },
+        {
+          "pkg": "com.android.sharedstoragebackup"
+        },
+        {
+          "pkg": "com.android.wallpaperbackup"
+        }
+      ]
+    },
+    {
+      "title": "--- Providers and services a TV does not use",
+      "packages": [
+        {
+          "pkg": "com.android.providers.calendar"
+        },
+        {
+          "pkg": "com.android.providers.contacts"
+        },
+        {
+          "pkg": "com.android.providers.userdictionary"
+        },
+        {
+          "pkg": "com.android.cameraextensions"
+        },
+        {
+          "pkg": "com.android.dynsystem",
+          "note": "dynamic system updates (GSI)"
+        },
+        {
+          "pkg": "com.android.htmlviewer"
+        },
+        {
+          "pkg": "com.android.managedprovisioning",
+          "note": "work profile and device owner setup"
+        },
+        {
+          "pkg": "com.android.pacprocessor"
+        },
+        {
+          "pkg": "com.android.printspooler"
+        },
+        {
+          "pkg": "com.android.proxyhandler"
+        },
+        {
+          "pkg": "com.android.se",
+          "note": "secure element service"
+        },
+        {
+          "pkg": "com.android.settings.intelligence",
+          "note": "settings search suggestions"
+        },
+        {
+          "pkg": "com.android.soundpicker"
+        }
+      ]
+    },
+    {
+      "title": "--- Test shims and vendor first-boot config",
+      "packages": [
+        {
+          "pkg": "com.android.cts.ctsshim"
+        },
+        {
+          "pkg": "com.android.cts.priv.ctsshim"
+        },
+        {
+          "pkg": "android.autoinstalls.config.soc.amlogic",
+          "note": "Amlogic first-boot app auto-install config"
+        }
+      ]
+    },
+    {
+      "title": "--- Stock home and setup wizard: last, after the new launcher is Home",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.tv.launcherx",
+          "note": "Google TV home (stock launcher)"
+        },
+        {
+          "pkg": "com.google.android.tungsten.setupwraith",
+          "note": "first-run wizard; it also claims HOME and can take Home over"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/dcolor-gd2/debloat.txt",
+    "commit": "204143007f0bebfb14d6ef001a32e5836b1c90b5"
+  }
+}

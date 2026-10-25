@@ -1,0 +1,185 @@
+{
+  "schema": 1,
+  "id": "tcl-65ep640",
+  "name": "TCL 65EP640",
+  "tested": {
+    "os": "Android TV 9",
+    "sdk": 28,
+    "build": "PPR1.180610.011"
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [
+    {
+      "pkg": "com.tcl.sourcemananger",
+      "note": "input/source menu"
+    },
+    {
+      "pkg": "com.tcl.keycustomfunctionservice",
+      "note": "remote key handling, fallback home"
+    },
+    {
+      "pkg": "com.tcl.inputmethod.international",
+      "note": "default keyboard"
+    },
+    {
+      "pkg": "com.tcl.xian.StartandroidService",
+      "note": "device authentication"
+    },
+    {
+      "pkg": "com.tcl.partnercustomizer",
+      "note": "carries the remote's TKey activity"
+    },
+    {
+      "pkg": "com.tcl.showmode",
+      "note": "sound modes (Dolby/DTS/night), not just demo"
+    },
+    {
+      "pkg": "com.google.android.apps.mediashell",
+      "note": "Chromecast (kept by choice)"
+    }
+  ],
+  "groups": [
+    {
+      "title": "1. Telemetry, analytics and attribution",
+      "packages": [
+        {
+          "pkg": "com.tcl.bi",
+          "note": "TCL BI analytics"
+        },
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "\"send feedback\""
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations",
+          "note": "home-screen recommendation rows"
+        },
+        {
+          "pkg": "com.google.android.leanbacklauncher.recommendations",
+          "note": "recommendation rows for the old launcher"
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "partner-app attribution"
+        },
+        {
+          "pkg": "com.google.android.onetimeinitializer",
+          "note": "one-time setup leftovers"
+        },
+        {
+          "pkg": "android.autoinstalls.config.tcl.device",
+          "note": "partner-app auto installer"
+        },
+        {
+          "pkg": "com.google.android.tv.bugreportsender",
+          "note": "bug report uploader"
+        }
+      ]
+    },
+    {
+      "title": "2. TCL content, promos and background extras",
+      "packages": [
+        {
+          "pkg": "com.tcl.messagebox",
+          "note": "pushed messages and promos"
+        },
+        {
+          "pkg": "com.tcl.esticker",
+          "note": "retail demo energy-label sticker"
+        },
+        {
+          "pkg": "com.tcl.copydatatotv",
+          "note": "phone-to-TV data migration"
+        },
+        {
+          "pkg": "com.tcl.useragreement",
+          "note": "end-user agreement screens"
+        },
+        {
+          "pkg": "com.tcl.ui_mediaCenter",
+          "note": "USB media centre"
+        },
+        {
+          "pkg": "com.tcl.tvweishi",
+          "note": "TCL \"TV Guard\" cleaner"
+        },
+        {
+          "pkg": "com.tcl.appmarket2",
+          "note": "TCL app store (Play Store stays)"
+        },
+        {
+          "pkg": "com.tcl.cyberui",
+          "note": "TCL content service, unused"
+        }
+      ]
+    },
+    {
+      "title": "3. Voice, off by choice. The mic button goes dead. Comment out to keep the assistant.",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google Assistant / voice search"
+        },
+        {
+          "pkg": "com.google.android.tv.assistant",
+          "note": "Assistant LED service"
+        },
+        {
+          "pkg": "com.tcl.assistant",
+          "note": "TCL voice service"
+        },
+        {
+          "pkg": "com.tcl.micmanager",
+          "note": "TCL microphone manager"
+        }
+      ]
+    },
+    {
+      "title": "4. Apps and extras, off by choice. Comment out what you use.",
+      "packages": [
+        {
+          "pkg": "com.google.android.music",
+          "note": "Play Music, shut down in 2020"
+        },
+        {
+          "pkg": "com.google.android.play.games",
+          "note": "Play Games"
+        },
+        {
+          "pkg": "com.tcl.miracast",
+          "note": "Miracast"
+        },
+        {
+          "pkg": "com.tcl.MultiScreenInteraction_TV",
+          "note": "MagiConnect"
+        },
+        {
+          "pkg": "com.google.android.tv.remote.service",
+          "note": "Google TV phone-app remote"
+        },
+        {
+          "pkg": "com.android.printspooler",
+          "note": "printing service"
+        },
+        {
+          "pkg": "com.android.dreams.basic",
+          "note": "stock \"colors\" screensaver"
+        }
+      ]
+    },
+    {
+      "title": "5. After the launcher is installed",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvlauncher",
+          "note": "stock launcher, replaced by launcher/"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tcl-65ep640/debloat.txt",
+    "commit": "204143007f0bebfb14d6ef001a32e5836b1c90b5"
+  }
+}

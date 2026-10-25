@@ -1,0 +1,241 @@
+{
+  "schema": 1,
+  "id": "tcl-43p725",
+  "name": "TCL 43P725",
+  "tested": {
+    "os": "Android TV 11",
+    "sdk": 30,
+    "build": "RP1A.200622.001"
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [
+    {
+      "pkg": "com.tcl.tvinput",
+      "note": "HDMI 1-3 and tuner driver (disabling causes \"No Signal\")"
+    },
+    {
+      "pkg": "com.tcl.tv",
+      "note": "Live TV / TV Activity"
+    },
+    {
+      "pkg": "com.tcl.autopair",
+      "note": "Bluetooth remote auto-pairing"
+    },
+    {
+      "pkg": "com.tcl.tcl_bt_rcu_service",
+      "note": "Bluetooth remote service"
+    },
+    {
+      "pkg": "com.tcl.partnercustomizer",
+      "note": "Remote key handling (handles keycode 83, inputs, shortcuts)"
+    },
+    {
+      "pkg": "com.tcl.inputmethod.international",
+      "note": "On-screen keyboard"
+    },
+    {
+      "pkg": "com.google.android.inputmethod.latin",
+      "note": "Gboard keyboard"
+    },
+    {
+      "pkg": "com.tcl.settings",
+      "note": "TCL device settings"
+    },
+    {
+      "pkg": "com.android.tv.settings",
+      "note": "Android TV core settings"
+    },
+    {
+      "pkg": "com.tcl.initsetup",
+      "note": "System initialization"
+    },
+    {
+      "pkg": "com.tcl.factory.view",
+      "note": "Factory view components"
+    },
+    {
+      "pkg": "com.tcl.system.server",
+      "note": "System server plumbing"
+    },
+    {
+      "pkg": "com.tcl.providers.config",
+      "note": "System configuration provider"
+    },
+    {
+      "pkg": "com.google.android.tungsten.setupwraith",
+      "note": "OWNS SAVED WI-FI NETWORK on this build — do NOT disable"
+    }
+  ],
+  "groups": [
+    {
+      "title": "--- The critical entry: TCL re-enables promo packages on reboot",
+      "packages": [
+        {
+          "pkg": "com.tcl.overseasappshow",
+          "note": "factory promo/app-show service, re-enables partner packages"
+        }
+      ]
+    },
+    {
+      "title": "--- TCL analytics, telemetry, and tracking",
+      "packages": [
+        {
+          "pkg": "com.tcl.bi",
+          "note": "TCL analytics & telemetry (BI service, deviceinfo)"
+        },
+        {
+          "pkg": "com.tcl.guard",
+          "note": "TGuard: device-use tracking, memory cleaner"
+        }
+      ]
+    },
+    {
+      "title": "--- TCL ads, recommendation waterfall, and push services",
+      "packages": [
+        {
+          "pkg": "com.tcl.tv.tclhome_passive",
+          "note": "pushes TCL promo content to home screen at boot"
+        },
+        {
+          "pkg": "com.tcl.waterfall.overseas",
+          "note": "TCL recommendation waterfall feed"
+        },
+        {
+          "pkg": "com.tcl.messagebox",
+          "note": "pushed messages and promotional popups"
+        },
+        {
+          "pkg": "com.tcl.esticker",
+          "note": "retail demo energy label overlay"
+        },
+        {
+          "pkg": "com.tcl.notereminder",
+          "note": "notes and reminder widget"
+        },
+        {
+          "pkg": "com.tcl.channelplus",
+          "note": "TCL FAST streaming channels"
+        },
+        {
+          "pkg": "com.tcl.smartalexa",
+          "note": "unused Alexa integration"
+        },
+        {
+          "pkg": "com.tcl.t_solo",
+          "note": "TCL background service"
+        },
+        {
+          "pkg": "com.tcl.keyhelp",
+          "note": "remote key help overlay"
+        }
+      ]
+    },
+    {
+      "title": "--- Google telemetry, attribution, and stock recommendation rows",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "crash and feedback reporting"
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "partner app attribution"
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations",
+          "note": "stock launcher recommendation feed"
+        },
+        {
+          "pkg": "com.google.android.backdrop",
+          "note": "stock photo screensaver"
+        },
+        {
+          "pkg": "com.google.android.apps.nbu.smartconnect.tv",
+          "note": "Smart Connect service"
+        }
+      ]
+    },
+    {
+      "title": "--- Unused preloaded Google media apps (comment out if you use them)",
+      "packages": [
+        {
+          "pkg": "com.google.android.youtube.tvmusic",
+          "note": "YouTube Music"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google Play Movies & TV"
+        },
+        {
+          "pkg": "com.google.android.play.games",
+          "note": "Google Play Games"
+        }
+      ]
+    },
+    {
+      "title": "--- Voice assistant: off by choice (uncomment to disable, keep commented to use voice remote)",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google Assistant / voice search",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.tv.assistant",
+          "note": "Assistant LED service",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.assistant",
+          "note": "TCL voice service",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.micmanager",
+          "note": "TCL microphone manager",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "--- Casting & screen mirroring (uncomment if not using Miracast / phone remote)",
+      "packages": [
+        {
+          "pkg": "com.tcl.miracast",
+          "note": "Miracast screen mirroring",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.MultiScreenInteraction_TV",
+          "note": "MagiConnect casting companion",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.tv.remote.service",
+          "note": "Google TV mobile phone remote app service",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Chromecast built-in (keep for Google Cast)",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "--- Firmware OTA updater: kept enabled so security updates still arrive",
+      "packages": [
+        {
+          "pkg": "com.tcl.versionUpdateApp",
+          "note": "TCL OTA updater — uncomment to freeze updates",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tcl-43p725/debloat.txt",
+    "commit": "204143007f0bebfb14d6ef001a32e5836b1c90b5"
+  }
+}

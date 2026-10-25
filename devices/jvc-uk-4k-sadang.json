@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "jvc-uk-4k-sadang",
+  "name": "JVC UK 4K Android TV",
+  "tested": {
+    "os": "Android TV 11",
+    "sdk": 30,
+    "build": null
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Batch 1: telemetry and background services",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "Google feedback and crash reports"
+        },
+        {
+          "pkg": "com.google.android.apps.nbu.smartconnect.tv",
+          "note": "data meter and data-saver VPN service"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar",
+          "note": "Google Calendar sync"
+        },
+        {
+          "pkg": "com.android.printspooler",
+          "note": "printing"
+        }
+      ]
+    },
+    {
+      "title": "Batch 2: preloaded apps",
+      "packages": [
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic",
+          "note": "YouTube Music"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google TV / Play Movies"
+        }
+      ]
+    },
+    {
+      "title": "Batch 3: casting, by choice (phones can no longer cast to the TV)",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Chromecast built-in"
+        }
+      ]
+    },
+    {
+      "title": "Batch 4: the Freeview Play broadband guide. The aerial tuner and its own guide are separate and keep working",
+      "packages": [
+        {
+          "pkg": "com.mediatek.tv.freeviewplay",
+          "note": "Freeview Play TV Guide"
+        }
+      ]
+    },
+    {
+      "title": "Batch 5: stock home and its rows, after the new launcher took Home",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvlauncher"
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations",
+          "note": "recommendation rows"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/jvc-uk-4k-sadang/debloat.txt",
+    "commit": "204143007f0bebfb14d6ef001a32e5836b1c90b5"
+  }
+}

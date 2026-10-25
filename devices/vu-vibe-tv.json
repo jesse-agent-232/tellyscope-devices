@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "vu-vibe-tv",
+  "name": "Vu VIBE TV",
+  "tested": {
+    "os": "Android 14",
+    "sdk": 34,
+    "build": null
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Content-recognition / telemetry",
+      "packages": [
+        {
+          "pkg": "tv.anoki.acr.anokiacroptin",
+          "note": "Anoki ACR (automatic content recognition, viewing telemetry)"
+        },
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "Google usage/crash feedback"
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "partner/OEM setup telemetry"
+        }
+      ]
+    },
+    {
+      "title": "Google Assistant / voice search (voice dictation in the keyboard is a separate service and still works)",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps not needed",
+      "packages": [
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google Play Movies & TV"
+        }
+      ]
+    },
+    {
+      "title": "Realtek karaoke",
+      "packages": [
+        {
+          "pkg": "com.realtek.kara"
+        },
+        {
+          "pkg": "com.realtek.karaoke.userguide"
+        }
+      ]
+    },
+    {
+      "title": "Stock wallpaper and screensaver (the replacement launcher provides its own)",
+      "packages": [
+        {
+          "pkg": "com.konka.livewallpaper"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.dreamx"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/vu-vibe-tv/debloat.txt",
+    "commit": "204143007f0bebfb14d6ef001a32e5836b1c90b5"
+  }
+}

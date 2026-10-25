@@ -5,7 +5,7 @@
   "tested": {
     "os": "Android TV 11",
     "sdk": 30,
-    "build": null
+    "build": "RP1A.200622.001"
   },
   "launcher": "com.google.android.apps.tv.launcherx",
   "keep": [],
@@ -172,6 +172,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/tcl-43c645/debloat.txt",
-    "commit": "eb0131a32fd8567086f39002f1782f7c1b078ca6"
+    "commit": "204143007f0bebfb14d6ef001a32e5836b1c90b5"
   }
 }

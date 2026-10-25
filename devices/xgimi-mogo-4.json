@@ -1,0 +1,207 @@
+{
+  "schema": 1,
+  "id": "xgimi-mogo-4",
+  "name": "XGIMI MoGo 4 projector",
+  "tested": {
+    "os": "Android 14",
+    "sdk": 34,
+    "build": "UKNV.260612.001.15630599"
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [
+    {
+      "pkg": "com.xgimi.autokst",
+      "note": "auto keystone correction"
+    },
+    {
+      "pkg": "com.xgimi.windowsystem",
+      "note": "keystone/window service"
+    },
+    {
+      "pkg": "com.xgimi.tof",
+      "note": "ToF autofocus"
+    },
+    {
+      "pkg": "com.xgimi.misckey",
+      "note": "remote keys, focus/keystone shortcuts"
+    },
+    {
+      "pkg": "com.xgimi.uiconfiguration",
+      "note": "global key receiver, power listener"
+    },
+    {
+      "pkg": "com.xgimi.xrmservice",
+      "note": "global remote keys, picture/sound adaptation (re-enables the stock launcher, see above)"
+    },
+    {
+      "pkg": "com.xgimi.xgimiservice",
+      "note": "core XGIMI system service"
+    },
+    {
+      "pkg": "com.xgimi.autoinstall",
+      "note": "purpose unclear (PermissionRequestActivity only): kept"
+    },
+    {
+      "pkg": "com.xgimi.overseas.xgimiatvbootwizard",
+      "note": "first-boot wizard"
+    },
+    {
+      "pkg": "com.mediatek.tvinput",
+      "note": "HDMI input service"
+    },
+    {
+      "pkg": "com.mediatek.tv.service",
+      "note": "TV service, Netflix key receiver"
+    },
+    {
+      "pkg": "com.google.android.tv.inputplayer",
+      "note": "HDMI passthrough player and input switcher"
+    },
+    {
+      "pkg": "com.xgimi.starmirror",
+      "note": "XGIMI screen-mirroring receiver (ships as a user app here)"
+    },
+    {
+      "pkg": "com.dolby.android.audio.service",
+      "note": "Dolby audio"
+    }
+  ],
+  "groups": [
+    {
+      "title": "Store demo, factory and test tools",
+      "packages": [
+        {
+          "pkg": "fusion.android.tv.demo",
+          "note": "RetailDisplay store demo"
+        },
+        {
+          "pkg": "com.xgimi.atvwifiverify",
+          "note": "factory Wi-Fi verification"
+        },
+        {
+          "pkg": "com.xgimi.minitvfactory",
+          "note": "factory menu, file transfer and burn-in (never launched)"
+        }
+      ]
+    },
+    {
+      "title": "Telemetry and feedback",
+      "packages": [
+        {
+          "pkg": "com.xgimi.bugreportsender",
+          "note": "XGIMI bug report uploader"
+        },
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "Google feedback"
+        },
+        {
+          "pkg": "com.android.tv.feedbackconsent",
+          "note": "feedback / diagnostics consent prompt"
+        },
+        {
+          "pkg": "com.mstar.android.tv.disclaimercustomization",
+          "note": "vendor disclaimer screen, first-run only"
+        }
+      ]
+    },
+    {
+      "title": "Google ad, attribution and on-device personalisation services",
+      "packages": [
+        {
+          "pkg": "com.android.adservices.api",
+          "note": "Privacy Sandbox ad services (Topics, attribution)"
+        },
+        {
+          "pkg": "com.android.ondevicepersonalization.services",
+          "note": "on-device ad personalisation"
+        },
+        {
+          "pkg": "com.android.federatedcompute.services",
+          "note": "federated learning for the above"
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "partner / RLZ install-attribution pings"
+        }
+      ]
+    },
+    {
+      "title": "Google TV setup wizard (claims HOME on Google TV 14; re-enable before a factory reset)",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith"
+        }
+      ]
+    },
+    {
+      "title": "Google preloads",
+      "packages": [
+        {
+          "pkg": "com.google.android.play.games",
+          "note": "Play Games"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic",
+          "note": "YouTube Music"
+        },
+        {
+          "pkg": "com.google.android.marvin.talkback",
+          "note": "TalkBack (accessibility), off by choice"
+        }
+      ]
+    },
+    {
+      "title": "Voice and phone remote (off by choice)",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google Assistant / Gemini voice search"
+        },
+        {
+          "pkg": "com.google.android.tv.assistant",
+          "note": "assistant LED / hotword service"
+        },
+        {
+          "pkg": "com.google.android.tv.remote.service",
+          "note": "Google TV phone-as-remote, not the Bluetooth remote"
+        }
+      ]
+    },
+    {
+      "title": "XGIMI extras (off by choice)",
+      "packages": [
+        {
+          "pkg": "com.xgimi.doubanfm",
+          "note": "XGIMI music app, speaker-mode screen"
+        }
+      ]
+    },
+    {
+      "title": "Preinstalled streaming apps (off by choice; they ship as user apps on this French unit)",
+      "packages": [
+        {
+          "pkg": "com.disney.disneyplus",
+          "note": "Disney+"
+        },
+        {
+          "pkg": "com.orange.owtv.tv",
+          "note": "Orange TV"
+        }
+      ]
+    },
+    {
+      "title": "Disabled last, after the new launcher was confirmed as Home with",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.tv.launcherx"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/xgimi-mogo-4/debloat.txt",
+    "commit": "204143007f0bebfb14d6ef001a32e5836b1c90b5"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "panasonic-kowloon",
+  "name": "Panasonic Google TV LCD",
+  "tested": {
+    "os": "Android 14",
+    "sdk": 34,
+    "build": "UKNV.260416.001"
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Streaming and music apps, off by choice",
+      "packages": [
+        {
+          "pkg": "com.netflix.ninja",
+          "note": "Netflix"
+        },
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom",
+          "note": "Prime Video"
+        },
+        {
+          "pkg": "com.disney.disneyplus",
+          "note": "Disney+"
+        },
+        {
+          "pkg": "com.viaplay.android",
+          "note": "Viaplay"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic",
+          "note": "YouTube Music"
+        },
+        {
+          "pkg": "com.google.android.play.games",
+          "note": "Play Games"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/panasonic-kowloon/debloat.txt",
+    "commit": "204143007f0bebfb14d6ef001a32e5836b1c90b5"
+  }
+}

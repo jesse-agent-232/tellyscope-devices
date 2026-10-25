@@ -1,0 +1,332 @@
+{
+  "schema": 1,
+  "id": "sony-kdl-43w950d",
+  "name": "Sony BRAVIA KDL-43W950D",
+  "tested": {
+    "os": "Android TV 8.0.0",
+    "sdk": 26,
+    "build": "SVPDTV15_PA"
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Hospitality / commercial (B2B) features, not used in a home",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.b2b.importexport"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.prosettings"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.rs232csupport"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.vendorprotocol",
+          "note": "Control4/SDDP discovery; keep if you need it"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.noderuntime.normal"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.noderuntime.privilege"
+        }
+      ]
+    },
+    {
+      "title": "Help, tutorials, retail demo mode",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.customersupport"
+        },
+        {
+          "pkg": "com.sony.dtv.smarthelp",
+          "note": "keep if used"
+        },
+        {
+          "pkg": "com.sony.dtv.imanual",
+          "note": "i-Manual; keep if used"
+        },
+        {
+          "pkg": "com.sony.dtv.touchpad.tutorial"
+        },
+        {
+          "pkg": "com.sony.dtv.shopsettings"
+        }
+      ]
+    },
+    {
+      "title": "Sony/partner content, ads and recommendation feeds",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.discovery",
+          "note": "Discover bar"
+        },
+        {
+          "pkg": "com.sony.dtv.bivlinfo",
+          "note": "feeds Discover"
+        },
+        {
+          "pkg": "com.sony.dtv.sonyselect",
+          "note": "Sony Select app-store/promo tile"
+        },
+        {
+          "pkg": "com.sony.dtv.sonyselect.overlay"
+        },
+        {
+          "pkg": "com.sony.dtv.indiametarecommendation"
+        },
+        {
+          "pkg": "com.hisense.odinbrowser",
+          "note": "generic ad-supported OEM browser (ACCESS_ADSERVICES_* perms), not Sony's own UI"
+        },
+        {
+          "pkg": "android.autoinstalls.config.sony.bravia",
+          "note": "Play auto-install of partner apps"
+        }
+      ]
+    },
+    {
+      "title": "Telemetry, tracking IDs, remote support",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.tv.bugreportsender"
+        },
+        {
+          "pkg": "com.sony.dtv.remoteaccess",
+          "note": "Sony's own remote support channel (not remote-control pairing)"
+        },
+        {
+          "pkg": "com.sony.dtv.duid.generator",
+          "note": "tracking ID generator"
+        },
+        {
+          "pkg": "com.sony.snei.np.android.account",
+          "note": "Sony Network Entertainment account linking, unused"
+        }
+      ]
+    },
+    {
+      "title": "Unused sync adapters (no contacts/calendar app in use on a TV)",
+      "packages": [
+        {
+          "pkg": "com.google.android.syncadapters.contacts"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar"
+        }
+      ]
+    },
+    {
+      "title": "Unused secondary keyboard",
+      "packages": [
+        {
+          "pkg": "com.google.android.inputmethod.japanese"
+        }
+      ]
+    },
+    {
+      "title": "Camera support (this set has no camera accessory)",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.tvcamera"
+        },
+        {
+          "pkg": "com.sony.dtv.camerarecognitionservice"
+        }
+      ]
+    },
+    {
+      "title": "Wake-on-LAN helpers, unused",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.magicpacketnotifyservice"
+        },
+        {
+          "pkg": "com.sony.dtv.keepsleepserviceforwol"
+        }
+      ]
+    },
+    {
+      "title": "Voice assistant / Google Assistant search; keep if used",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss"
+        },
+        {
+          "pkg": "com.google.android.speech.pumpkin"
+        }
+      ]
+    },
+    {
+      "title": "Chromecast built-in; keep if used",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.mediashell"
+        },
+        {
+          "pkg": "com.google.android.sss"
+        },
+        {
+          "pkg": "com.google.android.sss.authbridge"
+        }
+      ]
+    },
+    {
+      "title": "Miracast \"Screen mirroring\" + DLNA home-network casting/throw; keep if used",
+      "packages": [
+        {
+          "pkg": "screnmirroring.com"
+        },
+        {
+          "pkg": "com.sony.dtv.networkapp.wifidirect"
+        },
+        {
+          "pkg": "com.sonyericsson.dlna"
+        },
+        {
+          "pkg": "com.sonyericsson.dlna.dtcpplayer"
+        },
+        {
+          "pkg": "com.sony.huey.dlna.renderersettings"
+        },
+        {
+          "pkg": "com.sony.huey.dlna.module"
+        },
+        {
+          "pkg": "com.vewd.core.integration.dia",
+          "note": "DIAL second-screen integration"
+        }
+      ]
+    },
+    {
+      "title": "HbbTV interactive-broadcast launcher entry (Indian broadcasts don't trigger it); the underlying",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.hbbtvlauncher"
+        }
+      ]
+    },
+    {
+      "title": "Netflix-specific remote-button integration (Netflix itself is disabled below)",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.netflixmanager"
+        }
+      ]
+    },
+    {
+      "title": "Leftover action/automation plugin, still enabled though its scrums.action parent ships disabled",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.scrums.action.tvdotactionactivitymanagerplugin"
+        }
+      ]
+    },
+    {
+      "title": "Streaming / media apps the owner does not use; keep any you use",
+      "packages": [
+        {
+          "pkg": "com.netflix.ninja"
+        },
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom"
+        },
+        {
+          "pkg": "com.amazon.aiv.us",
+          "note": "old Amazon Instant Video thin client, duplicate"
+        },
+        {
+          "pkg": "com.google.android.youtube.tv"
+        },
+        {
+          "pkg": "in.startv.hotstar"
+        },
+        {
+          "pkg": "com.jio.media.stb.ondemand"
+        },
+        {
+          "pkg": "com.discoveryplus.tv.android"
+        },
+        {
+          "pkg": "com.mxtech.videoplayer.ad"
+        },
+        {
+          "pkg": "org.videolan.vlc"
+        },
+        {
+          "pkg": "com.google.android.music"
+        },
+        {
+          "pkg": "com.google.android.videos"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.sony.dtv.osat.album"
+        },
+        {
+          "pkg": "com.sony.dtv.osat.music",
+          "note": "re-enable for the native USB music player"
+        },
+        {
+          "pkg": "com.sony.dtv.osat.video"
+        }
+      ]
+    },
+    {
+      "title": "Utility apps the owner does not use; keep any you use",
+      "packages": [
+        {
+          "pkg": "com.alphainventor.filemanager"
+        },
+        {
+          "pkg": "com.estrongs.android.pop"
+        },
+        {
+          "pkg": "com.teamsmart.videomanager.tv",
+          "note": "Smart IPTV"
+        }
+      ]
+    },
+    {
+      "title": "Home handover ONLY after installing, launching and verifying the new launcher (com.gathin.tvhome",
+      "packages": [
+        {
+          "pkg": "com.google.android.leanbacklauncher"
+        },
+        {
+          "pkg": "com.google.android.tungsten.setupwraith"
+        },
+        {
+          "pkg": "com.sony.dtv.tvlaunchercustomizer"
+        },
+        {
+          "pkg": "com.sony.dtv.tvxlauncher.titlelist"
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations"
+        },
+        {
+          "pkg": "com.google.android.tvtutorials"
+        },
+        {
+          "pkg": "com.google.android.backdrop"
+        },
+        {
+          "pkg": "com.google.android.tvlauncher"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/sony-kdl-43w950d/debloat.txt",
+    "commit": "204143007f0bebfb14d6ef001a32e5836b1c90b5"
+  }
+}

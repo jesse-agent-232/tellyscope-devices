@@ -11,47 +11,6 @@
   "keep": [],
   "groups": [
     {
-      "title": "32V5C variant (32-inch V5C, MT5867, 954 MB): applied and reboot-checked; package state was re-checked on",
-      "packages": [
-        {
-          "pkg": "com.tcl.messagebox",
-          "optional": true
-        },
-        {
-          "pkg": "com.tcl.logkit",
-          "optional": true
-        },
-        {
-          "pkg": "android.autoinstalls.config.google.gtvpai",
-          "optional": true
-        },
-        {
-          "pkg": "com.google.android.partnersetup",
-          "optional": true
-        },
-        {
-          "pkg": "com.tcl.browser",
-          "optional": true
-        },
-        {
-          "pkg": "com.google.android.feedback",
-          "optional": true
-        },
-        {
-          "pkg": "com.android.tv.feedbackconsent",
-          "optional": true
-        },
-        {
-          "pkg": "com.google.android.tungsten.setupwraith",
-          "optional": true
-        },
-        {
-          "pkg": "com.google.android.apps.tv.dreamx",
-          "optional": true
-        }
-      ]
-    },
-    {
       "title": "Batch 1: TCL tracking, ads and auto-installs",
       "packages": [
         {
@@ -60,8 +19,24 @@
           "optional": true
         },
         {
+          "pkg": "com.tcl.messagebox",
+          "note": "TCL push messages and promos; carries an org.tcl.ttvs receiver"
+        },
+        {
+          "pkg": "com.tcl.logkit",
+          "note": "log capture and upload"
+        },
+        {
           "pkg": "com.tcl.partnercustomizer",
           "note": "TCL promo rows on the Google TV home; [43S5K ONLY]"
+        },
+        {
+          "pkg": "android.autoinstalls.config.google.gtvpai",
+          "note": "silently installs partner apps"
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "partner attribution (RLZ pings)"
         }
       ]
     },
@@ -69,12 +44,39 @@
       "title": "Batch 2: preloaded apps and extras not used on this unit",
       "packages": [
         {
+          "pkg": "com.tcl.browser",
+          "note": "TCL \"BrowseHere\" browser and web-video portal"
+        },
+        {
           "pkg": "com.google.android.play.games",
           "note": "[43S5K ONLY]"
         },
         {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.android.tv.feedbackconsent"
+        },
+        {
           "pkg": "com.google.android.katniss",
           "note": "Google Assistant voice (mic button), about 63 MB; off by choice; [43S5K ONLY]"
+        }
+      ]
+    },
+    {
+      "title": "Batch 3: setup wizard. It claims HOME (RecoveryActivity, priority 1) once launcherx is gone.",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith"
+        }
+      ]
+    },
+    {
+      "title": "Batch 4: after launcher/ is Home and the screensaver is switched to the launcher's clock",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.tv.dreamx",
+          "note": "Google TV Ambient mode screensaver (promos)"
         }
       ]
     }
@@ -82,6 +84,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/tcl-43s5k/debloat.txt",
-    "commit": "eb0131a32fd8567086f39002f1782f7c1b078ca6"
+    "commit": "204143007f0bebfb14d6ef001a32e5836b1c90b5"
   }
 }

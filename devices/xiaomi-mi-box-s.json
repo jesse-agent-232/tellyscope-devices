@@ -30,6 +30,19 @@
       ]
     },
     {
+      "title": "Xiaomi background services. Before PatchWall: the updater enables PatchWall again (see header)",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.mitv.updateservice",
+          "note": "firmware and PatchWall updates, installs apps; re-enable to check for an update"
+        },
+        {
+          "pkg": "com.mitv.download.service",
+          "note": "its download helper"
+        }
+      ]
+    },
+    {
       "title": "PatchWall, content rows, promos, auto-installs",
       "packages": [
         {
@@ -50,19 +63,6 @@
         {
           "pkg": "android.autoinstalls.config.xioami.mibox3",
           "note": "Play auto-install of partner apps (sic, \"xioami\")"
-        }
-      ]
-    },
-    {
-      "title": "Xiaomi background services",
-      "packages": [
-        {
-          "pkg": "com.xiaomi.mitv.updateservice",
-          "note": "firmware and PatchWall updates, installs apps; re-enable to check for an update"
-        },
-        {
-          "pkg": "com.mitv.download.service",
-          "note": "its download helper"
         }
       ]
     },
@@ -166,6 +166,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/xiaomi-mi-box-s/debloat.txt",
-    "commit": "eb0131a32fd8567086f39002f1782f7c1b078ca6"
+    "commit": "204143007f0bebfb14d6ef001a32e5836b1c90b5"
   }
 }

@@ -1,0 +1,123 @@
+{
+  "schema": 1,
+  "id": "aqua-matrixtv-ee-50",
+  "name": "AQUA MatrixTV EE 50\" 4K",
+  "tested": {
+    "os": "Google TV 14",
+    "sdk": 34,
+    "build": null
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Haier content, IoT, cleaner, e-manual",
+      "packages": [
+        {
+          "pkg": "com.haierubic.usmartdevice",
+          "note": "Haier smart-device / IoT service"
+        },
+        {
+          "pkg": "it.hon.service",
+          "note": "Haier hOn IoT service"
+        },
+        {
+          "pkg": "com.haier.apps",
+          "note": "Haier promo content app (Kinopoisk)"
+        },
+        {
+          "pkg": "com.haier.tvhousekeeper",
+          "note": "\"TV housekeeper\" cleaner"
+        },
+        {
+          "pkg": "com.haier.emanual9603",
+          "note": "e-manual"
+        },
+        {
+          "pkg": "com.haier.oemtabprovider",
+          "note": "the \"Haier\" tab on the Google TV home"
+        },
+        {
+          "pkg": "com.haier.launcher.haiermatrix",
+          "note": "Zeasn content launcher, not the system Home"
+        }
+      ]
+    },
+    {
+      "title": "Telemetry, partner rows, retail demo, preloads",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "Google usage feedback"
+        },
+        {
+          "pkg": "tv.anoki.acr.anokiacroptin",
+          "note": "Anoki ACR opt-in (content recognition)"
+        },
+        {
+          "pkg": "com.mediatek.tv.launcher.partner",
+          "note": "partner rows on the stock home"
+        },
+        {
+          "pkg": "com.mediatek.tv.retaildemo",
+          "note": "retail demo mode"
+        },
+        {
+          "pkg": "com.google.android.play.games",
+          "note": "preloaded"
+        }
+      ]
+    },
+    {
+      "title": "By owner choice: apps the test household did not use",
+      "packages": [
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom",
+          "note": "Prime Video, not used"
+        },
+        {
+          "pkg": "in.startv.hotstar.dplus.tv",
+          "note": "Disney+ Hotstar, not used"
+        },
+        {
+          "pkg": "id.visionplus.android.atv",
+          "note": "Vision+, not used"
+        },
+        {
+          "pkg": "com.tencent.qqlivei18n",
+          "note": "WeTV, not used"
+        },
+        {
+          "pkg": "com.apple.atve.androidtv.appletv",
+          "note": "Apple TV, not used"
+        },
+        {
+          "pkg": "com.haier.gamingbar",
+          "note": "Haier game-mode overlay, not wanted; firmware re-enables it at boot",
+          "optional": true
+        },
+        {
+          "pkg": "com.haier.overseastv.bluetoothspeaker",
+          "note": "TV as Bluetooth speaker, not wanted"
+        },
+        {
+          "pkg": "com.google.android.marvin.talkback",
+          "note": "TalkBack, not used"
+        }
+      ]
+    },
+    {
+      "title": "Google TV home handover. setupwraith's RecoveryActivity claims HOME at priority 1 and takes over once launcherx",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/aqua-matrixtv-ee-50/debloat.txt",
+    "commit": "204143007f0bebfb14d6ef001a32e5836b1c90b5"
+  }
+}

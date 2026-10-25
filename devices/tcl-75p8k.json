@@ -1,0 +1,209 @@
+{
+  "schema": 1,
+  "id": "tcl-75p8k",
+  "name": "TCL 75P8K",
+  "tested": {
+    "os": "Android 12",
+    "sdk": 31,
+    "build": null
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "TCL / Google tracking, analytics and consent prompts",
+      "packages": [
+        {
+          "pkg": "com.tcl.ttvs",
+          "note": "TCL analytics service; re-enable if firmware updates stop arriving"
+        },
+        {
+          "pkg": "com.tcl.guard",
+          "note": "TGuard memory/security agent"
+        },
+        {
+          "pkg": "com.tcl.usercenter",
+          "note": "TCL account sign-in and analytics"
+        },
+        {
+          "pkg": "com.tcl.useragreement",
+          "note": "TCL terms / consent prompts"
+        },
+        {
+          "pkg": "com.tcl.interactive",
+          "note": "TCL TIAS background analytics service"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.partnersetup"
+        }
+      ]
+    },
+    {
+      "title": "TCL content, ads and overlays",
+      "packages": [
+        {
+          "pkg": "com.tcl.waterfall.overseas",
+          "note": "TCL Channel / content recommendation rows"
+        },
+        {
+          "pkg": "com.tcl.channelplus",
+          "note": "TCL Live FAST channels"
+        },
+        {
+          "pkg": "com.tcl.gamebar",
+          "note": "re-enable for the console game-mode overlay"
+        }
+      ]
+    },
+    {
+      "title": "Screensaver, accessibility and unused AOSP services",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.tv.dreamx",
+          "note": "ambient mode screensaver"
+        },
+        {
+          "pkg": "com.google.android.marvin.talkback"
+        },
+        {
+          "pkg": "com.android.printspooler"
+        },
+        {
+          "pkg": "com.android.wallpaper.livepicker"
+        },
+        {
+          "pkg": "com.android.wallpaperbackup"
+        },
+        {
+          "pkg": "com.android.sharedstoragebackup"
+        },
+        {
+          "pkg": "com.android.backupconfirm"
+        }
+      ]
+    },
+    {
+      "title": "Needed for a custom launcher. Disable only AFTER the new launcher is installed, and setupwraith only",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith",
+          "note": "costs phone casting after a reboot (the Cast receiver reads its credentials from setupwraith)"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.launcherx"
+        }
+      ]
+    },
+    {
+      "title": "Disabled by choice on this TV (unused regional streaming preloads and games): comment out what you use",
+      "packages": [
+        {
+          "pkg": "tv.wuaki.apptv",
+          "note": "Rakuten TV"
+        },
+        {
+          "pkg": "com.discovery.dplay",
+          "note": "discovery+"
+        },
+        {
+          "pkg": "com.yle.webtv",
+          "note": "Yle Areena"
+        },
+        {
+          "pkg": "ar.tvplayer.tv",
+          "note": "TVPlayer"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        }
+      ]
+    },
+    {
+      "title": "Also present on this firmware (untested on this unit; disabled on tcl-55p8ls/ and tcl-55p7k/)",
+      "packages": [
+        {
+          "pkg": "tv.samba.ssm.ui",
+          "note": "Samba TV ACR viewing tracking",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.logkit",
+          "note": "log capture and upload",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.tv.tclhome_passive",
+          "note": "pushes TCL content to the home screen at boot",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.partnercustomizer",
+          "note": "TCL tweaks to Google TV home rows",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.messagebox",
+          "note": "TCL push messages and promos",
+          "optional": true
+        },
+        {
+          "pkg": "android.autoinstalls.config.google.gtvpai",
+          "note": "silently installs partner apps",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.exhibit",
+          "note": "retail demo mode",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.esticker",
+          "note": "retail e-sticker overlay",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.ocean.instructions",
+          "note": "e-manual",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.repairguide",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.UpdatePeripheral",
+          "note": "soundbar peripheral updater",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.smartalexa",
+          "note": "Alexa",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.t_solo",
+          "note": "T-Solo \"listen alone\"",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.magiconnectfree",
+          "note": "MagiConnect / T-Cast companion",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.miracast",
+          "note": "screen mirroring from Android phones",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tcl-75p8k/debloat.txt",
+    "commit": "204143007f0bebfb14d6ef001a32e5836b1c90b5"
+  }
+}

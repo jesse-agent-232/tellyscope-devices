@@ -101,7 +101,8 @@
         },
         {
           "pkg": "com.tcl.t_solo",
-          "note": "game centre"
+          "note": "Bluetooth music app (\"listen alone\"); not a game centre",
+          "optional": true
         },
         {
           "pkg": "com.tcl.micmanager",
@@ -141,6 +142,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/tcl-mt9655-cn-android14/debloat.txt",
-    "commit": "eb0131a32fd8567086f39002f1782f7c1b078ca6"
+    "commit": "204143007f0bebfb14d6ef001a32e5836b1c90b5"
   }
 }

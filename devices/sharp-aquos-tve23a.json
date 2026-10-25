@@ -1,0 +1,165 @@
+{
+  "schema": 1,
+  "id": "sharp-aquos-tve23a",
+  "name": "SHARP AQUOS TVE23A",
+  "tested": {
+    "os": "Google TV 14",
+    "sdk": 34,
+    "build": null
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "--- Telemetry, ad and personalisation services ---",
+      "packages": [
+        {
+          "pkg": "tv.anoki.acr.anokiacroptin",
+          "note": "Anoki ACR: recognises what is on screen"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.android.tv.feedbackconsent",
+          "note": "feedback consent dialog"
+        },
+        {
+          "pkg": "com.android.adservices.api",
+          "note": "Android ad services"
+        },
+        {
+          "pkg": "com.android.ondevicepersonalization.services"
+        },
+        {
+          "pkg": "com.android.federatedcompute.services"
+        }
+      ]
+    },
+    {
+      "title": "--- Vendor content, partner rows and retail demo ---",
+      "packages": [
+        {
+          "pkg": "com.mediatek.android.leanbacklauncher.partnercustomizer",
+          "note": "SHARP partner rows for the stock launcher"
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "Play partner customizations"
+        },
+        {
+          "pkg": "fusion.android.tv.demo",
+          "note": "store mode"
+        },
+        {
+          "pkg": "umc.com.emanual",
+          "note": "on-screen manual"
+        },
+        {
+          "pkg": "jp.co.sharp.av.android.sharpcocoroalbum.renderasia",
+          "note": "COCORO Album render service (album app already off)"
+        }
+      ]
+    },
+    {
+      "title": "--- Background services nobody uses on a TV ---",
+      "packages": [
+        {
+          "pkg": "com.google.android.syncadapters.calendar"
+        },
+        {
+          "pkg": "com.android.healthconnect.controller"
+        },
+        {
+          "pkg": "com.android.health.connect.backuprestore"
+        }
+      ]
+    },
+    {
+      "title": "--- Factory / test tools (checked with dumpsys only, never launched) ---",
+      "packages": [
+        {
+          "pkg": "com.at.factory.factorymanager",
+          "note": "factory test manager, boot receiver"
+        },
+        {
+          "pkg": "com.at.factory.androidtvaidlservice",
+          "note": "factory test service"
+        },
+        {
+          "pkg": "com.cvte.tv.at",
+          "note": "factory auto-test activity"
+        }
+      ]
+    },
+    {
+      "title": "--- Unused apps (off by choice; all still installed) ---",
+      "packages": [
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom",
+          "note": "Prime Video, off by choice"
+        },
+        {
+          "pkg": "com.google.android.youtube.tv",
+          "note": "YouTube, off by choice (the YouTube button opens SmartTube)"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic",
+          "note": "YouTube Music, off by choice"
+        },
+        {
+          "pkg": "com.google.android.play.games",
+          "note": "Google Play Games, off by choice"
+        },
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Chromecast receiver, off by choice"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google TV / Play Movies storefront: a user app on this set",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "--- Memory pass (off by choice): boot starters and idle memory ---",
+      "packages": [
+        {
+          "pkg": "com.google.android.tts",
+          "note": "Google Text-to-Speech, off by choice; voice typing does not use it"
+        },
+        {
+          "pkg": "com.android.providers.calendar",
+          "note": "calendar storage (calendar sync is off above)"
+        },
+        {
+          "pkg": "com.android.dynsystem",
+          "note": "Dynamic System Updates (GSI loader), boot receiver"
+        },
+        {
+          "pkg": "com.android.wallpaperbackup",
+          "note": "wallpaper backup agent"
+        }
+      ]
+    },
+    {
+      "title": "--- Stock Google TV home and setup wizard ---",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith",
+          "note": "first-run wizard; claims HOME. Re-enable before a factory reset"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.launcherx",
+          "note": "stock Google TV home"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/sharp-aquos-tve23a/debloat.txt",
+    "commit": "204143007f0bebfb14d6ef001a32e5836b1c90b5"
+  }
+}

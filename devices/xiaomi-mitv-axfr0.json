@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "id": "xiaomi-mitv-axfr0",
+  "name": "Xiaomi MiTV-AXFR0",
+  "tested": {
+    "os": "Android TV 11",
+    "sdk": 30,
+    "build": null
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Xiaomi + Google telemetry",
+      "packages": [
+        {
+          "pkg": "com.miui.tv.analytics"
+        },
+        {
+          "pkg": "com.xiaomi.statistic"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        }
+      ]
+    },
+    {
+      "title": "PatchWall, content rows, sponsored rows",
+      "packages": [
+        {
+          "pkg": "com.mitv.tvhome.atv"
+        },
+        {
+          "pkg": "com.xm.webcontent"
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations"
+        },
+        {
+          "pkg": "android.autoinstalls.config.xioami.dangal"
+        }
+      ]
+    },
+    {
+      "title": "Xiaomi background services",
+      "packages": [
+        {
+          "pkg": "com.mitv.tvlock"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.tvmanager"
+        },
+        {
+          "pkg": "com.xiaomo.tv.milegal"
+        }
+      ]
+    },
+    {
+      "title": "Screen mirroring (Chromecast built-in kept per user preference)",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.mitv.smartshare"
+        },
+        {
+          "pkg": "com.xiaomi.wfdsinkhelperservice"
+        },
+        {
+          "pkg": "com.mitv.milinkservice"
+        }
+      ]
+    },
+    {
+      "title": "Firmware updates: kept, so updates still arrive (uncomment to stop them)",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.mitv.updateservice",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Preloaded / unused apps",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.mimusic2"
+        },
+        {
+          "pkg": "com.sonyliv"
+        },
+        {
+          "pkg": "in.startv.hotstar"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/xiaomi-mitv-axfr0/debloat.txt",
+    "commit": "204143007f0bebfb14d6ef001a32e5836b1c90b5"
+  }
+}

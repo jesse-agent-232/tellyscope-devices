@@ -1,0 +1,189 @@
+{
+  "schema": 1,
+  "id": "anker-nebula-mars-3-air",
+  "name": "Anker Nebula Mars 3 Air projector",
+  "tested": {
+    "os": "Google TV 14",
+    "sdk": 34,
+    "build": "UKNV.260210.001"
+  },
+  "launcher": null,
+  "keep": [
+    {
+      "pkg": "com.mediatek.tvinput",
+      "note": "HDMI input service"
+    },
+    {
+      "pkg": "com.mediatek.tv.service",
+      "note": "TV service, global keys, Netflix key receiver"
+    },
+    {
+      "pkg": "com.google.android.tv.inputplayer",
+      "note": "HDMI passthrough player"
+    },
+    {
+      "pkg": "com.mediatek.tv.inputplayeroverlay",
+      "note": "HDMI overlay"
+    },
+    {
+      "pkg": "com.oceanwing.receiver",
+      "note": "remote control, Nebula IME, accessibility, screen control"
+    },
+    {
+      "pkg": "com.zhixin.nebulasmart",
+      "note": "remote events, accessibility service"
+    },
+    {
+      "pkg": "com.zhixin.remoteautopair",
+      "note": "Bluetooth remote auto-pairing"
+    },
+    {
+      "pkg": "com.oceanwing.nebulalinker",
+      "note": "device info, custom shutdown, firmware update dispatch"
+    },
+    {
+      "pkg": "com.zhixin.apphelper",
+      "note": "package install helper, HTML viewer"
+    },
+    {
+      "pkg": "com.zhixin.projector.settings",
+      "note": "picture / focus / keystone / battery / update UI"
+    },
+    {
+      "pkg": "com.zhixin.nebulasetupwizard",
+      "note": "Nebula first-run wizard (not Google's setupwraith)"
+    },
+    {
+      "pkg": "com.mediatek.wwtv.mediaplayer",
+      "note": "USB media player"
+    },
+    {
+      "pkg": "com.mediatek.wwtv.webview",
+      "note": "webview the settings apps use"
+    },
+    {
+      "pkg": "com.dolby.android.audio.service",
+      "note": "Dolby audio processing"
+    },
+    {
+      "pkg": "com.google.android.inputmethod.latin",
+      "note": "the on-screen keyboard"
+    }
+  ],
+  "groups": [
+    {
+      "title": "--- Telemetry and feedback ---",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "Google feedback / bug reports"
+        },
+        {
+          "pkg": "com.android.tv.feedbackconsent",
+          "note": "feedback consent prompt"
+        },
+        {
+          "pkg": "com.android.adservices.api",
+          "note": "Privacy Sandbox ad services"
+        },
+        {
+          "pkg": "com.android.federatedcompute.services",
+          "note": "federated learning"
+        },
+        {
+          "pkg": "com.android.ondevicepersonalization.services",
+          "note": "on-device ad personalisation"
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "partner-app attribution"
+        }
+      ]
+    },
+    {
+      "title": "--- Retail / store demo ---",
+      "packages": [
+        {
+          "pkg": "fusion.android.tv.demo",
+          "note": "RetailDisplay store demo"
+        },
+        {
+          "pkg": "com.zhixin.nebularetailmode",
+          "note": "Nebula retail demo mode (boot receiver)"
+        }
+      ]
+    },
+    {
+      "title": "--- Off by owner's choice (comment out to keep) ---",
+      "packages": [
+        {
+          "pkg": "com.waxrain.airplaydmr_OW",
+          "note": "AirPlay / DLNA receiver (Chromecast built-in stays)"
+        },
+        {
+          "pkg": "com.spotify.music",
+          "note": "Spotify"
+        },
+        {
+          "pkg": "com.wbd.stream",
+          "note": "Max (HBO)"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google TV buy/rent movies app"
+        }
+      ]
+    },
+    {
+      "title": "--- Re-enabled after trying, left as comments (see header) ---",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Assistant: the firmware re-enables it at every boot; the",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.tv.assistant",
+          "note": "Assistant LED service, same reason",
+          "optional": true
+        },
+        {
+          "pkg": "com.netflix.ninja",
+          "note": "the remote's Netflix button needs it (MediaTek global-key",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.apps.tv.dreamx",
+          "note": "Google Ambient Mode: disabled with the screensaver",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "--- Setup wizard: Google TV 14 gives Home to its RecoveryActivity otherwise (see header) ---",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith"
+        }
+      ]
+    },
+    {
+      "title": "--- Stock home screen (only after the new launcher is installed: launcher/build-and-install.sh) ---",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.tv.launcherx",
+          "note": "stock Google TV home"
+        },
+        {
+          "pkg": "com.mediatek.android.leanbacklauncher.partnercustomizer",
+          "note": "partner rows for the stock home"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/anker-nebula-mars-3-air/debloat.txt",
+    "commit": "204143007f0bebfb14d6ef001a32e5836b1c90b5"
+  }
+}
