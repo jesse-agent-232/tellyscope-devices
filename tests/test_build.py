@@ -107,6 +107,20 @@ class Index(unittest.TestCase):
         self.assertEqual(by_id["philips-55oled708"]["match"]["manufacturer"], ["TPV"])
 
 
+class KeepCommit(unittest.TestCase):
+    def device(self, commit, packages=("com.acme.reporter",)):
+        return {"schema": 1, "id": "acme-55", **build.parse_list("\n".join(packages)),
+                "source": {"repo": build.UPSTREAM, "path": "examples/acme-55/debloat.txt", "commit": commit}}
+
+    def test_an_unchanged_list_keeps_its_old_commit(self):
+        self.assertEqual(build.keep_commit(self.device("new"), self.device("old"))["source"]["commit"], "old")
+
+    def test_a_changed_or_new_list_takes_the_new_commit(self):
+        changed = self.device("new", ("com.acme.reporter", "com.acme.updater"))
+        self.assertEqual(build.keep_commit(changed, self.device("old"))["source"]["commit"], "new")
+        self.assertEqual(build.keep_commit(self.device("new"), None)["source"]["commit"], "new")
+
+
 class RealLists(unittest.TestCase):
     """The committed devices/ files must still parse to the shape the app reads."""
 

@@ -125,12 +125,23 @@ def sync(upstream):
         device.update(parse_list(src.read_text(encoding="utf-8")))
         device["source"] = {"repo": UPSTREAM, "path": f"examples/{folder.name}/debloat.txt",
                             "commit": commit}
-        (out / f"{folder.name}.json").write_text(dump(device), encoding="utf-8")
+        df = out / f"{folder.name}.json"
+        device = keep_commit(device, json.loads(df.read_text(encoding="utf-8")) if df.is_file() else None)
+        df.write_text(dump(device), encoding="utf-8")
         written.add(f"{folder.name}.json")
     for stale in out.glob("*.json"):
         if stale.name not in written:
             stale.unlink()
     (ROOT / "upstream.txt").write_text(f"{UPSTREAM} {commit}\n", encoding="utf-8")
+
+
+def keep_commit(device, old):
+    """The device with the old file's source.commit when nothing else changed, so a sync's diff
+    lists only new and changed lists. source.commit is then the commit the list last changed at, or older."""
+    if old is None or "commit" not in old.get("source", {}):
+        return device
+    kept = {**device, "source": {**device["source"], "commit": old["source"]["commit"]}}
+    return kept if kept == old else device
 
 
 def build_index():
