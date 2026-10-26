@@ -16,6 +16,7 @@ here. Nothing reaches apps until a maintainer merges it.
 | `match/<id>.json` | people | How to recognise that TV. The sync never writes here. |
 | `index.json` | `tools/build.py index` | Every device, with its match rule or `null`: what an app downloads first. |
 | `upstream.txt` | the sync | The cleanyourtv commit `devices/` was built from. |
+| `icons/` | the icons sync, people | App icon packs; see [App icons](#app-icons). |
 
 A device with no `match/` file is still in the index, with `"match": null`: an app can't recognise it,
 but the user can pick it. A match rule whose device is gone is skipped.
@@ -92,13 +93,76 @@ other commented package is `optional`. Quirk notes are not copied: follow `sourc
 one entry per device file, with `match` copied from `match/<id>.json` (`null` when there is none) and
 `sdk` from `tested.sdk`.
 
+## App icons
+
+Tellyscope shows a TV app's own icon when it has one. For apps with only a banner, it can show an
+icon from a pack instead. Packs are downloaded whole, once, so nobody learns which apps are on a TV;
+matching happens on the phone.
+
+| Path | Written by | What it is |
+|---|---|---|
+| `icons/index.json` | `tools/icons.py index` | The packs an app offers: what it downloads first. |
+| `icons/corebuilds.zip` | the icons sync | [Core Builds](https://github.com/brevityA/CoreBuildsApps) (MIT), rasterised to 96 px WebP. |
+| `icons/upstream.txt` | the icons sync | The Core Builds commit the zip was built from. |
+| `icons/minimalist.json` | people | Package map for the [Minimalist](https://github.com/hqn-scl/android-tv-minimalist-icon-pack) pack, whose art is not mirrored here. |
+
+The icons sync runs weekly, rasterises the pinned Core Builds glyphs (`assets/svg`, mapped by its
+`appfilter.xml`) and opens or refreshes one pull request from `sync/corebuilds`. SVG is turned into
+WebP here so the phone never parses SVG. Minimalist has no licence, so it is never copied into this
+repo: an app that turns it on downloads the author's own archive, pinned to a commit, and uses
+`minimalist.json` to find each app's banner inside it.
+
+### Pack format
+
+A pack is one zip with `index.json` at its root:
+
+```json
+{"schema": 1, "name": "My icons", "size": 96, "icons": {"com.netflix.ninja": "icons/netflix.webp"}}
+```
+
+- `icons` maps a package name to the path of an image **inside the zip**. Several packages may share one image.
+- Images are PNG or WebP, square, ideally 96 px, transparent background. No SVG.
+- `size` is optional, for information only.
+
+`minimalist.json` has the same `schema` and `icons`, with paths inside the archive named by `archive`,
+plus `fit: "banner"`: its images are 16:9 banners, shown fitted to the tile's width.
+
+### Rules an app enforces (and `tools/icons.py check` mirrors)
+
+Anything that breaks one is refused, never repaired:
+
+- HTTPS only, for the default packs and for your own.
+- Download at most 16 MiB, at most 4,096 entries, at most 64 MiB unpacked.
+- A package must match the same pattern as the lists (`[A-Za-z][A-Za-z0-9_]*(\.[A-Za-z0-9_]+)+`).
+- A path must be relative and end in `.png` or `.webp`, with only `A-Z a-z 0-9 . _ - /`. No `..`, `.` or
+  empty segments, no leading `/`, no `\`, no `scheme:`; never a URL.
+- Every image: at most 2 MiB, at most 4,096 px a side, read from its header before decoding. Larger
+  images are downsampled when decoded.
+- Unpacked only into the app's private storage. Nothing from a pack ever reaches a TV command.
+
+### `icons/index.json`
+
+`{"schema", "packs": [...]}`. A bundled pack has `file`, `sha256` and `bytes`. Minimalist has
+`archive`, `bytes`, `fit`, `notice` and `map` instead. Both have `id`, `name`, `licence`, `credit`,
+`source`, `commit` and `packages` (how many packages it maps).
+
+### Use your own icons
+
+Build a zip in the pack format, host it anywhere over HTTPS (a fork of this repo works:
+`https://raw.githubusercontent.com/<you>/tellyscope-devices/main/icons/<file>.zip`), and paste its
+address under Settings → Advanced → Icons from. Check it first:
+`python3 -c "import sys; sys.path.insert(0, 'tools'); import icons; print(icons.check_zip(open('my.zip','rb').read()) or 'ok')"`.
+
 ## Contributing
 
 - **A list is wrong or missing:** fix it in [cleanyourtv](https://github.com/Gathin23/cleanyourtv). The
   next sync brings it here.
 - **Your TV isn't recognised automatically:** add `match/<id>.json` with its `getprop` values and run
   `python3 tools/build.py index`.
-- Before a pull request: `python3 -m unittest discover -s tests` and `python3 tools/build.py check`.
+- **An app maps to the wrong icon:** fix it in [Core Builds](https://github.com/brevityA/CoreBuildsApps),
+  or in `icons/minimalist.json` here, then run `python3 tools/icons.py index`.
+- Before a pull request: `python3 -m unittest discover -s tests`, `python3 tools/build.py check` and
+  `python3 tools/icons.py check`.
 
 The sync runs daily (and on demand from the Actions tab). It rebuilds `devices/` and opens or refreshes
 one pull request from `sync/cleanyourtv`; it force-pushes that branch, so don't commit to it. A pull
@@ -106,8 +170,10 @@ request opened by Actions starts no workflows, so the sync starts `Check` on tha
 
 ## Credits
 
-The package lists are derived from cleanyourtv by Gathin and its contributors. See `NOTICE`.
+The package lists are derived from cleanyourtv by Gathin and its contributors. The icons in
+`icons/corebuilds.zip` are rasterised from Core Builds by brevityA. Both are MIT; see `NOTICE`.
 
 ## License
 
-MIT, see `LICENSE`. The upstream lists keep their own MIT notice in `NOTICE`.
+MIT, see `LICENSE`. The upstream lists and icons keep their own MIT notices in `NOTICE`. The Minimalist
+pack is not in this repo and carries no licence; `minimalist.json` only names files in its archive.

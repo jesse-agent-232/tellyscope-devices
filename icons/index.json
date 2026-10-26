@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "packs": [
+    {
+      "id": "corebuilds",
+      "name": "Core Builds",
+      "licence": "MIT",
+      "credit": "Icons by Core Builds (MIT)",
+      "source": "https://github.com/brevityA/CoreBuildsApps",
+      "commit": "da6812d49b9fd41bb41a072772b13223b2bff68c",
+      "file": "icons/corebuilds.zip",
+      "sha256": "a1710b7b934c7573bdb4db545f6e5919863759c93ca32e9491167a83dedf60d0",
+      "bytes": 1160636,
+      "packages": 1077
+    },
+    {
+      "id": "minimalist",
+      "name": "Minimalist",
+      "licence": null,
+      "notice": "Fan-made, unlicensed, uses the brands' own logos.",
+      "credit": "Icons by hqn-scl (no licence given; fan-made)",
+      "source": "https://github.com/hqn-scl/android-tv-minimalist-icon-pack",
+      "commit": "f8093a58ac390296a269fde2045fb7abc5e2db0a",
+      "archive": "https://codeload.github.com/hqn-scl/android-tv-minimalist-icon-pack/zip/f8093a58ac390296a269fde2045fb7abc5e2db0a",
+      "bytes": 9688871,
+      "fit": "banner",
+      "map": "icons/minimalist.json",
+      "packages": 75
+    }
+  ]
+}
