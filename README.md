@@ -74,7 +74,7 @@ A TV matches when each field present has one value equal to the TV's property. U
 | `launcher` | package name or `null` | the stock launcher, for display only: an app must ask the TV which app is Home |
 | `keep` | list of entries | packages the list says must stay enabled on this model |
 | `groups` | list of `{title, packages}` | the list itself, in its order and grouping |
-| `source` | `{repo, path, commit}` | where the list came from |
+| `source` | `{repo, path, commit}` | where the list came from; `commit` is the sync that last changed this file, so an unchanged list keeps its older commit (`upstream.txt` has the latest) |
 
 An entry is `{"pkg": "<package>", "note": "<text>", "optional": true}`. `note` and `optional` appear
 only when set. `optional` marks a line the list had commented out (untested, or kept on that unit): show
