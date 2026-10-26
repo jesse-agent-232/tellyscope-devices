@@ -1,0 +1,140 @@
+{
+  "schema": 1,
+  "id": "jvc-lt-43km348",
+  "name": "JVC LT-43KM348",
+  "tested": {
+    "os": "Google TV 14",
+    "sdk": 34,
+    "build": null
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Telemetry, content recognition, feedback, partner setup",
+      "packages": [
+        {
+          "pkg": "tv.anoki.acr.anokiacroptin",
+          "note": "Anoki ACR (priv-app); config from acr-config.aistrm.net"
+        },
+        {
+          "pkg": "com.cltv.hybrid",
+          "note": "CLTV free channels; disabled on the tested set (uncomment to do the same). On other CLTV builds this package is the Live TV app (#1578), so it stays on in the shared list",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.android.tv.feedbackconsent"
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "Google partner attribution"
+        },
+        {
+          "pkg": "com.android.federatedcompute.services"
+        },
+        {
+          "pkg": "com.android.ondevicepersonalization.services"
+        },
+        {
+          "pkg": "com.mstar.android.tv.disclaimercustomization",
+          "note": "setup-only disclaimer screen"
+        }
+      ]
+    },
+    {
+      "title": "Preloads, off by the owner's choice",
+      "packages": [
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom",
+          "note": "Prime Video"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google TV app (Play Movies)"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.tcl.browser"
+        },
+        {
+          "pkg": "com.electronic.manual",
+          "note": "e-manual"
+        }
+      ]
+    },
+    {
+      "title": "Background services nobody needs on a TV",
+      "packages": [
+        {
+          "pkg": "com.android.backupconfirm"
+        },
+        {
+          "pkg": "com.android.sharedstoragebackup"
+        },
+        {
+          "pkg": "com.android.wallpaperbackup"
+        },
+        {
+          "pkg": "com.android.health.connect.backuprestore"
+        },
+        {
+          "pkg": "com.android.healthconnect.controller"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar"
+        },
+        {
+          "pkg": "com.android.providers.calendar"
+        },
+        {
+          "pkg": "com.android.dynsystem",
+          "note": "Dynamic System Updates"
+        },
+        {
+          "pkg": "com.android.cts.ctsshim"
+        },
+        {
+          "pkg": "com.android.cts.priv.ctsshim"
+        },
+        {
+          "pkg": "com.android.dreams.basic"
+        },
+        {
+          "pkg": "com.google.android.marvin.talkback"
+        }
+      ]
+    },
+    {
+      "title": "Launcher handover. setupwraith's RecoveryActivity took Home on the first launcher install (the install",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith"
+        },
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Chromecast built-in, off by choice once setupwraith was gone (casting not retested)"
+        }
+      ]
+    },
+    {
+      "title": "Stock launcher, replaced by launcher/. Disabling it also kills the remote's Settings-button panel (README.md).",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.tv.launcherx",
+          "note": "launcher/build-and-install.sh disables it itself, after Home has moved",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/jvc-lt-43km348/debloat.txt",
+    "commit": "baadd07a7d095cc3ea72e6ccb615987bf1fb97c4"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "alwtniet-hy320-mini",
+  "name": "Alwtniet HY320 Mini projector",
+  "tested": {
+    "os": "Android 11",
+    "sdk": 30,
+    "build": null
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "HTC ad overlay, telemetry and app store",
+      "packages": [
+        {
+          "pkg": "com.htc.expandsdk",
+          "note": "starts at boot, draws over apps (SYSTEM_ALERT_WINDOW) and uses the internet"
+        },
+        {
+          "pkg": "com.htc.eventuploadservice",
+          "note": "usage/event uploader"
+        },
+        {
+          "pkg": "com.htc.storeos",
+          "note": "HTC app store"
+        }
+      ]
+    },
+    {
+      "title": "Firmware updaters, disabled on the tested set (uncomment all three to do the same): this unbranded Allwinner/HTC firmware takes OTA images from",
+      "packages": [
+        {
+          "pkg": "com.htc.htcotaupdate",
+          "optional": true
+        },
+        {
+          "pkg": "com.softwinner.update",
+          "note": "Allwinner OTA",
+          "optional": true
+        },
+        {
+          "pkg": "android.rockchip.update.service",
+          "note": "Rockchip updater left in this Allwinner image",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Factory and burn-in test apps",
+      "packages": [
+        {
+          "pkg": "com.htc.hyk_test"
+        },
+        {
+          "pkg": "com.softwinner.agingdragonbox"
+        },
+        {
+          "pkg": "com.softwinner.dragonbox"
+        },
+        {
+          "pkg": "com.softwinner.dragonatt"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded store for another brand's devices",
+      "packages": [
+        {
+          "pkg": "com.huawei.appmarket",
+          "note": "Huawei AppGallery, installed in the user partition on this unit"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/alwtniet-hy320-mini/debloat.txt",
+    "commit": "baadd07a7d095cc3ea72e6ccb615987bf1fb97c4"
+  }
+}

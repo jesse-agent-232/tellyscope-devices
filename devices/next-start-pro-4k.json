@@ -1,0 +1,157 @@
+{
+  "schema": 1,
+  "id": "next-start-pro-4k",
+  "name": "Next Start Pro 4K TV Box",
+  "tested": {
+    "os": "Android 14",
+    "sdk": 34,
+    "build": "UTT1.250214.001"
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Google telemetry and feedback",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.android.tv.feedbackconsent"
+        }
+      ]
+    },
+    {
+      "title": "Ad personalisation on device",
+      "packages": [
+        {
+          "pkg": "com.android.ondevicepersonalization.services"
+        },
+        {
+          "pkg": "com.android.federatedcompute.services"
+        }
+      ]
+    },
+    {
+      "title": "Google TV home screen and setup wizard (install a replacement launcher first)",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.tv.launcherx"
+        },
+        {
+          "pkg": "com.google.android.tungsten.setupwraith",
+          "note": "see header: takes HOME and crash-loops otherwise; owns setup Wi-Fi"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.dreamx",
+          "note": "Google TV ambient screensaver with recommendations"
+        }
+      ]
+    },
+    {
+      "title": "Services a streaming box never uses",
+      "packages": [
+        {
+          "pkg": "com.android.printspooler"
+        },
+        {
+          "pkg": "com.android.cameraextensions"
+        },
+        {
+          "pkg": "com.android.healthconnect.controller"
+        },
+        {
+          "pkg": "com.android.health.connect.backuprestore"
+        },
+        {
+          "pkg": "com.android.dreams.basic"
+        },
+        {
+          "pkg": "com.android.dynsystem",
+          "note": "Dynamic System Updates (developer GSI installer)"
+        },
+        {
+          "pkg": "com.android.hotspot2.osulogin",
+          "note": "Passpoint sign-in"
+        },
+        {
+          "pkg": "com.android.nearby.halfsheet",
+          "note": "Nearby pairing pop-up"
+        }
+      ]
+    },
+    {
+      "title": "Factory test apps",
+      "packages": [
+        {
+          "pkg": "com.oem.qa",
+          "note": "BoxFactoryTest"
+        },
+        {
+          "pkg": "com.sdt.producttest"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps (Next and partners)",
+      "packages": [
+        {
+          "pkg": "com.next.iptv",
+          "note": "Next IPTV"
+        },
+        {
+          "pkg": "com.next.roket",
+          "note": "Next Roket"
+        },
+        {
+          "pkg": "com.jettv.player",
+          "note": "JetTV"
+        }
+      ]
+    },
+    {
+      "title": "Google apps, off by the owner's choice",
+      "packages": [
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.marvin.talkback"
+        },
+        {
+          "pkg": "com.google.android.tts",
+          "note": "text-to-speech; no app here needed it"
+        }
+      ]
+    },
+    {
+      "title": "Added 25 October 2026 from other lists here, reboot-checked only, not yet lived with for days",
+      "packages": [
+        {
+          "pkg": "com.android.adservices.api",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "optional": true
+        },
+        {
+          "pkg": "android.autoinstalls.config.RTKSTBAndroid.device",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/next-start-pro-4k/debloat.txt",
+    "commit": "baadd07a7d095cc3ea72e6ccb615987bf1fb97c4"
+  }
+}

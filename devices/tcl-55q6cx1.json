@@ -1,0 +1,162 @@
+{
+  "schema": 1,
+  "id": "tcl-55q6cx1",
+  "name": "TCL 55Q6CX1",
+  "tested": {
+    "os": "Google TV 12",
+    "sdk": 31,
+    "build": "STT2.221228.001"
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [
+    {
+      "pkg": "com.tcl.tv",
+      "note": "Live TV app, plays HDMI, tuner playback"
+    },
+    {
+      "pkg": "com.tcl.tvinput",
+      "note": "TV input services for HDMI and tuner"
+    },
+    {
+      "pkg": "com.tcl.autopair",
+      "note": "Bluetooth remote auto-pairing across battery changes"
+    },
+    {
+      "pkg": "com.tcl.suspension",
+      "note": "Quick Panel source menu on the Input key"
+    },
+    {
+      "pkg": "com.tcl.interactive",
+      "note": "TIAS source/HbbTV overlay service bound by com.tcl.tv"
+    },
+    {
+      "pkg": "com.tcl.ttvs",
+      "note": "TIAS chain and teletext soft-keyboard; disabling breaks source overlays"
+    },
+    {
+      "pkg": "com.tcl.gamebar",
+      "note": "TCL Game Bar / Game Master overlay for gaming"
+    },
+    {
+      "pkg": "com.tcl.exhibit",
+      "note": "T-Exhibit ambient picture mode"
+    },
+    {
+      "pkg": "com.mediatek.airplaydaemon",
+      "note": "AirPlay casting service"
+    },
+    {
+      "pkg": "com.tcl.airplay2",
+      "note": "AirPlay 2 receiver"
+    },
+    {
+      "pkg": "com.google.android.gms",
+      "note": "Play Services"
+    },
+    {
+      "pkg": "com.android.vending",
+      "note": "Google Play Store"
+    }
+  ],
+  "groups": [
+    {
+      "title": "TCL promo, message box, tips, telemetry and demo",
+      "packages": [
+        {
+          "pkg": "com.tcl.dashboard",
+          "note": "home-screen push messages"
+        },
+        {
+          "pkg": "com.tcl.messagebox"
+        },
+        {
+          "pkg": "com.tcl.ocean.instructions",
+          "note": "onboarding and tips overlay"
+        },
+        {
+          "pkg": "com.tcl.repairguide"
+        },
+        {
+          "pkg": "com.tcl.logkit",
+          "note": "telemetry and log collection"
+        },
+        {
+          "pkg": "com.tcl.smartalexa",
+          "note": "Alexa integration"
+        },
+        {
+          "pkg": "com.tcl.t_solo",
+          "note": "TCL solo app"
+        },
+        {
+          "pkg": "com.tcl.eva",
+          "note": "TCL voice assistant layer"
+        },
+        {
+          "pkg": "com.tcl.magiconnectfree",
+          "note": "MagiConnect pairing promo"
+        },
+        {
+          "pkg": "com.tcl.UpdatePeripheral",
+          "note": "peripheral firmware helper"
+        },
+        {
+          "pkg": "com.tcl.hearaid"
+        }
+      ]
+    },
+    {
+      "title": "Duplicate webviews on this firmware, disabled on the tested unit (uncomment to do the same). First check",
+      "packages": [
+        {
+          "pkg": "com.tcl.android.webview",
+          "optional": true
+        },
+        {
+          "pkg": "com.iplayer.android.webview",
+          "optional": true
+        },
+        {
+          "pkg": "com.mediatek.support.webview",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Google storefront and extras",
+      "packages": [
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google Play Movies & TV storefront"
+        },
+        {
+          "pkg": "com.google.android.tts",
+          "note": "text-to-speech"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.dreamx",
+          "note": "stock photo screensaver (ClockDream used instead)"
+        },
+        {
+          "pkg": "com.android.printspooler"
+        }
+      ]
+    },
+    {
+      "title": "Google TV Home and Setup Wizard",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.launcherx"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tcl-55q6cx1/debloat.txt",
+    "commit": "baadd07a7d095cc3ea72e6ccb615987bf1fb97c4"
+  }
+}

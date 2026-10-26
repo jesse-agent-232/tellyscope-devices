@@ -1,0 +1,121 @@
+{
+  "schema": 1,
+  "id": "philips-50puf7099-t3",
+  "name": "Philips 50PUF7099/T3 — China-market set",
+  "tested": {
+    "os": "Android TV 9",
+    "sdk": 28,
+    "build": "PPR1.180610.011"
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "Casting, camera, video call and the smart-home hub",
+      "packages": [
+        {
+          "pkg": "com.tpv.asc.aiot",
+          "note": "智能连接 / smart home hub; system/app/smarthome"
+        },
+        {
+          "pkg": "com.hpplay.happyplay.aw",
+          "note": "乐播投屏 / LeboCast screen casting; system/app/LeboCast"
+        },
+        {
+          "pkg": "org.droidtv.camera.cn",
+          "note": "相机 / camera and remote viewing; system/app/AiCamera"
+        },
+        {
+          "pkg": "com.tpv.asc.videocall.cn",
+          "note": "视频通话 / video call; system/app/VideoCall"
+        }
+      ]
+    },
+    {
+      "title": "Telemetry, crash reports, advertising and background services",
+      "packages": [
+        {
+          "pkg": "tv.fun.bugreporter",
+          "note": "crash and feedback reporting; BOOT_COMPLETED x2 + INTERNET"
+        },
+        {
+          "pkg": "org.droidtv.usagelogger",
+          "note": "boot stats, remote keypress counts, panel telemetry (quirk 3)"
+        },
+        {
+          "pkg": "com.tpv.asc.taadserver",
+          "note": "TPV ad and telemetry server; BOOT_COMPLETED + INTERNET + WRITE_SECURE_SETTINGS"
+        },
+        {
+          "pkg": "com.tianci.ad",
+          "note": "天赐 ad SDK, versionName carries [philips_v2]; BOOT_COMPLETED + INSTALL_PACKAGES"
+        },
+        {
+          "pkg": "com.tpv.app.recommendation",
+          "note": "TPV recommendation rows"
+        },
+        {
+          "pkg": "com.funshion.publicity",
+          "note": "欢视 promotional content"
+        },
+        {
+          "pkg": "tv.fun.master",
+          "note": "BestV master service"
+        },
+        {
+          "pkg": "tv.fun.ottsecurity",
+          "note": "BestV security module; SYSTEM_ALERT_WINDOW + BOOT_COMPLETED"
+        },
+        {
+          "pkg": "tv.newtv.loginservice",
+          "note": "NewTV login service"
+        }
+      ]
+    },
+    {
+      "title": "The store and the upgraders",
+      "packages": [
+        {
+          "pkg": "tv.fun.tvupgrade",
+          "note": "BestV upgrader — the installer of com.bestv.ott itself",
+          "optional": true
+        },
+        {
+          "pkg": "tv.fun.appstore",
+          "note": "app store; INSTALL_PACKAGES + DELETE_PACKAGES"
+        },
+        {
+          "pkg": "tv.fun.sdkmanager",
+          "note": "SDK manager, which installed most of the preloaded content apps"
+        },
+        {
+          "pkg": "com.tpv.xmic.ota",
+          "note": "TPV board OTA; INSTALL_PACKAGES + WRITE_SECURE_SETTINGS",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "NOT disabled, ever",
+      "packages": [
+        {
+          "pkg": "org.droidtv.devicesetup",
+          "optional": true
+        },
+        {
+          "pkg": "org.droidtv.tpvaiotmessenger",
+          "optional": true
+        },
+        {
+          "pkg": "tpv.tvsetting.factory.ui",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/philips-50puf7099-t3/debloat.txt",
+    "commit": "baadd07a7d095cc3ea72e6ccb615987bf1fb97c4"
+  }
+}

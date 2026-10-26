@@ -60,6 +60,10 @@
         {
           "pkg": "com.google.android.katniss",
           "note": "Google Assistant voice (mic button), about 63 MB; off by choice; [43S5K ONLY]"
+        },
+        {
+          "pkg": "com.mediatek.MtkDemo",
+          "note": "MediaTek demo app; not on the AU10 units, seen on the AU13 unit"
         }
       ]
     },
@@ -99,6 +103,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/tcl-43s5k/debloat.txt",
-    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+    "commit": "baadd07a7d095cc3ea72e6ccb615987bf1fb97c4"
   }
 }

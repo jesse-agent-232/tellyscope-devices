@@ -124,11 +124,141 @@
           "note": "Rakuten TV"
         }
       ]
+    },
+    {
+      "title": "L49C2US (V570), tested on one unit; uncomment to disable",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith",
+          "note": "setup wizard; disabling it costs phone Cast pairing",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.leanbacklauncher",
+          "note": "legacy Leanback launcher stub",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.inputmethod.pinyin",
+          "note": "Google Pinyin Chinese IME (com.tcl.inputmethod.international is English)",
+          "optional": true
+        },
+        {
+          "pkg": "com.iqt.iqqijni.tv.gp.pro",
+          "note": "iQQi Chinese IME (com.tcl.inputmethod.international is English)",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.music",
+          "note": "Google Play Music (defunct)",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.tvtutorials",
+          "note": "TV tutorials",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.tv.bugreportsender",
+          "note": "Bug report sender",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "Google feedback",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.tts",
+          "note": "Google TTS engine; re-enable if you use TalkBack",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.marvin.talkback",
+          "note": "TalkBack screen reader",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar",
+          "note": "Calendar sync adapter",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.syncadapters.contacts",
+          "note": "Contacts sync adapter",
+          "optional": true
+        },
+        {
+          "pkg": "com.android.providers.calendar",
+          "note": "Calendar storage provider",
+          "optional": true
+        },
+        {
+          "pkg": "com.android.providers.contacts",
+          "note": "Contacts storage provider",
+          "optional": true
+        },
+        {
+          "pkg": "com.android.providers.userdictionary",
+          "note": "User dictionary provider",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.backuptransport",
+          "note": "Google cloud backup transport",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.onetimeinitializer",
+          "note": "Google one-time initializer",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "Google partner setup",
+          "optional": true
+        },
+        {
+          "pkg": "com.android.dreams.basic",
+          "note": "Basic Colors screensaver",
+          "optional": true
+        },
+        {
+          "pkg": "com.android.printspooler",
+          "note": "Print spooler service",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.sss",
+          "note": "Second Screen Setup",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.sss.authbridge",
+          "note": "Second Screen Setup auth bridge",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.backdrop",
+          "note": "Chromecast Ambient / Backdrop screensaver",
+          "optional": true
+        },
+        {
+          "pkg": "com.netflix.ninja",
+          "note": "Netflix preload",
+          "optional": true
+        },
+        {
+          "pkg": "com.mediatek.partner.netflix",
+          "note": "MediaTek Netflix launch service",
+          "optional": true
+        }
+      ]
     }
   ],
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/tcl-50dp660/debloat.txt",
-    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+    "commit": "baadd07a7d095cc3ea72e6ccb615987bf1fb97c4"
   }
 }

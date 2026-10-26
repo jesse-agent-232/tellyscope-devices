@@ -135,12 +135,12 @@
         },
         {
           "pkg": "com.google.android.tv.remote.service",
-          "note": "Google TV phone-app remote (the physical remote is unaffected)"
+          "note": "Google TV phone-app remote, and the remote mic's bridge on this build (#1441): comment out with katniss to keep voice"
         }
       ]
     },
     {
-      "title": "Needed for the custom launcher. Disable only AFTER launcher/ is installed (see README Troubleshooting).",
+      "title": "Needed for the custom launcher. Disable only AFTER launcher/ is installed",
       "packages": [
         {
           "pkg": "com.google.android.tungsten.setupwraith"
@@ -151,6 +151,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/tcl-55s470g/debloat.txt",
-    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+    "commit": "baadd07a7d095cc3ea72e6ccb615987bf1fb97c4"
   }
 }

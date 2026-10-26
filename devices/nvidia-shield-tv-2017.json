@@ -1,0 +1,168 @@
+{
+  "schema": 1,
+  "id": "nvidia-shield-tv-2017",
+  "name": "NVIDIA SHIELD TV 2017",
+  "tested": {
+    "os": "Android TV 11",
+    "sdk": 30,
+    "build": "RQ1A.210105.003.13961458_4387.0822"
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "Batch 1: NVIDIA and Google telemetry and feedback",
+      "packages": [
+        {
+          "pkg": "com.nvidia.stats",
+          "note": "anonymous usage statistics"
+        },
+        {
+          "pkg": "com.nvidia.feedback",
+          "note": "crash reports and the \"send feedback\" form"
+        },
+        {
+          "pkg": "com.nvidia.diagtools",
+          "note": "log collector; re-enable if NVIDIA support asks for logs"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        }
+      ]
+    },
+    {
+      "title": "Batch 2: sponsored rows, promos, auto-installs, gaming leftovers",
+      "packages": [
+        {
+          "pkg": "android.autoinstalls.config.nvidia",
+          "note": "Play auto-installs of partner apps"
+        },
+        {
+          "pkg": "com.nvidia.shield.welcome",
+          "note": "first-run promo"
+        },
+        {
+          "pkg": "com.nvidia.factorybundling",
+          "note": "accessory bundle offers"
+        },
+        {
+          "pkg": "com.nvidia.shield.beta",
+          "note": "beta programme"
+        },
+        {
+          "pkg": "com.nvidia.shieldbeta",
+          "note": "beta programme"
+        },
+        {
+          "pkg": "com.nvidia.shield.registration",
+          "note": "product registration"
+        },
+        {
+          "pkg": "com.nvidia.tegrazone3",
+          "note": "\"NVIDIA Games\" app and row"
+        },
+        {
+          "pkg": "com.nvidia.nvgamecast",
+          "note": "GameStream receiver (service closed in 2023)"
+        },
+        {
+          "pkg": "com.nvidia.osc",
+          "note": "in-game overlay"
+        }
+      ]
+    },
+    {
+      "title": "Batch 3: factory and developer test tools (disabled, never launched)",
+      "packages": [
+        {
+          "pkg": "com.nvidia.factory"
+        },
+        {
+          "pkg": "com.nvidia.factorysyschecker"
+        },
+        {
+          "pkg": "com.nvidia.inputviewer"
+        },
+        {
+          "pkg": "com.nvidia.tegraprofiler.security"
+        },
+        {
+          "pkg": "com.nvidia.developerwidget"
+        }
+      ]
+    },
+    {
+      "title": "Batch 4: idle background services",
+      "packages": [
+        {
+          "pkg": "com.android.printspooler"
+        },
+        {
+          "pkg": "com.google.android.apps.nbu.smartconnect.tv",
+          "note": "Google data-saver VPN"
+        },
+        {
+          "pkg": "com.android.dynsystem",
+          "note": "Dynamic System Updates (GSI loader)"
+        },
+        {
+          "pkg": "com.android.hotspot2.osulogin",
+          "note": "Passpoint hotspot sign-in"
+        },
+        {
+          "pkg": "com.android.bluetoothmidiservice",
+          "note": "Bluetooth MIDI"
+        },
+        {
+          "pkg": "com.android.cts.ctsshim",
+          "note": "CTS test shim"
+        },
+        {
+          "pkg": "com.android.cts.priv.ctsshim",
+          "note": "CTS test shim"
+        },
+        {
+          "pkg": "com.google.android.onetimeinitializer",
+          "note": "runs once at first boot"
+        }
+      ]
+    },
+    {
+      "title": "Batch 5: streaming apps the owner doesn't use",
+      "packages": [
+        {
+          "pkg": "air.com.vudu.air.DownloaderTablet",
+          "note": "Fandango at Home (Vudu)"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvunplugged",
+          "note": "YouTube TV"
+        },
+        {
+          "pkg": "com.imdbtv.livingroom",
+          "note": "Freevee (shut down)"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google TV / Play Movies"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        }
+      ]
+    },
+    {
+      "title": "Stock Android TV launcher: disabling it is what hands Home to the replacement launcher",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvlauncher"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/nvidia-shield-tv-2017/debloat.txt",
+    "commit": "baadd07a7d095cc3ea72e6ccb615987bf1fb97c4"
+  }
+}

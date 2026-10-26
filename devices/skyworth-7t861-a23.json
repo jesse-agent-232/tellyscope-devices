@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "id": "skyworth-7t861-a23",
+  "name": "Skyworth 7T861_A23",
+  "tested": {
+    "os": "Android 10",
+    "sdk": 29,
+    "build": "QQ2A.200305.004.A1"
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "Telemetry and diagnostics",
+      "packages": [
+        {
+          "pkg": "com.skyworth.performance.monitors",
+          "note": "Performance monitors and telemetry"
+        },
+        {
+          "pkg": "com.skyworth.testtime",
+          "note": "Factory testing timer"
+        },
+        {
+          "pkg": "com.skyworthdigital.stb.dataprovider",
+          "note": "STB diagnostics data provider"
+        },
+        {
+          "pkg": "com.skyworth.device",
+          "note": "Device information and location reporting"
+        }
+      ]
+    },
+    {
+      "title": "Ads and manufacturer content",
+      "packages": [
+        {
+          "pkg": "com.coocaa.tvmanager",
+          "note": "CooCaa content recommendation manager"
+        },
+        {
+          "pkg": "com.coocaa.guide",
+          "note": "EPG program guide and content pushes"
+        },
+        {
+          "pkg": "com.tianci.de",
+          "note": "Tianci DE advertising engine"
+        },
+        {
+          "pkg": "com.tianci.user",
+          "note": "Tianci user account and notification service"
+        },
+        {
+          "pkg": "com.coocaa.theme_package_ccos_nine",
+          "note": "Default theme package"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded content and stores",
+      "packages": [
+        {
+          "pkg": "com.coocaa.tvpitv",
+          "note": "CooCaa Live TV preloaded streaming"
+        },
+        {
+          "pkg": "com.tianci.movieplatform",
+          "note": "Tianci video platform"
+        },
+        {
+          "pkg": "com.tianci.appstore",
+          "note": "Tianci app store"
+        },
+        {
+          "pkg": "com.skyworth.skymarket",
+          "note": "Skyworth market"
+        },
+        {
+          "pkg": "com.coocaa.app_browser",
+          "note": "CooCaa built-in browser"
+        }
+      ]
+    },
+    {
+      "title": "Factory and tuning tools",
+      "packages": [
+        {
+          "pkg": "com.loostone.tuning",
+          "note": "Factory picture calibration utility"
+        },
+        {
+          "pkg": "com.coocaa.factory",
+          "note": "Factory menu test package (do not launch)"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/skyworth-7t861-a23/debloat.txt",
+    "commit": "baadd07a7d095cc3ea72e6ccb615987bf1fb97c4"
+  }
+}

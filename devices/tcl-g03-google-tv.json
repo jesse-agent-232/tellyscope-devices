@@ -23,7 +23,8 @@
         },
         {
           "pkg": "com.tcl.xian.StartandroidService",
-          "note": "background reporting service"
+          "note": "background reporting service; off on the tested units, but TCL's updater needs it (see header), so it stays on",
+          "optional": true
         },
         {
           "pkg": "com.google.android.feedback",
@@ -196,7 +197,7 @@
       ]
     },
     {
-      "title": "---- 7. Google ambient screensaver (promos) ----",
+      "title": "---- 7. Google ambient screensaver (promos); also hosts the Google Home panel (see header) ----",
       "packages": [
         {
           "pkg": "com.google.android.apps.tv.dreamx"
@@ -216,6 +217,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/tcl-g03-google-tv/debloat.txt",
-    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+    "commit": "baadd07a7d095cc3ea72e6ccb615987bf1fb97c4"
   }
 }

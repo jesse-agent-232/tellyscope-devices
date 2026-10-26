@@ -115,6 +115,36 @@
       ]
     },
     {
+      "title": "AS36 only (second unit), disabled there on 25 Oct 2026 with nothing missed after a reboot - one day, so left",
+      "packages": [
+        {
+          "pkg": "com.tcl.channelplus",
+          "note": "TCL Live FAST channels",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.esticker",
+          "note": "retail-demo sticker",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.usercenter",
+          "note": "TCL account sign-in nags",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.waterfall.overseas",
+          "note": "TCL movie/show recommendation browser",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.guard",
+          "note": "TCL \"cleaner\" / app manager",
+          "optional": true
+        }
+      ]
+    },
+    {
       "title": "Setup wizard: kept enabled here, and to be disabled only before installing a custom launcher.",
       "packages": [
         {
@@ -127,6 +157,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/tcl-g08-eu-android12/debloat.txt",
-    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+    "commit": "baadd07a7d095cc3ea72e6ccb615987bf1fb97c4"
   }
 }

@@ -1,0 +1,108 @@
+{
+  "schema": 1,
+  "id": "hy320",
+  "name": "HY320 projector",
+  "tested": {
+    "os": "Android 13",
+    "sdk": 33,
+    "build": null
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "Manufacturer ad/telemetry services",
+      "packages": [
+        {
+          "pkg": "com.jiumao.screen.systemadplayer"
+        },
+        {
+          "pkg": "com.smart.tv.launcher"
+        },
+        {
+          "pkg": "com.ht1.launcher"
+        }
+      ]
+    },
+    {
+      "title": "Manufacturer app stores",
+      "packages": [
+        {
+          "pkg": "com.master.apps"
+        },
+        {
+          "pkg": "com.master.tv.market"
+        },
+        {
+          "pkg": "com.overseas.store.appstore"
+        },
+        {
+          "pkg": "com.android.mgstv"
+        }
+      ]
+    },
+    {
+      "title": "Background services not needed",
+      "packages": [
+        {
+          "pkg": "com.fb"
+        },
+        {
+          "pkg": "com.define.shellservice"
+        },
+        {
+          "pkg": "com.jm.jmlauncher"
+        },
+        {
+          "pkg": "com.android.printspooler"
+        },
+        {
+          "pkg": "com.android.wallpaperbackup"
+        },
+        {
+          "pkg": "com.android.camera2"
+        },
+        {
+          "pkg": "com.android.hotspot2.osulogin"
+        },
+        {
+          "pkg": "com.android.soundpicker"
+        },
+        {
+          "pkg": "com.android.htmlviewer"
+        },
+        {
+          "pkg": "com.spocky.projengmenu"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps not used",
+      "packages": [
+        {
+          "pkg": "com.droidlogic.videoplayer"
+        },
+        {
+          "pkg": "com.droidlogic.imageplayer"
+        },
+        {
+          "pkg": "com.android.chrome"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        },
+        {
+          "pkg": "com.amazon.avod.thirdpartyclient"
+        },
+        {
+          "pkg": "org.videolan.vlc"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/hy320/debloat.txt",
+    "commit": "baadd07a7d095cc3ea72e6ccb615987bf1fb97c4"
+  }
+}

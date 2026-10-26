@@ -20,6 +20,16 @@
         {
           "pkg": "com.tcl.bi",
           "note": "analytics/behaviour reporting"
+        },
+        {
+          "pkg": "com.tcl.recognize.service",
+          "note": "screen recognition; also a silent-install channel.",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.c2dm.client",
+          "note": "push channel used by some TCL apps. Disabled on the",
+          "optional": true
         }
       ]
     },
@@ -68,7 +78,8 @@
         },
         {
           "pkg": "com.tcl.versionUpdateApp",
-          "note": "TCL updater (the OTA package com.snm.upgrade is already"
+          "note": "TCL updater, kept on so updates arrive (the OTA package com.snm.upgrade is already",
+          "optional": true
         },
         {
           "pkg": "com.tcl.tvhealthcheck",
@@ -90,11 +101,6 @@
         {
           "pkg": "com.tcl.ttvs",
           "note": "3rd-party data/ACR. Also serves com.tcl.ttvs.proxy.business.data,",
-          "optional": true
-        },
-        {
-          "pkg": "com.tcl.c2dm.client",
-          "note": "push channel used by some TCL apps",
           "optional": true
         },
         {
@@ -140,46 +146,16 @@
       ]
     },
     {
-      "title": "Preloaded third-party apps — comment out the ones you watch",
+      "title": "The 20250610 unit disabled these first, and that broke the stock desktop: the 影视 row on",
       "packages": [
         {
-          "pkg": "com.xftv.tv",
-          "note": "云视听极光 (Tencent Video)",
+          "pkg": "com.tcl.tshop",
+          "note": "电视购物商城 (shopping mall)",
           "optional": true
         },
         {
-          "pkg": "com.newtv.cboxtv",
-          "note": "奇异果 (iQIYI)",
-          "optional": true
-        },
-        {
-          "pkg": "com.xiaodianshi.tv.yst",
-          "note": "小电视 (Bilibili)",
-          "optional": true
-        },
-        {
-          "pkg": "com.cibn.tv",
-          "note": "CIBN 高清影视",
-          "optional": true
-        },
-        {
-          "pkg": "com.baidu.netdisk.tv",
-          "note": "Baidu Netdisk",
-          "optional": true
-        },
-        {
-          "pkg": "com.netease.cloudmusic.tv",
-          "note": "NetEase Cloud Music",
-          "optional": true
-        },
-        {
-          "pkg": "com.quark.yun.tv",
-          "note": "Quark cloud drive",
-          "optional": true
-        },
-        {
-          "pkg": "com.huawei.himovceie",
-          "note": "Huawei AI Life",
+          "pkg": "com.tcl.vod",
+          "note": "腾讯视频 (Tencent Video)",
           "optional": true
         }
       ]
@@ -188,6 +164,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/tcl-ak30a5/debloat.txt",
-    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+    "commit": "baadd07a7d095cc3ea72e6ccb615987bf1fb97c4"
   }
 }

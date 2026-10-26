@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "tcl-beyondtv4-uk",
+  "name": "TCL \"Smart TV Pro\"",
+  "tested": {
+    "os": "Android TV 11",
+    "sdk": 30,
+    "build": "RP1A.200622.001"
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "--- TCL telemetry, promos and content feeds",
+      "packages": [
+        {
+          "pkg": "com.tcl.overseasappshow",
+          "note": "system-uid promo/app-show service; note the boot re-enabler on this"
+        },
+        {
+          "pkg": "com.tcl.bi",
+          "note": "TCL BI analytics / telemetry"
+        },
+        {
+          "pkg": "com.tcl.waterfall.overseas",
+          "note": "TCL content feed / recommendation waterfall"
+        },
+        {
+          "pkg": "com.tcl.messagebox",
+          "note": "pushed TCL messages and promos"
+        },
+        {
+          "pkg": "com.tcl.esticker",
+          "note": "retail demo energy-label sticker"
+        },
+        {
+          "pkg": "com.tcl.dashboard",
+          "note": "TCL dashboard / giftbox promo surface"
+        },
+        {
+          "pkg": "com.tcl.notereminder",
+          "note": "notes & reminder widget"
+        },
+        {
+          "pkg": "com.tcl.guard",
+          "note": "TGuard: device-use tracking, \"health info\", memory cleaner"
+        }
+      ]
+    },
+    {
+      "title": "--- Google attribution and the stock Home recommendation row",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "\"send feedback\" reporting"
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "partner-app attribution / silent installs"
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations",
+          "note": "recommendation row; harmless once the stock launcher is gone"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tcl-beyondtv4-uk/debloat.txt",
+    "commit": "baadd07a7d095cc3ea72e6ccb615987bf1fb97c4"
+  }
+}

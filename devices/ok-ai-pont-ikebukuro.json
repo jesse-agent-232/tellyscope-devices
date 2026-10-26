@@ -105,6 +105,37 @@
       ]
     },
     {
+      "title": "Batch 5: also disabled on the Nikkei DVB91NK (second unit): Google setup leftovers and Android extras nobody",
+      "packages": [
+        {
+          "pkg": "com.google.android.onetimeinitializer"
+        },
+        {
+          "pkg": "com.google.android.partnersetup"
+        },
+        {
+          "pkg": "com.android.printspooler"
+        },
+        {
+          "pkg": "com.android.htmlviewer"
+        },
+        {
+          "pkg": "com.android.dynsystem"
+        },
+        {
+          "pkg": "com.android.wallpaperbackup"
+        },
+        {
+          "pkg": "com.homwee.mmp.fileexplorer",
+          "note": "USB file explorer"
+        },
+        {
+          "pkg": "com.homwee.mmp.imageplayer",
+          "note": "USB photo player"
+        }
+      ]
+    },
+    {
       "title": "Stock launcher, replaced by launcher/. Left to launcher/build-and-install.sh, which disables it only",
       "packages": [
         {
@@ -117,6 +148,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/ok-ai-pont-ikebukuro/debloat.txt",
-    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+    "commit": "baadd07a7d095cc3ea72e6ccb615987bf1fb97c4"
   }
 }

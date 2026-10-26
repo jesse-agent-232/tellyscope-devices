@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "sony-kd-55x9500g-cn",
+  "name": "Sony BRAVIA KD-55X9500G",
+  "tested": {
+    "os": "Android TV 10",
+    "sdk": 29,
+    "build": null
+  },
+  "launcher": "com.dangbei.TVHomeLauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Device diagnostics, remote support and bug reporting",
+      "packages": [
+        {
+          "pkg": "com.qterics.da.product"
+        },
+        {
+          "pkg": "com.sony.dtv.da.service",
+          "note": "Sony remote support; re-enable if support is needed"
+        },
+        {
+          "pkg": "com.sonyericsson.idd.agent"
+        },
+        {
+          "pkg": "com.sony.dtv.sonybugreportsys"
+        }
+      ]
+    },
+    {
+      "title": "Retail / shop demonstrations",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.demosupport"
+        },
+        {
+          "pkg": "com.sony.dtv.demosystemsupport"
+        },
+        {
+          "pkg": "com.sony.dtv.multiscreendemo"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/sony-kd-55x9500g-cn/debloat.txt",
+    "commit": "baadd07a7d095cc3ea72e6ccb615987bf1fb97c4"
+  }
+}

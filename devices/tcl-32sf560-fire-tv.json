@@ -1,0 +1,362 @@
+{
+  "schema": 1,
+  "id": "tcl-32sf560-fire-tv",
+  "name": "TCL 32SF560",
+  "tested": {
+    "os": "Fire OS 7.7.1.7",
+    "sdk": 28,
+    "build": "PS7717.5741N.0036408028416"
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "Ads, shopping, content recognition",
+      "packages": [
+        {
+          "pkg": "com.amazon.tv.acr",
+          "note": "Automatic Content Recognition; also sees HDMI input"
+        },
+        {
+          "pkg": "com.amazon.hybridadidservice",
+          "note": "advertising ID"
+        },
+        {
+          "pkg": "com.amazon.kso.blackbird",
+          "note": "launcher ad sync / bidding"
+        },
+        {
+          "pkg": "com.amazon.dpcclient",
+          "note": "device personalization, ad profiles"
+        },
+        {
+          "pkg": "com.amazon.shoptv.client",
+          "note": "Shop on Fire TV"
+        },
+        {
+          "pkg": "com.amazon.tv.democontent.provider",
+          "note": "retail demo content"
+        }
+      ]
+    },
+    {
+      "title": "Telemetry, metrics, log and diagnostic uploads",
+      "packages": [
+        {
+          "pkg": "com.amazon.tv.fw.metrics"
+        },
+        {
+          "pkg": "com.amazon.neo.minerva",
+          "note": "metrics pipeline"
+        },
+        {
+          "pkg": "com.amazon.neo.minerva.logcat"
+        },
+        {
+          "pkg": "com.amazon.wirelessmetrics.service",
+          "note": "Wi-Fi metrics upload"
+        },
+        {
+          "pkg": "com.amazon.perfcollection"
+        },
+        {
+          "pkg": "com.amazon.perfc"
+        },
+        {
+          "pkg": "com.amazon.dp.logger",
+          "note": "log upload"
+        },
+        {
+          "pkg": "com.amazon.client.metrics.api"
+        },
+        {
+          "pkg": "com.amazon.tcomm.jackson",
+          "note": "Amazon's own telemetry transport (tcomm itself is protected)"
+        },
+        {
+          "pkg": "com.amazon.ceviche",
+          "note": "data-collection pipelines"
+        },
+        {
+          "pkg": "com.amazon.privacypassservice"
+        },
+        {
+          "pkg": "com.amazon.spiderpork"
+        },
+        {
+          "pkg": "com.amazon.neodelegate"
+        },
+        {
+          "pkg": "com.amazon.neopactservice"
+        },
+        {
+          "pkg": "com.amazon.csm.htmlruntime"
+        },
+        {
+          "pkg": "com.amazon.communication.discovery"
+        },
+        {
+          "pkg": "com.amazon.fireos.cirruscloud"
+        },
+        {
+          "pkg": "com.amazon.rtcsessioncontroller"
+        },
+        {
+          "pkg": "com.amazon.alta.h2clientservice"
+        },
+        {
+          "pkg": "com.amazon.audiolatencymeasurer"
+        },
+        {
+          "pkg": "com.amazon.livedeviceservice"
+        },
+        {
+          "pkg": "com.amazon.wifilocker",
+          "note": "uploads Wi-Fi passwords to Amazon"
+        },
+        {
+          "pkg": "com.amazon.whisperjoin.middleware.np",
+          "note": "\"frustration-free\" setup of other Amazon devices"
+        }
+      ]
+    },
+    {
+      "title": "Tutorials, promos, Amazon content and the recommendation rows",
+      "packages": [
+        {
+          "pkg": "com.amazon.storm.lightning.tutorial",
+          "note": "remote tutorial"
+        },
+        {
+          "pkg": "com.amazon.tmm.tutorial",
+          "note": "remote tutorial"
+        },
+        {
+          "pkg": "com.amazon.gamehub",
+          "note": "Luna / games hub"
+        },
+        {
+          "pkg": "com.amazon.bueller.music",
+          "note": "Amazon Music"
+        },
+        {
+          "pkg": "com.amazon.bueller.photos",
+          "note": "Amazon Photos"
+        },
+        {
+          "pkg": "com.amazon.minitv.android.app",
+          "note": "Freevee / miniTV"
+        },
+        {
+          "pkg": "com.amazon.naatyam"
+        },
+        {
+          "pkg": "com.amazon.tahoe",
+          "note": "Amazon Kids"
+        },
+        {
+          "pkg": "com.amazon.tv.localgallery",
+          "note": "local gallery (not a USB media player)"
+        },
+        {
+          "pkg": "com.amazon.sneakpeek",
+          "note": "auto-playing previews on Home"
+        },
+        {
+          "pkg": "com.amazon.tv.easyupgrade",
+          "note": "\"Upgrade your Fire TV\" promos"
+        },
+        {
+          "pkg": "com.amazon.tv.releasenotes",
+          "note": "\"What's new\" notes"
+        },
+        {
+          "pkg": "com.amazon.systemnotices",
+          "note": "system popups"
+        },
+        {
+          "pkg": "com.amazon.uxnotification",
+          "note": "UX popups"
+        },
+        {
+          "pkg": "com.amazon.tv.notificationcenter"
+        },
+        {
+          "pkg": "com.amazon.tv.developer.dataservice",
+          "note": "content personalization for third parties"
+        },
+        {
+          "pkg": "com.amazon.tv.ffsprovisioneeclient"
+        },
+        {
+          "pkg": "com.amazon.media.recommendations",
+          "note": "sponsored / recommendation rows"
+        },
+        {
+          "pkg": "com.amazon.hedwig",
+          "note": "Fire TV Channels"
+        },
+        {
+          "pkg": "com.amazon.providers.contentsupport"
+        },
+        {
+          "pkg": "com.amazon.ods.kindleconnect",
+          "note": "\"show on Fire TV\" from an Echo or Fire tablet"
+        }
+      ]
+    },
+    {
+      "title": "Alexa / voice assistant (vizzini itself is not listed: it returns at every boot)",
+      "packages": [
+        {
+          "pkg": "com.amazon.vizzini.ftvcds"
+        },
+        {
+          "pkg": "com.amazon.aria",
+          "note": "Alexa surfaces"
+        },
+        {
+          "pkg": "com.amazon.cardinal"
+        },
+        {
+          "pkg": "com.ivona.orchestrator",
+          "note": "Alexa TTS"
+        },
+        {
+          "pkg": "com.ivona.tts.oem"
+        },
+        {
+          "pkg": "com.amazon.aca",
+          "note": "Alexa hints and cues, about 44 MB of always-on service"
+        },
+        {
+          "pkg": "com.amazon.aiondec",
+          "note": "Alexa skill connections"
+        },
+        {
+          "pkg": "com.amazon.alexa.datastore.app"
+        },
+        {
+          "pkg": "com.amazon.alexadirectivebrokerservice"
+        },
+        {
+          "pkg": "com.amazon.alexa.externalmediaplayer.fireos"
+        },
+        {
+          "pkg": "com.amazon.alexamediaplayer.runtime.ftv"
+        },
+        {
+          "pkg": "com.amazon.tv.alexaalerts",
+          "note": "alarms, timers, reminders"
+        },
+        {
+          "pkg": "com.amazon.tv.alexanotifications"
+        },
+        {
+          "pkg": "com.amazon.audiohome",
+          "note": "Alexa Home Theater"
+        },
+        {
+          "pkg": "com.amazon.firetv.androidskillconnectioncapability"
+        }
+      ]
+    },
+    {
+      "title": "Cast receivers: this TV as a target for Miracast, Fling and DIAL (off by choice)",
+      "packages": [
+        {
+          "pkg": "com.amazon.cast.sink",
+          "note": "Miracast sink"
+        },
+        {
+          "pkg": "com.amazon.awvflingreceiver"
+        },
+        {
+          "pkg": "com.amazon.dialservice"
+        }
+      ]
+    },
+    {
+      "title": "Firmware update promoter (the enforced OTA packages are protected and keep running)",
+      "packages": [
+        {
+          "pkg": "com.amazon.tv.forcedotaupdater.v2"
+        }
+      ]
+    },
+    {
+      "title": "Printing (nothing prints from this set)",
+      "packages": [
+        {
+          "pkg": "com.android.bips"
+        },
+        {
+          "pkg": "com.android.printspooler"
+        }
+      ]
+    },
+    {
+      "title": "Silk browser and its website shortcut",
+      "packages": [
+        {
+          "pkg": "com.amazon.cloud9",
+          "note": "Silk"
+        },
+        {
+          "pkg": "com.amazon.tv.website_launcher",
+          "note": "opens websites in Silk"
+        }
+      ]
+    },
+    {
+      "title": "Amazon account and device sync",
+      "packages": [
+        {
+          "pkg": "com.amazon.sync.provider.ipc"
+        },
+        {
+          "pkg": "com.amazon.device_remote_config_sync_service"
+        }
+      ]
+    },
+    {
+      "title": "Media browser services (Spotify over Alexa, whole-home audio)",
+      "packages": [
+        {
+          "pkg": "com.amazon.spotify.mediabrowserservice"
+        },
+        {
+          "pkg": "com.amazon.wha.mediabrowserservice"
+        }
+      ]
+    },
+    {
+      "title": "Placeholder apps with no launchable activity (versionName=9, no start activity)",
+      "packages": [
+        {
+          "pkg": "com.amazon.dummy.alarmclock"
+        },
+        {
+          "pkg": "com.amazon.dummy.calendar"
+        },
+        {
+          "pkg": "com.amazon.dummy.contacts"
+        },
+        {
+          "pkg": "com.amazon.dummy.gallery"
+        },
+        {
+          "pkg": "com.amazon.dummy.music"
+        },
+        {
+          "pkg": "com.amazon.dummy.settings"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tcl-32sf560-fire-tv/debloat.txt",
+    "commit": "baadd07a7d095cc3ea72e6ccb615987bf1fb97c4"
+  }
+}

@@ -184,10 +184,6 @@
           "note": "Netflix"
         },
         {
-          "pkg": "com.google.android.youtube.tv",
-          "note": "YouTube"
-        },
-        {
           "pkg": "com.google.android.youtube.tvmusic",
           "note": "YouTube Music"
         },
@@ -247,6 +243,11 @@
           "pkg": "com.google.android.videos",
           "note": "Play Movies & TV: firmware re-enables it on every",
           "optional": true
+        },
+        {
+          "pkg": "com.google.android.youtube.tv",
+          "note": "also came back enabled (Play update or boot, observed",
+          "optional": true
         }
       ]
     }
@@ -254,6 +255,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/tcl-43p615/debloat.txt",
-    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+    "commit": "baadd07a7d095cc3ea72e6ccb615987bf1fb97c4"
   }
 }

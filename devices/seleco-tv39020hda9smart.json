@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "id": "seleco-tv39020hda9smart",
+  "name": "Seleco TV39020HDA9SMART 39\"",
+  "tested": {
+    "os": "Android TV 9",
+    "sdk": 28,
+    "build": null
+  },
+  "launcher": "cn.zeasn.launcher.vstoresubclient.toptech",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Telemetry and auto-installs",
+      "packages": [
+        {
+          "pkg": "com.zeasn.deviceportal.asdprovider.toptech",
+          "note": "Zeasn device portal service, starts at boot"
+        },
+        {
+          "pkg": "android.autoinstalls.config.realtek.device",
+          "note": "Play auto-installs of partner apps"
+        }
+      ]
+    },
+    {
+      "title": "Content and ads",
+      "packages": [
+        {
+          "pkg": "com.zeasn.services.general",
+          "note": "Zeasn weather, search and \"weekly\" feed"
+        },
+        {
+          "pkg": "cn.zeasn.toptech.rtk2851.vstoresubclient",
+          "note": "Zeasn app store"
+        }
+      ]
+    },
+    {
+      "title": "Background services and preloaded apps",
+      "packages": [
+        {
+          "pkg": "com.atmaca.atmretailmode",
+          "note": "shop demo mode"
+        },
+        {
+          "pkg": "com.android.printspooler"
+        },
+        {
+          "pkg": "com.android.camera2"
+        },
+        {
+          "pkg": "com.android.wallpaper.livepicker"
+        },
+        {
+          "pkg": "com.android.chrome"
+        },
+        {
+          "pkg": "com.rtk.mediabrowser",
+          "note": "USB media player"
+        }
+      ]
+    },
+    {
+      "title": "Not used by the owner",
+      "packages": [
+        {
+          "pkg": "com.netflix.mediaclient",
+          "note": "the phone build"
+        },
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google voice search; the remote's mic button stops working"
+        },
+        {
+          "pkg": "com.rtk.android.miracast",
+          "note": "screen mirroring"
+        }
+      ]
+    },
+    {
+      "title": "Stock launcher (only after the new launcher is Home)",
+      "packages": [
+        {
+          "pkg": "cn.zeasn.launcher.vstoresubclient.toptech"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/seleco-tv39020hda9smart/debloat.txt",
+    "commit": "baadd07a7d095cc3ea72e6ccb615987bf1fb97c4"
+  }
+}

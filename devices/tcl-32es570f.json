@@ -1,0 +1,137 @@
+{
+  "schema": 1,
+  "id": "tcl-32es570f",
+  "name": "TCL 32ES570F",
+  "tested": {
+    "os": "Android TV 11",
+    "sdk": 30,
+    "build": "AR2101"
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "TCL account, promos and content",
+      "packages": [
+        {
+          "pkg": "com.tcl.guard",
+          "note": "TGuard; the process keeps running"
+        },
+        {
+          "pkg": "com.tcl.partnercustomizer",
+          "note": "promo rows on the stock home"
+        },
+        {
+          "pkg": "com.tcl.waterfall.overseas",
+          "note": "TCL web-video portal"
+        },
+        {
+          "pkg": "com.tcl.esticker",
+          "note": "store-demo sticker"
+        },
+        {
+          "pkg": "android.autoinstalls.config.tcl.device",
+          "note": "partner-app auto installer config"
+        },
+        {
+          "pkg": "com.tcl.dashboard",
+          "note": "TCL Home tile"
+        },
+        {
+          "pkg": "com.tcl.suspension",
+          "note": "Quick Panel"
+        },
+        {
+          "pkg": "com.tcl.t_solo"
+        }
+      ]
+    },
+    {
+      "title": "Google extras",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Play Movies"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar"
+        },
+        {
+          "pkg": "com.google.android.partnersetup"
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations"
+        }
+      ]
+    },
+    {
+      "title": "Off by choice: comment out what you use",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google search/voice"
+        },
+        {
+          "pkg": "com.google.android.tv.remote.service",
+          "note": "phone-app remote; disabled on the tested set (uncomment to do the same). Shared lists keep it on: it also carries the remote mic on some sets",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.tts"
+        },
+        {
+          "pkg": "com.google.android.marvin.talkback"
+        },
+        {
+          "pkg": "com.google.android.backdrop",
+          "note": "photo screensaver, swap it first (see notes)"
+        },
+        {
+          "pkg": "com.google.android.inputmethod.latin",
+          "note": "Gboard: disabled on this unit (the TV keeps its own",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Cast receiver: casting from a phone stops working"
+        },
+        {
+          "pkg": "com.tcl.ui_mediaCenter",
+          "note": "USB media player, together with the next three"
+        },
+        {
+          "pkg": "com.tcl.audioplayer"
+        },
+        {
+          "pkg": "com.tcl.videoplayer"
+        },
+        {
+          "pkg": "com.tcl.imageplayer"
+        }
+      ]
+    },
+    {
+      "title": "Already disabled when the unit arrived; left as-is.",
+      "packages": [
+        {
+          "pkg": "au.com.stan.and",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tcl-32es570f/debloat.txt",
+    "commit": "baadd07a7d095cc3ea72e6ccb615987bf1fb97c4"
+  }
+}

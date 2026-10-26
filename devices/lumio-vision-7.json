@@ -85,7 +85,7 @@
       ]
     },
     {
-      "title": "Required for a third-party launcher to hold Home on this build (see header; needs FORCE_SETUPWRAITH=1)",
+      "title": "Required for a third-party launcher to hold Home on this build (see header: check the Wi-Fi owner first)",
       "packages": [
         {
           "pkg": "com.google.android.tungsten.setupwraith"
@@ -106,6 +106,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/lumio-vision-7/debloat.txt",
-    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+    "commit": "baadd07a7d095cc3ea72e6ccb615987bf1fb97c4"
   }
 }

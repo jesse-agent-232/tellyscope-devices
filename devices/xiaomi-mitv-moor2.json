@@ -156,11 +156,82 @@
           "optional": true
         }
       ]
+    },
+    {
+      "title": "---------------------------------------------------------------------------------------------",
+      "packages": [
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom",
+          "note": "Prime Video",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google TV / Play Movies",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic",
+          "note": "YouTube Music",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.marvin.talkback",
+          "note": "screen reader",
+          "optional": true
+        },
+        {
+          "pkg": "com.android.printspooler",
+          "note": "printing",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "Google feedback reporter",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar",
+          "optional": true
+        },
+        {
+          "pkg": "com.mitv.videoplayer",
+          "note": "Xiaomi USB media player",
+          "optional": true
+        },
+        {
+          "pkg": "com.mitv.gallery",
+          "note": "Xiaomi gallery",
+          "optional": true
+        },
+        {
+          "pkg": "com.xiaomi.mitv.mediaexplorer",
+          "note": "Xiaomi media explorer; a third-party file manager opens USB media instead",
+          "optional": true
+        },
+        {
+          "pkg": "com.mitv.livetv.ci_mediatek",
+          "note": "CI+ card module for broadcast TV; only without a CI card",
+          "optional": true
+        },
+        {
+          "pkg": "com.xiaomi.mitv.updateservice",
+          "optional": true
+        },
+        {
+          "pkg": "com.mitv.upgrader",
+          "optional": true
+        },
+        {
+          "pkg": "com.mitv.ABUpdateStatus",
+          "optional": true
+        }
+      ]
     }
   ],
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/xiaomi-mitv-moor2/debloat.txt",
-    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+    "commit": "baadd07a7d095cc3ea72e6ccb615987bf1fb97c4"
   }
 }

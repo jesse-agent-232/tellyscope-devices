@@ -1,0 +1,117 @@
+{
+  "schema": 1,
+  "id": "eko-4k-bangbae",
+  "name": "EKO 4K Android TV",
+  "tested": {
+    "os": "Android TV 11",
+    "sdk": null,
+    "build": null
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "Anoki ACR: automatic content recognition. Starts at BOOT_COMPLETED, marked PERSISTENT, and",
+      "packages": [
+        {
+          "pkg": "tv.anoki.acr.controller"
+        }
+      ]
+    },
+    {
+      "title": "FAST: the ad-supported channel grid. Requests AD_ID, ACCESS_WATCHED_PROGRAMS and",
+      "packages": [
+        {
+          "pkg": "com.cltv.fast"
+        }
+      ]
+    },
+    {
+      "title": "Google telemetry and partner attribution",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.partnersetup"
+        }
+      ]
+    },
+    {
+      "title": "Stock launcher ad and recommendation rows (the launcher itself is disabled by",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvrecommendations"
+        },
+        {
+          "pkg": "com.google.android.leanbacklauncher.partnercustomizer"
+        }
+      ]
+    },
+    {
+      "title": "Setup-only disclaimer screens, and MediaTek's picture-quality test tool",
+      "packages": [
+        {
+          "pkg": "com.mstar.android.tv.disclaimercustomization"
+        },
+        {
+          "pkg": "com.mediatek.testpq"
+        }
+      ]
+    },
+    {
+      "title": "Voice, by choice: katniss is Assistant and voice search, so the remote's mic button stops working",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss"
+        }
+      ]
+    },
+    {
+      "title": "Ambient screensaver; mixes recommendations into the idle screen.",
+      "packages": [
+        {
+          "pkg": "com.google.android.backdrop"
+        }
+      ]
+    },
+    {
+      "title": "Google extras, by choice",
+      "packages": [
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.videos"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        }
+      ]
+    },
+    {
+      "title": "Calendar on a television",
+      "packages": [
+        {
+          "pkg": "com.android.providers.calendar"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar"
+        }
+      ]
+    },
+    {
+      "title": "Print spooler on a television",
+      "packages": [
+        {
+          "pkg": "com.android.printspooler"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/eko-4k-bangbae/debloat.txt",
+    "commit": "baadd07a7d095cc3ea72e6ccb615987bf1fb97c4"
+  }
+}

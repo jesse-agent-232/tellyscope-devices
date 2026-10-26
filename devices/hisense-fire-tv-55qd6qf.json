@@ -1,0 +1,257 @@
+{
+  "schema": 1,
+  "id": "hisense-fire-tv-55qd6qf",
+  "name": "Hisense 55QD6QF Fire TV",
+  "tested": {
+    "os": "Fire OS 8.1.8.0",
+    "sdk": 30,
+    "build": null
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "Telemetry and metrics",
+      "packages": [
+        {
+          "pkg": "com.amazon.ceviche",
+          "note": "data collection pipelines"
+        },
+        {
+          "pkg": "com.amazon.client.metrics.api",
+          "note": "metrics client API"
+        },
+        {
+          "pkg": "com.amazon.device.telemetry.emitter",
+          "note": "telemetry emitter"
+        },
+        {
+          "pkg": "com.amazon.dp.logger",
+          "note": "device log upload"
+        },
+        {
+          "pkg": "com.amazon.perfc",
+          "note": "performance telemetry"
+        },
+        {
+          "pkg": "com.amazon.perfcollection",
+          "note": "performance telemetry"
+        },
+        {
+          "pkg": "com.amazon.wirelessmetrics.service",
+          "note": "Wi-Fi metrics upload"
+        },
+        {
+          "pkg": "com.amazon.livedeviceservice",
+          "note": "live device reporting"
+        },
+        {
+          "pkg": "com.amazon.privacypassservice",
+          "note": "privacy pass token service"
+        },
+        {
+          "pkg": "com.amazon.tv.developer.dataservice",
+          "note": "personalization data for third-party apps"
+        },
+        {
+          "pkg": "com.amazon.wifilocker",
+          "note": "uploads Wi-Fi passwords to Amazon"
+        },
+        {
+          "pkg": "com.amazon.tv.acr",
+          "note": "Automatic Content Recognition (what's on screen, HDMI included)"
+        },
+        {
+          "pkg": "com.amazon.hybridadidservice",
+          "note": "advertising ID"
+        }
+      ]
+    },
+    {
+      "title": "Ads, sponsored rows, promos, shopping",
+      "packages": [
+        {
+          "pkg": "com.amazon.kso.blackbird",
+          "note": "launcher ad sync / bidding"
+        },
+        {
+          "pkg": "com.amazon.media.recommendations",
+          "note": "sponsored and recommendation rows"
+        },
+        {
+          "pkg": "com.amazon.sneakpeek",
+          "note": "autoplaying previews on Home"
+        },
+        {
+          "pkg": "com.amazon.providers.contentsupport",
+          "note": "content support provider"
+        },
+        {
+          "pkg": "com.amazon.shoptv.client",
+          "note": "Shop on Fire TV"
+        },
+        {
+          "pkg": "com.amazon.tv.democontent.provider",
+          "note": "retail demo content"
+        },
+        {
+          "pkg": "com.amazon.tv.easyupgrade",
+          "note": "\"upgrade your Fire TV\" promos"
+        },
+        {
+          "pkg": "com.amazon.systemnotices",
+          "note": "system notices popups"
+        },
+        {
+          "pkg": "com.amazon.uxnotification",
+          "note": "UX notification popups"
+        },
+        {
+          "pkg": "com.amazon.tv.releasenotes",
+          "note": "\"what's new\""
+        },
+        {
+          "pkg": "com.amazon.hedwig",
+          "note": "Fire TV Channels (free channels with ads)"
+        }
+      ]
+    },
+    {
+      "title": "Tutorials",
+      "packages": [
+        {
+          "pkg": "com.amazon.storm.lightning.tutorial",
+          "note": "remote app tutorial"
+        },
+        {
+          "pkg": "com.amazon.tmm.tutorial",
+          "note": "remote tutorial"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps (personal choice)",
+      "packages": [
+        {
+          "pkg": "com.amazon.bueller.music",
+          "note": "Amazon Music"
+        },
+        {
+          "pkg": "com.amazon.bueller.photos",
+          "note": "Amazon Photos"
+        },
+        {
+          "pkg": "com.amazon.tahoe",
+          "note": "Amazon Kids"
+        },
+        {
+          "pkg": "com.amazon.gamehub",
+          "note": "games hub"
+        },
+        {
+          "pkg": "com.amazon.spiderpork",
+          "note": "Amazon Luna"
+        },
+        {
+          "pkg": "com.amazon.minitv.android.app",
+          "note": "miniTV"
+        },
+        {
+          "pkg": "com.amazon.naatyam",
+          "note": "Naatyam"
+        },
+        {
+          "pkg": "com.tubitv.ott",
+          "note": "Tubi"
+        },
+        {
+          "pkg": "com.amazon.tv.localgallery",
+          "note": "Gallery"
+        },
+        {
+          "pkg": "com.amazon.smarthomemapviewapp",
+          "note": "smart home dashboard (cameras, lights)"
+        },
+        {
+          "pkg": "com.amazon.ods.kindleconnect",
+          "note": "\"show on Fire TV\" from Echo / Fire tablet"
+        }
+      ]
+    },
+    {
+      "title": "Casting (personal choice; AirPlay is kept)",
+      "packages": [
+        {
+          "pkg": "com.amazon.cast.sink",
+          "note": "Miracast screen mirroring"
+        }
+      ]
+    },
+    {
+      "title": "Alexa (personal choice, about 115 MB of RAM; vizzini comes back at every boot, see the header)",
+      "packages": [
+        {
+          "pkg": "com.amazon.vizzini",
+          "note": "Alexa voice on Fire TV"
+        },
+        {
+          "pkg": "com.amazon.alexamediaplayer.runtime.ftv",
+          "note": "Alexa media player"
+        },
+        {
+          "pkg": "com.amazon.alexa.externalmediaplayer.fireos",
+          "note": "Alexa music playback"
+        },
+        {
+          "pkg": "com.amazon.aca",
+          "note": "Alexa hints/cues providers (AlexaCentralForApps)"
+        },
+        {
+          "pkg": "com.amazon.aiondec",
+          "note": "Alexa skill connections"
+        },
+        {
+          "pkg": "com.amazon.audiohome",
+          "note": "Alexa Home Theater"
+        },
+        {
+          "pkg": "com.amazon.tv.alexaalerts",
+          "note": "alarms, timers, reminders"
+        },
+        {
+          "pkg": "com.amazon.tv.alexanotifications",
+          "note": "Alexa notifications"
+        },
+        {
+          "pkg": "com.amazon.rtcsessioncontroller",
+          "note": "Alexa calling / Drop In"
+        },
+        {
+          "pkg": "com.amazon.spotify.mediabrowserservice",
+          "note": "Spotify for Alexa (the Spotify app is separate)"
+        },
+        {
+          "pkg": "com.amazon.tv.mattercohost",
+          "note": "Matter smart-home controller (com.amazon.tv.matter, Matter casting, stays)"
+        },
+        {
+          "pkg": "com.amazon.tv.ffsprovisioneeclient",
+          "note": "frustration-free setup client"
+        },
+        {
+          "pkg": "com.amazon.whisperjoin.middleware.np",
+          "note": "frustration-free setup of other Amazon devices"
+        },
+        {
+          "pkg": "com.amazon.whisperjoin.middleware.v2.np",
+          "note": "frustration-free setup of other Amazon devices"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/hisense-fire-tv-55qd6qf/debloat.txt",
+    "commit": "baadd07a7d095cc3ea72e6ccb615987bf1fb97c4"
+  }
+}

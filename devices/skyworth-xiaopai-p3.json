@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "id": "skyworth-xiaopai-p3",
+  "name": "Skyworth Xiaopai P3",
+  "tested": {
+    "os": "Android 10",
+    "sdk": null,
+    "build": null
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "Skyworth ads, shop rows and the first-run guide",
+      "packages": [
+        {
+          "pkg": "com.tianci.ad",
+          "note": "ad service behind the stock home and the screensaver"
+        },
+        {
+          "pkg": "com.skyworthdigital.ott.guide",
+          "note": "first-run guide, long since completed on this box"
+        },
+        {
+          "pkg": "com.mipt.store",
+          "note": "Skyworth app store"
+        },
+        {
+          "pkg": "com.jd.smartservicetwo",
+          "note": "JD shopping service on the home screen"
+        }
+      ]
+    },
+    {
+      "title": "Skyworth background services",
+      "packages": [
+        {
+          "pkg": "com.skyworthdigital.softap",
+          "note": "Wi-Fi hotspot; this box is on Ethernet"
+        },
+        {
+          "pkg": "com.skyworthdigital.smarthome"
+        },
+        {
+          "pkg": "com.skyworthdigital.skywechatclient",
+          "note": "WeChat TV client"
+        },
+        {
+          "pkg": "com.skyworthdigital.optimization",
+          "note": "\"optimiser\" that only reposts ads"
+        },
+        {
+          "pkg": "com.skyworthdigital.skycleandisk",
+          "note": "storage cleaner, same story"
+        },
+        {
+          "pkg": "com.skyworthdigital.remotedebug",
+          "note": "vendor remote debugging; close ADB instead"
+        },
+        {
+          "pkg": "com.nanosic.www.otaservice",
+          "note": "firmware updates; disabled on the tested box (uncomment to do the same)",
+          "optional": true
+        },
+        {
+          "pkg": "com.skyworthdigital.miracast",
+          "note": "casting; nobody uses it here"
+        }
+      ]
+    },
+    {
+      "title": "Allwinner board agents (dragonbox is the board's own test/factory app)",
+      "packages": [
+        {
+          "pkg": "com.softwinner.dragonbox"
+        },
+        {
+          "pkg": "com.softwinner.agingdragonbox",
+          "note": "factory burn-in agent"
+        }
+      ]
+    },
+    {
+      "title": "Stock launcher: com.skyworthdigital.sky2dlauncherv4, disabled only after the replacement was confirmed as Home.",
+      "packages": [
+        {
+          "pkg": "com.skyworthdigital.sky2dlauncherv4"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/skyworth-xiaopai-p3/debloat.txt",
+    "commit": "baadd07a7d095cc3ea72e6ccb615987bf1fb97c4"
+  }
+}

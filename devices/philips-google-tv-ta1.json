@@ -1,0 +1,131 @@
+{
+  "schema": 1,
+  "id": "philips-google-tv-ta1",
+  "name": "Philips Google TV TA1",
+  "tested": {
+    "os": "Google TV 14",
+    "sdk": null,
+    "build": "UKN2.241117.001"
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "Batch 1: vendor analytics, retail demo, auto-installs and apps the owner does not use.",
+      "packages": [
+        {
+          "pkg": "org.droidtv.candeebug"
+        },
+        {
+          "pkg": "org.droidtv.gel"
+        },
+        {
+          "pkg": "com.google.android.partnersetup"
+        },
+        {
+          "pkg": "android.autoinstalls.config.google.gtvpai"
+        },
+        {
+          "pkg": "com.google.android.onetimeinitializer"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.netflix.ninja"
+        },
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom"
+        },
+        {
+          "pkg": "com.google.android.videos"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        },
+        {
+          "pkg": "ru.ivi.client"
+        },
+        {
+          "pkg": "com.vewd.core.browser"
+        },
+        {
+          "pkg": "org.droidtv.demome"
+        },
+        {
+          "pkg": "org.droidtv.amazonalexa"
+        },
+        {
+          "pkg": "com.phorus.playfi.softap"
+        },
+        {
+          "pkg": "com.phorus.playfi.tv"
+        },
+        {
+          "pkg": "com.tpv.nftgallery"
+        }
+      ]
+    },
+    {
+      "title": "Batch 2: background services that run all day and that this owner does not use (about 100 MB of RAM back).",
+      "packages": [
+        {
+          "pkg": "tv.samba.ssm",
+          "note": "Samba TV, viewing-data collection"
+        },
+        {
+          "pkg": "org.droidtv.control4app",
+          "note": "Control4 smart-home integration (four packages)"
+        },
+        {
+          "pkg": "org.droidtv.control4sddp"
+        },
+        {
+          "pkg": "org.droidtv.control4adapterservice"
+        },
+        {
+          "pkg": "org.droidtv.control4UcService"
+        },
+        {
+          "pkg": "com.mediatek.airplaydaemon",
+          "note": "AirPlay (two packages)"
+        },
+        {
+          "pkg": "com.mediatek.partner.airplay_sys"
+        },
+        {
+          "pkg": "org.droidtv.hbbtvopapp",
+          "note": "HbbTV for broadcast TV"
+        },
+        {
+          "pkg": "com.google.android.tts",
+          "note": "Google text-to-speech"
+        },
+        {
+          "pkg": "org.droidtv.customautologservice",
+          "note": "TP Vision log collector"
+        }
+      ]
+    },
+    {
+      "title": "Stock home last, after the new launcher is installed. The Wi-Fi network was forgotten and added again first,",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith",
+          "note": "phone casting may stop after a reboot (the Cast receiver reads its credentials from setupwraith)"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.launcherx"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/philips-google-tv-ta1/debloat.txt",
+    "commit": "baadd07a7d095cc3ea72e6ccb615987bf1fb97c4"
+  }
+}

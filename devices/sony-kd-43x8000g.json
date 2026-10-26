@@ -90,10 +90,6 @@
           "pkg": "com.google.android.feedback"
         },
         {
-          "pkg": "com.sony.dtv.scrums.action",
-          "note": "Sony SCRUMS usage metrics"
-        },
-        {
           "pkg": "com.mediatek.agent",
           "note": "MediaTek diagnostics agent"
         },
@@ -199,6 +195,11 @@
       "title": "Left enabled on purpose: features, not bloat. Uncomment any line to disable it too.",
       "packages": [
         {
+          "pkg": "com.sony.dtv.scrums.action",
+          "note": "Action Menu overlay & remote button (TvDotAction.apk)",
+          "optional": true
+        },
+        {
           "pkg": "com.google.android.apps.mediashell",
           "note": "Chromecast built-in",
           "optional": true
@@ -251,6 +252,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/sony-kd-43x8000g/debloat.txt",
-    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+    "commit": "baadd07a7d095cc3ea72e6ccb615987bf1fb97c4"
   }
 }

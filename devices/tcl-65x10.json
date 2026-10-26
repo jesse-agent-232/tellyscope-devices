@@ -1,0 +1,198 @@
+{
+  "schema": 1,
+  "id": "tcl-65x10",
+  "name": "TCL 65X10 QLED",
+  "tested": {
+    "os": "Android TV 9",
+    "sdk": 28,
+    "build": "PPR1.180610.011"
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "1. Telemetry and analytics",
+      "packages": [
+        {
+          "pkg": "com.tcl.bi",
+          "note": "TCL BI analytics"
+        },
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "\"send feedback\""
+        },
+        {
+          "pkg": "com.google.android.tv.bugreportsender",
+          "note": "bug report uploader"
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "partner-app attribution"
+        },
+        {
+          "pkg": "com.google.android.onetimeinitializer",
+          "note": "one-time setup leftovers"
+        },
+        {
+          "pkg": "android.autoinstalls.config.tcl.device",
+          "note": "partner-app auto installer"
+        }
+      ]
+    },
+    {
+      "title": "2. Content, recommendation rows and promos",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvrecommendations",
+          "note": "home-screen recommendation rows"
+        },
+        {
+          "pkg": "com.google.android.leanbacklauncher.recommendations"
+        },
+        {
+          "pkg": "com.tcl.partnercustomizer",
+          "note": "TCL Channel tile, promo rows; also the stock home's Inputs icon"
+        },
+        {
+          "pkg": "com.tcl.messagebox",
+          "note": "TCL message/promo box"
+        },
+        {
+          "pkg": "com.tcl.esticker",
+          "note": "retail demo stickers"
+        },
+        {
+          "pkg": "com.tcl.cyberui",
+          "note": "TCL content service, unused; re-enabled at every boot (see above)"
+        }
+      ]
+    },
+    {
+      "title": "3. Preloads and background extras",
+      "packages": [
+        {
+          "pkg": "com.tcl.android.webview",
+          "note": "unused, Google WebView is the active provider"
+        },
+        {
+          "pkg": "com.tcl.keyhelp",
+          "note": "remote-key help overlays"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Play Movies & TV"
+        },
+        {
+          "pkg": "com.google.android.play.games",
+          "note": "Play Games"
+        },
+        {
+          "pkg": "com.google.android.music",
+          "note": "Play Music, service closed in 2020"
+        },
+        {
+          "pkg": "com.tcl.smartalexa",
+          "note": "TCL Alexa skill app; re-enabled at every boot (see above)"
+        },
+        {
+          "pkg": "com.tcl.notereminder",
+          "note": "TCL note reminder; re-enabled at every boot (see above)"
+        },
+        {
+          "pkg": "tv.wuaki.apptv",
+          "note": "Rakuten TV preload; re-enabled at every boot (see above)"
+        }
+      ]
+    },
+    {
+      "title": "4. Firmware updater, off by choice: no update since AP03 here, and it only offers TCL's own builds.",
+      "packages": [
+        {
+          "pkg": "com.tcl.versionUpdateApp",
+          "note": "firmware updater: disabled on the tested set (uncomment to do the same); shared lists keep updates on",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "5. Voice, off by choice: the mic button and home-screen search go with it",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google voice search"
+        },
+        {
+          "pkg": "com.google.android.speech.pumpkin",
+          "note": "offline speech recognition"
+        },
+        {
+          "pkg": "com.tcl.assistant",
+          "note": "TCL's Google Assistant bridge"
+        },
+        {
+          "pkg": "com.tcl.micmanager",
+          "note": "remote microphone manager"
+        },
+        {
+          "pkg": "com.google.android.tv.assistant",
+          "note": "Assistant LED service"
+        }
+      ]
+    },
+    {
+      "title": "6. Extras nobody used here",
+      "packages": [
+        {
+          "pkg": "com.tcl.usercenter",
+          "note": "TCL account login; re-enabled at every boot (see above)"
+        },
+        {
+          "pkg": "com.google.android.marvin.talkback",
+          "note": "TalkBack screen reader"
+        },
+        {
+          "pkg": "com.android.printspooler",
+          "note": "printing"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar",
+          "note": "calendar sync"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.contacts",
+          "note": "contacts sync"
+        }
+      ]
+    },
+    {
+      "title": "7. After the launcher is installed (launcher/build-and-install.sh)",
+      "packages": [
+        {
+          "pkg": "com.tcl.tvweishi",
+          "note": "TCL \"TV Guard\" cleaner"
+        },
+        {
+          "pkg": "com.tcl.appmarket2",
+          "note": "TCL app store (Play Store stays)"
+        },
+        {
+          "pkg": "com.google.android.backdrop",
+          "note": "Ambient-mode screensaver (pick another screensaver first)"
+        }
+      ]
+    },
+    {
+      "title": "Stock Android TV launcher, replaced by launcher/ (build-and-install.sh disables it once the new one is Home)",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvlauncher"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tcl-65x10/debloat.txt",
+    "commit": "baadd07a7d095cc3ea72e6ccb615987bf1fb97c4"
+  }
+}

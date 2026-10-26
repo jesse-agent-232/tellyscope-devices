@@ -48,11 +48,80 @@
           "pkg": "com.google.android.leanbacklauncher.recommendations"
         }
       ]
+    },
+    {
+      "title": "Error-report and feedback uploaders (pure telemetry, nothing user-facing)",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.tv.bugreportsender"
+        }
+      ]
+    },
+    {
+      "title": "Partner auto-installer: pushes sponsored apps through Play on fresh accounts",
+      "packages": [
+        {
+          "pkg": "android.autoinstalls.config.xiaomi.amelie"
+        }
+      ]
+    },
+    {
+      "title": "Heavy screensavers. REASSIGN THE SCREENSAVER FIRST (e.g. the launcher's ClockDream via",
+      "packages": [
+        {
+          "pkg": "com.google.android.backdrop"
+        },
+        {
+          "pkg": "com.mitv.dream"
+        }
+      ]
+    },
+    {
+      "title": "Xiaomi \"TV Manager\" rocket-cleaner app",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.mitv.tvmanager"
+        }
+      ]
+    },
+    {
+      "title": "Preinstalled Google apps that reinstall freely from Play whenever wanted",
+      "packages": [
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.videos"
+        },
+        {
+          "pkg": "org.chromium.webview_shell"
+        },
+        {
+          "pkg": "com.android.printspooler"
+        }
+      ]
+    },
+    {
+      "title": "Xiaomi media leftovers and accessibility suite. The gallery doubles as the photo screensaver,",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.mimusic2"
+        },
+        {
+          "pkg": "com.mitv.gallery"
+        },
+        {
+          "pkg": "com.google.android.marvin.talkback"
+        }
+      ]
     }
   ],
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/xiaomi-mitv-mssp1/debloat.txt",
-    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+    "commit": "baadd07a7d095cc3ea72e6ccb615987bf1fb97c4"
   }
 }

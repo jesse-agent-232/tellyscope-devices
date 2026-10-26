@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "id": "siragon-4k-smart-tv-elliniko",
+  "name": "Síragon 4K Smart TV",
+  "tested": {
+    "os": "Android 14",
+    "sdk": 34,
+    "build": "UKN6.260116.117"
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Telemetry, tracking and ad services",
+      "packages": [
+        {
+          "pkg": "tv.anoki.acr.anokiacroptin",
+          "note": "Anoki ACR automatic content recognition"
+        },
+        {
+          "pkg": "com.android.adservices.api",
+          "note": "Android 14 Privacy Sandbox ad-targeting API"
+        },
+        {
+          "pkg": "com.android.ondevicepersonalization.services",
+          "note": "On-Device Personalization ML ad service"
+        },
+        {
+          "pkg": "com.android.federatedcompute.services",
+          "note": "Federated Compute background processor"
+        },
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "Google TV crash and feedback telemetry"
+        },
+        {
+          "pkg": "com.android.tv.feedbackconsent",
+          "note": "Feedback consent dialog"
+        },
+        {
+          "pkg": "com.mediatek.tv.launcher.partner",
+          "note": "MediaTek leanback launcher partner sponsored rows injector"
+        }
+      ]
+    },
+    {
+      "title": "Commercial preloads, demos, and unused middlewares",
+      "packages": [
+        {
+          "pkg": "com.mediatek.tv.retaildemo",
+          "note": "Retail store demo loop"
+        },
+        {
+          "pkg": "com.electronic.manual",
+          "note": "On-screen user manual"
+        },
+        {
+          "pkg": "tv.mopa.ginga",
+          "note": "Ginga, the interactive layer of ISDB-Tb broadcasts; disabled on the tested set (uncomment to do the same)",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.play.games",
+          "note": "Google Play Games TV service"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google TV movies & shows store"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.dreamx",
+          "note": "Ambient recommendation screensaver"
+        }
+      ]
+    },
+    {
+      "title": "Home handover: setupwraith Wi-Fi owned by android.uid.system:1000",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith",
+          "note": "Setup wizard / RecoveryActivity"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.launcherx",
+          "note": "Stock Google TV launcher"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/siragon-4k-smart-tv-elliniko/debloat.txt",
+    "commit": "baadd07a7d095cc3ea72e6ccb615987bf1fb97c4"
+  }
+}

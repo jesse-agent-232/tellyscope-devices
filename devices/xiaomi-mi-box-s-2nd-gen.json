@@ -27,6 +27,11 @@
         {
           "pkg": "com.google.android.partnersetup",
           "note": "Google RLZ attribution pings"
+        },
+        {
+          "pkg": "com.xiaomi.tvqs.overseas",
+          "note": "log and crash uploader (772: untested disabled, see header)",
+          "optional": true
         }
       ]
     },
@@ -98,6 +103,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/xiaomi-mi-box-s-2nd-gen/debloat.txt",
-    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+    "commit": "baadd07a7d095cc3ea72e6ccb615987bf1fb97c4"
   }
 }

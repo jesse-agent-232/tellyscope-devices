@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "id": "motorola-swtv-24ae-fhd",
-  "name": "Motorola SWTV-24AE-FHD",
+  "name": "Motorola / Coocaa SWTV-24AE-FHD",
   "tested": {
     "os": "Android TV 14",
     "sdk": 34,
@@ -80,6 +80,10 @@
         {
           "pkg": "com.google.android.play.games",
           "note": "Google Play Games"
+        },
+        {
+          "pkg": "fusion.android.tv.demo",
+          "note": "store demo mode (Coocaa)"
         }
       ]
     },
@@ -100,6 +104,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/motorola-swtv-24ae-fhd/debloat.txt",
-    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+    "commit": "baadd07a7d095cc3ea72e6ccb615987bf1fb97c4"
   }
 }
