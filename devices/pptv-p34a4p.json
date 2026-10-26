@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "pptv-p34a4p",
+  "name": "PPTV p34a4p",
+  "tested": {
+    "os": "Android 5.1.1",
+    "sdk": 22,
+    "build": "LMY47V.20251117"
+  },
+  "launcher": "com.pptv.launcher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "PPTV ad and push services",
+      "packages": [
+        {
+          "pkg": "com.pptv.newtvad",
+          "note": "TvAdService, banner ads"
+        },
+        {
+          "pkg": "com.pptv.push.service",
+          "note": "push channel"
+        },
+        {
+          "pkg": "com.pptv.snisupdate",
+          "note": "silent installer (PushAppInstallActivity)"
+        },
+        {
+          "pkg": "com.pptv.screenprotect",
+          "note": "screensaver ads"
+        },
+        {
+          "pkg": "com.pptv.tvbuy",
+          "note": "shopping app"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/pptv-p34a4p/debloat.txt",
+    "commit": "76a9312cd9ac378fc8698f31427805af32c6f965"
+  }
+}

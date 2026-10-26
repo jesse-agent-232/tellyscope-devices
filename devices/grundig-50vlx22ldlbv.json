@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "grundig-50vlx22ldlbv",
+  "name": "Grundig 50VLX22LDLBV 50\" Android TV",
+  "tested": {
+    "os": "Android TV 11",
+    "sdk": 30,
+    "build": "RTO1.240312.001"
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "--- Telemetry, attribution and leftovers",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "Google feedback / bug report uploader"
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "partner-app attribution (RLZ)"
+        },
+        {
+          "pkg": "android.autoinstalls.config.arcelik.an",
+          "note": "Arcelik partner auto-installs config"
+        },
+        {
+          "pkg": "com.mstar.android.tv.disclaimercustomization",
+          "note": "disclaimer popups"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar",
+          "note": "calendar sync, no calendar app on a TV"
+        },
+        {
+          "pkg": "com.google.android.onetimeinitializer",
+          "note": "first-setup leftover"
+        },
+        {
+          "pkg": "com.android.printspooler",
+          "note": "printing"
+        }
+      ]
+    },
+    {
+      "title": "--- Owner's choice: not used",
+      "packages": [
+        {
+          "pkg": "com.netflix.ninja",
+          "note": "Netflix"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic",
+          "note": "YouTube Music"
+        },
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google voice search / Assistant (remote mic button)"
+        },
+        {
+          "pkg": "com.google.android.tv.remote.service",
+          "note": "phone-as-remote service (Google TV app)"
+        }
+      ]
+    },
+    {
+      "title": "--- After launcher/ owns Home (build-and-install.sh disables com.google.android.tvlauncher itself)",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvlauncher",
+          "note": "stock Android TV home: sponsored rows"
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations",
+          "note": "feeds the stock home's recommendation rows"
+        },
+        {
+          "pkg": "com.google.android.backdrop",
+          "note": "Ambient screensaver; replaced by com.gathin.tvhome/.ClockDream"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/grundig-50vlx22ldlbv/debloat.txt",
+    "commit": "76a9312cd9ac378fc8698f31427805af32c6f965"
+  }
+}

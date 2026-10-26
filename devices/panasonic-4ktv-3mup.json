@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "id": "panasonic-4ktv-3mup",
+  "name": "Panasonic 4KTV-3MUP",
+  "tested": {
+    "os": "Google TV 14",
+    "sdk": 34,
+    "build": "UKR1.260308"
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "Telemetry, ads and auto-installs",
+      "packages": [
+        {
+          "pkg": "com.android.tv.feedbackconsent"
+        },
+        {
+          "pkg": "com.android.adservices.api"
+        },
+        {
+          "pkg": "com.android.ondevicepersonalization.services"
+        },
+        {
+          "pkg": "com.android.federatedcompute.services"
+        },
+        {
+          "pkg": "com.apps.mk.wd",
+          "note": "boot receiver with ad-click activities"
+        },
+        {
+          "pkg": "android.autoinstalls.config.scbc.device",
+          "note": "Play auto-installs of partner apps"
+        }
+      ]
+    },
+    {
+      "title": "Background services a TV does not need",
+      "packages": [
+        {
+          "pkg": "com.android.healthconnect.controller"
+        },
+        {
+          "pkg": "com.android.health.connect.backuprestore"
+        },
+        {
+          "pkg": "com.apps.wifihotspot"
+        },
+        {
+          "pkg": "com.android.dreams.basic"
+        },
+        {
+          "pkg": "com.android.htmlviewer"
+        },
+        {
+          "pkg": "com.android.backupconfirm"
+        },
+        {
+          "pkg": "com.android.sharedstoragebackup"
+        },
+        {
+          "pkg": "com.android.wallpaperbackup"
+        },
+        {
+          "pkg": "com.android.providers.calendar"
+        }
+      ]
+    },
+    {
+      "title": "Not used (owner's choice)",
+      "packages": [
+        {
+          "pkg": "com.disney.disneyplus"
+        },
+        {
+          "pkg": "com.chocolabs.app.chocotv.tv"
+        },
+        {
+          "pkg": "tv.twitch.android.app"
+        },
+        {
+          "pkg": "jp.or.nhk.nhkworld.tv"
+        },
+        {
+          "pkg": "com.apps.usbmediaplayer"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/panasonic-4ktv-3mup/debloat.txt",
+    "commit": "76a9312cd9ac378fc8698f31427805af32c6f965"
+  }
+}

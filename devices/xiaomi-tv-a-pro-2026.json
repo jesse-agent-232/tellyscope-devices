@@ -64,7 +64,7 @@
         },
         {
           "pkg": "com.xiaomi.mitv.updateservice",
-          "note": "firmware updates: re-enable these three to check for one"
+          "note": "firmware updates: re-enable these three to check for one (kept enabled on the 55\" unit)"
         },
         {
           "pkg": "com.mitv.upgrader"
@@ -118,12 +118,81 @@
       "packages": [
         {
           "pkg": "com.google.android.videos",
-          "note": "Google TV / Play Movies app",
+          "note": "Google TV / Play Movies app (disabled on the 55\" unit)",
           "optional": true
         },
         {
           "pkg": "com.google.android.apps.tv.dreamx",
-          "note": "Google ambient screensaver (switch to the Clock dream first)",
+          "note": "Google ambient screensaver (switch to the Clock dream first; disabled on the 55\" unit)",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "55\" unit extras, disabled for one day so far: Home, the Inputs menu and the remote still worked.",
+      "packages": [
+        {
+          "pkg": "com.apple.atve.androidtv.appletv",
+          "note": "Apple TV app (preloaded)",
+          "optional": true
+        },
+        {
+          "pkg": "com.mxtech.videoplayer.television",
+          "note": "MX Player (preloaded)",
+          "optional": true
+        },
+        {
+          "pkg": "com.android.printspooler",
+          "note": "print service",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar",
+          "optional": true
+        },
+        {
+          "pkg": "com.android.tv.feedbackconsent",
+          "note": "feedback consent prompt",
+          "optional": true
+        },
+        {
+          "pkg": "com.android.healthconnect.controller",
+          "note": "Health Connect",
+          "optional": true
+        },
+        {
+          "pkg": "com.android.dynsystem",
+          "note": "Dynamic System Updates installer",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "partner setup leftover",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.marvin.talkback",
+          "note": "TalkBack screen reader: keep it if anyone at home uses it",
+          "optional": true
+        },
+        {
+          "pkg": "com.xiaomo.tv.milegal",
+          "note": "Xiaomi legal pages",
+          "optional": true
+        },
+        {
+          "pkg": "com.mitv.toolhouse",
+          "note": "Xiaomi tool box",
+          "optional": true
+        },
+        {
+          "pkg": "com.xiaomi.mitv.manualhelp",
+          "note": "Xiaomi manual / help",
+          "optional": true
+        },
+        {
+          "pkg": "com.android.dreams.basic",
+          "note": "basic colour screensaver",
           "optional": true
         }
       ]
@@ -132,6 +201,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/xiaomi-tv-a-pro-2026/debloat.txt",
-    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+    "commit": "76a9312cd9ac378fc8698f31427805af32c6f965"
   }
 }

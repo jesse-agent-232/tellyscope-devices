@@ -1,0 +1,126 @@
+{
+  "schema": 1,
+  "id": "xiaomi-tv-a43-2025",
+  "name": "Xiaomi TV A43 2025",
+  "tested": {
+    "os": "Google TV 11",
+    "sdk": null,
+    "build": null
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "Xiaomi telemetry / analytics",
+      "packages": [
+        {
+          "pkg": "com.miui.tv.analytics"
+        },
+        {
+          "pkg": "com.xiaomi.statistic"
+        },
+        {
+          "pkg": "com.xiaomi.tvqs.overseas",
+          "note": "\"TV Quality Service\" feedback"
+        }
+      ]
+    },
+    {
+      "title": "PatchWall and Mi content rows (stubs on Google TV builds)",
+      "packages": [
+        {
+          "pkg": "com.mitv.tvhome.atv"
+        },
+        {
+          "pkg": "com.mitv.tvhome.michannel"
+        },
+        {
+          "pkg": "com.mitv.tvhome.mitvplus"
+        },
+        {
+          "pkg": "com.xm.webcontent"
+        }
+      ]
+    },
+    {
+      "title": "Xiaomi background services / cleaner",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.mitv.tvmanager",
+          "note": "\"TV Manager\" cleaner app"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.smartshare"
+        },
+        {
+          "pkg": "com.mitv.milinkservice",
+          "note": "Mi cast; Chromecast still works"
+        },
+        {
+          "pkg": "com.xiaomi.amazon.alexa",
+          "note": "Alexa bridge"
+        },
+        {
+          "pkg": "android.autoinstalls.config.xiaomi.amelie"
+        },
+        {
+          "pkg": "fusion.android.tv.demo"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps (comment out any you use)",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.mimusic2"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.netflix.ninja"
+        },
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom"
+        },
+        {
+          "pkg": "com.google.android.youtube.tv"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google Play Movies"
+        },
+        {
+          "pkg": "ru.more.play",
+          "note": "Okko"
+        },
+        {
+          "pkg": "com.vk.tv"
+        },
+        {
+          "pkg": "com.yandex.browser.tv"
+        }
+      ]
+    },
+    {
+      "title": "Stock Google TV launcher, replaced by launcher/. Disable setupwraith too (it can take Home",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvlauncher"
+        },
+        {
+          "pkg": "com.google.android.tungsten.setupwraith",
+          "note": "phone casting stops after a reboot with it off"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/xiaomi-tv-a43-2025/debloat.txt",
+    "commit": "76a9312cd9ac378fc8698f31427805af32c6f965"
+  }
+}

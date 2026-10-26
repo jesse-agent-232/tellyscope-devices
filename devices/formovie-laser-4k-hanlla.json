@@ -5,7 +5,7 @@
   "tested": {
     "os": "Android TV 14",
     "sdk": 34,
-    "build": null
+    "build": "UKNV.260619.001"
   },
   "launcher": "com.google.android.tvlauncher",
   "keep": [],
@@ -26,6 +26,10 @@
         {
           "pkg": "android.autoinstalls.config.fomovie",
           "note": "Play auto-install of partner apps (sic, \"fomovie\")"
+        },
+        {
+          "pkg": "android.autoinstalls.config.formovie",
+          "note": "second auto-installer, on the Theater unit"
         }
       ]
     },
@@ -41,11 +45,62 @@
           "note": "Ambient Mode screensaver (Immich is the screensaver here)"
         }
       ]
+    },
+    {
+      "title": "Theater unit only, off by choice there (kept enabled for the first unit). Uncomment what you don't use.",
+      "packages": [
+        {
+          "pkg": "com.google.android.tv",
+          "note": "Live Channels: no tuner; takes HDMI from tvcenter (see header)",
+          "optional": true
+        },
+        {
+          "pkg": "com.softmedia.receiver.lite",
+          "note": "AirPlay/DLNA receiver, starts at boot",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google Assistant / voice search (the mic button stops working)",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.tv.assistant",
+          "note": "Assistant service",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Chromecast built-in",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.youtube.tv",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.youtube.tvkids",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Play Movies",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.play.games",
+          "optional": true
+        }
+      ]
     }
   ],
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/formovie-laser-4k-hanlla/debloat.txt",
-    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+    "commit": "76a9312cd9ac378fc8698f31427805af32c6f965"
   }
 }

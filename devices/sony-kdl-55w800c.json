@@ -1,0 +1,121 @@
+{
+  "schema": 1,
+  "id": "sony-kdl-55w800c",
+  "name": "Sony BRAVIA KDL-55W800C",
+  "tested": {
+    "os": "Android TV 7.0",
+    "sdk": 24,
+    "build": "SVPDTV15_TW"
+  },
+  "launcher": "com.google.android.leanbacklauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Telemetry, remote support, bug reports",
+      "packages": [
+        {
+          "pkg": "com.qterics.da.product",
+          "note": "Qterics device agent"
+        },
+        {
+          "pkg": "com.sony.dtv.da.service",
+          "note": "Sony device agent / remote support"
+        },
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "Feedback / crash reporter"
+        },
+        {
+          "pkg": "com.google.android.tv.bugreportsender",
+          "note": "Bug report sender"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.vendorprotocol",
+          "note": "SDDP model/MAC/IP broadcast for Control4-style home"
+        }
+      ]
+    },
+    {
+      "title": "Sony content, ads and recommendation rows",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.discovery",
+          "note": "Discover bar"
+        },
+        {
+          "pkg": "com.sony.dtv.bivlinfo",
+          "note": "feeds Discover"
+        },
+        {
+          "pkg": "com.sony.dtv.sonyselect",
+          "note": "Sony Select promo tile/app store"
+        },
+        {
+          "pkg": "com.sony.dtv.sonyshelf",
+          "note": "leanbacklauncher's PARTNER_CUSTOMIZATION: fills the"
+        },
+        {
+          "pkg": "com.sony.dtv.recommendationservice"
+        },
+        {
+          "pkg": "com.sony.dtv.woprecommendation",
+          "note": "What's on Play recommendations"
+        },
+        {
+          "pkg": "com.sony.dtv.networkrecommendation"
+        },
+        {
+          "pkg": "com.sony.dtv.watchtvrecommendation"
+        },
+        {
+          "pkg": "android.autoinstalls.config.sony.bravia",
+          "note": "Play auto-install of partner apps"
+        }
+      ]
+    },
+    {
+      "title": "Retail demo and preloaded help apps",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.demomode",
+          "note": "Shop demo mode"
+        },
+        {
+          "pkg": "com.sony.dtv.customersupport"
+        },
+        {
+          "pkg": "com.sony.dtv.smarthelp"
+        },
+        {
+          "pkg": "com.sony.dtv.imanual",
+          "note": "i-Manual electronic guide"
+        },
+        {
+          "pkg": "com.sony.dtv.bravialifehack"
+        },
+        {
+          "pkg": "com.sony.dtv.touchpad.tutorial",
+          "note": "touchpad remote tutorial, posts a recommendation card"
+        }
+      ]
+    },
+    {
+      "title": "Streaming apps the owner does not use",
+      "packages": [
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom",
+          "note": "Prime Video"
+        },
+        {
+          "pkg": "com.amazon.aiv.us",
+          "note": "Prime Video companion"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/sony-kdl-55w800c/debloat.txt",
+    "commit": "76a9312cd9ac378fc8698f31427805af32c6f965"
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "schema": 1,
+  "id": "sber-salute-tv-pb766",
+  "name": "Sber Salute TV 32\"",
+  "tested": {
+    "os": "Android 11",
+    "sdk": null,
+    "build": "RP1A.200720.011"
+  },
+  "launcher": "ru.sberdevices.starlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Sber background services",
+      "packages": [
+        {
+          "pkg": "ru.sberdevices.survey",
+          "note": "surveys"
+        },
+        {
+          "pkg": "ru.sberdevices.bugreporter",
+          "note": "StarBugReporter"
+        },
+        {
+          "pkg": "ru.sberdevices.starcleaner",
+          "note": "StarCleaner, the \"Очистка памяти\" screen"
+        },
+        {
+          "pkg": "ru.sberdevices.rcfupdater",
+          "note": "remote control firmware updater; the paired remote keeps working; re-enabled at boot"
+        },
+        {
+          "pkg": "ru.sberdevices.starprofile",
+          "note": "user profiles"
+        },
+        {
+          "pkg": "ru.sberdevices.openbeta",
+          "note": "beta programme; installed itself during the session"
+        },
+        {
+          "pkg": "ru.sberdevices.tv",
+          "note": "\"Настройка провайдеров\", TV provider setup; HDMI unaffected; re-enabled at boot"
+        }
+      ]
+    },
+    {
+      "title": "Sber screensaver: point screensaver_components at another dream first, see README.md",
+      "packages": [
+        {
+          "pkg": "ru.sberdevices.starscreensaver"
+        }
+      ]
+    },
+    {
+      "title": "Sber content apps and promos",
+      "packages": [
+        {
+          "pkg": "ru.sberdevices.music",
+          "note": "Zvuk"
+        },
+        {
+          "pkg": "ru.sberdevices.videos",
+          "note": "\"Видео\" catalogue"
+        },
+        {
+          "pkg": "ru.sberdevices.starlivetv",
+          "note": "StarLiveTv, Sber's online channels"
+        },
+        {
+          "pkg": "ru.sberdevices.sberplay",
+          "note": "SberPlay games"
+        },
+        {
+          "pkg": "ru.sberdevices.subscriptions",
+          "note": "SberPrime; re-enabled at boot"
+        },
+        {
+          "pkg": "ru.sberdevices.starbrowser",
+          "note": "Salute browser"
+        },
+        {
+          "pkg": "ru.sberdevices.starkidsroom.prod",
+          "note": "kids room; installed itself during the session"
+        },
+        {
+          "pkg": "ru.sberdevices.parentcontrol",
+          "note": "parental control; installed itself during the session"
+        },
+        {
+          "pkg": "ru.sberdevices.smarthome.promo",
+          "note": "smart home promo; re-enabled at boot"
+        },
+        {
+          "pkg": "com.salute.star",
+          "note": "\"Умный дом\" smart home app"
+        }
+      ]
+    },
+    {
+      "title": "Screen sharing",
+      "packages": [
+        {
+          "pkg": "com.mediatek.androidbox",
+          "note": "WFDSinkTest, the Miracast receiver"
+        }
+      ]
+    },
+    {
+      "title": "Preinstalled streaming apps the owner does not use (Wink, Kinopoisk, VK Video and Rutube were kept)",
+      "packages": [
+        {
+          "pkg": "ru.more.play",
+          "note": "Okko; re-installed and re-enabled by Sber at boot"
+        },
+        {
+          "pkg": "ru.mts.mtstv",
+          "note": "KION"
+        },
+        {
+          "pkg": "ru.ivi.client",
+          "note": "Ivi"
+        },
+        {
+          "pkg": "com.vgtrk.smotrim",
+          "note": "Smotrim"
+        },
+        {
+          "pkg": "ru.tv1.android.tv",
+          "note": "Channel One"
+        },
+        {
+          "pkg": "tv.lfstrm.smotreshka_stb",
+          "note": "Smotreshka"
+        },
+        {
+          "pkg": "com.yandex.browser.tv",
+          "note": "Yandex Browser"
+        },
+        {
+          "pkg": "org.videolan.vlc",
+          "note": "VLC (vendor build); USB media still plays in com.cvte.tv.media"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/sber-salute-tv-pb766/debloat.txt",
+    "commit": "76a9312cd9ac378fc8698f31427805af32c6f965"
+  }
+}

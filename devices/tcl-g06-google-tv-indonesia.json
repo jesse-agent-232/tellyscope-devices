@@ -1,0 +1,192 @@
+{
+  "schema": 1,
+  "id": "tcl-g06-google-tv-indonesia",
+  "name": "TCL 40\" Smart TV",
+  "tested": {
+    "os": "Google TV 11",
+    "sdk": 30,
+    "build": "AR2101"
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Live TV / HDMI: com.tcl.tv + com.tcl.tvinput.",
+      "packages": [
+        {
+          "pkg": "com.tcl.ttvs",
+          "note": "firmware updater on AR2101",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.suspension",
+          "note": "Input key / Quick Panel",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.common.shortcutmenu",
+          "note": "not tried",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.tv.remote.service",
+          "note": "phone remote, also the remote mic bridge on other TCL sets (#1441)",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.tungsten.setupwraith",
+          "note": "only needed off with a replacement launcher",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.apps.tv.dreamx",
+          "note": "screensaver, kept",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "TCL promos, popups and content",
+      "packages": [
+        {
+          "pkg": "com.tcl.esticker",
+          "note": "store-demo sticker"
+        },
+        {
+          "pkg": "com.tcl.partnercustomizer",
+          "note": "promo rows"
+        },
+        {
+          "pkg": "com.tcl.messagebox",
+          "note": "TCL messages/popups"
+        },
+        {
+          "pkg": "com.tcl.waterfall.overseas",
+          "note": "TCL content portal"
+        },
+        {
+          "pkg": "com.tcl.dashboard",
+          "note": "TCL Home panel"
+        },
+        {
+          "pkg": "com.tcl.useragreement"
+        },
+        {
+          "pkg": "com.tcl.usercenter",
+          "note": "TCL account, re-enabled at every boot (idle)"
+        },
+        {
+          "pkg": "com.tcl.guard",
+          "note": "TGuard cleaner"
+        },
+        {
+          "pkg": "com.tcl.hotelmenu",
+          "note": "hotel mode"
+        },
+        {
+          "pkg": "com.tcl.smartalexa",
+          "note": "Alexa bridge"
+        },
+        {
+          "pkg": "com.tcl.copydatatotv",
+          "note": "copy-data utility"
+        },
+        {
+          "pkg": "com.tcl.t_solo",
+          "note": "Bluetooth \"listen alone\""
+        }
+      ]
+    },
+    {
+      "title": "Google partner plumbing and telemetry",
+      "packages": [
+        {
+          "pkg": "com.google.android.partnersetup"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.onetimeinitializer"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar"
+        },
+        {
+          "pkg": "com.google.android.apps.nbu.smartconnect.tv",
+          "note": "data-saver VPN"
+        },
+        {
+          "pkg": "android.autoinstalls.config.google.gtvpai",
+          "note": "partner auto-installs"
+        }
+      ]
+    },
+    {
+      "title": "Unused preloads, off by choice on this unit",
+      "packages": [
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Play Movies"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic",
+          "note": "YouTube Music"
+        },
+        {
+          "pkg": "com.tcl.browser"
+        },
+        {
+          "pkg": "com.tcl.ui_mediaCenter",
+          "note": "USB media player, re-enable for USB drives"
+        },
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom",
+          "note": "Prime Video"
+        },
+        {
+          "pkg": "com.tencent.qqlivei18n",
+          "note": "WeTV"
+        },
+        {
+          "pkg": "com.ottplay.ottplay",
+          "note": "OTTPlay"
+        },
+        {
+          "pkg": "com.alphainventor.filemanager",
+          "note": "File Commander"
+        },
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Chromecast receiver, re-enable to cast from a phone"
+        },
+        {
+          "pkg": "com.google.android.marvin.talkback",
+          "note": "TalkBack"
+        }
+      ]
+    },
+    {
+      "title": "Voice assistant, off by choice (comment out all three to keep the remote's mic)",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss"
+        },
+        {
+          "pkg": "com.google.android.tv.assistant"
+        },
+        {
+          "pkg": "com.tcl.micmanager"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tcl-g06-google-tv-indonesia/debloat.txt",
+    "commit": "76a9312cd9ac378fc8698f31427805af32c6f965"
+  }
+}

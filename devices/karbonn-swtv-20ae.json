@@ -5,7 +5,7 @@
   "tested": {
     "os": "Android TV 10",
     "sdk": 29,
-    "build": null
+    "build": "QTG3.200617.002"
   },
   "launcher": "com.google.android.tvlauncher",
   "keep": [],
@@ -99,7 +99,57 @@
       "title": "Stock home recommendation rows; disable after the new launcher owns Home",
       "packages": [
         {
-          "pkg": "com.google.android.tvrecommendations"
+          "pkg": "com.google.android.tvrecommendations",
+          "note": "on Unit 2 it also caused 2 s freezes every 32 s (see header)"
+        }
+      ]
+    },
+    {
+      "title": "Also disabled on Unit 2 (Motorola)",
+      "packages": [
+        {
+          "pkg": "com.google.android.play.games",
+          "note": "Google Play Games"
+        }
+      ]
+    },
+    {
+      "title": "Ask the owner first: streaming apps disabled on Unit 2 by its owner's choice. Uncomment only what is not used.",
+      "packages": [
+        {
+          "pkg": "com.netflix.ninja",
+          "note": "Netflix (stays disabled across reboots on this firmware)",
+          "optional": true
+        },
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom",
+          "note": "Prime Video",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic",
+          "note": "YouTube Music",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google Play Movies",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Stock home and setup wizard: Unit 2 disabled these only after the new launcher was confirmed as Home,",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith",
+          "note": "setup wizard; re-enable before a factory reset",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.tvlauncher",
+          "note": "stock Android TV home",
+          "optional": true
         }
       ]
     }
@@ -107,6 +157,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/karbonn-swtv-20ae/debloat.txt",
-    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+    "commit": "76a9312cd9ac378fc8698f31427805af32c6f965"
   }
 }

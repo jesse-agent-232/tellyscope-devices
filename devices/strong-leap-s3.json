@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "strong-leap-s3",
+  "name": "Strong LEAP-S3 box",
+  "tested": {
+    "os": "Google TV 14",
+    "sdk": 34,
+    "build": "UKG3.260128.001.C3.0.12_20260904"
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Privacy Sandbox / ads framework",
+      "packages": [
+        {
+          "pkg": "com.android.adservices.api"
+        },
+        {
+          "pkg": "com.android.ondevicepersonalization.services"
+        },
+        {
+          "pkg": "com.android.federatedcompute.services"
+        }
+      ]
+    },
+    {
+      "title": "Vendor test, QA and feedback",
+      "packages": [
+        {
+          "pkg": "com.oem.qa"
+        },
+        {
+          "pkg": "com.sdt.producttest"
+        },
+        {
+          "pkg": "com.amlogic.voicesubtitle",
+          "note": "no visible effect when disabled"
+        },
+        {
+          "pkg": "com.android.tv.feedbackconsent"
+        }
+      ]
+    },
+    {
+      "title": "Google extras",
+      "packages": [
+        {
+          "pkg": "com.google.android.play.games"
+        }
+      ]
+    },
+    {
+      "title": "Only to let a replacement launcher take Home: disable launcherx only after the replacement survived a reboot",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith",
+          "note": "owns the Wi-Fi saved at setup, see above"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.launcherx"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/strong-leap-s3/debloat.txt",
+    "commit": "76a9312cd9ac378fc8698f31427805af32c6f965"
+  }
+}

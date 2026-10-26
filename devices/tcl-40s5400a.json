@@ -109,7 +109,7 @@
         },
         {
           "pkg": "com.google.android.tungsten.setupwraith",
-          "note": "first-run wizard, setup already done"
+          "note": "first-run wizard, setup already done; check it does not own the Wi-Fi first (header)"
         }
       ]
     },
@@ -135,7 +135,7 @@
         },
         {
           "pkg": "com.google.android.tv.remote.service",
-          "note": "phone-app remote (casting does not need it)"
+          "note": "phone-app remote AND the BT remote's mic bridge: re-enable with katniss for voice (tested, AP unit)"
         },
         {
           "pkg": "com.google.android.tts",
@@ -198,6 +198,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/tcl-40s5400a/debloat.txt",
-    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+    "commit": "76a9312cd9ac378fc8698f31427805af32c6f965"
   }
 }

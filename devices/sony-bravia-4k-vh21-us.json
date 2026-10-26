@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "sony-bravia-4k-vh21-us",
+  "name": "Sony BRAVIA 4K VH21",
+  "tested": {
+    "os": "Android 12",
+    "sdk": 31,
+    "build": "BRAVIA_VH21_M_UC-user"
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "ACR viewing tracker",
+      "packages": [
+        {
+          "pkg": "tv.samba.ssm",
+          "note": "Samba TV fingerprints what's on screen"
+        },
+        {
+          "pkg": "tv.samba.ssm.ui"
+        }
+      ]
+    },
+    {
+      "title": "telemetry and remote support",
+      "packages": [
+        {
+          "pkg": "com.qterics.da.product",
+          "note": "Qterics device agent"
+        },
+        {
+          "pkg": "com.sony.dtv.da.service",
+          "note": "remote-support session service"
+        },
+        {
+          "pkg": "com.sonyericsson.idd.agent",
+          "note": "Sony IDD usage-data agent"
+        },
+        {
+          "pkg": "com.sony.dtv.sonybugreportsys"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        }
+      ]
+    },
+    {
+      "title": "demo / shop mode",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.demosupport"
+        },
+        {
+          "pkg": "com.sony.dtv.demosystemsupport"
+        },
+        {
+          "pkg": "com.sony.dtv.multiscreendemo"
+        }
+      ]
+    },
+    {
+      "title": "Sony promotions (enabled at the factory on the US set)",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.promos"
+        },
+        {
+          "pkg": "com.sony.dtv.sonyselect",
+          "note": "Sony Select app recommendations"
+        }
+      ]
+    },
+    {
+      "title": "Help tiles",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.customersupport"
+        },
+        {
+          "pkg": "com.sony.dtv.smarthelp"
+        }
+      ]
+    },
+    {
+      "title": "Google TV setup wizard: with launcherx disabled its RecoveryActivity (HOME priority 1) outranks",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/sony-bravia-4k-vh21-us/debloat.txt",
+    "commit": "76a9312cd9ac378fc8698f31427805af32c6f965"
+  }
+}

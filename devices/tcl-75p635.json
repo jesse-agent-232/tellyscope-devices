@@ -1,0 +1,146 @@
+{
+  "schema": 1,
+  "id": "tcl-75p635",
+  "name": "TCL 75P635",
+  "tested": {
+    "os": "Android TV 11",
+    "sdk": 30,
+    "build": "RP1A.200622.001"
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "Google TV home and setup",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.launcherx",
+          "note": "launcher/build-and-install.sh disables it after the new launcher starts",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "TCL telemetry and crash reporting",
+      "packages": [
+        {
+          "pkg": "com.tcl.guard"
+        }
+      ]
+    },
+    {
+      "title": "TCL ads, content feeds and promos",
+      "packages": [
+        {
+          "pkg": "com.tcl.waterfall.overseas"
+        },
+        {
+          "pkg": "com.tcl.partnercustomizer"
+        },
+        {
+          "pkg": "com.tcl.esticker"
+        },
+        {
+          "pkg": "com.tcl.channelplus"
+        },
+        {
+          "pkg": "com.tcl.messagebox"
+        },
+        {
+          "pkg": "com.tcl.notereminder",
+          "note": "resets after reboot on this firmware; re-disable manually"
+        },
+        {
+          "pkg": "com.tcl.dashboard"
+        },
+        {
+          "pkg": "com.tcl.usercenter"
+        },
+        {
+          "pkg": "com.tcl.tv.tclhome_passive"
+        },
+        {
+          "pkg": "com.tcl.gallery"
+        }
+      ]
+    },
+    {
+      "title": "TCL background services",
+      "packages": [
+        {
+          "pkg": "com.tcl.suspension",
+          "note": "private-listening feature; not used"
+        },
+        {
+          "pkg": "com.tcl.t_solo",
+          "note": "private-listening companion"
+        },
+        {
+          "pkg": "com.tcl.keyhelp"
+        },
+        {
+          "pkg": "com.tcl.ui_mediaCenter"
+        },
+        {
+          "pkg": "com.tcl.android.webview",
+          "note": "TCL WebView wrapper; not the system WebView provider"
+        },
+        {
+          "pkg": "com.tcl.useragreement"
+        },
+        {
+          "pkg": "com.tcl.MultiScreenInteraction_TV",
+          "note": "screen mirroring via TCL app (phone casting via Miracast kept)"
+        }
+      ]
+    },
+    {
+      "title": "Voice assistant — off by choice",
+      "packages": [
+        {
+          "pkg": "com.tcl.assistant"
+        }
+      ]
+    },
+    {
+      "title": "Google extras / preload configuration",
+      "packages": [
+        {
+          "pkg": "android.autoinstalls.config.google.gtvpai"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.videos"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar"
+        },
+        {
+          "pkg": "com.google.android.marvin.talkback",
+          "note": "screen reader; no accessibility service was active"
+        }
+      ]
+    },
+    {
+      "title": "Unused streaming apps — off by choice",
+      "packages": [
+        {
+          "pkg": "de.sky.online"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tcl-75p635/debloat.txt",
+    "commit": "76a9312cd9ac378fc8698f31427805af32c6f965"
+  }
+}

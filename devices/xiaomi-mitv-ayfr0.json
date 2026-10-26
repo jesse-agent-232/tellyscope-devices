@@ -31,6 +31,42 @@
       ]
     },
     {
+      "title": "Privacy Sandbox ad APIs, on-device personalisation and federated learning",
+      "packages": [
+        {
+          "pkg": "com.android.adservices.api"
+        },
+        {
+          "pkg": "com.android.ondevicepersonalization.services"
+        },
+        {
+          "pkg": "com.android.federatedcompute.services"
+        }
+      ]
+    },
+    {
+      "title": "Health Connect, which nothing on a stick uses",
+      "packages": [
+        {
+          "pkg": "com.android.healthconnect.controller"
+        },
+        {
+          "pkg": "com.android.health.connect.backuprestore"
+        }
+      ]
+    },
+    {
+      "title": "Contacts and calendar sync, unused on a stick",
+      "packages": [
+        {
+          "pkg": "com.android.providers.contacts"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar"
+        }
+      ]
+    },
+    {
       "title": "PatchWall, content rows, promos, auto-installs",
       "packages": [
         {
@@ -46,7 +82,9 @@
           "pkg": "com.xm.webcontent"
         },
         {
-          "pkg": "com.google.android.tvrecommendations"
+          "pkg": "com.google.android.tvrecommendations",
+          "note": "re-enabled by com.droidlogic on every boot, see the header",
+          "optional": true
         },
         {
           "pkg": "android.autoinstalls.config.soc.amlogic"
@@ -75,6 +113,10 @@
           "pkg": "com.netflix.ninja"
         },
         {
+          "pkg": "com.netflix.tokenmanager",
+          "note": "Netflix's sign-in helper, unused with Netflix disabled"
+        },
+        {
           "pkg": "com.amazon.amazonvideo.livingroom"
         },
         {
@@ -94,6 +136,10 @@
         },
         {
           "pkg": "com.android.printspooler"
+        },
+        {
+          "pkg": "com.google.android.backdrop",
+          "note": "Ambient Mode screensaver; the Mi screensaver (com.mitv.dream) stays"
         }
       ]
     },
@@ -110,6 +156,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/xiaomi-mitv-ayfr0/debloat.txt",
-    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+    "commit": "76a9312cd9ac378fc8698f31427805af32c6f965"
   }
 }

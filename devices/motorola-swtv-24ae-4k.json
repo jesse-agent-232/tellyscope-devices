@@ -1,0 +1,173 @@
+{
+  "schema": 1,
+  "id": "motorola-swtv-24ae-4k",
+  "name": "Motorola SWTV-24AE-4K",
+  "tested": {
+    "os": "Google TV 14",
+    "sdk": 34,
+    "build": "UKN7.260716.014"
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Skyworth telemetry and activation",
+      "packages": [
+        {
+          "pkg": "com.smartdevice.recordactivation",
+          "note": "records first activation, phones home on boot"
+        },
+        {
+          "pkg": "com.smartdevice.aftersale",
+          "note": "\"after-sale\" service: boot + network receivers, can install APKs"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.android.tv.feedbackconsent"
+        }
+      ]
+    },
+    {
+      "title": "Android ad and personalisation services",
+      "packages": [
+        {
+          "pkg": "com.android.adservices.api"
+        },
+        {
+          "pkg": "com.android.ondevicepersonalization.services"
+        },
+        {
+          "pkg": "com.android.federatedcompute.services"
+        }
+      ]
+    },
+    {
+      "title": "Skyworth content rows and analytics",
+      "packages": [
+        {
+          "pkg": "com.smartdevice.recommendation",
+          "note": "promo rows on home, bundles Sensors Data analytics"
+        },
+        {
+          "pkg": "com.smartdevice.leanbacklauncher.customizer",
+          "note": "partner config that injects sponsored rows into the home screen"
+        }
+      ]
+    },
+    {
+      "title": "Not needed on a TV",
+      "packages": [
+        {
+          "pkg": "com.Smartdevice.emanual",
+          "note": "on-screen manual"
+        },
+        {
+          "pkg": "com.android.healthconnect.controller"
+        },
+        {
+          "pkg": "com.android.health.connect.backuprestore"
+        },
+        {
+          "pkg": "com.smartdevice.dailymanage",
+          "note": "TV Guard / cleaner"
+        },
+        {
+          "pkg": "com.smartdevice.myapp",
+          "note": "Skyworth app manager"
+        },
+        {
+          "pkg": "com.google.android.play.games",
+          "note": "Google Play Games"
+        },
+        {
+          "pkg": "tv.mopa.ginga",
+          "note": "Brazilian Ginga interactive TV, not used in India"
+        },
+        {
+          "pkg": "org.obs.mhegservice",
+          "note": "UK MHEG interactive TV, not used in India"
+        }
+      ]
+    },
+    {
+      "title": "Ask the owner first: these depend on what is used. Uncomment only what the owner does NOT use.",
+      "packages": [
+        {
+          "pkg": "com.audiocn.karaoke.global.micmanager",
+          "note": "karaoke microphone manager",
+          "optional": true
+        },
+        {
+          "pkg": "com.loostone.tuning",
+          "note": "karaoke microphone tuning",
+          "optional": true
+        },
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom",
+          "note": "Prime Video",
+          "optional": true
+        },
+        {
+          "pkg": "com.netflix.ninja",
+          "note": "Netflix; the firmware turns it back on at every boot (see above)",
+          "optional": true
+        },
+        {
+          "pkg": "com.netflix.tokenmanager",
+          "note": "Netflix sign-in helper, goes with Netflix",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic",
+          "note": "YouTube Music",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google Assistant: the remote's mic button stops working",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Chromecast built-in (cast from a phone)",
+          "optional": true
+        },
+        {
+          "pkg": "com.mediatek.dialservice",
+          "note": "DIAL, used with Chromecast to start apps from a phone",
+          "optional": true
+        },
+        {
+          "pkg": "com.smartdevice.dtv.icast",
+          "note": "screen mirroring (Miracast / DLNA)",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.apps.tv.dreamx",
+          "note": "Google screensaver / Ambient mode",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Stock Google TV home and setup wizard",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith",
+          "note": "setup wizard; re-enable it before a factory reset"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.launcherx",
+          "note": "stock Google TV launcher"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/motorola-swtv-24ae-4k/debloat.txt",
+    "commit": "76a9312cd9ac378fc8698f31427805af32c6f965"
+  }
+}

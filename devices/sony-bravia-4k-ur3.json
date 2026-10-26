@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "id": "sony-bravia-4k-ur3",
-  "name": "Sony BRAVIA 4K UR3",
+  "name": "Sony BRAVIA 4K UR3 / KD-55X8000H",
   "tested": {
     "os": "Android 10",
     "sdk": 29,
@@ -27,7 +27,8 @@
           "pkg": "com.sonyericsson.idd.agent"
         },
         {
-          "pkg": "com.sony.dtv.promos"
+          "pkg": "com.sony.dtv.promos",
+          "note": "EU build; absent on TW (KD-55X8000H)"
         },
         {
           "pkg": "com.sony.dtv.sonyselect"
@@ -38,6 +39,10 @@
         },
         {
           "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.tv.bugreportsender",
+          "note": "confirmed on TW (KD-55X8000H)"
         }
       ]
     },
@@ -87,6 +92,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/sony-bravia-4k-ur3/debloat.txt",
-    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+    "commit": "76a9312cd9ac378fc8698f31427805af32c6f965"
   }
 }

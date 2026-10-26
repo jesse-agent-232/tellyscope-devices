@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "id": "dyon-2k-android-tv",
+  "name": "DYON 2K Android TV",
+  "tested": {
+    "os": "Android TV 11",
+    "sdk": 30,
+    "build": "RTO8.250915.001"
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Viewing data, ads and auto-installs",
+      "packages": [
+        {
+          "pkg": "tv.anoki.acr.controller",
+          "note": "Anoki ACR: recognises what is on screen, persistent, boot receiver"
+        },
+        {
+          "pkg": "android.autoinstalls.config.JVC",
+          "note": "Play auto-installs of partner apps"
+        },
+        {
+          "pkg": "com.google.android.leanbacklauncher.partnercustomizer",
+          "note": "partner rows and channels in the stock launcher"
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations",
+          "note": "recommendation rows"
+        }
+      ]
+    },
+    {
+      "title": "Telemetry and services not needed on a TV",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.android.printspooler"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps, off by choice",
+      "packages": [
+        {
+          "pkg": "com.cltv.fast",
+          "note": "StreamTV, iWedia free streaming channels (FAST), not the tuner"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic",
+          "note": "YouTube Music"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google TV / Play Filme"
+        },
+        {
+          "pkg": "com.google.android.play.games",
+          "note": "Play Games"
+        },
+        {
+          "pkg": "com.mobisystems.fileman",
+          "note": "File Commander"
+        },
+        {
+          "pkg": "com.zdf.android.mediathek",
+          "note": "ZDF Mediathek (preinstalled for Germany)"
+        },
+        {
+          "pkg": "de.rtli.tvnow",
+          "note": "RTL+ (preinstalled for Germany)"
+        }
+      ]
+    },
+    {
+      "title": "Google extras, off by choice",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Assistant and voice search: the remote's mic button stops working"
+        },
+        {
+          "pkg": "com.google.android.tv.remote.service",
+          "note": "phone-as-remote (Google TV app)"
+        },
+        {
+          "pkg": "com.google.android.backdrop",
+          "note": "Ambient Mode screensaver"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/dyon-2k-android-tv/debloat.txt",
+    "commit": "76a9312cd9ac378fc8698f31427805af32c6f965"
+  }
+}

@@ -84,7 +84,7 @@
       "packages": [
         {
           "pkg": "com.mediatek.airplaydaemon",
-          "note": "AirPlay daemon; the AirplayAPK frontend is not on this firmware"
+          "note": "AirPlay daemon; keep it for AirPlay if com.mediatek.AirplayAPK is there"
         },
         {
           "pkg": "com.mediatek.backgrounddetection"
@@ -115,32 +115,47 @@
       ]
     },
     {
-      "title": "AS36 only (second unit), disabled there on 25 Oct 2026 with nothing missed after a reboot - one day, so left",
+      "title": "On the AS36 set and the French AS34 set, not on the first one. Disabled on both (one day on AS36, three on",
       "packages": [
         {
           "pkg": "com.tcl.channelplus",
-          "note": "TCL Live FAST channels",
-          "optional": true
+          "note": "TCL Live FAST channels"
         },
         {
           "pkg": "com.tcl.esticker",
-          "note": "retail-demo sticker",
-          "optional": true
+          "note": "retail-demo sticker"
         },
         {
           "pkg": "com.tcl.usercenter",
-          "note": "TCL account sign-in nags",
-          "optional": true
+          "note": "TCL account sign-in nags"
         },
         {
           "pkg": "com.tcl.waterfall.overseas",
-          "note": "TCL movie/show recommendation browser",
-          "optional": true
+          "note": "TCL movie/show recommendation browser"
         },
         {
           "pkg": "com.tcl.guard",
-          "note": "TCL \"cleaner\" / app manager",
+          "note": "TCL \"cleaner\" / app manager. Disabled on the AS34 set, the system tried to",
           "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Google extras, disabled on the third unit (three days, reboots included)",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "bug-report / feedback sender"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar"
+        },
+        {
+          "pkg": "com.google.android.onetimeinitializer",
+          "note": "runs once at first setup, nothing afterwards"
+        },
+        {
+          "pkg": "com.google.android.play.games"
         }
       ]
     },
@@ -157,6 +172,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/tcl-g08-eu-android12/debloat.txt",
-    "commit": "baadd07a7d095cc3ea72e6ccb615987bf1fb97c4"
+    "commit": "76a9312cd9ac378fc8698f31427805af32c6f965"
   }
 }

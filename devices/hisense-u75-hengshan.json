@@ -130,6 +130,39 @@
       ]
     },
     {
+      "title": "75U75N owner's choices, all reversible: apps that unit's owner does not use",
+      "packages": [
+        {
+          "pkg": "com.vt.tv.mobiledeviceconnectiontips",
+          "note": "Miracast screen mirroring (codePath Miracast); Chromecast and AirPlay kept"
+        },
+        {
+          "pkg": "com.vt.tv.mediacenter",
+          "note": "Media Center: USB and DLNA file player"
+        },
+        {
+          "pkg": "com.vt.tv.dlna",
+          "note": "DLNA renderer"
+        },
+        {
+          "pkg": "com.vt.tv.singlelisten",
+          "note": "MyMusic"
+        },
+        {
+          "pkg": "com.vt.roomcalibration",
+          "note": "room audio calibration prompt (RoomCalibration)"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic",
+          "note": "YouTube Music"
+        },
+        {
+          "pkg": "com.google.android.play.games",
+          "note": "Google Play Games"
+        }
+      ]
+    },
+    {
       "title": "Launcher phase only. Google TV's setup wizard also claims android.intent.category.HOME (priority 1,",
       "packages": [
         {
@@ -141,6 +174,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/hisense-u75-hengshan/debloat.txt",
-    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+    "commit": "76a9312cd9ac378fc8698f31427805af32c6f965"
   }
 }

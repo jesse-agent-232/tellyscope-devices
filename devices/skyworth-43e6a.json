@@ -1,0 +1,199 @@
+{
+  "schema": 1,
+  "id": "skyworth-43e6a",
+  "name": "Skyworth 43E6A",
+  "tested": {
+    "os": "Android TV 8.0",
+    "sdk": 26,
+    "build": "OPN.MP02.1"
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Home screen recommendation rows and sponsored content",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvrecommendations"
+        },
+        {
+          "pkg": "com.google.android.leanbacklauncher.recommendations"
+        },
+        {
+          "pkg": "com.google.android.leanbacklauncher.partnercustomizer",
+          "note": "manufacturer row on the stock home"
+        }
+      ]
+    },
+    {
+      "title": "Google feedback and bug reports",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.tv.bugreportsender"
+        }
+      ]
+    },
+    {
+      "title": "Skyworth retail and preload",
+      "packages": [
+        {
+          "pkg": "com.smartdevice.demonow",
+          "note": "in-store demo mode"
+        },
+        {
+          "pkg": "com.skyworth.emanual",
+          "note": "electronic manual"
+        }
+      ]
+    },
+    {
+      "title": "MediaTek remote diagnostics agents",
+      "packages": [
+        {
+          "pkg": "com.mediatek.dmagent"
+        },
+        {
+          "pkg": "com.mediatek.agent"
+        }
+      ]
+    },
+    {
+      "title": "Google extras the launcher does not need",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvtutorials",
+          "note": "onboarding tips"
+        },
+        {
+          "pkg": "com.google.android.backdrop",
+          "note": "stock screensaver, see the header"
+        },
+        {
+          "pkg": "com.google.android.sss",
+          "note": "set-up-from-phone helper"
+        }
+      ]
+    },
+    {
+      "title": "Streaming and media apps",
+      "packages": [
+        {
+          "pkg": "com.google.android.youtube.tv"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Play Movies"
+        },
+        {
+          "pkg": "com.google.android.music",
+          "note": "Play Music"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.mediatek.partner.netflix",
+          "note": "Netflix button helper; Netflix itself is not preinstalled"
+        },
+        {
+          "pkg": "com.mediatek.wwtv.mediaplayer",
+          "note": "USB media player"
+        }
+      ]
+    },
+    {
+      "title": "Chromecast built-in (skip to keep casting)",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.mediashell"
+        }
+      ]
+    },
+    {
+      "title": "Voice assistant (removes the remote's mic search; skip these three to keep it)",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss"
+        },
+        {
+          "pkg": "com.google.android.speech.pumpkin"
+        },
+        {
+          "pkg": "com.google.android.tts",
+          "note": "text-to-speech"
+        }
+      ]
+    },
+    {
+      "title": "Phone remote, backup and sync",
+      "packages": [
+        {
+          "pkg": "com.google.android.tv.remote.service",
+          "note": "Android TV Remote app on a phone"
+        },
+        {
+          "pkg": "com.google.android.backuptransport"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.contacts"
+        },
+        {
+          "pkg": "com.google.android.partnersetup"
+        },
+        {
+          "pkg": "com.android.providers.calendar"
+        }
+      ]
+    },
+    {
+      "title": "Unused system extras",
+      "packages": [
+        {
+          "pkg": "com.android.dreams.basic",
+          "note": "\"Colors\" screensaver"
+        },
+        {
+          "pkg": "com.android.printspooler"
+        },
+        {
+          "pkg": "com.android.gallery3d"
+        },
+        {
+          "pkg": "com.google.android.marvin.talkback",
+          "note": "screen reader"
+        }
+      ]
+    },
+    {
+      "title": "Extra keyboard languages (Gboard itself stays)",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.inputmethod.hindi"
+        },
+        {
+          "pkg": "com.google.android.apps.inputmethod.zhuyin"
+        },
+        {
+          "pkg": "com.google.android.inputmethod.japanese"
+        },
+        {
+          "pkg": "com.google.android.inputmethod.korean"
+        },
+        {
+          "pkg": "com.google.android.inputmethod.pinyin"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/skyworth-43e6a/debloat.txt",
+    "commit": "76a9312cd9ac378fc8698f31427805af32c6f965"
+  }
+}
