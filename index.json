@@ -2,7 +2,7 @@
   "schema": 1,
   "source": {
     "repo": "Gathin23/cleanyourtv",
-    "commit": "57733360177173c880a023380a864114a03feb25"
+    "commit": "d043b6f90e6132f9bd9b4b652da1f43640d1f0b7"
   },
   "devices": [
     {
@@ -164,6 +164,14 @@
       "sdk": 30,
       "file": "devices/benq-e55-750.json",
       "sha256": "1a9ffe6039830062d1ee9efc56cf4fba3550ff1b89a8f8aeec512937c29fe239"
+    },
+    {
+      "id": "benq-e55-760",
+      "name": "BenQ E55-760",
+      "match": null,
+      "sdk": 34,
+      "file": "devices/benq-e55-760.json",
+      "sha256": "7c73760293202cfe7b4b75f173e3340e0a50139c2d5b9c94c31fa75c39f32e2e"
     },
     {
       "id": "benq-gv32",
@@ -534,6 +542,14 @@
       "sha256": "ad4a2380b3ac18eff293763b95d3f7e6ac4e952a111eaae0a1700d3969a57bdb"
     },
     {
+      "id": "homeplus-stb-6252c",
+      "name": "Home+",
+      "match": null,
+      "sdk": 30,
+      "file": "devices/homeplus-stb-6252c.json",
+      "sha256": "54f1633b9f3f6e16ea5d4d9c8c58a2cf33f335880a1429c92adbd630f3d8ccb5"
+    },
+    {
       "id": "hotack-smart2kpjt",
       "name": "HOTACK SMART2KPJT projector",
       "match": null,
@@ -795,7 +811,7 @@
       "match": null,
       "sdk": 29,
       "file": "devices/oneplus-tv-cebu.json",
-      "sha256": "892340e5c31b1147ca4d6ae598fc5f3a5b65047794eddb294c17a149c8141892"
+      "sha256": "bffa5059aacf3ad0eb3ad3cf0fce9f7a20839a1f1efdf4bdc7b5f70c0a843327"
     },
     {
       "id": "oneplus-tv-dosa",
@@ -958,6 +974,14 @@
       "sdk": 31,
       "file": "devices/philips-55oled708.json",
       "sha256": "287744f8eec4de99200c8d05074d7d29d15144cd1b302e55858384f4349da243"
+    },
+    {
+      "id": "philips-55oled820",
+      "name": "Philips 55OLED820/12",
+      "match": null,
+      "sdk": 34,
+      "file": "devices/philips-55oled820.json",
+      "sha256": "aa880118f488b81dec7d5faa2da1a183701c9407c3c5465bdc1c851e2dd8a7a9"
     },
     {
       "id": "philips-55pus7503",
@@ -1126,6 +1150,14 @@
       "sdk": 28,
       "file": "devices/redmi-mitv-mftp0.json",
       "sha256": "94034ce14241c5e22c4c7be12a1152268739d75367379ea9cc6710879b1d0de7"
+    },
+    {
+      "id": "redmi-mitv-mooq3",
+      "name": "Redmi TV 43\"",
+      "match": null,
+      "sdk": null,
+      "file": "devices/redmi-mitv-mooq3.json",
+      "sha256": "7443f677f1c82948e9dc96811125e1b7644fffc3fcc6584a8ed90056d828dc39"
     },
     {
       "id": "rocktek-gb1",
@@ -1757,7 +1789,7 @@
       "match": null,
       "sdk": 34,
       "file": "devices/tcl-43s5k.json",
-      "sha256": "1eb446e3553ed0cbfb06d2a52f17fd4845a9a3f50b76b167bc9466e27ec05b42"
+      "sha256": "c463de66169f5f459935bd9b954d6acff00639bbf49020ead34fc32b9a8993f3"
     },
     {
       "id": "tcl-50c725k",
@@ -1998,6 +2030,14 @@
       "sdk": 30,
       "file": "devices/tcl-65q650g.json",
       "sha256": "82edd0015935c21e6733245236a1d20f10a573dc0ba8c01d4228740d724d00d2"
+    },
+    {
+      "id": "tcl-65qm8l-google-tv",
+      "name": "TCL 65QM8L Google TV",
+      "match": null,
+      "sdk": null,
+      "file": "devices/tcl-65qm8l-google-tv.json",
+      "sha256": "77b18efab754131c3a6bcfbef1636c62ab60ba8f573a64cf8ac8055185066385"
     },
     {
       "id": "tcl-65x10",
@@ -2304,6 +2344,14 @@
       "sha256": "c26c64c01cb2d586a1594428e6a9359ec9ce05bcdd419b4bb2efbedbad704605"
     },
     {
+      "id": "toshiba-65ua2363dg",
+      "name": "Toshiba 65UA2363DG",
+      "match": null,
+      "sdk": 34,
+      "file": "devices/toshiba-65ua2363dg.json",
+      "sha256": "0082598f99dcc36518be454f521bee753e387ae92df20ac0fbc8ee8f9aa89c46"
+    },
+    {
       "id": "toshiba-cosmos-android-tv",
       "name": "Toshiba",
       "match": null,
@@ -2397,7 +2445,7 @@
       "match": null,
       "sdk": 34,
       "file": "devices/wanbo-x5-pro.json",
-      "sha256": "6d2b5df8bd27575ee4d2030bb3e1ecb989dee64618a2bfca9df7d6b4994215b1"
+      "sha256": "bf8862a6383e072148928902e570c294075d6a54b3479985c24d180faa48a4de"
     },
     {
       "id": "xgimi-horizon-s-pro",

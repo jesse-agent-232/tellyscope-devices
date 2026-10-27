@@ -98,11 +98,38 @@
           "optional": true
         }
       ]
+    },
+    {
+      "title": "Indonesian 32V51C only: present on that unit and disabled there; check they exist on yours first.",
+      "packages": [
+        {
+          "pkg": "com.tcl.guard",
+          "note": "TGuard: TCL cleaner and app manager, starts at boot (BootStartReceiver)",
+          "optional": true
+        },
+        {
+          "pkg": "fusion.android.tv.demo",
+          "note": "store demo player",
+          "optional": true
+        },
+        {
+          "pkg": "com.android.adservices.api",
+          "optional": true
+        },
+        {
+          "pkg": "com.android.ondevicepersonalization.services",
+          "optional": true
+        },
+        {
+          "pkg": "com.android.federatedcompute.services",
+          "optional": true
+        }
+      ]
     }
   ],
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/tcl-43s5k/debloat.txt",
-    "commit": "baadd07a7d095cc3ea72e6ccb615987bf1fb97c4"
+    "commit": "d043b6f90e6132f9bd9b4b652da1f43640d1f0b7"
   }
 }

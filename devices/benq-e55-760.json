@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "id": "benq-e55-760",
+  "name": "BenQ E55-760",
+  "tested": {
+    "os": "Android 14",
+    "sdk": 34,
+    "build": null
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Changhong / Homwee store and help",
+      "packages": [
+        {
+          "pkg": "com.homwee.store"
+        },
+        {
+          "pkg": "com.homwee.help"
+        }
+      ]
+    },
+    {
+      "title": "Automatic content recognition (reports what is on screen)",
+      "packages": [
+        {
+          "pkg": "tv.anoki.acr.anokiacroptin"
+        }
+      ]
+    },
+    {
+      "title": "Broadcast middleware for markets this set is not sold in",
+      "packages": [
+        {
+          "pkg": "tv.mopa.ginga",
+          "note": "Ginga, Brazilian DTV"
+        },
+        {
+          "pkg": "org.obs.mhegservice",
+          "note": "MHEG-5, UK/Irish DTV"
+        }
+      ]
+    },
+    {
+      "title": "Google TV recommendations and screensaver (set another screensaver first)",
+      "packages": [
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google TV app, the home screen's recommendation source"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.dreamx",
+          "note": "ambient mode; mixes recommendations into the screensaver"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        }
+      ]
+    },
+    {
+      "title": "Apps this home does not use (by choice; keep the ones you use)",
+      "packages": [
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        },
+        {
+          "pkg": "com.gdch.wwtv.mediaplayer",
+          "note": "USB media player; needs TVINPUT_ALLOW=1, see header"
+        }
+      ]
+    },
+    {
+      "title": "Stock home. Disable only after the new launcher is installed and set as home.",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith",
+          "note": "its RecoveryActivity otherwise takes over Home"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.launcherx",
+          "note": "LEFT ENABLED on this set, on purpose - see the header:",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/benq-e55-760/debloat.txt",
+    "commit": "d043b6f90e6132f9bd9b4b652da1f43640d1f0b7"
+  }
+}

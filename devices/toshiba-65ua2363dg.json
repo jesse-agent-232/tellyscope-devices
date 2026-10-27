@@ -1,0 +1,133 @@
+{
+  "schema": 1,
+  "id": "toshiba-65ua2363dg",
+  "name": "Toshiba 65UA2363DG",
+  "tested": {
+    "os": "Android TV 14",
+    "sdk": 34,
+    "build": null
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Vestel telemetry, logging and \"cleaner\"",
+      "packages": [
+        {
+          "pkg": "com.vestel.vestelreporter",
+          "note": "Vestel reporter: INTERNET + BOOT_COMPLETED, no UI"
+        },
+        {
+          "pkg": "com.vestel.smartlogger",
+          "note": "Vestel logging service"
+        },
+        {
+          "pkg": "com.vestel.tv.speedup",
+          "note": "\"speed up\" cleaner, holds READ_LOGS + DUMP + INTERNET"
+        },
+        {
+          "pkg": "com.vestel.smartcenter",
+          "note": "no UI, holds GET_TASKS (sees which apps you run) + INTERNET"
+        }
+      ]
+    },
+    {
+      "title": "Google ads, personalisation and feedback",
+      "packages": [
+        {
+          "pkg": "com.android.adservices.api",
+          "note": "Privacy Sandbox ad services"
+        },
+        {
+          "pkg": "com.android.ondevicepersonalization.services",
+          "note": "on-device ad personalisation"
+        },
+        {
+          "pkg": "com.android.federatedcompute.services",
+          "note": "federated learning for the above"
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "partner/OEM attribution"
+        },
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "Google feedback reporter"
+        },
+        {
+          "pkg": "com.android.tv.feedbackconsent",
+          "note": "feedback consent prompts"
+        }
+      ]
+    },
+    {
+      "title": "Dead weight on a TV",
+      "packages": [
+        {
+          "pkg": "com.android.healthconnect.controller",
+          "note": "Health Connect"
+        },
+        {
+          "pkg": "com.android.health.connect.backuprestore",
+          "note": "Health Connect backup"
+        },
+        {
+          "pkg": "com.android.managedprovisioning",
+          "note": "enterprise work-profile provisioning"
+        },
+        {
+          "pkg": "com.android.dynsystem",
+          "note": "Dynamic System Updates"
+        },
+        {
+          "pkg": "com.android.cts.ctsshim",
+          "note": "Android test shim"
+        },
+        {
+          "pkg": "com.android.cts.priv.ctsshim",
+          "note": "Android test shim"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar",
+          "note": "calendar sync"
+        },
+        {
+          "pkg": "com.android.settings.intelligence",
+          "note": "the search box inside Settings; the menus keep working"
+        },
+        {
+          "pkg": "com.android.se",
+          "note": "Secure Element (eSIM, NFC payments); no such radio here"
+        }
+      ]
+    },
+    {
+      "title": "Only safe once com.gathin.tvhome owns Home and com.google.android.tvlauncher is disabled",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvrecommendations",
+          "note": "launcher recommendation rows"
+        },
+        {
+          "pkg": "com.google.android.backdrop",
+          "note": "ambient screensaver. Point the screensaver at the launcher's clock"
+        }
+      ]
+    },
+    {
+      "title": "Stock launcher, replaced by launcher/",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvlauncher",
+          "note": "launcher/build-and-install.sh disables the stock launcher itself, after Home has moved",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/toshiba-65ua2363dg/debloat.txt",
+    "commit": "d043b6f90e6132f9bd9b4b652da1f43640d1f0b7"
+  }
+}

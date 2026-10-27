@@ -1,0 +1,150 @@
+{
+  "schema": 1,
+  "id": "philips-55oled820",
+  "name": "Philips 55OLED820/12",
+  "tested": {
+    "os": "Google TV 14",
+    "sdk": 34,
+    "build": "3000518"
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "TP Vision and Philips telemetry",
+      "packages": [
+        {
+          "pkg": "tv.samba.ssm",
+          "note": "Samba TV ACR (what is on screen, for ad targeting); sent only about 33 kB in 44 h on this unit, but it has no use here"
+        },
+        {
+          "pkg": "org.droidtv.amazonalexa",
+          "note": "Alexa bridge"
+        }
+      ]
+    },
+    {
+      "title": "Google telemetry, feedback and ad APIs",
+      "packages": [
+        {
+          "pkg": "com.android.adservices.api",
+          "note": "Privacy Sandbox ad APIs"
+        },
+        {
+          "pkg": "com.android.ondevicepersonalization.services",
+          "note": "on-device ad personalisation"
+        },
+        {
+          "pkg": "com.android.federatedcompute.services",
+          "note": "federated learning for personalisation"
+        },
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "Market Feedback Agent"
+        },
+        {
+          "pkg": "com.android.tv.feedbackconsent",
+          "note": "feedback consent collector"
+        }
+      ]
+    },
+    {
+      "title": "Promos and sync nobody uses",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.tv.dreamx",
+          "note": "Google ambient screensaver and Google Home panel"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar",
+          "note": "synced a Google calendar to the TV every day; no calendar app is installed"
+        },
+        {
+          "pkg": "com.tpv.nftgallery",
+          "note": "\"NFT Collection\" art gallery app"
+        }
+      ]
+    },
+    {
+      "title": "Preinstalled apps that were never used on this unit. All sit in /data/app.",
+      "packages": [
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom",
+          "note": "Prime Video"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic",
+          "note": "YouTube Music"
+        },
+        {
+          "pkg": "com.google.android.play.games",
+          "note": "Play Games"
+        },
+        {
+          "pkg": "com.netflix.ninja",
+          "note": "Netflix; the Netflix key on the remote now does nothing"
+        },
+        {
+          "pkg": "com.netflix.tokenmanager",
+          "note": "Netflix token manager, goes with the app"
+        }
+      ]
+    },
+    {
+      "title": "Level not applied yet on this unit, listed as comments so the next person knows what was found.",
+      "packages": [
+        {
+          "pkg": "org.droidtv.candeebug",
+          "note": "16: \"DAC\" analytics uploader, 22 TV processes bind it",
+          "optional": true
+        },
+        {
+          "pkg": "org.droidtv.gel",
+          "note": "metrics collector in candeebug's process, 464 alarms in 44 h; disable both",
+          "optional": true
+        },
+        {
+          "pkg": "org.droidtv.control4app",
+          "note": "4 Control4 packages, about 16 MB together",
+          "optional": true
+        },
+        {
+          "pkg": "com.phorus.playfi.tv",
+          "note": "18 (+3 for .softap): Play-Fi; keep org.droidtv.tv.playFiAudioService",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "74 across two processes: kills the remote's mic key and voice search",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "User apps uninstalled on this unit with `pm uninstall` (this repo only disables, so they are not listed)",
+      "packages": [
+        {
+          "pkg": "com.disney.disneyplus",
+          "optional": true
+        },
+        {
+          "pkg": "com.iqiyi.i18n.tv",
+          "optional": true
+        },
+        {
+          "pkg": "com.wbd.stream",
+          "optional": true
+        },
+        {
+          "pkg": "com.spotify.tv.android",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/philips-55oled820/debloat.txt",
+    "commit": "d043b6f90e6132f9bd9b4b652da1f43640d1f0b7"
+  }
+}

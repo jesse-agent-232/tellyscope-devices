@@ -11,7 +11,7 @@
   "keep": [],
   "groups": [
     {
-      "title": "Telemetry and remote management",
+      "title": "Telemetry, partner setup and remote management",
       "packages": [
         {
           "pkg": "com.google.android.feedback",
@@ -20,6 +20,18 @@
         {
           "pkg": "com.android.tv.feedbackconsent",
           "note": "feedback consent screen"
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "Google partner setup hook (second unit)"
+        },
+        {
+          "pkg": "com.sdt.customization",
+          "note": "Skyworth partner customization & home channels (second unit)"
+        },
+        {
+          "pkg": "android.autoinstalls.config.AMLSTBAndroid.device",
+          "note": "partner auto-install config (second unit)"
         },
         {
           "pkg": "com.oemservice",
@@ -88,7 +100,19 @@
           "pkg": "com.google.android.syncadapters.calendar"
         },
         {
+          "pkg": "com.android.providers.calendar",
+          "note": "calendar storage provider (second unit)"
+        },
+        {
+          "pkg": "com.android.providers.contacts",
+          "note": "contacts storage provider (second unit)"
+        },
+        {
           "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google TV Movies & TV storefront (second unit)"
         }
       ]
     },
@@ -125,6 +149,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/wanbo-x5-pro/debloat.txt",
-    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+    "commit": "d043b6f90e6132f9bd9b4b652da1f43640d1f0b7"
   }
 }

@@ -1,0 +1,137 @@
+{
+  "schema": 1,
+  "id": "tcl-65qm8l-google-tv",
+  "name": "TCL 65QM8L Google TV",
+  "tested": {
+    "os": "Android 14",
+    "sdk": null,
+    "build": null
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "TCL telemetry and analytics",
+      "packages": [
+        {
+          "pkg": "com.tcl.ttvs",
+          "note": "Samba TV ACR viewing tracking, TCL BI analytics"
+        },
+        {
+          "pkg": "com.tcl.logkit",
+          "note": "log capture and upload"
+        },
+        {
+          "pkg": "com.tcl.usercenter",
+          "note": "TCL account sign-in nags"
+        }
+      ]
+    },
+    {
+      "title": "TCL content, ads and promos",
+      "packages": [
+        {
+          "pkg": "com.tcl.channelplus",
+          "note": "TCL Live FAST channels"
+        },
+        {
+          "pkg": "com.tcl.tv.tclhome_passive",
+          "note": "pushes TCL content to the home screen at boot"
+        },
+        {
+          "pkg": "com.tcl.partnercustomizer",
+          "note": "TCL tweaks to Google TV home rows"
+        },
+        {
+          "pkg": "com.tcl.interactive",
+          "note": "TCL TIAS background service"
+        },
+        {
+          "pkg": "com.tcl.messagebox",
+          "note": "TCL push messages and promos"
+        },
+        {
+          "pkg": "com.tcl.dashboard",
+          "note": "TCL message/notification promo hub (MessageExtService + DismissService)"
+        },
+        {
+          "pkg": "com.mirakulo.astrotv.service",
+          "note": "preloaded \"AstroTV\" content service"
+        }
+      ]
+    },
+    {
+      "title": "Retail demo / hotel mode",
+      "packages": [
+        {
+          "pkg": "com.tcl.exhibit",
+          "note": "retail demo"
+        },
+        {
+          "pkg": "com.tcl.esticker",
+          "note": "retail e-sticker overlay"
+        },
+        {
+          "pkg": "com.tcl.hotelmenu",
+          "note": "hotel mode menu"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps and services",
+      "packages": [
+        {
+          "pkg": "com.tcl.ocean.instructions",
+          "note": "e-manual"
+        },
+        {
+          "pkg": "com.tcl.repairguide",
+          "note": "repair guide"
+        },
+        {
+          "pkg": "com.tcl.smartlink.core",
+          "note": "TCL CustomInstallService (silent partner-app installer)"
+        },
+        {
+          "pkg": "android.autoinstalls.config.google.gtvpai",
+          "note": "silently installs partner apps"
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "partner attribution"
+        },
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "Google feedback uploader"
+        },
+        {
+          "pkg": "com.android.tv.feedbackconsent",
+          "note": "feedback consent prompt"
+        },
+        {
+          "pkg": "com.tcl.UpdatePeripheral",
+          "note": "TCL soundbar/speaker firmware updates (no TCL audio gear here)"
+        }
+      ]
+    },
+    {
+      "title": "Launcher handover. Disable these only AFTER launcher/ is installed and set as Home.",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.dreamx"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.launcherx"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tcl-65qm8l-google-tv/debloat.txt",
+    "commit": "d043b6f90e6132f9bd9b4b652da1f43640d1f0b7"
+  }
+}

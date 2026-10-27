@@ -36,6 +36,14 @@
         {
           "pkg": "net.oneplus.odm.provider",
           "note": "its data provider"
+        },
+        {
+          "pkg": "com.heytap.rom.service",
+          "note": "ROM log collector and uploader (ZipLogService, UpLoadLogReceiver); Android 11 firmware only"
+        },
+        {
+          "pkg": "com.heytap.tv.remotecontrolinspect",
+          "note": "Remote-control diagnostics app; Android 11 firmware only"
         }
       ]
     },
@@ -74,6 +82,10 @@
         {
           "pkg": "com.heytap.tv.assistant.oneplus",
           "note": "OnePlus TV Manager (cleaner, bandwidth alerts)"
+        },
+        {
+          "pkg": "com.oneplus.tv.screensaver",
+          "note": "OnePlus screensaver (the system screensaver stays Google's Ambient mode); Android 11 firmware only"
         }
       ]
     },
@@ -175,6 +187,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/oneplus-tv-cebu/debloat.txt",
-    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+    "commit": "d043b6f90e6132f9bd9b4b652da1f43640d1f0b7"
   }
 }

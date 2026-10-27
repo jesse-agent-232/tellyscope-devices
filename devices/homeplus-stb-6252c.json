@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "id": "homeplus-stb-6252c",
+  "name": "Home+",
+  "tested": {
+    "os": "Android TV 11",
+    "sdk": 30,
+    "build": null
+  },
+  "launcher": "com.inspur.isoc.launcher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Ads on the home screen and interstitials",
+      "packages": [
+        {
+          "pkg": "com.inspur.adservice",
+          "note": "CNS_AD: operator ad service, resident BaseService/ADService (system uid)"
+        },
+        {
+          "pkg": "com.litv.interstital",
+          "note": "LiTV interstitial ad SDK (LiAdSDK)"
+        },
+        {
+          "pkg": "com.inspur.cns.ticker",
+          "note": "跑馬燈 FloatTextService: scrolling text overlay fed by DVB DSMCC"
+        }
+      ]
+    },
+    {
+      "title": "Google recommendations / telemetry",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvrecommendations",
+          "note": "recommendation rows + notification panel service (~26 MB resident)"
+        },
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "Google feedback reports"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar",
+          "note": "calendar sync, nothing on the box uses it"
+        }
+      ]
+    },
+    {
+      "title": "Preloads nothing on a TV box needs",
+      "packages": [
+        {
+          "pkg": "com.google.android.play.games",
+          "note": "Play Games"
+        }
+      ]
+    },
+    {
+      "title": "Streaming apps the owner does not use (comment out the ones you watch). All but HBO GO are",
+      "packages": [
+        {
+          "pkg": "com.skysoft.kkbox.android",
+          "note": "KKBOX (base /system/product/app/KKBOX)"
+        },
+        {
+          "pkg": "com.catchplay.asiaplay.common.tv",
+          "note": "CATCHPLAY+"
+        },
+        {
+          "pkg": "com.litv.cable.home",
+          "note": "LiTV"
+        },
+        {
+          "pkg": "net.fetnet.fetvod.tv",
+          "note": "friDay 影音 (base /system/product/app/friDayAPP); the launcher's poster carousel advertises it"
+        },
+        {
+          "pkg": "tv.fourgtv.video",
+          "note": "四季線上 4gTV (base /system/product/app/4gTVshow)"
+        },
+        {
+          "pkg": "com.hbo.asia.androidtv",
+          "note": "HBO GO (plain third-party app, Play Store reinstalls it)"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google Play Movies & TV (base /system/product/app/VideosPano)"
+        }
+      ]
+    },
+    {
+      "title": "Operator firmware updater: kept on by default (see header). Uncomment to freeze the firmware.",
+      "packages": [
+        {
+          "pkg": "com.inspur.httpupgrade",
+          "note": "中嘉 OTA client, resident HttpService, PERSISTENT",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/homeplus-stb-6252c/debloat.txt",
+    "commit": "d043b6f90e6132f9bd9b4b652da1f43640d1f0b7"
+  }
+}
