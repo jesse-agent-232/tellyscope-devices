@@ -25,6 +25,126 @@
         {
           "pkg": "com.tcl.tv.tclhome_passive",
           "note": "pushes TCL content to the home screen at boot"
+        },
+        {
+          "pkg": "com.tcl.tv.tclhome_master",
+          "note": "companion to tclhome_passive; second unit, see the note above"
+        },
+        {
+          "pkg": "com.tcl.notereminder",
+          "note": "second unit; see the note above"
+        },
+        {
+          "pkg": "com.tcl.messagebox",
+          "note": "local notification box (org.tcl.ttvs), second unit"
+        }
+      ]
+    },
+    {
+      "title": "com.tcl.usercenter (account sign-in nags) and com.tcl.useragreement (one-time ToS screen) and",
+      "packages": [
+        {
+          "pkg": "com.tcl.usercenter"
+        },
+        {
+          "pkg": "com.tcl.useragreement"
+        },
+        {
+          "pkg": "com.tcl.copydatatotv"
+        }
+      ]
+    },
+    {
+      "title": "Added on the second unit: content/promo apps the first unit's notes left untested or untouched",
+      "packages": [
+        {
+          "pkg": "com.tcl.waterfall.overseas"
+        },
+        {
+          "pkg": "com.tcl.tvweishi"
+        },
+        {
+          "pkg": "com.tcl.appmarket2"
+        },
+        {
+          "pkg": "com.tcl.esticker",
+          "note": "stuck disabled through a reboot on the second unit; on"
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps (second unit)",
+      "packages": [
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Play Movies & TV"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.android.printspooler"
+        }
+      ]
+    },
+    {
+      "title": "Background service (second unit)",
+      "packages": [
+        {
+          "pkg": "com.tcl.samba",
+          "note": "SMB file-sharing server"
+        }
+      ]
+    },
+    {
+      "title": "Off by choice (second unit's owner picked YouTube, Netflix, Prime Video, Globoplay and both",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google Assistant / voice search"
+        },
+        {
+          "pkg": "com.google.android.tv.assistant",
+          "note": "Assistant's mic-indicator LED service"
+        },
+        {
+          "pkg": "com.tcl.smartalexa",
+          "note": "TCL's Alexa integration; also reverts on its own, see above"
+        },
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Chromecast receiver"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic",
+          "note": "YouTube Music"
+        }
+      ]
+    },
+    {
+      "title": "Second pass, applied after the launcher. The launcher's Clock screensaver replaces Ambient Mode",
+      "packages": [
+        {
+          "pkg": "com.google.android.backdrop",
+          "note": "Ambient Mode screensaver (Google content)"
+        },
+        {
+          "pkg": "com.google.android.tts",
+          "note": "Google text-to-speech; only accessibility uses it"
+        },
+        {
+          "pkg": "com.google.android.marvin.talkback",
+          "note": "screen reader; re-enable if someone needs it"
+        },
+        {
+          "pkg": "com.google.android.speech.pumpkin",
+          "note": "offline hotword, unused once katniss is off"
+        },
+        {
+          "pkg": "com.android.dreams.basic"
         }
       ]
     }
@@ -32,6 +152,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/tcl-beyondtv2-latin-america/debloat.txt",
-    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+    "commit": "57733360177173c880a023380a864114a03feb25"
   }
 }

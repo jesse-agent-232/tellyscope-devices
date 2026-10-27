@@ -94,6 +94,10 @@
         {
           "pkg": "com.android.gallery3d",
           "note": "legacy photo viewer (2nd)"
+        },
+        {
+          "pkg": "com.android.camera2",
+          "note": "crashes on open; no camera on this set"
         }
       ]
     },
@@ -136,6 +140,14 @@
         {
           "pkg": "com.google.android.marvin.talkback",
           "note": "screen reader, off by choice (2nd)"
+        },
+        {
+          "pkg": "com.google.android.tts",
+          "note": "text-to-speech, off by choice"
+        },
+        {
+          "pkg": "com.viacom18.tv.voot",
+          "note": "Voot streaming preload"
         }
       ]
     },
@@ -157,6 +169,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/sony-bravia-vu31/debloat.txt",
-    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+    "commit": "57733360177173c880a023380a864114a03feb25"
   }
 }

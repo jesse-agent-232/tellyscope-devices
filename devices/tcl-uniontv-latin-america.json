@@ -32,15 +32,28 @@
           "pkg": "com.google.android.tvrecommendations"
         },
         {
-          "pkg": "com.google.android.leanbacklauncher.recommendations"
+          "pkg": "com.google.android.leanbacklauncher.recommendations",
+          "note": "TVINPUT_ALLOW=1 may be needed, see header"
         },
         {
           "pkg": "com.tcl.partnercustomizer",
           "note": "TCL promo rows / T-key content"
         },
         {
+          "pkg": "com.tcl.partnercustomizer.resource",
+          "note": "32S6500S unit only"
+        },
+        {
+          "pkg": "com.google.android.leanbacklauncher.partnerwidget",
+          "note": "32S6500S unit only"
+        },
+        {
+          "pkg": "com.google.android.leanbacklauncher.partnercustomizer",
+          "note": "32S6500S unit only"
+        },
+        {
           "pkg": "android.autoinstalls.config.tcl.device",
-          "note": "Play auto-installs of partner apps"
+          "note": "Play auto-installs of partner apps; TVINPUT_ALLOW=1 may be needed"
         },
         {
           "pkg": "com.tcl.esticker",
@@ -61,6 +74,10 @@
         {
           "pkg": "com.tcl.copydatatotv",
           "note": "phone-to-TV copy helper, starts at boot"
+        },
+        {
+          "pkg": "com.tcl.waterfall.overseas",
+          "note": "TCL content/ad app (WebActivity, VideoPlayActivity, Firebase);"
         }
       ]
     },
@@ -79,6 +96,10 @@
         },
         {
           "pkg": "com.android.printspooler"
+        },
+        {
+          "pkg": "com.tcl.useragreement",
+          "note": "one-time ToS screen, 32S6500S unit only"
         }
       ]
     },
@@ -95,6 +116,34 @@
         },
         {
           "pkg": "tv.twitch.android.app"
+        }
+      ]
+    },
+    {
+      "title": "The 32S6500S owner also switched off their own streaming apps and Miracast. Left commented out here,",
+      "packages": [
+        {
+          "pkg": "com.netflix.ninja",
+          "optional": true
+        },
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom",
+          "note": "Prime Video",
+          "optional": true
+        },
+        {
+          "pkg": "com.spotify.tv.android",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Chromecast receiver",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.MultiScreenInteraction_TV",
+          "note": "TCL's Miracast-like screen mirroring/DLNA app",
+          "optional": true
         }
       ]
     },
@@ -137,6 +186,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/tcl-uniontv-latin-america/debloat.txt",
-    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+    "commit": "57733360177173c880a023380a864114a03feb25"
   }
 }

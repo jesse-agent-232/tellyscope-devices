@@ -1,0 +1,120 @@
+{
+  "schema": 1,
+  "id": "tcl-55a300w",
+  "name": "TCL 55A300W picture-frame QLED Google TV",
+  "tested": {
+    "os": "Android 12",
+    "sdk": 31,
+    "build": null
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Batch 1: TCL promo, push messages, retail / hotel demo, telemetry",
+      "packages": [
+        {
+          "pkg": "com.tcl.tv.plus",
+          "note": "TCL TV+ free channels"
+        },
+        {
+          "pkg": "com.tcl.messagebox",
+          "note": "TCL pushed messages and promos"
+        },
+        {
+          "pkg": "com.tcl.esticker",
+          "note": "retail-demo sticker"
+        },
+        {
+          "pkg": "com.tcl.hotelmenu",
+          "note": "hotel-mode portal"
+        },
+        {
+          "pkg": "com.tcl.exhibit",
+          "note": "store demo"
+        },
+        {
+          "pkg": "com.tcl.tv.tclhome_passive",
+          "note": "TCL content pushed to the home screen at boot"
+        },
+        {
+          "pkg": "com.tcl.dashboard",
+          "note": "TCL Home panel and its promos"
+        },
+        {
+          "pkg": "com.tcl.logkit",
+          "note": "log capture"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.tcl.ocean.instructions",
+          "note": "on-TV manual"
+        },
+        {
+          "pkg": "com.android.printspooler"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar"
+        },
+        {
+          "pkg": "com.google.android.onetimeinitializer"
+        },
+        {
+          "pkg": "com.tcl.usercenter",
+          "note": "TCL account"
+        }
+      ]
+    },
+    {
+      "title": "Batch 2: off by choice",
+      "packages": [
+        {
+          "pkg": "com.tcl.smartalexa",
+          "note": "Alexa"
+        },
+        {
+          "pkg": "com.tcl.channelplus",
+          "note": "TCL Live FAST channels (a Live TV input)"
+        },
+        {
+          "pkg": "com.tcl.hearaid",
+          "note": "hearing test / accessibility helper"
+        },
+        {
+          "pkg": "com.tcl.t_solo",
+          "note": "Bluetooth \"listen alone\""
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google TV / Play Movies storefront"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        }
+      ]
+    },
+    {
+      "title": "Batch 3: setup wizard; its RecoveryActivity takes Home when launcherx is off. Re-join Wi-Fi first (header).",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith"
+        }
+      ]
+    },
+    {
+      "title": "Stock launcher, off once the new launcher is Home (build-and-install.sh does this)",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.tv.launcherx"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tcl-55a300w/debloat.txt",
+    "commit": "57733360177173c880a023380a864114a03feb25"
+  }
+}

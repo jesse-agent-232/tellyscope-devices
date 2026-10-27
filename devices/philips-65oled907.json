@@ -105,11 +105,136 @@
           "note": "LAN control of volume, audio output, Ambilight on/off and ShopMode. NOT the JointSpace API on 1925/1926 -- that is served by org.droidtv.xtv, which stays. Owner does not drive the TV from Home Assistant"
         }
       ]
+    },
+    {
+      "title": "--- optional: also disabled on the 55OLED907 (second unit) -----------------",
+      "packages": [
+        {
+          "pkg": "org.droidtv.tv.frameworklogger",
+          "note": "framework event logger",
+          "optional": true
+        },
+        {
+          "pkg": "org.droidtv.fastip",
+          "note": "free ad-supported channels, has an advertising-ID activity",
+          "optional": true
+        },
+        {
+          "pkg": "com.zeasn.whalelive",
+          "note": "Whale TV (free ad-supported channels)",
+          "optional": true
+        },
+        {
+          "pkg": "org.droidtv.dropboxprovider",
+          "note": "Dropbox provider",
+          "optional": true
+        },
+        {
+          "pkg": "org.droidtv.nettv_launcherapp",
+          "note": "Philips Smart TV app launcher",
+          "optional": true
+        },
+        {
+          "pkg": "org.droidtv.nettvapp1815",
+          "note": "Zeasn web app",
+          "optional": true
+        },
+        {
+          "pkg": "org.droidtv.nettvapp20004410",
+          "note": "Zeasn web app",
+          "optional": true
+        },
+        {
+          "pkg": "org.droidtv.nettvapp4546",
+          "note": "Zeasn web app",
+          "optional": true
+        },
+        {
+          "pkg": "org.droidtv.nettvapp4655",
+          "note": "Zeasn web app (Deezer)",
+          "optional": true
+        },
+        {
+          "pkg": "org.droidtv.nettvapp5326",
+          "note": "Zeasn web app",
+          "optional": true
+        },
+        {
+          "pkg": "org.droidtv.nettvapp5512",
+          "note": "Zeasn web app",
+          "optional": true
+        },
+        {
+          "pkg": "org.droidtv.amazonalexa",
+          "note": "Alexa only; Google Assistant (katniss) is separate",
+          "optional": true
+        },
+        {
+          "pkg": "org.droidtv.leanbackcustomizer",
+          "note": "partner customisation of the stock launcher; the OPTIONS key keeps working",
+          "optional": true
+        },
+        {
+          "pkg": "io.mimi.sdk.service",
+          "note": "Mimi sound personalisation service",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.marvin.talkback",
+          "note": "TalkBack screen reader; keep it if anyone in the home needs it",
+          "optional": true
+        },
+        {
+          "pkg": "org.droidtv.m7opapp",
+          "note": "M7 satellite operators (Canal Digitaal, TV Vlaanderen, Skylink, HD Austria)",
+          "optional": true
+        },
+        {
+          "pkg": "com.netflix.ninja",
+          "note": "Netflix",
+          "optional": true
+        },
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom",
+          "note": "Prime Video",
+          "optional": true
+        },
+        {
+          "pkg": "com.apple.atve.androidtv.appletv",
+          "note": "Apple TV",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic",
+          "note": "YouTube Music",
+          "optional": true
+        },
+        {
+          "pkg": "tv.wuaki.apptv",
+          "note": "Rakuten TV",
+          "optional": true
+        },
+        {
+          "pkg": "fr.filmotv.philips.android.tv",
+          "note": "FilmoTV",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google Play Movies",
+          "optional": true
+        },
+        {
+          "pkg": "com.boosteroidtv.streaming",
+          "note": "Boosteroid (cloud gaming)",
+          "optional": true
+        }
+      ]
     }
   ],
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/philips-65oled907/debloat.txt",
-    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+    "commit": "57733360177173c880a023380a864114a03feb25"
   }
 }

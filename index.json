@@ -2,7 +2,7 @@
   "schema": 1,
   "source": {
     "repo": "Gathin23/cleanyourtv",
-    "commit": "76a9312cd9ac378fc8698f31427805af32c6f965"
+    "commit": "57733360177173c880a023380a864114a03feb25"
   },
   "devices": [
     {
@@ -811,7 +811,7 @@
       "match": null,
       "sdk": null,
       "file": "devices/oneplus-tv-dubai.json",
-      "sha256": "b8bf6c840061d6623add05e4b81f2854be2091fc1ab07de6539477fec62089d3"
+      "sha256": "0a7400670120c81793ff5914345b5f11d0d8cd731e5b868beeee1f74f66e151a"
     },
     {
       "id": "oneplus-tv-y1",
@@ -836,6 +836,14 @@
       "sdk": 34,
       "file": "devices/onn-4k-streaming-box-2023.json",
       "sha256": "79b44597e05816abe9c1af4c344b21efb3e227cbfed38c403f68a09f6e435d4a"
+    },
+    {
+      "id": "oppo-k9-55-oppocnm632",
+      "name": "OPPO K9 55",
+      "match": null,
+      "sdk": null,
+      "file": "devices/oppo-k9-55-oppocnm632.json",
+      "sha256": "858ecdd2a3f7bf8e00dae022d76963fa89d096b2135448b6d7ba5a62c262206d"
     },
     {
       "id": "panasonic-4ktv-0su",
@@ -973,7 +981,7 @@
       "match": null,
       "sdk": 30,
       "file": "devices/philips-65oled907.json",
-      "sha256": "5b716d4394a16de9c14992901c8e5c87d88967d40718ed764996973b8453b3ec"
+      "sha256": "513d02cfdac787f804aaa14884729df2fbf5ed5f2c87ecdac7d7da2646063119"
     },
     {
       "id": "philips-65pml9506",
@@ -1437,7 +1445,7 @@
       "match": null,
       "sdk": 34,
       "file": "devices/sony-bravia-vu31.json",
-      "sha256": "216e6a729f2a37d09e0fb36e23320623d6b5e16f389ac22dcf5f747069d3bb48"
+      "sha256": "d660e3198cb64e87a2b2cdd7d4e07860ebe00ad31b4fbdc0e5f1550e529802c8"
     },
     {
       "id": "sony-kd-43x8000g",
@@ -1800,6 +1808,14 @@
       "sha256": "76c7062e17b32e7cc45a8096616666d9f9b2ee55c21ccab080d0e7646f3589d7"
     },
     {
+      "id": "tcl-55a300w",
+      "name": "TCL 55A300W picture-frame QLED Google TV",
+      "match": null,
+      "sdk": 31,
+      "file": "devices/tcl-55a300w.json",
+      "sha256": "f8b76231d123d2de078b4e041dcbd2d4774f69087855673ccb7423222aaa0cf9"
+    },
+    {
       "id": "tcl-55c715",
       "name": "TCL 55C715 QLED",
       "match": null,
@@ -1902,6 +1918,14 @@
       "sdk": 30,
       "file": "devices/tcl-58s571f-fire-tv.json",
       "sha256": "c7c552cb5ea4e433e9062bd2d5ed00338ffcfe574ba05b84f3c051ed034e4f0d"
+    },
+    {
+      "id": "tcl-65c6k-google-tv",
+      "name": "TCL 65C6K",
+      "match": null,
+      "sdk": 34,
+      "file": "devices/tcl-65c6k-google-tv.json",
+      "sha256": "853f5c77cf706cd08256bc55295c111a39f27dd849d1dd73eef654b1ca1940d8"
     },
     {
       "id": "tcl-65c725",
@@ -2053,7 +2077,7 @@
       "match": null,
       "sdk": 28,
       "file": "devices/tcl-beyondtv2-latin-america.json",
-      "sha256": "8306a320c31a59e1e932f85ced129f0944b2ea875eefdb437ae91af875effc09"
+      "sha256": "3f231c458f39545d0207d16594b22972b435241ad1bf55d9941aa43c823b213f"
     },
     {
       "id": "tcl-beyondtv4-uk",
@@ -2221,7 +2245,7 @@
       "match": null,
       "sdk": 28,
       "file": "devices/tcl-uniontv-latin-america.json",
-      "sha256": "e1ec5a36b840b1f8234b41e0013bea864fd3adf6a730140ffd8217af6820501a"
+      "sha256": "297693cc0b0a484523d984a70045b0f083e15ff689d4dcf67fa21c6e58f17e8e"
     },
     {
       "id": "telesystem-ont2hd",

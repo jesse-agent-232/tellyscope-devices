@@ -1,0 +1,213 @@
+{
+  "schema": 1,
+  "id": "tcl-65c6k-google-tv",
+  "name": "TCL 65C6K",
+  "tested": {
+    "os": "Android 14",
+    "sdk": 34,
+    "build": null
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "TCL tracking and analytics",
+      "packages": [
+        {
+          "pkg": "com.tcl.logkit",
+          "note": "log capture and upload"
+        },
+        {
+          "pkg": "com.tcl.usercenter",
+          "note": "TCL account sign-in nags"
+        }
+      ]
+    },
+    {
+      "title": "Feedback, diagnostics and Android 14 ad / privacy services",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.android.tv.feedbackconsent"
+        },
+        {
+          "pkg": "com.android.adservices.api",
+          "note": "Privacy Sandbox"
+        },
+        {
+          "pkg": "com.android.ondevicepersonalization.services"
+        },
+        {
+          "pkg": "com.android.federatedcompute.services"
+        }
+      ]
+    },
+    {
+      "title": "TCL content, ads and promos",
+      "packages": [
+        {
+          "pkg": "com.tcl.channelplus",
+          "note": "TCL Live FAST channels"
+        },
+        {
+          "pkg": "com.tcl.tv.tclhome_passive",
+          "note": "pushes TCL content to the home screen at boot"
+        },
+        {
+          "pkg": "com.tcl.partnercustomizer",
+          "note": "TCL tweaks to Google TV home rows"
+        },
+        {
+          "pkg": "com.tcl.interactive",
+          "note": "TCL TIAS background service"
+        },
+        {
+          "pkg": "com.tcl.messagebox",
+          "note": "TCL push messages and promos"
+        },
+        {
+          "pkg": "com.tcl.waterfall.overseas",
+          "note": "TCL Channel movie/show browser"
+        },
+        {
+          "pkg": "com.tcl.dashboard",
+          "note": "TCL Home panel and its promos (kept on the C755, see above)"
+        },
+        {
+          "pkg": "android.autoinstalls.config.google.gtvpai",
+          "note": "silently installs partner apps"
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "partner attribution"
+        }
+      ]
+    },
+    {
+      "title": "Retail demo / hotel mode",
+      "packages": [
+        {
+          "pkg": "com.tcl.exhibit"
+        },
+        {
+          "pkg": "com.tcl.esticker"
+        },
+        {
+          "pkg": "com.tcl.hotelmenu"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps and services",
+      "packages": [
+        {
+          "pkg": "com.tcl.ocean.instructions",
+          "note": "e-manual"
+        },
+        {
+          "pkg": "com.tcl.repairguide"
+        },
+        {
+          "pkg": "com.tcl.smartalexa",
+          "note": "Alexa"
+        },
+        {
+          "pkg": "com.tcl.guard",
+          "note": "TCL \"cleaner\" / app manager"
+        },
+        {
+          "pkg": "com.tcl.UpdatePeripheral",
+          "note": "TCL soundbar / peripheral firmware updates"
+        }
+      ]
+    },
+    {
+      "title": "Off by the owner's choice",
+      "packages": [
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        },
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google Assistant voice"
+        }
+      ]
+    },
+    {
+      "title": "Kept on this unit: uncomment if you don't use them",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Chromecast",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.airplay2",
+          "note": "AirPlay, together with the next two lines",
+          "optional": true
+        },
+        {
+          "pkg": "com.mediatek.AirplayAPK",
+          "optional": true
+        },
+        {
+          "pkg": "com.mediatek.airplaydaemon",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.miracast",
+          "note": "Miracast screen mirroring",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.magiconnectfree",
+          "note": "TCL T-Cast / Magiconnect phone mirroring",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.gamebar",
+          "note": "game mode / VRR overlay for consoles",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.ui_mediaCenter",
+          "note": "USB media player",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.gallery",
+          "note": "USB photo gallery + TCL screensaver",
+          "optional": true
+        },
+        {
+          "pkg": "com.netflix.ninja",
+          "note": "Netflix, together with the next line",
+          "optional": true
+        },
+        {
+          "pkg": "com.netflix.tokenmanager",
+          "optional": true
+        },
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom",
+          "note": "Prime Video",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.youtube.tv",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tcl-65c6k-google-tv/debloat.txt",
+    "commit": "57733360177173c880a023380a864114a03feb25"
+  }
+}

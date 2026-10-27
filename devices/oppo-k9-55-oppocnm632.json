@@ -1,0 +1,124 @@
+{
+  "schema": 1,
+  "id": "oppo-k9-55-oppocnm632",
+  "name": "OPPO K9 55",
+  "tested": {
+    "os": "Android 9",
+    "sdk": null,
+    "build": null
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "Cast / paid screen-share",
+      "packages": [
+        {
+          "pkg": "com.heytap.tv.heycast"
+        },
+        {
+          "pkg": "com.hpplay.happyplay.aw"
+        },
+        {
+          "pkg": "com.apowersoft.mirror.tv"
+        },
+        {
+          "pkg": "com.heytap.iot.castservice"
+        },
+        {
+          "pkg": "com.heytap.optvmiracastservice"
+        }
+      ]
+    },
+    {
+      "title": "Ads, promo rows, push and the quick-app runtime",
+      "packages": [
+        {
+          "pkg": "com.opos.ott"
+        },
+        {
+          "pkg": "com.heytap.tv.pictorial"
+        },
+        {
+          "pkg": "com.heytap.tv.imagewall"
+        },
+        {
+          "pkg": "com.heytap.tv.msgboard"
+        },
+        {
+          "pkg": "com.heytap.mcs",
+          "note": "HeyTap push"
+        },
+        {
+          "pkg": "com.nearme.instant.platform.tv"
+        }
+      ]
+    },
+    {
+      "title": "Telemetry, remote diagnose and crash upload",
+      "packages": [
+        {
+          "pkg": "com.heytap.feedback"
+        },
+        {
+          "pkg": "com.heytap.tv.remotediagnosing"
+        },
+        {
+          "pkg": "com.oplus.crashbox"
+        }
+      ]
+    },
+    {
+      "title": "Factory and engineering menus. Disabled, never launched.",
+      "packages": [
+        {
+          "pkg": "tpv.factorymenu.ui"
+        },
+        {
+          "pkg": "mediatek.factorymenu.ui"
+        },
+        {
+          "pkg": "com.cvte.factory.service"
+        },
+        {
+          "pkg": "com.cvte.factory.at"
+        },
+        {
+          "pkg": "com.cvte.fac.menu"
+        },
+        {
+          "pkg": "com.cvte.license.at"
+        },
+        {
+          "pkg": "com.gaochuang.factory.at"
+        },
+        {
+          "pkg": "com.konka.factory.at"
+        }
+      ]
+    },
+    {
+      "title": "Low-value system extras",
+      "packages": [
+        {
+          "pkg": "com.heytap.tv.userguide"
+        },
+        {
+          "pkg": "com.heytap.tv.oobe",
+          "note": "first-run wizard, after setup has finished"
+        },
+        {
+          "pkg": "com.optv.aiengine"
+        },
+        {
+          "pkg": "com.heytap.tv.aicaption"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/oppo-k9-55-oppocnm632/debloat.txt",
+    "commit": "57733360177173c880a023380a864114a03feb25"
+  }
+}

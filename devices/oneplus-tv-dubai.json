@@ -3,9 +3,9 @@
   "id": "oneplus-tv-dubai",
   "name": "OnePlus TV",
   "tested": {
-    "os": "Android 14",
+    "os": "Android TV 11",
     "sdk": null,
-    "build": null
+    "build": "RTM1.210315.027"
   },
   "launcher": "com.google.android.tvlauncher",
   "keep": [],
@@ -71,6 +71,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/oneplus-tv-dubai/debloat.txt",
-    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+    "commit": "57733360177173c880a023380a864114a03feb25"
   }
 }
