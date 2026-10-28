@@ -2,7 +2,7 @@
 """Build the device lists and index.json. Python 3.9+, standard library only.
 
   tools/build.py sync <cleanyourtv checkout>   rewrite devices/ from its examples/, then index
-  tools/build.py index                         rebuild index.json from devices/ and match/
+  tools/build.py index                         rebuild index.json from devices/, match/, lists/ and logos/
   tools/build.py check                         fail if anything is invalid or index.json is stale
 
 The file format is in README.md.
@@ -26,6 +26,14 @@ ACTIVE_PACKAGE = re.compile(r"(" + PACKAGE.pattern + r")\s*(?:#\s*(.*))?")
 KEEP_HEADING = re.compile(r"do not disable|don't disable|must stay|^keep\b|^kept on purpose", re.I)
 UNCOMMENT = re.compile(r"uncomment", re.I)
 MATCH_KEYS = ("manufacturer", "model", "device")
+# The app-wide lists in lists/, by the name the index gives them.
+LISTS = ("launchers", "labels", "streaming")
+HEX = re.compile(r"#[0-9A-Fa-f]{6}")
+LOGO = re.compile(r"[a-z0-9]+")
+PNG = b"\x89PNG\r\n\x1a\n"
+# Logos are drawn at four times their size in dp and have to fit the smallest pill, 72 x 30 dp.
+LOGO_MAX = (72 * 4, 30 * 4)
+LOGO_BYTES = 64 * 1024
 
 
 def dump(obj):
@@ -159,8 +167,119 @@ def build_index():
             "file": f"devices/{df.name}",
             "sha256": hashlib.sha256(df.read_bytes()).hexdigest(),
         })
+    def file(path):
+        return {"file": path, "sha256": hashlib.sha256((ROOT / path).read_bytes()).hexdigest()}
+
     return {"schema": SCHEMA, "source": {"repo": upstream[0], "commit": upstream[1]},
-            "devices": devices}
+            "devices": devices,
+            "lists": {name: file(f"lists/{name}.json") for name in LISTS},
+            "logos": {f.stem: file(f"logos/{f.name}") for f in sorted((ROOT / "logos").glob("*.png"))}}
+
+
+def png_size(data):
+    """Width and height from a PNG's IHDR, or None if it isn't a PNG."""
+    if len(data) < 24 or not data.startswith(PNG) or data[12:16] != b"IHDR":
+        return None
+    return int.from_bytes(data[16:20], "big"), int.from_bytes(data[20:24], "big")
+
+
+def check_lists():
+    """Errors in lists/ and logos/: the app drops what it can't read, so a bad entry would vanish quietly."""
+    errors = []
+
+    def load(name):
+        path = ROOT / "lists" / f"{name}.json"
+        try:
+            data = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, ValueError) as e:
+            errors.append(f"lists/{name}.json: {e}")
+            return None
+        if data.get("schema") != SCHEMA:
+            errors.append(f"lists/{name}.json: 'schema' must be {SCHEMA}")
+            return None
+        return data
+
+    def package(where, name):
+        if not (isinstance(name, str) and PACKAGE.fullmatch(name)):
+            errors.append(f"{where}: not a package name: {name!r}")
+
+    def text(where, obj, key, required=True):
+        if key in obj or required:
+            if not (isinstance(obj.get(key), str) and obj[key].strip()):
+                errors.append(f"{where}: '{key}' must be a non-empty string")
+
+    launchers = load("launchers")
+    if launchers:
+        seen = set()
+        for i, l in enumerate(launchers.get("launchers", [])):
+            where = f"lists/launchers.json: launcher {i + 1}"
+            if set(l) - {"package", "name", "about"}:
+                errors.append(f"{where}: unknown keys {sorted(set(l) - {'package', 'name', 'about'})}")
+            package(where, l.get("package"))
+            text(where, l, "name")
+            text(where, l, "about", required=False)
+            if l.get("package") in seen:
+                errors.append(f"{where}: {l.get('package')} is listed twice")
+            seen.add(l.get("package"))
+
+    labels = load("labels")
+    if labels:
+        seen = set()
+        for g in labels.get("groups", []):
+            for pkg, label in g.get("labels", {}).items():
+                where = f"lists/labels.json: {g.get('name')!r}"
+                if pkg != "android":
+                    package(where, pkg)
+                if not (isinstance(label, str) and label.strip()):
+                    errors.append(f"{where}: {pkg} needs a name")
+                if pkg in seen:
+                    errors.append(f"{where}: {pkg} is listed twice")
+                seen.add(pkg)
+
+    streaming = load("streaming")
+    used = set()
+    if streaming:
+        names, packages = set(), set()
+        for g in streaming.get("groups", []):
+            for s in g.get("services", []):
+                where = f"lists/streaming.json: {s.get('name')!r}"
+                text(where, s, "name")
+                if not (isinstance(s.get("packages"), list) and s["packages"]):
+                    errors.append(f"{where}: 'packages' must list at least one package")
+                for p in s.get("packages") or []:
+                    package(where, p)
+                    if p in packages:
+                        errors.append(f"{where}: {p} belongs to another service too")
+                    packages.add(p)
+                for key in ("color", "color2", "dark"):
+                    if (key == "color" or key in s) and not (isinstance(s.get(key), str) and HEX.fullmatch(s[key])):
+                        errors.append(f"{where}: '{key}' must be #RRGGBB")
+                logo = s.get("logo")
+                if not (isinstance(logo, str) and LOGO.fullmatch(logo)):
+                    errors.append(f"{where}: 'logo' must be lowercase letters and digits")
+                elif not (ROOT / "logos" / f"{logo}.png").is_file():
+                    errors.append(f"{where}: logos/{logo}.png is missing")
+                used.add(logo)
+                if s.get("name") in names:
+                    errors.append(f"{where}: listed twice")
+                names.add(s.get("name"))
+
+    for f in sorted((ROOT / "logos").glob("*")):
+        where = f"logos/{f.name}"
+        if f.suffix != ".png" or not LOGO.fullmatch(f.stem):
+            errors.append(f"{where}: logos are <lowercase letters and digits>.png")
+            continue
+        data = f.read_bytes()
+        size = png_size(data)
+        if size is None:
+            errors.append(f"{where}: not a PNG")
+        elif size[0] > LOGO_MAX[0] or size[1] > LOGO_MAX[1]:
+            errors.append(f"{where}: {size[0]}x{size[1]} is over {LOGO_MAX[0]}x{LOGO_MAX[1]}")
+        if len(data) > LOGO_BYTES:
+            errors.append(f"{where}: {len(data)} bytes is over {LOGO_BYTES}")
+        if streaming and f.stem not in used:
+            errors.append(f"{where}: no service in lists/streaming.json uses it")
+    return errors
 
 
 def check():
@@ -186,6 +305,7 @@ def check():
                 [p["pkg"] for g in device["groups"] for p in g["packages"]]
         errors += [f"devices/{df.name}: not a package name: {n!r}"
                    for n in names if not PACKAGE.fullmatch(n)]
+    errors += check_lists()
     index = ROOT / "index.json"
     if not index.is_file() or index.read_text(encoding="utf-8") != dump(build_index()):
         errors.append("index.json is stale: run tools/build.py index")

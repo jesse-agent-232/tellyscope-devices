@@ -138,5 +138,58 @@ class RealLists(unittest.TestCase):
                         self.assertRegex(p["pkg"], "^" + build.PACKAGE.pattern + "$")
 
 
+class Lists(unittest.TestCase):
+    """lists/ and logos/: the app drops an entry it can't read, so check has to catch it first."""
+
+    def setUp(self):
+        import shutil
+        import tempfile
+        self.root = Path(tempfile.mkdtemp())
+        self.addCleanup(shutil.rmtree, self.root)
+        for d in ("lists", "logos"):
+            shutil.copytree(build.ROOT / d, self.root / d)
+        self.real, build.ROOT = build.ROOT, self.root
+        self.addCleanup(setattr, build, "ROOT", self.real)
+
+    def edit(self, name, change):
+        import json
+        path = self.root / "lists" / f"{name}.json"
+        data = json.loads(path.read_text(encoding="utf-8"))
+        change(data)
+        path.write_text(json.dumps(data), encoding="utf-8")
+
+    def test_the_committed_lists_and_logos_pass(self):
+        self.assertEqual(build.check_lists(), [])
+
+    def test_the_index_lists_every_list_and_logo(self):
+        build.ROOT = self.real
+        index = build.build_index()
+        self.assertEqual(sorted(index["lists"]), sorted(build.LISTS))
+        self.assertEqual(sorted(index["logos"]), sorted(f.stem for f in (self.real / "logos").glob("*.png")))
+
+    def test_a_bad_service_is_caught(self):
+        def bad(d):
+            d["groups"][0]["services"][0].update({"color": "red", "packages": ["com.netflix.ninja; reboot"]})
+        self.edit("streaming", bad)
+        errors = "\n".join(build.check_lists())
+        self.assertIn("'color' must be #RRGGBB", errors)
+        self.assertIn("not a package name", errors)
+
+    def test_a_missing_or_unused_logo_is_caught(self):
+        self.edit("streaming", lambda d: d["groups"][0]["services"][0].update({"logo": "nosuchlogo"}))
+        errors = "\n".join(build.check_lists())
+        self.assertIn("logos/nosuchlogo.png is missing", errors)
+        self.assertIn("no service in lists/streaming.json uses it", errors)
+
+    def test_a_launcher_cannot_ask_for_an_accessibility_service(self):
+        self.edit("launchers", lambda d: d["launchers"][0].update({"accessibility": True}))
+        self.assertIn("unknown keys ['accessibility']", "\n".join(build.check_lists()))
+
+    def test_an_oversized_logo_is_caught(self):
+        big = build.PNG + b"\x00\x00\x00\x0dIHDR" + (1000).to_bytes(4, "big") + (40).to_bytes(4, "big")
+        (self.root / "logos" / "netflix.png").write_bytes(big)
+        self.assertIn("1000x40 is over 288x120", "\n".join(build.check_lists()))
+
+
 if __name__ == "__main__":
     unittest.main()

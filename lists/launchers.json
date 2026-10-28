@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "launchers": [
+    { "package": "com.spocky.projengmenu", "name": "Projectivy Launcher", "about": "The most popular. Rows, wallpapers and icons you can change." },
+    { "package": "com.overdevs.at4k", "name": "AT4K Launcher" },
+    { "package": "com.spauldhaliwal.dispatch", "name": "Dispatch" },
+    { "package": "me.efesser.flauncher", "name": "FLauncher", "about": "Simple: your apps in rows, nothing else." },
+    { "package": "com.wolf.firelauncher", "name": "Wolf Launcher" },
+    { "package": "ca.dstudio.atvlauncher.free", "name": "ATV Launcher" },
+    { "package": "net.i.akihiro.halauncher", "name": "HALauncher" },
+    { "package": "eu.chainfire.tv.sideloadlauncher", "name": "Sideload Launcher" }
+  ]
+}
