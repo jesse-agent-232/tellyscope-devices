@@ -4,6 +4,9 @@ Per-model debloat lists for Android TVs, Google TV devices and projectors, in a 
 [Tellyscope](https://github.com/man15h/tellyscope) fetches `index.json` from here, matches the TV it is connected to, and
 suggests that model's list. Matching happens on the phone; nothing about the TV is sent anywhere.
 
+It also holds the lists anyone can improve without an app release: the launchers Tellyscope offers,
+the names it shows for apps, and the streaming services the Remote has buttons for, with their logos.
+
 The lists come from [cleanyourtv](https://github.com/Gathin23/cleanyourtv) (MIT), which has one
 hand-checked `debloat.txt` per TV model. A daily sync turns them into JSON and opens a pull request
 here. Nothing reaches apps until a maintainer merges it.
@@ -16,6 +19,10 @@ here. Nothing reaches apps until a maintainer merges it.
 | `match/<id>.json` | people | How to recognise that TV. The sync never writes here. |
 | `index.json` | `tools/build.py index` | Every device, with its match rule or `null`: what an app downloads first. |
 | `upstream.txt` | the sync | The cleanyourtv commit `devices/` was built from. |
+| `lists/launchers.json` | people | Home screens Tellyscope can install, and the line it shows for each. |
+| `lists/labels.json` | people | App names to show when the TV doesn't give one. |
+| `lists/streaming.json` | people | Streaming services the Remote can have a button for. |
+| `logos/<logo>.png` | people | Each service's logo, named in `streaming.json`. |
 
 A device with no `match/` file is still in the index, with `"match": null`: an app can't recognise it,
 but the user can pick it. A match rule whose device is gone is skipped.
@@ -32,6 +39,9 @@ but the user can pick it. A match rule whose device is gone is skipped.
 
 An app that sees a `schema` it doesn't know shows no suggestions.
 
+The files under `lists/` and `logos/` work the same way: the index gives each one's `file` and
+`sha256`, so an app downloads one again only when its `sha256` changes.
+
 `sha256` only catches a truncated or corrupt download. It comes from the same place as the file, so it
 proves nothing about who wrote it. The protection is the review before merge, plus the app's own rules:
 `keep` can only add to the packages an app refuses to touch, never remove from them, and an app acts
@@ -46,7 +56,8 @@ only on packages the TV itself lists.
    folder that holds `index.json`, like `https://raw.githubusercontent.com/<you>/tellyscope-devices/main/`.
    Reset to default switches back.
 
-Protected apps stay protected whatever a list says.
+Protected apps stay protected whatever a list says. Your source supplies every list and logo; which
+launchers may turn on an accessibility service is decided inside the app, never by a list.
 
 ## File format
 
@@ -86,18 +97,50 @@ before the first package is the header. Each block's first comment line is its g
 package under a heading that says "do not disable", "keep" or "kept on purpose" goes to `keep`; any
 other commented package is `optional`. Quirk notes are not copied: follow `source` to read them.
 
+### `lists/launchers.json`
+
+`{"schema": 1, "launchers": [{"package", "name", "about"}]}`. `about` is optional: a launcher with one
+is offered in Install a home screen, in file order. No other keys; in particular a list can't ask for
+an accessibility service.
+
+### `lists/labels.json`
+
+`{"schema": 1, "groups": [{"name", "labels": {"<package>": "<name>"}}]}`. Groups are only for people
+reading the file. A package appears once across all groups; `android` is allowed as well.
+
+### `lists/streaming.json`
+
+`{"schema": 1, "groups": [{"name", "services": [...]}]}`, one service per Remote button:
+
+| Field | Type | |
+|---|---|---|
+| `name` | string | shown under the button |
+| `packages` | list of package names | its TV apps, the usual one first; a package belongs to one service only |
+| `color` | `#RRGGBB` | the button's brand colour |
+| `color2` | `#RRGGBB`, optional | a gradient towards this colour |
+| `dark` | `#RRGGBB`, optional | the fill in dark mode, for a colour that would sink into the dark sheet |
+| `logo` | lowercase letters and digits | names `logos/<logo>.png` |
+
+### `logos/<logo>.png`
+
+A PNG at four times its size in dp, at most 288 x 120 pixels (it has to fit the smallest button, 72 x
+30 dp) and 64 KB. White or black on transparent reads best: the app recolours it on dark brand
+colours. Every logo is used by a service.
+
 ### `index.json`
 
-`{"schema", "source": {"repo", "commit"}, "devices": [{"id", "name", "match", "sdk", "file", "sha256"}]}`,
-one entry per device file, with `match` copied from `match/<id>.json` (`null` when there is none) and
-`sdk` from `tested.sdk`.
+`{"schema", "source": {"repo", "commit"}, "devices": [{"id", "name", "match", "sdk", "file", "sha256"}], "lists": {"<name>": {"file", "sha256"}}, "logos": {"<logo>": {"file", "sha256"}}}`,
+one `devices` entry per device file, with `match` copied from `match/<id>.json` (`null` when there is
+none) and `sdk` from `tested.sdk`; `lists` has `launchers`, `labels` and `streaming`.
 
 ## Contributing
 
-- **A list is wrong or missing:** fix it in [cleanyourtv](https://github.com/Gathin23/cleanyourtv). The
+- **A TV's debloat list is wrong or missing:** fix it in [cleanyourtv](https://github.com/Gathin23/cleanyourtv). The
   next sync brings it here.
 - **Your TV isn't recognised automatically:** add `match/<id>.json` with its `getprop` values and run
   `python3 tools/build.py index`.
+- **A streaming service, launcher or app name is missing:** add it to the file under `lists/` (and its
+  logo under `logos/`) and run `python3 tools/build.py index`.
 - Before a pull request: `python3 -m unittest discover -s tests` and `python3 tools/build.py check`.
 
 The sync runs daily (and on demand from the Actions tab). It rebuilds `devices/` and opens or refreshes
