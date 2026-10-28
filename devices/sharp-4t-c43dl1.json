@@ -1,0 +1,125 @@
+{
+  "schema": 1,
+  "id": "sharp-4t-c43dl1",
+  "name": "SHARP AQUOS 4T-C43DL1",
+  "tested": {
+    "os": "Android TV 11",
+    "sdk": 30,
+    "build": null
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "--- Telemetry, retail demo, partner auto-install ---",
+      "packages": [
+        {
+          "pkg": "jp.co.sharp.av.android.analyticsservice",
+          "note": "Sharp usage analytics"
+        },
+        {
+          "pkg": "jp.co.sharp.av.android.storedemoapplication",
+          "note": "retail store demo"
+        },
+        {
+          "pkg": "android.autoinstalls.config.sharp.av",
+          "note": "PAI partner auto-install stub"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.partnersetup"
+        }
+      ]
+    },
+    {
+      "title": "--- Sharp content and recommendation services ---",
+      "packages": [
+        {
+          "pkg": "jp.co.sharp.av.android.cocorovision",
+          "note": "COCORO VISION AI recommendations (Firebase, screen/key event reports)"
+        },
+        {
+          "pkg": "jp.co.sharp.av.android.chranking",
+          "note": "AQUOS 番組ランキング content service"
+        },
+        {
+          "pkg": "jp.co.sharp.av.android.aquoscity",
+          "note": "AQUOS City content portal"
+        },
+        {
+          "pkg": "jp.co.sharp.av.android.living_camera_app",
+          "note": "living-room camera app"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.backdrop",
+          "note": "Ambient Mode screensaver; falls back to the basic dream"
+        }
+      ]
+    },
+    {
+      "title": "--- Off by owner's choice ---",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google Assistant / voice search (mic button stops working)"
+        },
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Chromecast built-in"
+        },
+        {
+          "pkg": "jp.co.sharp.av.android.tvremote",
+          "note": "AQUOS phone-remote companion (Firebase messaging)"
+        },
+        {
+          "pkg": "com.google.android.tv.remote.service",
+          "note": "Android TV phone remote"
+        },
+        {
+          "pkg": "jp.co.sharp.av.android.cocoroguide",
+          "note": "COCORO ID account / guide"
+        },
+        {
+          "pkg": "jp.co.sharp.av.android.dlna.homenetwork",
+          "note": "DLNA home-network browser (recorder/NAS playback)"
+        }
+      ]
+    },
+    {
+      "title": "--- After the new launcher owned Home ---",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvrecommendations",
+          "note": "recommendation rows for the stock launcher"
+        }
+      ]
+    },
+    {
+      "title": "--- Preloaded streaming apps, off by owner's choice ---",
+      "packages": [
+        {
+          "pkg": "jp.paravi.androidtv",
+          "note": "Paravi"
+        },
+        {
+          "pkg": "jp.unext.cocorovideo",
+          "note": "U-NEXT for COCORO VIDEO (the regular U-NEXT app stays)"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google Play Movies & TV"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/sharp-4t-c43dl1/debloat.txt",
+    "commit": "095b71ad93d99ea28d94d97b06385709d354b795"
+  }
+}

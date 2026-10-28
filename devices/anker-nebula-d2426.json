@@ -123,6 +123,41 @@
         {
           "pkg": "com.google.android.marvin.talkback",
           "note": "TalkBack screen reader"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google Play Movies & TV",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic",
+          "note": "YouTube Music",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.tts",
+          "note": "Google text-to-speech, idle once Assistant and TalkBack are off",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar",
+          "note": "Google Calendar sync",
+          "optional": true
+        },
+        {
+          "pkg": "com.android.healthconnect.controller",
+          "note": "Health Connect",
+          "optional": true
+        },
+        {
+          "pkg": "com.android.health.connect.backuprestore",
+          "note": "Health Connect backup",
+          "optional": true
+        },
+        {
+          "pkg": "com.android.nearby.halfsheet",
+          "note": "Nearby device pop-ups",
+          "optional": true
         }
       ]
     },
@@ -147,6 +182,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/anker-nebula-d2426/debloat.txt",
-    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+    "commit": "095b71ad93d99ea28d94d97b06385709d354b795"
   }
 }

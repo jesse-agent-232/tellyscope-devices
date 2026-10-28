@@ -1,0 +1,131 @@
+{
+  "schema": 1,
+  "id": "skyworth-sw-22hk-nf",
+  "name": "Skyworth SW-22HK NF",
+  "tested": {
+    "os": "Android TV 11",
+    "sdk": 30,
+    "build": null
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "Skyworth content, ads, demos and preloads",
+      "packages": [
+        {
+          "pkg": "com.smartdevice.recommendation",
+          "note": "Coocaa recommendation rows; bundles Sensors Data analytics"
+        },
+        {
+          "pkg": "com.smartdevice.leanbacklauncher.customizer",
+          "note": "partner config that injects rows into the home screen"
+        },
+        {
+          "pkg": "com.smartdevice.epopplayer",
+          "note": "ePop shop demo player"
+        },
+        {
+          "pkg": "fusion.android.tv.demo",
+          "note": "shop demo player"
+        },
+        {
+          "pkg": "com.coocaa.demonow.lightining",
+          "note": "\"Demo Now\" retail mode"
+        },
+        {
+          "pkg": "com.smartdevice.myapp",
+          "note": "\"Daily Key\" preload (factory-disabled on sister models)"
+        },
+        {
+          "pkg": "com.Smartdevice.emanual",
+          "note": "on-screen manual; skipped by the input-driver guard here, left on",
+          "optional": true
+        },
+        {
+          "pkg": "com.mstar.android.tv.disclaimercustomization",
+          "note": "retail disclaimer dialogs; skipped by the same guard, left on",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Telemetry and after-sale push",
+      "packages": [
+        {
+          "pkg": "com.smartdevice.aftersale",
+          "note": "boot + network receivers, can push APKs"
+        },
+        {
+          "pkg": "com.smartdevice.dailymanage",
+          "note": "\"TV Guard\" boot service, no documented purpose"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        }
+      ]
+    },
+    {
+      "title": "Not needed on a TV",
+      "packages": [
+        {
+          "pkg": "com.security.SwaiotTV",
+          "note": "Tuya smart-home preload"
+        },
+        {
+          "pkg": "org.liskovsoft.androidtv.rukeyboard",
+          "note": "Russian soft keyboard; left enabled, lists never disable a keyboard",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Unused preloaded streaming / media apps, off by owner's choice",
+      "packages": [
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom",
+          "note": "Prime Video"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Play Movies"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic",
+          "note": "YouTube Music"
+        },
+        {
+          "pkg": "com.google.android.play.games",
+          "note": "Play Games"
+        }
+      ]
+    },
+    {
+      "title": "Casting stack not used (Chromecast kept)",
+      "packages": [
+        {
+          "pkg": "com.smartdevice.dtv.icast",
+          "note": "Miracast + DLNA"
+        }
+      ]
+    },
+    {
+      "title": "Handover (applied after the list above; needed only if you install the Clean Your TV launcher)",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith",
+          "note": "RecoveryActivity otherwise steals Home; needs FORCE_SETUPWRAITH=1 when the saved Wi-Fi is not setupwraith's"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.launcherx",
+          "note": "stock Google TV home; com.gathin.tvhome is Home now"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/skyworth-sw-22hk-nf/debloat.txt",
+    "commit": "095b71ad93d99ea28d94d97b06385709d354b795"
+  }
+}

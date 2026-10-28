@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "tcl-32s334",
+  "name": "TCL 32S334",
+  "tested": {
+    "os": "Android TV 9",
+    "sdk": 28,
+    "build": "PPR1.180610.011"
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "TCL analytics and optional promo/utility apps",
+      "packages": [
+        {
+          "pkg": "com.tcl.bi",
+          "note": "TCL analytics / telemetry"
+        },
+        {
+          "pkg": "com.tcl.esticker",
+          "note": "retail demo stickers"
+        },
+        {
+          "pkg": "com.tcl.tvweishi",
+          "note": "TCL cleaner/widget service"
+        }
+      ]
+    },
+    {
+      "title": "Google feedback and stock-launcher recommendation rows",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "feedback collector"
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations",
+          "note": "recommendation rows for stock launcher"
+        },
+        {
+          "pkg": "com.google.android.leanbacklauncher.recommendations"
+        },
+        {
+          "pkg": "com.tcl.copydatatotv",
+          "note": "one-time TV transfer utility"
+        }
+      ]
+    },
+    {
+      "title": "Apps disabled by owner choice",
+      "packages": [
+        {
+          "pkg": "com.google.android.youtube.tv",
+          "note": "YouTube; YouTube TV is a separate app"
+        },
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google voice assistant/search"
+        },
+        {
+          "pkg": "com.tcl.assistant",
+          "note": "TCL assistant bridge"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tcl-32s334/debloat.txt",
+    "commit": "095b71ad93d99ea28d94d97b06385709d354b795"
+  }
+}

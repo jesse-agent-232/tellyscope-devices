@@ -76,6 +76,26 @@
           "note": "telemetry emitter"
         },
         {
+          "pkg": "com.amazon.ceviche",
+          "note": "data collection pipelines; tested on 65U65SFC"
+        },
+        {
+          "pkg": "com.amazon.livedeviceservice",
+          "note": "live device reporting; tested on 65U65SFC"
+        },
+        {
+          "pkg": "com.amazon.privacypassservice",
+          "note": "privacy pass token service; tested on 65U65SFC"
+        },
+        {
+          "pkg": "com.amazon.tv.developer.dataservice",
+          "note": "personalization data for third-party apps; tested on 65U65SFC"
+        },
+        {
+          "pkg": "com.amazon.wifilocker",
+          "note": "uploads Wi-Fi passwords to Amazon; tested on 65U65SFC"
+        },
+        {
           "pkg": "com.amazon.device.crashmanager",
           "note": "crash report upload: protected on this firmware",
           "optional": true
@@ -90,6 +110,35 @@
         },
         {
           "pkg": "com.amazon.tmm.tutorial"
+        },
+        {
+          "pkg": "com.amazon.tv.ffsprovisioneeclient",
+          "note": "frustration-free setup client; tested on 65U65SFC"
+        }
+      ]
+    },
+    {
+      "title": "Popups and promos (tested on 65U65SFC)",
+      "packages": [
+        {
+          "pkg": "com.amazon.tv.releasenotes",
+          "note": "\"what's new\""
+        },
+        {
+          "pkg": "com.amazon.systemnotices",
+          "note": "system notices popups"
+        },
+        {
+          "pkg": "com.amazon.uxnotification",
+          "note": "UX notification popups"
+        },
+        {
+          "pkg": "com.amazon.tv.easyupgrade",
+          "note": "\"upgrade your Fire TV\" promos"
+        },
+        {
+          "pkg": "com.amazon.providers.contentsupport",
+          "note": "content support provider"
         }
       ]
     },
@@ -111,6 +160,22 @@
         },
         {
           "pkg": "com.amazon.alexa.externalmediaplayer.fireos"
+        },
+        {
+          "pkg": "com.amazon.aca",
+          "note": "Alexa hints/cues providers; tested on 65U65SFC"
+        },
+        {
+          "pkg": "com.amazon.spotify.mediabrowserservice",
+          "note": "Spotify for Alexa (the Spotify app is separate); tested on 65U65SFC"
+        },
+        {
+          "pkg": "com.amazon.rtcsessioncontroller",
+          "note": "Alexa calling / Drop In; tested on 65U65SFC"
+        },
+        {
+          "pkg": "com.amazon.ods.kindleconnect",
+          "note": "\"show on Fire TV\" from Echo / Fire tablet; tested on 65U65SFC"
         }
       ]
     },
@@ -161,6 +226,14 @@
         {
           "pkg": "com.amazon.tv.ftvambient",
           "note": "Ambient Experience screensaver"
+        },
+        {
+          "pkg": "com.amazon.tv.localgallery",
+          "note": "Gallery; tested on 65U65SFC"
+        },
+        {
+          "pkg": "com.amazon.spiderpork",
+          "note": "Amazon Luna; tested on 65U65SFC"
         }
       ]
     }
@@ -168,6 +241,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/hisense-fire-tv-aftcibfbd1/debloat.txt",
-    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+    "commit": "095b71ad93d99ea28d94d97b06385709d354b795"
   }
 }

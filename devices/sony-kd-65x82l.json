@@ -78,6 +78,16 @@
           "pkg": "com.google.android.play.games"
         },
         {
+          "pkg": "com.google.android.videos",
+          "note": "Google TV movies store; disabled on the KD-55X82L by the owner's choice",
+          "optional": true
+        },
+        {
+          "pkg": "com.sonypicturescore",
+          "note": "BRAVIA CORE (Sony Pictures); disabled on the KD-55X82L by the owner's choice",
+          "optional": true
+        },
+        {
           "pkg": "com.sony.dtv.seeds.iot",
           "note": "Sony smart-home / phone-app link (BRAVIA Connect)"
         },
@@ -128,6 +138,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/sony-kd-65x82l/debloat.txt",
-    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+    "commit": "095b71ad93d99ea28d94d97b06385709d354b795"
   }
 }

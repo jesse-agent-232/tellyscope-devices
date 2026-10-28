@@ -351,11 +351,60 @@
           "pkg": "com.google.android.tungsten.setupwraith"
         }
       ]
+    },
+    {
+      "title": "Seventh unit: TCL 65Q7C (Smart TV Pro), Android 14 (SDK 34), tcl9618-user 14 UTT2.250416.001 AU02: reboot, home, casting checked; hdmi input & airplay not tested; its other nine are already active above",
+      "packages": [
+        {
+          "pkg": "com.crunchyroll.crunchyroid",
+          "optional": true
+        },
+        {
+          "pkg": "com.zattoo.player",
+          "optional": true
+        },
+        {
+          "pkg": "tv.arte.plus7",
+          "optional": true
+        },
+        {
+          "pkg": "de.prosiebensat1digital.seventv",
+          "optional": true
+        },
+        {
+          "pkg": "tv.mopa.ginga",
+          "optional": true
+        },
+        {
+          "pkg": "de.exaring.waipu",
+          "optional": true
+        },
+        {
+          "pkg": "de.swr.avp.ard.tv",
+          "optional": true
+        },
+        {
+          "pkg": "com.zdf.android.mediathek",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "optional": true
+        },
+        {
+          "pkg": "com.tpa.kb",
+          "optional": true
+        }
+      ]
     }
   ],
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/tcl-q7c-google-tv/debloat.txt",
-    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+    "commit": "095b71ad93d99ea28d94d97b06385709d354b795"
   }
 }

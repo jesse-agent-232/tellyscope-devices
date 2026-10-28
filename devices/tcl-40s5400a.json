@@ -193,11 +193,31 @@
           "optional": true
         }
       ]
+    },
+    {
+      "title": "Additional choices on the Vietnam unit only; uncomment only if wanted on your TV.",
+      "packages": [
+        {
+          "pkg": "com.tcl.copydatatotv",
+          "note": "phone data-migration helper",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.t_solo",
+          "note": "Bluetooth \"listen alone\" helper",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "includes an RLZ ping receiver",
+          "optional": true
+        }
+      ]
     }
   ],
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/tcl-40s5400a/debloat.txt",
-    "commit": "76a9312cd9ac378fc8698f31427805af32c6f965"
+    "commit": "095b71ad93d99ea28d94d97b06385709d354b795"
   }
 }

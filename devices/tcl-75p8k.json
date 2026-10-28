@@ -122,7 +122,7 @@
       ]
     },
     {
-      "title": "Also present on this firmware (untested on this unit; disabled on tcl-55p8ls/ and tcl-55p7k/)",
+      "title": "Also present on this firmware (untested on the 75P8K; all but UpdatePeripheral disabled on the 55\" unit,",
       "packages": [
         {
           "pkg": "tv.samba.ssm.ui",
@@ -199,11 +199,31 @@
           "optional": true
         }
       ]
+    },
+    {
+      "title": "German preloads on the 55\" unit (disabled there by choice)",
+      "packages": [
+        {
+          "pkg": "de.exaring.waipu",
+          "note": "waipu.tv",
+          "optional": true
+        },
+        {
+          "pkg": "de.prosiebensat1digital.seventv",
+          "note": "Joyn; its rows were the ads left on Google TV's home",
+          "optional": true
+        },
+        {
+          "pkg": "com.nousguide.android.orftvthek",
+          "note": "ORF ON",
+          "optional": true
+        }
+      ]
     }
   ],
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/tcl-75p8k/debloat.txt",
-    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+    "commit": "095b71ad93d99ea28d94d97b06385709d354b795"
   }
 }

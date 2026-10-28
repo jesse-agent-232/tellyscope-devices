@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "id": "sharp-55gp6260e",
+  "name": "SHARP 55GP6260E",
+  "tested": {
+    "os": "Android 11",
+    "sdk": 30,
+    "build": null
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "--- Partner rows, store demo and feedback ---",
+      "packages": [
+        {
+          "pkg": "com.mediatek.android.leanbacklauncher.partnercustomizer",
+          "note": "partner rows for the stock launcher"
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "Play partner customizations"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "fusion.android.tv.demo",
+          "note": "store/demo mode"
+        },
+        {
+          "pkg": "com.mtc.emanual",
+          "note": "on-screen manual"
+        },
+        {
+          "pkg": "com.mtc.emanual.overlay.ok"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar"
+        }
+      ]
+    },
+    {
+      "title": "--- Apps the owner does not use (off by choice; all still installed) ---",
+      "packages": [
+        {
+          "pkg": "com.netflix.ninja"
+        },
+        {
+          "pkg": "com.disney.disneyplus"
+        },
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom"
+        },
+        {
+          "pkg": "com.google.android.youtube.tv",
+          "note": "the YouTube button then opens nothing unless remapped (see above)"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.videos"
+        },
+        {
+          "pkg": "tv.twitch.android.app"
+        },
+        {
+          "pkg": "com.nordvpn.android"
+        }
+      ]
+    },
+    {
+      "title": "--- Stock Google TV home and setup wizard ---",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith",
+          "note": "first-run wizard; claims HOME. Re-enable before a factory reset"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.launcherx",
+          "note": "stock Google TV home"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/sharp-55gp6260e/debloat.txt",
+    "commit": "095b71ad93d99ea28d94d97b06385709d354b795"
+  }
+}

@@ -28,6 +28,26 @@
         {
           "pkg": "android.autoinstalls.config.tpv.device",
           "note": "Play auto-install of TPV partner apps"
+        },
+        {
+          "pkg": "com.android.adservices.api",
+          "note": "Privacy Sandbox ad services (third unit)"
+        },
+        {
+          "pkg": "com.android.ondevicepersonalization.services",
+          "note": "(third unit)"
+        },
+        {
+          "pkg": "com.android.federatedcompute.services",
+          "note": "(third unit)"
+        },
+        {
+          "pkg": "com.android.tv.feedbackconsent",
+          "note": "(third unit)"
+        },
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "(third unit)"
         }
       ]
     },
@@ -45,6 +65,10 @@
         {
           "pkg": "com.mstar.android.tv.disclaimercustomization",
           "note": "disclaimer popup"
+        },
+        {
+          "pkg": "fusion.android.tv.demo",
+          "note": "retail store demo, RetailDialogReceiver (third unit)"
         }
       ]
     },
@@ -64,6 +88,14 @@
         },
         {
           "pkg": "com.android.printspooler"
+        },
+        {
+          "pkg": "com.android.healthconnect.controller",
+          "note": "Health Connect, nothing on a TV uses it (third unit)"
+        },
+        {
+          "pkg": "com.android.health.connect.backuprestore",
+          "note": "(third unit)"
         }
       ]
     },
@@ -84,6 +116,19 @@
         {
           "pkg": "com.google.android.apps.mediashell",
           "note": "Chromecast built-in, ~75 MB resident"
+        },
+        {
+          "pkg": "com.spotify.tv.android",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic",
+          "optional": true
+        },
+        {
+          "pkg": "com.nero.swiftlink.mirror.tv",
+          "note": "\"1001 TVs\" phone-mirroring receiver, preinstalled",
+          "optional": true
         }
       ]
     },
@@ -102,6 +147,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/philips-google-tv-ta7/debloat.txt",
-    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+    "commit": "095b71ad93d99ea28d94d97b06385709d354b795"
   }
 }

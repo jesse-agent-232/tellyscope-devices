@@ -28,7 +28,8 @@
         },
         {
           "pkg": "com.tcl.partnercustomizer",
-          "note": "TCL promo rows on the Google TV home; [43S5K ONLY]"
+          "note": "keep: tvlauncher.widget provider for com.mediatek.tv.service (#2138)",
+          "optional": true
         },
         {
           "pkg": "android.autoinstalls.config.google.gtvpai",
@@ -130,6 +131,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/tcl-43s5k/debloat.txt",
-    "commit": "d043b6f90e6132f9bd9b4b652da1f43640d1f0b7"
+    "commit": "095b71ad93d99ea28d94d97b06385709d354b795"
   }
 }

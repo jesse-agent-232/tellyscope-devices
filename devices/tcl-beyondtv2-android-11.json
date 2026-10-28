@@ -92,6 +92,10 @@
         {
           "pkg": "com.tcl.micmanager",
           "note": "TCL microphone manager for voice"
+        },
+        {
+          "pkg": "com.tcl.smartalexa",
+          "note": "TCL's Alexa bridge: already off at the factory on the first"
         }
       ]
     },
@@ -118,6 +122,10 @@
         {
           "pkg": "com.google.android.backdrop",
           "note": "stock ambient photo screensaver"
+        },
+        {
+          "pkg": "com.google.android.apps.nbu.smartconnect.tv",
+          "note": "Smart Connect \"data saver\" VPN: off at the factory on"
         }
       ]
     }
@@ -125,6 +133,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/tcl-beyondtv2-android-11/debloat.txt",
-    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+    "commit": "095b71ad93d99ea28d94d97b06385709d354b795"
   }
 }

@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "id": "sony-bravia-ae1",
-  "name": "Sony BRAVIA 4K AE1",
+  "name": "Sony BRAVIA XR-55A95L",
   "tested": {
     "os": "Android 12",
     "sdk": 31,
@@ -159,6 +159,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/sony-bravia-ae1/debloat.txt",
-    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+    "commit": "095b71ad93d99ea28d94d97b06385709d354b795"
   }
 }
