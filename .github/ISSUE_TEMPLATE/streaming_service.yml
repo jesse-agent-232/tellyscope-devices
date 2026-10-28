@@ -1,0 +1,77 @@
+name: Streaming service
+description: Add a Remote button for a streaming app, or fix one that's wrong.
+title: "[Service] <name>"
+labels: ["streaming-service"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        One service per issue. Its entry goes in `lists/streaming.json` and its logo in `logos/`.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Add or fix?
+      options:
+        - Add a new service
+        - Fix an existing service
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: Service name
+      description: As it should appear under the button.
+      placeholder: e.g. Pluto TV
+    validations:
+      required: true
+  - type: textarea
+    id: packages
+    attributes:
+      label: TV app package(s)
+      description: One per line, the usual one first. Shown in Tellyscope's app list, or by `adb shell pm list packages`.
+      placeholder: tv.pluto.android
+      render: text
+    validations:
+      required: true
+  - type: input
+    id: color
+    attributes:
+      label: Brand colour
+      description: "`#RRGGBB`. Add a second one if the brand uses a gradient."
+      placeholder: "#000000"
+  - type: dropdown
+    id: region
+    attributes:
+      label: Group
+      options:
+        - Global
+        - US
+        - India
+        - Sports
+        - Self-hosted
+        - Other (say which country in the notes)
+  - type: input
+    id: logo-url
+    attributes:
+      label: Logo source URL
+      description: A Simple Icons page, or a Wikimedia Commons file page. Leave empty if there isn't one; the button then shows the name in plain type.
+      placeholder: https://commons.wikimedia.org/wiki/File:...
+  - type: dropdown
+    id: logo-licence
+    attributes:
+      label: Logo licence
+      description: We can only use a CC0 logo or one Commons tags PD-textlogo. See `logos/SOURCES.md`.
+      options:
+        - CC0
+        - PD-textlogo
+        - Something else, or I don't know
+        - No logo
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: What's wrong with the current entry, the region, anything else.
+  - type: markdown
+    attributes:
+      value: |
+        Rather send the change yourself? See [Contributing](https://github.com/man15h/tellyscope-devices#contributing).

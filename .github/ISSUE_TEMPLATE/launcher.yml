@@ -1,0 +1,60 @@
+name: Launcher
+description: Add a home-screen launcher the app should recognise, or fix one that's wrong.
+title: "[Launcher] <name>"
+labels: ["launcher"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Launchers live in `lists/launchers.json`. A new launcher is recognised when it's on a TV, but it isn't recommended in **Install a home screen** unless the maintainers decide so.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Add or fix?
+      options:
+        - Add a new launcher
+        - Fix an existing launcher
+    validations:
+      required: true
+  - type: input
+    id: package
+    attributes:
+      label: Package
+      placeholder: e.g. me.efesser.flauncher
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      placeholder: e.g. FLauncher
+    validations:
+      required: true
+  - type: input
+    id: store
+    attributes:
+      label: Play Store link
+      placeholder: https://play.google.com/store/apps/details?id=...
+  - type: dropdown
+    id: open-source
+    attributes:
+      label: Is it open source?
+      options:
+        - "Yes"
+        - "No"
+        - I don't know
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source code link
+      description: If it's open source.
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+  - type: markdown
+    attributes:
+      value: |
+        Rather send the change yourself? See [Contributing](https://github.com/man15h/tellyscope-devices#contributing).

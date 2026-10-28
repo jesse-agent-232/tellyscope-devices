@@ -1,0 +1,46 @@
+name: TV not recognised
+description: Tellyscope doesn't pick your TV's list automatically.
+title: "[Match] <brand> <model>"
+labels: ["tv-match"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This adds a rule under `match/`. If the TV's debloat list itself is wrong, that's fixed upstream in [cleanyourtv](https://github.com/Gathin23/cleanyourtv) instead.
+        Please don't paste serial numbers, IP addresses or account names.
+  - type: input
+    id: model
+    attributes:
+      label: TV make and model
+      description: The retail name, as on the box.
+      placeholder: e.g. Philips 55OLED708
+    validations:
+      required: true
+  - type: textarea
+    id: getprop
+    attributes:
+      label: getprop output
+      description: |
+        Run this from a computer with adb connected to the TV, and paste all four lines:
+        `adb shell 'for p in manufacturer model device brand; do echo "$p=$(getprop ro.product.$p)"; done'`
+      placeholder: |
+        manufacturer=TPV
+        model=Philips Google TV TA1
+        device=PH1M_WW_9972
+        brand=Philips
+      render: text
+    validations:
+      required: true
+  - type: input
+    id: list
+    attributes:
+      label: Which list should it use?
+      description: The list you picked by hand in Tellyscope, if one worked.
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+  - type: markdown
+    attributes:
+      value: |
+        Rather send the change yourself? See [Contributing](https://github.com/man15h/tellyscope-devices#contributing).

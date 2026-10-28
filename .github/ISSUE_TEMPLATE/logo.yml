@@ -1,0 +1,53 @@
+name: Logo
+description: A Remote button's logo is wrong, outdated, or has a licence problem.
+title: "[Logo] <service>"
+labels: ["logo"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Logos live in `logos/`, with each one's source and licence in `logos/SOURCES.md`.
+  - type: input
+    id: logo
+    attributes:
+      label: Which logo?
+      description: The service name, or the file name in `logos/`.
+      placeholder: e.g. plutotv
+    validations:
+      required: true
+  - type: dropdown
+    id: problem
+    attributes:
+      label: What's wrong?
+      options:
+        - It's wrong or hard to read
+        - The brand has a newer logo
+        - Licence problem
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: New source URL
+      description: A Simple Icons page, or a Wikimedia Commons file page.
+      placeholder: https://commons.wikimedia.org/wiki/File:...
+  - type: dropdown
+    id: licence
+    attributes:
+      label: Its licence
+      description: We can only use a CC0 logo or one Commons tags PD-textlogo.
+      options:
+        - CC0
+        - PD-textlogo
+        - Something else, or I don't know
+        - No new source
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: For a licence problem, say what the licence is and where you saw it. If you own the brand and want the logo removed, say so; we'll show the name instead.
+  - type: markdown
+    attributes:
+      value: |
+        Rather send the change yourself? See [Contributing](https://github.com/man15h/tellyscope-devices#contributing).

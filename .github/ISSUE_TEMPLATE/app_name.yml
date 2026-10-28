@@ -1,0 +1,40 @@
+name: App name
+description: An app shows its package name, or the wrong name.
+title: "[Name] <package>"
+labels: ["app-name"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Names live in `lists/labels.json`. Please don't paste serial numbers, IP addresses or account names.
+  - type: input
+    id: package
+    attributes:
+      label: Package
+      placeholder: e.g. com.android.tv.settings
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: The name it should have
+      description: The name the TV shows for it, in English if the TV has one.
+      placeholder: e.g. Settings
+    validations:
+      required: true
+  - type: input
+    id: shown
+    attributes:
+      label: What Tellyscope shows now
+      placeholder: e.g. com.android.tv.settings
+  - type: input
+    id: model
+    attributes:
+      label: TV make and model
+      placeholder: e.g. Sony Bravia XR-55A80L
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        Rather send the change yourself? See [Contributing](https://github.com/man15h/tellyscope-devices#contributing).
