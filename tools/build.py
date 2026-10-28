@@ -29,6 +29,8 @@ MATCH_KEYS = ("manufacturer", "model", "device")
 # The app-wide lists in lists/, by the name the index gives them.
 LISTS = ("launchers", "labels", "streaming")
 HEX = re.compile(r"#[0-9A-Fa-f]{6}")
+# The Remote's sheet in dark mode; a service's `dark` fill replaces a colour that sinks into it.
+DARK_SHEET = "#161D1D"
 LOGO = re.compile(r"[a-z0-9]+")
 PNG = b"\x89PNG\r\n\x1a\n"
 # Logos are drawn at four times their size in dp and have to fit the smallest pill, 72 x 30 dp.
@@ -183,6 +185,17 @@ def png_size(data):
     return int.from_bytes(data[16:20], "big"), int.from_bytes(data[20:24], "big")
 
 
+def contrast(a, b):
+    """WCAG contrast between two #RRGGBB colours, as the app's RemoteButtons.contrast works it out."""
+    def luminance(c):
+        def ch(i):
+            v = int(c[i:i + 2], 16) / 255
+            return v / 12.92 if v <= 0.04045 else ((v + 0.055) / 1.055) ** 2.4
+        return 0.2126 * ch(1) + 0.7152 * ch(3) + 0.0722 * ch(5)
+    x, y = luminance(a), luminance(b)
+    return (max(x, y) + 0.05) / (min(x, y) + 0.05)
+
+
 def check_lists():
     """Errors in lists/ and logos/: the app drops what it can't read, so a bad entry would vanish quietly."""
     errors = []
@@ -254,6 +267,9 @@ def check_lists():
                 for key in ("color", "color2", "dark"):
                     if (key == "color" or key in s) and not (isinstance(s.get(key), str) and HEX.fullmatch(s[key])):
                         errors.append(f"{where}: '{key}' must be #RRGGBB")
+                dark = s.get("dark")
+                if isinstance(dark, str) and HEX.fullmatch(dark) and contrast(dark, DARK_SHEET) < 3:
+                    errors.append(f"{where}: 'dark' is {contrast(dark, DARK_SHEET):.2f}:1 against the dark sheet, under 3:1")
                 logo = s.get("logo")
                 if not (isinstance(logo, str) and LOGO.fullmatch(logo)):
                     errors.append(f"{where}: 'logo' must be lowercase letters and digits")

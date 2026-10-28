@@ -119,7 +119,7 @@ reading the file. A package appears once across all groups; `android` is allowed
 | `packages` | list of package names | its TV apps, the usual one first; a package belongs to one service only |
 | `color` | `#RRGGBB` | the button's brand colour |
 | `color2` | `#RRGGBB`, optional | a gradient towards this colour |
-| `dark` | `#RRGGBB`, optional | the fill in dark mode, for a colour that would sink into the dark sheet |
+| `dark` | `#RRGGBB`, optional | the fill in dark mode, for a colour that would sink into the dark sheet; needs 3:1 contrast against it (`#161D1D`) |
 | `logo` | lowercase letters and digits | names `logos/<logo>.png` |
 
 ### `logos/<logo>.png`

@@ -175,6 +175,14 @@ class Lists(unittest.TestCase):
         self.assertIn("'color' must be #RRGGBB", errors)
         self.assertIn("not a package name", errors)
 
+    def test_a_dark_fill_that_sinks_into_the_sheet_is_caught(self):
+        self.edit("streaming", lambda d: d["groups"][0]["services"][0].update({"dark": "#202020"}))
+        self.assertIn("under 3:1", "\n".join(build.check_lists()))
+
+    def test_contrast_matches_the_app(self):
+        self.assertAlmostEqual(build.contrast("#FFFFFF", "#000000"), 21.0)
+        self.assertGreaterEqual(build.contrast("#E50914", build.DARK_SHEET), 3)  # Netflix's, which the app's test passed
+
     def test_a_missing_or_unused_logo_is_caught(self):
         self.edit("streaming", lambda d: d["groups"][0]["services"][0].update({"logo": "nosuchlogo"}))
         errors = "\n".join(build.check_lists())
