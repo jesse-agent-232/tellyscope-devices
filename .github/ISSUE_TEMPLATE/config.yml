@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: A TV's debloat list is wrong
+    url: https://github.com/Gathin23/cleanyourtv/issues
+    about: The package lists come from cleanyourtv. Fix them there; the next sync brings the change here.
+  - name: A bug in the Tellyscope app
+    url: https://github.com/man15h/tellyscope/issues/new/choose
+    about: Crashes, connection problems and device reports go to the app's repo.
