@@ -23,6 +23,7 @@ here. Nothing reaches apps until a maintainer merges it.
 | `lists/labels.json` | people | App names to show when the TV doesn't give one. |
 | `lists/streaming.json` | people | Streaming services the Remote can have a button for. |
 | `logos/<logo>.png` | people | Each service's logo, named in `streaming.json`. |
+| `logos/SOURCES.md` | people | Where each logo came from, and its licence. |
 
 A device with no `match/` file is still in the index, with `"match": null`: an app can't recognise it,
 but the user can pick it. A match rule whose device is gone is skipped.
@@ -125,7 +126,7 @@ reading the file. A package appears once across all groups; `android` is allowed
 
 A PNG at four times its size in dp, at most 288 x 120 pixels (it has to fit the smallest button, 72 x
 30 dp) and 64 KB. White or black on transparent reads best: the app recolours it on dark brand
-colours. Every logo is used by a service.
+colours. Every logo is used by a service and has a row in `logos/SOURCES.md`.
 
 ### `index.json`
 
@@ -141,6 +142,9 @@ none) and `sdk` from `tested.sdk`; `lists` has `launchers`, `labels` and `stream
   `python3 tools/build.py index`.
 - **A streaming service, launcher or app name is missing:** add it to the file under `lists/` (and its
   logo under `logos/`) and run `python3 tools/build.py index`.
+- **A new logo** needs a source that is CC0 (like [Simple Icons](https://simpleicons.org)) or tagged
+  PD-textlogo on Wikimedia Commons, and a row in `logos/SOURCES.md` with its URL and licence. With
+  neither, set the service's name in plain type instead. `check` fails on a logo without a row.
 - Before a pull request: `python3 -m unittest discover -s tests` and `python3 tools/build.py check`.
 
 The sync runs daily (and on demand from the Actions tab). It rebuilds `devices/` and opens or refreshes
