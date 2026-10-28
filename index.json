@@ -2779,7 +2779,7 @@
   "lists": {
     "launchers": {
       "file": "lists/launchers.json",
-      "sha256": "c9c4bc416ee3d4e446a78fc00057326234eaeda558124f67e1b1ca27574cb116"
+      "sha256": "22ccc5eac974ccc7d04d85282da866307abdf46149d91787c8c844f4e7a456cf"
     },
     "labels": {
       "file": "lists/labels.json",
@@ -2787,7 +2787,7 @@
     },
     "streaming": {
       "file": "lists/streaming.json",
-      "sha256": "64a0792971761ad71d945430d0a46383f70e77c5c99cd76bd4511750c3b13e45"
+      "sha256": "907e47666b18673d634bd8a3840a32acbc7d9c083b14ae14bd6359b025db2d4f"
     }
   },
   "logos": {
