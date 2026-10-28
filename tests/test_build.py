@@ -185,6 +185,11 @@ class Lists(unittest.TestCase):
         self.edit("launchers", lambda d: d["launchers"][0].update({"accessibility": True}))
         self.assertIn("unknown keys ['accessibility']", "\n".join(build.check_lists()))
 
+    def test_a_logo_without_a_source_row_is_caught(self):
+        sources = self.root / "logos" / "SOURCES.md"
+        sources.write_text(sources.read_text(encoding="utf-8").replace("| netflix |", "| other |"), encoding="utf-8")
+        self.assertIn("logos/netflix.png: needs a row in logos/SOURCES.md", "\n".join(build.check_lists()))
+
     def test_an_oversized_logo_is_caught(self):
         big = build.PNG + b"\x00\x00\x00\x0dIHDR" + (1000).to_bytes(4, "big") + (40).to_bytes(4, "big")
         (self.root / "logos" / "netflix.png").write_bytes(big)

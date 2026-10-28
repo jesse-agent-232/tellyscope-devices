@@ -264,8 +264,14 @@ def check_lists():
                     errors.append(f"{where}: listed twice")
                 names.add(s.get("name"))
 
+    sources = ROOT / "logos" / "SOURCES.md"
+    rows = set(re.findall(r"^\| *([a-z0-9]+) *\|", sources.read_text(encoding="utf-8"), re.M)) if sources.is_file() else set()
     for f in sorted((ROOT / "logos").glob("*")):
         where = f"logos/{f.name}"
+        if f.name == "SOURCES.md":
+            continue
+        if f.stem not in rows:
+            errors.append(f"{where}: needs a row in logos/SOURCES.md with its source and licence")
         if f.suffix != ".png" or not LOGO.fullmatch(f.stem):
             errors.append(f"{where}: logos are <lowercase letters and digits>.png")
             continue
