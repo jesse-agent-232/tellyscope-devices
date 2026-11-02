@@ -3356,6 +3356,10 @@
     "streaming": {
       "file": "lists/streaming.json",
       "sha256": "907e47666b18673d634bd8a3840a32acbc7d9c083b14ae14bd6359b025db2d4f"
+    },
+    "protected": {
+      "file": "lists/protected.json",
+      "sha256": "64ef6890111a65548fd9fca73ede454fbe71a7fa5a9f0840ccf9e0679abea20e"
     }
   },
   "logos": {

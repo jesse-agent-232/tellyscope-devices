@@ -193,6 +193,16 @@ class Lists(unittest.TestCase):
         self.edit("launchers", lambda d: d["launchers"][0].update({"accessibility": True}))
         self.assertIn("unknown keys ['accessibility']", "\n".join(build.check_lists()))
 
+    def test_a_bad_protected_entry_is_caught(self):
+        def bad(d):
+            d["groups"][0]["packages"].update({"org.droidtv.eum": "home_screen", "not a package": "system"})
+            d["groups"].append({"name": "Twice", "packages": {"org.droidtv.settings": "settings"}})
+        self.edit("protected", bad)
+        errors = "\n".join(build.check_lists())
+        self.assertIn("org.droidtv.eum: reason must be one of", errors)
+        self.assertIn("not a package name", errors)
+        self.assertIn("org.droidtv.settings is listed twice", errors)
+
     def test_a_logo_without_a_source_row_is_caught(self):
         sources = self.root / "logos" / "SOURCES.md"
         sources.write_text(sources.read_text(encoding="utf-8").replace("| netflix |", "| other |"), encoding="utf-8")

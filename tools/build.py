@@ -27,7 +27,9 @@ KEEP_HEADING = re.compile(r"do not disable|don't disable|must stay|^keep\b|^kept
 UNCOMMENT = re.compile(r"uncomment", re.I)
 MATCH_KEYS = ("manufacturer", "model", "device")
 # The app-wide lists in lists/, by the name the index gives them.
-LISTS = ("launchers", "labels", "streaming")
+LISTS = ("launchers", "labels", "streaming", "protected")
+# What protected.json may give as a package's reason: the app's own reasons a list can claim.
+PROTECT_REASONS = ("system", "settings", "play_services", "keyboard", "tv_inputs_remote", "setup_wizard", "updates")
 HEX = re.compile(r"#[0-9A-Fa-f]{6}")
 # The Remote's sheet in dark mode; a service's `dark` fill replaces a colour that sinks into it.
 DARK_SHEET = "#161D1D"
@@ -245,6 +247,20 @@ def check_lists():
                     package(where, pkg)
                 if not (isinstance(label, str) and label.strip()):
                     errors.append(f"{where}: {pkg} needs a name")
+                if pkg in seen:
+                    errors.append(f"{where}: {pkg} is listed twice")
+                seen.add(pkg)
+
+    protected = load("protected")
+    if protected:
+        seen = set()
+        for g in protected.get("groups", []):
+            where = f"lists/protected.json: {g.get('name')!r}"
+            text(where, g, "name")
+            for pkg, reason in g.get("packages", {}).items():
+                package(where, pkg)
+                if reason not in PROTECT_REASONS:
+                    errors.append(f"{where}: {pkg}: reason must be one of {', '.join(PROTECT_REASONS)}")
                 if pkg in seen:
                     errors.append(f"{where}: {pkg} is listed twice")
                 seen.add(pkg)

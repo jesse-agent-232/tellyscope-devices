@@ -57,7 +57,8 @@ only on packages the TV itself lists.
    folder that holds `index.json`, like `https://raw.githubusercontent.com/<you>/tellyscope-devices/main/`.
    Reset to default switches back.
 
-Protected apps stay protected whatever a list says. Your source supplies every list and logo; which
+Apps the app protects itself stay protected whatever a list says. Your source supplies every list and
+logo, `protected.json` included: leave it out and only the app's built-in protection is left; which
 launchers may turn on an accessibility service is decided inside the app, never by a list.
 
 ## File format
@@ -122,6 +123,16 @@ reading the file. A package appears once across all groups; `android` is allowed
 | `dark` | `#RRGGBB`, optional | the fill in dark mode, for a colour that would sink into the dark sheet; needs 3:1 contrast against it (`#161D1D`) |
 | `logo` | lowercase letters and digits | names `logos/<logo>.png` |
 
+### `lists/protected.json`
+
+`{"schema": 1, "groups": [{"name", "packages": {"<package>": "<reason>"}}]}`: packages only one
+maker's TVs have that must never be stopped or disabled, one group per maker. The app protects them on
+every TV, on top of its built-in list, and refuses a hand-picked Stop or Disable as well as Debloat.
+The file can only add: leaving a package out, or giving a built-in one another reason, changes nothing.
+A package appears once across all groups. `<reason>` picks the line the app shows and is one of
+`system`, `settings`, `play_services`, `keyboard`, `tv_inputs_remote`, `setup_wizard` or `updates`.
+Packages any Android TV, Google TV or Fire TV can have belong in the app's built-in list instead.
+
 ### `logos/<logo>.png`
 
 A PNG at four times its size in dp, at most 288 x 120 pixels (it has to fit the smallest button, 72 x
@@ -132,7 +143,7 @@ colours. Every logo is used by a service and has a row in `logos/SOURCES.md`.
 
 `{"schema", "source": {"repo", "commit"}, "devices": [{"id", "name", "match", "sdk", "file", "sha256"}], "lists": {"<name>": {"file", "sha256"}}, "logos": {"<logo>": {"file", "sha256"}}}`,
 one `devices` entry per device file, with `match` copied from `match/<id>.json` (`null` when there is
-none) and `sdk` from `tested.sdk`; `lists` has `launchers`, `labels` and `streaming`.
+none) and `sdk` from `tested.sdk`; `lists` has `launchers`, `labels`, `streaming` and `protected`.
 
 ## Contributing
 
