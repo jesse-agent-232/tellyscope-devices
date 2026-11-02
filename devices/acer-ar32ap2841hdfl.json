@@ -1,0 +1,123 @@
+{
+  "schema": 1,
+  "id": "acer-ar32ap2841hdfl",
+  "name": "Acer P Series AR32AP2841HDFL 32\" HD",
+  "tested": {
+    "os": "Android TV 11",
+    "sdk": null,
+    "build": "RTT7.220308.001"
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "SCBC / Google telemetry and feedback",
+      "packages": [
+        {
+          "pkg": "com.apps.function.gdpr",
+          "note": "SCBC data-consent agent"
+        },
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "Google feedback bug reporter"
+        },
+        {
+          "pkg": "android.autoinstalls.config.scbc.device",
+          "note": "Play auto-installs of partner apps"
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "Google partner setup / RLZ pings"
+        },
+        {
+          "pkg": "com.realtek.leanbacklauncher.partnercustomizer",
+          "note": "partner config injecting rows into stock launcher"
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations",
+          "note": "sponsored and recommendation rows on stock Home"
+        }
+      ]
+    },
+    {
+      "title": "OEM background bloat, demo, cleaner and unneeded services",
+      "packages": [
+        {
+          "pkg": "com.apps.esticker",
+          "note": "ShowService overlay, demo stickers"
+        },
+        {
+          "pkg": "com.apps.eshow",
+          "note": "E-SHOW in-store demo / promo"
+        },
+        {
+          "pkg": "com.apps.clear",
+          "note": "\"TV Booster\" cleaner"
+        },
+        {
+          "pkg": "com.apps.networkspeed",
+          "note": "speed test app"
+        },
+        {
+          "pkg": "com.apps.timeclock",
+          "note": "WorldClock"
+        },
+        {
+          "pkg": "com.apps.wifihotspot",
+          "note": "TV as a Wi-Fi hotspot"
+        },
+        {
+          "pkg": "com.apps.function.audiolink",
+          "note": "Audio Link"
+        },
+        {
+          "pkg": "com.apps.channels",
+          "note": "\"S-Channel\" content rows on stock Home"
+        },
+        {
+          "pkg": "com.vewd.core.service",
+          "note": "Vewd app-store / HbbTV core service"
+        },
+        {
+          "pkg": "com.google.android.apps.nbu.smartconnect.tv",
+          "note": "Smart Connect"
+        }
+      ]
+    },
+    {
+      "title": "Streaming apps (unselected by user)",
+      "packages": [
+        {
+          "pkg": "com.sonyliv",
+          "note": "Sony LIV; off on the owner's set, kept on in the shared list",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic",
+          "note": "YouTube Music; off on the owner's set, kept on in the shared list",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Firmware updaters (turned off by the owner; commented out so updates keep coming)",
+      "packages": [
+        {
+          "pkg": "com.apps.ota",
+          "note": "System OTA updater; off on the owner's set, kept on in the shared list",
+          "optional": true
+        },
+        {
+          "pkg": "com.apps.authota",
+          "note": "Auth OTA updater; off on the owner's set, kept on in the shared list",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/acer-ar32ap2841hdfl/debloat.txt",
+    "commit": "a1e948c665abf5af86c3aab08fe05053686a6bf3"
+  }
+}

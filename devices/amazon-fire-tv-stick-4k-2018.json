@@ -318,7 +318,7 @@
       ]
     },
     {
-      "title": "Second unit, disabled 2026-10-22 and survived reboots, not yet lived with for days: commented out until then.",
+      "title": "Second unit, disabled since 2026-10-22, 10 days on a signage stick running one player app all day (rebooted on day one, then up",
       "packages": [
         {
           "pkg": "com.amazon.vizzini",
@@ -369,29 +369,8 @@
           "optional": true
         },
         {
-          "pkg": "com.amazon.recess",
-          "optional": true
-        },
-        {
-          "pkg": "com.amazon.naatyam",
-          "optional": true
-        },
-        {
-          "pkg": "com.amazon.neodelegate",
-          "optional": true
-        },
-        {
-          "pkg": "com.amazon.csm.htmlruntime",
-          "note": "HTML runtime for Amazon promos",
-          "optional": true
-        },
-        {
-          "pkg": "com.android.printspooler",
-          "optional": true
-        },
-        {
           "pkg": "com.amazon.whisperplay.service.install",
-          "note": "remote app install from the phone app",
+          "note": "remote app install from the phone app (part of the whisperplay casting stack)",
           "optional": true
         },
         {
@@ -420,11 +399,33 @@
           "optional": true
         }
       ]
+    },
+    {
+      "title": "Added 2026-11-01 from the second unit, also disabled in other Fire OS lists here. Their role is not documented;",
+      "packages": [
+        {
+          "pkg": "com.amazon.recess"
+        },
+        {
+          "pkg": "com.amazon.naatyam"
+        },
+        {
+          "pkg": "com.amazon.neodelegate"
+        },
+        {
+          "pkg": "com.amazon.csm.htmlruntime",
+          "note": "HTML runtime for Amazon promos"
+        },
+        {
+          "pkg": "com.android.printspooler",
+          "note": "no printing on a TV"
+        }
+      ]
     }
   ],
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/amazon-fire-tv-stick-4k-2018/debloat.txt",
-    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+    "commit": "a1e948c665abf5af86c3aab08fe05053686a6bf3"
   }
 }

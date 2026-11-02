@@ -32,6 +32,11 @@
         },
         {
           "pkg": "com.android.tv.feedbackconsent"
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "partner setup / partner app auto-installs",
+          "optional": true
         }
       ]
     },
@@ -53,24 +58,27 @@
         },
         {
           "pkg": "com.google.android.videos",
-          "note": "Google TV app, source of the home screen's recommendations"
+          "note": "Google TV recommendations; TD43 only, not installed on TD50"
         }
       ]
     },
     {
-      "title": "Batch 3: optional, uncomment what you do not use (this home kept the commented ones)",
+      "title": "Batch 3: optional, uncomment what you do not use.",
       "packages": [
         {
           "pkg": "com.netflix.ninja",
-          "note": "Netflix"
+          "note": "Netflix",
+          "optional": true
         },
         {
           "pkg": "com.amazon.amazonvideo.livingroom",
-          "note": "Prime Video"
+          "note": "Prime Video",
+          "optional": true
         },
         {
           "pkg": "com.google.android.youtube.tvmusic",
-          "note": "YouTube Music"
+          "note": "YouTube Music",
+          "optional": true
         },
         {
           "pkg": "com.homwee.mmp.screenshare",
@@ -139,6 +147,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/tuvio-td43ufbcv5/debloat.txt",
-    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+    "commit": "a1e948c665abf5af86c3aab08fe05053686a6bf3"
   }
 }

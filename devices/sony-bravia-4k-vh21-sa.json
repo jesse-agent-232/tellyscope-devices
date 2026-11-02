@@ -1,0 +1,110 @@
+{
+  "schema": 1,
+  "id": "sony-bravia-4k-vh21-sa",
+  "name": "Sony BRAVIA 4K VH21",
+  "tested": {
+    "os": "Android 12",
+    "sdk": 31,
+    "build": "BRAVIA_VH21_SA-user"
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "ACR viewing tracker",
+      "packages": [
+        {
+          "pkg": "tv.samba.ssm",
+          "note": "Samba TV fingerprints what's on screen"
+        },
+        {
+          "pkg": "tv.samba.ssm.ui"
+        }
+      ]
+    },
+    {
+      "title": "telemetry and remote support",
+      "packages": [
+        {
+          "pkg": "com.qterics.da.product",
+          "note": "Qterics device agent"
+        },
+        {
+          "pkg": "com.sony.dtv.da.service",
+          "note": "remote-support session service"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        }
+      ]
+    },
+    {
+      "title": "demo and dashboard",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.multiscreendemo",
+          "note": "shop-mode demo"
+        },
+        {
+          "pkg": "com.sony.dtv.ecodashboard",
+          "note": "eco settings dashboard tile"
+        }
+      ]
+    },
+    {
+      "title": "BRAVIA CAM apps (no camera on this set)",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.gestureapp"
+        },
+        {
+          "pkg": "com.sony.dtv.livingfit",
+          "note": "fitness app for BRAVIA CAM"
+        }
+      ]
+    },
+    {
+      "title": "unused Google preloads (owner's choice: comment out to keep)",
+      "packages": [
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google TV movies & shows"
+        }
+      ]
+    },
+    {
+      "title": "Latin American preloads (owner's choice: comment out to keep)",
+      "packages": [
+        {
+          "pkg": "tv.pluto.android",
+          "note": "Pluto TV"
+        },
+        {
+          "pkg": "com.eltelon.zapping",
+          "note": "Zapping, paid live TV for Chile"
+        },
+        {
+          "pkg": "com.spotify.tv.android",
+          "note": "disabled here, then reinstalled by the owner: kept",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Google TV setup wizard: with launcherx disabled its RecoveryActivity (HOME priority 1) outranks",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/sony-bravia-4k-vh21-sa/debloat.txt",
+    "commit": "a1e948c665abf5af86c3aab08fe05053686a6bf3"
+  }
+}

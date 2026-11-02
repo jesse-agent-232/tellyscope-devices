@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "id": "jmgo-n1s-4k-lonavla",
+  "name": "JMGO N1S 4K projector",
+  "tested": {
+    "os": "Android 14",
+    "sdk": 34,
+    "build": null
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "JMGO telemetry",
+      "packages": [
+        {
+          "pkg": "com.jmgo.spider",
+          "note": "tracker: boot receiver, location, app usage stats"
+        }
+      ]
+    },
+    {
+      "title": "JMGO extras",
+      "packages": [
+        {
+          "pkg": "com.jmgo.helpcenter",
+          "note": "help centre; also has a preinstall AppDownloadService"
+        }
+      ]
+    },
+    {
+      "title": "Retail demo",
+      "packages": [
+        {
+          "pkg": "fusion.android.tv.demo",
+          "note": "store demo loop"
+        }
+      ]
+    },
+    {
+      "title": "Google telemetry",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.android.tv.feedbackconsent",
+          "note": "diagnostics consent prompt"
+        }
+      ]
+    },
+    {
+      "title": "Google preloads",
+      "packages": [
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic",
+          "note": "YouTube Music; keep it if you use it"
+        }
+      ]
+    },
+    {
+      "title": "Partner rows on the stock home screen",
+      "packages": [
+        {
+          "pkg": "com.mediatek.android.leanbacklauncher.partnercustomizer"
+        }
+      ]
+    },
+    {
+      "title": "Google TV setup wizard: only its RecoveryActivity matters after setup. Re-join the Wi-Fi first (above),",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith"
+        }
+      ]
+    },
+    {
+      "title": "Stock Google TV launcher, replaced by launcher/",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.tv.launcherx"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/jmgo-n1s-4k-lonavla/debloat.txt",
+    "commit": "a1e948c665abf5af86c3aab08fe05053686a6bf3"
+  }
+}

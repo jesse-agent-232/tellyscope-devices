@@ -14,6 +14,11 @@
       "title": "---- 1. TCL and Google telemetry ----",
       "packages": [
         {
+          "pkg": "com.tcl.ttvs",
+          "note": "TCL BI / awareness / identifier services and T-Cast; off on the 65P735 (AR11), left on in the shared list",
+          "optional": true
+        },
+        {
           "pkg": "com.tcl.bi",
           "note": "TCL BI analytics"
         },
@@ -111,6 +116,26 @@
         {
           "pkg": "com.tcl.gallery",
           "note": "TCL photo gallery"
+        },
+        {
+          "pkg": "com.tcl.hearaid",
+          "note": "hearing test / volume adaptation; off on the 65P735 (AR11), left on in the shared list",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.magiconnectfree",
+          "note": "TCL phone sharing app; off on the 65P735 (AR11), left on in the shared list",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.apps.nbu.smartconnect.tv",
+          "note": "Google \"smart connect\" nearby service; off on the 65P735 (AR11), left on in the shared list",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.t_solo",
+          "note": "Bluetooth \"Listen alone\"; off on the 65P735 (AR11), but on AR09 it holds TV_INPUT_HARDWARE (50S546), so it stays on",
+          "optional": true
         }
       ]
     },
@@ -148,6 +173,11 @@
         {
           "pkg": "com.tcl.browser",
           "note": "TCL web browser; removes the \"BrowseHere\" row from the stock home"
+        },
+        {
+          "pkg": "com.google.android.marvin.talkback",
+          "note": "TalkBack screen reader; off on the 65P735, but it is an accessibility service, so it stays on unless nobody needs it",
+          "optional": true
         }
       ]
     },
@@ -217,6 +247,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/tcl-g03-google-tv/debloat.txt",
-    "commit": "baadd07a7d095cc3ea72e6ccb615987bf1fb97c4"
+    "commit": "a1e948c665abf5af86c3aab08fe05053686a6bf3"
   }
 }

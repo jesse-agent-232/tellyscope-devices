@@ -1,0 +1,207 @@
+{
+  "schema": 1,
+  "id": "sony-xr-77a80l",
+  "name": "Sony XR-77A80L",
+  "tested": {
+    "os": "Google TV 12",
+    "sdk": 31,
+    "build": "BRAVIA_VH22_M_UC-user"
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Batch 1: tracking, ads, demo mode",
+      "packages": [
+        {
+          "pkg": "tv.samba.ssm",
+          "note": "Samba TV fingerprints what's on screen (ACR)"
+        },
+        {
+          "pkg": "tv.samba.ssm.ui"
+        },
+        {
+          "pkg": "com.sonyericsson.idd.agent",
+          "note": "Sony IDD usage-data agent"
+        },
+        {
+          "pkg": "com.sony.dtv.usercontext",
+          "note": "user context providers"
+        },
+        {
+          "pkg": "com.qterics.da.product",
+          "note": "Qterics device agent"
+        },
+        {
+          "pkg": "com.sony.dtv.da.service",
+          "note": "remote-support session service"
+        },
+        {
+          "pkg": "com.sony.dtv.sonybugreportsys"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.sony.dtv.promos",
+          "note": "\"Freeplay\" promo tile"
+        },
+        {
+          "pkg": "com.sony.dtv.sonyselect",
+          "note": "Sony Select app recommendations"
+        },
+        {
+          "pkg": "com.sony.dtv.sonytab",
+          "note": "Sony tab / partner rows on the Google TV home"
+        },
+        {
+          "pkg": "com.sony.dtv.launcherxcustomizer",
+          "note": "Sony config for the Google TV home"
+        },
+        {
+          "pkg": "android.autoinstalls.config.sony.bravia",
+          "note": "Play auto-install of partner apps"
+        },
+        {
+          "pkg": "com.sony.dtv.demosupport"
+        },
+        {
+          "pkg": "com.sony.dtv.demosystemsupport"
+        },
+        {
+          "pkg": "com.sony.dtv.multiscreendemo"
+        },
+        {
+          "pkg": "com.vewd.core.service",
+          "note": "Vewd"
+        }
+      ]
+    },
+    {
+      "title": "Batch 2: hotel mode, help, setup leftovers, BRAVIA CAM (not attached)",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.b2b.hotelmode",
+          "note": "always-running hotel-mode service"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.noderuntime.normal",
+          "note": "Node.js runtime for hotel apps"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.noderuntime.privilege"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.noderuntimeextension.bpk"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.noderuntimeextension.node_20_11_1"
+        },
+        {
+          "pkg": "com.sony.dtv.customersupport",
+          "note": "Help tile"
+        },
+        {
+          "pkg": "com.sony.dtv.smarthelp"
+        },
+        {
+          "pkg": "com.sony.dtv.helpguidecontents"
+        },
+        {
+          "pkg": "com.sony.dtv.ecodashboard"
+        },
+        {
+          "pkg": "com.sony.dtv.notificationcenter",
+          "note": "\"BRAVIA notifications\" inbox"
+        },
+        {
+          "pkg": "com.sony.dtv.QuickSetupCustomizer",
+          "note": "partner customisation for first setup"
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "RLZ install-attribution provider"
+        },
+        {
+          "pkg": "com.google.android.onetimeinitializer",
+          "note": "runs once after first setup"
+        },
+        {
+          "pkg": "com.android.printspooler"
+        },
+        {
+          "pkg": "com.sony.dtv.gestureapp",
+          "note": "BRAVIA CAM gestures"
+        },
+        {
+          "pkg": "com.sony.dtv.distancealert",
+          "note": "BRAVIA CAM distance alert"
+        },
+        {
+          "pkg": "com.sony.dtv.sensingcamera.settings"
+        },
+        {
+          "pkg": "com.sony.dtv.sensingcamera.fwupdate"
+        }
+      ]
+    },
+    {
+      "title": "Batch 3: features this owner doesn't use",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.airplayapp",
+          "note": "AirPlay (~53 MB with its server process)",
+          "optional": true
+        },
+        {
+          "pkg": "com.sony.dtv.homekit",
+          "note": "HomeKit, alongside AirPlay",
+          "optional": true
+        },
+        {
+          "pkg": "com.uei.quicksetsdk.sony",
+          "note": "UEI QuickSet IR control (~41 MB); HDMI-CEC unaffected; an app choice (see the note above)",
+          "optional": true
+        },
+        {
+          "pkg": "com.sony.dtv.seeds.iot",
+          "note": "BRAVIA Connect phone link; an app choice (see the note above)",
+          "optional": true
+        },
+        {
+          "pkg": "com.sony.dtv.seeds.iot.remotestart",
+          "note": "KEEP: with it disabled the TV drops off the network in standby",
+          "optional": true
+        },
+        {
+          "pkg": "com.sony.dtv.seeds.auth",
+          "note": "an app choice (see the note above)",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic",
+          "note": "YouTube Music, an app choice (see the note above)",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.play.games",
+          "note": "Play Games, an app choice (see the note above)",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Batch 4: Google TV setup wizard. Its RecoveryActivity claims HOME (priority 1) and would keep Home",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/sony-xr-77a80l/debloat.txt",
+    "commit": "a1e948c665abf5af86c3aab08fe05053686a6bf3"
+  }
+}

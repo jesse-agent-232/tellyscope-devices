@@ -122,7 +122,48 @@
           "pkg": "com.sony.dtv.sensingcamera.settings"
         },
         {
-          "pkg": "com.sony.dtv.sensingcamera.fwupdate"
+          "pkg": "com.sony.dtv.sensingcamera.fwupdate",
+          "note": "BRAVIA CAM firmware checker only; the TV's own updater (systemupdate) stays on"
+        },
+        {
+          "pkg": "com.sony.dtv.sonybugreportsys",
+          "note": "Sony bug report service",
+          "optional": true
+        },
+        {
+          "pkg": "com.sony.dtv.customersupport",
+          "note": "customer support tile",
+          "optional": true
+        },
+        {
+          "pkg": "au.com.ninenow.ctv",
+          "note": "9Now",
+          "optional": true
+        },
+        {
+          "pkg": "au.net.abc.iview",
+          "note": "ABC iview",
+          "optional": true
+        },
+        {
+          "pkg": "com.swm.live",
+          "note": "7plus",
+          "optional": true
+        },
+        {
+          "pkg": "com.apple.atve.sony.appletv",
+          "note": "Apple TV app",
+          "optional": true
+        },
+        {
+          "pkg": "com.sony.dtv.hbbtvplayer",
+          "note": "HbbTV / red button",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.tts",
+          "note": "text-to-speech: TalkBack and read-aloud stop working",
+          "optional": true
         }
       ]
     },
@@ -138,6 +179,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/sony-kd-65x82l/debloat.txt",
-    "commit": "095b71ad93d99ea28d94d97b06385709d354b795"
+    "commit": "a1e948c665abf5af86c3aab08fe05053686a6bf3"
   }
 }

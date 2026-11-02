@@ -5,7 +5,7 @@
   "tested": {
     "os": "Android 14",
     "sdk": 34,
-    "build": null
+    "build": "AU04"
   },
   "launcher": "com.google.android.apps.tv.launcherx",
   "keep": [],
@@ -455,6 +455,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/tcl-q7c-google-tv/debloat.txt",
-    "commit": "57c00a40dafe040b0be1f32086e96c05a1a37054"
+    "commit": "a1e948c665abf5af86c3aab08fe05053686a6bf3"
   }
 }

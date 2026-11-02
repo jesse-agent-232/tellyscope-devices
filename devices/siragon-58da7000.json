@@ -1,0 +1,118 @@
+{
+  "schema": 1,
+  "id": "siragon-58da7000",
+  "name": "Siragon 58DA7000",
+  "tested": {
+    "os": "Android TV 11",
+    "sdk": 30,
+    "build": "RTM3.211215.203"
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Google ads, recommendations and telemetry",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvrecommendations",
+          "note": "sponsored rows and surveys on the stock home"
+        },
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "crash and feedback telemetry"
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "partner preload installer"
+        }
+      ]
+    },
+    {
+      "title": "Google preloads this set does not use",
+      "packages": [
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Play Movies & TV store"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic",
+          "note": "YouTube Music preload"
+        },
+        {
+          "pkg": "com.google.android.play.games",
+          "note": "Play Games service"
+        }
+      ]
+    },
+    {
+      "title": "Other preloads and unused utilities",
+      "packages": [
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom",
+          "note": "Prime Video preload"
+        },
+        {
+          "pkg": "fusion.android.tv.demo",
+          "note": "vendor demo app"
+        },
+        {
+          "pkg": "com.google.android.backdrop",
+          "note": "stock ambient screensaver (a new launcher can supply the clock)"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar",
+          "note": "calendar sync"
+        },
+        {
+          "pkg": "com.android.printspooler",
+          "note": "no printing on a TV"
+        },
+        {
+          "pkg": "com.android.wallpaperbackup",
+          "note": "wallpaper backup service"
+        }
+      ]
+    },
+    {
+      "title": "Vendor (KTC / MediaTek)",
+      "packages": [
+        {
+          "pkg": "com.mediatek.tv.freeviewplay",
+          "note": "Freeview Play, UK-only"
+        }
+      ]
+    },
+    {
+      "title": "Setup and remote extras",
+      "packages": [
+        {
+          "pkg": "android.autoinstalls.config.ktc.pai",
+          "note": "KTC preload installer"
+        },
+        {
+          "pkg": "com.google.android.tv.remote.service",
+          "note": "phone remote service; re-enable to use the Google TV app; kept on in the shared list; this set has it off",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.tungsten.setupwraith",
+          "note": "can own the saved Wi-Fi, and casting stops without it on"
+        }
+      ]
+    },
+    {
+      "title": "Home handover (last: install the new launcher and check Home before disabling this one)",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvlauncher",
+          "note": "stock Android TV launcher"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/siragon-58da7000/debloat.txt",
+    "commit": "a1e948c665abf5af86c3aab08fe05053686a6bf3"
+  }
+}

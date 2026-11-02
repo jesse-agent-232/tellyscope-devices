@@ -1,0 +1,255 @@
+{
+  "schema": 1,
+  "id": "philips-49pus6561",
+  "name": "Philips 49PUS6561/12",
+  "tested": {
+    "os": "Android TV 8.0.0",
+    "sdk": 26,
+    "build": "OPR5.170623.014"
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Telemetry and analytics",
+      "packages": [
+        {
+          "pkg": "org.droidtv.candeebug",
+          "note": "\"DAC\" analytics uploader"
+        },
+        {
+          "pkg": "org.droidtv.gel",
+          "note": "\"GEL\" metrics collector, same process as candeebug; disable both"
+        },
+        {
+          "pkg": "org.droidtv.usagelogger",
+          "note": "boot stats, keypress counts, panel telemetry (needs TVINPUT_ALLOW=1)"
+        },
+        {
+          "pkg": "org.droidtv.tv.frameworklogger",
+          "note": "reboot reasons and firmware-install records to the Philips logger"
+        },
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "Market Feedback Agent"
+        }
+      ]
+    },
+    {
+      "title": "Promotion and recommendation rows",
+      "packages": [
+        {
+          "pkg": "org.droidtv.demome",
+          "note": "retail demo mode (needs TVINPUT_ALLOW=1)"
+        },
+        {
+          "pkg": "org.droidtv.nettvrecommender",
+          "note": "\"Top Picks\" content row"
+        },
+        {
+          "pkg": "org.droidtv.sticker",
+          "note": "e-sticker and shop banners"
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations",
+          "note": "Android TV recommendation rows"
+        },
+        {
+          "pkg": "com.google.android.tvtutorials",
+          "note": "first-run tutorials (\"How to...\" row on the stock Home)"
+        }
+      ]
+    },
+    {
+      "title": "Philips NetTV app store (pre-Android web-app platform), social and cloud extras, phone setup",
+      "packages": [
+        {
+          "pkg": "org.droidtv.nettv.market",
+          "note": "NetTV app gallery (the \"Shop\" tab on the stock Home)"
+        },
+        {
+          "pkg": "org.droidtv.nettvapps",
+          "note": "NetTvApps manager"
+        },
+        {
+          "pkg": "org.droidtv.nettv_launcherapp",
+          "note": "NetTV app launcher entry"
+        },
+        {
+          "pkg": "org.droidtv.smarttvhome",
+          "note": "\"Philips TV Collection\""
+        },
+        {
+          "pkg": "org.droidtv.nettvregistration",
+          "note": "Philips account registration for NetTV"
+        },
+        {
+          "pkg": "org.droidtv.twittershare",
+          "note": "Twitter share sheet"
+        },
+        {
+          "pkg": "org.droidtv.dropboxprovider",
+          "note": "Dropbox source in Media"
+        },
+        {
+          "pkg": "com.google.android.sss",
+          "note": "Second Screen Setup (set up from phone)"
+        },
+        {
+          "pkg": "com.google.android.sss.authbridge",
+          "note": "Second Screen Setup auth bridge"
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "Google partner setup"
+        }
+      ]
+    },
+    {
+      "title": "Preinstalled NetTV web apps (labels read from the APKs with aapt; comment out any you use)",
+      "packages": [
+        {
+          "pkg": "org.droidtv.nettvapp1984",
+          "note": "Dailymotion"
+        },
+        {
+          "pkg": "org.droidtv.nettvapp3134",
+          "note": "iConcerts"
+        },
+        {
+          "pkg": "org.droidtv.nettvapp3358",
+          "note": "Euronews"
+        },
+        {
+          "pkg": "org.droidtv.nettvapp3783",
+          "note": "MeteoNews.TV"
+        },
+        {
+          "pkg": "org.droidtv.nettvapp3814",
+          "note": "TV5Monde"
+        },
+        {
+          "pkg": "org.droidtv.nettvapp3903",
+          "note": "VOYO"
+        },
+        {
+          "pkg": "org.droidtv.nettvapp4023",
+          "note": "Siol.net"
+        },
+        {
+          "pkg": "org.droidtv.nettvapp4024",
+          "note": "RTV SLO (web app)"
+        },
+        {
+          "pkg": "org.droidtv.nettvapp4165",
+          "note": "Vreme"
+        },
+        {
+          "pkg": "org.droidtv.nettvapp4533",
+          "note": "Kulinarika.net"
+        },
+        {
+          "pkg": "org.droidtv.nettvapp4535",
+          "note": "Radio 1"
+        },
+        {
+          "pkg": "org.droidtv.nettvapp4768",
+          "note": "France24"
+        },
+        {
+          "pkg": "org.droidtv.nettvapp4835",
+          "note": "Cloud Explorer"
+        },
+        {
+          "pkg": "org.droidtv.nettvapp4836",
+          "note": "Social TV"
+        },
+        {
+          "pkg": "org.droidtv.nettvapp4932",
+          "note": "Free Games by PlayWorks"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps, off by choice on this unit. The streaming services are commented out (most owners use one);",
+      "packages": [
+        {
+          "pkg": "com.netflix.ninja",
+          "note": "Netflix (the remote's Netflix button then does nothing; see README.md); off on the owner's set, kept on in the shared list",
+          "optional": true
+        },
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom",
+          "note": "Prime Video; off on the owner's set, kept on in the shared list",
+          "optional": true
+        },
+        {
+          "pkg": "com.amazon.aiv.eu",
+          "note": "Prime Video (EU component); off on the owner's set, kept on in the shared list",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.youtube.tv",
+          "note": "YouTube; off on the owner's set, kept on in the shared list",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google Play Movies & TV"
+        },
+        {
+          "pkg": "com.google.android.music",
+          "note": "Google Play Music (service discontinued)"
+        },
+        {
+          "pkg": "com.google.android.play.games",
+          "note": "Google Play Games"
+        },
+        {
+          "pkg": "bbc.iplayer.android",
+          "note": "BBC iPlayer; off on the owner's set, kept on in the shared list",
+          "optional": true
+        },
+        {
+          "pkg": "com.plexapp.android",
+          "note": "Plex; off on the owner's set, kept on in the shared list",
+          "optional": true
+        },
+        {
+          "pkg": "tv.twitch.android.app",
+          "note": "Twitch; off on the owner's set, kept on in the shared list",
+          "optional": true
+        },
+        {
+          "pkg": "com.cloudmosa.puffinTV",
+          "note": "Puffin TV browser"
+        },
+        {
+          "pkg": "com.pokemontv",
+          "note": "Pokémon TV"
+        },
+        {
+          "pkg": "eu.bandainamcoent.pacman256",
+          "note": "PAC-MAN 256"
+        },
+        {
+          "pkg": "com.expressvpn.vpn",
+          "note": "ExpressVPN"
+        },
+        {
+          "pkg": "com.privateinternetaccess.android",
+          "note": "Private Internet Access"
+        },
+        {
+          "pkg": "com.simplexsolutionsinc.vpn_unlimited",
+          "note": "VPN Unlimited"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/philips-49pus6561/debloat.txt",
+    "commit": "a1e948c665abf5af86c3aab08fe05053686a6bf3"
+  }
+}

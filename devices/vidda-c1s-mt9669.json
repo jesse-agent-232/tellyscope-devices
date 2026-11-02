@@ -43,6 +43,10 @@
         {
           "pkg": "com.hisense.tv.weather",
           "note": "weather card, a content feed"
+        },
+        {
+          "pkg": "com.hisense.cloudfalcon",
+          "note": "C1: user app hosting com.hisense.service.ad's boot and network-change receivers"
         }
       ]
     },
@@ -67,7 +71,11 @@
         },
         {
           "pkg": "com.jamdeo.tv.fte",
-          "note": "first-run wizard, long done"
+          "note": "first-run wizard, long done; shares android.uid.system, Wi-Fi survived"
+        },
+        {
+          "pkg": "fusion.android.tv.demo",
+          "note": "C1: RetailDisplay store demo in /system/product/priv-app"
         },
         {
           "pkg": "com.hisense.usbupgrade",
@@ -102,11 +110,56 @@
           "pkg": "com.android.printspooler"
         }
       ]
+    },
+    {
+      "title": "The C1 owner has these off as well; they stay on for everyone else. Uncomment what you don't use.",
+      "packages": [
+        {
+          "pkg": "com.keylab.speech.view.vidaa",
+          "note": "voice UI; the remote's mic key stops working (the C1S owner keeps it)",
+          "optional": true
+        },
+        {
+          "pkg": "com.android.wechathci",
+          "note": "WeChat photo push: an always-on WebService process and WechatAD pages",
+          "optional": true
+        },
+        {
+          "pkg": "com.audiocn.karaoke.micmanager",
+          "note": "karaoke mic manager: boot, network, screen and USB receivers, a resident service",
+          "optional": true
+        },
+        {
+          "pkg": "com.hisense.smartimages",
+          "note": "HiSmartImage screen recognition: ScreenCapService, SIWindowMonitorService accessibility",
+          "optional": true
+        },
+        {
+          "pkg": "com.hisense.familymessage",
+          "note": "家庭留言 family message board",
+          "optional": true
+        },
+        {
+          "pkg": "com.vision.palette",
+          "note": "AI 画板",
+          "optional": true
+        },
+        {
+          "pkg": "com.speech.enchatroom",
+          "note": "AI 英语聊天室, pushed as a user app in 2025",
+          "optional": true
+        },
+        {
+          "pkg": "com.hisense.aiot",
+          "note": "smart-home and IR appliance control",
+          "optional": true
+        }
+      ]
     }
   ],
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/vidda-c1s-mt9669/debloat.txt",
-    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+    "commit": "a1e948c665abf5af86c3aab08fe05053686a6bf3"
   }
 }

@@ -212,9 +212,6 @@
           "pkg": "com.amazon.csm.htmlruntime"
         },
         {
-          "pkg": "com.amazon.spiderpork"
-        },
-        {
           "pkg": "com.amazon.recess"
         },
         {
@@ -260,6 +257,10 @@
         {
           "pkg": "com.amazon.gamehub",
           "note": "Amazon Luna / GameHub"
+        },
+        {
+          "pkg": "com.amazon.spiderpork",
+          "note": "Amazon Luna game player: Luna's \"Open app\" needs it (keep it with gamehub)"
         },
         {
           "pkg": "com.amazon.tv.localgallery"
@@ -359,6 +360,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/insignia-ns55f301na25/debloat.txt",
-    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+    "commit": "a1e948c665abf5af86c3aab08fe05053686a6bf3"
   }
 }

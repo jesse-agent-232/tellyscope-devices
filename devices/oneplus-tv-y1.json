@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "id": "oneplus-tv-y1",
-  "name": "OnePlus TV",
+  "name": "OnePlus TV Y1 43\" and Model Y 32\"",
   "tested": {
     "os": "Android TV 11",
     "sdk": 30,
@@ -119,6 +119,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/oneplus-tv-y1/debloat.txt",
-    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+    "commit": "a1e948c665abf5af86c3aab08fe05053686a6bf3"
   }
 }

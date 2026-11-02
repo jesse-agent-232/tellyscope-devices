@@ -1,0 +1,158 @@
+{
+  "schema": 1,
+  "id": "xiaomi-mitv-axfu0",
+  "name": "Xiaomi TV A Pro 32\"",
+  "tested": {
+    "os": "Android 14",
+    "sdk": 34,
+    "build": null
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Xiaomi + Google telemetry",
+      "packages": [
+        {
+          "pkg": "com.miui.tv.analytics"
+        },
+        {
+          "pkg": "com.xiaomi.statistic"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.detection"
+        },
+        {
+          "pkg": "com.xiaomi.tvqs.overseas.y24"
+        },
+        {
+          "pkg": "com.xiaomo.tv.milegal"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        }
+      ]
+    },
+    {
+      "title": "PatchWall, promoted channels and advertising",
+      "packages": [
+        {
+          "pkg": "com.mitv.tvhome.atv"
+        },
+        {
+          "pkg": "com.mitv.tvhome.mitvplus"
+        },
+        {
+          "pkg": "com.mitv.tvhome.michannel"
+        },
+        {
+          "pkg": "com.mitv.tvhome.oemtab"
+        },
+        {
+          "pkg": "com.xiaomi.android.tvsetup.partnercustomizer"
+        },
+        {
+          "pkg": "com.mitv.toolhouse"
+        }
+      ]
+    },
+    {
+      "title": "Background Xiaomi daemons and updaters",
+      "packages": [
+        {
+          "pkg": "com.xiaomi.mitv.tvmanager"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.updateservice",
+          "note": "kept on: firmware updates (this set had it off)",
+          "optional": true
+        },
+        {
+          "pkg": "com.mitv.upgrader",
+          "note": "kept on: the TV's firmware updater (this set had it off)",
+          "optional": true
+        },
+        {
+          "pkg": "com.mitv.ABUpdateStatus"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.manualhelp"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.smartshare"
+        },
+        {
+          "pkg": "com.xiaomi.wfdsinkhelperservice"
+        },
+        {
+          "pkg": "com.mitv.overseaservice",
+          "note": "KEEP: critical for Bluetooth remote pairing and stability",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Stock media players and unused features",
+      "packages": [
+        {
+          "pkg": "com.mitv.videoplayer"
+        },
+        {
+          "pkg": "com.xiaomi.mimusic2"
+        },
+        {
+          "pkg": "com.mitv.gallery"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.mediaexplorer"
+        },
+        {
+          "pkg": "com.xiaomi.floatingframe"
+        },
+        {
+          "pkg": "com.xiaomi.mitv.scenemode"
+        }
+      ]
+    },
+    {
+      "title": "Google TV stock launcher and ambient",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.tv.launcherx"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.launcherx.overlay"
+        },
+        {
+          "pkg": "com.google.android.tungsten.setupwraith"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.dreamx"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded commercial streaming apps (optional)",
+      "packages": [
+        {
+          "pkg": "com.antena3.atresplayer.tv"
+        },
+        {
+          "pkg": "com.disney.disneyplus",
+          "note": "Preinstalled streaming app; uncomment to disable if unused",
+          "optional": true
+        },
+        {
+          "pkg": "com.wbd.stream",
+          "note": "Preinstalled streaming app; uncomment to disable if unused",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/xiaomi-mitv-axfu0/debloat.txt",
+    "commit": "a1e948c665abf5af86c3aab08fe05053686a6bf3"
+  }
+}

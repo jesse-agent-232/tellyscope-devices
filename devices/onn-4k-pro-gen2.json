@@ -1,0 +1,110 @@
+{
+  "schema": 1,
+  "id": "onn-4k-pro-gen2",
+  "name": "onn 4K Pro Streaming Device",
+  "tested": {
+    "os": "Google TV 14",
+    "sdk": 34,
+    "build": "URO3.260203.035.A1.15640252"
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Telemetry and feedback",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.android.tv.feedbackconsent"
+        }
+      ]
+    },
+    {
+      "title": "Privacy Sandbox / on-device ad & federated learning services (Android 14 APEX)",
+      "packages": [
+        {
+          "pkg": "com.android.adservices.api"
+        },
+        {
+          "pkg": "com.android.ondevicepersonalization.services"
+        },
+        {
+          "pkg": "com.android.federatedcompute.services"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded Google apps and unused background services",
+      "packages": [
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.android.printspooler"
+        },
+        {
+          "pkg": "com.google.android.marvin.talkback"
+        },
+        {
+          "pkg": "com.android.providers.calendar"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar"
+        },
+        {
+          "pkg": "com.android.providers.contacts"
+        },
+        {
+          "pkg": "com.android.providers.userdictionary"
+        }
+      ]
+    },
+    {
+      "title": "Google ambient mode screensaver (replaced by Aerial Views on this unit)",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.tv.dreamx"
+        }
+      ]
+    },
+    {
+      "title": "Preinstalled streaming apps disabled by choice on this unit",
+      "packages": [
+        {
+          "pkg": "com.google.android.youtube.tv",
+          "note": "Off on this unit by owner's choice; uncomment if you don't use them",
+          "optional": true
+        },
+        {
+          "pkg": "com.netflix.ninja",
+          "note": "Off on this unit by owner's choice; uncomment if you don't use them",
+          "optional": true
+        },
+        {
+          "pkg": "com.netflix.tokenmanager",
+          "note": "Off on this unit by owner's choice; uncomment if you don't use them",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Stock Google TV launcher and setup wizard",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.tv.launcherx",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.tungsten.setupwraith"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/onn-4k-pro-gen2/debloat.txt",
+    "commit": "a1e948c665abf5af86c3aab08fe05053686a6bf3"
+  }
+}

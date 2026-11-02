@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "marq-4k-android-tv",
+  "name": "MarQ 4K Android TV",
+  "tested": {
+    "os": "Android 11",
+    "sdk": 30,
+    "build": null
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "",
+      "packages": [
+        {
+          "pkg": "tv.anoki.acr.controller"
+        },
+        {
+          "pkg": "com.cltv.fast",
+          "note": "TV middleware, kept on in the shared list; this set has it off",
+          "optional": true
+        },
+        {
+          "pkg": "fusion.android.tv.demo",
+          "note": "on the EKO bangbae set this owns the Input button; disable only if Input still works without it",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.partnersetup"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.mstar.android.tv.disclaimercustomization"
+        },
+        {
+          "pkg": "android.autoinstalls.config.JVC"
+        },
+        {
+          "pkg": "com.google.android.videos"
+        },
+        {
+          "pkg": "com.google.android.backdrop"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/marq-4k-android-tv/debloat.txt",
+    "commit": "a1e948c665abf5af86c3aab08fe05053686a6bf3"
+  }
+}

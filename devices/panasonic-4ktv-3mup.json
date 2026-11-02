@@ -86,11 +86,81 @@
           "pkg": "com.apps.usbmediaplayer"
         }
       ]
+    },
+    {
+      "title": "Android and MOKA extras, disabled on the TH-65MX660DX (India) and still off after a cold boot and 6 days;",
+      "packages": [
+        {
+          "pkg": "com.android.captiveportallogin",
+          "note": "hotel/café Wi-Fi sign-in page: re-enable if you need one",
+          "optional": true
+        },
+        {
+          "pkg": "com.android.certinstaller",
+          "note": "installing CA or Wi-Fi certificates by hand",
+          "optional": true
+        },
+        {
+          "pkg": "com.android.companiondevicemanager",
+          "note": "companion-app pairing dialogs",
+          "optional": true
+        },
+        {
+          "pkg": "com.android.dynsystem",
+          "note": "Dynamic System Updates (GSI testing)",
+          "optional": true
+        },
+        {
+          "pkg": "com.android.localtransport",
+          "note": "local backup transport",
+          "optional": true
+        },
+        {
+          "pkg": "com.android.managedprovisioning",
+          "note": "work-profile / device-owner setup",
+          "optional": true
+        },
+        {
+          "pkg": "com.android.pacprocessor",
+          "note": "proxy auto-config: re-enable if your network uses a PAC proxy",
+          "optional": true
+        },
+        {
+          "pkg": "com.android.providers.contacts",
+          "optional": true
+        },
+        {
+          "pkg": "com.android.se",
+          "note": "Secure Element service",
+          "optional": true
+        },
+        {
+          "pkg": "com.android.vpndialogs",
+          "note": "VPN consent dialogs: re-enable before setting up a VPN app",
+          "optional": true
+        },
+        {
+          "pkg": "com.android.wallpaper.livepicker",
+          "optional": true
+        },
+        {
+          "pkg": "com.apps.plugins",
+          "optional": true
+        },
+        {
+          "pkg": "com.mk.tv.systemserver",
+          "optional": true
+        },
+        {
+          "pkg": "com.realtek.leanbacklauncher.partnercustomizer",
+          "optional": true
+        }
+      ]
     }
   ],
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/panasonic-4ktv-3mup/debloat.txt",
-    "commit": "76a9312cd9ac378fc8698f31427805af32c6f965"
+    "commit": "a1e948c665abf5af86c3aab08fe05053686a6bf3"
   }
 }

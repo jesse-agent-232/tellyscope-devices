@@ -54,6 +54,23 @@
         {
           "pkg": "com.vt.hishow",
           "note": "\"Family Moment\" screensaver and photo content"
+        },
+        {
+          "pkg": "com.haystack.android",
+          "note": "Haystack News (second unit): recommendation cards, a live channel input"
+        }
+      ]
+    },
+    {
+      "title": "Hisense content feeds (second unit, US firmware)",
+      "packages": [
+        {
+          "pkg": "net.vidaatv.hisense.android.tv",
+          "note": "VIDAA Channels, free ad-supported channels"
+        },
+        {
+          "pkg": "com.vidaa.oemtabcontentprovider",
+          "note": "VIDAA content provider for the stock home's rows"
         }
       ]
     },
@@ -90,6 +107,52 @@
         {
           "pkg": "com.vt.alexa",
           "note": "Hisense Alexa (Google Assistant is kept)"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google TV app (Play Movies) (second unit)"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvunplugged",
+          "note": "YouTube TV (second unit); a subscription service, kept on in the shared list",
+          "optional": true
+        },
+        {
+          "pkg": "com.tubitv",
+          "note": "Tubi (second unit)"
+        },
+        {
+          "pkg": "tv.pluto.android",
+          "note": "Pluto TV (second unit)"
+        },
+        {
+          "pkg": "com.roku.web.trc",
+          "note": "The Roku Channel (second unit)"
+        },
+        {
+          "pkg": "com.fubo.firetv.screen",
+          "note": "Fubo (second unit); a subscription service, kept on in the shared list",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Sharing and screensaver: the second unit disabled these by choice, the first kept them. Uncomment any",
+      "packages": [
+        {
+          "pkg": "com.vt.tv.dlna",
+          "note": "DLNA media sharing (only a boot receiver)",
+          "optional": true
+        },
+        {
+          "pkg": "com.vt.tv.mobiledeviceconnectiontips",
+          "note": "Miracast / screen-sharing receiver (WifiDisplayService) and its tips",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.apps.tv.dreamx",
+          "note": "Google ambient screensaver; point screensaver_components elsewhere after",
+          "optional": true
         }
       ]
     },
@@ -113,6 +176,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/hisense-smarttv-4k-ffm-lushan/debloat.txt",
-    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+    "commit": "a1e948c665abf5af86c3aab08fe05053686a6bf3"
   }
 }

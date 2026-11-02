@@ -76,11 +76,24 @@
           "note": "recommendation rows"
         }
       ]
+    },
+    {
+      "title": "Second unit (Logik): partner attribution and auto-installs, disabled there with no visible effect",
+      "packages": [
+        {
+          "pkg": "android.autoinstalls.config.JVC",
+          "note": "partner-app auto installer (preloaded on the Logik too)"
+        },
+        {
+          "pkg": "com.google.android.partnersetup",
+          "note": "partner-app attribution"
+        }
+      ]
     }
   ],
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/jvc-uk-4k-sadang/debloat.txt",
-    "commit": "fcde1eedb4d6cc5ab683a6e0e9e1bc79229b898e"
+    "commit": "a1e948c665abf5af86c3aab08fe05053686a6bf3"
   }
 }

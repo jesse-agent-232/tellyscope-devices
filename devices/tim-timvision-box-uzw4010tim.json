@@ -1,0 +1,214 @@
+{
+  "schema": 1,
+  "id": "tim-timvision-box-uzw4010tim",
+  "name": "TIM TIMVISION Box",
+  "tested": {
+    "os": "Android TV 8.0",
+    "sdk": null,
+    "build": null
+  },
+  "launcher": "timvision.launcher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "TIM / Technicolor telemetry and remote device management",
+      "packages": [
+        {
+          "pkg": "timvision.telemetry",
+          "note": "TIMVISION \"traps\" telemetry"
+        },
+        {
+          "pkg": "com.smarts.smartagentpassivestb",
+          "note": "passive monitoring agent, starts at boot"
+        },
+        {
+          "pkg": "com.movenda.omadm.tv",
+          "note": "OMA-DM operator device management"
+        },
+        {
+          "pkg": "com.movenda.p4mcore",
+          "note": "Movenda core service for the above"
+        },
+        {
+          "pkg": "com.technicolor.android.BootupTraceQR"
+        },
+        {
+          "pkg": "com.technicolor.cputemperature"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        }
+      ]
+    },
+    {
+      "title": "TIMVISION service parts: this set has them off (no subscription); uncomment them only if you don't use TIMVISION",
+      "packages": [
+        {
+          "pkg": "tv.broadpeak.nanocdnwrapper",
+          "note": "Broadpeak multicast CDN for TIMVISION live; kept on for TIMVISION subscribers",
+          "optional": true
+        },
+        {
+          "pkg": "it.telecomitalia.iptuner",
+          "note": "TIMVISION live channels; kept on for TIMVISION subscribers",
+          "optional": true
+        },
+        {
+          "pkg": "it.telecomitalia.linemanager",
+          "note": "kept on for TIMVISION subscribers",
+          "optional": true
+        },
+        {
+          "pkg": "it.telecomitalia.accountmanager",
+          "note": "TIM account, Firebase messaging; kept on for TIMVISION subscribers",
+          "optional": true
+        },
+        {
+          "pkg": "it.telecomitalia.timppapp",
+          "note": "kept on for TIMVISION subscribers",
+          "optional": true
+        },
+        {
+          "pkg": "timvision.tvappsettings",
+          "note": "kept on for TIMVISION subscribers",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "TIM smart home",
+      "packages": [
+        {
+          "pkg": "it.telecomitalia.iotcontroller"
+        },
+        {
+          "pkg": "it.telecomitalia.iotim"
+        },
+        {
+          "pkg": "com.technicolor.zwavereceiver",
+          "note": "Z-Wave daemon"
+        }
+      ]
+    },
+    {
+      "title": "Google voice and recommendation rows (voice off by choice)",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss"
+        },
+        {
+          "pkg": "com.google.android.speech.pumpkin"
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations"
+        },
+        {
+          "pkg": "com.google.android.leanbacklauncher.recommendations"
+        }
+      ]
+    },
+    {
+      "title": "Screen mirroring receivers (off by choice; Chromecast kept)",
+      "packages": [
+        {
+          "pkg": "com.ionitech.airscreen"
+        },
+        {
+          "pkg": "com.apowersoft.mirror.tv"
+        },
+        {
+          "pkg": "com.instantbits.cast.receiver"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps (off by choice; comment out any you use)",
+      "packages": [
+        {
+          "pkg": "com.google.android.youtube.tvkids"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        },
+        {
+          "pkg": "com.sky.ott.client.androidtv.SkyIT"
+        },
+        {
+          "pkg": "tv.pluto.android"
+        },
+        {
+          "pkg": "com.wbd.stream"
+        },
+        {
+          "pkg": "com.cbs.ca"
+        },
+        {
+          "pkg": "com.upst.hayu"
+        },
+        {
+          "pkg": "com.google.android.videos"
+        },
+        {
+          "pkg": "com.google.android.music"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.gameloft.android.GAND.GloftMTHP"
+        },
+        {
+          "pkg": "com.gameloft.android.GAND.GloftPOHP"
+        },
+        {
+          "pkg": "it.telecomitalia.timmusic_tv"
+        },
+        {
+          "pkg": "it.telecomitalia.games"
+        },
+        {
+          "pkg": "it.telecomitalia.thefilmclub"
+        },
+        {
+          "pkg": "it.telecomitalia.calcio"
+        },
+        {
+          "pkg": "com.figc.vivoazzurrotv"
+        },
+        {
+          "pkg": "it.sensiunici_atv"
+        },
+        {
+          "pkg": "com.vativision.vativisionapp"
+        },
+        {
+          "pkg": "it.rds.androidtv.rdssocialtv"
+        },
+        {
+          "pkg": "ro.antenaplay.app"
+        },
+        {
+          "pkg": "ru.iptvremote.android.iptv"
+        },
+        {
+          "pkg": "com.mxtech.videoplayer.ad"
+        },
+        {
+          "pkg": "jp.co.rarity.tvweb"
+        },
+        {
+          "pkg": "com.google.android.tvtutorials"
+        },
+        {
+          "pkg": "com.google.android.backdrop",
+          "note": "screensaver; the basic daydream remains"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tim-timvision-box-uzw4010tim/debloat.txt",
+    "commit": "a1e948c665abf5af86c3aab08fe05053686a6bf3"
+  }
+}

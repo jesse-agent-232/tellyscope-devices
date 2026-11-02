@@ -136,6 +136,41 @@
       ]
     },
     {
+      "title": "Off by choice on the Australian unit (uncomment any you never use)",
+      "packages": [
+        {
+          "pkg": "com.tcl.airplay2",
+          "note": "AirPlay receiver (com.mediatek.AirplayAPK and airplaydaemon below were left alone); off on the Australian unit",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.miracast",
+          "note": "Miracast screen mirroring; off on the Australian unit",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.magiconnectfree",
+          "note": "TCL T-Cast / Magiconnect phone mirroring, shows as a launcher tile; off on the Australian unit",
+          "optional": true
+        },
+        {
+          "pkg": "com.tcl.gamebar",
+          "note": "game mode / VRR overlay; off on the Australian unit",
+          "optional": true
+        },
+        {
+          "pkg": "au.com.stan.and",
+          "note": "Stan, owner does not use it; off on the Australian unit",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic",
+          "note": "YouTube Music; off on the Australian unit",
+          "optional": true
+        }
+      ]
+    },
+    {
       "title": "Needed for the custom launcher. Disable only AFTER launcher/ is installed and set as Home",
       "packages": [
         {
@@ -157,31 +192,12 @@
           "optional": true
         },
         {
-          "pkg": "com.tcl.airplay2",
-          "note": "AirPlay, together with the next two lines",
-          "optional": true
-        },
-        {
           "pkg": "com.mediatek.AirplayAPK",
+          "note": "still enabled on the AU unit",
           "optional": true
         },
         {
           "pkg": "com.mediatek.airplaydaemon",
-          "optional": true
-        },
-        {
-          "pkg": "com.tcl.miracast",
-          "note": "Miracast screen mirroring",
-          "optional": true
-        },
-        {
-          "pkg": "com.tcl.magiconnectfree",
-          "note": "TCL T-Cast / Magiconnect phone mirroring",
-          "optional": true
-        },
-        {
-          "pkg": "com.tcl.gamebar",
-          "note": "game mode / VRR overlay for consoles",
           "optional": true
         },
         {
@@ -192,10 +208,6 @@
         {
           "pkg": "com.google.android.play.games",
           "optional": true
-        },
-        {
-          "pkg": "com.google.android.youtube.tvmusic",
-          "optional": true
         }
       ]
     }
@@ -203,6 +215,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/tcl-65c7k-google-tv/debloat.txt",
-    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+    "commit": "a1e948c665abf5af86c3aab08fe05053686a6bf3"
   }
 }

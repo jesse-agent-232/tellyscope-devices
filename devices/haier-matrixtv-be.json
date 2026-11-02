@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "haier-matrixtv-be",
+  "name": "Haier MatrixTV BE",
+  "tested": {
+    "os": "Google TV 14",
+    "sdk": null,
+    "build": null
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "Haier content and smart-device service.",
+      "packages": [
+        {
+          "pkg": "com.haierubic.usmartdevice",
+          "note": "Haier smart-device / IoT service, unused by owner"
+        },
+        {
+          "pkg": "com.haier.apps",
+          "note": "Haier content/promo app"
+        },
+        {
+          "pkg": "com.haier.emanual",
+          "note": "on-TV manual"
+        },
+        {
+          "pkg": "com.haier.launcher.haiermatrix",
+          "note": "Haier TV+ / Zeasn launcher, not Google TV Home; re-enabled itself after one reboot"
+        }
+      ]
+    },
+    {
+      "title": "Casting choice: this is HaiCast/Miracast, not Google's Chromecast package.",
+      "packages": [
+        {
+          "pkg": "com.mediatek.androidbox",
+          "note": "HaiCast/Miracast, unused by owner; off on the owner's set; uncomment if you never mirror a screen",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Stock-home partner rows, feedback and retail demo.",
+      "packages": [
+        {
+          "pkg": "com.mediatek.android.leanbacklauncher.partnercustomizer",
+          "note": "partner rows on stock Home"
+        },
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "usage feedback"
+        },
+        {
+          "pkg": "fusion.android.tv.demo",
+          "note": "retail demo"
+        }
+      ]
+    },
+    {
+      "title": "Google TV setup recovery claims HOME alongside the stock launcher. Disable only after",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/haier-matrixtv-be/debloat.txt",
+    "commit": "a1e948c665abf5af86c3aab08fe05053686a6bf3"
+  }
+}

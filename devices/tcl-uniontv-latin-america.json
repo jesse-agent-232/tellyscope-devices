@@ -52,6 +52,14 @@
           "note": "32S6500S unit only"
         },
         {
+          "pkg": "com.tcl.dashboard",
+          "note": "\"TCL HOME\" tile: message box, gift box and promos; RT41KA unit only"
+        },
+        {
+          "pkg": "com.tcl.tv.tclhome_passive",
+          "note": "pushes TCL content to the home screen at boot; RT41KA unit only"
+        },
+        {
           "pkg": "android.autoinstalls.config.tcl.device",
           "note": "Play auto-installs of partner apps; TVINPUT_ALLOW=1 may be needed"
         },
@@ -144,6 +152,16 @@
           "pkg": "com.tcl.MultiScreenInteraction_TV",
           "note": "TCL's Miracast-like screen mirroring/DLNA app",
           "optional": true
+        },
+        {
+          "pkg": "com.ionitech.airscreen",
+          "note": "AirScreen (AirPlay/Miracast receiver), RT41KA unit",
+          "optional": true
+        },
+        {
+          "pkg": "com.azteca.live",
+          "note": "Azteca Live, RT41KA unit",
+          "optional": true
         }
       ]
     },
@@ -186,6 +204,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/tcl-uniontv-latin-america/debloat.txt",
-    "commit": "57733360177173c880a023380a864114a03feb25"
+    "commit": "a1e948c665abf5af86c3aab08fe05053686a6bf3"
   }
 }

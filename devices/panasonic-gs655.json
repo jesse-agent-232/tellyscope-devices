@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "panasonic-gs655",
+  "name": "Panasonic GS655",
+  "tested": {
+    "os": "Android TV 9",
+    "sdk": 28,
+    "build": null
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Skyworth auto-installs, retail demo and setup leftovers",
+      "packages": [
+        {
+          "pkg": "android.autoinstalls.config.skyworth",
+          "note": "Play Auto Installs config for preloaded apps"
+        },
+        {
+          "pkg": "fusion.android.tv.demo",
+          "note": "Skyworth retail demo service"
+        },
+        {
+          "pkg": "com.smartdevice.common.demonow",
+          "note": "\"Demo Now\" store demo app"
+        },
+        {
+          "pkg": "com.mstar.android.tv.disclaimercustomization",
+          "note": "disclaimer screen used only by first-run setup"
+        },
+        {
+          "pkg": "com.Smartdevice.emanual",
+          "note": "on-screen manual (E-Manual)"
+        },
+        {
+          "pkg": "com.mediatek.testpq",
+          "note": "MediaTek picture-quality test tool"
+        }
+      ]
+    },
+    {
+      "title": "Telemetry, recommendations and stock-launcher partner config",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.apps.nbu.smartconnect.tv",
+          "note": "Google background data service (registers a VpnService)"
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations"
+        },
+        {
+          "pkg": "com.google.android.leanbacklauncher.recommendations"
+        },
+        {
+          "pkg": "com.google.android.leanbacklauncher.partnercustomizer"
+        },
+        {
+          "pkg": "com.google.android.tv.bugreportsender"
+        }
+      ]
+    },
+    {
+      "title": "Unused services and apps (off by choice; all still installed)",
+      "packages": [
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google Assistant / voice search"
+        },
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Chromecast built-in"
+        },
+        {
+          "pkg": "com.google.android.backdrop",
+          "note": "ambient screensaver"
+        }
+      ]
+    },
+    {
+      "title": "Stock launcher: disable ONLY after the replacement launcher is installed and set as Home",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvlauncher"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/panasonic-gs655/debloat.txt",
+    "commit": "a1e948c665abf5af86c3aab08fe05053686a6bf3"
+  }
+}

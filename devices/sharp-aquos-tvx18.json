@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "sharp-aquos-tvx18",
+  "name": "SHARP AQUOS-TVX18",
+  "tested": {
+    "os": "Android TV 8.0",
+    "sdk": 26,
+    "build": null
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "--- Manufacturer telemetry, retail demo, e-manual and legal/copyright viewers ---",
+      "packages": [
+        {
+          "pkg": "com.sharplabs.dmt.aas.analyticsservice",
+          "note": "Sharp analytics telemetry"
+        },
+        {
+          "pkg": "jp.co.sharp.av.android.storedemoapplication",
+          "note": "Sharp retail store demo"
+        },
+        {
+          "pkg": "jp.co.sharp.av.android.emanual",
+          "note": "Sharp e-manual"
+        },
+        {
+          "pkg": "jp.co.sharp.av.android.emanual_a",
+          "note": "Sharp e-manual (variant a)"
+        },
+        {
+          "pkg": "jp.co.sharp.av.android.emanual_b",
+          "note": "Sharp e-manual (variant b)"
+        },
+        {
+          "pkg": "jp.co.sharp.av.android.shlegal",
+          "note": "Sharp legal-notices viewer"
+        },
+        {
+          "pkg": "jp.co.sharp.av.android.softwarecopyright",
+          "note": "Sharp open-source copyright viewer"
+        }
+      ]
+    },
+    {
+      "title": "--- Google feedback ---",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback"
+        }
+      ]
+    },
+    {
+      "title": "--- Unused Google / Android services (off by choice; all still installed) ---",
+      "packages": [
+        {
+          "pkg": "com.google.android.play.games",
+          "note": "Play Games"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Play Movies & TV"
+        },
+        {
+          "pkg": "com.google.android.music",
+          "note": "Play Music"
+        }
+      ]
+    },
+    {
+      "title": "--- Stock launcher: disable ONLY after the replacement launcher is installed and set as Home ---",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvlauncher"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/sharp-aquos-tvx18/debloat.txt",
+    "commit": "a1e948c665abf5af86c3aab08fe05053686a6bf3"
+  }
+}
