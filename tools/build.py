@@ -36,7 +36,8 @@ LAUNCHER_KEYS = {"package", "name", "about", "signers", "max_mb", "releases", "f
 # A signing certificate's SHA-256, as the app computes it from the APK.
 SIGNER = re.compile(r"[0-9a-f]{64}")
 # The app downloads a launcher only from its own repo's GitHub releases.
-RELEASES = re.compile(r"https://github\.com/[A-Za-z0-9-]+/[A-Za-z0-9._-]+/releases")
+# "." and ".." are not repo names; they would walk the URL out of the repo.
+RELEASES = re.compile(r"https://github\.com/[A-Za-z0-9-]+/(?!\.\.?/)[A-Za-z0-9._-]+/releases")
 MAX_MB = 256
 # The Remote's sheet in dark mode; a service's `dark` fill replaces a colour that sinks into it.
 DARK_SHEET = "#161D1D"

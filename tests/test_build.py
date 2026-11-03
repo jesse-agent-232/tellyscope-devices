@@ -202,6 +202,11 @@ class Lists(unittest.TestCase):
         self.assertIn("'releases' must be https://github.com/<owner>/<repo>/releases", errors)
         self.assertIn("'fire_os' can only be true", errors)
 
+    def test_releases_cannot_name_dot_or_dot_dot(self):
+        for repo in (".", ".."):
+            self.edit("launchers", lambda d: d["launchers"][0].update({"releases": f"https://github.com/x/{repo}/releases"}))
+            self.assertIn("'releases' must be https://github.com/<owner>/<repo>/releases", "\n".join(build.check_lists()))
+
     def test_fire_os_is_one_launcher_with_signers(self):
         self.edit("launchers", lambda d: d["launchers"][1].update({"fire_os": True}))
         errors = "\n".join(build.check_lists())
