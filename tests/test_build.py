@@ -193,6 +193,21 @@ class Lists(unittest.TestCase):
         self.edit("launchers", lambda d: d["launchers"][0].update({"accessibility": True}))
         self.assertIn("unknown keys ['accessibility']", "\n".join(build.check_lists()))
 
+    def test_bad_install_fields_are_caught(self):
+        self.edit("launchers", lambda d: d["launchers"][1].update({
+            "signers": ["F6697BF4"], "max_mb": 1000, "releases": "https://example.com/apk", "fire_os": False}))
+        errors = "\n".join(build.check_lists())
+        self.assertIn("'signers' must be a non-empty list", errors)
+        self.assertIn("'max_mb' must be a whole number from 1 to 256", errors)
+        self.assertIn("'releases' must be https://github.com/<owner>/<repo>/releases", errors)
+        self.assertIn("'fire_os' can only be true", errors)
+
+    def test_fire_os_is_one_launcher_with_signers(self):
+        self.edit("launchers", lambda d: d["launchers"][1].update({"fire_os": True}))
+        errors = "\n".join(build.check_lists())
+        self.assertIn("'fire_os' needs 'signers'", errors)
+        self.assertIn("'fire_os' is on 2 launchers", errors)
+
     def test_a_bad_protected_entry_is_caught(self):
         def bad(d):
             d["groups"][0]["packages"].update({"org.droidtv.eum": "home_screen", "not a package": "system"})

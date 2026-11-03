@@ -31,6 +31,13 @@ LISTS = ("launchers", "labels", "streaming", "protected")
 # What protected.json may give as a package's reason: the app's own reasons a list can claim.
 PROTECT_REASONS = ("system", "settings", "play_services", "keyboard", "tv_inputs_remote", "setup_wizard", "updates")
 HEX = re.compile(r"#[0-9A-Fa-f]{6}")
+# What a launcher in lists/launchers.json may carry. Install details only: a list never asks for an accessibility service.
+LAUNCHER_KEYS = {"package", "name", "about", "signers", "max_mb", "releases", "fire_os"}
+# A signing certificate's SHA-256, as the app computes it from the APK.
+SIGNER = re.compile(r"[0-9a-f]{64}")
+# The app downloads a launcher only from its own repo's GitHub releases.
+RELEASES = re.compile(r"https://github\.com/[A-Za-z0-9-]+/[A-Za-z0-9._-]+/releases")
+MAX_MB = 256
 # The Remote's sheet in dark mode; a service's `dark` fill replaces a colour that sinks into it.
 DARK_SHEET = "#161D1D"
 LOGO = re.compile(r"[a-z0-9]+")
@@ -225,17 +232,33 @@ def check_lists():
 
     launchers = load("launchers")
     if launchers:
-        seen = set()
+        seen, fire = set(), []
         for i, l in enumerate(launchers.get("launchers", [])):
             where = f"lists/launchers.json: launcher {i + 1}"
-            if set(l) - {"package", "name", "about"}:
-                errors.append(f"{where}: unknown keys {sorted(set(l) - {'package', 'name', 'about'})}")
+            if set(l) - LAUNCHER_KEYS:
+                errors.append(f"{where}: unknown keys {sorted(set(l) - LAUNCHER_KEYS)}")
             package(where, l.get("package"))
             text(where, l, "name")
             text(where, l, "about", required=False)
+            signers = l.get("signers")
+            if "signers" in l and not (isinstance(signers, list) and signers
+                                       and all(isinstance(s, str) and SIGNER.fullmatch(s) for s in signers)):
+                errors.append(f"{where}: 'signers' must be a non-empty list of SHA-256s, 64 lowercase hex")
+            if "max_mb" in l and not (type(l["max_mb"]) is int and 1 <= l["max_mb"] <= MAX_MB):
+                errors.append(f"{where}: 'max_mb' must be a whole number from 1 to {MAX_MB}")
+            if "releases" in l and not (isinstance(l["releases"], str) and RELEASES.fullmatch(l["releases"])):
+                errors.append(f"{where}: 'releases' must be https://github.com/<owner>/<repo>/releases")
+            if "fire_os" in l and l["fire_os"] is not True:
+                errors.append(f"{where}: 'fire_os' can only be true; leave it out otherwise")
+            if l.get("fire_os") is True:
+                fire.append(l.get("package"))
+                if "signers" not in l:
+                    errors.append(f"{where}: 'fire_os' needs 'signers', or Fire OS has nothing to check the APK against")
             if l.get("package") in seen:
                 errors.append(f"{where}: {l.get('package')} is listed twice")
             seen.add(l.get("package"))
+        if len(fire) > 1:
+            errors.append(f"lists/launchers.json: 'fire_os' is on {len(fire)} launchers; Fire OS installs one")
 
     labels = load("labels")
     if labels:

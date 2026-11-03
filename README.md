@@ -101,9 +101,23 @@ other commented package is `optional`. Quirk notes are not copied: follow `sourc
 
 ### `lists/launchers.json`
 
-`{"schema": 1, "launchers": [{"package", "name", "about"}]}`. `about` is optional: a launcher with one
-is offered in Install a home screen, in file order. No other keys; in particular a list can't ask for
-an accessibility service.
+`{"schema": 1, "launchers": [{"package", "name", "about", "signers", "max_mb", "releases", "fire_os"}]}`.
+`about` is optional: a launcher with one is offered in Install a home screen, in file order. No other
+keys; in particular a list can't ask for an accessibility service.
+
+The rest are optional too, and say how Tellyscope may install a launcher from an APK rather than the
+Play Store. The app names no launcher itself; it reads all of this from here.
+
+| Key | Value | Meaning |
+|---|---|---|
+| `signers` | list of SHA-256s, 64 lowercase hex | the certificates the APK must be signed with, and only those. Without it, the launcher is never installed from an APK |
+| `max_mb` | whole number, 1 to 256; default 64 | a bigger file isn't this launcher, so it is refused without being read |
+| `releases` | `https://github.com/<owner>/<repo>/releases` | the developer's own releases. The GitHub build downloads the latest APK from this repo only; the Play build only opens the page |
+| `fire_os` | `true`, on one launcher at most; needs `signers` | the launcher Fire OS installs, since Fire OS has no Play Store. Without one, Fire OS is offered none |
+
+An APK passes only if its package and every signer match the entry. Tellyscope can't vouch for the APK
+beyond that, so with a list source other than this repo the install step shows the source and the
+signer, and waits for an extra confirmation.
 
 ### `lists/labels.json`
 
