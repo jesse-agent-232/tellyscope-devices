@@ -117,11 +117,22 @@
           "pkg": "com.google.android.marvin.talkback"
         }
       ]
+    },
+    {
+      "title": "--- Second unit extras (Mi TV 4S, 2026-10-31) ---",
+      "packages": [
+        {
+          "pkg": "com.mitv.tvhome.mitvplus"
+        },
+        {
+          "pkg": "com.android.dreams.basic"
+        }
+      ]
     }
   ],
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/xiaomi-mitv-mssp1/debloat.txt",
-    "commit": "baadd07a7d095cc3ea72e6ccb615987bf1fb97c4"
+    "commit": "8672e68e8a24c1258e4662cd11daa4ed13795dad"
   }
 }

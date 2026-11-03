@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "haam-hm4k75s11tnd",
+  "name": "HAAM HM4K75S11TND",
+  "tested": {
+    "os": "Android TV 11",
+    "sdk": null,
+    "build": null
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "Stock Home recommendations and Google feedback",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvrecommendations"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        }
+      ]
+    },
+    {
+      "title": "Retail demonstration apps",
+      "packages": [
+        {
+          "pkg": "com.apps.eshow",
+          "note": "E-SHOW demonstration"
+        },
+        {
+          "pkg": "com.apps.esticker",
+          "note": "Retail feature sticker overlay"
+        }
+      ]
+    },
+    {
+      "title": "Optional cleaner",
+      "packages": [
+        {
+          "pkg": "com.mk.tv.booster",
+          "note": "TV Booster"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/haam-hm4k75s11tnd/debloat.txt",
+    "commit": "8672e68e8a24c1258e4662cd11daa4ed13795dad"
+  }
+}

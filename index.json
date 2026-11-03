@@ -2,7 +2,7 @@
   "schema": 1,
   "source": {
     "repo": "Gathin23/cleanyourtv",
-    "commit": "a1e948c665abf5af86c3aab08fe05053686a6bf3"
+    "commit": "8672e68e8a24c1258e4662cd11daa4ed13795dad"
   },
   "devices": [
     {
@@ -502,6 +502,14 @@
       "sha256": "ac4ce436d7c8f203843a9eb44a4e03bfcbdea97c9d931789b9535904a172e6f8"
     },
     {
+      "id": "haam-hm4k75s11tnd",
+      "name": "HAAM HM4K75S11TND",
+      "match": null,
+      "sdk": null,
+      "file": "devices/haam-hm4k75s11tnd.json",
+      "sha256": "d368a7c48b57296b4c4dbfcc53e7346151f059a09ecdeb5997bbe26b65fdc360"
+    },
+    {
       "id": "haier-android-tv-dvb2k",
       "name": "Haier Android TV DVB2K",
       "match": null,
@@ -572,6 +580,14 @@
       "sdk": 28,
       "file": "devices/hisense-65e5h.json",
       "sha256": "79f81f48f4379cea009fa31ba4d33f2e02d45e61207748619b75e6d6295c66fd"
+    },
+    {
+      "id": "hisense-85e7q",
+      "name": "Hisense 85E7Q",
+      "match": null,
+      "sdk": 34,
+      "file": "devices/hisense-85e7q.json",
+      "sha256": "514b4d2c24c036deed2b0ff9f8ac58a56f1177e91d5bbf2905c8a360cac7b39f"
     },
     {
       "id": "hisense-e5q-pro",
@@ -750,6 +766,14 @@
       "sha256": "1d42324506b0421d7cd3576f4af5ff0279fd7c737427311c0edc8e5a3bc641a2"
     },
     {
+      "id": "jio-stb-c200a",
+      "name": "Jio STB C200A",
+      "match": null,
+      "sdk": 30,
+      "file": "devices/jio-stb-c200a.json",
+      "sha256": "c7c1fae2d3f27e8f1bd2e9cab93b89529cffba3cc6b3b8f3f49bb971b0812bd1"
+    },
+    {
       "id": "jmgo-n1s-4k-lonavla",
       "name": "JMGO N1S 4K projector",
       "match": null,
@@ -870,6 +894,14 @@
       "sha256": "ec7fbac7bec123a6a4430deef1989c7174db9610f92517c445ada962ff1467c4"
     },
     {
+      "id": "kunft-k8415h40f",
+      "name": "KUNFT K8415H40F",
+      "match": null,
+      "sdk": 30,
+      "file": "devices/kunft-k8415h40f.json",
+      "sha256": "07c875d26358e5062fa513c5a228d4bbc9916d1d0ad9616c8072e2904c14a262"
+    },
+    {
       "id": "liberton-ltv-24h01at",
       "name": "Liberton LTV 24H01AT",
       "match": null,
@@ -982,6 +1014,14 @@
       "sha256": "4d6d839547da3c2c0378ce80014691decb4f38c62aa4bf37e2df02db57348e5c"
     },
     {
+      "id": "noblex-db58x7550",
+      "name": "Noblex DB58X7550",
+      "match": null,
+      "sdk": 30,
+      "file": "devices/noblex-db58x7550.json",
+      "sha256": "c0ea65edff77815b09692fb8f5303e790f5bf468bbe6df7a3b8ff955bb9415f1"
+    },
+    {
       "id": "noblex-shinjuku",
       "name": "Noblex NoblexTV",
       "match": null,
@@ -1027,7 +1067,7 @@
       "match": null,
       "sdk": 30,
       "file": "devices/nvidia-shield-tv-2019.json",
-      "sha256": "745aff0e0a772adc37d54b5a8f2517a9d63f308d5b895b525c8086e6c2f08171"
+      "sha256": "9fca3fc404fee863a3c4689772882445e599083ca3641e96c31a09bd7fec3e8c"
     },
     {
       "id": "nvidia-shield-tv-pro-2019",
@@ -1187,7 +1227,7 @@
       "match": null,
       "sdk": 26,
       "file": "devices/philips-49pus6561.json",
-      "sha256": "e7ca6cf1c895d243591dad4d392fa3650dca35d4bbccefe7ed6acf60549b63a8"
+      "sha256": "b04478644541a413269dafc593e3b1ea984379de315ed915e11311b1254d6b07"
     },
     {
       "id": "philips-50pud7406",
@@ -1333,7 +1373,7 @@
       "match": null,
       "sdk": null,
       "file": "devices/philips-google-tv-ta1.json",
-      "sha256": "597777042d3de470a8de377af57852d95ee6763094b7d9050588388752f1b55c"
+      "sha256": "1144a1a353a097b65c375c095f2a50eed9ad12ce595f9d83c46913eca33fb6ec"
     },
     {
       "id": "philips-google-tv-ta7",
@@ -1648,6 +1688,14 @@
       "sha256": "e67d15013b79052db94fe54a951f16f6805bcfea4bb7f59c42228c4368d5efdf"
     },
     {
+      "id": "skyworth-4k-google-tv-stick",
+      "name": "Skyworth 4K Google TV Stick",
+      "match": null,
+      "sdk": 34,
+      "file": "devices/skyworth-4k-google-tv-stick.json",
+      "sha256": "32083ec4bb87adc524796cd5baf4f8ce0906ca3c8531e6b117ef81e4c40d840c"
+    },
+    {
       "id": "skyworth-65a3f",
       "name": "Skyworth 65A3F",
       "match": null,
@@ -1734,6 +1782,14 @@
       "sdk": null,
       "file": "devices/skyworth-xiaopai-p3.json",
       "sha256": "b59bcc8aa0e532f2441dca22c9dc2a3c5a017a1367576ff563688ed806599735"
+    },
+    {
+      "id": "smarttech-apollo-premium-4k",
+      "name": "Smarttech Apollo Premium 4K",
+      "match": null,
+      "sdk": null,
+      "file": "devices/smarttech-apollo-premium-4k.json",
+      "sha256": "f6fca5ac7e0fe04aa1db736b89965c5f5c5182b4466e2723b6128ddf542e59dc"
     },
     {
       "id": "sony-bravia-4k-gb-us",
@@ -1989,7 +2045,7 @@
       "match": null,
       "sdk": 28,
       "file": "devices/sony-kd-55xf8096.json",
-      "sha256": "29f0572bae900a46741b6cc438c1e1fd30282c701934025e6fecf4a1473d3832"
+      "sha256": "9cb73ad877d9ac43806643e575e9844a65f9f78e1317ee4731f7a3fc85446012"
     },
     {
       "id": "sony-kd-65x80j",
@@ -2005,7 +2061,7 @@
       "match": null,
       "sdk": 31,
       "file": "devices/sony-kd-65x82l.json",
-      "sha256": "6bb8cc3d579de6868bd5ece3eedbf515f53644e82f8f4a3576e84a55d7b0ad3f"
+      "sha256": "0b71d83e32f313d3a8bc69f477223360753416fcee8ab696f1e24389a2bfeaa0"
     },
     {
       "id": "sony-kd-65x9300d",
@@ -2038,6 +2094,14 @@
       "sdk": 31,
       "file": "devices/sony-x9000h-cn.json",
       "sha256": "20181a1826963cba7949116a2daf1ba0e0af5db34f9d8866b0bf098a03215694"
+    },
+    {
+      "id": "sony-xbr-55x805g-br",
+      "name": "Sony BRAVIA XBR-55X805G",
+      "match": null,
+      "sdk": 28,
+      "file": "devices/sony-xbr-55x805g-br.json",
+      "sha256": "28fb5af146d3b3acaaba585e11d3e29c69b8695021c1b0989059634aef6d316e"
     },
     {
       "id": "sony-xbr-55x850c",
@@ -2629,7 +2693,7 @@
       "match": null,
       "sdk": null,
       "file": "devices/tcl-c89b-google-tv.json",
-      "sha256": "e2f5317e0e04258a1dccc4978503542326355b9d4c4f03bde12d55a055bd86ab"
+      "sha256": "4ba64c44f2e42f5ee476ba8fc6bb1119e41a4980fbcb201d0d81c2b584676648"
     },
     {
       "id": "tcl-g03-google-tv",
@@ -2822,6 +2886,14 @@
       "sdk": 28,
       "file": "devices/thomson-t32rtl6000.json",
       "sha256": "0dd11aff9a4580c2e2dd1e9c79fdae3b760f1e257f4273d7e40c71a8b9fcb4f2"
+    },
+    {
+      "id": "tim-timvision-box-dwt765ti",
+      "name": "TIM TIMVISION Box",
+      "match": null,
+      "sdk": null,
+      "file": "devices/tim-timvision-box-dwt765ti.json",
+      "sha256": "5c130571adda10fa866de36e00a994db666f5d62526ae082118b0b8e871a921d"
     },
     {
       "id": "tim-timvision-box-uzw4010tim",
@@ -3022,6 +3094,14 @@
       "sdk": 28,
       "file": "devices/xiaomi-f2-fire-tv-aftma2857f.json",
       "sha256": "8e6c145924c4fecb562b13ee9277a70d398bf156147f4c1d5d587a36974e328b"
+    },
+    {
+      "id": "xiaomi-fire-tv-aftne4e43f",
+      "name": "Xiaomi Fire TV",
+      "match": null,
+      "sdk": 30,
+      "file": "devices/xiaomi-fire-tv-aftne4e43f.json",
+      "sha256": "3df14f174c8ec29773e223d8b31082bfaf38db90f80b8f2743c94bad708d2321"
     },
     {
       "id": "xiaomi-mi-box-3",
@@ -3269,7 +3349,7 @@
       "match": null,
       "sdk": 28,
       "file": "devices/xiaomi-mitv-mssp1.json",
-      "sha256": "d333f42341a3ab8d10fd5b31117a062533c9533c25affcad01c11ac591f031dc"
+      "sha256": "cb8b593b4584672c9165c0ed7ccd1f267a276ab95fd291f1466ef4fc2a68dac9"
     },
     {
       "id": "xiaomi-mitv-mssp2",
@@ -3285,7 +3365,7 @@
       "match": null,
       "sdk": 28,
       "file": "devices/xiaomi-mitv-mssp3-android9.json",
-      "sha256": "df8c9cc4a62751aad3112e1536dbce4f0a1e67ec5e111bcd031868e6e1567f22"
+      "sha256": "98ae19237d38a7d5aa5e52abd004e4e69f2e1ecba08803b470aaca2edc1180fa"
     },
     {
       "id": "xiaomi-mitv-mssp3",
@@ -3342,6 +3422,14 @@
       "sdk": null,
       "file": "devices/xiaomi-tv-a43-2025.json",
       "sha256": "5ff2129f1aaca08dce756efc151b74af6f2a3bd82fdafdadf32797f9ce3ab3f0"
+    },
+    {
+      "id": "xvision-50xyu765",
+      "name": "X.Vision 50XYU765",
+      "match": null,
+      "sdk": null,
+      "file": "devices/xvision-50xyu765.json",
+      "sha256": "78daf8c60baf2165c9e65a43b56bbac29ec14fd20e3915f7a82eb64cd7d604ae"
     }
   ],
   "lists": {

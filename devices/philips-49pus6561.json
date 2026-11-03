@@ -32,6 +32,10 @@
         {
           "pkg": "com.google.android.feedback",
           "note": "Market Feedback Agent"
+        },
+        {
+          "pkg": "com.google.android.tv.bugreportsender",
+          "note": "bug report uploader (55PUS6581)"
         }
       ]
     },
@@ -102,6 +106,14 @@
         {
           "pkg": "com.google.android.partnersetup",
           "note": "Google partner setup"
+        },
+        {
+          "pkg": "com.google.android.onetimeinitializer",
+          "note": "runs once at first setup, nothing afterwards (55PUS6581)"
+        },
+        {
+          "pkg": "org.droidtv.dms",
+          "note": "UPnP media server, started at boot; the DLNA renderer and the USB player (contentexplorer) stay (55PUS6581)"
         }
       ]
     },
@@ -250,6 +262,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/philips-49pus6561/debloat.txt",
-    "commit": "a1e948c665abf5af86c3aab08fe05053686a6bf3"
+    "commit": "8672e68e8a24c1258e4662cd11daa4ed13795dad"
   }
 }

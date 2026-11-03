@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "xvision-50xyu765",
+  "name": "X.Vision 50XYU765",
+  "tested": {
+    "os": "Android 11",
+    "sdk": null,
+    "build": "m7332_eu-userdebug"
+  },
+  "launcher": "com.cvte.tv.launcher.space",
+  "keep": [],
+  "groups": [
+    {
+      "title": "CVTE ads",
+      "packages": [
+        {
+          "pkg": "com.cvte.wonder.cloud.service",
+          "note": "\"UniAdService\", starts at boot"
+        }
+      ]
+    },
+    {
+      "title": "Manufacturer content",
+      "packages": [
+        {
+          "pkg": "com.cvte.tv.pictorial",
+          "note": "screensaver with ads (\"Invisible Art\" tile on the stock home)"
+        },
+        {
+          "pkg": "com.cvte.tv.steward",
+          "note": "\"TV Assistant\" cleaner / optimiser"
+        },
+        {
+          "pkg": "com.cvte.tv.weather",
+          "note": "the stock launcher's weather (~54 MB resident); keep it if you keep the stock launcher"
+        },
+        {
+          "pkg": "fusion.android.tv.demo",
+          "note": "RetailDisplay store demo loop"
+        }
+      ]
+    },
+    {
+      "title": "Remote customer service",
+      "packages": [
+        {
+          "pkg": "com.cvte.tv.remotedebug",
+          "note": "ifpdos customer service with a screen-recorder service, runs in the background;"
+        }
+      ]
+    },
+    {
+      "title": "Google extras",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback"
+        }
+      ]
+    },
+    {
+      "title": "Casting: off on the tested set by the owner's choice; uncomment to disable",
+      "packages": [
+        {
+          "pkg": "com.ecloud.eshare.server",
+          "note": "EShare (\"Kindlink\" tile) phone casting, starts at boot; with the next two ~150 MB",
+          "optional": true
+        },
+        {
+          "pkg": "com.ecloud.eairplay",
+          "note": "EShare AirPlay receiver",
+          "optional": true
+        },
+        {
+          "pkg": "com.ecloud.emedia",
+          "note": "EShare DLNA renderer",
+          "optional": true
+        },
+        {
+          "pkg": "com.mediatek.androidbox",
+          "note": "WFDSinkTest: the Miracast receiver",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "CVTE app store. The stock launcher's Apps grid and \"AppStore\" tile are its AppSelectActivity, and the firmware has",
+      "packages": [
+        {
+          "pkg": "com.stark.store",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/xvision-50xyu765/debloat.txt",
+    "commit": "8672e68e8a24c1258e4662cd11daa4ed13795dad"
+  }
+}

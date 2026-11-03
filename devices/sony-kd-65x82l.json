@@ -174,11 +174,111 @@
           "pkg": "com.google.android.tungsten.setupwraith"
         }
       ]
+    },
+    {
+      "title": "The second KD-65X82L unit (India retail, B2B preloads) also disabled these, all on it from the factory",
+      "packages": [
+        {
+          "pkg": "com.amazon.minitv.androidtv.app",
+          "note": "Amazon miniTV (India)"
+        },
+        {
+          "pkg": "com.jio.media.jiotvplus",
+          "note": "JioTV+"
+        },
+        {
+          "pkg": "com.jio.media.stb.ondemand",
+          "note": "Jio set-top on-demand app"
+        },
+        {
+          "pkg": "com.sony.dtv.kenhchonloc",
+          "note": "shop promo app, Vietnamese despite Indian retail"
+        },
+        {
+          "pkg": "com.tcl.browser",
+          "note": "preloaded browser (TCL's APK on this Sony set); re-enabled a day later as the owner's dock browser on that unit; uncomment to disable",
+          "optional": true
+        },
+        {
+          "pkg": "com.sony.dtv.sensingfusionservice",
+          "note": "kept as unclear above; off here, nothing noticed; off on the India B2B unit; uncomment to disable",
+          "optional": true
+        },
+        {
+          "pkg": "com.sony.dtv.broadcastservicesetup",
+          "note": "off on the India B2B unit; uncomment to disable",
+          "optional": true
+        },
+        {
+          "pkg": "com.sony.dtv.interactivetvutil",
+          "note": "no broadcast use on this set; the VH21 EU list keeps it for a TokenProvider other Sony apps may read; off on the India B2B unit; uncomment to disable",
+          "optional": true
+        },
+        {
+          "pkg": "com.sony.dtv.interactivetvutil.output",
+          "note": "off on the India B2B unit; uncomment to disable",
+          "optional": true
+        },
+        {
+          "pkg": "com.sony.dtv.broadcastclock.broadcastrequirementcontrol",
+          "note": "off on the India B2B unit; uncomment to disable",
+          "optional": true
+        },
+        {
+          "pkg": "com.sony.dtv.broadcastclock.clocksyncservice",
+          "note": "off on the India B2B unit; uncomment to disable",
+          "optional": true
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.adminpassword"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.deviceadminsettings"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.frameworkextension"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.hotelmode"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.importexport"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.ipcontrolsettings"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.noderuntime.normal"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.noderuntime.privilege"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.noderuntimeextension.bpk"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.noderuntimeextension.node_20_11_1"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.prosettings"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.rs232csupport"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.webappruntimedrm"
+        },
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom",
+          "note": "Prime Video, off by choice on that unit",
+          "optional": true
+        }
+      ]
     }
   ],
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/sony-kd-65x82l/debloat.txt",
-    "commit": "a1e948c665abf5af86c3aab08fe05053686a6bf3"
+    "commit": "8672e68e8a24c1258e4662cd11daa4ed13795dad"
   }
 }

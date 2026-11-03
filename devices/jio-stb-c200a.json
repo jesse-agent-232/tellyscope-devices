@@ -1,0 +1,119 @@
+{
+  "schema": 1,
+  "id": "jio-stb-c200a",
+  "name": "Jio STB C200A",
+  "tested": {
+    "os": "Android 11",
+    "sdk": 30,
+    "build": "JioSTB-JMSC200A-23.1.11"
+  },
+  "launcher": "com.iwedia.ui.rjio.launcher.reliance",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Jio ads, telemetry and tracking",
+      "packages": [
+        {
+          "pkg": "com.jio.stbadservice"
+        },
+        {
+          "pkg": "com.jio.systemstats"
+        },
+        {
+          "pkg": "com.rjil.podlogservice"
+        },
+        {
+          "pkg": "com.jio.adc.aka"
+        },
+        {
+          "pkg": "com.jio.adc.embedded"
+        },
+        {
+          "pkg": "com.jio.bioscopecontentservice"
+        }
+      ]
+    },
+    {
+      "title": "Background daemons and task killers",
+      "packages": [
+        {
+          "pkg": "com.jio.smartmemorymanager",
+          "note": "aggressive background task killer"
+        },
+        {
+          "pkg": "com.jio.appoptimizer",
+          "note": "aggressive background task killer; PERSISTENT, keeps running (see quirks)"
+        },
+        {
+          "pkg": "com.jio.backgroundscheduler",
+          "note": "periodic telemetry wake-up daemon"
+        },
+        {
+          "pkg": "com.jio.stb.remotediagnose",
+          "note": "remote diagnostics daemon"
+        },
+        {
+          "pkg": "com.jiostb.inactivitytimer",
+          "note": "inactivity timeout timer"
+        }
+      ]
+    },
+    {
+      "title": "Jio store and preloads nobody asked for",
+      "packages": [
+        {
+          "pkg": "com.jio.store",
+          "note": "Jio App Store; Aurora Store or Universal Installer replace it"
+        },
+        {
+          "pkg": "com.aksys.jiogamepad",
+          "note": "gamepad helper"
+        },
+        {
+          "pkg": "com.jio.screensaver",
+          "note": "Jio promo screensaver; replaced by the launcher's Clock screensaver"
+        }
+      ]
+    },
+    {
+      "title": "Off by choice, and not applied on the reference unit (uncomment to use)",
+      "packages": [
+        {
+          "pkg": "com.iwedia.ui.rjio.launcher.reliance",
+          "note": "stock Home; launcher/build-and-install.sh does the handover",
+          "optional": true
+        },
+        {
+          "pkg": "com.jio.httpupdate",
+          "note": "FOTA updater; uncomment to freeze firmware updates",
+          "optional": true
+        },
+        {
+          "pkg": "com.jio.usbupdate",
+          "note": "USB firmware updater",
+          "optional": true
+        },
+        {
+          "pkg": "com.jio.tr069client",
+          "note": "TR-069 remote management; uncomment to stop Jio's remote push",
+          "optional": true
+        },
+        {
+          "pkg": "com.jiostb.fti",
+          "note": "first-time setup; disable after setup has run",
+          "optional": true
+        },
+        {
+          "pkg": "com.rjil.jiostbsetting",
+          "note": "Jio's settings app; a third-party Home may need it for its menus",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/jio-stb-c200a/debloat.txt",
+    "commit": "8672e68e8a24c1258e4662cd11daa4ed13795dad"
+  }
+}

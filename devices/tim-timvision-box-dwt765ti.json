@@ -1,0 +1,202 @@
+{
+  "schema": 1,
+  "id": "tim-timvision-box-dwt765ti",
+  "name": "TIM TIMVISION Box",
+  "tested": {
+    "os": "Android TV 8.0",
+    "sdk": null,
+    "build": null
+  },
+  "launcher": "timvision.launcher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "TIM / Technicolor telemetry and remote device management",
+      "packages": [
+        {
+          "pkg": "timvision.telemetry",
+          "note": "TIMVISION \"traps\" telemetry"
+        },
+        {
+          "pkg": "com.smarts.smartagentpassivestb",
+          "note": "passive monitoring agent, installed by com.movenda.omadm.tv"
+        },
+        {
+          "pkg": "com.movenda.omadm.tv",
+          "note": "OMA-DM operator device management"
+        },
+        {
+          "pkg": "com.movenda.p4mcore",
+          "note": "Movenda core service for the above"
+        },
+        {
+          "pkg": "com.technicolor.android.BootupTraceQR"
+        },
+        {
+          "pkg": "com.technicolor.cputemperature"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        }
+      ]
+    },
+    {
+      "title": "TIMVISION service parts: off on the tested unit (owner dropped TIMVISION; iptuner is a TV input).",
+      "packages": [
+        {
+          "pkg": "tv.broadpeak.nanocdnwrapper",
+          "note": "Broadpeak multicast CDN for TIMVISION live",
+          "optional": true
+        },
+        {
+          "pkg": "it.telecomitalia.iptuner",
+          "note": "TIMVISION live channels (a TV input)",
+          "optional": true
+        },
+        {
+          "pkg": "it.telecomitalia.linemanager",
+          "optional": true
+        },
+        {
+          "pkg": "it.telecomitalia.accountmanager",
+          "note": "TIM account",
+          "optional": true
+        },
+        {
+          "pkg": "it.telecomitalia.timppapp",
+          "optional": true
+        },
+        {
+          "pkg": "timvision.tvappsettings",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Google voice and recommendation rows (voice off by choice)",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss"
+        },
+        {
+          "pkg": "com.google.android.speech.pumpkin"
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations"
+        },
+        {
+          "pkg": "com.google.android.leanbacklauncher.recommendations"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded and operator-pushed apps: the tested unit has all of these disabled by its owner's choice.",
+      "packages": [
+        {
+          "pkg": "com.netflix.ninja",
+          "note": "kept enabled on the tested unit",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.youtube.tv",
+          "note": "kept enabled on the tested unit (YouTube casting needs it)",
+          "optional": true
+        },
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom",
+          "optional": true
+        },
+        {
+          "pkg": "com.disney.disneyplus",
+          "optional": true
+        },
+        {
+          "pkg": "com.apple.atve.androidtv.appletv",
+          "optional": true
+        },
+        {
+          "pkg": "com.dazn",
+          "optional": true
+        },
+        {
+          "pkg": "com.wbd.stream",
+          "optional": true
+        },
+        {
+          "pkg": "it.mediaset.infinitytv",
+          "optional": true
+        },
+        {
+          "pkg": "tv.pluto.android",
+          "optional": true
+        },
+        {
+          "pkg": "com.cbs.ca",
+          "optional": true
+        },
+        {
+          "pkg": "com.upst.hayu",
+          "optional": true
+        },
+        {
+          "pkg": "com.fifa.plus.android",
+          "optional": true
+        },
+        {
+          "pkg": "com.figc.vivoazzurrotv",
+          "optional": true
+        },
+        {
+          "pkg": "it.rds.androidtv.rdssocialtv",
+          "optional": true
+        },
+        {
+          "pkg": "it.telecomitalia.thefilmclub",
+          "optional": true
+        },
+        {
+          "pkg": "it.telecomitalia.games",
+          "optional": true
+        },
+        {
+          "pkg": "it.telecomitalia.timmusic_tv",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Android TV tutorials and screensaver",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvtutorials"
+        },
+        {
+          "pkg": "com.google.android.backdrop",
+          "note": "screensaver; the basic daydream remains"
+        }
+      ]
+    },
+    {
+      "title": "Updaters: disabled on the tested unit by choice, kept here (see the header)",
+      "packages": [
+        {
+          "pkg": "com.technicolor.checkota",
+          "optional": true
+        },
+        {
+          "pkg": "com.technicolor.app.ota",
+          "optional": true
+        },
+        {
+          "pkg": "timvision.upgrade",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/tim-timvision-box-dwt765ti/debloat.txt",
+    "commit": "8672e68e8a24c1258e4662cd11daa4ed13795dad"
+  }
+}

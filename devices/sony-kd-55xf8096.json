@@ -207,11 +207,51 @@
           "optional": true
         }
       ]
+    },
+    {
+      "title": "Also disabled on 2026-11-02 and not yet reboot-checked: the packages examples/sony-kd-55xf7596/ lists and",
+      "packages": [
+        {
+          "pkg": "com.google.android.leanbacklauncher",
+          "note": "old Android TV launcher, no HOME activity on this build",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.speech.pumpkin",
+          "note": "offline voice parser for the Assistant",
+          "optional": true
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.importexport",
+          "note": "hotel/pro mode settings import/export",
+          "optional": true
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.prosettings",
+          "note": "hotel/pro mode settings",
+          "optional": true
+        },
+        {
+          "pkg": "com.sony.dtv.tvlaunchercustomizer.overlay.apporder",
+          "note": "app order overlay for the stock home",
+          "optional": true
+        },
+        {
+          "pkg": "com.sony.dtv.osat.music",
+          "note": "Music, plays music from USB",
+          "optional": true
+        },
+        {
+          "pkg": "com.sony.dtv.smartmediaapp",
+          "note": "Media Player, plays files from USB",
+          "optional": true
+        }
+      ]
     }
   ],
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/sony-kd-55xf8096/debloat.txt",
-    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+    "commit": "8672e68e8a24c1258e4662cd11daa4ed13795dad"
   }
 }

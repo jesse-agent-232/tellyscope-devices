@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "smarttech-apollo-premium-4k",
+  "name": "Smarttech Apollo Premium 4K",
+  "tested": {
+    "os": "Google TV 14",
+    "sdk": null,
+    "build": null
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "ACR: reports what is on screen, HDMI inputs included, for ad targeting",
+      "packages": [
+        {
+          "pkg": "tv.anoki.acr.anokiacroptin"
+        }
+      ]
+    },
+    {
+      "title": "Android ad services (Privacy Sandbox) and on-device ad personalisation",
+      "packages": [
+        {
+          "pkg": "com.android.adservices.api"
+        },
+        {
+          "pkg": "com.android.ondevicepersonalization.services"
+        },
+        {
+          "pkg": "com.android.federatedcompute.services"
+        }
+      ]
+    },
+    {
+      "title": "Feedback reporters",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.android.tv.feedbackconsent"
+        }
+      ]
+    },
+    {
+      "title": "Store demo mode and factory test app",
+      "packages": [
+        {
+          "pkg": "fusion.android.tv.demo"
+        },
+        {
+          "pkg": "com.express.fac.test",
+          "note": "Expressluck factory test; the factory menu itself is kept"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/smarttech-apollo-premium-4k/debloat.txt",
+    "commit": "8672e68e8a24c1258e4662cd11daa4ed13795dad"
+  }
+}

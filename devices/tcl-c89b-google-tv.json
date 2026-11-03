@@ -117,15 +117,17 @@
       ]
     },
     {
-      "title": "Off by the owner's choice",
+      "title": "Optional: the first C89B owner turned these off; the 65C89K second unit keeps them.",
       "packages": [
         {
           "pkg": "com.tcl.gamebar",
-          "note": "game mode / VRR overlay"
+          "note": "game mode / VRR overlay",
+          "optional": true
         },
         {
           "pkg": "com.tcl.hearaid",
-          "note": "hearing test"
+          "note": "hearing test",
+          "optional": true
         },
         {
           "pkg": "com.tcl.t_solo",
@@ -238,6 +240,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/tcl-c89b-google-tv/debloat.txt",
-    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+    "commit": "8672e68e8a24c1258e4662cd11daa4ed13795dad"
   }
 }

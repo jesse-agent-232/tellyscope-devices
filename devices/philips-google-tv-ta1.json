@@ -259,11 +259,51 @@
           "pkg": "com.google.android.apps.tv.launcherx"
         }
       ]
+    },
+    {
+      "title": "---------------------------------------------------------------------------------------------------------------",
+      "packages": [
+        {
+          "pkg": "com.google.android.feedback",
+          "note": "Market Feedback Agent",
+          "optional": true
+        },
+        {
+          "pkg": "org.droidtv.tv.frameworklogger",
+          "note": "hands reboot reasons and firmware records to the Philips logger",
+          "optional": true
+        },
+        {
+          "pkg": "com.disney.disneyplus",
+          "note": "Disney+ (preinstalled there)",
+          "optional": true
+        },
+        {
+          "pkg": "com.apple.atve.androidtv.appletv",
+          "note": "Apple TV (preinstalled there)",
+          "optional": true
+        },
+        {
+          "pkg": "com.netflix.tokenmanager",
+          "note": "goes with Netflix",
+          "optional": true
+        },
+        {
+          "pkg": "com.boosteroidtv.streaming",
+          "note": "Boosteroid cloud gaming",
+          "optional": true
+        },
+        {
+          "pkg": "tv.wuaki.apptv",
+          "note": "Rakuten TV",
+          "optional": true
+        }
+      ]
     }
   ],
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/philips-google-tv-ta1/debloat.txt",
-    "commit": "718f98c96e6823045fd1fd82edd73d70deaf01fa"
+    "commit": "8672e68e8a24c1258e4662cd11daa4ed13795dad"
   }
 }

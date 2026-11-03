@@ -1,0 +1,123 @@
+{
+  "schema": 1,
+  "id": "hisense-85e7q",
+  "name": "Hisense 85E7Q",
+  "tested": {
+    "os": "Android 14",
+    "sdk": 34,
+    "build": "UQ1A.240105.004.A1"
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "Advertising",
+      "packages": [
+        {
+          "pkg": "com.hisense.business.ad",
+          "note": "ad SDK"
+        },
+        {
+          "pkg": "com.hisense.service.ad",
+          "note": "ad service"
+        }
+      ]
+    },
+    {
+      "title": "Telemetry and reporting",
+      "packages": [
+        {
+          "pkg": "com.hisense.platformreport",
+          "note": "platform data reporter"
+        },
+        {
+          "pkg": "com.hisense.logupload",
+          "note": "log uploader"
+        },
+        {
+          "pkg": "com.hisense.hitv.das",
+          "note": "DasApp reporter (JuUI)"
+        }
+      ]
+    },
+    {
+      "title": "Vendor push channel",
+      "packages": [
+        {
+          "pkg": "com.hisense.service.message"
+        }
+      ]
+    },
+    {
+      "title": "Retail, hotel, meeting-room and first-run modes",
+      "packages": [
+        {
+          "pkg": "com.hisense.demonstrate",
+          "note": "shop demo loop"
+        },
+        {
+          "pkg": "com.hisense.hotelmenu",
+          "note": "hotel mode menu"
+        },
+        {
+          "pkg": "com.meetingroom",
+          "note": "meeting-room mode, answers HOME at -100"
+        },
+        {
+          "pkg": "com.jamdeo.tv.fte",
+          "note": "first-run wizard (already past)"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded content and gimmicks",
+      "packages": [
+        {
+          "pkg": "com.hisense.electronictutorial",
+          "note": "electronic manual"
+        },
+        {
+          "pkg": "com.vision.aibook",
+          "note": "AI picture book"
+        },
+        {
+          "pkg": "com.hisense.tv.fitmirror",
+          "note": "fitness mirror"
+        },
+        {
+          "pkg": "com.hisense.tv.videochat.social",
+          "note": "preloaded video chat"
+        },
+        {
+          "pkg": "com.hisense.tv.videoconference",
+          "note": "video conferencing"
+        },
+        {
+          "pkg": "com.hisense.tv.weather",
+          "note": "stock weather tile"
+        },
+        {
+          "pkg": "com.jamdeo.calendar",
+          "note": "calendar"
+        },
+        {
+          "pkg": "com.ju.miguvideoTV.cmcc",
+          "note": "Migu Video, carrier preload"
+        }
+      ]
+    },
+    {
+      "title": "Stock launcher (JuUI 聚好看). This unit ran the launcher swap, so it is off here. Disabling it does not",
+      "packages": [
+        {
+          "pkg": "com.jamdeo.tv.vod"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/hisense-85e7q/debloat.txt",
+    "commit": "8672e68e8a24c1258e4662cd11daa4ed13795dad"
+  }
+}

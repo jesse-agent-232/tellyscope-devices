@@ -107,6 +107,10 @@
         {
           "pkg": "com.google.android.apps.nbu.smartconnect.tv",
           "note": "Google data-saver VPN"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google TV / Play Movies store app (second unit, three days, nothing broke)"
         }
       ]
     },
@@ -115,15 +119,18 @@
       "packages": [
         {
           "pkg": "com.nvidia.ota",
-          "note": "firmware updates OFF by choice; NVIDIA still ships security patches"
+          "note": "firmware updates; off on the first unit by choice",
+          "optional": true
         },
         {
           "pkg": "com.nvidia.NvCPLUpdater",
-          "note": "control-panel updater, with the above"
+          "note": "control-panel updater, with the above",
+          "optional": true
         },
         {
           "pkg": "com.nvidia.KeyComboOta",
-          "note": "OTA key combo, with the above (the Pro example leaves this on)"
+          "note": "OTA key combo, with the above",
+          "optional": true
         },
         {
           "pkg": "com.google.android.tv",
@@ -237,6 +244,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/nvidia-shield-tv-2019/debloat.txt",
-    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+    "commit": "8672e68e8a24c1258e4662cd11daa4ed13795dad"
   }
 }

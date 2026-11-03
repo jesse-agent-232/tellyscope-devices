@@ -1,0 +1,211 @@
+{
+  "schema": 1,
+  "id": "skyworth-4k-google-tv-stick",
+  "name": "Skyworth 4K Google TV Stick",
+  "tested": {
+    "os": "Google TV 14",
+    "sdk": 34,
+    "build": null
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "Google setup, ads and telemetry",
+      "packages": [
+        {
+          "pkg": "com.google.android.partnersetup"
+        },
+        {
+          "pkg": "com.google.android.onetimeinitializer"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.android.tv.feedbackconsent"
+        },
+        {
+          "pkg": "com.android.adservices.api"
+        },
+        {
+          "pkg": "com.android.ondevicepersonalization.services"
+        },
+        {
+          "pkg": "com.android.federatedcompute.services"
+        },
+        {
+          "pkg": "com.google.android.tungsten.setupwraith",
+          "note": "see the Wi-Fi note in the header"
+        },
+        {
+          "pkg": "android.autoinstalls.config.AMLSTBAndroid.device"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded Google apps and content rows",
+      "packages": [
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.amazon.amazonvideo.livingroom"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        },
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "voice search; re-enable to keep the Assistant"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.dreamx",
+          "note": "ambient mode screensaver"
+        },
+        {
+          "pkg": "com.android.dreams.basic",
+          "note": "stock daydream"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.launcherx",
+          "note": "stock home; disable only after another launcher answers HOME",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Vendor (Skyworth Digital) test, log and update apps",
+      "packages": [
+        {
+          "pkg": "com.sdt.producttest"
+        },
+        {
+          "pkg": "com.sdt.ota",
+          "note": "firmware updater; this set had it off, shared lists keep it on",
+          "optional": true
+        },
+        {
+          "pkg": "com.sdt.deviceinfo"
+        },
+        {
+          "pkg": "com.sdt.customization"
+        },
+        {
+          "pkg": "com.oemservice"
+        },
+        {
+          "pkg": "com.oem.qa"
+        }
+      ]
+    },
+    {
+      "title": "Features a TV stick does not use",
+      "packages": [
+        {
+          "pkg": "com.android.virtualmachine.res"
+        },
+        {
+          "pkg": "com.android.nearby.halfsheet"
+        },
+        {
+          "pkg": "com.android.uwb.resources"
+        },
+        {
+          "pkg": "com.android.managedprovisioning",
+          "note": "work-profile provisioning only"
+        },
+        {
+          "pkg": "com.android.companiondevicemanager"
+        },
+        {
+          "pkg": "com.android.dynsystem"
+        },
+        {
+          "pkg": "com.android.hotspot2.osulogin"
+        },
+        {
+          "pkg": "com.android.cameraextensions"
+        },
+        {
+          "pkg": "com.android.printspooler"
+        },
+        {
+          "pkg": "com.google.android.marvin.talkback",
+          "note": "accessibility; re-enable if TalkBack is needed"
+        }
+      ]
+    },
+    {
+      "title": "Backups, sync and small utilities",
+      "packages": [
+        {
+          "pkg": "com.android.sharedstoragebackup"
+        },
+        {
+          "pkg": "com.android.wallpaperbackup"
+        },
+        {
+          "pkg": "com.android.backupconfirm"
+        },
+        {
+          "pkg": "com.android.providers.userdictionary"
+        },
+        {
+          "pkg": "com.android.mtp",
+          "note": "USB file transfer; built-in storage still mounts over ADB"
+        },
+        {
+          "pkg": "com.android.settings.intelligence"
+        },
+        {
+          "pkg": "com.android.providers.calendar"
+        },
+        {
+          "pkg": "com.android.providers.contacts"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar"
+        },
+        {
+          "pkg": "com.android.healthconnect.controller"
+        },
+        {
+          "pkg": "com.android.health.connect.backuprestore"
+        }
+      ]
+    },
+    {
+      "title": "Play Store: never disabled (the TV needs it)",
+      "packages": [
+        {
+          "pkg": "com.android.vending",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Aggressive: re-enable if the matching feature breaks",
+      "packages": [
+        {
+          "pkg": "com.amlogic.voicesubtitle",
+          "note": "Amlogic live subtitle overlay"
+        },
+        {
+          "pkg": "com.google.android.tv.axel",
+          "note": "Google TV ambient art"
+        },
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Chromecast built-in; disabling it costs casting",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/skyworth-4k-google-tv-stick/debloat.txt",
+    "commit": "8672e68e8a24c1258e4662cd11daa4ed13795dad"
+  }
+}

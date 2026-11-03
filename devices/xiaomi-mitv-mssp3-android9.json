@@ -59,7 +59,8 @@
         },
         {
           "pkg": "com.xiaomi.mitv.updateservice",
-          "note": "firmware updates: re-enable to check for one"
+          "note": "firmware updates: better left enabled (docs/DOS-AND-DONTS.md); uncomment to switch it off",
+          "optional": true
         }
       ]
     },
@@ -107,6 +108,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/xiaomi-mitv-mssp3-android9/debloat.txt",
-    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+    "commit": "8672e68e8a24c1258e4662cd11daa4ed13795dad"
   }
 }

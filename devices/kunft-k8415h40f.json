@@ -1,0 +1,139 @@
+{
+  "schema": 1,
+  "id": "kunft-k8415h40f",
+  "name": "KUNFT K8415H40F",
+  "tested": {
+    "os": "Android TV 11",
+    "sdk": 30,
+    "build": null
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "--- Vendor portal, ads, recommendations, telemetry",
+      "packages": [
+        {
+          "pkg": "com.homwee.aipont",
+          "note": "AI PONT brand portal and its channel rows"
+        },
+        {
+          "pkg": "com.homwee.store",
+          "note": "vendor store; declares the retail-demo receiver and service"
+        },
+        {
+          "pkg": "android.autoinstalls.config.homwee",
+          "note": "partner app auto-installs"
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations",
+          "note": "recommendation rows"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.partnersetup"
+        }
+      ]
+    },
+    {
+      "title": "--- Vendor tools, app updater, ambient screensaver",
+      "packages": [
+        {
+          "pkg": "com.homwee.chinstallapk",
+          "note": "silent APK installer"
+        },
+        {
+          "pkg": "com.homwee.chtvmanager",
+          "note": "\"TV Manager\" cleaner / memory optimizer"
+        },
+        {
+          "pkg": "com.homwee.help",
+          "note": "e-manual"
+        },
+        {
+          "pkg": "com.homwee.upgrade",
+          "note": "vendor updater: disabled on the test set, left on here because shared",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.backdrop",
+          "note": "ambient screensaver; the launcher's ClockDream replaces it"
+        }
+      ]
+    },
+    {
+      "title": "--- Owner's choice: not used on the test set. Comment out what you use.",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google Assistant / microphone button"
+        },
+        {
+          "pkg": "com.homwee.mmp.fileexplorer",
+          "note": "USB file explorer, video and music player (\"Media Player\" tile)"
+        },
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Play Movies & TV"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        }
+      ]
+    },
+    {
+      "title": "Kept by the owner's choice; uncomment the ones you don't use.",
+      "packages": [
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Chromecast built-in",
+          "optional": true
+        },
+        {
+          "pkg": "com.homwee.multiscreenshare",
+          "note": "Multi-Screen Share (Miracast / AirPlay)",
+          "optional": true
+        },
+        {
+          "pkg": "com.homwee.mmp.screenshare",
+          "note": "AirPlay",
+          "optional": true
+        },
+        {
+          "pkg": "com.changhong.inface.net.wfd",
+          "note": "Miracast",
+          "optional": true
+        },
+        {
+          "pkg": "com.homwee.alexacontrol",
+          "note": "Alexa integration",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.tv.remote.service",
+          "note": "Google TV phone remote",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Stock launcher, replaced by launcher/. Left to launcher/build-and-install.sh, which disables it only",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvlauncher",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/kunft-k8415h40f/debloat.txt",
+    "commit": "8672e68e8a24c1258e4662cd11daa4ed13795dad"
+  }
+}
