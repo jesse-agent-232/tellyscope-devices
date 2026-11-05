@@ -29,10 +29,6 @@
           "pkg": "com.google.android.feedback"
         },
         {
-          "pkg": "com.graymatrix.did",
-          "note": "device analytics (data app; on the AS23 unit)"
-        },
-        {
           "pkg": "com.mirakulo.astrotv.service",
           "note": "Ginga (ISDB-Tb broadcast apps), not analytics"
         }
@@ -154,6 +150,11 @@
         {
           "pkg": "com.google.android.apps.tv.dreamx",
           "note": "ambient screensaver; use the launcher's Clock screensaver"
+        },
+        {
+          "pkg": "com.graymatrix.did",
+          "note": "ZEE5 streaming app",
+          "optional": true
         }
       ]
     },
@@ -183,6 +184,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/tcl-g09-google-tv/debloat.txt",
-    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+    "commit": "04aec4b7c763ed642d3994d25e5b89dd57014a6d"
   }
 }

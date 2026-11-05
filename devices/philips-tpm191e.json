@@ -117,11 +117,36 @@
           "note": "\"Android TV Core Services\": recommendation rows, notification panel"
         }
       ]
+    },
+    {
+      "title": "Batch 5: Broadcast / DVB tuner suite, for streaming-only sets with no aerial. Left as comments: uncomment",
+      "packages": [
+        {
+          "pkg": "org.droidtv.playtv",
+          "note": "Live TV / tuner front-end",
+          "optional": true
+        },
+        {
+          "pkg": "org.droidtv.euinstallertc",
+          "note": "DVB-T/C cable/terrestrial installer",
+          "optional": true
+        },
+        {
+          "pkg": "org.droidtv.euinstallersat",
+          "note": "DVB-S satellite installer",
+          "optional": true
+        },
+        {
+          "pkg": "org.droidtv.teletext",
+          "note": "Teletext engine",
+          "optional": true
+        }
+      ]
     }
   ],
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/philips-tpm191e/debloat.txt",
-    "commit": "575d73f0f30c329aa7ebaea2bc863943fd9bf7f9"
+    "commit": "04aec4b7c763ed642d3994d25e5b89dd57014a6d"
   }
 }

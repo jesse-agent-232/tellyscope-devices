@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "hisense-amlogict963-android9",
+  "name": "Hisense VIDAA_TV",
+  "tested": {
+    "os": "Android 9",
+    "sdk": null,
+    "build": "PPR1.180610.011.07.02.70.02"
+  },
+  "launcher": null,
+  "keep": [],
+  "groups": [
+    {
+      "title": "Hisense advertising; the service had been disabled before the 2026-10-27 batch.",
+      "packages": [
+        {
+          "pkg": "com.hisense.service.ad"
+        },
+        {
+          "pkg": "com.hisense.business.ad",
+          "note": "shopping/Taobao advertising integration"
+        }
+      ]
+    },
+    {
+      "title": "Hisense telemetry and logging",
+      "packages": [
+        {
+          "pkg": "com.hisense.hitv.das",
+          "note": "data reporting"
+        },
+        {
+          "pkg": "com.hisense.platformreport",
+          "note": "platform reports"
+        },
+        {
+          "pkg": "com.hisense.logupload",
+          "note": "log upload"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/hisense-amlogict963-android9/debloat.txt",
+    "commit": "04aec4b7c763ed642d3994d25e5b89dd57014a6d"
+  }
+}

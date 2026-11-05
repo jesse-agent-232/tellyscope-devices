@@ -1,0 +1,252 @@
+{
+  "schema": 1,
+  "id": "sony-xbr-x805g-sa",
+  "name": "Sony BRAVIA XBR-x805G",
+  "tested": {
+    "os": "Android TV 9",
+    "sdk": 28,
+    "build": null
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "ACR viewing tracker",
+      "packages": [
+        {
+          "pkg": "tv.samba.ssm",
+          "note": "Samba TV fingerprints what's on screen"
+        }
+      ]
+    },
+    {
+      "title": "Sony and Google content, ads and promos",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.sonyselect",
+          "note": "Sony Select app store/promo tile"
+        },
+        {
+          "pkg": "com.sony.dtv.discovery",
+          "note": "Sony Discover content bar"
+        },
+        {
+          "pkg": "com.sony.dtv.bivlinfo",
+          "note": "BIVL content service list (feeds Discover)"
+        },
+        {
+          "pkg": "com.google.android.tvrecommendations",
+          "note": "recommendation rows for the stock launcher"
+        },
+        {
+          "pkg": "android.autoinstalls.config.sony.bravia",
+          "note": "Play auto-install of partner apps"
+        }
+      ]
+    },
+    {
+      "title": "Retail demo and hotel / B2B",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.demomode"
+        },
+        {
+          "pkg": "com.sony.dtv.demosupport"
+        },
+        {
+          "pkg": "com.sony.dtv.multiscreendemo"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.vendorprotocol"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.rs232csupport"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.hotelmode"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.noderuntime.normal"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.noderuntime.privilege"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.frameworkextension"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.prosettings"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.importexport"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.webappruntimedrm"
+        },
+        {
+          "pkg": "com.sony.dtv.browser.webappruntimeextension"
+        },
+        {
+          "pkg": "com.sony.dtv.serviceinformation"
+        }
+      ]
+    },
+    {
+      "title": "Telemetry, remote support, logging and feedback",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.da.service",
+          "note": "Sony device agent / remote support"
+        },
+        {
+          "pkg": "com.qterics.da.product",
+          "note": "Qterics device agent"
+        },
+        {
+          "pkg": "com.sony.dtv.sonybugreportsys"
+        },
+        {
+          "pkg": "com.google.android.tv.bugreportsender"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.mediatek.agent",
+          "note": "MediaTek telemetry agent (not mtktvapi / panel)"
+        },
+        {
+          "pkg": "com.mediatek.dmagent"
+        },
+        {
+          "pkg": "com.sony.dtv.sonyloglevelsettingsys"
+        },
+        {
+          "pkg": "com.sony.dtv.sonyloglevelsettingvnd"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded help apps",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.customersupport",
+          "note": "Help tile"
+        },
+        {
+          "pkg": "com.sony.dtv.smarthelp"
+        },
+        {
+          "pkg": "com.sony.dtv.imanual",
+          "note": "i-Manual"
+        }
+      ]
+    },
+    {
+      "title": "Unused Google preloads (owner's choice)",
+      "packages": [
+        {
+          "pkg": "com.google.android.youtube.tvmusic"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google TV movies & shows"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.backdrop",
+          "note": "ambient screensaver"
+        }
+      ]
+    },
+    {
+      "title": "USB media players and Opera/Vewd browser shell (keep vewd.core.service for AirPlay)",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.smartmediaapp",
+          "note": "Media Player"
+        },
+        {
+          "pkg": "com.sony.dtv.osat.music",
+          "note": "Music"
+        },
+        {
+          "pkg": "com.vewd.core.integration.dia",
+          "note": "Internet Browser UI"
+        },
+        {
+          "pkg": "com.sony.dtv.browser.ceb"
+        },
+        {
+          "pkg": "com.sony.dtv.browser.webappruntime"
+        },
+        {
+          "pkg": "com.sony.dtv.browser.webappservice"
+        }
+      ]
+    },
+    {
+      "title": "Mirroring, DLNA, DIAL and Google sync leftovers",
+      "packages": [
+        {
+          "pkg": "screnmirroring.com",
+          "note": "Screen mirroring (Miracast)"
+        },
+        {
+          "pkg": "com.sony.dtv.networkapp.wifidirect"
+        },
+        {
+          "pkg": "com.sony.huey.dlna.module"
+        },
+        {
+          "pkg": "com.sony.huey.dlna.renderersettings"
+        },
+        {
+          "pkg": "com.sonyericsson.dlna"
+        },
+        {
+          "pkg": "com.sony.dtv.dialservice"
+        },
+        {
+          "pkg": "com.google.android.partnersetup"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.contacts"
+        },
+        {
+          "pkg": "com.android.providers.calendar"
+        }
+      ]
+    },
+    {
+      "title": "Low-value leftovers",
+      "packages": [
+        {
+          "pkg": "com.google.android.marvin.talkback"
+        },
+        {
+          "pkg": "com.android.printspooler"
+        },
+        {
+          "pkg": "com.android.dreams.basic"
+        },
+        {
+          "pkg": "com.sony.dtv.quicksetup"
+        },
+        {
+          "pkg": "com.sony.dtv.QuickSetupCustomizer"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/sony-xbr-x805g-sa/debloat.txt",
+    "commit": "04aec4b7c763ed642d3994d25e5b89dd57014a6d"
+  }
+}

@@ -2,7 +2,7 @@
   "schema": 1,
   "source": {
     "repo": "Gathin23/cleanyourtv",
-    "commit": "8672e68e8a24c1258e4662cd11daa4ed13795dad"
+    "commit": "04aec4b7c763ed642d3994d25e5b89dd57014a6d"
   },
   "devices": [
     {
@@ -44,6 +44,14 @@
       "sdk": null,
       "file": "devices/aipro2k.json",
       "sha256": "b0146fa9346033591b089d5d928f3bb079cb50232ae20bfb6353bbdce5a4108d"
+    },
+    {
+      "id": "aipro4k",
+      "name": "AiPro4K",
+      "match": null,
+      "sdk": null,
+      "file": "devices/aipro4k.json",
+      "sha256": "c55d44f06fbbca6eba1b2e3353218b0b7a8cc8a6b716e58de0fd5337b80eef30"
     },
     {
       "id": "aiwa-ai-pont-sa",
@@ -590,6 +598,14 @@
       "sha256": "514b4d2c24c036deed2b0ff9f8ac58a56f1177e91d5bbf2905c8a360cac7b39f"
     },
     {
+      "id": "hisense-amlogict963-android9",
+      "name": "Hisense VIDAA_TV",
+      "match": null,
+      "sdk": null,
+      "file": "devices/hisense-amlogict963-android9.json",
+      "sha256": "945e4965b73814485c5b545428dc8b0aeb310b82e26a1d8566c2a792c0a5f75a"
+    },
+    {
       "id": "hisense-e5q-pro",
       "name": "Hisense E5Q Pro",
       "match": null,
@@ -862,6 +878,14 @@
       "sha256": "28e840762c462eb9a32879d9d68bc24cfc1e2a79dae576408f5e81c38c003086"
     },
     {
+      "id": "kodak-55ca0909",
+      "name": "Kodak 55CA0909",
+      "match": null,
+      "sdk": 28,
+      "file": "devices/kodak-55ca0909.json",
+      "sha256": "b75a9040a2657c1d89dced29bad67aa1d5164c3c1e2062a28fce1719300940f2"
+    },
+    {
       "id": "kogan-g7",
       "name": "Kogan G7 Google TV",
       "match": null,
@@ -991,11 +1015,11 @@
     },
     {
       "id": "motorola-swtv-24ae-fhd",
-      "name": "Motorola / Coocaa SWTV-24AE-FHD",
+      "name": "Motorola / Coocaa / Telefunken SWTV-24AE-FHD",
       "match": null,
       "sdk": 34,
       "file": "devices/motorola-swtv-24ae-fhd.json",
-      "sha256": "79950009ae0305b711af91c3f2f5b8380920ddac09340f4b2219ba4beb8718e2"
+      "sha256": "659b70d2cc818cfe1489cb9a7348ef6008c848edab3d9b593e56f672ced4ef60"
     },
     {
       "id": "mtc-uk-2k-android-tv",
@@ -1222,6 +1246,14 @@
       "sha256": "fe29f31d90bab5204a70775b81d19393cbe17c5eaeb5a9b2fa729e2727ec7b6c"
     },
     {
+      "id": "philco-smart-tv-sunnyvale",
+      "name": "Philco Smart TV",
+      "match": null,
+      "sdk": 34,
+      "file": "devices/philco-smart-tv-sunnyvale.json",
+      "sha256": "b523d39c99a858e25121d59432d1f1b79966302a3ff25b977cacc0c5d0fdb95f"
+    },
+    {
       "id": "philips-49pus6561",
       "name": "Philips 49PUS6561/12",
       "match": null,
@@ -1349,7 +1381,7 @@
       "match": null,
       "sdk": 31,
       "file": "devices/philips-65pus9435.json",
-      "sha256": "edc709b3fb525c3151e684891b0b489cb507cd6191807c9bc00e12978aaad317"
+      "sha256": "62f549b8b1870c20ebc6ef9bd3459211ade9c91ca6d91c9c2d1024539b066b82"
     },
     {
       "id": "philips-75pus8505",
@@ -1405,7 +1437,7 @@
       "match": null,
       "sdk": 31,
       "file": "devices/philips-tpm191e.json",
-      "sha256": "77083bdba8ba15f5dbe791460d4888b20b97554a00da6e79f533adc814082b74"
+      "sha256": "64671a6384c557681deee3a3efd907c4ad9d7e3efc1ab51a993a8a3d0232560a"
     },
     {
       "id": "polytron-2k-hayward",
@@ -2088,6 +2120,14 @@
       "sha256": "19bbbd4362c8e5940923b01b0dc209a5f4267e43c4e7aa69d26b417b957ccf91"
     },
     {
+      "id": "sony-kj-55x9300d",
+      "name": "Sony BRAVIA KJ-55X9300D",
+      "match": null,
+      "sdk": null,
+      "file": "devices/sony-kj-55x9300d.json",
+      "sha256": "17b03bf578f9e5864b0fe212c074dbcfae8b3a08aba50f0dd25c8d519e9faa9b"
+    },
+    {
       "id": "sony-x9000h-cn",
       "name": "Sony BRAVIA X9000H",
       "match": null,
@@ -2126,6 +2166,14 @@
       "sdk": 28,
       "file": "devices/sony-xbr-65x900f.json",
       "sha256": "fdeff94929caac149da14d18baf515ac48293d752ea0e9570e229d8856c90d0b"
+    },
+    {
+      "id": "sony-xbr-x805g-sa",
+      "name": "Sony BRAVIA XBR-x805G",
+      "match": null,
+      "sdk": 28,
+      "file": "devices/sony-xbr-x805g-sa.json",
+      "sha256": "aeda63afa236216b6437948ae14594b60e82335eb3775fc00088a5dd8e4d4066"
     },
     {
       "id": "sony-xbr-x900e",
@@ -2581,7 +2629,7 @@
       "match": null,
       "sdk": 31,
       "file": "devices/tcl-75a300-pro.json",
-      "sha256": "2f5fde5cde149496c5b23e333164f5a09ac031655583e8bb176efac0c4753ff7"
+      "sha256": "32a2564097934987b5923e3890b4e1672f0fa95245bf4b52b22d93c215f922a7"
     },
     {
       "id": "tcl-75p635",
@@ -2765,7 +2813,7 @@
       "match": null,
       "sdk": null,
       "file": "devices/tcl-g09-google-tv.json",
-      "sha256": "bb1c5112bbdc8fa162adb23b903ad9c457e72529ea7833d74473503ddbe6f557"
+      "sha256": "e322136b05065d4afdc53eb31be1234261a9e7b314bb7c76cf5188657863fe1f"
     },
     {
       "id": "tcl-g10-google-tv",

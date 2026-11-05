@@ -1,0 +1,187 @@
+{
+  "schema": 1,
+  "id": "kodak-55ca0909",
+  "name": "Kodak 55CA0909",
+  "tested": {
+    "os": "Android TV 9",
+    "sdk": 28,
+    "build": "PTT1.181130.001"
+  },
+  "launcher": "com.google.android.tvlauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Telemetry and ad tracking",
+      "packages": [
+        {
+          "pkg": "tv.alphonso.alphonso_eula",
+          "note": "Alphonso ACR ad tracking (background service)"
+        },
+        {
+          "pkg": "com.smartdevice.acr.recommendation",
+          "note": "Skyworth ACR; needs TVINPUT_ALLOW=1 (see header)"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.google.android.tv.bugreportsender"
+        }
+      ]
+    },
+    {
+      "title": "Skyworth retail demo and manual",
+      "packages": [
+        {
+          "pkg": "com.smartdevice.demonow",
+          "note": "retail store demo"
+        },
+        {
+          "pkg": "com.Smartdevice.emanual",
+          "note": "on-screen e-manual"
+        }
+      ]
+    },
+    {
+      "title": "Stock home extras",
+      "packages": [
+        {
+          "pkg": "com.google.android.leanbacklauncher.recommendations",
+          "note": "recommendations for the Leanback launcher, which is not Home"
+        },
+        {
+          "pkg": "com.google.android.backdrop",
+          "note": "ambient screensaver; launcher/ has its own clock screensaver"
+        }
+      ]
+    },
+    {
+      "title": "Stock home recommendation rows: disable after the new launcher owns Home",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvrecommendations"
+        }
+      ]
+    },
+    {
+      "title": "Partner hooks the new launcher does not use; none asks for TV_INPUT_HARDWARE or serves a TV input",
+      "packages": [
+        {
+          "pkg": "android.autoinstalls.config.SW",
+          "note": "Play auto-install config for partner apps"
+        },
+        {
+          "pkg": "com.google.android.leanbacklauncher.partnercustomizer",
+          "note": "partner rows for the Leanback launcher"
+        },
+        {
+          "pkg": "com.google.android.leanbacklauncher",
+          "note": "installed, never Home here; restore.sh turns it back on as a stock launcher"
+        }
+      ]
+    },
+    {
+      "title": "Android leftovers a TV does not use; TV Settings still opened afterwards",
+      "packages": [
+        {
+          "pkg": "com.android.printspooler",
+          "note": "printing"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.calendar",
+          "note": "Google Calendar sync"
+        },
+        {
+          "pkg": "com.google.android.syncadapters.contacts",
+          "note": "Google Contacts sync"
+        },
+        {
+          "pkg": "com.google.android.onetimeinitializer",
+          "note": "first-setup initializer"
+        },
+        {
+          "pkg": "com.android.settings.intelligence",
+          "note": "Settings search suggestions (~25 MB running)"
+        }
+      ]
+    },
+    {
+      "title": "Off by the owner's choice on this unit. Ask before disabling; uncomment only what is not used.",
+      "packages": [
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google Play Movies & TV",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.play.games",
+          "note": "Google Play Games",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.music",
+          "note": "Google Play Music",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google Assistant / voice search (remote mic button)",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.speech.pumpkin",
+          "note": "offline voice actions, only used by the Assistant",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.apps.mediashell",
+          "note": "Chromecast built-in",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.tts",
+          "note": "Google text-to-speech (~90 MB at boot; screen reader needs it)",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.tv.remote.service",
+          "note": "phone remote app support (~69 MB); the mic button may need it",
+          "optional": true
+        },
+        {
+          "pkg": "com.smartdevice.multimediaplayer",
+          "note": "USB media player and DLNA renderer; needs TVINPUT_ALLOW=1",
+          "optional": true
+        },
+        {
+          "pkg": "com.google.android.marvin.talkback",
+          "note": "TalkBack screen reader",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Setup wizard: only after the saved Wi-Fi network no longer belongs to it (see header).",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "title": "Stock home: build-and-install.sh disabled it once the new launcher was confirmed as Home.",
+      "packages": [
+        {
+          "pkg": "com.google.android.tvlauncher",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/kodak-55ca0909/debloat.txt",
+    "commit": "04aec4b7c763ed642d3994d25e5b89dd57014a6d"
+  }
+}

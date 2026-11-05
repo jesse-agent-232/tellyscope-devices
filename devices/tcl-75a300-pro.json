@@ -19,7 +19,8 @@
         },
         {
           "pkg": "com.tcl.exhibit",
-          "note": "store demo"
+          "note": "NOT a store demo here: the A300's art mode and the Art button (second unit)",
+          "optional": true
         },
         {
           "pkg": "com.tcl.tv.tclhome_passive",
@@ -185,6 +186,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/tcl-75a300-pro/debloat.txt",
-    "commit": "f47c893d285172d175c8f72c32658b1d767b3270"
+    "commit": "04aec4b7c763ed642d3994d25e5b89dd57014a6d"
   }
 }

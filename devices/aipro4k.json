@@ -1,0 +1,116 @@
+{
+  "schema": 1,
+  "id": "aipro4k",
+  "name": "AiPro4K",
+  "tested": {
+    "os": "Android TV 14",
+    "sdk": null,
+    "build": null
+  },
+  "launcher": "com.google.android.apps.tv.launcherx",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Telemetry and ad services",
+      "packages": [
+        {
+          "pkg": "tv.anoki.acr.anokiacroptin",
+          "note": "automatic content recognition"
+        },
+        {
+          "pkg": "com.android.adservices.api"
+        },
+        {
+          "pkg": "com.android.ondevicepersonalization.services"
+        },
+        {
+          "pkg": "com.android.federatedcompute.services"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.android.tv.feedbackconsent"
+        },
+        {
+          "pkg": "com.google.android.partnersetup"
+        },
+        {
+          "pkg": "com.mediatek.tv.launcher.partner",
+          "note": "partner content rows for the stock launcher"
+        }
+      ]
+    },
+    {
+      "title": "Content rows",
+      "packages": [
+        {
+          "pkg": "com.google.android.syncadapters.calendar"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps and demos",
+      "packages": [
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.mediatek.tv.retaildemo",
+          "note": "retail demo mode"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.dreamx",
+          "note": "Google screensaver; the new launcher has a Clock screensaver"
+        },
+        {
+          "pkg": "com.iqiyi.i18n.tv",
+          "note": "iQIYI; off on the tested set by the owner's choice; uncomment if you don't use it",
+          "optional": true
+        },
+        {
+          "pkg": "com.wbd.stream",
+          "note": "HBO Max; off on the tested set by the owner's choice; uncomment if you don't use it",
+          "optional": true
+        },
+        {
+          "pkg": "com.internet.tvbrowser",
+          "note": "web browser"
+        },
+        {
+          "pkg": "com.tcl.browser",
+          "note": "second web browser"
+        },
+        {
+          "pkg": "de.stefanpledl.localcast",
+          "note": "LocalCast"
+        },
+        {
+          "pkg": "com.instantbits.cast.receiver",
+          "note": "Web Video Cast receiver"
+        },
+        {
+          "pkg": "com.alphainventor.filemanager",
+          "note": "File Manager; re-enable to browse USB drives"
+        }
+      ]
+    },
+    {
+      "title": "Stock launcher and its first-run wizard. Do this LAST, after the new launcher is installed and set as",
+      "packages": [
+        {
+          "pkg": "com.google.android.tungsten.setupwraith",
+          "note": "its RecoveryActivity otherwise takes over Home; can own the saved Wi-Fi (see above)"
+        },
+        {
+          "pkg": "com.google.android.apps.tv.launcherx"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/aipro4k/debloat.txt",
+    "commit": "04aec4b7c763ed642d3994d25e5b89dd57014a6d"
+  }
+}

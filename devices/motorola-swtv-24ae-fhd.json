@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "id": "motorola-swtv-24ae-fhd",
-  "name": "Motorola / Coocaa SWTV-24AE-FHD",
+  "name": "Motorola / Coocaa / Telefunken SWTV-24AE-FHD",
   "tested": {
     "os": "Android TV 14",
     "sdk": 34,
@@ -88,6 +88,16 @@
       ]
     },
     {
+      "title": "Assistant: disabled on the Telefunken unit; the remote's mic button stops working. Uncomment to drop it.",
+      "packages": [
+        {
+          "pkg": "com.google.android.katniss",
+          "note": "Google Assistant / voice search",
+          "optional": true
+        }
+      ]
+    },
+    {
       "title": "Stock Google TV home and setup wizard",
       "packages": [
         {
@@ -104,6 +114,6 @@
   "source": {
     "repo": "Gathin23/cleanyourtv",
     "path": "examples/motorola-swtv-24ae-fhd/debloat.txt",
-    "commit": "baadd07a7d095cc3ea72e6ccb615987bf1fb97c4"
+    "commit": "04aec4b7c763ed642d3994d25e5b89dd57014a6d"
   }
 }

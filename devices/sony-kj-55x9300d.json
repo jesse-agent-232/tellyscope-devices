@@ -1,0 +1,129 @@
+{
+  "schema": 1,
+  "id": "sony-kj-55x9300d",
+  "name": "Sony BRAVIA KJ-55X9300D",
+  "tested": {
+    "os": "Android TV 7.0",
+    "sdk": null,
+    "build": "NRD91N.S43"
+  },
+  "launcher": "com.google.android.leanbacklauncher",
+  "keep": [],
+  "groups": [
+    {
+      "title": "Sony and Google content, ads and promos",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.sonyselect",
+          "note": "Sony Select app store/promo tile"
+        },
+        {
+          "pkg": "com.sony.dtv.discovery",
+          "note": "Sony Discover content bar"
+        },
+        {
+          "pkg": "com.sony.dtv.bivlinfo",
+          "note": "BIVL content service list (feeds Discover)"
+        },
+        {
+          "pkg": "android.autoinstalls.config.sony.bravia",
+          "note": "Play auto-install of partner apps"
+        },
+        {
+          "pkg": "jp.sony.mybravia",
+          "note": "\"My BRAVIAからのおすすめ\" promo row on the stock home (Japan)"
+        }
+      ]
+    },
+    {
+      "title": "Telemetry, remote support and feedback",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.da.service",
+          "note": "Sony device agent / remote support"
+        },
+        {
+          "pkg": "com.qterics.da.product",
+          "note": "Qterics device agent"
+        },
+        {
+          "pkg": "com.google.android.tv.bugreportsender"
+        },
+        {
+          "pkg": "com.google.android.feedback"
+        },
+        {
+          "pkg": "com.sony.dtv.b2b.vendorprotocol",
+          "note": "SDDP model/MAC/IP broadcast; re-enable for Control4-style home automation"
+        }
+      ]
+    },
+    {
+      "title": "Preloaded apps and tutorials",
+      "packages": [
+        {
+          "pkg": "com.sony.dtv.customersupport",
+          "note": "Help tile"
+        },
+        {
+          "pkg": "com.sony.dtv.smarthelp"
+        },
+        {
+          "pkg": "com.sony.dtv.imanual",
+          "note": "i-Manual"
+        },
+        {
+          "pkg": "com.sony.dtv.touchpad.tutorial",
+          "note": "touchpad remote tutorial"
+        },
+        {
+          "pkg": "com.google.android.videos",
+          "note": "Google Play Movies"
+        },
+        {
+          "pkg": "com.google.android.play.games"
+        },
+        {
+          "pkg": "com.google.android.music",
+          "note": "Google Play Music, shut down in 2020"
+        }
+      ]
+    },
+    {
+      "title": "Optional features, off by owner's choice",
+      "packages": [
+        {
+          "pkg": "com.google.android.inputmethod.japanese",
+          "note": "Japanese keyboard (not the active one); kept: needed to type Japanese; the tested set has it off",
+          "optional": true
+        },
+        {
+          "pkg": "com.sony.dtv.osat.music",
+          "note": "re-enable to play music from USB"
+        },
+        {
+          "pkg": "com.sony.dtv.osat.album",
+          "note": "re-enable to view photos from USB"
+        },
+        {
+          "pkg": "com.sony.dtv.osat.video",
+          "note": "re-enable to play videos from USB"
+        }
+      ]
+    },
+    {
+      "title": "Stock launcher: kept, nothing installable on 7.0 can take Home (see header)",
+      "packages": [
+        {
+          "pkg": "com.google.android.leanbacklauncher",
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "source": {
+    "repo": "Gathin23/cleanyourtv",
+    "path": "examples/sony-kj-55x9300d/debloat.txt",
+    "commit": "04aec4b7c763ed642d3994d25e5b89dd57014a6d"
+  }
+}
