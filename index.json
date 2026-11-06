@@ -3499,6 +3499,26 @@
     }
   },
   "logos": {
+    "7plus": {
+      "file": "logos/7plus.png",
+      "sha256": "8bd3ae51b19d7c40a181dbdb335ca168b780674b7be9987f12608b8f179eec6f"
+    },
+    "9now": {
+      "file": "logos/9now.png",
+      "sha256": "2fb0731bd2e9ad515ef54514d615c1fad054c850eb1c67d5cf18feff173f43a6"
+    },
+    "abciview": {
+      "file": "logos/abciview.png",
+      "sha256": "efa305e17c8132dbefdc60d1cb57cafe318183e0e1812bc67f25af294691777e"
+    },
+    "abema": {
+      "file": "logos/abema.png",
+      "sha256": "3eb9f1bc4ad46f77c5e1bce80c0666abb413044dd90b7f3d3a7145c76b1c5e01"
+    },
+    "aha": {
+      "file": "logos/aha.png",
+      "sha256": "4d6e134a035e03801002c522e823a0ff0574ca3b83d9a84c03d59d6a0e5f748b"
+    },
     "amazonmusic": {
       "file": "logos/amazonmusic.png",
       "sha256": "4f60ad2cc3c2c6e5603b58e1a4ab19e054d68c21144b4e0dfa37226c4dfd23d4"
@@ -3506,6 +3526,54 @@
     "appletv": {
       "file": "logos/appletv.png",
       "sha256": "f04cca04db2b665ee585c0ad18d77e2cdb0a27db3d4af5574732a4f641196aa2"
+    },
+    "ardmediathek": {
+      "file": "logos/ardmediathek.png",
+      "sha256": "162dc867d6c733d115f2cd9c04572ebf5ae2f8ee261f5875c38bfc9f72701b90"
+    },
+    "atresplayer": {
+      "file": "logos/atresplayer.png",
+      "sha256": "4867bf82e242b9e3d0d12d2629740cc3b8a68bda22a39e96bfd2c19f54588a4b"
+    },
+    "bbciplayer": {
+      "file": "logos/bbciplayer.png",
+      "sha256": "6c9913166ab051fe6123a231b3fde1e1823a46de62da98ce7bc576ad9d5119c3"
+    },
+    "bilibili": {
+      "file": "logos/bilibili.png",
+      "sha256": "c1057e3d517761d3435e355c8da8cfe10eac07a0ba69615f677a49a81ab6d70b"
+    },
+    "binge": {
+      "file": "logos/binge.png",
+      "sha256": "b4bad5f2431d933053ac37703cf481f8f1be8486769a9b8ea03ab7a8fede547f"
+    },
+    "canalplus": {
+      "file": "logos/canalplus.png",
+      "sha256": "4b9d7001ec659b1ef57406fefb7e2c896e3f04b93d27e2a50df57e4b515346ec"
+    },
+    "cbcgem": {
+      "file": "logos/cbcgem.png",
+      "sha256": "5b061a27f7d8f4a1d2e98453bf171fac14b47f998cf218642978e2c9cd7f567d"
+    },
+    "channel4": {
+      "file": "logos/channel4.png",
+      "sha256": "52394fd98edfcf87885b51d205ba22375c60994c59c3f189bc37aa01616f7798"
+    },
+    "channel5": {
+      "file": "logos/channel5.png",
+      "sha256": "5ad2d289772826b128787b94c9d646168366abad601d28f19985ad9a6bdfe29b"
+    },
+    "clarovideo": {
+      "file": "logos/clarovideo.png",
+      "sha256": "2a4e86883208c51d40f4e99bf2240194052a58c07bf4603b5a51102b76af38cb"
+    },
+    "coupangplay": {
+      "file": "logos/coupangplay.png",
+      "sha256": "beb68406dbd10fce4c2469ef6596d5370885d5740395349d8d87d6a40ea4f770"
+    },
+    "crave": {
+      "file": "logos/crave.png",
+      "sha256": "a1494722212ce19a1eb0a192e4eadab44540f6247a1adc86657ce92f104001f0"
     },
     "crunchyroll": {
       "file": "logos/crunchyroll.png",
@@ -3523,21 +3591,57 @@
       "file": "logos/disney.png",
       "sha256": "555c45701e88e26b90332bea36031db77f0fe62e8abea69ac1f356bdb46d8b80"
     },
+    "drtv": {
+      "file": "logos/drtv.png",
+      "sha256": "0f1ad9fe06dabc608b23c858632e6b932a5eddb6acefba923dfbbf056bb33c11"
+    },
+    "dstvstream": {
+      "file": "logos/dstvstream.png",
+      "sha256": "0d8d53f2cf11f411e65e624dd2731cf5a45bf567a5839c008943ae1b28ead6f0"
+    },
     "emby": {
       "file": "logos/emby.png",
       "sha256": "e80fe3d7ac6c7b78e90f6328b33c7f0325d437f434fc05820ad473692676aa6c"
+    },
+    "francetv": {
+      "file": "logos/francetv.png",
+      "sha256": "b2cbe6fb277f2205b02c6ac3ffe78fd0e40a980a4891e3ad0957ed2d2fff89c5"
+    },
+    "fubo": {
+      "file": "logos/fubo.png",
+      "sha256": "45679a5206ff74e5f98b0c2a4d852ee76c83432dd0023c70651d876f130838d2"
+    },
+    "globoplay": {
+      "file": "logos/globoplay.png",
+      "sha256": "8fe5a2798eb95b029719d4a2397a715e4ab8b2642f28c465b36a6f6791447177"
     },
     "hbomax": {
       "file": "logos/hbomax.png",
       "sha256": "c8a9e2bcf4f48fa27ee04e408fff6f83b3b4542011085f2e4dabcb09f7056c9e"
     },
+    "hoichoi": {
+      "file": "logos/hoichoi.png",
+      "sha256": "3b9637bbc93e8c7da83f3ad88bf9de0837cddbc3794b5e4bdabdaf64cb040707"
+    },
     "hulu": {
       "file": "logos/hulu.png",
       "sha256": "9aae5637c4e6055f42883a035ff8b04431dfa1525f80739acfc94d4ed579ac0a"
     },
+    "hulujapan": {
+      "file": "logos/hulujapan.png",
+      "sha256": "946cd511b0b70885a978d4aa6cae16f0c0f38414b14f37edb2723950a8c2a625"
+    },
     "iheartradio": {
       "file": "logos/iheartradio.png",
       "sha256": "1ade9ceb2ff0c0fb08c8d4045306077d7660629e18e0f79ac7db6ac8087293aa"
+    },
+    "iqiyi": {
+      "file": "logos/iqiyi.png",
+      "sha256": "98c55e30f834c1a1332c93a2efb3242b3e7c3d2ad188ebe1e1f395014e491770"
+    },
+    "itvx": {
+      "file": "logos/itvx.png",
+      "sha256": "e1f45de31646a924c8f93d192ce8c651b5fca3f5573f1a57f87e14b2c3b31b0e"
     },
     "jellyfin": {
       "file": "logos/jellyfin.png",
@@ -3551,13 +3655,49 @@
       "file": "logos/jiosaavn.png",
       "sha256": "d2ee6b934efb94ba9d98e2b8efd19af4da8643a403ceb7425ccda2a35db3b090"
     },
+    "jiotvplus": {
+      "file": "logos/jiotvplus.png",
+      "sha256": "03ea2930c0129896543ccfe82fb8c92d4a99a5c9835f2e233cdf4dea9928a79b"
+    },
+    "joyn": {
+      "file": "logos/joyn.png",
+      "sha256": "bf00fe19ad47b3250cf20df004189dd3456824ed3df5a45abc831395d07f19ec"
+    },
+    "kayo": {
+      "file": "logos/kayo.png",
+      "sha256": "f1d8f7127ced611fba36a0f5d4694c75d49bb6db37ce0fe414a02ac7d3ba43f8"
+    },
     "kodi": {
       "file": "logos/kodi.png",
       "sha256": "9056568aa6f3ae41926d7394eb058cdff695af9bad46daef7a6f02635a7ee2c2"
     },
+    "m6plus": {
+      "file": "logos/m6plus.png",
+      "sha256": "655d96fbaa98fe2675fa226e8eb4f9680b06207c3574232b574e36e31c521aa2"
+    },
+    "mediasetinfinity": {
+      "file": "logos/mediasetinfinity.png",
+      "sha256": "3c5d82ba84c72ffedaa6bc6332048174710c76f7bb9ddeb4231e6864f16a0766"
+    },
     "netflix": {
       "file": "logos/netflix.png",
       "sha256": "2cc8714ef83a99d32893ccaac6689cb626bdbc64ee078827368785f58ed463dd"
+    },
+    "now": {
+      "file": "logos/now.png",
+      "sha256": "8cc055ca652980fb54f653fb8fadfb42ef2b1ec7e3e7be303eaae24a932ff727"
+    },
+    "npostart": {
+      "file": "logos/npostart.png",
+      "sha256": "1931fc251d4bf70a7011f4347bec802b836575dccb95724aa218d661acdbec40"
+    },
+    "nrktv": {
+      "file": "logos/nrktv.png",
+      "sha256": "09adda8c39a3db16b149a1894d64c9fa69655b492738ae3e910d2196c01fb8ce"
+    },
+    "osnplus": {
+      "file": "logos/osnplus.png",
+      "sha256": "5f3f7df5aa52eff3c3b0545be189280d15d8246c85ca4f2fa3b7c850e87c10bb"
     },
     "pandora": {
       "file": "logos/pandora.png",
@@ -3570,6 +3710,10 @@
     "peacock": {
       "file": "logos/peacock.png",
       "sha256": "faab25d8414ae924c36c607024c46be10c5a20f05d67034c4ed51ee062fd393a"
+    },
+    "philo": {
+      "file": "logos/philo.png",
+      "sha256": "9f1df59523ca998641230123dcd2c1eeb55809a765591b1ecf8c2bea65477e9a"
     },
     "plex": {
       "file": "logos/plex.png",
@@ -3587,6 +3731,38 @@
       "file": "logos/qobuz.png",
       "sha256": "6fdea11278da8540b9d453e17f3b81c1c203bac0e5c2eb1e377631d06bb1f730"
     },
+    "raiplay": {
+      "file": "logos/raiplay.png",
+      "sha256": "1222a13bc6b25e5ce416e8b9aac8aad856f61e4b217ece55a2554a17cc91af25"
+    },
+    "rakutentv": {
+      "file": "logos/rakutentv.png",
+      "sha256": "16a5798b1a1d32f4f1ff1074607234684b0f23dd2130c1dd18a85e413d7508de"
+    },
+    "rtlplus": {
+      "file": "logos/rtlplus.png",
+      "sha256": "c5cbe8cfa3660003eb89bc3932791313bd14b6840776611fe4f1f2db581512b8"
+    },
+    "rtveplay": {
+      "file": "logos/rtveplay.png",
+      "sha256": "630d539e87dab0d42f5bfcdd0b8cd195dbd70e90ad1802ef56254d31e7ae7e09"
+    },
+    "sbsondemand": {
+      "file": "logos/sbsondemand.png",
+      "sha256": "a4e1cba4e00ccc88693286f30aaac2105396a589a300b1032c44663d2ec9684c"
+    },
+    "shahid": {
+      "file": "logos/shahid.png",
+      "sha256": "9a557d39fcad3ece6058a0e9a9abc8fa38eeffeb2f739acd9ab6272fa7b9bccb"
+    },
+    "skyshowtime": {
+      "file": "logos/skyshowtime.png",
+      "sha256": "420ebba8b67f832cdf6fa3c243797632f631fdf893c6ba06594d55ea46c175f8"
+    },
+    "slingtv": {
+      "file": "logos/slingtv.png",
+      "sha256": "50bb26f7f8d37a2ea002e533cc3f52e6a0cdefba17d59874e1d7c05ff7d277fa"
+    },
     "sonyliv": {
       "file": "logos/sonyliv.png",
       "sha256": "b0a50374edc19f316e0e02627a0d96444294ff97901c73efa783d1ca543dca2a"
@@ -3599,9 +3775,37 @@
       "file": "logos/spotify.png",
       "sha256": "fa5f515bdc8db3cdc37d0260dfbf09fe34252660e2abc650a5755ddb20645c5c"
     },
+    "stacktv": {
+      "file": "logos/stacktv.png",
+      "sha256": "275634ca5dce3a23458e59610e5041dd2173a1c0e47b2c44d70f8ae2ecabf925"
+    },
+    "stan": {
+      "file": "logos/stan.png",
+      "sha256": "caa05b4eb039b9ebda1fbd769ac29c6d3365a093abcdf81ea0caa54b6f33d800"
+    },
+    "starz": {
+      "file": "logos/starz.png",
+      "sha256": "942da0a012cb6dd66b1635e95484c755ce6a9690d1e3a8d43232d560f4cf4001"
+    },
+    "sunnxt": {
+      "file": "logos/sunnxt.png",
+      "sha256": "d3435852c0a47f9b139a90c263619685aac9c12697b7a2e380472e6c3af147b3"
+    },
+    "svtplay": {
+      "file": "logos/svtplay.png",
+      "sha256": "a79bf2b278197d6ff57fc756c4fb2679316afcab7b2b81242749189d8f87a7b7"
+    },
     "symfonium": {
       "file": "logos/symfonium.png",
       "sha256": "130a8e05eee8313eae734c6da305e621d21b110c8082cd043c65a78e580b9af8"
+    },
+    "ten": {
+      "file": "logos/ten.png",
+      "sha256": "1a8273e02748c720feea974083faaeaa02f97a336f8924e16fa9d25b058b99e5"
+    },
+    "tf1plus": {
+      "file": "logos/tf1plus.png",
+      "sha256": "aa648afe13ab1fd8b6f532f094f16ef5d437f3bb37723de2c42841baa0440692"
     },
     "tidal": {
       "file": "logos/tidal.png",
@@ -3615,9 +3819,49 @@
       "file": "logos/tunein.png",
       "sha256": "f38be9576798a016b826fe28fea8e766f42170ea28246b25d8277d223e3a9602"
     },
+    "tver": {
+      "file": "logos/tver.png",
+      "sha256": "0a9e6bc1afdf0dc31f47a1dfe276cc9523a37a1131a55473c9f4fe1e658d731d"
+    },
+    "tving": {
+      "file": "logos/tving.png",
+      "sha256": "ee2eb0af37d82d88d74c2f02faff2f4c9160903bb103380b2c642ebfe2b284dd"
+    },
     "twitch": {
       "file": "logos/twitch.png",
       "sha256": "6477d560f7ed2b7b4e2e188974e1c99ce4b9ba67eace6e2356ac9b1707b82e87"
+    },
+    "uktv": {
+      "file": "logos/uktv.png",
+      "sha256": "74c340be7538705af11556321381279932a0b5dec45ceeb26dcc546c2a141f2c"
+    },
+    "unext": {
+      "file": "logos/unext.png",
+      "sha256": "cfefc2da82e864ebd7ab5d12385a49919a59ff13e1bbb42daa6a6d126869fcd4"
+    },
+    "viaplay": {
+      "file": "logos/viaplay.png",
+      "sha256": "b1bd1d82564a227ba7bb114bd281bfd6c57811858a71c62c7fbf3df853026bde"
+    },
+    "videoland": {
+      "file": "logos/videoland.png",
+      "sha256": "c537c8908b01aa0aa1c44a7504cf2d166d3584812f3e53dee5dd198a47cb716f"
+    },
+    "viki": {
+      "file": "logos/viki.png",
+      "sha256": "5fbb12e6f299a6018e507c2250d26072d600a7f48c24a660b0d517f4b9f1fdc2"
+    },
+    "viu": {
+      "file": "logos/viu.png",
+      "sha256": "19bd31225f5595377ca4713872315090fedc6e68c60de67ce0ebb951c57f4b6f"
+    },
+    "vix": {
+      "file": "logos/vix.png",
+      "sha256": "0353581bef0ff6fcfadb30aab8d09e98c46b7d113962948f09d82e4d7fd43c7c"
+    },
+    "wetv": {
+      "file": "logos/wetv.png",
+      "sha256": "34bf4669b869b532ccfd5747680e5ee01e0fe27b6871d762f84fa43738adc902"
     },
     "wholphin": {
       "file": "logos/wholphin.png",
@@ -3626,6 +3870,14 @@
     "youtube": {
       "file": "logos/youtube.png",
       "sha256": "2ba970f6100792098174cbcb5b809116f259dd7ee7df1faef99b344200a98b4d"
+    },
+    "youtubetv": {
+      "file": "logos/youtubetv.png",
+      "sha256": "18e17f78fbb97595d879dd1ea64ada921e0e6742aa3d7325247f7bc21d90ecb1"
+    },
+    "zdf": {
+      "file": "logos/zdf.png",
+      "sha256": "b678243286f33e733631149be28b2f333e97d7db1ee03bc6ab87156362ebe1c8"
     },
     "zee5": {
       "file": "logos/zee5.png",
