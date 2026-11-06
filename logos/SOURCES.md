@@ -15,7 +15,7 @@ PD-textlogo is Wikimedia Commons' tag for a logo below the US threshold of origi
 | emby | Simple Icons `emby` mark + "emby" set in our font | https://simpleicons.org/?q=emby | CC0 |
 | hbomax | Commons, HBO Max (2025) | https://commons.wikimedia.org/wiki/File:HBO_Max_%282025%29.svg | PD-textlogo |
 | hulu | Commons, Hulu logo (2018) | https://commons.wikimedia.org/wiki/File:Hulu_logo_%282018%29.svg | PD-textlogo |
-| iheartradio | Simple Icons `iheartradio` | https://simpleicons.org/?q=iheartradio | CC0 |
+| iheartradio | Simple Icons `iheartradio`, the heart alone + "iHeartRadio" set in our font | https://simpleicons.org/?q=iheartradio | CC0 |
 | jellyfin | Simple Icons `jellyfin` mark + "jellyfin" set in our font | https://simpleicons.org/?q=jellyfin | CC0 |
 | jiohotstar | Commons, JioHotstar 2025 (star cropped) | https://commons.wikimedia.org/wiki/File:JioHotstar_2025.png | PD-textlogo |
 | jiosaavn | no artwork: the name set in our font | — | n/a |
