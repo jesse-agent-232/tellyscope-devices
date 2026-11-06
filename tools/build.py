@@ -266,7 +266,6 @@ def check_lists():
                 seen.add(pkg)
 
     streaming = load("streaming")
-    used = set()
     if streaming:
         names, packages = set(), set()
         for g in streaming.get("groups", []):
@@ -291,7 +290,6 @@ def check_lists():
                     errors.append(f"{where}: 'logo' must be lowercase letters and digits")
                 elif not (ROOT / "logos" / f"{logo}.png").is_file():
                     errors.append(f"{where}: logos/{logo}.png is missing")
-                used.add(logo)
                 if s.get("name") in names:
                     errors.append(f"{where}: listed twice")
                 names.add(s.get("name"))
@@ -315,8 +313,6 @@ def check_lists():
             errors.append(f"{where}: {size[0]}x{size[1]} is over {LOGO_MAX[0]}x{LOGO_MAX[1]}")
         if len(data) > LOGO_BYTES:
             errors.append(f"{where}: {len(data)} bytes is over {LOGO_BYTES}")
-        if streaming and f.stem not in used:
-            errors.append(f"{where}: no service in lists/streaming.json uses it")
     return errors
 
 

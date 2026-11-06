@@ -3499,6 +3499,10 @@
     }
   },
   "logos": {
+    "amazonmusic": {
+      "file": "logos/amazonmusic.png",
+      "sha256": "4f60ad2cc3c2c6e5603b58e1a4ab19e054d68c21144b4e0dfa37226c4dfd23d4"
+    },
     "appletv": {
       "file": "logos/appletv.png",
       "sha256": "f04cca04db2b665ee585c0ad18d77e2cdb0a27db3d4af5574732a4f641196aa2"
@@ -3510,6 +3514,10 @@
     "dazn": {
       "file": "logos/dazn.png",
       "sha256": "bb7552215f1e9edd717463979b9caa7c516e5bc19c2bef5150d5e09dca0179d7"
+    },
+    "deezer": {
+      "file": "logos/deezer.png",
+      "sha256": "0cd7dbdf817d775cff8091e5e535fd850c2b4f9b09a0c5fba81227651522d8c7"
     },
     "disney": {
       "file": "logos/disney.png",
@@ -3527,6 +3535,10 @@
       "file": "logos/hulu.png",
       "sha256": "9aae5637c4e6055f42883a035ff8b04431dfa1525f80739acfc94d4ed579ac0a"
     },
+    "iheartradio": {
+      "file": "logos/iheartradio.png",
+      "sha256": "a7dceafdf7641c581fd14d1f08b45ff662b828c18217804a552a06e85d693d95"
+    },
     "jellyfin": {
       "file": "logos/jellyfin.png",
       "sha256": "253c4f382e453288dc54be0a9ea16ee2ae04c7035283c7b6d0fc8b4afc3571a2"
@@ -3535,6 +3547,10 @@
       "file": "logos/jiohotstar.png",
       "sha256": "90043966578a5fffc6aef72f89bb1fe07632bcb06b6e7720f830c5ecae21cb27"
     },
+    "jiosaavn": {
+      "file": "logos/jiosaavn.png",
+      "sha256": "d2ee6b934efb94ba9d98e2b8efd19af4da8643a403ceb7425ccda2a35db3b090"
+    },
     "kodi": {
       "file": "logos/kodi.png",
       "sha256": "9056568aa6f3ae41926d7394eb058cdff695af9bad46daef7a6f02635a7ee2c2"
@@ -3542,6 +3558,10 @@
     "netflix": {
       "file": "logos/netflix.png",
       "sha256": "2cc8714ef83a99d32893ccaac6689cb626bdbc64ee078827368785f58ed463dd"
+    },
+    "pandora": {
+      "file": "logos/pandora.png",
+      "sha256": "580ae0d465c0e6c766873b1e3449be4926d6a74dcd83b0cd73b7e31d595a65f6"
     },
     "paramount": {
       "file": "logos/paramount.png",
@@ -3563,17 +3583,37 @@
       "file": "logos/primevideo.png",
       "sha256": "6af77090507ffa5232482114c6d33bafe56e7ea440b42e5897acec4b476c4514"
     },
+    "qobuz": {
+      "file": "logos/qobuz.png",
+      "sha256": "6fdea11278da8540b9d453e17f3b81c1c203bac0e5c2eb1e377631d06bb1f730"
+    },
     "sonyliv": {
       "file": "logos/sonyliv.png",
       "sha256": "b0a50374edc19f316e0e02627a0d96444294ff97901c73efa783d1ca543dca2a"
+    },
+    "soundcloud": {
+      "file": "logos/soundcloud.png",
+      "sha256": "62e65b7d077fe8b759b533c4712e5971d217baf5d63a20602a0d2dd2b54ef225"
     },
     "spotify": {
       "file": "logos/spotify.png",
       "sha256": "fa5f515bdc8db3cdc37d0260dfbf09fe34252660e2abc650a5755ddb20645c5c"
     },
+    "symfonium": {
+      "file": "logos/symfonium.png",
+      "sha256": "130a8e05eee8313eae734c6da305e621d21b110c8082cd043c65a78e580b9af8"
+    },
+    "tidal": {
+      "file": "logos/tidal.png",
+      "sha256": "5e4dcddf8396a0a78ac2f2705de815d1a1bd1da1c9970b66683f8110d44e8e52"
+    },
     "tubi": {
       "file": "logos/tubi.png",
       "sha256": "83c3961ab8ef8b71abb4c03623556ca0b3c1ea94e2e0622b512f636ade80567d"
+    },
+    "tunein": {
+      "file": "logos/tunein.png",
+      "sha256": "f38be9576798a016b826fe28fea8e766f42170ea28246b25d8277d223e3a9602"
     },
     "twitch": {
       "file": "logos/twitch.png",

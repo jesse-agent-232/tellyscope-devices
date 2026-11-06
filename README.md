@@ -137,7 +137,8 @@ Packages any Android TV, Google TV or Fire TV can have belong in the app's built
 
 A PNG at four times its size in dp, at most 288 x 120 pixels (it has to fit the smallest button, 72 x
 30 dp) and 64 KB. White or black on transparent reads best: the app recolours it on dark brand
-colours. Every logo is used by a service and has a row in `logos/SOURCES.md`.
+colours. Every logo has a row in `logos/SOURCES.md`. Tellyscope's own `data/streaming.json` names
+logos too, so a logo doesn't have to be used in `lists/streaming.json` here.
 
 ### `index.json`
 

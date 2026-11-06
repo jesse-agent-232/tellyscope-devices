@@ -183,11 +183,12 @@ class Lists(unittest.TestCase):
         self.assertAlmostEqual(build.contrast("#FFFFFF", "#000000"), 21.0)
         self.assertGreaterEqual(build.contrast("#E50914", build.DARK_SHEET), 3)  # Netflix's, which the app's test passed
 
-    def test_a_missing_or_unused_logo_is_caught(self):
+    def test_a_missing_logo_is_caught_and_an_unused_one_is_not(self):
+        # Tellyscope's own data/ names logos this frozen list doesn't, so a logo no service here uses is fine.
         self.edit("streaming", lambda d: d["groups"][0]["services"][0].update({"logo": "nosuchlogo"}))
         errors = "\n".join(build.check_lists())
         self.assertIn("logos/nosuchlogo.png is missing", errors)
-        self.assertIn("no service in lists/streaming.json uses it", errors)
+        self.assertNotIn("uses it", errors)
 
     def test_a_launcher_cannot_ask_for_an_accessibility_service(self):
         self.edit("launchers", lambda d: d["launchers"][0].update({"accessibility": True}))
