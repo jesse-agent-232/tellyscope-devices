@@ -16,7 +16,7 @@ PD-textlogo is Wikimedia Commons' tag for a logo below the US threshold of origi
 | ardmediathek | no artwork: the name set in our font, on two lines (the Commons ARD-Mediathek logo is the old serif one) | — | n/a |
 | atresplayer | Commons, Atresplayer 2023 Logo | https://commons.wikimedia.org/wiki/File:Atresplayer_2023_Logo.svg | PD-textlogo |
 | bbciplayer | Commons, BBC iPlayer 2021 (Alt) | https://commons.wikimedia.org/wiki/File:BBC_iPlayer_2021_%28Alt%29.svg | PD-textlogo |
-| bilibili | Simple Icons `bilibili` | https://simpleicons.org/?q=bilibili | CC0 |
+| bilibili | Simple Icons `bilibili` mark + "bilibili" set in our font | https://simpleicons.org/?q=bilibili | CC0 |
 | binge | Commons, Binge logo | https://commons.wikimedia.org/wiki/File:Binge_logo.svg | PD-textlogo |
 | canalplus | Commons, Logo Canal+ 1995 (wordmark still in use) | https://commons.wikimedia.org/wiki/File:Logo_Canal%2B_1995.svg | PD-textlogo |
 | cbcgem | Commons, CBC Gem logo | https://commons.wikimedia.org/wiki/File:CBC_Gem_logo.svg | PD-textlogo |
@@ -91,7 +91,7 @@ PD-textlogo is Wikimedia Commons' tag for a logo below the US threshold of origi
 | twitch | Simple Icons `twitch` (glitch mark) | https://simpleicons.org/?q=twitch | CC0 (brand guidelines apply) |
 | uktv | Commons, U (2024) | https://commons.wikimedia.org/wiki/File:U_%282024%29.svg | PD-textlogo |
 | unext | Commons, U-NEXT logo black | https://commons.wikimedia.org/wiki/File:U-NEXT_logo_black.svg | PD-textlogo |
-| viaplay | Simple Icons `viaplay` | https://simpleicons.org/?q=viaplay | CC0 |
+| viaplay | Simple Icons `viaplay` mark + "Viaplay" set in our font | https://simpleicons.org/?q=viaplay | CC0 |
 | videoland | Commons, Videoland logo | https://commons.wikimedia.org/wiki/File:Videoland_logo.png | PD-textlogo |
 | viki | Commons, Rakuten Viki Logo 2019 | https://commons.wikimedia.org/wiki/File:Rakuten_Viki_Logo_2019.svg | PD-textlogo |
 | viu | Commons, Viu logo (PCCW) | https://commons.wikimedia.org/wiki/File:Viu_logo.svg | PD-textlogo |
